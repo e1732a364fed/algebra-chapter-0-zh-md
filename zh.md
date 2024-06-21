@@ -14855,9 +14855,9 @@ $$
 ### 1.1. 基本定义
 域的研究（当然）是域范畴Fld的研究（定义III.1.14），以环同态作为态射。任务是理解域是什么，最重要的是它们之间是如何相互关联的。
 
-开始的地方是一个来自初等环论1的提醒：从域到非零环的每个环同态都是单射。实际上，到非零环的环同态的核是一个真理想（因为同态根据定义将1映射到1，并且在非零环中$1 \neq 0$），在域中唯一的真理想是(0)。特别是，每个域的环同态都是单射（域根据定义是非零环！）；Fld中的每个同态都是一个单态射（参见命题III.2.4）。
+开始的地方是一个来自初等环论$^1$的提醒：从域到非零环的 每个环同态都是单射。实际上，到非零环的环同态的核是一个真理想（因为同态根据定义将1映射到1，并且在非零环中$1 \neq 0$），在域中唯一的真理想是(0)。特别是，每个域的环同态都是单射（域根据定义是非零环！）；Fld中的每个同态都是一个单态射（参见命题III.2.4）。
 
-因此，两个域之间的每个同态 $k  K$ 都将第一个与第二个的子域相对应。换句话说，可以将 $K$ 视为扩大 $k$ 的特定方式，即 $k$ 的扩张。域理论首先也是最重要的研究是域扩张。我将用 $k \subseteq K$ 表示一个域扩张（这不太理想，因为将一个域嵌入到另一个域的方法可能有很多）；其他流行的选择是 $K / k$（我不喜欢，因为它暗示了商运算）和
+因此，两个域之间的每个同态 $k \to K$ 都将第一个与第二个的子域相对应。换句话说，可以将 $K$ 视为扩大 $k$ 的特定方式，即 $k$ 的扩张。域理论首先也是最重要的研究是域扩张。我将用 $k \subseteq K$ 表示一个域扩张（这不太理想，因为将一个域嵌入到另一个域的方法可能有很多）；其他流行的选择是 $K / k$（我不喜欢，因为它暗示了商运算）和
 
 （虽然我们大多数时候会避免这种情况，因为排版很困难）。
 
@@ -14869,11 +14869,11 @@ $$
 
 关于域扩张的第一个普遍性评论是，较大的域是一个代数，因此是较小域上的向量空间（根据代数的定义本身；参见示例III.5.6）。
 
-定义 1.1. 一个域扩张 $k \subseteq F$ 是有限的，其次数为 $n$，如果 $F$ 作为 $k$ 上的向量空间有（有限）维数 $\dim { \cal F } = n$。否则，该扩张是无限的。
+**定义 1.1.** 一个域扩张 $k \subseteq F$ 是有限的，其次数为 $n$，如果 $F$ 作为 $k$ 上的向量空间有（有限）维数 $\dim { \cal F } = n$。否则，该扩张是无限的。
 
 有限扩张 $k \subseteq F$ 的次数记为 $\lfloor F : k \rfloor$（如果扩张是无限的，我们写 $\lfloor F : k \rfloor = \infty$）。
 
-在 $\mathrm { \ : \ddot { 3 } V . 5 . 2 }$ 中，我们遇到了一个有限域扩张的典型例子：一个从域 $k$ 上的不可约多项式 $f ( x )$ 开始的步骤，其系数在域中，并产生一个 $k$ 的扩张 $K$，在 $K$ 中 $f ( t )$ 有一个根。具体来说，
+在 V . 5 . 2  中，我们遇到了一个有限域扩张的典型例子：一个从域 $k$ 上的不可约多项式 $f ( x )$ 开始的步骤，其系数在域中，并产生一个 $k$ 的扩张 $K$，在 $K$ 中 $f ( x )$ 有一个 _根_。具体来说，
 
 $$
 K = { \frac { k [ t ] } { ( f ( t ) ) } }
@@ -15125,7 +15125,7 @@ $$
 k ( \alpha _ { 1 } , \alpha _ { 2 } , \ldots , \alpha _ { n } )
 $$
 
-对于域 $k ( \alpha _ { 1 } ) ( \alpha _ { 2 } ) \dots ( \alpha _ { n } )$ 。对于 $k \subseteq F$ 和 $\alpha _ { 1 } , \ldots , \alpha _ { n } \ \in \ F$ ，域 $F = k ( \alpha _ { 1 } , \ldots , \alpha _ { n } ) $ 的元素都是可以记为 $\alpha _ { i }$ 的有理函数的元素，系数在 $k$ 中（参见练习 1.3）。换句话说，$k ( \alpha _ { 1 } , \ldots , \alpha _ { n } )$ 是 $F ^ { \prime }$ 的包含 $k ( \alpha _ { 1 } ) , \ldots , k ( \alpha _ { n } )$ 的最小子域（它是这些子域的复合）。显然，元素 $\alpha _ { i }$ 的顺序无关紧要。
+对于域 $k ( \alpha _ { 1 } ) ( \alpha _ { 2 } ) \dots ( \alpha _ { n } )$ 。对于 $k \subseteq F$ 和 $\alpha _ { 1 } , \ldots , \alpha _ { n } \ \in \ F$ ，域 $k ( \alpha _ { 1 } , \ldots , \alpha _ { n } ) \subseteq F$ 的元素都是可以记为 $\alpha _ { i }$ 的有理函数的元素，系数在 $k$ 中（参见练习 1.3）。换句话说，$k ( \alpha _ { 1 } , \ldots , \alpha _ { n } )$ 是 $F$ 的包含 $k ( \alpha _ { 1 } ) , \ldots , k ( \alpha _ { n } )$ 的最小子域（它是这些子域的 _复合(composite)_）。显然，元素 $\alpha _ { i }$ 的顺序无关紧要。
 
 回到有限与代数的问题上，这两个概念在有限生成扩张中是一致的。
 
@@ -15345,9 +15345,11 @@ $$
 \operatorname { t r } _ { k \subseteq F } ( \alpha ) = r \operatorname { t r } _ { k \subseteq k ( \alpha ) } ( \alpha ) \quad { \mathrm { a n d } } \quad N _ { k \subseteq F } ( \alpha ) = N _ { k \subseteq k ( \alpha ) } ( \alpha ) ^ { r } .
 $$
 
-(Cf. Exercises 1.12 and 1.13.) (提示：如果 $f _ { 1 } , \ldots , f _ { r }$ 是 $F ^ { \prime }$ 在 $k ( \alpha )$ 上的一个基，且 $\alpha$ 在 $k$ 上的次数为 $d$，那么 $( f _ { i } \alpha ^ { j } ) _ { i = 1 , \cdots , r _ { . } }$ 是 $F ^ { \prime }$ 在 $k$ 上的一个基。对于这个基，与乘以 $\alpha$ 相应的矩阵 $j { = } 1 , \cdots , d { - } 1$ 由 $r$ 个相同的方块组成。) [4.19, 4.21]
+(Cf. Exercises 1.12 and 1.13.) (提示：如果 $f _ { 1 } , \ldots , f _ { r }$ 是 $F ^ { \prime }$ 在 $k ( \alpha )$ 上的一个基，且
 
-1.16. $\triangleright$ 设 $k \subseteq L \subseteq F $ 是域，且 $\alpha \in F$。如果 $k \subseteq k ( \alpha )$ 是有限扩张，那么 $L \subseteq L ( \alpha )$ 是有限的，且 $[ L ( \alpha ) : L ] \leq [ k ( \alpha ) : k ]$。[§1.3]
+$\alpha$ 在 $k$ 上的次数为 $d$，那么 $(f_i \alpha^j)_{\substack{i=1, \dots, r \\ j=0, \dots, d-1}}$ 是 $F$ 在 $k$ 上的一个基。对于这个基，与乘以 $\alpha$ 相应的矩阵 $j { = } 1 , \cdots , d { - } 1$ 由 $r$ 个相同的方块组成。) [4.19, 4.21]
+
+1.16. $\triangleright$ 设 $k \subseteq L \subseteq F$ 是域，且 $\alpha \in F$。证明 如果 $k \subseteq k ( \alpha )$ 是有限扩张，那么 $L \subseteq L ( \alpha )$ 是有限的，且 $[ L ( \alpha ) : L ] \leq [ k ( \alpha ) : k ]$。[§1.3]
 
 1.17. $\triangleright$ 设 $k \subseteq F = k ( \alpha _ { 1 } , . . . , \alpha _ { n } )$ 是一个有限生成扩张。证明评估映射
 
@@ -15721,7 +15723,7 @@ $$
 
 $\mathcal { I }$ 不是满射导致有趣的考虑。不是任何集合的理想的标准例子是 $K[x]$ 中的 $(x ^ { 2 })$：因为无论 $x ^ { 2 }$ 在哪里消失，$x$ 也会消失；因此如果对于集合 $S$，$x ^ { 2 } \in { \mathcal { I } } ( S )$，那么 $x \in { \mathcal { I } } ( S )$ 同样成立。这引出了以下定义。
 
-定义2.13。设$I$是一个交换环$R$中的理想。$I$的根是理想
+**定义2.13*。设$I$是一个交换环$R$中的理想。$I$的根是理想
 
 $$
 { \sqrt { I } } : = \{ r \in R | \exists k \geq 0 , r ^ { k } \in I \} .
@@ -15735,7 +15737,7 @@ $$
 
 素理想 $\mathfrak { p }$ 显然是根理想的：因为 $f ^ { k } \in { \mathfrak { p } } \implies f \in { \mathfrak { p } }$ ，因此 ${ \sqrt { \mathfrak { p } } } \subseteq { \mathfrak { p } }$（对于所有理想，另一个包含关系是平凡的）。
 
-引理 2.15. 设 $K$ 是一个域，$S$ 是 $\mathbb { A } _ { K } ^ { n }$ 的一个子集。那么理想 ${ \mathcal { I } } ( S )$ 是 $K \lfloor x _ { 1 } , \ldots , x _ { n } \rfloor$ 的一个根理想。
+**引理 2.15.** 设 $K$ 是一个域，$S$ 是 $\mathbb { A } _ { K } ^ { n }$ 的一个子集。那么理想 ${ \mathcal { I } } ( S )$ 是 $K \lfloor x _ { 1 } , \ldots , x _ { n } \rfloor$ 的一个根理想。
 
 证明。对于每个理想，包含关系 ${ \mathcal { I } } ( S ) \subseteq { \sqrt { { \mathcal { I } } ( S ) } }$ 都成立，因此它是显然满足的。为了验证包含关系 ${ \sqrt { { \mathcal { S } } ( S ) } } \subseteq { \mathcal { S } } ( S )$ ，令 $f \in \sqrt { \mathcal { S } ( S ) }$ 。那么存在一个整数 $k \geq 0$ 使得 $f ^ { k } \in { \mathcal { I } } ( S )$ ；即，
 
@@ -15767,7 +15769,7 @@ $$
 
 这就是 Nullstellensatz 帮助我们的地方，也是我们看到 Nullstellensatz 与理想（$= \mathcal { V }$）的“零点”有什么关系的地方。
 
-命题 2.16（弱 Nullstellensatz）。设 $K$ 是一个代数闭域，且 $I \subseteq K | x _ { 1 } , \ldots , x _ { n } |$ 是一个理想。那么 $\mathcal { V } ( I ) = \emptyset$ 当且仅当 $I = ( 1 )$ 。
+**命题 2.16（弱 Nullstellensatz）**。设 $K$ 是一个代数闭域，且 $I \subseteq K | x _ { 1 } , \ldots , x _ { n } |$ 是一个理想。那么 $\mathcal { V } ( I ) = \emptyset$ 当且仅当 $I = ( 1 )$ 。
 
 证明。如果 $I = ( 1 )$ ，那么根据定义 $\mathcal { V } ( I ) = \emptyset$。
 
@@ -15780,13 +15782,13 @@ $$
 对于某些 $c _ { 1 } , \ldots , c _ { n } \in K$；因此 $\forall f ( x _ { 1 } , \ldots , x _ { n } ) \in I$ 存在 $g _ { 1 } , \ldots , g _ { n } \in K [ x _ { 1 } , \ldots , x _ { n } ]$ 使得
 
 $$
-f ( x _ { 1 } , \ldots , x _ { n } ) = \sum _ { i = 1 } ^ { n } g ( x _ { 1 } , \ldots , x _ { n } ) ( x _ { i } - c _ { i } ) .
+f ( x _ { 1 } , \ldots , x _ { n } ) = \sum _ { i = 1 } ^ { n } g_i ( x _ { 1 } , \ldots , x _ { n } ) ( x _ { i } - c _ { i } ) .
 $$
 
 尤其
 
 $$
-f ( c _ { 1 } , \ldots , c _ { n } ) = \sum _ { i = 1 } ^ { n } g ( c _ { 1 } , \ldots , c _ { n } ) ( c _ { i } - c _ { i } ) = 0 :
+f ( c _ { 1 } , \ldots , c _ { n } ) = \sum _ { i = 1 } ^ { n } g_i ( c _ { 1 } , \ldots , c _ { n } ) ( c _ { i } - c _ { i } ) = 0 :
 $$
 
 也就是说，$( c _ { 1 } , \ldots , c _ { n } ) \in { \mathcal { V } } ( I )$ 。这证明了如果 $I \neq ( 1 )$ ，则 $\mathcal { V } ( I ) \neq \emptyset$ ，我们完成了证明。
@@ -15949,7 +15951,7 @@ $$
 
 2.5. $\triangleright$ 设 $K$ 是一个域，设 $A$ 是 $K \vert x _ { 1 } , \ldots , x _ { n } \rfloor$ 的一个子集，设 $I$ 是由 $A$ 生成的理想。证明在 $A \overset { n } { \cdot } \overset { n } { K }$ 中，$\mathcal { V } ( A ) = \mathcal { V } ( I)$。[§2.3]
 
-2.6. $\triangleright$ 设 $K$ 是你最喜欢的无限域。找出 $S \subseteq \mathbb{A}_K^n$ 的子集示例，这些子集不能记为任何理想 $I \subseteq K | x_1, \ldots, x_n |$ 的 $V(I)$。证明如果 $K$ 是有限域，那么 $\mathbb{A}_K^n$ 的每个子集 $S$ 都等于某个理想 $I \subseteq K | x_1, \ldots, x_n |$ 的 $V(I)$。[§2.3]
+2.6. $\triangleright$ 设 $K$ 是你最喜欢的无限域。找出 $S \subseteq \mathbb{A}_K^n$ 的子集示例，这些子集不能记为任何理想 $I \subseteq K [ x _ { 1 } , \ldots , x _ { n } ]$ 的 $\mathscr { V }(I)$。证明如果 $K$ 是有限域，那么 $\mathbb{A}_K^n$ 的每个子集 $S$ 都等于  $\mathscr { V }(I)$ 对于 某个理想$I \subseteq K [ x _ { 1 } , \ldots , x _ { n } ]$ 。[§2.3]
 
 2.7. $\triangleright$ 设 $K$ 是一个域，${ n }$ 是一个非负整数。证明 $\mathbb { A } _ { K } ^ { n }$ 的代数子集的集合是 $\mathbb { A } _ { K } ^ { n }$ 上拓扑的闭集族。[§2.3]
 
@@ -16017,7 +16019,7 @@ $$
 ( c _ { 1 } , \ldots , c _ { n } ) \mapsto ( 1 : c _ { 1 } : \ldots : c _ { n } )
 $$
 
-是一个双射。这个函数用于将 $\mathbb { A } _ { K } ^ { n }$ 实现为 $\| { ^ { p } } _ { K } ^ { n }$ 的一个子集。通过使用类似的函数，证明 $\| _ { K } ^ { p \prime \iota }$ 可以被 $n + 1$ 个 $\mathbb { A } _ { K } ^ { n }$ 的副本所覆盖，并将这一事实与在练习 VI.2.13 中得到的胞腔分解联系起来。（提示：仔细计算 $n = 2$ 的情况。）[2.21, VIII.4.8]
+是一个到它像上的双射。这个函数用于将 $\mathbb { A } _ { K } ^ { n }$ 实现为 $\mathbb { P } _ { K } ^ { n }$ 的一个子集。通过使用类似的函数，证明 $\mathbb { P } _ { K } ^ { n }$ 可以被 $n + 1$ 个 $\mathbb { A } _ { K } ^ { n }$ 的副本所覆盖，并将这一事实与在练习 VI.2.13 中得到的胞腔分解联系起来。（提示：仔细计算 $n = 2$ 的情况。）[2.21, VIII.4.8]
 
 2.21. $\neg$ 设 $F ( x _ { 0 } , \ldots , x _ { n } ) \in K [ x _ { 0 } , \ldots , x _ { n } ]$ 是一个齐次多项式。使用练习 2.20 中的符号，证明条件 ${ \bf \nabla } \cdot F ( c _ { 0 } , \ldots , c _ { n } ) = 0 \cdot$ 对于点 $( c _ { 0 } : . . . : c _ { n } ) \in \mathbb { P } _ { K } ^ { n }$ 是良定义的：它不依赖于为点 $\left( c _ { 0 } : \ldots : c _ { n } \right)$ 所选择的代表 $\left( c _ { 0 } , \ldots , c _ { n } \right)$。然后我们可以定义 $\mathbb { P } _ { K } ^ { n }$ 的如下子集：
 
@@ -16290,7 +16292,7 @@ $$
 
 同样地，立方体不能加倍，因为那将意味着 $\sqrt [ 3 ] { 2 }$ 的可构造性，它在 $\mathbb { Q }$ 上的次数为3，这与推论3.6矛盾。
 
-将圆平方相当于构造 $\pi$，而 $\pi$ 甚至不是代数数（尽管，如我所述，这个事实的证明不是初等的），所以这也是不可能的。
+化圆为方相当于构造 $\sqrt\pi$ , 但若  $\sqrt\pi$  是代数数 , 则 $\pi$ 就会是代数数 , 但它不是（尽管，如我所述，这个事实的证明不是初等的），所以这也是不可能的。
 
 作为另一个例子，构造一个正七边形将相当于构造 $^ { 1 }$ 的第七（复）根 $\zeta$。
 
@@ -16475,9 +16477,9 @@ $$
 
 定义 4.7. 一个域扩张 $k \subseteq F$ 是正规扩张，如果对于每一个不可约多项式 $f ( x ) \in k \vert x \vert$ ，$f ( x )$ 在 $F ^ { \prime }$ 中有一个根当且仅当 $f ( x )$ 在 $F ^ { \prime }$ 上分解为线性因子的积。
 
-定理 4.8. 域扩张 $k \subseteq F$ 是有限且正规当且仅当 $F ^ { \prime }$ 是某个多项式 $f ( x ) \in k \vert x \vert$ 的分裂域。
+**定理 4.8.** 域扩张 $k \subseteq F$ 是有限且正规当且仅当 $F ^ { \prime }$ 是某个多项式 $f ( x ) \in k \vert x \vert$ 的分裂域。
 
-证明。假设 $k \subseteq F$ 是有限且正规。那么 $F$ 是有限生成的：$F =$ $k ( \alpha _ { 1 } , \ldots , \alpha _ { r } )$，其中 $\alpha _ { i }$ 在 $k$ 上代数。设 $p _ { i } ( t )$ 是 $\alpha _ { i }$ 在 $k$ 上的最小多项式。由于 $F ^ { \prime }$ 在 $k$ 上正规，每个 $p _ { i } ( t )$ 在 $F ^ { \prime }$ 上完全分解，因此 $f ( t ) = p _ { 1 } ( t ) \cdot \cdot \cdot p _ { r } ( t )$ 也完全分解。由此可知 $F ^ { \prime }$ 是 $f ( x )$ 的分裂域。
+证明。假设 $k \subseteq F$ 是有限且正规。那么 $F$ 是有限生成的：$F =$ $k ( \alpha _ { 1 } , \ldots , \alpha _ { r } )$，其中 $\alpha _ { i }$ 在 $k$ 上代数。设 $p _ { i } ( x )$ 是 $\alpha _ { i }$ 在 $k$ 上的最小多项式。由于 $F$ 在 $k$ 上正规，每个 $p _ { i } ( x )$ 在 $F$ 上完全分解，因此 $f ( x ) = p _ { 1 } ( x ) \cdot \cdot \cdot p _ { r } ( x )$ 也完全分解。由此可知 $F$ 是 $f ( x )$ 的分裂域。
 
 相反地，假设 $F ^ { \prime }$ 是多项式 $f ( x ) \in k [ x ]$ 的一个分裂域，并且设 $p ( x ) \in k [ x ]$ 是一个不可约多项式，使得 $F ^ { \prime }$ 包含 $p ( x )$ 的一个根 $\alpha$。将 $F ^ { \prime }$ 视为代数闭域 $\overline { { k } }$ 的一个子域，设 $\beta \in \overline { { k } }$ 是 $p ( x )$ 的另一个根；我们将证明 $\beta \in F$。这将证明 $F$ 包含 $p ( x )$ 的所有根，这意味着 $k \subseteq F$ 是正规域，并且根据引理 4.2，$k \subseteq F$ 是有限域。
 
@@ -16737,7 +16739,7 @@ $( \mathrm { i i } ) \Longrightarrow ( \mathrm { i } )$ 直接来自定义 4.19�
 
 4.7. $\triangleright$ 设 $k \subseteq F = k ( \alpha )$ 是一个简单代数扩张。证明 $F$ 在 $k$ 上正规当且仅当对于每一个代数扩张 $F \subseteq K$ 和每一个 $\sigma \in \operatorname { A u t } _ { k } ( K )$ ，$\sigma ( F ) = F$ 。[§6.1]
 
-4.8. $\triangleright$ 设 $p$ 是一个素数，并且 $k$ 是特征为 $p$ 的一个域。对于 $a , b \in K$ ，证明 $^{ 1 6} ( a + b ) ^ { p } = a ^ { p } + b ^ { p }$ 。[§4.2, §5.1, §5.2]
+4.8. $\triangleright$ 设 $p$ 是一个素数，并且 $k$ 是特征为 $p>0$ 的一个域。对于 $a , b \in k$ ，证明 $^{ 1 6} ( a + b ) ^ { p } = a ^ { p } + b ^ { p }$ 。[§4.2, §5.1, §5.2]
 
 4.9. 根据第4.2节中给出的“导数”概念，证明对于所有多项式$f$，$g$，有$( f g ) ^ { \prime } = f ^ { \prime } g + f g ^ { \prime }$。
 
@@ -17692,7 +17694,7 @@ $$
 \delta , \zeta \delta , \zeta ^ { 2 } \delta , \cdots , \zeta ^ { m - 1 } \delta ,
 $$
 
-它们在$F$中，并且$F ^ { \prime }$由它们生成；因此$F$是可分多项式$x ^ { m } - c$（由于$\operatorname { c h a r } k$不整除$m$）在$k$上的分裂域；因此（定理6.9，第(1)部分）$k \subseteq F$是Galois域。
+它们在$F$中，并且$F ^ { \prime }$由它们生成；因此$F$是可分多项式$x ^ { m } - c$（由于$\operatorname { c h a r } k$不整除$m$）在$k$上的分裂域；因此（定理6.9，第(1)部分）$k \subseteq F$是Galois域。 注意到因为 $F=k(\delta)$ 有 degree $m$ over $k$ , 且 $\delta$ 是一个 $x^m- c$ 的根, 我们有 多项式 $x^m -c$ 不可约.
 
 要证明 $\operatorname { A u t } _ { k } ( F )$ 是循环群，注意到每一个 $\varphi \in \operatorname { A u t } _ { k } ( F )$ 都由 $\varphi ( \delta )$ 确定，而 $\varphi ( \delta )$ 必然是 $x ^ { m } - c$ 的一个根；因此 $\varphi ( \delta ) \ = \ \zeta ^ { 2 } \delta$ 对于某个 $i$ 成立，这个 $i$ 在模 $m$ 下确定。这定义了 $\operatorname { A u t } _ { k } ( F )$ 与 $\mathbb { Z } / m \mathbb { Z }$ 之间的一个同构，这一点可以立刻验证。
 
@@ -17897,7 +17899,7 @@ $$
 P _ { n } ( x ) : = ( x - t _ { 1 } ) \cdots ( x - t _ { n } ) \in \mathbb { Z } [ t _ { 1 } , \dots , t _ { n } ] [ x ]
 $$
 
-在某种意义上是普遍的，因为每个系数在（比如说）一个整环中的 $n$ 次多项式都可以通过适当地指定 $t _ { 1 } , \ldots , t _ { n }$ 从 $P _ { n } ( x )$ 中得到，可能在一个更大的环中（练习 7.2）。展开的系数
+在下述意义上是普遍的：每个系数在（比如说）一个整环中 的 $n$ 次 首一(monic) 多项式都可以通过适当地指定 $t _ { 1 } , \ldots , t _ { n }$ 从 $P _ { n } ( x )$ 中得到，可能在一个更大的环中（练习 7.2）。展开的系数
 
 $$
 P _ { n } ( x ) = x ^ { n } - s _ { 1 } ( t _ { 1 } , \dots , t _ { n } ) x ^ { n - 1 } + \cdot \cdot \cdot + ( - 1 ) ^ { n } s _ { n } ( t _ { 1 } , \dots , t _ { n } )
@@ -17951,7 +17953,7 @@ $$
 1 + x + { \frac { x ^ { 2 } } { 2 ! } } + { \frac { x ^ { 3 } } { 3 ! } } + \cdot \cdot \cdot + { \frac { x ^ { n } } { n ! } }
 $$
 
-在 $n \neq 4$ 时 Galois 群是 $S _ { n }$，在 $n = 4$ 时是 $A _ { n }$。
+当 $4 \nmid n$ 时，其在 $\mathbb{Q}$ 上的伽罗瓦群是 $S_n$（而当 $4 | n$ 时，其伽罗瓦群是 $A_n$）。
 
 已知（Shafarevich，1954），每个有限可解群都是$\mathbb{Q}$上的伽罗瓦扩张的伽罗瓦群。
 
@@ -17991,7 +17993,7 @@ $$
 都以二次公式（在$^ { 2 9 }$特征$\neq 2$）而闻名解决：
 
 $$
-x = { \frac { - b \pm { \sqrt { b ^ { 2 } - 4 a c } } } { 2 } } .
+x = { \frac { - b \pm { \sqrt { b ^ { 2 } - 4   c } } } { 2 } } .
 $$
 
 类似但更复杂的公式存在用于三次和四次方程（塔尔塔利亚/卡尔达诺/费拉里，大约在1540年；这引发了一场优先权争议，最终演变成基本的个人攻击）。五次及以上次数的方程在数百年间一直抵抗着数学家的最佳努力。与二次、三次和四次方程发生的情况一致，最雄心勃勃的目标是产生一个用于求解“一般”多项式方程的公式
@@ -18056,7 +18058,7 @@ $$
 k \subseteq k ( \delta _ { 1 } ) \subseteq \cdot \cdot \cdot \subseteq k ( \delta _ { 1 } , \dots , \delta _ { r } ) = F
 $$
 
-以 $\delta _ { i } ^ { m _ { i } } \in k ( \delta _ { 1 } , \dots , \delta _ { i - 1 } )$ 。根据假设，$k$ 对所有 $i$ 都包含 $m _ { i}$ 次单位根。考虑 $G = \mathrm { A u t } _ { k } ( F ( \zeta ) )$ 对应的一系列子群：
+以 $\delta _ { i } ^ { m _ { i } } \in k ( \delta _ { 1 } , \dots , \delta _ { i - 1 } )$ 。根据假设，$k$ 对所有 $i$ 都包含 $m _ { i}$ 次单位根。考虑 $G = \mathrm { A u t } _ { k } ( F   )$ 对应的一系列子群：
 
 $$
 G = G _ { 0 } \supseteq G _ { 1 } \supseteq \cdots \supseteq G _ { r } = \{ e \} ,
@@ -18078,11 +18080,9 @@ $$
 
 命题7.14中的特征0是一个超调；如同命题6.19，只需要要求$\operatorname { c h a r } k$不整除相关次数即可。
 
-证明。假设 $\operatorname { A u t } _ { k } ( F )$ 是可解的。设 $M$ 是循环商阶数的公倍数，设 $\zeta$ 是 $k$ 的代数闭包 $\overline { { k } }$ 中 1 的一个原始 $M$ 次根。$x ^ { M } - 1$ 在 $k$ 上的分裂域 $k ( \zeta )$ 是 $k$ 上的伽罗瓦扩张（$x ^ { M } - 1$ 是可分的，因为 $k$ 的特征为 0）。由命题 6.17，扩张 $k ( \zeta ) \subseteq$ $F ( \zeta )$ 也是伽罗瓦的，其伽罗瓦群同构于 $\operatorname { A u t } _ { k ( \zeta ) \cap F } ( F )$。因此 $\mathrm { A u t } _ { k ( \zeta ) } ( F ( \zeta ) )$ 是可解的，因为 $\operatorname { A u t } _ { k ( \zeta ) \cap F } ( F )$ 是 $\mathrm { A u t } _ { k } F$ 的一个子群，而后者是可解的，由假设。 (参见 IV.3.13 推论后面的注释。)
+**证明。** 假设 $\text{Aut}_k(F)$ 是可解的。令 $M$ 是其循环商群的阶的一个公倍数，并令 $\zeta$ 是 $k$ 的代数闭包 $\bar{k}$ 中的一个本原 $M$ 次单位根。$x^M - 1$ 在 $k$ 上的分裂域 $k(\zeta)$ 是 $k$ 上的伽罗瓦扩张（因为 $k$ 的特征为 0，所以 $x^M - 1$ 是可分的）。根据命题 6.17，扩张 $k(\zeta) \subseteq F(\zeta)$ 也是伽罗瓦的，其伽罗瓦群同构于 $\text{Aut}_{k(\zeta) \cap F}(F)$。由于 $k(\zeta) \cap F$ 是 $k$ 上的伽罗瓦扩张（练习 6.13），这个子群是正规的，从而（根据命题 IV.3.4，推论 IV.3.13）可知 $\text{Aut}_{k(\zeta)}(F(\zeta))$ 是可解的，并且其循环商群是 $\text{Aut}_k(F)$ 的循环商群之一。特别地，$k(\zeta) \subseteq F(\zeta)$ 有足够多的单位根，因此根据引理 7.13，它是一个根式扩张。那么 $k \subseteq F(\zeta)$ 也是根式扩张，因为 $k \subseteq k(\zeta)$ 本身是平凡的根式扩张。这证明了 $k \subseteq F$ 包含在一个根式扩张中，因此根据引理 7.10，它包含在一个伽罗瓦根式扩张中。
 
-由于 $k ( \zeta ) \subseteq F ( \zeta )$ 有足够的1的根，引理7.13意味着它是根式的。$k \subseteq F ( \zeta )$ 也是这样，因为 $k \subseteq k ( \zeta )$ 本身显然是根式的。这证明了 $k \subseteq F$ 包含在一个根式扩张中，根据引理7.10，它包含在一个伽罗瓦根式扩张中。
-
-相反地，假设 $k \subseteq F$ 是伽罗瓦的，并且包含在一个根号伽罗瓦扩张 $k \subseteq L$ 中。设 $M$ 是这个扩张中循环因子的阶的一个公倍数，设 $\zeta$ 是 1 的一个原始 $M$ 次根。复合 $L ( \zeta )$ 是伽罗瓦的，并且在 $k ( \zeta )$ 上是根号的（命题 6.17 和习题 7.5）；此外，它有足够的 1 的根。
+反之，假设 $k \subseteq F$ 是伽罗瓦扩张且包含在一个根式扩张 $k \subseteq L$ 中。令 $M$ 为该扩张中循环因子的阶的一个公倍数，并令 $\zeta$ 为一个本原 $M$ 次单位根。复合域 $L(\zeta)$ 在 $k(\zeta)$ 上是伽罗瓦的和根式的（命题 6.17 和练习 7.5）；此外，它有足够多的单位根。
 
 根据引理7.13，$k ( \zeta ) \subseteq L ( \zeta )$ 是可解的。由此可得 $k \subseteq L ( \zeta )$ 是可解的。实际上，这个扩张是Galois的（练习6.13）；应用基本定理到
 
@@ -18206,7 +18206,7 @@ $$
 
 7.1. 明确找到一个二次中间域的生成元，该域是 $\mathbb{Q} \subseteq \mathbb{Q}(\zeta_{10})$ 的扩张。
 
-7.2. $\triangleright$ 设 $R$ 是一个整环，且 $f(x) \in R[x]$ 是一个次数为 $n$ 的多项式。展示如何通过特殊化在 §7.3 中定义的“通用”多项式 $P_n(x)$ 来得到 $f(x)$。[§7.3]
+7.2. $\triangleright$ 设 $R$ 是一个整环，且 $f(x) \in R[x]$ 是一个次数为 $n$ 的首一多项式。展示如何通过特殊化在 §7.3 中定义的“通用”多项式 $P_n(x)$ 来得到 $f(x)$。[§7.3]
 
 7.3. 证明初等对称函数 $s _ { 1 } , \ldots , s _ { n }$（参见 §7.3）在代数上是独立的。（提示：使用练习 1.28。）
 
