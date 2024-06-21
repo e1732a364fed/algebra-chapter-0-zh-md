@@ -18447,7 +18447,7 @@ $$
 
 因此，$K$ -Aff 是这样定义的，使得映射仿射代数簇 $S$ 到其坐标环 $K \lvert S \rvert$ 的函子 $K$ -A $\mathsf { f f } ^ { o p } \to K$ -Alg 是 $K$ -Aff 的对偶范畴与 reduced, commutative, finitetype $K$ -代数子范畴之间的一个等价。
 
-### 1.4. 极限与余极限。
+### 1.4. 极限与余极限
 本书中遇到的各个泛性质都是范畴极限概念的特殊情况，值得明确提及。设 $\mathcal { F } : |  \mathsf { C }$ 是一个协变函子，其中将 I 视为一个“指标”的范畴。$\mathcal { F }$ 的极限（如果存在）是 $\mathsf { C }$ 的一个对象 $L$，它配备了对于所有对象 $I$ 的形态 $\lambda _ { I } : L \to { \mathcal { F } } ( I )$，满足以下性质。
 
 • 如果 $\alpha : I \rightarrow J$ 是 $I$ 中的一个态射，那么 $\lambda _{J} = \mathcal{F}(\alpha) \circ \lambda _{I}$ :
@@ -18532,11 +18532,11 @@ $$
 
 我毫无羞耻地依赖读者的直觉，并已经使用了这个概念，例如当我构造一个域的代数闭包（在 § VII.2.1）或每当我在提到具有“无限多个变量”的多项式环（例如，在示例 III.6.5）时。更正式地说，$\textstyle \bigcup _ { i } A _ { i }$ 由对 $( i , a _ { i } )$ 的等价类组成，其中 $a _ { i } \in A _ { i }$ 并且 $( i , a _ { i } )$ 与 $( j , a _ { j } )$ 等价，当 $i \leq j$ 且 $a _ { j } = \psi _ { i j } ( a _ { i } )$ 时。
 
-在$R$-模的背景下，可以考虑直接和$D = \bigoplus _ { i } A _ { i }$以及由形如$a _ { j } - \psi _ { i j } ( a _ { i } )$的元素生成的子模$K \subseteq D$（其中每个$A _ { i }$都与它在$D$中的像相对应）。然后商模$D / K$满足所需的泛性质，读者将自行验证。事实上，对于更一般的偏序集进行这些构造并不更困难（习题1.16）。在定向集的情况下，它们稍微更明确，行为也更好：偏序集$I$，使得对于所有$i , j \in \mathbb { I }$，都存在$k \in { \mathsf { I } }$，使得$i \leq k$，$j \le k$。
+在$R$-模的背景下，可以考虑直接和$D = \bigoplus _ { i } A _ { i }$以及由形如$a _ { i } - \psi _ { i j } ( a _ { i } )$的元素生成的子模$K \subseteq D$（其中每个$A _ { i }$都与它在$D$中的像相对应）。然后商模$D / K$满足所需的泛性质，读者将自行验证。事实上，对于更一般的偏序集进行这些构造并不更困难（习题1.16）。在定向集的情况下，它们稍微更明确，行为也更好：偏序集$I$，使得对于所有$i , j \in \mathbb { I }$，都存在$k \in { \mathsf { I } }$，使得$i \leq k$，$j \le k$。
 
 一些标准构造依赖于直接极限：例如，函数的奇点（或者更一般地，“预层茎”）是通过直接极限定义的。
 
-### 1.5. 比较函子。
+### 1.5. 比较函子
 
 在将函子引入作为“范畴之间的态射”的自然概念之后，下一步自然的是考虑“函子之间的态射”以及其他比较两个给定函子的方式。本书不需要对这些概念进行详细描述，但我想要简要地提一下几个概念和重要评注，再次是因为它们提供了一个统一的观点。
 
@@ -18674,23 +18674,23 @@ $$
 
 事实证明，一个左正合函子会产生一系列“新”的、相关的（“导出”）函子；这一极其重要的现象在同调代数中加以研究，我们将在第九章中回到这个问题。
 
-命题 1.19. 右伴随加性函子 $R$ -Mod $S$ -Mod 是左正合的。
+命题 1.19. 右伴随加性函子 $R$ -Mod $\to S$ -Mod 是左正合的。
 
 如读者将验证（练习1.27），这源于右伴随函子保持核的事实。（注意，序列的正合性相当于$\varphi : A \hookrightarrow B$将$A$与$\ker \psi$等同。）
 
-当然，相应的 $c o$ -公式成立：由于左伴随函子保持上极限，而余核是上极限，因此左伴随加性函子 $\mathcal { G } : R \mathrm { - } \mathsf { M o d } \to S .$ -Mod 必然是右正合的，在意义上，如果
+当然，相应的 $c o$ -公式成立：由于左伴随函子保持余极限，而余核是余极限，因此左伴随加性函子 $\mathcal { G } : R \mathrm { - } \mathsf { M o d } \to S$ -Mod 必然是 _右正合_ 的，在意义上，如果
 
 $$
 A { \xrightarrow { \varphi } } B { \xrightarrow { \psi } } C { \xrightarrow { } } 0
 $$
 
-如果完全一致，那么
+正合，则
 
 $$
-{ \mathcal { G } } ( A ) { \xrightarrow { { \mathcal { G } } ( \varphi ) } } { \mathcal { G } } ( B ) { \xrightarrow { { \mathcal { G } } ( \psi ) } } C { \xrightarrow { } } 0
+{ \mathscr { G } } ( A ) { \xrightarrow { { \mathscr { G } } ( \varphi ) } } { \mathscr { G } } ( B ) { \xrightarrow { { \mathscr { G } } ( \psi ) } }  \mathscr { G } (C) { \xrightarrow { } } 0
 $$
 
-也完全正确。
+也正合。
 
 ### 习题
 
@@ -18731,9 +18731,9 @@ $$
 
 证明赋值 $X \mapsto h _ { X } := \operatorname { H o m } _ { \mathbb { C } } ( \lrcorner , X )$（参见§1.2）定义了一个协变函子 $\mathsf { C } \to \mathsf { S e t } ^ { \mathsf { C } ^ { \upsilon \upsilon } }$。（以自然的方式定义对态射的作用。)[1.11, IX.1.11]
 
-1.10. $\neg$ 设 $\mathsf { C }$ 是一个范畴，$X$ 是 $\mathsf { C }$ 的一个对象，考虑逆变函子 $h _ { X } := \operatorname { H o m } _ { \mathsf { C } } ( \lnot , X )$（参见§1.2）。对于每一个逆变函子 $\mathcal { F } : \mathsf { C } \to \mathsf { S e t }$，证明在自然变换的集合 $h _ { X } \sim \mathcal { F }$ 和 ${ \mathcal { F } } ( X )$ 之间存在一个双射，定义如下。自然变换 $h _ { X } \sim \mathcal { F }$ 的数据包含对于 $\mathsf { C }$ 的每一个对象 $A$，一个从 $h _ { X } ( A ) = \operatorname { H o m } _ { \mathsf { C } } ( A , X )$ 到 ${ \mathcal { F } } ( A )$ 的态射。将 $h _ { X }$ 映射到 $\operatorname { i d } _ { X } \in h _ { X } ( X )$ 在 ${ \mathcal { F } } ( X )$ 中的像。（提示：构造指定映射的逆映射。对于每一个 $f \in { \mathcal { F } } ( X )$ 和每一个 $\varphi \in \operatorname { H o m } _ { \mathsf { C } } ( A , X )$，你如何构造 ${ \mathcal { F } } ( A )$ 的一个元素？）
+**1.10.** $\neg$ 令 $\mathsf{C}$ 是一个范畴， $X$ 是 $\mathsf{C}$ 的一个对象，并考虑反变函子 $h_X := \operatorname{Hom}_{\mathsf{C}}(\_, X)$ (参阅 §1.2)。对于每个反变函子 $\mathscr{F} : \mathsf{C} \to \mathsf{Set}$，证明在自然变换集 $h_X \leadsto \mathscr{F}$ 与 $\mathscr{F}(X)$ 之间存在一个双射，定义如下。一个自然变换 $\nu: h_X \leadsto \mathscr{F}$ 的数据包含：对于 $\mathsf{C}$ 的每一个对象 $A$，都有一个从 $h_X(A) = \operatorname{Hom}_{\mathsf{C}}(A, X)$ 到 $\mathscr{F}(A)$ 的态射 $\nu_A$。将 $\nu$ 映射到 $\mathrm{id}_X \in h_X(X)$ 在 $\mathscr{F}(X)$ 中的像 $\nu_X(\mathrm{id}_X)$。（提示：构造所述映射的一个逆。对于每个 $f \in \mathscr{F}(X)$ 和每个 $\varphi \in \operatorname{Hom}_{\mathsf{C}}(A, X)$，你如何构造 $\mathscr{F}(A)$ 的一个元素？）
 
-这个结果被称为Yoneda引理。[1.11, IX.2.17]
+这个结果被称为*米田引理* (Yoneda lemma)。[1.11, IX.2.17]
 
 1.11. (参见练习1.9。) 设 $\mathsf { C }$ 是一个小范畴。一个逆变函子 $\mathrm { C }  \mathsf { S e t }$ 是可表示的，如果它自然同构于一个函子 $h _ { X }$（参见§1.2）。在这种情况下，$X$ “表示”这个函子。证明 $\mathsf { C }$ 与 ${ \mathsf { S e t } } ^ { \mathsf { C } ^ { o p } }$ 中可表示函子的子范畴等价。（提示：Yoneda；参见练习1.10。）
 
@@ -18817,9 +18817,10 @@ $$
 
 对于 $R$ 的每个素理想 $\mathfrak { p }$ ，它都是正合的，当且仅当它对于每个极大理想 $\mathfrak { p }$ 也是正合的。（参见练习 V.4.12。）
 
-1.27. $\triangleright$ 设 $R$ ， $S$ 是环。证明右伴随函子 $R – { \mathsf { M o d } }  S$ -Mod 是左正合的，并且左伴随函子是右正合的。[§1.5]
+1.27. $\triangleright$ 设 $R$ ， $S$ 是环。证明右伴随函子 $R – { \mathsf { M o d } }  \to S$ -Mod 是左正合的，并且左伴随函子是右正合的。[§1.5]
 
-1.28. $\neg$ 设 $\mathsf { C }$ 是一个范畴，考虑恒等函子 $\mathcal { S } : \mathsf { C } \to \mathsf { C }$。证明自然变换的集合 $\operatorname { E n d } ( { \mathcal { S } } )$ 在复合运算下构成一个交换环。这称为 $\mathsf { C }$ 的中心。如果 $R$ 是一个环，证明 $R$-Mod 的中心与 $R$ 的中心同构。[§3.15]
+**1.28.** $\neg$ 令 $\mathsf{C}$ 是一个范畴，并考虑恒等函子 $\mathscr{J} : \mathsf{C} \to \mathsf{C}$。证明自然变换 $\mathscr{J} \rightsquigarrow \mathscr{J}$ 的集合 $\mathrm{End}(\mathscr{J})$ 在复合运算下是一个交换幺半群。这被称为 $\mathsf{C}$ 的*中心*。如果 $R$ 是一个环，证明 $R$-Mod 的中心以一种自然的方式构成一个环，并且它同构于 $R$ 的中心。
+[3.15]
 
 ## 2. 张量积和Tor函子
 
@@ -19227,7 +19228,7 @@ $$
 （再次回忆张量与滤合运算交换，因此与直和运算交换，因此 $R ^ { \oplus m } \otimes _ { R } N \cong N ^ { \oplus m }$）；然后取这个复形的同调（参见§III.7.3）。令人惊讶的是，这将不依赖于（在同构意义下）所选择的自由分解，因此我们可以定义
 
 $$
-\operatorname { T o r } _ { i } ^ { R } ( M , N ) : = H _ { i } ( M _ { \bullet } \otimes N ) .
+\operatorname { T o r } _ { i } ^ { R } ( M , N ) : = H _ { i } ( M _ { \bullet } \otimes_R N ) .
 $$
 
 例如，根据这个定义 $\operatorname { T o r } _ { 0 } ^ { R } ( M , N ) \cong M \otimes _ { R } N$（习题 2.14），并且当 $N$ 是平坦的时，对于所有 $i > 0$ 和所有 $M$，有 $\mathrm { T o r } _ { i } ^ { R } ( M , N ) = 0$（因为此时通过 $N$ 的张量化是一个正合的函子，所以张量化 $M$ 的解析返回一个正合序列，因此没有同调）。事实上，这证明了 Tor 函子的一个显著性质：如果对于所有 $M$，有 $\mathrm { T o r } _ { 1 } ^ { R } ( M , N ) = 0$，那么对于所有模 $M$ 和所有 $i > 0$，有 $\mathrm { T o r } _ { i } ^ { R } ( M , N ) = 0$。确实，此时 $N$ 是平坦的。
@@ -19664,7 +19665,8 @@ $$
 
 3.15. 设 $f : R \rightarrow S$ 是 (交换) 环的同态，并且假设函子 $f_* : S\text{-Mod} \rightarrow R\text{-Mod}$ 是两个加性范畴之间的等价。
 
-证明存在环同态 $\overline { { g } } : S  \mathrm { E n d } _ { \mathsf { A b } } ( R )$，使得复合映射 $R \to S \to \operatorname { E n d } _ { \mathsf { A b } } ( R )$ 是将 $R$ 实现为它自身作为模的同态（即命题 III.2.7 中研究的同态）。• 利用 $S$ 是交换的和 $f _ { * }$ 是完全忠实的这一事实，推导出 ${ \overline { { g } } } ( S )$ 与 $R$ 同构。由此推导出 $f$ 有左逆元 $g : S  R$ 。• 因此，$f _ { * } \circ g _ { * }$ 自然同构于恒等映射；特别是，$f _ { * } \circ$ $g _ { * } ( S ) \cong S$ 作为 $R$-模。证明这蕴含 $g$ 是单射。（若 $a \in \ker g$ ，证明 $a$ 在 $f _ { * } \circ g _ { * } ( S )$ 的零化器中。）由此得出 $f$ 是同构映射。
+证明存在环同态 $\overline { { g } } : S \to \mathrm { E n d } _ { \mathsf { A b } } ( R )$，使得复合映射 $R \to S \to \operatorname { E n d } _ { \mathsf { A b } } ( R )$ 是将 $R$ 实现为它自身作为模的同态（即命题 III.2.7 中研究的同态）。• 利用 $S$ 是交换的和 $f _ { * }$ 是完全忠实的这一事实，推导出 ${ \overline { { g } } } ( S )$ 与 $R$ 同构。由此推导出 $f$ 有左逆元 $g : S \to R$ 。• 因此，$f _ { * } \circ g _ { * }$ 自然同构于恒等映射；然后就有，$f _ { * } \circ$ $g _ { * } ( S ) \cong S$ 作为 $S$-模。证明这蕴含 $g$ 是单射。（若 $a \in \ker g$ ，证明 $a$ 在 $g _ { * } \circ f _ { * } ( S )$ 的零化子中。）
+由此得出 $f$ 是同构映射。
 
 两个环是Morita等价当且仅当它们的左模范畴是等价的。这个练习的结果是这样一个事实的特殊情况：两个交换环是Morita等价当且仅当它们是同构的。事实上，这个更一般的陈述可能比这个练习中处理的特殊情况更容易（！）证明。回想（练习1.28）如果$R$是任何环，那么$R$-Mod的中心与$R$的中心同构。从这个事实不难推导出，如果$R$-Mod和$S$-Mod是等价的，那么$R$和$S$的中心是同构的。所以如果两个交换环$R$和$S$是Morita等价的，那么它们必须是同构的。交换性在这个陈述中至关重要：例如，可以证明任何环$R$对于所有$n > 0$都与矩阵环$\mathcal { M } _ { n , n } ( R )$ Morita等价。
 
@@ -19876,7 +19878,7 @@ $$
 然后有 $I = ( i _ { 1 } , \dots , i _ { \ell } )$
 
 $$
-\lambda _ { i _ { 1 } \dots i _ { \ell } } = { \overline { { \varphi _ { I } } } } \left( \sum _ { 1 \leq j _ { 1 } < \dots < j _ { \ell } \leq r } \lambda _ { j _ { 1 } \dots j _ { \ell } } e _ { j _ { 1 } } \wedge \dots \wedge e _ { j _ { \ell } } = 0 ; \right) = { \overline { { \varphi _ { I } } } } ( 0 ) = 0 .
+\lambda _ { i _ { 1 } \dots i _ { \ell } } = { \overline { { \varphi _ { I } } } } \left( \sum _ { 1 \leq j _ { 1 } < \dots < j _ { \ell } \leq r } \lambda _ { j _ { 1 } \dots j _ { \ell } } e _ { j _ { 1 } } \wedge \dots \wedge e _ { j _ { \ell } } = 0  \right) = { \overline { { \varphi _ { I } } } } ( 0 ) = 0 .
 $$
 
 这表明在生成元 $e _ { i _ { 1 } } \wedge \cdots \wedge e _ { i _ { \ell } }$ 之间不存在非平凡的线性依赖关系，正如所声称的那样。$\boxed{}$
@@ -19919,15 +19921,15 @@ $$
 
 这个定义通过线性扩张到整个 $\mathbb { \Lambda } _ { k } ^ { 2 } ( V )$ 。
 
-类似地，如果 $e _ { 1 } , \ldots , e _ { \ell }$ 生成 $M$ ，那么对称幂 $\mathbb { S } _ { R } ^ { \imath } ( M )$ 是由所有张量的（像 $2 0$ 的）生成的
+与交错情况类似，如果 $e _ { 1 } , \ldots , e _ { r }$ 生成 $M$ ，那么 _对称_ 幂 $\mathbb { S } _ { R } ^ { \ell } ( M )$ 是由所有如下张量（像 $^{20}$ 的）生成的
 
 $$
-e _ { 1 } \otimes \cdots \otimes e _ { \ell }
+e _ { i_1 } \otimes \cdots \otimes e _ { i_\ell }
 $$
 
 当 $1 \leq i _ { 1 } \leq \cdot \cdot \cdot \leq i _ { \ell } \leq r$ 时。在这种情况下，所有 $\mathbb { S } _ { R } ^ { \ell } ( M )$ 通常都不为零。
 
-### 4.3. 一个很小的绕道： graded 代数
+### 4.3. 很小的绕道： graded 代数
 我们已经得到了模 $M$ 的张量、对称、外积，对于每一个非负整数 $\ell$。碰巧，在每一种情况下，同时考虑“所有的 $\ell$”都是有用的。通过这样做，我们得到的结构是非常重要概念的特殊情况，这个概念值得我们用更多的篇幅来讨论，但我们没有足够的空间。
 
 一个 graded ring 是一个（不一定交换的）环 $S$，它带有一种分解
@@ -20097,17 +20099,17 @@ $$
 
 4.2. 定义 $\mathbb { T } _ { R } ^ { \ell }$ ，$\mathbb { S } _ { R } ^ { \ell }$ ，$\textstyle \bigwedge _ { R } ^ { \ell }$ 在 $R$ -线性映射上的作用，将这些概念构造成协变函子。
 
-4.3. 设 $I$ 是 $k \lfloor x , y \rfloor$ 中的理想 $( x , y )$；因此 $I$ 中的每个元素都可以写成（当然，不唯一地）形式 $f x + g y$，其中 $f , g \in k \vert x , y \vert$。定义一个函数 $\varphi : I \times I \to k$，通过规定
+4.3. 设 $I$ 是 $k [ x , y ]$ 中的理想 $( x , y )$；因此 $I$ 中的每个元素都可以写成（当然，不唯一地）形式 $f x + g y$，其中 $f , g \in k  [x , y ]$。定义一个函数 $\varphi : I \times I \to k$，通过规定
 
 $$
 \varphi ( f _ { 1 } x + g _ { 1 } y , f _ { 2 } x + g _ { 2 } y ) : = f _ { 1 } ( 0 , 0 ) g _ { 2 } ( 0 , 0 ) - f _ { 2 } ( 0 , 0 ) g _ { 1 } ( 0 , 0 ) .
 $$
 
 证明 $\varphi$ 是良定义的。   
-• 证明 $\varphi$ 是 $k \lfloor x , y \rfloor$ -双线性和反对称的。   
-• 证明 $I \mathbb { \Delta } _ { k [ x , y ] } ( I ) \neq 0$ 。
+• 证明 $\varphi$ 是 $k [x , y]$ -双线性和反对称的。   
+• 证明 $\mathbb { \Lambda }^2 _ { k [ x , y ] } ( I ) \neq 0$ 。
 
-请注意，$I$ 作为 $k \lfloor x , y \rfloor$ -模的秩为 $^ { 1 }$；如果它是自由的，它与自身的楔积必须消失。
+请注意，$I$ 作为 $k [ x , y ]$  -模的秩为 $1$；如果它是自由的，它的二次外幂必须消失，根据 引理 4.3。
 
 4.4. 设 $F _ { 1 }$ 和 $F _ { 2 }$ 是有限秩的自由 $R$ -模。
 
@@ -20541,9 +20543,9 @@ $$
 R ^ { \oplus T } \to R ^ { \oplus S } \to M \to 0 .
 $$
 
-对偶化后，$M ^ { \vee }$ 被实现为诱导映射 $R ^ { S }  R ^ { T }$ 的核；因此 $M ^ { \vee }$ 可以与一个 $R ^ { S }$ 的子模识别。后者没有非零的扭转，所以 $M ^ { \vee }$ 也没有。
+对偶化后，$M ^ { \vee }$ 被实现为诱导映射 $R ^ { S } \to  R ^ { T }$ 的核；因此 $M ^ { \vee }$ 可以与一个 $R ^ { S }$ 的子模识别。后者没有非零的扭转，所以 $M ^ { \vee }$ 也没有。
 
-勤奋的读者已经在第六节的第四个练习中证明了这一点，而且可能比我们刚刚所用的方法更直接，但没关系。无论如何，请记住对偶化会消除挠率。通过完成第五节的第十一个练习来练习这一点。
+勤奋的读者已经在第六节的第四个练习中证明了这一点，而且可能比我们刚刚所用的方法更直接，但没关系。无论如何，请记住 对偶化会消除 (整环上的)挠。通过完成 练习5.11 来实践这一点。
 
 即使并非每个模都是另一个模的对偶，我们可能会想知道任意给定的模 $M$ 是否与适当选择的对偶存在某种关系，而事实确实如此：存在一个到“双重对偶”的规范映射。
 
@@ -20559,7 +20561,7 @@ $$
 
 将 $( f , m )$ 发送到 $f ( m )$ 。对于每个 $m \in M$ ，我们得到一个 $R$ -线性映射 $M ^ { \vee }  R$ ， $f \mapsto f ( m )$ ，换句话说，一个 $M ^ { \vee \vee }$ 的元素 $\omega ( m )$ 。可以立即验证 $\omega$ 是 $R$ -线性的。
 
-根据命题 5.16，$M ^ { \vee \vee }$ 是无挠 的。事实上，双重对偶构造是一种标准的“清理”模的方法，去除其 挠。
+根据命题 5.16，$M ^ { \vee \vee }$ 是(整环上)无挠 的。事实上，双重对偶构造 是一种标准的“清理”模的方法，去除其 挠。
 
 映射 $\omega$ 即使在扭转不是问题时也很有趣。正如我们在推论 5.7 中所见，如果 $F$ 是一个有限秩的自由 $R$ -模，那么 $F$ 的基的选择确定了一个同构 $F \cong F ^ { \vee }$；但这确实取决于基，所以它不是一个规范同构。做两次，
 
@@ -20742,7 +20744,7 @@ $$
 如果它是正合的并且 $Q$ 是单射的，那么序列必然分裂。例如，$\mathbb { Z }$ 不是一个单射的 $\mathbb { Z }$ -模，因为正合序列
 
 $$
-0 \longrightarrow \mathbb { Z } \longrightarrow \mathbb { Z } \xrightarrow { \cdot 2 } \frac { \mathbb { Z } } { ( 2 ) } \longrightarrow 0
+0 \longrightarrow \mathbb { Z } \xrightarrow{\space\space\space \cdot 2 \space\space} \mathbb { Z } \longrightarrow   \frac { \mathbb { Z } } { ( 2 ) } \longrightarrow 0
 $$
 
 明显不会分裂。
@@ -21075,7 +21077,7 @@ $$
 最后，符号 $\mathrm { E x t }$ 是因为可以在 $\mathrm { E x t } _ { R } ^ { 1 } ( M , N )$ 和 $M$ 通过 $N$ 的扩张的等价类之间构造一个双射，即，正合序列
 
 $$
-0 \longrightarrow M \longrightarrow E \longrightarrow N \longrightarrow 0
+0 \longrightarrow N \longrightarrow E \longrightarrow M \longrightarrow 0
 $$
 
 对适合的同构关系取模（参见 IV.5.2）。例如，直和 $E = M \oplus N$ 对应于这个 Ext 群的 0 元素。勤奋的读者将在习题中构造这个双射。
@@ -21094,7 +21096,7 @@ $$
 
 6.5. 证明有限生成的投射模的对模是投射的。证明有限生成的投射模是自反的（即与其对模同构）。
 
-6.6. $\neg$ 如果 $f : S \rightarrow R$ 是一个环同态，且 $P$ 是一个 $S$ -投射模，那么 $f ^ { * } ( P )$ 是一个 $R$ -投射模。[§6.3]
+6.6. $\neg$ 证明如果 $f : S \rightarrow R$ 是一个环同态，且 $P$ 是一个 $S$ -投射模，那么 $f ^ { * } ( P )$ 是一个 $R$ -投射模。[§6.3]
 
 6.7. $\triangleright$ 使用 adjunction 证明射影模是平坦的。(提示：$R$ -Mod 有足够的单射，以及练习 6.3。) [§6.2, 6.8]
 
