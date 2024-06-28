@@ -1,6 +1,6 @@
 以机翻为底本，边学边校正。
 
-已粗校完成 第 I 章。
+已粗校完成 第 I, III 章。
 
 已对全书据勘误
 https://www.math.fsu.edu/~aluffi/algebraerrata.2016/Errata.html
@@ -16,6 +16,7 @@ https://www.math.fsu.edu/~aluffi/algebraerrata.2016/Errata.html
 将该角标移除。
 - 因为在 markdown 中无法使用 tikz, 交换图一般均使用 引用图片的形式。
 - 斜体纯文字部分 本应使用 latex 的 textit, 但是由于编辑太麻烦，暂时先使用 markdown 的 前后下划线表示
+- 对于 幂集，原书中使用的均是 mathscr, 但是我认为 mathcal 也行，且更常用。因此 两种字体我都有采用。
 
 ## commit message 约定：
 
