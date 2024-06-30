@@ -8,6 +8,8 @@
 https://www.math.fsu.edu/~aluffi/algebraerrata.2016/Errata.html
 进行了校正。
 
+全markdown 共 一百二十多万字符。
+
 ## 译法
 
 英语中，为表示复杂的 逻辑，常常使用后置定语从句，为了清晰，本译本在大多数情况下会按惯例原样翻译，而不是按中文语序进行前置。
