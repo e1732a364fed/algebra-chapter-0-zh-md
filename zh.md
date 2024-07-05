@@ -379,7 +379,7 @@
 7.2. 导出函子的泛性质 643   
 7.3. 求上同调 645   
 7.4. 导出函子的长正合列 647   
-7.5. 关联 $\mathcal { F }$ ，$\mathsf { L } _ { i } \mathcal { F }$ ，$\mathsf { R } ^ { i } \mathcal { F }$ 653   
+7.5. 关联 $\mathscr { F }$ ，$\mathsf { L } _ { i } \mathscr { F }$ ，$\mathsf { R } ^ { i } \mathscr { F }$ 653   
 7.6. 例子：一个小群上同调 655   
 习题 658   
 8. 双复形 661   
@@ -2370,7 +2370,7 @@ $$
 \begin{array}{c} y x = { \binom { 1 } { 3 } } \quad 2 \quad 3 \\ { 2 \quad 1 } \end{array}
 $$
 
-正如读者可以检查的那样。使用这些关系，我们看到任何 $x$ 和 $y$ 的任意组合的积 $x ^ { i _ { 1 } } y ^ { i _ { 2 } } x ^ { i _ { 3 } } y ^ { i _ { 4 } } \cdot \cdot \cdot$ 都可以简化为一个积 $x ^ { \ i } y ^ { \ j }$ ，其中 $0 \leq i \leq 1$ ， $0 \le j \le 2$ ，即简化为六个元素中的一个
+正如读者可以检查的那样。使用这些关系，我们看到任何 $x$ 和 $y$ 的任意组合的积 $x ^ { i _ { 1 } } y ^ { i _ { 2 } } x ^ { i _ { 3 } } y ^ { i _ { 4 } } \cdots$ 都可以简化为一个积 $x ^ { \ i } y ^ { \ j }$ ，其中 $0 \leq i \leq 1$ ， $0 \le j \le 2$ ，即简化为六个元素中的一个
 
 $$
 e , \quad y , \quad y ^ { 2 } , \quad x , \quad x y , \quad x y ^ { 2 } :
@@ -2457,7 +2457,7 @@ $$
 读者应仔细检查 $\mathbb { Z } / n \mathbb { Z }$ 恰好由 $n$ 个元素组成，即
 
 $$
-[ 0 ] _ { n } , \quad [ 1 ] _ { n } , \quad \cdot \cdot \cdot , \quad [ n - 1 ] _ { n } .
+[ 0 ] _ { n } , \quad [ 1 ] _ { n } , \quad \cdots , \quad [ n - 1 ] _ { n } .
 $$
 
 我们可以利用 $\mathbb{Z}$ 上的群结构来诱导 $\mathbb{Z} / n \mathbb{Z}$ 上的（阿贝尔）群结构。为此，我们定义 $\mathbb{Z} / n \mathbb{Z}$ 上的运算 $^+$，通过设置 $\forall a , b \in \mathbb{Z}$
@@ -2605,7 +2605,7 @@ $$
 
 2.4. 通过标记正方形的顶点来定义一个同态 $D _ { 8 }  S _ { 4 }$，就像我们在§2.2中对三角形所做的那样。列出这个同态像中的8个排列。
 
-2.5. $\triangleright$ 描述所有二面体群 $D _ { 2 n }$ 的生成元和关系。(提示：设 $x$ 为关于通过正 $n$ -边形的中心和一个顶点的直线的反射，设 $y$ 为逆时针旋转 $2 \pi / n$ 。群 $D _ { 2 n }$ 将由 $x$ 和 $y$ 生成，并满足三个关系14。为证明这些关系确实确定 $ { \boldsymbol { D } } _ { 2 n }$ ，使用它们来证明任何积 $x ^ { i _ { 1 } } y ^ { i _ { 2 } } x ^ { i _ { 3 } } y ^ { i _ { 4 } } \cdot \cdot \cdot$ 等于 $x ^ { i } y ^ { j }$，其中 $0 \leq i \leq 1$，$0 \leq j < n$。) [8.4, §IV.2.5]
+2.5. $\triangleright$ 描述所有二面体群 $D _ { 2 n }$ 的生成元和关系。(提示：设 $x$ 为关于通过正 $n$ -边形的中心和一个顶点的直线的反射，设 $y$ 为逆时针旋转 $2 \pi / n$ 。群 $D _ { 2 n }$ 将由 $x$ 和 $y$ 生成，并满足三个关系14。为证明这些关系确实确定 $ { \boldsymbol { D } } _ { 2 n }$ ，使用它们来证明任何积 $x ^ { i _ { 1 } } y ^ { i _ { 2 } } x ^ { i _ { 3 } } y ^ { i _ { 4 } } \cdots$ 等于 $x ^ { i } y ^ { j }$，其中 $0 \leq i \leq 1$，$0 \leq j < n$。) [8.4, §IV.2.5]
 
 2.6. $\triangleright$ 对于每一个正整数 $n$ 构造一个包含元素 ${ g }$ ， $h$ 的群，使得 $| g | = 2$ ， $| h | = 2$ ，并且 $| g h | = n$ 。(提示：对于 $n > 1$ ， $ { \boldsymbol { D } } _ { 2 n }$ 就可以。) [§1.6]
 
@@ -3121,7 +3121,7 @@ $$
 
 读者将想起我们在示例 I.3.7 中考虑的范畴：这里的唯一区别在于我们将一个范畴（即 Grp）的对象和态射与另一个（相关）范畴的对象和态射（即 Set）混合。我们考虑所有可能的函数 $A  G$ 是一种实现方式，即我们对 $A$ 没有先验的群论信息：我们不想对 $A$ 的元素一旦映射到群 $G$ 后可能发生的事情施加任何限制；因此我们一次性考虑所有可能性。
 
-在集合$A$上的自由群$F(A)$将是${ \mathcal { F } } ^ { A }$中的始对象（群分量）。这种选择实现了$A$应该以“最有效的方式”映射到$F(A)$的事实：将$A$映射到群的其他任何方式都可以通过组合与群同态来从这个映射中重建。在泛性质的语言中，我们可以这样表述：如果存在一个集合函数$j : A \to F ( A )$，使得对于所有群$G$和集合函数$f : A  G$，存在唯一的群同态$\varphi : F ( A )  G$，使得图式成立，那么$F ( A )$是在集合$A$上的自由群。根据一般的无意义（命题I.5.4），这种泛性质定义了$F ( A )$（如果这个群存在的话），直到同构。但是$F ( A )$存在吗？
+在集合$A$上的自由群$F(A)$将是${ \mathscr { F } } ^ { A }$中的始对象（群分量）。这种选择实现了$A$应该以“最有效的方式”映射到$F(A)$的事实：将$A$映射到群的其他任何方式都可以通过组合与群同态来从这个映射中重建。在泛性质的语言中，我们可以这样表述：如果存在一个集合函数$j : A \to F ( A )$，使得对于所有群$G$和集合函数$f : A  G$，存在唯一的群同态$\varphi : F ( A )  G$，使得图式成立，那么$F ( A )$是在集合$A$上的自由群。根据一般的无意义（命题I.5.4），这种泛性质定义了$F ( A )$（如果这个群存在的话），直到同构。但是$F ( A )$存在吗？
 
 ![](images/34.jpg)
 
@@ -3143,7 +3143,7 @@ $$
 我们用并置表示
 
 $$
-w = a _ { 1 } a _ { 2 } \cdot \cdot \cdot a _ { n } ,
+w = a _ { 1 } a _ { 2 } \cdots a _ { n } ,
 $$
 
 其中每个“字母” $u _ { i }$ 要么是元素 $a \in A$，要么是元素 $a ^ { - 1 } \in A ^ { \prime }$ 。我将 $A$ 上的词集记为 $W ( A )$；字母的数量 $n$ 是 $w$ 的“长度”；我在 $W ( A )$ 中包含“空词” $w = ( )$，它由 $n o$ 个字母组成。
@@ -3271,7 +3271,7 @@ $$
 回忆（§3.5）这个群“等同于”$^{24}$ $\mathbb{Z}^{n}$（但我们将其视为一个直积）。有一个函数 $j : A \to \mathbb{Z}^{\oplus n}$，它被定义为
 
 $$
-j ( i ) : = ( 0 , \cdot \cdot \cdot , 0 , \underset { i \mathrm { - } \mathrm { t h ~ p l a c e } } { 1 } , 0 , \cdot \cdot \cdot , 0 ) \in \mathbb { Z } ^ { \oplus n } .
+j ( i ) : = ( 0 , \cdots , 0 , \underset { i \mathrm { - } \mathrm { t h ~ p l a c e } } { 1 } , 0 , \cdots , 0 ) \in \mathbb { Z } ^ { \oplus n } .
 $$
 
 命题 5.4. 对于 $A = \{ 1 , \cdots , n \}$ ，$\mathbb { Z } ^ { \oplus n }$ 是以 $A$ 为基的自由阿贝尔群。
@@ -3282,7 +3282,7 @@ $$
 \begin{array} { l } { { ( m _ { 1 } , \cdots , m _ { n } ) = ( m _ { 1 } , 0 , \cdots , 0 ) + ( 0 , m _ { 2 } , 0 , \cdots , 0 ) + \cdots + ( 0 , \cdots , 0 , m _ { n } ) \nonumber } } \\ { { \qquad = m _ { 1 } ( 1 , 0 , \cdots , 0 ) + m _ { 2 } ( 0 , 1 , 0 , \cdots , 0 ) + \cdots + m _ { n } ( 0 , \cdots , 0 , 1 ) \nonumber } } \\ { { \qquad = m _ { 1 } j ( 1 ) + \cdots + m _ { n } j ( n ) , } } \end{array}
 $$
 
-当且仅当所有 $m _ { i }$ 都为 $0$ 时，$( m _ { 1 } , \cdot \cdot \cdot , m _ { n } ) = ( 0 , \cdot \cdot \cdot , 0 )$。
+当且仅当所有 $m _ { i }$ 都为 $0$ 时，$( m _ { 1 } , \cdots , m _ { n } ) = ( 0 , \cdots , 0 )$。
 
 现在令 $f : A \to G$ 是从 $A = \{ 1, \cdots, n \}$ 到一个阿贝尔群 $G$ 的任意函数。我定义 $\varphi : \mathbb{Z}^{\oplus n} \to G$ 为
 
@@ -3338,9 +3338,9 @@ $$
 
 ### 习题
 
-5.1. 在§5.2中定义的范畴${ \mathcal { F } } ^ { A }$是否有终对象？如果是，它们是什么？
+5.1. 在§5.2中定义的范畴${ \mathscr { F } } ^ { A }$是否有终对象？如果是，它们是什么？
 
-5.2. 由于平凡群$T$在Grp中是始的，人们可能会认为对于每一个$A$，$( e , T )$应该在${ \mathcal { F } } ^ { A }$中是始的：$e$会被定义为将$A$的每一个元素映射到$T$中的（唯一的）元素；并且对于任何其他群$G$，存在一个唯一的同态$T  G$。解释为什么$( e , T )$不是${ \mathcal { F } } ^ { A }$中的始对象（除非$A = \emptyset$）。
+5.2. 由于平凡群$T$在Grp中是始的，人们可能会认为对于每一个$A$，$( e , T )$应该在${ \mathscr { F } } ^ { A }$中是始的：$e$会被定义为将$A$的每一个元素映射到$T$中的（唯一的）元素；并且对于任何其他群$G$，存在一个唯一的同态$T  G$。解释为什么$( e , T )$不是${ \mathscr { F } } ^ { A }$中的始对象（除非$A = \emptyset$）。
 
 5.3. $\triangleright$  利用自由群的泛性质证明映射 $j : A \to F ( A )$ 对所有集合 $A$ 都是单射的。（提示：只需证明对于 $A$ 的任意两个元素 $a$ ，$b$ ，存在一个群 $G$ 和一个集合函数 $f : A \to G$ 使得 $f ( a ) \neq f ( b )$ 。为什么？你是如何构造 $f$ 和 $G$ 的？[§III.6.3]
 
@@ -3665,12 +3665,12 @@ $$
 • 设 $H$，$H ^ { \prime }$ 是群 $G$ 的子群。证明 $H \cup H ^ { \prime }$ 是 $G$ 的子群当且仅当 $H \subseteq H ^ { \prime }$ 或 $H ^ { \prime } \subseteq H$。  
 • 另一方面，设 $H _ { 0 } \subseteq H _ { 1 } \subseteq H _ { 2 } \subseteq \cdots$ 是群 $G$ 的子群。证明 $\cup _ { i \geq 0 } H _ { i }$ 是 $G$ 的子群。
 
-6.7. $\neg$ 证明内自同构（参见练习4.8）是 $\operatorname { A u t } ( G )$ 的一个子群；这个子群记作 ${ \mathrm { I n n } } ( G )$ 。证明 $\operatorname { I n n } ( G )$ 是循环群当且仅当 $\operatorname { I n n } ( G )$ 是平凡的当且仅当 $G$ 是阿贝尔群。（提示：假设 $\operatorname { I n n } ( G )$ 是循环群；使用练习4.8中的记号，这意味着存在一个元素 $a \in G$ 使得 $\forall g \in G \ \exists n \in \mathbb { Z } \ \gamma _ { g } = \gamma _ { a } ^ { n }$ 。特别是，$g a g ^ { - 1 } = a ^ { n } a a ^ { - n } = a$ 。因此 $a$ 与 $G$ 中的每一个 $g$ 都交换。因此 $\cdot \cdot \cdot \cdot$ ）推论如果 $\operatorname { A u t } ( G )$ 是循环群，那么 $G$ 是阿贝尔群。[7.10, IV.1.5]
+6.7. $\neg$ 证明内自同构（参见练习4.8）是 $\operatorname { A u t } ( G )$ 的一个子群；这个子群记作 ${ \mathrm { I n n } } ( G )$ 。证明 $\operatorname { I n n } ( G )$ 是循环群当且仅当 $\operatorname { I n n } ( G )$ 是平凡的当且仅当 $G$ 是阿贝尔群。（提示：假设 $\operatorname { I n n } ( G )$ 是循环群；使用练习4.8中的记号，这意味着存在一个元素 $a \in G$ 使得 $\forall g \in G \ \exists n \in \mathbb { Z } \ \gamma _ { g } = \gamma _ { a } ^ { n }$ 。特别是，$g a g ^ { - 1 } = a ^ { n } a a ^ { - n } = a$ 。因此 $a$ 与 $G$ 中的每一个 $g$ 都交换。因此 $\cdots \cdot$ ）推论如果 $\operatorname { A u t } ( G )$ 是循环群，那么 $G$ 是阿贝尔群。[7.10, IV.1.5]
 
 6.8. 证明阿贝尔群$G$是有限生成的当且仅当存在一个满态射
 
 $$
-\underbrace { \mathbb { Z } \oplus \cdot \cdot \cdot \oplus \mathbb { Z } } _ { n { \mathrm { ~ t i m e s } } } \twoheadrightarrow G
+\underbrace { \mathbb { Z } \oplus \cdots \oplus \mathbb { Z } } _ { n { \mathrm { ~ t i m e s } } } \twoheadrightarrow G
 $$
 
 对于某个 $n$ 。
@@ -4888,7 +4888,7 @@ $$
 9.14. ¬ 证明模群 $\mathrm { P S L _ { 2 } ( Z ) }$ 同构于积 $C _ { 2 } *$ $C _ { 3 }$ .（回想一下，模群 $\mathrm { P S L _ { 2 } ( Z ) }$ 由 $x \ = \ \left( \begin{array} { l l } { { 0 \ - 1 } \\ { { 1 \ } } \end{array} \right)$ 和 $\boldsymbol { y } = \left( \begin{array} { l l } { 1 } & { - 1 }\\ { 1 } & { 0 } \end{array} \right)$ 生成，满足在 $\mathrm { P S L _ { 2 } ( Z ) }$ 中 $x ^ { 2 } = y ^ { 3 } = e$ 的关系（习题 7.5）。任务是证明 $x$ 和 $y$ 满足其他任何关系：这将表明 $\mathrm { P S L _ { 2 } ( Z ) }$ 由 $( x , y | x ^ { 2 } , y ^ { 3 } )$ 给出，我们已经同意这是 $C _ { 2 } * C _ { 3 }$ 的表示（习题 3.8 或 8.7）。将其简化为验证没有积
 
 $$
-( y ^ { \pm 1 } x ) ( y ^ { \pm 1 } x ) \cdot \cdot \cdot ( y ^ { \pm 1 } x ) \quad \mathrm { o r } \quad ( y ^ { \pm 1 } x ) ( y ^ { \pm 1 } x ) \cdot \cdot \cdot ( y ^ { \pm 1 } x ) y ^ { \pm 1 }
+( y ^ { \pm 1 } x ) ( y ^ { \pm 1 } x ) \cdots ( y ^ { \pm 1 } x ) \quad \mathrm { o r } \quad ( y ^ { \pm 1 } x ) ( y ^ { \pm 1 } x ) \cdots ( y ^ { \pm 1 } x ) y ^ { \pm 1 }
 $$
 
 一个或多个因子可以等于单位元。后者的验证传统上是通过巧妙地利用一个运算来完成的42。让模群在无理实数集上作用。
@@ -4903,7 +4903,7 @@ $$
 y ( r ) = 1 - { \frac { 1 } { r } } , \quad y ^ { - 1 } ( r ) = { \frac { 1 } { 1 - r } } , \quad y x ( r ) = 1 + r , \quad y ^ { - 1 } x ( r ) = { \frac { r } { 1 + r } } .
 $$
 
-现在通过逐个案例分析来完成验证。例如，一个积 $( y ^ { \pm 1 } x ) ( y ^ { \pm 1 } x ) \cdot \cdot \cdot ( y ^ { \pm 1 } x ) y$ 不能等于 $\mathrm { P S L _ { 2 } ( Z ) }$ 中的单位元，因为如果它相等，它会在 $\mathbb { R } \setminus \mathbb { Q }$ 上起单位元的作用，而如果 $r < 0$ ，那么 $y ( r ) > 0$ ，并且 $y x$ 和 $y ^ { - 1 } x$ 都将正无理数映射到正无理数。) [3.8]
+现在通过逐个案例分析来完成验证。例如，一个积 $( y ^ { \pm 1 } x ) ( y ^ { \pm 1 } x ) \cdots ( y ^ { \pm 1 } x ) y$ 不能等于 $\mathrm { P S L _ { 2 } ( Z ) }$ 中的单位元，因为如果它相等，它会在 $\mathbb { R } \setminus \mathbb { Q }$ 上起单位元的作用，而如果 $r < 0$ ，那么 $y ( r ) > 0$ ，并且 $y x$ 和 $y ^ { - 1 } x$ 都将正无理数映射到正无理数。) [3.8]
 
 9.15. $\neg$ 证明每个（有限生成的）群 $G$ 在任何相应的凯莱图中自由作用。（参见练习 8.6。在定向图上的作用定义为在保持关联性的顶点集上的作用：如果顶点 $v _ { 1 }$ ， $v _ { 2 }$ 之间有一条边，那么对于每个 $g \in G$ ， $g v _ { 1 }$ ， $g v _ { 2 }$ 之间也必须有一条边。）特别是，得出每个自由群在树中自由作用。[9.16]
 
@@ -5207,7 +5207,7 @@ $$
 在 $x$ 上的实数多项式集合记为 $R[x]$。由于所有但有限个 $a_i$ 假设为 $0$，通常采用符号
 
 $$
-f ( x ) = a _ { 0 } + a _ { 1 } x + \cdot \cdot \cdot + a _ { n } x ^ { n }
+f ( x ) = a _ { 0 } + a _ { 1 } x + \cdots + a _ { n } x ^ { n }
 $$
 
 对于 $\textstyle \sum _ { i \geq 0 } a _ { i } x ^ { i }$ ，如果 $a _ { i } = 0$ 对于 $i > n$。
@@ -5370,7 +5370,7 @@ $$
 
 1.16. 设 $R$ 是一个环，考虑幂级数环 $R [[x]]$（参见§1.3）。
 
-(i) 证明幂级数 $a _ { 0 } + a _ { 1 } x + a _ { 2 } x ^ { 2 } + \cdot \cdot \cdot$ 在 $R [[x]]$ 中是一个单位当且仅当 $a _ { 0 }$ 在 $R$ 中是一个单位。$1 - x$ 在 $R [[x]]$ 中的逆是什么？
+(i) 证明幂级数 $a _ { 0 } + a _ { 1 } x + a _ { 2 } x ^ { 2 } + \cdots$ 在 $R [[x]]$ 中是一个单位当且仅当 $a _ { 0 }$ 在 $R$ 中是一个单位。$1 - x$ 在 $R [[x]]$ 中的逆是什么？
 (ii) 证明 $R [[x]]$ 是一个整环当且仅当 $R$ 是一个整环。
 
 1.17. $\triangleright$ 解释$R [x]$ 在什么意义上与 幺半群环 $R  [ { N } ]$相一致。[§1.4]
@@ -5448,7 +5448,7 @@ $$
 
 其中 $\varphi$ 是一个环同态。
 
-例如，$( i , \mathbb { Z } [ x _ { 1 } , \cdots , x _ { n } ] )$ 是 $\mathscr { R } _ { A }$ 的一个对象，其中 $i : A \to \mathbb { Z } [ x _ { 1 } , \cdot \cdot \cdot , x _ { n } ]$ 将 $a _ { k }$ 映射到 $x _ { k }$ 。
+例如，$( i , \mathbb { Z } [ x _ { 1 } , \cdots , x _ { n } ] )$ 是 $\mathscr { R } _ { A }$ 的一个对象，其中 $i : A \to \mathbb { Z } [ x _ { 1 } , \cdots , x _ { n } ]$ 将 $a _ { k }$ 映射到 $x _ { k }$ 。
 
 **命题 2.1**. $( i , \mathbb { Z } \vert x _ { 1 } , \cdots , x _ { n } ] )$ 在 $\mathscr { R } _ { A }$ 中是始的。
  
@@ -5836,7 +5836,7 @@ $$
 通常情况下，要求正是告诉我们答案的原因。由于 $\pi$ 将必须是一个环同态，$R / I$ 中的乘法必须如下：对于所有 $R / I$ 中的 $( a + I )$ ，$( b + I )$ ，
 
 $$
-( a + I ) \cdot ( b + I ) = \pi ( a ) \cdot \pi ( b ) { \stackrel { ! ? } { = } } \pi ( a b ) = a b + I ,
+( a + I ) \cdot ( b + I ) = \pi ( a ) \cdot \pi ( b )  \stackrel{!?}=  \pi ( a b ) = a b + I ,
 $$
 
 在$\pi$要成为环同态的情况下，等式$\stackrel { ! ? } { = }$是强制的。
@@ -5918,7 +5918,7 @@ $$
 \tilde { \varphi } ( r + I ) : = \varphi ( r ) ;
 $$
 
-该定理的部分内容 是说 这个函数是良定义的（如果 $I \subseteq$ $\ker \varphi$），并且它是一个环同态。
+该定理的部分内容 是说 这个函数是良定义的（如果 $I \subseteq \ker \varphi$），并且它是一个环同态。
 
 ### 3.3. 典范分解及其推论
 
@@ -6083,7 +6083,7 @@ $$
 
 是否 _由元素 $u_ { \alpha }$ 生成_。特别是，
 $$
-( a _ { 1 } , \ldots , a _ { n } ) = ( a _ { 1 } ) + \cdot \cdot \cdot + ( a _ { n } )
+( a _ { 1 } , \ldots , a _ { n } ) = ( a _ { 1 } ) + \cdots + ( a _ { n } )
 $$
 是包含 $a _ { 1 } , \ldots , a _ { n }$ 的 $R$ 的最小理想；这个理想由 $R$ 的可以写成下式的那些元素组成：
 
@@ -6145,7 +6145,7 @@ $$
 很明显 $I J \subseteq I \cap J$：对于每个满足 $i \in I$ 和 $j \in J$ 的元素 ${ i j }$，它在 $I$ 中（因为 $I$ 是右理想）并且在 $J$ 中（因为 $J$ 是左理想）；因此 $I \cap J$ 包含所有积 ${ i j }$，并且因此它必须包含它们生成的理想 $I J$。有时积与交集一致：
 
 $$
-( 4 ) \cap ( 3 ) = ( 1 2 ) = ( 4 ) \cdot ( 3 ) \quad { \mathrm { i n ~ } } \mathbb { Z } ;
+( 4 ) \cap ( 3 ) = ( 1 2 ) = ( 4 ) \cdot ( 3 ) \quad  \mathrm { 在 ~ } \mathbb { Z } \mathrm { ~中 } ;
 $$
 
 有时则不行：
@@ -6162,7 +6162,7 @@ $$
 设 $R$ 是一个（非零）环，并且设
 
 $$
-f ( x ) = x ^ { d } + a _ { d - 1 } x ^ { d - 1 } + \cdot \cdot \cdot + a _ { 1 } x + a _ { 0 } \in R [ x ]
+f ( x ) = x ^ { d } + a _ { d - 1 } x ^ { d - 1 } + \cdots + a _ { 1 } x + a _ { 0 } \in R [ x ]
 $$
 
 为一个多项式；为了方便，我假设 $f ( x )$ 是 _首一_ 的，即它的首项系数（$f ( x )$ 中出现的 $x$ 的最高次幂的系数）是 $1$。从 理想 的角度来看，如果系数环 $R$ 是一个域（练习 4.7），这不是一个严重的要求，但否则可能很重要：例如，$( 2 x ) \subseteq \mathbb { Z } [ x ]$ 不能由一个首一多项式生成。还请注意，首一多项式必然是一个非零因子（练习 4.8），并且如果 $f ( x )$ 是首一的，那么对于所有多项式 $q ( x )$ ，都有 $\deg ( f ( x ) q ( x ) ) = \deg f ( x ) + \deg q ( x )$。
@@ -6206,13 +6206,13 @@ $$
 将这一观察加以提炼，可以得到一个有用的群论陈述。注意，次数$< d$的多项式可以看作是直接和的元素
 
 $$
-R ^ { \oplus d } = \underbrace { R \oplus \cdots \oplus R } _ { d { \mathrm { ~ t i m e s } } } :
+R ^ { \oplus d } = \underbrace { R \oplus \cdots \oplus R } _ { d  \mathrm { ~ 个 } } :
 $$
 
 确实，定义在 $\psi : R ^ { \oplus d } \to R [ x ]$ 上的函数
 
 $$
-\psi ( ( r _ { 0 } , r _ { 1 } , \cdot \cdot \cdot , r _ { d - 1 } ) ) = r _ { 0 } + r _ { 1 } x + \cdot \cdot \cdot + r _ { d - 1 } x ^ { d - 1 }
+\psi ( ( r _ { 0 } , r _ { 1 } , \cdots , r _ { d - 1 } ) ) = r _ { 0 } + r _ { 1 } x + \cdots + r _ { d - 1 } x ^ { d - 1 }
 $$
 
 显然是一个阿贝尔群的单射同态，因此是一个同构 满射到其像，而这个像恰好由次数$< d$的多项式组成。我将随意地将$R ^ { \oplus d }$与这个多项式集等同起来，为了接下来讨论的目的。
@@ -6468,7 +6468,7 @@ $$
 
 4.8. $\triangleright$ 设 $R$ 是一个环，$f(x) \in R[x]$ 是一个 _首一_ 多项式。证明 $f(x)$ 不是（左或右）零因子。[§4.2, 4.9]
 
-4.9. 将练习4.8的结果推广如下。设$R$是一个交换环，且$f(x)$是$R[x]$中的零因子。证明$\exists b \in R$，$b \neq 0$，使得$f(x)b = 0$。(提示：设$f(x) = a_d x^d + \cdot \cdot \cdot + a_0$，并设$g(x) = b_e x^e + \cdot \cdot \cdot + b_0$ 是一个非零多项式，其具有最小的次数$e$，使得$f(x)g(x) = 0$。推导出$a_d g(x) = 0$，然后证明 $a_{d-i} g(x) = 0$对所有 $i$ 成立。这对$b_e$ 来说 说明了什么？)
+4.9. 将练习4.8的结果推广如下。设$R$是一个交换环，且$f(x)$是$R[x]$中的零因子。证明$\exists b \in R$，$b \neq 0$，使得$f(x)b = 0$。(提示：设$f(x) = a_d x^d + \cdots + a_0$，并设$g(x) = b_e x^e + \cdots + b_0$ 是一个非零多项式，其具有最小的次数$e$，使得$f(x)g(x) = 0$。推导出$a_d g(x) = 0$，然后证明 $a_{d-i} g(x) = 0$对所有 $i$ 成立。这对$b_e$ 来说 说明了什么？)
 
 4.10. $\neg$ 设 $d$ 是一个 不是某个整数的平方的整数，并考虑由 $\mathbb { C }$ 定义的子集$^{22}$
 
@@ -6535,7 +6535,7 @@ $$
 
 4.19. 设 $R$ 是一个交换环，$P$ 是 $R$ 中的一个素理想，$I_j$ 是 $R$ 的理想。
 
-(i) 假设 $I _ { 1 } \cdot \cdot \cdot I _ { r } \subseteq P$ ；证明 $I _ { j } \subseteq P$ 对某个 $j$ 成立。
+(i) 假设 $I _ { 1 } \cdots I _ { r } \subseteq P$ ；证明 $I _ { j } \subseteq P$ 对某个 $j$ 成立。
 (ii) 根据 (i)，如果 $P \supseteq \bigcap _ { j = 1 } ^ { r } I _ { j }$ ，那么 $P$ 包含其中一个理想 $I _ { j}$ 。证明或证否：如果 $P \supseteq \cap _ { j = 1 } ^ { \infty } I _ { j }$ ，那么 $P$ 包含其中一个理想 $I _ { j}$ 。
 
 4.20. 设 $M$ 是环 $R$（不一定交换）的一个双边理想。证明 $M$ 是极大的 当且仅当 $R / M$ 是一个单环（参见习题 3.9）。
@@ -7019,7 +7019,7 @@ $$
 特别是，对于 $A = \{ 1 , \ldots , n \}$ 一个 _有限_ 集，命题 6.3 声称 $R$ -模 $R ^ { \oplus n }$ ，以及定义为如下的 $j : A \to R ^ { \oplus n }$ ：
 
 $$
-j ( i ) : = ( 0 , \cdot \cdot \cdot , 0 , \underset { i \mathrm { \tiny ~ t h ~ p l a c e } } { 1 } , 0 , \cdot \cdot \cdot , 0 ) \in R ^ { \oplus n } ,
+j ( i ) : = ( 0 , \cdots , 0 , \underset { i \mathrm { \tiny ~ t h ~ p l a c e } } { 1 } , 0 , \cdots , 0 ) \in R ^ { \oplus n } ,
 $$
 
 满足 $F ^ { R } ( \{ 1 , \ldots , n \} )$ 的泛性质。
@@ -7569,7 +7569,7 @@ $$
 7.2. 假设复形
 
 $$
-\cdot \cdot \cdot \longrightarrow 0 \longrightarrow M \longrightarrow M ^ { \prime } \longrightarrow 0 \longrightarrow \cdot \cdot \cdot
+\cdots \longrightarrow 0 \longrightarrow M \longrightarrow M ^ { \prime } \longrightarrow 0 \longrightarrow \cdots
 $$
 
 正合。证明 $M \cong M ^ { \prime }$ 。
@@ -7861,7 +7861,7 @@ $$
 6 = 6 .
 $$
 
-如果$G$不交换，则它的中心必须是平凡的（这是Lagrange定理和引理1.5的推论）；因此，类方程是$6 = 1 + \cdots$，其中$\cdot \cdot \cdot$收集非平凡共轭类的规模。但每一个这些加数必须大于1，小于6，并且必须整除6；也就是说，没有选择：
+如果$G$不交换，则它的中心必须是平凡的（这是Lagrange定理和引理1.5的推论）；因此，类方程是$6 = 1 + \cdots$，其中$\cdots$收集非平凡共轭类的规模。但每一个这些加数必须大于1，小于6，并且必须整除6；也就是说，没有选择：
 
 $$
 6 = 1 + 2 + 3
@@ -8000,14 +8000,14 @@ $$
 ( a _ { 1 } , \ldots , a _ { p } )
 $$
 
-使得 $a _ { 1 } \cdot \cdot \cdot a _ { p } = e$ 。我断言 $| S | = | G | ^ { p - 1 }$ ：确实，一旦 $a _ { 1 } , \dotsc , a _ { p - 1 }$ 被选择（任意地），那么 $a _ { p }$ 就被确定了，因为它就是 $a _ { 1 } \cdots a _ { p - 1 }$ 的逆元。
+使得 $a _ { 1 } \cdots a _ { p } = e$ 。我断言 $| S | = | G | ^ { p - 1 }$ ：确实，一旦 $a _ { 1 } , \dotsc , a _ { p - 1 }$ 被选择（任意地），那么 $a _ { p }$ 就被确定了，因为它就是 $a _ { 1 } \cdots a _ { p - 1 }$ 的逆元。
 
 因此，$p$ 整除 $S$ 的阶，因为它整除 $G$ 的阶。
 
 也请注意，如果 $a _ { 1 } \cdots a _ { p } = e$ ，那么
 
 $$
-a _ { 2 } \cdot \cdot \cdot a _ { p } a _ { 1 } = e
+a _ { 2 } \cdots a _ { p } a _ { 1 } = e
 $$
 
 (即使 $G$ 不交换)：因为如果 $a _ { 1 }$ 是 $a _ { 2 } \cdots a _ { p }$ 的左逆元，那么它也是它的右逆元。
@@ -8113,7 +8113,7 @@ $$
 我们可以获得对情况更完整的了解。假设我们已经构建了一个链条。
 
 $$
-H _ { 0 } = \{ e \} \subseteq H _ { 1 } \subseteq \cdot \cdot \cdot \subseteq H _ { k }
+H _ { 0 } = \{ e \} \subseteq H _ { 1 } \subseteq \cdots \subseteq H _ { k }
 $$
 
 关于群 $G$ 的 $p$-子群，其中 $| H _ { i } | = p ^ { i }$。根据定理 2.8，我们知道 $H _ { k }$ 包含在某个 $p$-Sylow 子群中，其阶为 $p ^ { r } =$  $p$ 整除 $G$ 的阶的最大幂。但我断言，实际上可以一步一步地继续向上，直到达到 Sylow 子群：
@@ -8486,7 +8486,7 @@ $$
 
 群的定义因素是其基本组成部分的直观感觉被以下事实所加强：如果$G$是一个具有合成序列的群，那么$G$的每个正规子群$N$的定义因素是$G$的定义因素，其余的是商群$G / N$的定义因素。
 
-**示例 3.3.** 设 $G = \mathbb { Z } / 6 \mathbb { Z } = \{ | 0 | , [ 1 ] ,$ [2], [3], [4], [5]}\)，则
+**示例 3.3.** 设 $G = \mathbb { Z } / 6 \mathbb { Z } = \{ | 0 | , [ 1 ] , [2], [3], [4], [5] \})$，则
 
 $$
 \{ [ 0 ] , [ 1 ] , [ 2 ] , [ 3 ] , [ 4 ] , [ 5 ] \} \supseteq \{ [ 0 ] , [ 3 ] \} \supseteq \{ [ 0 ] \}
@@ -8793,7 +8793,7 @@ $$
 表示在 $S _ { n }$ 中的非平凡轨道 $\{ a _ { 1 } , \ldots , a _ { r } \}$ 作用的循环，
 
 $$
-a _ { 1 } \mapsto a _ { 2 } \mapsto \cdot \cdot \cdot \mapsto a _ { r } \mapsto a _ { 1 } .
+a _ { 1 } \mapsto a _ { 2 } \mapsto \cdots \mapsto a _ { r } \mapsto a _ { 1 } .
 $$
 
 在这种情况下，$r$ 是周期的长度。一个长度为 $r$ 的周期称为一个 $r$ -周期。
@@ -8840,7 +8840,7 @@ $$
 \begin{array} { r l } & { \mathfrak { d } = 1 + 1 + 1 + 1 + } \\ & { \begin{array} { r l } & { = 2 + 1 + 1 + 1 } \\ & { = 2 + 2 + 1 } \\ & { = 3 + 1 + 1 } \\ & { = 3 + 2 } \end{array} } \\ & { \begin{array} { r l } & { = 4 + 1 } \\ & { = 5 . } \end{array} } \end{array}
 $$
 
-这个划分 $\lambda _ { 1 } \geq \lambda _ { 2 } \geq \cdot \cdot \cdot \geq \lambda _ { r }$ 可以记为
+这个划分 $\lambda _ { 1 } \geq \lambda _ { 2 } \geq \cdots \geq \lambda _ { r }$ 可以记为
 
 $$
 [ \lambda _ { 1 } , \ldots , \lambda _ { r } ] ;
@@ -8883,7 +8883,7 @@ $$
 通过巧妙地插入恒等因子 $\tau ^ { - 1 } \tau$ ，这个计算共轭的公式立即扩展到任何循环积：
 
 $$
-\tau ( a _ { 1 } \ldots a _ { r } ) \cdot \cdot \cdot ( b _ { 1 } \ldots b _ { s } ) \tau ^ { - 1 } = ( a _ { 1 } \tau ^ { - 1 } \ldots a _ { r } \tau ^ { - 1 } ) \cdot \cdot \cdot ( b _ { 1 } \tau ^ { - 1 } \ldots b _ { s } \tau ^ { - 1 } ) .
+\tau ( a _ { 1 } \ldots a _ { r } ) \cdots ( b _ { 1 } \ldots b _ { s } ) \tau ^ { - 1 } = ( a _ { 1 } \tau ^ { - 1 } \ldots a _ { r } \tau ^ { - 1 } ) \cdots ( b _ { 1 } \tau ^ { - 1 } \ldots b _ { s } \tau ^ { - 1 } ) .
 $$
 
 无论循环是否互不相交，这一点都成立。然而，由于 $\gamma$ 是一个双射，互不相交的循环在共轭后仍然保持互不相交。这基本上就是以下重要观察的全部内容：
@@ -8893,16 +8893,16 @@ $$
 证明。这个陈述的“仅当”部分直接来自前面的考虑：共轭一个置换得到一个同类型的置换。至于“当”部分，假设
 
 $$
-\sigma _ { 1 } = ( a _ { 1 } \dots a _ { r } ) ( b _ { 1 } \dots b _ { s } ) \cdot \cdot \cdot ( c _ { 1 } \dots c _ { t } )
+\sigma _ { 1 } = ( a _ { 1 } \dots a _ { r } ) ( b _ { 1 } \dots b _ { s } ) \cdots ( c _ { 1 } \dots c _ { t } )
 $$
 
 并且
 
 $$
-\sigma _ { 2 } = ( a _ { 1 } ^ { \prime } \ldots a _ { r } ^ { \prime } ) ( b _ { 1 } ^ { \prime } \ldots b _ { s } ^ { \prime } ) \cdot \cdot \cdot ( c _ { 1 } ^ { \prime } \ldots c _ { t } ^ { \prime } )
+\sigma _ { 2 } = ( a _ { 1 } ^ { \prime } \ldots a _ { r } ^ { \prime } ) ( b _ { 1 } ^ { \prime } \ldots b _ { s } ^ { \prime } ) \cdots ( c _ { 1 } ^ { \prime } \ldots c _ { t } ^ { \prime } )
 $$
 
-有两个具有相同类型的排列，以循环符号表示，且 $r \geq s \geq \cdots \geq t$（因此类型是 $[ r , s , \ldots , t ]$）。设 $^{\prime}$ 是任何排列，使得 $a _ { i } = a _ { i } ^ { \prime } \tau$，$b _ { j } = b _ { j } ^ { \prime } \tau$，$\cdot \cdot \cdot$，$c _ { k } = c _ { k } ^ { \prime } \tau$ 对于所有 $i$，$j$，$\cdot \cdot \cdot$，$k$ 都成立。那么引理 4.5 意味着 $\sigma _ { 2 } = \tau \sigma _ { 1 } \tau ^ { - 1 }$，因此 $\sigma _ { 1 }$ 和 $o _ { 2 }$ 是共轭的，如所需。
+有两个具有相同类型的排列，以循环符号表示，且 $r \geq s \geq \cdots \geq t$（因此类型是 $[ r , s , \ldots , t ]$）。设 $^{\prime}$ 是任何排列，使得 $a _ { i } = a _ { i } ^ { \prime } \tau$，$b _ { j } = b _ { j } ^ { \prime } \tau$，$\cdots$，$c _ { k } = c _ { k } ^ { \prime } \tau$ 对于所有 $i$，$j$，$\cdots$，$k$ 都成立。那么引理 4.5 意味着 $\sigma _ { 2 } = \tau \sigma _ { 1 } \tau ^ { - 1 }$，因此 $\sigma _ { 1 }$ 和 $o _ { 2 }$ 是共轭的，如所需。
 
 示例 4.7. 在 $S _ { 8 }$ 中，
 
@@ -9011,14 +9011,14 @@ $$
 证明。事实上，根据引理4.3，只需证明每个圈是置换的积，确实
 
 $$
-( a _ { 1 } \ldots a _ { r } ) = ( a _ { 1 } a _ { 2 } ) ( a _ { 1 } a _ { 3 } ) \cdot \cdot \cdot ( a _ { 1 } a _ { r } ) ,
+( a _ { 1 } \ldots a _ { r } ) = ( a _ { 1 } a _ { 2 } ) ( a _ { 1 } a _ { 3 } ) \cdots ( a _ { 1 } a _ { r } ) ,
 $$
 
 可以通过将 $^ { 1 8 }$ 应用于 $\{ \mathbf { 1 } , \dots , \mathbf { n } \}$ 的每个元素的两边来验证。
 
 当然，给定的排列可以以多种不同的方式写成置换的积。然而，需要奇数个置换还是偶数个置换，只取决于$o$。实际上，
 
-引理 4.12. 设 $o = \tau _ { 1 } \cdot \cdot \cdot \tau _ { r }$ 是一个置换的积。那么 $o$ 是偶数，当且仅当 $r$ 是偶数；$o$ 是奇数，当且仅当 $r$ 是奇数。
+引理 4.12. 设 $o = \tau _ { 1 } \cdots \tau _ { r }$ 是一个置换的积。那么 $o$ 是偶数，当且仅当 $r$ 是偶数；$o$ 是奇数，当且仅当 $r$ 是奇数。
 
 证明。这直接来自于$\epsilon$是一个同态以及置换的符号是$^{-1}$的事实：确实，$(ij)$通过排列其因子并改变奇数个因子的符号来作用于$\Delta_n$（对于$i < j$，因子$(x_i - x_j)$以及对于所有$i < k < j$的因子对$(x_i - x_k)$，$(x_k - x_j)$）。$\boxed{\begin{array}{rl}\end{array}}$
 
@@ -9090,13 +9090,13 @@ $$
 将 $\sigma$ 写成轮换表示法（包括长度为1的轮换）：
 
 $$
-\sigma = ( a _ { 1 } \ldots a _ { \lambda } ) ( b _ { 1 } \ldots b _ { \mu } ) \cdot \cdot \cdot ( c _ { 1 } \ldots c _ { \nu } ) ,
+\sigma = ( a _ { 1 } \ldots a _ { \lambda } ) ( b _ { 1 } \ldots b _ { \mu } ) \cdots ( c _ { 1 } \ldots c _ { \nu } ) ,
 $$
 
 并且回想（引理4.5）
 
 $$
-\tau \sigma \tau ^ { - 1 } = ( a _ { 1 } \tau ^ { - 1 } \ldots a _ { \lambda } \tau ^ { - 1 } ) ( b _ { 1 } \tau ^ { - 1 } \ldots b _ { \mu } \tau ^ { - 1 } ) \cdot \cdot \cdot ( c _ { 1 } \tau ^ { - 1 } \ldots c _ { \nu } \tau ^ { - 1 } ) .
+\tau \sigma \tau ^ { - 1 } = ( a _ { 1 } \tau ^ { - 1 } \ldots a _ { \lambda } \tau ^ { - 1 } ) ( b _ { 1 } \tau ^ { - 1 } \ldots b _ { \mu } \tau ^ { - 1 } ) \cdots ( c _ { 1 } \tau ^ { - 1 } \ldots c _ { \nu } \tau ^ { - 1 } ) .
 $$
 
 假设 $\lambda , \mu \dots , \nu$ 是奇数且不同。如果 $\tau \sigma \tau ^ { - 1 } = \sigma$ ，那么由 $\gamma$ 的共轭必须保持 $\sigma$ 中的每个循环，因为所有循环长度都是不同的：
@@ -9108,7 +9108,7 @@ $$
 也就是说，
 
 $$
-( a _ { 1 } \tau ^ { - 1 } \cdot \cdot \cdot a _ { \lambda } \tau ^ { - 1 } ) = ( a _ { 1 } \dots a _ { \lambda } ) , \quad { \mathrm { e t c . } }
+( a _ { 1 } \tau ^ { - 1 } \cdots a _ { \lambda } \tau ^ { - 1 } ) = ( a _ { 1 } \dots a _ { \lambda } ) , \quad { \mathrm { e t c . } }
 $$
 
 这意味着 $\tau$ 作为循环置换作用于（例如） $a _ { 1 } , \ldots , a _ { \lambda }$ 并因此以相同的方式作为 $( a _ { 1 } \ldots a _ { \lambda } )$ 的幂。由此可见
@@ -9126,7 +9126,7 @@ $$
 在第二种情况下，不失一般性，假设 $\lambda = \mu$ ，并考虑奇排列
 
 $$
-\tau = ( a _ { 1 } b _ { 1 } ) ( a _ { 2 } b _ { 2 } ) \cdot \cdot \cdot ( a _ { \lambda } b _ { \lambda } ) :
+\tau = ( a _ { 1 } b _ { 1 } ) ( a _ { 2 } b _ { 2 } ) \cdots ( a _ { \lambda } b _ { \lambda } ) :
 $$
 
 通过 $\gamma$ 的共轭变换会简单地交换 $\sigma$ 中的前两个循环；因此 $\tau \sigma \tau ^ { - 1 } = \sigma$。由于 $\tau$ 是奇数，这再次表明 $Z _ { S _ { n } } ( \sigma ) \nsubseteq A _ { n }$ ，我们完成了证明。
@@ -9234,7 +9234,7 @@ $$
 4.2. $\triangleright$ 假设
 
 $$
-( a _ { 1 } \ldots a _ { r } ) ( b _ { 1 } \ldots b _ { s } ) \cdots ( c _ { 1 } \ldots c _ { t } ) = ( d _ { 1 } \ldots d _ { u } ) ( e _ { 1 } \ldots e _ { v } ) \cdot \cdot \cdot ( f _ { 1 } \ldots f _ { w } )
+( a _ { 1 } \ldots a _ { r } ) ( b _ { 1 } \ldots b _ { s } ) \cdots ( c _ { 1 } \ldots c _ { t } ) = ( d _ { 1 } \ldots d _ { u } ) ( e _ { 1 } \ldots e _ { v } ) \cdots ( f _ { 1 } \ldots f _ { w } )
 $$
 
 是两个不相交的循环的积。证明这些因子在顺序上是一致的。
@@ -9736,7 +9736,7 @@ $$
 G \cong \bigoplus _ { i , j } { \frac { \mathbb { Z } } { p _ { i } ^ { n _ { i j } } \mathbb { Z } } } ;
 $$
 
-• 存在正整数 $1 < d _ { 1 } \mid \cdots \mid d _ { s }$ 使得 $| G | = d _ { 1 } \cdot \cdot \cdot d _ { s }$ 和
+• 存在正整数 $1 < d _ { 1 } \mid \cdots \mid d _ { s }$ 使得 $| G | = d _ { 1 } \cdots d _ { s }$ 和
 
 $$
 G \cong \frac { \mathbb { Z } } { d _ { 1 } \mathbb { Z } } \oplus \cdots \oplus \frac { \mathbb { Z } } { d _ { s } \mathbb { Z } } .
@@ -9752,7 +9752,7 @@ $$
 
 相反地，给定不变因子 $d _ { i }$ ，通过将 $d _ { i }$ 分解为素数的幂来获得此表的行：条件 $d _ { 1 } \mid \cdots \mid d _ { r }$ 确保这些将是递减的。
 
-多次应用引理 6.1 表明，如果 $d = p _ { 1 } ^ { n _ { 1 } } \cdot \cdot \cdot p _ { r } ^ { n _ { r } }$ 对于不同的素数 $p _ { i }$ 和正数 $n _ { i}$（如表中每一行的情况），那么
+多次应用引理 6.1 表明，如果 $d = p _ { 1 } ^ { n _ { 1 } } \cdots p _ { r } ^ { n _ { r } }$ 对于不同的素数 $p _ { i }$ 和正数 $n _ { i}$（如表中每一行的情况），那么
 
 $$
 \frac { \mathbb { Z } } { d \mathbb { Z } } \cong \frac { \mathbb { Z } } { p _ { 1 } ^ { n _ { 1 } } \mathbb { Z } } \oplus \cdots \oplus \frac { \mathbb { Z } } { p _ { r } ^ { n _ { r } } \mathbb { Z } } ,
@@ -9826,7 +9826,7 @@ $$
 
 6.7. $\neg$ 设 $p > 0$ 是一个素数整数，$G$ 是一个有限阿贝尔群，并记 $\rho : G \to G$ 为由 $\rho ( g ) = p g$ 定义的群同态。
 
-• 设 $A$ 是一个有限阿贝尔群，使得 $pA = 0$。证明 $A \cong \mathbb { Z } / p \mathbb { Z } \oplus \cdot \cdot \cdot \oplus \mathbb { Z } / p \mathbb { Z }$。
+• 设 $A$ 是一个有限阿贝尔群，使得 $pA = 0$。证明 $A \cong \mathbb { Z } / p \mathbb { Z } \oplus \cdots \oplus \mathbb { Z } / p \mathbb { Z }$。
 • 证明 $p \mathrm { k e r } \rho$ 和 $p ( \mathrm { c o k e r } \rho )$ 都为 0。
 • 证明 $\ker \rho \cong \operatorname { c o k e r } \rho$。
 • 证明 $G$ 的每个阶为 $p$ 的子群都包含在 $\ker \rho$ 中，且 $G$ 的每个指数为 $p$ 的子群都包含 $\operatorname { i m } \rho$。
@@ -9937,7 +9937,7 @@ $$
 
 **证明**。假设 $R$  诺特 ，设 $I$ 是 $R [x]$ 的一个理想。我们需要证明 $I$ 是有限生成的。
 
-回想一下，如果 $f ( x ) = a _ { d } x ^ { d } + a _ { d - 1 } x ^ { d - 1 } + \cdot \cdot \cdot + a _ { 0 } \in R [ x ]$ 并且 $\textstyle a _ { d } \neq 0$ ，那么 $a _ { d }$ 被称为 $f ( x )$ 的 _首项系数_。考虑以下 $R$ 的子集：
+回想一下，如果 $f ( x ) = a _ { d } x ^ { d } + a _ { d - 1 } x ^ { d - 1 } + \cdots + a _ { 0 } \in R [ x ]$ 并且 $\textstyle a _ { d } \neq 0$ ，那么 $a _ { d }$ 被称为 $f ( x )$ 的 _首项系数_。考虑以下 $R$ 的子集：
 
 $A = \{ 0 \} \cup \{ a \in \mathbb{R} | a$ 是 $I$ 中某个元素的的首项系数 $\}$ .
 
@@ -9966,31 +9966,31 @@ $$
 这个断言蕴含着定理的陈述。为了证明这个断言，我们只需要证明 $\subseteq$ 包含关系；为此，设 $\alpha ( x ) \in I$ 是 $I$ 中的一个任意多项式。如果 $\deg \alpha ( x ) \geq d$ ，设 $a$ 是 $\alpha ( x )$ 的首项系数。那么 $a \in A$ ，因此 $\exists b _ { 1 } , \dotsc , b _ { r } \in R$ 使得
 
 $$
-a = b _ { 1 } a _ { 1 } + \cdot \cdot \cdot + b _ { r } a _ { r } .
+a = b _ { 1 } a _ { 1 } + \cdots + b _ { r } a _ { r } .
 $$
 
 让 $e = \deg \alpha ( x )$ ，使得 $e \geq d _ { i }$ 对所有 $i$ 都成立，这意味着
 
 $$
-a ( x ) - b _ { 1 } x ^ { e - d _ { 1 } } f _ { 1 } ( x ) - \cdot \cdot \cdot - b _ { r } x ^ { e - d _ { r } } f _ { r } ( x )
+a ( x ) - b _ { 1 } x ^ { e - d _ { 1 } } f _ { 1 } ( x ) - \cdots - b _ { r } x ^ { e - d _ { r } } f _ { r } ( x )
 $$
 
 具有 次数 $< e$ 。通过迭代此过程，我们得到一个有限多项式列表 $\beta _ { 1 } ( x ) , \ldots , \beta _ { r } ( x ) \in R [ x ]$ ，使得
 
 $$
-\alpha ( x ) - \beta _ { 1 } ( x ) f _ { 1 } ( x ) - \cdot \cdot \cdot - \beta _ { r } ( x ) f _ { r } ( x )
+\alpha ( x ) - \beta _ { 1 } ( x ) f _ { 1 } ( x ) - \cdots - \beta _ { r } ( x ) f _ { r } ( x )
 $$
 
 有 degree $< d$ 。(若一开始 $\operatorname{deg} \alpha(x) < d$ , 我们可以选 $\beta_1(x) = \cdots = \beta_r(x) = 0$ 以得到相同结果. ) 但这将该元素置于 $M \cap I$ 中；因此 $\exists c _ { 1 } , \dots , c _ { s } \in R$ 使得
 
 $$
-\alpha ( x ) - \beta _ { 1 } ( x ) f _ { 1 } ( x ) - \cdot \cdot \cdot - \beta _ { r } ( x ) f _ { r } ( x ) = c _ { 1 } g _ { 1 } ( x ) + \cdot \cdot \cdot + c _ { s } g _ { s } ( x ) ,
+\alpha ( x ) - \beta _ { 1 } ( x ) f _ { 1 } ( x ) - \cdots - \beta _ { r } ( x ) f _ { r } ( x ) = c _ { 1 } g _ { 1 } ( x ) + \cdots + c _ { s } g _ { s } ( x ) ,
 $$
 
 然后我们就搞定了，因为这验证了
 
 $$
-\begin{array} { c } { \alpha ( x ) = \beta _ { 1 } ( x ) f _ { 1 } ( x ) + \cdot \cdot \cdot + \beta _ { r } ( x ) f _ { r } ( x ) + c _ { 1 } g _ { 1 } ( x ) + \cdot \cdot \cdot + c _ { s } g _ { s } ( x ) } \\ { \in ( f _ { 1 } ( x ) , \ldots , f _ { r } ( x ) , g _ { 1 } ( x ) , \ldots , g _ { s } ( x ) ) , } \end{array}
+\begin{array} { c } { \alpha ( x ) = \beta _ { 1 } ( x ) f _ { 1 } ( x ) + \cdots + \beta _ { r } ( x ) f _ { r } ( x ) + c _ { 1 } g _ { 1 } ( x ) + \cdots + c _ { s } g _ { s } ( x ) } \\ { \in ( f _ { 1 } ( x ) , \ldots , f _ { r } ( x ) , g _ { 1 } ( x ) , \ldots , g _ { s } ( x ) ) , } \end{array}
 $$
 
 从而完成了断言1.4、引理1.3 和定理1.2的证明。$\square$
@@ -10066,7 +10066,7 @@ $$
 这个分解是 _唯一_ 的，如果元素 $q _ { i }$ 由 $r$ 决定，在 顺序和结合 方面，也就是说，如果每当
 
 $$
-r = q _ { 1 } ^ { \prime } \cdot \cdot \cdot q _ { m } ^ { \prime }
+r = q _ { 1 } ^ { \prime } \cdots q _ { m } ^ { \prime }
 $$
 
 是 $r$ 的另一个到 不可约元 的 分解，那么 $m = n$ 并且 $q _ { i } ^ { \prime }$ 是 $q _ { i }$ 的一个伴相元，在（可能）重新排列因子之后。
@@ -10082,7 +10082,7 @@ $$
 **命题 1.11**. 设 $R$ 是一个整环，$r$ 是 $R$ 中的一个非零非单位元。假设每个主理想上升链
 
 $$
-( r ) \subseteq ( r _ { 1 } ) \subseteq ( r _ { 2 } ) \subseteq ( r _ { 3 } ) \subseteq \cdot \cdot \cdot
+( r ) \subseteq ( r _ { 1 } ) \subseteq ( r _ { 2 } ) \subseteq ( r _ { 3 } ) \subseteq \cdots
 $$
 
 都稳定。则 $r$ 有一个不可约分解。
@@ -10135,7 +10135,7 @@ $$
 
 1.6. $\triangleright$ 设 $I$ 是 $R [x]$ 的一个理想，设 $A \subseteq R$ 是定理 1.2 证明中定义的集合。证明 $A$ 是 $R$ 的一个理想。[§1.1]
 
-1.7. 证明如果 $R$ 是一个诺特环，那么幂级数环 $R [[ x ]]$（参见 §III.1.3）也是一个诺特环。（提示：幂级数 $\textstyle \sum _ { i = 0 } ^ { \infty } a _ { i } x ^ { 2 }$ 的阶是最小的 $i$，使得 $a _ { i } \neq 0$；_主系数_ 是 $u _ { i}$。令 $I$ 为  $R  [[x ]]$ 的一个理想, 且令 $A _ { i} \subseteq R$ 是 $I$ 中阶为 $i$ 的级数的主系数的集合，以及 0。证明 $A _ { i}$ 是 $R$ 的一个理想，并且 $A _ { 0} \subseteq A _ { 1} \subseteq A _ { 2} \subseteq \cdot \cdot \cdot$。这个序列稳定，因为 $R$ 是诺特环，并且每个 $A _ { i}$ 对于同样的原因都是有限生成的。现在调整引理 1.3 的证明。）
+1.7. 证明如果 $R$ 是一个诺特环，那么幂级数环 $R [[ x ]]$（参见 §III.1.3）也是一个诺特环。（提示：幂级数 $\textstyle \sum _ { i = 0 } ^ { \infty } a _ { i } x ^ { 2 }$ 的阶是最小的 $i$，使得 $a _ { i } \neq 0$；_主系数_ 是 $u _ { i}$。令 $I$ 为  $R  [[x ]]$ 的一个理想, 且令 $A _ { i} \subseteq R$ 是 $I$ 中阶为 $i$ 的级数的主系数的集合，以及 0。证明 $A _ { i}$ 是 $R$ 的一个理想，并且 $A _ { 0} \subseteq A _ { 1} \subseteq A _ { 2} \subseteq \cdots$。这个序列稳定，因为 $R$ 是诺特环，并且每个 $A _ { i}$ 对于同样的原因都是有限生成的。现在调整引理 1.3 的证明。）
 
 1.8. 证明 诺特环 $R$ 中的每个理想都包含一个素理想的有限积。(提示：设 $\mathscr { F }$ 是不包含素理想有限积的理想族。如果 $\mathscr { F }$ 非空，由于 $R$ 是 诺特环，它有一个极大元 $M$。由于 $M \in \mathscr { F }$，$M$ 本身不是素理想，因此 $\exists a , b \in R$ 使得 $a \notin M$ ，$b \not \in M$ ，但 $a b \in M$ 。这有什么问题？)
 
@@ -10215,7 +10215,7 @@ $$
 证明。我们可以写成
 
 $$
-a = u q _ { 1 } ^ { \alpha _ { 1 } } \cdot \cdot \cdot q _ { r } ^ { \alpha _ { r } } , \quad b = v q _ { 1 } ^ { \beta _ { 1 } } \cdot \cdot \cdot q _ { r } ^ { \beta _ { r } }
+a = u q _ { 1 } ^ { \alpha _ { 1 } } \cdots q _ { r } ^ { \alpha _ { r } } , \quad b = v q _ { 1 } ^ { \beta _ { 1 } } \cdots q _ { r } ^ { \beta _ { r } }
 $$
 
 在 $u$ 和 $v$ 是单位的情况下，元素 $q _ { i }$ 是不可约的，$q _ { i }$ 对于 $i \neq j$ 不是 $q _ { j }$ 的相伴元，并且 $\alpha _ { i } ~ \geq ~ 0$ ， $\beta _ { i } \geq 0$（因此 $a$ 的不可约因子的多重集，相应地 $b$ 的不可约因子的多重集，由那些 $\alpha _ { i } ~ > ~ 0$ ，相应地 $\beta _ { i } > 0$ 的 $q _ { i }$ 组成；单位 $u$ ， $v$ 被包括在内，因为不可约因子只定义到相伴关系）。
@@ -10223,13 +10223,13 @@ $$
 我断言
 
 $$
-d = q _ { 1 } ^ { \operatorname* { m i n } ( \alpha _ { 1 } , \beta _ { 1 } ) } \cdot \cdot \cdot q _ { r } ^ { \operatorname* { m i n } ( \alpha _ { r } , \beta _ { r } ) }
+d = q _ { 1 } ^ { \operatorname* { m i n } ( \alpha _ { 1 } , \beta _ { 1 } ) } \cdots q _ { r } ^ { \operatorname* { m i n } ( \alpha _ { r } , \beta _ { r } ) }
 $$
 
 是 $a$ 和 $b$ 的最大公约数。实际上，$d$ 显然是 $a$ 和 $b$ 的一个约数；并且如果 $c$ 也除尽 $a$ 和 $b$，那么 $c$ 的约数集合必须同时包含在 $a$ 和 $b$ 的约数集合中（根据引理 2.1）；也就是说，
 
 $$
-c = w q _ { 1 } ^ { \gamma _ { 1 } } \cdot \cdot \cdot q _ { r } ^ { \gamma _ { r } }
+c = w q _ { 1 } ^ { \gamma _ { 1 } } \cdots q _ { r } ^ { \gamma _ { r } }
 $$
 
 以 $w$ 为单位，且 $\gamma _ { i } \leq \alpha _ { i }$ ，$\gamma _ { i } \leq \beta _ { i }$ 。这意味着 $\gamma _ { i } \leq \operatorname* { m i n } ( \alpha _ { i } , \beta _ { i } )$ ，因此 $c \mid d$（再次根据引理 2.1），如所需。$\square$
@@ -10276,13 +10276,13 @@ $$
 （$\Leftarrow$）现在假设 $R$ 满足主理想和不可约元是素元的 a.c.c.。命题 1.11 意味着 $R$ 中存在分解；我们需要验证唯一性。设 $q _ { 1 } , \ldots , q _ { m }$ 和 $q _ { 1 } ^ { \prime } , \ldots , q _ { n } ^ { \prime }$ 是 $R$ 的不可约元，并假设
 
 $$
-q _ { 1 } \cdot \cdot \cdot q _ { m } = q _ { 1 } ^ { \prime } \cdot \cdot \cdot q _ { n } ^ { \prime } .
+q _ { 1 } \cdots q _ { m } = q _ { 1 } ^ { \prime } \cdots q _ { n } ^ { \prime } .
 $$
 
-那么 $q _ { 1 } ^ { \prime } \cdot \cdot \cdot q _ { n } ^ { \prime } \in ( q _ { 1 } )$ ，并且 $\left( q _ { 1 } \right)$ 是一个素理想（根据假设）；因此对于某个 $i$ ， $q _ { i } ^ { \prime } \in \mathsf { \Gamma } ( q _ { 1 } )$ ，我们可以在改变因子的顺序后假设 $i$ 为 1 。因此 $q _ { 1 } ^ { \prime } = u q _ { 1 }$ 对于某个 $u \in R$ 。由于 $q _ { 1 } ^ { \prime }$ 是不可约的，而 $q _ { 1 }$ 不是单位，必然 $u$ 是一个单位。因此 $q _ { 1 }$ 和 $q _ { 1 } ^ { \prime }$ 是相伴的。消去 $q _ { 1 }$ 并将 $q _ { 2 } ^ { \prime }$ 替换为 $u q _ { 2 } ^ { \prime }$ ，我们发现
+那么 $q _ { 1 } ^ { \prime } \cdots q _ { n } ^ { \prime } \in ( q _ { 1 } )$ ，并且 $\left( q _ { 1 } \right)$ 是一个素理想（根据假设）；因此对于某个 $i$ ， $q _ { i } ^ { \prime } \in \mathsf { \Gamma } ( q _ { 1 } )$ ，我们可以在改变因子的顺序后假设 $i$ 为 1 。因此 $q _ { 1 } ^ { \prime } = u q _ { 1 }$ 对于某个 $u \in R$ 。由于 $q _ { 1 } ^ { \prime }$ 是不可约的，而 $q _ { 1 }$ 不是单位，必然 $u$ 是一个单位。因此 $q _ { 1 }$ 和 $q _ { 1 } ^ { \prime }$ 是相伴的。消去 $q _ { 1 }$ 并将 $q _ { 2 } ^ { \prime }$ 替换为 $u q _ { 2 } ^ { \prime }$ ，我们发现
 
 $$
-q _ { 2 } \cdot \cdot \cdot q _ { m } = q _ { 2 } ^ { \prime } \cdot \cdot \cdot q _ { n } ^ { \prime } .
+q _ { 2 } \cdots q _ { m } = q _ { 2 } ^ { \prime } \cdots q _ { n } ^ { \prime } .
 $$
 
 重复这个过程逐一匹配所有因子。显然，$m = n$ ，否则我们将得到 $1 = \mathrm { a }$ 不可约因子的积，这与不可约因子不是单位的事实相矛盾。
@@ -10396,7 +10396,7 @@ $$
 证明。表格中的每一行都是一个带余除法。如果没有$r_i$为零，我们将得到一个无限递减的序列
 
 $$
-v ( b ) > v ( r _ { 1 } ) > v ( r _ { 2 } ) > v ( r _ { 3 } ) > \cdot \cdot \cdot
+v ( b ) > v ( r _ { 1 } ) > v ( r _ { 2 } ) > v ( r _ { 3 } ) > \cdots
 $$
 
 关于非负整数的，这是无稽之谈。
@@ -10434,7 +10434,7 @@ $$
 
 2.4. $\triangleright$ 考虑 $\mathbb { Z } [ x , y ]$ 中的元素 $x , y$ 。证明 1 是 $x$ 和 $y$ 的最大公约数，然而 1 不是 $x$ 和 $y$ 的线性组合。(参见练习 II.2.13。) [§2.1, §2.3]
 
-2.5. $\triangleright$ 设 $R$ 是 $\mathbb { Z } [ t ]$ 的一个子环，由没有一次项的多项式组成：$a _ { 0 } + a _ { 2 } t ^ { 2 } + \cdot \cdot \cdot + a _ { d } t ^ { d }$ 。
+2.5. $\triangleright$ 设 $R$ 是 $\mathbb { Z } [ t ]$ 的一个子环，由没有一次项的多项式组成：$a _ { 0 } + a _ { 2 } t ^ { 2 } + \cdots + a _ { d } t ^ { d }$ 。
 
 证明 $R$ 确实是 $\mathbb{Z}[t]$ 的一个子环，并得出 $R$ 是一个整环。  
 列出 $R$ 中 $t^5$ 和 $t^6$ 的所有公因数。
@@ -10504,11 +10504,11 @@ $$
 
 2.23. 计算 $d = \operatorname* { g c d } ( 5 5 0 4 2 2 7 6 1 7 6 4 5 6 9 6 , 2 9 2 2 4 7 6 0 4 5 1 1 0 1 2 3 ) $。此外，找到 $a$ ，$b$ 使得 d = 5504227617645696 a + 2922476045110123 b。
 
-2.24. $\triangleright$ 证明存在无穷多个素数整数。(提示：通过反证法假设 $\rho _ { 1 } , \ldots , p _ { N }$ 是所有正素数的完整列表。关于 $p _ { 1 } \cdot \cdot \cdot \cdot p _ { N } + 1 \mathrm { \dot { \Omega } }$ 你能说什么？这个论证早在两千多年前就已经被欧几里得所知。) [2.25, §5.2, 5.11]
+2.24. $\triangleright$ 证明存在无穷多个素数整数。(提示：通过反证法假设 $\rho _ { 1 } , \ldots , p _ { N }$ 是所有正素数的完整列表。关于 $p _ { 1 } \cdots \cdot p _ { N } + 1 \mathrm { \dot { \Omega } }$ 你能说什么？这个论证早在两千多年前就已经被欧几里得所知。) [2.25, §5.2, 5.11]
 
 2.25. $\neg$ 欧几里得主题的变体，来自练习 2.24：设 $f ( x ) \in \mathbb { Z } [ x ]$ 是一个非常数多项式，且 $f ( 0 ) = 1$。证明：无穷多个素数整除 $f ( n )$，其中 $n$ 在 $\mathbb { Z }$ 中取值。（如果 $p _ { 1 } , \ldots , p _ { N }$ 是整除 $f ( n )$ 的素数的完整列表，那么对于 $f ( p _ { 1 } \cdots p _ { N } x )$ 你能说什么：）
 
-一旦你对这个满意，就表明假设 $f ( 0 ) = 1$ 是不必要的。（如果 $f ( 0 ) = a \neq 0$ ，考虑 $f ( p _ { 1 } \cdot \cdot \cdot p _ { N } a x )$ 。最后，请注意0没有什么特别之处。）[VII.5.18]
+一旦你对这个满意，就表明假设 $f ( 0 ) = 1$ 是不必要的。（如果 $f ( 0 ) = a \neq 0$ ，考虑 $f ( p _ { 1 } \cdots p _ { N } a x )$ 。最后，请注意0没有什么特别之处。）[VII.5.18]
 
 ## 3. 插曲：佐恩引理
 
@@ -10547,11 +10547,11 @@ $$
 
 Zorn引理的状态很特别：一方面，它复杂到足以让我所知道的人都不觉得“直观清晰”；另一方面，它被证明与选择公理$^ { 1 0 }$逻辑等价，而选择公理对大多数人来说看起来是合理的，并且与“良序定理”，我认为直觉上不合理。我不会证明所有这些等价性（勤奋的读者会在练习中证明它们，而且无论如何都不难找到更详细的证明）；但我将尝试用一般性的语言描述这种情况，并解释为什么这个不合理陈述蕴含了其他两个。
 
-选择公理指出，如果$\mathcal { F }$是集合$Z$的一族互不相交的非空子集，那么我们可以通过从每个$X \in \mathcal { F }$中选取一个元素$x$来形成一个新的集合。这可能听起来很合理，但它引发了一些相当微妙的问题：例如，可以证明这个公理是独立于（Zermelo-Fr¨ankel）集合论的其他公理的。此外，它还有一些令人不安的反直觉的推论，例如Banach-Tarski悖论11。
+选择公理指出，如果$\mathscr { F }$是集合$Z$的一族互不相交的非空子集，那么我们可以通过从每个$X \in \mathscr { F }$中选取一个元素$x$来形成一个新的集合。这可能听起来很合理，但它引发了一些相当微妙的问题：例如，可以证明这个公理是独立于（Zermelo-Fr¨ankel）集合论的其他公理的。此外，它还有一些令人不安的反直觉的推论，例如Banach-Tarski悖论11。
 
-选择公理的微妙之处归结为以下问题：如何选择元素 $x$？如果 $Z$（以及因此 $\mathcal { F }$）是有限的，这并不存在争议，但，毫不奇怪，如果 $Z$ 是无限的，它就成为一个问题。
+选择公理的微妙之处归结为以下问题：如何选择元素 $x$？如果 $Z$（以及因此 $\mathscr { F }$）是有限的，这并不存在争议，但，毫不奇怪，如果 $Z$ 是无限的，它就成为一个问题。
 
-在 $Z$ 上一个合适的序关系在这里会很有用：如果 $\preceq$ 是 $Z$ 上的一个序关系，使得 $Z$ 的每个非空子集都有一个最小元素，那么我们可以简单地让 $x$ 是每个 $X ~ \in ~ \mathcal { F }$ 的最小元素。如果这种情况成立，我们就说 $Z$ 是由 $\preceq$ 做出的良序集，或者说 $\preceq$ 是 $Z$ 上的一个良序。 （缩写 woset 在文献中也使用，但不太常用。）例如，正数集 $\mathbb { Z } ^ { > 0 }$ 是由 $\leq$ 做出的良序集；这个事实被称为良序原理。
+在 $Z$ 上一个合适的序关系在这里会很有用：如果 $\preceq$ 是 $Z$ 上的一个序关系，使得 $Z$ 的每个非空子集都有一个最小元素，那么我们可以简单地让 $x$ 是每个 $X ~ \in ~ \mathscr { F }$ 的最小元素。如果这种情况成立，我们就说 $Z$ 是由 $\preceq$ 做出的良序集，或者说 $\preceq$ 是 $Z$ 上的一个良序。 （缩写 woset 在文献中也使用，但不太常用。）例如，正数集 $\mathbb { Z } ^ { > 0 }$ 是由 $\leq$ 做出的良序集；这个事实被称为良序原理。
 
 因此，当集合 $Z$ 是正数集 $\mathbb { Z } ^ { > 0 }$ 时，选择公理的陈述实际上是“清晰”的。对于集合 $\mathbb { Z }$ 来说，可能看起来稍微不那么清晰，因为 $\mathbb { Z }$ 不是由 $\leq$ 好序的；然而，通过片刻（练习 3.4）在 $\mathbb { Z }$ 上构造一个不同的关系，可以使 $\mathbb { Z }$ 成为一个好序集。因此，选择公理对于 $Z = \mathbb { Z }$ 或任何可数集（例如 $\mathbb { Q }$）来说也是完全透明的。
 
@@ -10643,7 +10643,7 @@ $$
 3.2. 证明一个全序集$(Z, \preceq)$是一个woset当且仅当每一个降链
 
 $$
-z _ { 1 } \succeq z _ { 2 } \succeq z _ { 3 } \succeq \cdot \cdot \cdot
+z _ { 1 } \succeq z _ { 2 } \succeq z _ { 3 } \succeq \cdots
 $$
 
 在 $Z$ 中稳定。
@@ -10701,7 +10701,7 @@ $$
 3.13. $\lnot \mathrm { L e t } \ : R$ 是一个交换环，并且让 $N$ 是它的幂零根（习题 III.3.12）。  
 让 $r \not \in N$ 。
 
-• 考虑 $R$ 的理想族 $\mathcal { F }$，其中不包含 $r$ 的任何正整数次幂 $r ^ { k }$（$k > 0$）。证明 $\mathcal { F }$ 有极大元。• 设 $I$ 是 $\mathcal { F }$ 的一个极大元。证明 $I$ 是素理想。由此得出 $r \not \in N \implies r$ 不在 $R$ 的所有素理想的交集中。
+• 考虑 $R$ 的理想族 $\mathscr { F }$，其中不包含 $r$ 的任何正整数次幂 $r ^ { k }$（$k > 0$）。证明 $\mathscr { F }$ 有极大元。• 设 $I$ 是 $\mathscr { F }$ 的一个极大元。证明 $I$ 是素理想。由此得出 $r \not \in N \implies r$ 不在 $R$ 的所有素理想的交集中。
 
 与练习 III.4.18 一起，这表明交换环 $R$ 的零根等于 $R$ 的所有素理想的交集。[III.4.18, VII.2.8]
 
@@ -10730,7 +10730,7 @@ $$
 一个更加天真的观察是，$R$ 的每个理想 $I$ 都生成 $R [x]$ 的一个理想：
 
 $$
-I R [ x ] : = \{ a _ { 0 } + a _ { 1 } x + \cdot \cdot \cdot + a _ { d } x ^ { d } \in R [ x ] | \forall i , a _ { i } \in I \} .
+I R [ x ] : = \{ a _ { 0 } + a _ { 1 } x + \cdots + a _ { d } x ^ { d } \in R [ x ] | \forall i , a _ { i } \in I \} .
 $$
 
 引理 4.1. 设 $R$ 是一个环，$I$ 是 $R$ 的一个理想。那么
@@ -10752,7 +10752,7 @@ $$
 定义4.3。设$R$是一个交换环，并且让
 
 $$
-f = a _ { 0 } + a _ { 1 } x + \cdot \cdot \cdot + a _ { d } x ^ { d } \in R [ x ]
+f = a _ { 0 } + a _ { 1 } x + \cdots + a _ { d } x ^ { d } \in R [ x ]
 $$
 
 是一个多项式。
@@ -10776,7 +10776,7 @@ $$
 
 对于非常原始的多项式，类似等价成立（习题4.4）。引理4.4最终将负责这样一个事实：如果$R$是一个UFD，那么$R [x]$是一个UFD，这是本节我的主要目标。如果$R$是一个UFD，“原始”的概念有以下解释；我伴随“非常原始”的情况，用于比较。
 
-引理 4.5. 设 $R$ 是一个交换环，且 $f = a _ { 0 } + a _ { 1 } x + \cdot \cdot \cdot + a _ { d } x ^ { d } \in R [ x ]$ 如上所述。
+引理 4.5. 设 $R$ 是一个交换环，且 $f = a _ { 0 } + a _ { 1 } x + \cdots + a _ { d } x ^ { d } \in R [ x ]$ 如上所述。
 
 • $f$ 是非常原始的，当且仅当 $( a _ { 0 } , \ldots , a _ { d } ) = ( 1 )$ 。   
 • 如果 $R$ 是一个唯一因子整环，那么 $f$ 是原始的，当且仅当 $\operatorname* { g c d } ( a _ { 0 } , \ldots , a _ { d } ) = 1$ 。
@@ -11051,19 +11051,19 @@ $$
 定理4.14的证明。我们首先验证$R [x]$中主理想的一致性条件。设
 
 $$
-( f _ { 1 } ) \subseteq ( f _ { 2 } ) \subseteq ( f _ { 3 } ) \subseteq \cdot \cdot \cdot
+( f _ { 1 } ) \subseteq ( f _ { 2 } ) \subseteq ( f _ { 3 } ) \subseteq \cdots
 $$
 
 是 $R[x]$ 的一个主理想链。根据推论4.9，这诱导了一个主理想链
 
 $$
-( { \mathrm { c o n t } } _ { f _ { 1 } } ) \subseteq ( { \mathrm { c o n t } } _ { f _ { 2 } } ) \subseteq ( { \mathrm { c o n t } } _ { f _ { 3 } } ) \subseteq \cdot \cdot \cdot
+( { \mathrm { c o n t } } _ { f _ { 1 } } ) \subseteq ( { \mathrm { c o n t } } _ { f _ { 2 } } ) \subseteq ( { \mathrm { c o n t } } _ { f _ { 3 } } ) \subseteq \cdots
 $$
 
 在 $R$ 中；由于 $R$ 是一个主理想整环，这个链最终稳定：即，$( \mathrm { c o n t } _ { f _ { i } } ) = ( \mathrm { c o n t } _ { f _ { i + 1 } } )$ 对于 $16 i \gg 0$ 。另一方面，使用引理 4.15 中的记号，我们有
 
 $$
-( f _ { 1 } ) _ { K } \subseteq ( f _ { 2 } ) _ { K } \subseteq ( f _ { 3 } ) _ { K } \subseteq \cdot \cdot \cdot
+( f _ { 1 } ) _ { K } \subseteq ( f _ { 2 } ) _ { K } \subseteq ( f _ { 3 } ) _ { K } \subseteq \cdots
 $$
 
 作为 $K [x]$ 中的一个理想序列；由于 $K [x]$ 是一个唯一因子分解域（因为它是一个主理想整环；参见§），这个序列最终稳定。因此，对于 $i \gg 0$，有 $( f _ { i } ) _ { K } = ( f _ { i + 1 } ) _ { K }$。
@@ -11208,7 +11208,7 @@ $M = 0$ 。
 
 4.19. $\triangleright$ 在环 $R$ 中，如果元素 $a \in R$ 满足 $a ^ { \pi } = 0$ 对于某个 $n \geq 0$ ，则称 $a$ 是幂零的。证明如果 $a$ 是幂零的，那么 $1 + a$ 是 $R$ 中的单位。[VI.7.11, § VII.2.3]
 
-4.20. 将练习4.18的结果推广如下：设$R$是一个交换环，且$f = a _ { 0 } + a _ { 1 } x + \cdot \cdot \cdot + a _ { d } x ^ { d } \in R [ x ]$；证明$f$在$R [x]$中是单位当且仅当$a _ { 0 }$是$f$的逆元，并证明$u _ { 1} , \ldots , u _ { d }$是幂零元。（提示：如果对于所有$b _ { 0 } + b _ { 1 } x + \cdot \cdot \cdot + b _ { e } x ^ { e }$，有$a _ { d } ^ { \imath + 1 } b _ { e - i } = 0$对所有$i \geq 0$成立，并推导出$u _ { d }$是幂零元。）
+4.20. 将练习4.18的结果推广如下：设$R$是一个交换环，且$f = a _ { 0 } + a _ { 1 } x + \cdots + a _ { d } x ^ { d } \in R [ x ]$；证明$f$在$R [x]$中是单位当且仅当$a _ { 0 }$是$f$的逆元，并证明$u _ { 1} , \ldots , u _ { d }$是幂零元。（提示：如果对于所有$b _ { 0 } + b _ { 1 } x + \cdots + b _ { e } x ^ { e }$，有$a _ { d } ^ { \imath + 1 } b _ { e - i } = 0$对所有$i \geq 0$成立，并推导出$u _ { d }$是幂零元。）
 
 4.21. $\triangleright$ 建立在主理想整环上不可约多项式的特征，如引理4.17所述。[§4.3]
 
@@ -11284,7 +11284,7 @@ $$
 命题 5.5. 设 $R$ 是一个主理想整环（UFD），设 $K$ 是它的分式域。设
 
 $$
-f ( x ) = a _ { 0 } + a _ { 1 } x + \cdot \cdot \cdot + a _ { n } x ^ { n } \in R [ x ] ,
+f ( x ) = a _ { 0 } + a _ { 1 } x + \cdots + a _ { n } x ^ { n } \in R [ x ] ,
 $$
 
 并且让 $c = { \frac { p } { q } } \in K$ 是 $f$ 的一个根，其中 $p , q \in R$，$g c d ( p , q ) = 1$。那么 $p \mid a _ { 0 }$ 且 $q \mid a _ { n }$ 在 $R$ 中。
@@ -11298,13 +11298,13 @@ $$
 也就是说
 
 $$
-a _ { 0 } q ^ { n } + a _ { 1 } p q ^ { n - 1 } + \cdot \cdot \cdot + a _ { n } p ^ { n } = 0 .
+a _ { 0 } q ^ { n } + a _ { 1 } p q ^ { n - 1 } + \cdots + a _ { n } p ^ { n } = 0 .
 $$
 
 因此
 
 $$
-a _ { 0 } q ^ { n } = - p ( a _ { 1 } q ^ { n - 1 } + \cdot \cdot \cdot + a _ { n } p ^ { n - 1 } ) ,
+a _ { 0 } q ^ { n } = - p ( a _ { 1 } q ^ { n - 1 } + \cdots + a _ { n } p ^ { n - 1 } ) ,
 $$
 
 证明 $p \mid (a_0 q^n)$。由于 $p$ 和 $q$ 的最大公约数为 1，这意味着 $p$ 的因子集合包含在 $a_0$ 的不可约因子集合中，即 $p \mid a_0$。
@@ -11394,13 +11394,13 @@ $f \in k [x]$ 在命题 5.7 中构造的扩张 $F$ 中获得一个根的事实�
 那么在$k [x]$中有恰好$N$个不可约的单项式多项式，即$( x -$ $c _ { 1 } ) , \ldots , ( x - c _ { N } )$。考虑这个多项式
 
 $$
-f ( x ) = ( x - c _ { 1 } ) \cdot \cdot \cdot \cdot \cdot ( x - c _ { N } ) + 1 :
+f ( x ) = ( x - c _ { 1 } ) \cdots \cdot \cdot ( x - c _ { N } ) + 1 :
 $$
 
 对于所有 $c \in k$ 我们都有
 
 $$
-f ( c ) = ( c - c _ { 1 } ) \cdot \cdot \cdot \cdot \cdot ( c - c _ { N } ) + 1 = 1 \neq 0 ,
+f ( c ) = ( c - c _ { 1 } ) \cdots \cdot \cdot ( c - c _ { N } ) + 1 = 1 \neq 0 ,
 $$
 
 由于 $c$ 等于 $c _ { i }$ 中的一个。因此 $f ( x )$ 是一个非常数多项式且没有根，这与引理 5.10 矛盾。$\square$
@@ -11436,7 +11436,7 @@ $$
 证明。设 $f \in \mathbb{R}[x]$ 是一个非常数多项式：
 
 $$
-f = a _ { 0 } + a _ { 1 } x + \cdot \cdot \cdot + a _ { n } x ^ { n } ,
+f = a _ { 0 } + a _ { 1 } x + \cdots + a _ { n } x ^ { n } ,
 $$
 
 对于所有 $a _ { i } \in \mathbb { R }$ 。根据定理 5.12，$f$ 有一个复数根 $z$ :
@@ -11448,7 +11448,7 @@ $$
 应用复共轭 $z \mapsto { \overline { { z } } }$ 并注意到 $\overline { { a } } _ { i } = a _ { i }$ 因为 $a _ { i } \in \mathbb { R }$ ，
 
 $$
-a _ { 0 } + a _ { 1 } { \overline { { z } } } + \cdot \cdot \cdot + a _ { n } { \overline { { z } } } ^ { n } = { \overline { { a _ { 0 } } } } + { \overline { { a _ { 1 } } } } { \overline { { z } } } + \cdot \cdot \cdot + { \overline { { a _ { n } } } } { \overline { { z } } } ^ { n } = { \overline { { a _ { 0 } } } } + a _ { 1 } z + \cdot \cdot \cdot + a _ { n } z ^ { n } = 0 :
+a _ { 0 } + a _ { 1 } { \overline { { z } } } + \cdots + a _ { n } { \overline { { z } } } ^ { n } = { \overline { { a _ { 0 } } } } + { \overline { { a _ { 1 } } } } { \overline { { z } } } + \cdots + { \overline { { a _ { n } } } } { \overline { { z } } } ^ { n } = { \overline { { a _ { 0 } } } } + a _ { 1 } z + \cdots + a _ { n } z ^ { n } = 0 :
 $$
 
 这表明 $\overline { z }$ 也是 $f$ 的一个根。有两种可能性：
@@ -11498,7 +11498,7 @@ $$
 **命题 5.17.** 设 $R$ 是一个（交换）环，$\mathfrak { p }$ 是 $R$ 的一个素理想。设
 
 $$
-f = a _ { 0 } + a _ { 1 } x + \cdot \cdot \cdot + a _ { n } x ^ { n } \in R [ x ]
+f = a _ { 0 } + a _ { 1 } x + \cdots + a _ { n } x ^ { n } \in R [ x ]
 $$
 
 是一个多项式，并且假设
@@ -11512,7 +11512,7 @@ $$
 证明。通过反证法。假设 $f \ = \ g h$ 在 $R [x]$ 中，且 $d = \deg g$ 和 $e = \deg h$ 都小于 $n = \deg f$；写出
 
 $$
-g = b _ { 0 } + b _ { 1 } x + \cdot \cdot \cdot + b _ { d } x ^ { d } , \quad h = c _ { 0 } + c _ { 1 } x + \cdot \cdot \cdot + c _ { e } x ^ { e } ,
+g = b _ { 0 } + b _ { 1 } x + \cdots + b _ { d } x ^ { d } , \quad h = c _ { 0 } + c _ { 1 } x + \cdots + c _ { e } x ^ { e } ,
 $$
 
 考虑 $f$ 模 $\mathfrak { p }$ ：因此
@@ -11539,7 +11539,7 @@ $$
 示例 5.19. 这可能是 Eisenstein 判别法的最著名应用。设 $p$ 是一个素数，且让
 
 $$
-f ( x ) = 1 + x + x ^ { 2 } + \cdot \cdot \cdot + x ^ { p - 1 } \in \mathbb { Z } [ x ] .
+f ( x ) = 1 + x + x ^ { 2 } + \cdots + x ^ { p - 1 } \in \mathbb { Z } [ x ] .
 $$
 
 这些多项式被称为循环多项式；我们将在 § VII.5.2 中再次遇到它们。
@@ -11570,7 +11570,7 @@ $$
 
 ### 习题
 
-5.1. $\neg$ 设 $f ( x ) \in \mathbb { C } [x]$ 。证明 $a \in \mathbb { C}$ 是 $f$ 的一个 $r$ 重根当且仅当 $f ( a ) = F ( a ) = \cdot \cdot \cdot = f ^ { ( r - 1 ) } ( a ) = 0$ 且 $f ^ { ( r ) } ( a ) { \neq } 0$ ，其中 $f ^ { ( k ) } ( a )$ 表示 $f$ 在 $a$ 处的第 $k$ 阶导数的值。推论 $f ( x ) \in \mathbb { C } [ x ]$ 有重根当且仅当 $\operatorname* { g c d } ( f ( x ) , F ( x ) ) \neq 1$ 。[5.2]
+5.1. $\neg$ 设 $f ( x ) \in \mathbb { C } [x]$ 。证明 $a \in \mathbb { C}$ 是 $f$ 的一个 $r$ 重根当且仅当 $f ( a ) = F ( a ) = \cdots = f ^ { ( r - 1 ) } ( a ) = 0$ 且 $f ^ { ( r ) } ( a ) { \neq } 0$ ，其中 $f ^ { ( k ) } ( a )$ 表示 $f$ 在 $a$ 处的第 $k$ 阶导数的值。推论 $f ( x ) \in \mathbb { C } [ x ]$ 有重根当且仅当 $\operatorname* { g c d } ( f ( x ) , F ( x ) ) \neq 1$ 。[5.2]
 
 5.2. 设 $F$ 是 $\mathbb{C}$ 的一个子域，且 $f(x)$ 是 $F[x]$ 中的一个不可约多项式。证明 $f(x)$ 在 $\mathbb{C}$ 中没有重根。（使用习题 2.22 和 5.1。）
 
@@ -11639,32 +11639,32 @@ $$
 是满射并且诱导了一个同构
 
 $$
-\tilde { \varphi } : \frac { R } { I _ { 1 } \cdot \cdot \cdot I _ { k } } \xrightarrow [ ] { \sim } \frac { R } { I _ { 1 } } \times \cdot \cdot \times \frac { R } { I _ { k } } .
+\tilde { \varphi } : \frac { R } { I _ { 1 } \cdots I _ { k } } \xrightarrow [ ] { \sim } \frac { R } { I _ { 1 } } \times \cdots \times \frac { R } { I _ { k } } .
 $$
 
-‘自然’同态 $\varphi$ 由典范投影 $R \to R / I _ { j }$ 和积的泛性质决定；同态 $\tilde { \varphi }$ 由于商的泛性质而得到，因为对于所有 $j$ ， $I _ { 1 } \cdot \cdot \cdot I _ { k } \subseteq I _ { j }$ ，因此 $I _ { 1 } \cdot \cdot \cdot I _ { k } \subseteq \ker \varphi$ 。定理 6.1 通过以下引理依赖的归纳法得到证明。
+‘自然’同态 $\varphi$ 由典范投影 $R \to R / I _ { j }$ 和积的泛性质决定；同态 $\tilde { \varphi }$ 由于商的泛性质而得到，因为对于所有 $j$ ， $I _ { 1 } \cdots I _ { k } \subseteq I _ { j }$ ，因此 $I _ { 1 } \cdots I _ { k } \subseteq \ker \varphi$ 。定理 6.1 通过以下引理依赖的归纳法得到证明。
 
-引理 6.2. 设 $I _ { 1 } , \ldots , I _ { k }$ 是 $R$ 的理想，且对于所有 $i = 1 , \ldots , k - 1$，有 $I _ { i } + I _ { k } = ( 1 )$。那么 $( I _ { 1 } \cdot \cdot \cdot I _ { k - 1 } ) + I _ { k } = ( 1 )$。
+引理 6.2. 设 $I _ { 1 } , \ldots , I _ { k }$ 是 $R$ 的理想，且对于所有 $i = 1 , \ldots , k - 1$，有 $I _ { i } + I _ { k } = ( 1 )$。那么 $( I _ { 1 } \cdots I _ { k - 1 } ) + I _ { k } = ( 1 )$。
 
 证明。根据假设，对于 $i = 1 , \ldots , k - 1$，存在 $a _ { i } \in I _ { k}$ 使得 $1 - a _ { i } \in I _ { i}$。然后
 
 $$
-( 1 - a _ { 1 } ) \cdots ( 1 - a _ { k - 1 } ) \in I _ { 1 } \cdot \cdot \cdot I _ { k - 1 } ,
+( 1 - a _ { 1 } ) \cdots ( 1 - a _ { k - 1 } ) \in I _ { 1 } \cdots I _ { k - 1 } ,
 $$
 
 并且
 
 $$
-1 - ( 1 - a _ { 1 } ) \cdot \cdot \cdot ( 1 - a _ { k - 1 } ) \in I _ { k } ,
+1 - ( 1 - a _ { 1 } ) \cdots ( 1 - a _ { k - 1 } ) \in I _ { k } ,
 $$
 
 因为它是一个由 $a _ { 1 } , \dotsc , a _ { k - 1 } \in I _ { k }$ 组成的组合。
 
-显然 $\ker \varphi = I _ { 1 } \cap \cdot \cdot \cdot \cap I _ { k }$，因此定理6.1的第二部分直接由第一部分，即“第一同构定理”，以及以下（本身有趣的）观察得出：
+显然 $\ker \varphi = I _ { 1 } \cap \cdots \cap I _ { k }$，因此定理6.1的第二部分直接由第一部分，即“第一同构定理”，以及以下（本身有趣的）观察得出：
 
-引理 6.3. 设 $I _ { 1 } , \ldots , I _ { k }$ 是 $R$ 的理想，且对于所有 $i \neq j$，有 $I _ { i } + I _ { j } = ( 1 )$。那么 $I _ { 1 } \cdot \cdot \cdot I _ { k } = I _ { 1 } \cap \cdot \cdot \cdot \cap I _ { k }$。
+引理 6.3. 设 $I _ { 1 } , \ldots , I _ { k }$ 是 $R$ 的理想，且对于所有 $i \neq j$，有 $I _ { i } + I _ { j } = ( 1 )$。那么 $I _ { 1 } \cdots I _ { k } = I _ { 1 } \cap \cdots \cap I _ { k }$。
 
-证明。根据引理6.2，在所给假设下，我们有对于$k \geq 3$，$I _ { 1 } \cdot \cdot \cdot I _ { k - 1 } + I _ { k } =$ (1)。因此，归纳法将一般命题简化为$k = 2$的情况。（顺便说，这个情况是习题III.4.5！）假设$I$和$J$是$R$的理想，使得$I + J = ( 1 )$。对于所有理想$I$，$J$，包含关系$I J \subseteq I \cap J$都成立，因此任务归结为在$I + J = ( 1 )$时证明$I \cap J \subseteq I J$。如果$I + J = ( 1 )$，那么存在元素$a \in { \mathfrak { I } }$，$b \in J$使得$a + b = 1$。但如果$r \in I \cap J$，那么
+证明。根据引理6.2，在所给假设下，我们有对于$k \geq 3$，$I _ { 1 } \cdots I _ { k - 1 } + I _ { k } =$ (1)。因此，归纳法将一般命题简化为$k = 2$的情况。（顺便说，这个情况是习题III.4.5！）假设$I$和$J$是$R$的理想，使得$I + J = ( 1 )$。对于所有理想$I$，$J$，包含关系$I J \subseteq I \cap J$都成立，因此任务归结为在$I + J = ( 1 )$时证明$I \cap J \subseteq I J$。如果$I + J = ( 1 )$，那么存在元素$a \in { \mathfrak { I } }$，$b \in J$使得$a + b = 1$。但如果$r \in I \cap J$，那么
 
 $$
 r = r \cdot 1 = r ( a + b ) = r a + r b \in I J :
@@ -11677,16 +11677,16 @@ $$
 定理 6.1 的证明。对 $k$ 进行归纳法证明。当 $k = 1$ 时，无需证明。当 $k > 1$ 时，假设对较少的 ideals 的情况已知。因此，我们可以假设自然投影诱导出一个同构。
 
 $$
-{ \frac { R } { I _ { 1 } \cdot \cdot \cdot I _ { k - 1 } } } \cong { \frac { R } { I _ { 1 } } } \times \cdot \cdot \cdot \times { \frac { R } { I _ { k - 1 } } } ;
+{ \frac { R } { I _ { 1 } \cdots I _ { k - 1 } } } \cong { \frac { R } { I _ { 1 } } } \times \cdots \times { \frac { R } { I _ { k - 1 } } } ;
 $$
 
 并且我们剩下要证明的是自然同态
 
 $$
-R \to { \frac { R } { I _ { 1 } \cdot \cdot \cdot I _ { k - 1 } } } \times { \frac { R } { I _ { k } } }
+R \to { \frac { R } { I _ { 1 } \cdots I _ { k - 1 } } } \times { \frac { R } { I _ { k } } }
 $$
 
-是满射的。根据引理 6.2，$( I _ { 1 } \cdot \cdot \cdot I _ { k - 1 } ) + I _ { k } = ( 1 )$；因此我们简化为两个理想的情况。
+是满射的。根据引理 6.2，$( I _ { 1 } \cdots I _ { k - 1 } ) + I _ { k } = ( 1 )$；因此我们简化为两个理想的情况。
 
 设 $I$，$J$ 是交换环 $R$ 的理想，且 $I + J = (1)$，并设 $r _ { I } ， r _ { J } \in R$；我们需要验证存在 $r \in R$ 使得 $r \equiv r _ { I } \pmod { I }$ 且 $r \equiv r _ { J } \pmod { J }$。由于 $I + J = (1)$，存在 $a \in I$，$b \in J$ 使得 $a + b = 1$。令 $r = a r _ { J } + b r _ { I }$：则
 
@@ -11704,7 +11704,7 @@ $$
 
 在一个PID中，CRT的形式如下：
 
-推论 6.4. 设 $R$ 是一个 PID，且 $a _ { 1 } , \dotsc , a _ { k } \in R$ 是元素，使得 $\operatorname* { g c d } ( a _ { i } , a _ { j } ) = 1$ 对所有 $i \neq j$ 成立。设 $u = u _ { 1 } \cdot \cdot \cdot u _ { k }$。那么函数
+推论 6.4. 设 $R$ 是一个 PID，且 $a _ { 1 } , \dotsc , a _ { k } \in R$ 是元素，使得 $\operatorname* { g c d } ( a _ { i } , a _ { j } ) = 1$ 对所有 $i \neq j$ 成立。设 $u = u _ { 1 } \cdots u _ { k }$。那么函数
 
 $$
 \varphi : { \frac { R } { ( a ) } }  { \frac { R } { ( a _ { 1 } ) } } \times \cdots \times { \frac { R } { ( a _ { k } ) } }
@@ -11722,7 +11722,7 @@ $$
 
 由于 $\mathbb{Z}$ 是一个主理想整环（PID），推论 6.4 对 $\mathbb{Z}$ 成立，并给出了本小节开头提出的问题的修订版本的一个答案。事实上，在这个情况下追踪证明给出了一种有效的求解 $\mathbb{Z}$ 上的同余方程组（或实际上是在任何欧几里得整环上的同余方程组，这一点从论证中就会很明显）。
 
-为了更明确地说明这一点，设 $\scriptstyle { { I l } 1 , \ldots , { I l } k }$ 为两两互素的整数，并设 $n = n _ { 1 } \cdot \cdot \cdot n _ { k }$ ；对于每个 $i$ ，设 $m _ { i } = n / n _ { i }$ 。那么 $n _ { i }$ 和 $m _ { i }$ 是互素的 $2 4$ ，我们可以使用欧几里得算法明确地找到整数 $a _ { i } , b _ { i }$ 使得
+为了更明确地说明这一点，设 $\scriptstyle { { I l } 1 , \ldots , { I l } k }$ 为两两互素的整数，并设 $n = n _ { 1 } \cdots n _ { k }$ ；对于每个 $i$ ，设 $m _ { i } = n / n _ { i }$ 。那么 $n _ { i }$ 和 $m _ { i }$ 是互素的 $2 4$ ，我们可以使用欧几里得算法明确地找到整数 $a _ { i } , b _ { i }$ 使得
 
 $$
 a _ { i } n _ { i } + b _ { i } m _ { i } = 1 .
@@ -11743,7 +11743,7 @@ $$
 满足
 
 $$
-\equiv r _ { 1 } \cdot 0 + \cdot \cdot \cdot + r _ { i } \cdot 1 + \cdot \cdot \cdot + r _ { k } \cdot 0 \equiv r _ { i } \quad \mathrm { m o }
+\equiv r _ { 1 } \cdot 0 + \cdots + r _ { i } \cdot 1 + \cdots + r _ { k } \cdot 0 \equiv r _ { i } \quad \mathrm { m o }
 $$
 
 对于所有的 $i$。
@@ -11948,9 +11948,9 @@ $$
 
 证明 $R$ 中的乘法赋予理想 $(a)$ 一个环结构，其中 $a$ 作为单位元 $^{26}$。证明 $(a) \cong R / (1 - a)$ 作为环。证明 $R \cong (a) \times (1 - a)$ 作为环。
 
-6.3. 回忆（习题III.3.15） rằng环$R$被称为布尔环，如果对于所有$a \in R$，有$a ^ { 2 } = a$。设$R$是一个有限布尔环；证明$R \cong \mathbb { Z } / 2 \mathbb { Z } \times \cdot \cdot \cdot \times \mathbb { Z } / 2 \mathbb { Z }$。
+6.3. 回忆（习题III.3.15） rằng环$R$被称为布尔环，如果对于所有$a \in R$，有$a ^ { 2 } = a$。设$R$是一个有限布尔环；证明$R \cong \mathbb { Z } / 2 \mathbb { Z } \times \cdots \times \mathbb { Z } / 2 \mathbb { Z }$。
 
-6.4. 设 $R$ 是一个有限交换环，设 $p$ 是 $| R |$ 的最小素除数。设 $I _ { 1 } , \ldots , I _ { k }$ 是真理想，使得 $I _ { i } + I _ { j } = ( 1 )$ 对 $i \neq j$ 成立。证明 $k \leq \log _ { p } { | R | }$。（提示：证明 $| R | ^ { k - 1 } \leq | I _ { 1 } | \cdot \cdot \cdot | I _ { k } | \leq ( | R | / p ) ^ { k }$。）
+6.4. 设 $R$ 是一个有限交换环，设 $p$ 是 $| R |$ 的最小素除数。设 $I _ { 1 } , \ldots , I _ { k }$ 是真理想，使得 $I _ { i } + I _ { j } = ( 1 )$ 对 $i \neq j$ 成立。证明 $k \leq \log _ { p } { | R | }$。（提示：证明 $| R | ^ { k - 1 } \leq | I _ { 1 } | \cdots | I _ { k } | \leq ( | R | / p ) ^ { k }$。）
 
 6.5. 证明映射 $\mathbb{Z}[x] \to \mathbb{Z}[x] / (2) \times \mathbb{Z}[x] / (x)$ 不是满射。
 
@@ -11960,7 +11960,7 @@ $$
 
 6.7. $\triangleright$ 找到一个多项式 $f \in \mathbb { Q } [ x ]$，使得 $f \equiv 1 { \bmod { ( x ^ { 2 } + 1 ) } }$ 且 $f \equiv x { \bmod { x } } ^ { \mathrm { 1 0 0 } }$。[§6.1]
 
-6.8. $\neg$ 设 $n \in \mathbb{Z}$ 是一个正整数，且 $n = p _ { 1 } ^ { u _ { 1 } } \cdot \cdot \cdot p _ { r } ^ { a _ { r } }$ 是它的素数分解。根据有限阿贝尔群的分类定理（或者，实际上，更简单的考虑；参见习题 II.4.9）
+6.8. $\neg$ 设 $n \in \mathbb{Z}$ 是一个正整数，且 $n = p _ { 1 } ^ { u _ { 1 } } \cdots p _ { r } ^ { a _ { r } }$ 是它的素数分解。根据有限阿贝尔群的分类定理（或者，实际上，更简单的考虑；参见习题 II.4.9）
 
 $$
 { \frac { \mathbb { Z } } { ( n ) } } \cong { \frac { \mathbb { Z } } { ( p _ { 1 } ^ { a _ { 1 } } ) } } \times \cdots \times { \frac { \mathbb { Z } } { ( p _ { r } ^ { a _ { r } } ) } }
@@ -11981,7 +11981,7 @@ $$
 • 回忆（练习II.6.14）欧拉函数$\phi$ -函数$\phi ( n )$表示小于等于$n$的正整数中与$n$互质的数的个数。证明
 
 $$
-\phi ( n ) = p _ { 1 } ^ { a _ { 1 } - 1 } ( p _ { 1 } - 1 ) \cdot \cdot \cdot p _ { r } ^ { a _ { r } - 1 } ( p _ { r } - 1 ) .
+\phi ( n ) = p _ { 1 } ^ { a _ { 1 } - 1 } ( p _ { 1 } - 1 ) \cdots p _ { r } ^ { a _ { r } - 1 } ( p _ { r } - 1 ) .
 $$
 
 [II.2.15, VII.5.19]
@@ -12140,11 +12140,11 @@ $$
 
 **证明**。设 $v \in V$，$v \not \in \ B$。那么，由 $B$ 的极大性知 $B \cup \{ v \}$ 不是线性无关的；因此，存在 $c _ { 0 } , \ldots , c _ { t } \in k$ 和（不同的）$b _ { 1 } , \dotsc , b _ { t } \in B$ 使得
 $$
-c _ { 0 } v + c _ { 1 } b _ { 1 } + \cdot \cdot \cdot + c _ { t } b _ { t } = 0 ,
+c _ { 0 } v + c _ { 1 } b _ { 1 } + \cdots + c _ { t } b _ { t } = 0 ,
 $$
 其中并非所有 $c _ { 0 } , \ldots , c _ { t }$ 都等于 $0$。现在，$c _ { 0 } \neq 0$：否则我们会在 $B$ 的元素之间得到一个线性依赖关系。_由于 $k$ 是一个域_，$c _ { 0 }$ 是一个单位；但又有
 $$
-v = ( - c _ { 0 } ^ { - 1 } c _ { 1 } ) b _ { 1 } + \cdot \cdot \cdot + ( - c _ { 0 } ^ { - 1 } c _ { t } ) b _ { t } ,
+v = ( - c _ { 0 } ^ { - 1 } c _ { 1 } ) b _ { 1 } + \cdots + ( - c _ { 0 } ^ { - 1 } c _ { t } ) b _ { t } ,
 $$
 证明 $v$ 在 $B$ 的张成的空间中。因此，$B$ 生成 $V$，如所需。$\square$
 
@@ -12777,7 +12777,7 @@ $$
 **命题 2.11**. 设 $R$ 是一个欧几里得整环，且 $P \in \mathcal { M } _ { m , n } ( R )$。那么 $P$ 与形如的矩阵等价14
 
 $$
-( \begin{array} { c c c } { { d _ { 1 } } } & { { \cdot \cdot \cdot } } & { { 0 } } \\ { { \vdots } } & { { \cdot } } & { { \vdots } } \\ { { 0 } } & { { \cdot \cdot \cdot } } & { { d _ { r } } } \end{array} ) \{ \begin{array} { c } { { 0 } } \\ { { \vdots } } \\ { { 0 } } \\ { { 0 } } \end{array} )
+( \begin{array} { c c c } { { d _ { 1 } } } & { { \cdots } } & { { 0 } } \\ { { \vdots } } & { { \cdot } } & { { \vdots } } \\ { { 0 } } & { { \cdots } } & { { d _ { r } } } \end{array} ) \{ \begin{array} { c } { { 0 } } \\ { { \vdots } } \\ { { 0 } } \\ { { 0 } } \end{array} )
 $$
 
 与 $d _ { 1 } \mid \cdots \mid d _ { r }$ 。
@@ -12872,7 +12872,7 @@ $$
 稍加思考就会揭示，高斯消元法通过诸如命题2.9这样的陈述，为我们提供了一个求解域上或欧几里得整环上的线性方程组的工具16。这一点似乎不值得仔细处理或记忆体操：仔细地写出内容应该能够解决所需的工具生成问题。为了描述一个典型的情况，假设
 
 $$
-\left\{ \begin{array} { l l } { a _ { 1 1 } x _ { 1 } + \cdot \cdot \cdot + a _ { 1 n } x _ { n } = b _ { 1 } } \\ { \qquad \cdot \cdot \cdot } \\ { a _ { m 1 } x _ { 1 } + \cdot \cdot \cdot + a _ { m n } x _ { n } = b _ { m } } \end{array} \right.
+\left\{ \begin{array} { l l } { a _ { 1 1 } x _ { 1 } + \cdots + a _ { 1 n } x _ { n } = b _ { 1 } } \\ { \qquad \cdots } \\ { a _ { m 1 } x _ { 1 } + \cdots + a _ { m n } x _ { n } = b _ { m } } \end{array} \right.
 $$
 
 是一个包含 $m$ 个方程和 $n$ 个未知数的系统，其中 $a _ { i j }$ 和 $b _ { i }$ 属于欧几里得域 $R$。  
@@ -12899,7 +12899,7 @@ $$
 即使不对系数矩阵 $A$ 提出任何特殊要求，行和列运算也能将其化为命题 2.11 中给出的标准形式；也就是说，它将产生可逆矩阵 $M$ ，$N$ 使得
 
 $$
-\begin{array}{c} M \cdot A \cdot N = \left( \begin{array} { c c c } { { d _ { 1 } } } & { { \cdot \cdot \cdot } } & { { 0 } } \\ { { \vdots } } & { { \ddots } } & { { \vdots } } \\ { { 0 } } & { { \cdot \cdot \cdot } } & { { d _ { r } } } \end{array} \right) \vdots  \\ { { 0 } } & { { \cdot \cdot \cdot } } & { { 0 } } \end{array}
+\begin{array}{c} M \cdot A \cdot N = \left( \begin{array} { c c c } { { d _ { 1 } } } & { { \cdots } } & { { 0 } } \\ { { \vdots } } & { { \ddots } } & { { \vdots } } \\ { { 0 } } & { { \cdots } } & { { d _ { r } } } \end{array} \right) \vdots  \\ { { 0 } } & { { \cdots } } & { { 0 } } \end{array}
 $$
 
 按照命题2.11中的符号表示。高斯消元法是一个构造性过程：在切换/组合行或列时，观察自己将明确地产生 $M$ 和 $N$。现在，令 $\mathbf { y } = ( y _ { j } )$ 和 ${ \bf c } = M { \bf b }$ ，该系统
@@ -12972,7 +12972,7 @@ $$
 这一观察极大地简化了行列式的理论。如果 $R = k$ 是一个域，且 $P \in \mathcal { M } _ { n } ( k )$ ，高斯消元法（命题 2.10）表明
 
 $$
-A = E _ { 1 } \cdot \cdot \cdot E _ { a } \cdot \left( \frac { I _ { r } \enspace \middle | \enspace 0 } { \enspace 0 \enspace \middle | \enspace 0 } \right) \cdot E _ { 1 } ^ { \prime } \cdot \cdot \cdot E _ { b } ^ { \prime } ,
+A = E _ { 1 } \cdots E _ { a } \cdot \left( \frac { I _ { r } \enspace \middle | \enspace 0 } { \enspace 0 \enspace \middle | \enspace 0 } \right) \cdot E _ { 1 } ^ { \prime } \cdots E _ { b } ^ { \prime } ,
 $$
 
 当 $r \leq n$ 且 $E _ { i } ^ { \prime }$ ， $E _ { j } ^ { \prime }$ 是初等矩阵时，那么引理 3.2 给出
@@ -13016,7 +13016,7 @@ $$
 **推论 3.5** 设 $R$ 是一个交换环，$A \in { \mathcal { M } } _ { n } ( R )$。那么
 
 $$
-\begin{array}{c} A \cdot { \binom { A ^ { ( 1 1 ) } } { \vdots } } \quad \cdot \cdot \cdot \quad \vdots \quad \vdots  \\ { A ^ { ( 1 n ) } \quad \cdot \cdot \cdot \quad \cdot \quad \vdots } \\ { A ^ { ( 1 n ) } \quad \cdot \cdot \quad A ^ { ( n n ) } } \end{array} = \left( \begin{array} { c c c } { A ^ { ( 1 1 ) } } & { \cdot \cdot \cdot } & { A ^ { ( n 1 ) } } \\ { \vdots } & { \ddots } & { \vdots } \\ { A ^ { ( 1 n ) } } & { \cdot \cdot \cdot } & { A ^ { ( n n ) } } \end{array} \right) \cdot A = \operatorname* { d e t } ( A ) I _ { n } .
+\begin{array}{c} A \cdot { \binom { A ^ { ( 1 1 ) } } { \vdots } } \quad \cdots \quad \vdots \quad \vdots  \\ { A ^ { ( 1 n ) } \quad \cdots \quad \cdot \quad \vdots } \\ { A ^ { ( 1 n ) } \quad \cdot \cdot \quad A ^ { ( n n ) } } \end{array} = \left( \begin{array} { c c c } { A ^ { ( 1 1 ) } } & { \cdots } & { A ^ { ( n 1 ) } } \\ { \vdots } & { \ddots } & { \vdots } \\ { A ^ { ( 1 n ) } } & { \cdots } & { A ^ { ( n n ) } } \end{array} \right) \cdot A = \operatorname* { d e t } ( A ) I _ { n } .
 $$
 
 注意在余子式矩阵中 $i$ 和 $j$ 的角色交换。这个矩阵称为 $A$ 的伴随矩阵。
@@ -13032,7 +13032,7 @@ $$
 特别是，推论3.5证明如果我们能求其行列式的逆，那么我们可以求矩阵的逆。
 
 $$
-A ^ { - 1 } = \operatorname* { d e t } ( A ) ^ { - 1 } \left( \begin{array} { c c c c } { { A ^ { ( 1 1 ) } } } & { { \cdot \cdot \cdot } } & { { A ^ { ( n 1 ) } } } \\ { { \vdots } } & { { \cdot } } & { { \vdots } } \\ { { A ^ { ( 1 n ) } } } & { { \cdot \cdot \cdot } } & { { A ^ { ( n n ) } } } \end{array} \right) ;
+A ^ { - 1 } = \operatorname* { d e t } ( A ) ^ { - 1 } \left( \begin{array} { c c c c } { { A ^ { ( 1 1 ) } } } & { { \cdots } } & { { A ^ { ( n 1 ) } } } \\ { { \vdots } } & { { \cdot } } & { { \vdots } } \\ { { A ^ { ( 1 n ) } } } & { { \cdots } } & { { A ^ { ( n n ) } } } \end{array} \right) ;
 $$
 
 这个结论适用于任何交换环，只要 $\operatorname* { d e t } ( A )$ 是一个单位。在实践中，余子式的计算是“昂贵的”，因此在任何具体的情形下，高斯消元法可能是一个更好的替代方案（至少在域上是这样）；参见习题 3.5。
@@ -13177,7 +13177,7 @@ $$
 等价地，这相当于关系 $\dim ( V / U ) = \dim ( V ) - \dim ( U )$ 。然后考虑一个有限维向量空间和线性映射的复合：
 
 $$
-V _ { \bullet } : \quad 0 \longrightarrow V _ { N } \xrightarrow { \alpha _ { N } } V _ { N - 1 } \xrightarrow { \alpha _ { N - 1 } } \cdot \cdot \cdot \xrightarrow { \alpha _ { 2 } } V _ { 1 } \xrightarrow { \alpha _ { 1 } } V _ { 0 } \xrightarrow { } 0
+V _ { \bullet } : \quad 0 \longrightarrow V _ { N } \xrightarrow { \alpha _ { N } } V _ { N - 1 } \xrightarrow { \alpha _ { N - 1 } } \cdots \xrightarrow { \alpha _ { 2 } } V _ { 1 } \xrightarrow { \alpha _ { 1 } } V _ { 0 } \xrightarrow { } 0
 $$
 
 (cf. § III.7.1). 因此，$\alpha _ { i - 1 } \circ \alpha _ { i } = 0$ 对所有 $i$ 成立。这个条件等价于要求 $\mathrm { i m } ( \alpha _ { i + 1 } ) \subseteq \ker ( \alpha _ { i } )$；回想一下这个复形的同调被定义为空间的集合
@@ -14293,7 +14293,7 @@ $$
 根据定义3.1展开行列式（或以任何其他方式），我们看到$t^{n-1}$的系数的唯一贡献来自对角线元素，形式为
 
 $$
-\sum _ { i = 1 } ^ { n } t \cdot \cdot \cdot t \cdot \left( - a _ { i i } \right) \cdot t \cdot \cdot \cdot t ,
+\sum _ { i = 1 } ^ { n } t \cdots t \cdot \left( - a _ { i i } \right) \cdot t \cdots t ,
 $$
 
 并且陈述如下。
@@ -14309,7 +14309,7 @@ $$
 根据命题 6.9，特征多项式中的所有系数
 
 $$
-t ^ { n } - \mathrm { t r } ( \alpha ) t ^ { n - 1 } + \cdot \cdot \cdot + ( - 1 ) ^ { n } \mathrm { d e t } ( \alpha )
+t ^ { n } - \mathrm { t r } ( \alpha ) t ^ { n - 1 } + \cdots + ( - 1 ) ^ { n } \mathrm { d e t } ( \alpha )
 $$
 
 它们在相似变换下是不变的；据我所知，只有迹和行列式有特殊名称。
@@ -14329,13 +14329,13 @@ $$
 由于 $\operatorname { E n d } _ { R } ( F )$ 是一个 $R$ -代数，我们可以计算每一个多项式
 
 $$
-^ { \mathsf { \prime } } ( t ) = r _ { m } t ^ { m } + r _ { m - 1 } t ^ { m - 1 } + \cdot \cdot \cdot + r _ { 0 } \in R [ t ]
+^ { \mathsf { \prime } } ( t ) = r _ { m } t ^ { m } + r _ { m - 1 } t ^ { m - 1 } + \cdots + r _ { 0 } \in R [ t ]
 $$
 
 在任何 $\alpha \in \operatorname { E n d } _ { R } ( F )$：
 
 $$
-f ( \alpha ) = r _ { m } \alpha ^ { m } + r _ { m - 1 } \alpha ^ { m - 1 } + \cdot \cdot \cdot + r _ { 0 } \in \operatorname { E n d } _ { R } ( F ) .
+f ( \alpha ) = r _ { m } \alpha ^ { m } + r _ { m - 1 } \alpha ^ { m - 1 } + \cdots + r _ { 0 } \in \operatorname { E n d } _ { R } ( F ) .
 $$
 
 换句话说，我们可以在环 $\operatorname { E n d } _ { R } ( F )$ 中执行这些运算；乘以 $r \in R$ 等于与 $r I \in \operatorname { E n d } _ { R } ( F )$ 的复合，而 $\alpha ^ { k }$ 表示 $\alpha$ 与自身复合 $k$ 次的运算。使得 $f ( \alpha ) = 0$ 的多项式集合是 $R [t]$ 的一个理想（习题 6.7），我将它记作 $\mathcal { I } _ { \alpha }$ 并称之为 $\alpha$ 的零化理想。
@@ -14627,13 +14627,13 @@ $$
 我使用某种语言的倾向可能会使事情变得复杂，而事情本身非常简单。给定一个自由模 $F$ 的线性变换 $\alpha$，我们可以定义多项式的作用
 
 $$
-^ { \digamma } ( t ) = r _ { m } t ^ { m } + r _ { m - 1 } t ^ { m - 1 } + \cdot \cdot \cdot + r _ { 0 } \in R [ t ]
+^ { \digamma } ( t ) = r _ { m } t ^ { m } + r _ { m - 1 } t ^ { m - 1 } + \cdots + r _ { 0 } \in R [ t ]
 $$
 
 在$F$上如下：对于每个$\mathbf { v } \in F ^ { }$，设置
 
 $$
-f ( t ) ( \mathbf { v } ) : = r _ { m } \alpha ^ { m } ( \mathbf { v } ) + r _ { m - 1 } \alpha ^ { m - 1 } ( \mathbf { v } ) + \cdot \cdot \cdot + r _ { 0 } \mathbf { v } ,
+f ( t ) ( \mathbf { v } ) : = r _ { m } \alpha ^ { m } ( \mathbf { v } ) + r _ { m - 1 } \alpha ^ { m - 1 } ( \mathbf { v } ) + \cdots + r _ { 0 } \mathbf { v } ,
 $$
 
 其中 $\alpha ^ { k }$ 表示 $\alpha$ 与自身 $k$ 次复合；我们在 §6.2 中已经遇到过这种情况。相反，$R  { | t | }$ 对 $F$ 的作用特别确定一个映射 $\alpha : F \to F$ ，即“乘以 $t ^ { \gamma }$”：
@@ -14694,7 +14694,7 @@ $$
 其中 $f ( t )$ 是一个非常数首一多项式：
 
 $$
-f ( t ) = t ^ { n } + r _ { n - 1 } t ^ { n - 1 } + \cdot \cdot \cdot + r _ { 0 } .
+f ( t ) = t ^ { n } + r _ { n - 1 } t ^ { n - 1 } + \cdots + r _ { 0 } .
 $$
 
 获取这个海报案例的良好矩阵表示是值得的。我们选择基
@@ -14706,7 +14706,7 @@ $$
 在 $V$ 中（参见命题 III.4.6）。回想一下，对应于一个变换的矩阵的列是由所选基底的像组成的（参见引理 2.2 之前的注释）。由于 $t$ 在 $V$ 上的乘法起作用
 
 $$
-\left\{ \begin{array} { c } { { 1 \mapsto t , } } \\ { { t \mapsto t ^ { 2 } , } } \\ { { \ldots } } \\ { { t ^ { n - 1 } \mapsto t ^ { n } = - r _ { n - 1 } t ^ { n - 1 } - \cdot \cdot \cdot - r _ { 0 } , } } \end{array} \right.
+\left\{ \begin{array} { c } { { 1 \mapsto t , } } \\ { { t \mapsto t ^ { 2 } , } } \\ { { \ldots } } \\ { { t ^ { n - 1 } \mapsto t ^ { n } = - r _ { n - 1 } t ^ { n - 1 } - \cdots - r _ { 0 } , } } \end{array} \right.
 $$
 
 与这个线性变换相对应的矩阵是
@@ -14768,7 +14768,7 @@ $$
 关于特征多项式，根据练习6.10，只需证明循环情况下的命题：也就是说，只需证明如果$f(t)$是一个单多项式，那么$f(t)$等于$f(t)$的伴随矩阵$C_{f(t)}$的特征多项式。具体来说，令
 
 $$
-f ( t ) = t ^ { n } + { r } _ { n - 1 } t ^ { n - 1 } + \cdot \cdot \cdot + { r } _ { 0 }
+f ( t ) = t ^ { n } + { r } _ { n - 1 } t ^ { n - 1 } + \cdots + { r } _ { 0 }
 $$
 
 是一个单变量多项式；那么任务就归结为证明
@@ -14841,7 +14841,7 @@ $$
 对于某些 $\lambda \in k$（它等于 $\alpha$ 的特征值）和 $r > 0$。正如我们对“伴随矩阵”所做的那样，我们现在寻找一个基，使得相对于这个基，$\alpha$（即乘以 $t$；记住定理 7.5 中的细节）具有特别简单的矩阵表示。这次我们选择基
 
 $$
-( t - \lambda ) ^ { r - 1 } , \quad ( t - \lambda ) ^ { r - 2 } , \quad \cdot \cdot \cdot , \quad ( t - \lambda ) ^ { 0 } = 1 .
+( t - \lambda ) ^ { r - 1 } , \quad ( t - \lambda ) ^ { r - 2 } , \quad \cdots , \quad ( t - \lambda ) ^ { 0 } = 1 .
 $$
 
 在第一行，使用事实 $( t - \lambda ) ^ { r } = 0 \mathrm { i n } V$，乘以 $t$ 在 $V$ 上的作用是
@@ -15345,7 +15345,7 @@ $$
 k \subseteq k ( \alpha _ { 1 } ) \subseteq k ( \alpha _ { 1 } , \alpha _ { 2 } ) \subseteq \cdots \subseteq k ( \alpha _ { 1 } , \ldots , \alpha _ { n } ) = F
 $$
 
-证明 $k \subseteq F$ 是有限的，并且 $| F : k | \leq d _ { 1 } \cdot \cdot \cdot d _ { n }$ ，如所需。
+证明 $k \subseteq F$ 是有限的，并且 $| F : k | \leq d _ { 1 } \cdots d _ { n }$ ，如所需。
 
 虽然相当直接，命题1.15一直让我们觉得非凡：它说（特别是）如果$\alpha$和$\beta$在一个域$k$上是代数的，那么$\alpha \pm \beta$，$\alpha \beta$，$\alpha \beta ^ { - 1 }$，以及$\alpha$和$\beta$的任何其他有理函数也都是代数的。如果我们只知道“代数”的简单定义（即“多项式的根”），这似乎相当神秘：给定一个多项式$f ( x )$，$\alpha$是其根，以及一个多项式$g ( x )$，$\beta$是其根，我们如何构造一个多项式$h ( x )$，使得（例如）$h ( \alpha + \beta ) = 0$？答案是，我们不需要进行任何这样的构造，得益于命题1.15。
 
@@ -15372,7 +15372,7 @@ $\overline{\mathbb Q}$ 的元素称为 _代数_ 数；$\overline{\mathbb Q}$ 的
 相反地，假设 $k \subseteq E$ 和 $E \subseteq F$ 都是代数的，并且令 $\alpha \in F$。由于 $\alpha$ 在 $E$ 上是代数的，存在一个多项式
 
 $$
-f ( x ) = x ^ { n } + e _ { n - 1 } x ^ { n - 1 } + \cdot \cdot \cdot + e _ { 0 } \in E [ x ]
+f ( x ) = x ^ { n } + e _ { n - 1 } x ^ { n - 1 } + \cdots + e _ { 0 } \in E [ x ]
 $$
 
 使得 $f ( \alpha ) = 0$ 。这意味着实际上 $\alpha$  “已经” 是 在子域 $k ( e _ { 0 } , \ldots , e _ { n - 1 } ) \subseteq E$ 上 是 代数 的；因此，
@@ -15521,7 +15521,7 @@ $$
 
 对于 $\alpha , \beta \in F$ . 计算一个扩张 $\mathbb { Q } \subseteq \mathbb { Q } ( { \sqrt { d } } )$ 的元素的迹，其中 $d$ 是一个不是平方的整数。[1.14, 1.15, 4.19, VIII.1.5]
 
-1.14. $\neg$ 设  $k \subseteq k ( \alpha )$ 是一个单代数扩张，并且让 $\boldsymbol { x } ^ { d } + a _ { d - 1 } \boldsymbol { x } ^ { d - 1 } + \cdot \cdot \cdot + a _ { 0 }$ 是 $\alpha$ 在 $k$ 上的最小多项式。证明
+1.14. $\neg$ 设  $k \subseteq k ( \alpha )$ 是一个单代数扩张，并且让 $\boldsymbol { x } ^ { d } + a _ { d - 1 } \boldsymbol { x } ^ { d - 1 } + \cdots + a _ { 0 }$ 是 $\alpha$ 在 $k$ 上的最小多项式。证明
 $$
 \operatorname { t r } _ { k \subseteq k ( \alpha ) } ( \alpha ) = - a _ { d - 1 } \quad { \mathrm { a n d } } \quad N _ { k \subseteq k ( \alpha ) } ( \alpha ) = ( - 1 ) ^ { d } a _ { 0 } .
 $$
@@ -15663,7 +15663,7 @@ $$
 引理2.4中构造的域包含每个非常数多项式 $f ( x ) \in k [x]$ 至少一个根，但这还不够：我们寻求一个包含所有此类多项式根的域。等价地，不仅 $f ( x )$ 在 $K [x]$ 中应有（至少）一个线性因子 $x - \alpha$，我们需要商多项式 $f ( x ) / ( x - \alpha ) \in K [ x ]$ 也有一个线性因子，并且用那个新因子除以它也应该有一个等。这促使我们考虑一整串扩张
 
 $$
-k \subseteq K _ { 1 } \subseteq K _ { 2 } \subseteq K _ { 3 } \subseteq \cdot \cdot \cdot
+k \subseteq K _ { 1 } \subseteq K _ { 2 } \subseteq K _ { 3 } \subseteq \cdots
 $$
 
 其中 $K _ { 1 }$ 是通过应用引理 2.4 从 $k$ 得到的，$K _ { 2 }$ 类似地从 $K _ { 1 }$ 得到，等等。
@@ -15768,7 +15768,7 @@ $$
 这是$F$的一个不可数子集；因此它在$k$上线性相关（命题VI.1.9）。也就是说，存在不同的$c _ { 1 } , \ldots , c _ { m } \in k$和非零系数$\lambda _ { 1 } , \ldots , \lambda _ { m } \in k$，使得
 
 $$
-{ \frac { \lambda _ { 1 } } { \alpha - c _ { 1 } } } + \cdot \cdot \cdot + { \frac { \lambda _ { m } } { \alpha - c _ { m } } } = 0 .
+{ \frac { \lambda _ { 1 } } { \alpha - c _ { 1 } } } + \cdots + { \frac { \lambda _ { m } } { \alpha - c _ { m } } } = 0 .
 $$
 
 用公分母表示左侧表达式给出
@@ -16069,13 +16069,13 @@ $$
 $h _ { i } \in K \vert x _ { 1 } , . . . , x _ { n } \vert$ 并且 $m$ 是一个足够大的整数，适用于所有 $i = $ $1 , \ldots , r$ 。用公分母表示，我们可以将恒等式改写为
 
 $$
-\frac { h _ { 1 } g _ { 1 } + \cdot \cdot \cdot + h _ { r } g _ { r } } { f ^ { m } } = 1 ,
+\frac { h _ { 1 } g _ { 1 } + \cdots + h _ { r } g _ { r } } { f ^ { m } } = 1 ,
 $$
 
 或者
 
 $$
-f ^ { m } = h _ { 1 } g _ { 1 } + \cdot \cdot \cdot + h _ { r } g _ { r } .
+f ^ { m } = h _ { 1 } g _ { 1 } + \cdots + h _ { r } g _ { r } .
 $$
 
 我们在有理函数领域证明了这一恒等式；因为它只涉及多项式，所以它在 $K \vert x _ { 1 } , \ldots , x _ { n } ]$ 中成立。右边的式子是 $I$ 的一个元素，因此这证明了 $f \in \sqrt { I }$ ，我们完成了证明。
@@ -16129,7 +16129,7 @@ $$
 2.4. $\triangleright$ 设 $k$ 是一个域，设 $c _ { 1 } , \ldots , c _ { m } \in k$ 是互不相同的元素，并且设 $\lambda _ { 1 } , \ldots , \lambda _ { m }$ 是 $k$ 中的非零元素。证明
 
 $$
-{ \frac { \lambda _ { 1 } } { x - c _ { 1 } } } + \cdot \cdot \cdot + { \frac { \lambda _ { m } } { x - c _ { m } } } \neq 0 .
+{ \frac { \lambda _ { 1 } } { x - c _ { 1 } } } + \cdots + { \frac { \lambda _ { m } } { x - c _ { m } } } \neq 0 .
 $$
 
 (这个事实用于定理2.9的证明。) [§2.2]
@@ -16486,7 +16486,7 @@ $$
 根据定义，$\zeta$ 满足
 
 $$
-t ^ { 7 } - 1 = ( t - 1 ) ( t ^ { 6 } + t ^ { 5 } + \cdot \cdot \cdot + t + 1 ) ;
+t ^ { 7 } - 1 = ( t - 1 ) ( t ^ { 6 } + t ^ { 5 } + \cdots + t + 1 ) ;
 $$
 
 当 $\zeta \neq 1$ 时，$\zeta$ 必须满足循环多项式 $t ^ { 6 } + \cdots + 1$。这是不可约的（示例 V.5.19）；因此我们再次发现 $\zeta$ 在 $\mathbb { Q }$ 上的次数为 6，并且推论 3.6 表明正七边形不能使用直尺和圆规来构造。
@@ -16568,9 +16568,9 @@ $$
 ### 4.1. 分割域和正规扩域
 在 §2 中，我们构造了任意给定域 $k$ 的代数闭包 $\overline { { k } }$：$k [x]$ 中的每个多项式在 ${ \overline { { k } } } [ x ]$ 中分解为线性项（即“分割”），并且 $\overline { { k } }$ 是满足此性质的 $k$ 的“最小”扩域。
 
-这里有一个类似但更 modest 的要求：给定一个多项式子集 ${ \mathcal { F } } \subseteq k [ x ]$，构造一个扩张 $k \subseteq F$，使得 $\mathcal { F }$ 中的每个多项式都作为 $F$ 上的线性项的积而分解，并要求 $F$ 具有此性质时尽可能小。然后我们将 $F$ 称为 $\mathcal { F }$ 的分裂域。在实践中，我们只对 $\mathcal { F }$ 是多项式 $f _ { 1 } ( x ) , \dots , f _ { r } ( x )$ 的有限集合的情况感兴趣；那么要求每个 $f _ { i } ( x )$ 在 $F$ 上分解等价于要求积 $f _ { 1 } ( x ) \cdot \cdot \cdot f _ { r } ( x )$ 在 $F$ 上分解。
+这里有一个类似但更 modest 的要求：给定一个多项式子集 ${ \mathscr { F } } \subseteq k [ x ]$，构造一个扩张 $k \subseteq F$，使得 $\mathscr { F }$ 中的每个多项式都作为 $F$ 上的线性项的积而分解，并要求 $F$ 具有此性质时尽可能小。然后我们将 $F$ 称为 $\mathscr { F }$ 的分裂域。在实践中，我们只对 $\mathscr { F }$ 是多项式 $f _ { 1 } ( x ) , \dots , f _ { r } ( x )$ 的有限集合的情况感兴趣；那么要求每个 $f _ { i } ( x )$ 在 $F$ 上分解等价于要求积 $f _ { 1 } ( x ) \cdots f _ { r } ( x )$ 在 $F$ 上分解。
 
-也就是说，为了我们的目的，假设 $\mathcal { F }$ 由单个多项式 $f ( x ) \in k [x]$ 组成并不具有限制性。
+也就是说，为了我们的目的，假设 $\mathscr { F }$ 由单个多项式 $f ( x ) \in k [x]$ 组成并不具有限制性。
 
 定义4.1。设$k$是一个域，$f(x) \in k[x]$是一个次数为$d$的多项式。$f(x)$在$k$上的分裂域是一个$k$的扩张域$F$，使得
 
@@ -16664,7 +16664,7 @@ $$
 
 **定理 4.8.** 域扩张 $k \subseteq F$ 是有限且正规当且仅当 $F$ 是某个多项式 $f ( x ) \in k [x]$ 的分裂域。
 
-证明。假设 $k \subseteq F$ 是有限且正规。那么 $F$ 是有限生成的：$F =$ $k ( \alpha _ { 1 } , \ldots , \alpha _ { r } )$，其中 $\alpha _ { i }$ 在 $k$ 上代数。设 $p _ { i } ( x )$ 是 $\alpha _ { i }$ 在 $k$ 上的最小多项式。由于 $F$ 在 $k$ 上正规，每个 $p _ { i } ( x )$ 在 $F$ 上完全分解，因此 $f ( x ) = p _ { 1 } ( x ) \cdot \cdot \cdot p _ { r } ( x )$ 也完全分解。由此可知 $F$ 是 $f ( x )$ 的分裂域。
+证明。假设 $k \subseteq F$ 是有限且正规。那么 $F$ 是有限生成的：$F =$ $k ( \alpha _ { 1 } , \ldots , \alpha _ { r } )$，其中 $\alpha _ { i }$ 在 $k$ 上代数。设 $p _ { i } ( x )$ 是 $\alpha _ { i }$ 在 $k$ 上的最小多项式。由于 $F$ 在 $k$ 上正规，每个 $p _ { i } ( x )$ 在 $F$ 上完全分解，因此 $f ( x ) = p _ { 1 } ( x ) \cdots p _ { r } ( x )$ 也完全分解。由此可知 $F$ 是 $f ( x )$ 的分裂域。
 
 相反地，假设 $F$ 是多项式 $f ( x ) \in k [ x ]$ 的一个分裂域，并且设 $p ( x ) \in k [ x ]$ 是一个不可约多项式，使得 $F$ 包含 $p ( x )$ 的一个根 $\alpha$。将 $F$ 视为代数闭域 $\overline { { k } }$ 的一个子域，设 $\beta \in \overline { { k } }$ 是 $p ( x )$ 的另一个根；我们将证明 $\beta \in F$。这将证明 $F$ 包含 $p ( x )$ 的所有根，这意味着 $k \subseteq F$ 是正规域，并且根据引理 4.2，$k \subseteq F$ 是有限域。
 
@@ -16730,13 +16730,13 @@ $$
 当然，定义4.12不依赖于所选择的分裂域，因为这些在同构意义下是唯一的（引理4.2）。事实上，为了检测可分性，我们可以使用任何多项式作为线性因子的积的域（通过习题4.1）。关于可分性的第一个，有点令人惊讶的观察是，我们实际上可以在不离开$f(x)$的系数域的情况下检测它。这个事实使用了一个来自微积分的概念：对于一个多项式
 
 $$
-f ( x ) = a _ { 0 } + a _ { 1 } x + a _ { 2 } x ^ { 2 } + \cdot \cdot \cdot + a _ { n } x ^ { n } ,
+f ( x ) = a _ { 0 } + a _ { 1 } x + a _ { 2 } x ^ { 2 } + \cdots + a _ { n } x ^ { n } ,
 $$
 
 我们用 $F ( x )$ 表示“导数”
 
 $$
-F ( x ) = a _ { 1 } + 2 a _ { 2 } x + \cdot \cdot \cdot + n a _ { n } x ^ { n - 1 } .
+F ( x ) = a _ { 1 } + 2 a _ { 2 } x + \cdots + n a _ { n } x ^ { n - 1 } .
 $$
 
 当然这是一个纯粹的形式运算；任意域上没有极限过程在起作用。然而，所有预期的导数性质都成立，读者应该检查：例如，$( f g ) ^ { \prime } = F g + f g ^ { \prime }$ 如同往常。
@@ -16881,7 +16881,7 @@ $$
 证明。由于$F$在$k$上是有限的，因此它是有限生成的。令$F = k ( \alpha _ { 1 } , \ldots , \alpha _ { r } )$，然后使用引理4.23、引理4.22和命题1.10，
 
 $$
-\begin{array} { l } { [ F : k ] _ { s } = [ k ( \alpha _ { 1 } , \ldots , \alpha _ { r - 1 } ) ( \alpha _ { r } ) : k ( \alpha _ { 1 } , \ldots , \alpha _ { r - 1 } ) ] _ { s } \cdot \cdot \cdot [ k ( \alpha _ { 1 } ) : k ] _ { s } } \\ { \quad \quad \quad \leq [ k ( \alpha _ { 1 } , \ldots , \alpha _ { r - 1 } ) ( \alpha _ { r } ) : k ( \alpha _ { 1 } , \ldots , \alpha _ { r - 1 } ) ] \cdot \cdot \cdot [ k ( \alpha _ { 1 } ) : k ] } \\ { \quad \quad = [ F : k ] . } \end{array}
+\begin{array} { l } { [ F : k ] _ { s } = [ k ( \alpha _ { 1 } , \ldots , \alpha _ { r - 1 } ) ( \alpha _ { r } ) : k ( \alpha _ { 1 } , \ldots , \alpha _ { r - 1 } ) ] _ { s } \cdots [ k ( \alpha _ { 1 } ) : k ] _ { s } } \\ { \quad \quad \quad \leq [ k ( \alpha _ { 1 } , \ldots , \alpha _ { r - 1 } ) ( \alpha _ { r } ) : k ( \alpha _ { 1 } , \ldots , \alpha _ { r - 1 } ) ] \cdots [ k ( \alpha _ { 1 } ) : k ] } \\ { \quad \quad = [ F : k ] . } \end{array}
 $$
 
 这证明了所提出的不等式。
@@ -17059,7 +17059,7 @@ $$
 相反地，假设 $d \mid e$ 。
 
 $$
-p ^ { e } - 1 = ( p ^ { d } - 1 ) ( ( p ^ { d } ) ^ { \frac { e } { d } - 1 } + \cdot \cdot \cdot + 1 ) ,
+p ^ { e } - 1 = ( p ^ { d } - 1 ) ( ( p ^ { d } ) ^ { \frac { e } { d } - 1 } + \cdots + 1 ) ,
 $$
 
 我们看到 $p ^ { d } - 1$ 整除 $p ^ { e } - 1$ ，因此 $x ^ { p ^ { d } - 1 } - 1$ 整除 ${ \boldsymbol { x } } ^ { p ^ { \in } - 1 } - 1$（练习 V.2.13）。因此
@@ -17154,7 +17154,7 @@ $$
 这个观察可以转化为 $\mathbb{F}_p$ 的代数闭包的显式构造：根据推论 5.4，存在扩域
 
 $$
-\mathbb { F } _ { p } \subseteq \mathbb { F } _ { p ^ { 2 } } \subseteq \mathbb { F } _ { p ^ { 6 } } \subseteq \mathbb { F } _ { p ^ { 4 ! } } \subseteq \cdot \cdot \cdot
+\mathbb { F } _ { p } \subseteq \mathbb { F } _ { p ^ { 2 } } \subseteq \mathbb { F } _ { p ^ { 6 } } \subseteq \mathbb { F } _ { p ^ { 4 ! } } \subseteq \cdots
 $$
 
 并且这个域链的并集 $^ { 2 0 }$ 给出 $\overline { { \mathbb { F } _ { p } } }$ 的一个副本。
@@ -17185,7 +17185,7 @@ $$
 示例 5.10. 如果 $n = p$ 是素数，那么 $\mu _ { p } \cong C _ { p }$ 的每个非恒等元都是生成元：$p$ 次方根 $^ { 1 }$ 除 1 以外的每个都是原根。因此
 
 $$
-\Phi _ { p } ( x ) = { \frac { x ^ { p } - 1 } { x - 1 } } = x ^ { p - 1 } + \cdot \cdot \cdot + 1
+\Phi _ { p } ( x ) = { \frac { x ^ { p } - 1 } { x - 1 } } = x ^ { p - 1 } + \cdots + 1
 $$
 
 是否遇到了示例V.5.19中的特殊情况，我们在其中证明了$\Phi _ { p } ( x )$确实不可约。
@@ -17532,7 +17532,7 @@ $$
 
 5.21. 证明如果 $k \subseteq F$ 是一个可分多项式的分裂域，那么它是某个不可约可分多项式的分裂域。
 
-5.22. 设 $k$ 是一个无限域。如果 $F = k ( \alpha _ { 1 } , \ldots , \alpha _ { r } )$ ，且每个 $\alpha _ { i }$ 在 $k$ 上分离，证明存在 $c _ { 1 } , \ldots , c _ { r } \in k$ 使得 $F = k ( c _ { 1 } \alpha _ { 1 } + \cdot \cdot \cdot + c _ { r } \alpha _ { r } )$ 。
+5.22. 设 $k$ 是一个无限域。如果 $F = k ( \alpha _ { 1 } , \ldots , \alpha _ { r } )$ ，且每个 $\alpha _ { i }$ 在 $k$ 上分离，证明存在 $c _ { 1 } , \ldots , c _ { r } \in k$ 使得 $F = k ( c _ { 1 } \alpha _ { 1 } + \cdots + c _ { r } \alpha _ { r } )$ 。
 
 5.23. $\triangleright$ 设 $k$ 是一个域，并且 $n > 0$ 是一个整数。假设 $k [x]$ 中没有 $n$ 次不可约多项式。证明 $k$ 没有次数为 $n$ 的可分扩张。[§7.1]
 
@@ -17610,7 +17610,7 @@ $$
 若 $\alpha \in F$ 且 $g \in G$，则注意到 $g \alpha$ 必须是 $\alpha$ 在 $k$ 上的极小多项式的根；根只有有限个，因此 $\alpha$ 的 $G$-轨道包含有限个元素 $\alpha = \alpha _ { 1 } , \ldots , \alpha _ { n }$。群 $G$ 通过排列其元素来作用于轨道；因此，$G$ 的每个元素都使多项式
 
 $$
-q _ { \alpha } ( t ) = ( t - \alpha _ { 1 } ) \cdot \cdot \cdot ( t - \alpha _ { n } )
+q _ { \alpha } ( t ) = ( t - \alpha _ { 1 } ) \cdots ( t - \alpha _ { n } )
 $$
 
 已修复。换句话说，这个多项式的系数必须在固定域 $F ^ { G }$ 中。此外，$q _ { \alpha } ( t )$ 是可分的，因为它有不同的根。最后，请注意 $\deg q _ { \alpha } ( t ) \leq | G |$ 。
@@ -17885,13 +17885,13 @@ $$
 相反地，假设 $k \subseteq F$ 是伽罗瓦的，且 $\operatorname { A u t } _ { k } ( F )$ 是循环的，由 $\varphi$ 生成。自同构 $\varphi ^ { \imath }$ ，$ i = 0 , \ldots , m { - 1 }$ ，是两两不同的；因此它们在 $F$ 上是线性无关的（习题 6.14）。因此，存在一个 $\alpha \in F$ 使得25
 
 $$
-\delta : = \alpha + \zeta ^ { - 1 } \varphi ( \alpha ) + \cdot \cdot \cdot + \zeta ^ { - ( m - 2 ) } \varphi ^ { m - 2 } ( \alpha ) + \zeta ^ { - ( m - 1 ) } \varphi ^ { m - 1 } ( \alpha ) \neq 0 .
+\delta : = \alpha + \zeta ^ { - 1 } \varphi ( \alpha ) + \cdots + \zeta ^ { - ( m - 2 ) } \varphi ^ { m - 2 } ( \alpha ) + \zeta ^ { - ( m - 1 ) } \varphi ^ { m - 1 } ( \alpha ) \neq 0 .
 $$
 
 注意到
 
 $$
-\varphi ( \delta ) = \varphi ( \alpha ) + \zeta ^ { - 1 } \varphi ^ { 2 } ( \alpha ) + \cdot \cdot \cdot + \zeta ^ { - ( m - 2 ) } \varphi ^ { m - 1 } ( \alpha ) + \zeta ^ { - ( m - 1 ) } \alpha = \zeta \delta
+\varphi ( \delta ) = \varphi ( \alpha ) + \zeta ^ { - 1 } \varphi ^ { 2 } ( \alpha ) + \cdots + \zeta ^ { - ( m - 2 ) } \varphi ^ { m - 1 } ( \alpha ) + \zeta ^ { - ( m - 1 ) } \alpha = \zeta \delta
 $$
 
 （由于 $\zeta \in k$ ，因此 $\varphi ( \zeta ) = \zeta$ ）。这意味着 $\delta$ 没有被 $\operatorname { A u t } _ { k } ( F )$ 的任何非恒等元固定；也就是说，$\operatorname { A u t } _ { k ( \delta ) } ( F ) = \{ e \}$ ；也就是说，$k ( \delta ) = F$ 。此外，
@@ -17951,8 +17951,8 @@ $$
 6.16. 设 $k \subseteq F$ 是一个度数为 $d$ 的循环伽罗瓦扩张，并且 $\Vdash$ $\varphi$ 是 $\operatorname { A u t } _ { k } ( F )$ 的生成元。设 $\alpha \in F$ 是一个元素，使得 $N _ { k \subseteq F } ( \alpha ) = 1$ 。
 
 • 证明 auto态射 $\mathrm{id}_F$，$\varphi$，...，$\varphi^{d-1}$ 在 $F$ 上是线性无关的。（习题 6.14。）
-• 证明存在 $\gamma \in F$ 使得 $\beta := \gamma + \alpha \varphi(\gamma) + \alpha \varphi(\alpha) \varphi^2(\gamma) + \cdot \cdot \cdot + \alpha \varphi(\alpha) \cdot \cdot \cdot \varphi^{d-2}(\alpha) \varphi^{d-1}(\gamma) \neq 0$。
-• 证明 $\alpha \varphi(\alpha) \varphi^2(\alpha) \cdot \cdot \cdot \varphi^{d-1}(\alpha) \varphi^d(\gamma) = \gamma$，并推导出 $\alpha = \beta / \varphi(\beta)$。
+• 证明存在 $\gamma \in F$ 使得 $\beta := \gamma + \alpha \varphi(\gamma) + \alpha \varphi(\alpha) \varphi^2(\gamma) + \cdots + \alpha \varphi(\alpha) \cdots \varphi^{d-2}(\alpha) \varphi^{d-1}(\gamma) \neq 0$。
+• 证明 $\alpha \varphi(\alpha) \varphi^2(\alpha) \cdots \varphi^{d-1}(\alpha) \varphi^d(\gamma) = \gamma$，并推导出 $\alpha = \beta / \varphi(\beta)$。
 
 结合练习4.20的结果，结论是：对于一个上述的循环伽罗瓦扩张中的元素 $\alpha$，其范数为1当且仅当存在一个 $\beta$ 使得 $\alpha = \beta / \varphi ( \beta )$ 。
 
@@ -18058,7 +18058,7 @@ $$
 \delta _ { 1 } = \zeta + \zeta ^ { 2 } + \zeta ^ { 4 } + \zeta ^ { 8 } + \zeta ^ { 1 6 } + \zeta ^ { 1 5 } + \zeta ^ { 1 3 } + \zeta ^ { 9 }
 $$
 
-并且 $\zeta ^ { 3 } + \zeta ^ { 6 } + \zeta ^ { 1 2 } + \zeta ^ { 7 } + \zeta ^ { 1 4 } + \zeta ^ { 1 1 } + \zeta ^ { 5 } + \zeta ^ { 1 0 } = - 1 - \delta _ { 1 }$ （记住 $\zeta$ 是 $\Phi _ { 1 7 } ( x ) = x ^ { 1 6 } + \cdot \cdot \cdot + x + 1$ 的一个根）。从图形上看，
+并且 $\zeta ^ { 3 } + \zeta ^ { 6 } + \zeta ^ { 1 2 } + \zeta ^ { 7 } + \zeta ^ { 1 4 } + \zeta ^ { 1 1 } + \zeta ^ { 5 } + \zeta ^ { 1 0 } = - 1 - \delta _ { 1 }$ （记住 $\zeta$ 是 $\Phi _ { 1 7 } ( x ) = x ^ { 1 6 } + \cdots + x + 1$ 的一个根）。从图形上看，
 
 ![](images/122.jpg)
 
@@ -18085,7 +18085,7 @@ $$
 在下述意义上是普遍的：每个系数在（比如说）一个整环中 的 $n$ 次 首一(monic) 多项式都可以通过适当地指定 $t _ { 1 } , \ldots , t _ { n }$ 从 $P _ { n } ( x )$ 中得到，可能在一个更大的环中（练习 7.2）。展开的系数
 
 $$
-P _ { n } ( x ) = x ^ { n } - s _ { 1 } ( t _ { 1 } , \dots , t _ { n } ) x ^ { n - 1 } + \cdot \cdot \cdot + ( - 1 ) ^ { n } s _ { n } ( t _ { 1 } , \dots , t _ { n } )
+P _ { n } ( x ) = x ^ { n } - s _ { 1 } ( t _ { 1 } , \dots , t _ { n } ) x ^ { n - 1 } + \cdots + ( - 1 ) ^ { n } s _ { n } ( t _ { 1 } , \dots , t _ { n } )
 $$
 
 是 $t _ { 1 } , \ldots , t _ { n }$ 的初等对称函数（至符号）。例如，对于 $n = 3$ ，
@@ -18133,7 +18133,7 @@ $$
 尚不清楚在推论7.6中是否可以选择$k$为$\mathbb{Q}$。上述证明将$k$视为一个相当大的域，而且完全不清楚如何从这个域“下降”到$\mathbb{Q}$。这是逆伽罗瓦问题，一个当前的研究课题。读者可以通过注意到即使对于所有$n$将$S_n$视为$\mathbb{Q}$上的伽罗瓦群也不是那么容易的，来体会这个问题的难度，尽管确实对于每一个$n$在$\mathbb{Z}[x]$中存在无限多个次数为$n$的多项式，其分裂域在$\mathbb{Q}$上的伽罗瓦群为$S_n$（对于$n=p$素数的情形，参见例7.20和习题7.11）。如果你想要一个难忘的例子随身携带，舒尔(Schur)（1931年）证明了“截断指数”的分裂域
 
 $$
-1 + x + { \frac { x ^ { 2 } } { 2 ! } } + { \frac { x ^ { 3 } } { 3 ! } } + \cdot \cdot \cdot + { \frac { x ^ { n } } { n ! } }
+1 + x + { \frac { x ^ { 2 } } { 2 ! } } + { \frac { x ^ { 3 } } { 3 ! } } + \cdots + { \frac { x ^ { n } } { n ! } }
 $$
 
 当 $4 \nmid n$ 时，其在 $\mathbb{Q}$ 上的伽罗瓦群是 $S_n$（而当 $4 | n$ 时，其伽罗瓦群是 $A_n$）。
@@ -18182,7 +18182,7 @@ $$
 类似但更复杂的公式存在用于三次和四次方程（塔尔塔利亚/卡尔达诺/费拉里，大约在1540年；这引发了一场优先权争议，最终演变成基本的个人攻击）。五次及以上次数的方程在数百年间一直抵抗着数学家的最佳努力。与二次、三次和四次方程发生的情况一致，最雄心勃勃的目标是产生一个用于求解“一般”多项式方程的公式
 
 $$
-x ^ { n } + a _ { n - 1 } x ^ { n - 2 } + \cdot \cdot \cdot + a _ { 0 } = 0
+x ^ { n } + a _ { n - 1 } x ^ { n - 2 } + \cdots + a _ { 0 } = 0
 $$
 
 在系数 $u _ { i }$ 和开方等基本运算方面。这将是一个方程的“根式解”。
@@ -18196,7 +18196,7 @@ $$
 “一般多项式”是指在 §7.3 中引入的“通用”多项式 $P _ { n } ( x )$，在选定的基础域 $K$ 上：一般多项式
 
 $$
-x ^ { n } - s _ { 1 } x ^ { n - 1 } + \cdot \cdot \cdot + ( - 1 ) ^ { n } s _ { n } \in k [ x ] ,
+x ^ { n } - s _ { 1 } x ^ { n - 1 } + \cdots + ( - 1 ) ^ { n } s _ { n } \in k [ x ] ,
 $$
 
 以 $k = K ( s _ { 1 } , \ldots , s _ { n } )$ 和 $s _ { i }$ 为（不定）根 $t _ { 1 } , \ldots , t _ { n }$ 中的初等对称函数。实际上，处理任意不可约多项式 $f ( x ) \in k [x]$ 的更一般情况并不更困难，这里 $k$ 是任何特征为零的域；这就是我们将要做的。
@@ -18238,7 +18238,7 @@ $$
 确实，假设 $k \subseteq F$ 是根式：
 
 $$
-k \subseteq k ( \delta _ { 1 } ) \subseteq \cdot \cdot \cdot \subseteq k ( \delta _ { 1 } , \dots , \delta _ { r } ) = F
+k \subseteq k ( \delta _ { 1 } ) \subseteq \cdots \subseteq k ( \delta _ { 1 } , \dots , \delta _ { r } ) = F
 $$
 
 以 $\delta _ { i } ^ { m _ { i } } \in k ( \delta _ { 1 } , \dots , \delta _ { i - 1 } )$ 。根据假设，$k$ 对所有 $i$ 都包含 $m _ { i}$ 次单位根。考虑 $G = \mathrm { A u t } _ { k } ( F   )$ 对应的一系列子群：
@@ -18366,7 +18366,7 @@ $$
 —根据分类定理（定理IV.6.6），每个有限阿贝尔群$G$都同构于循环群的积
 
 $$
-( \mathbb { Z } / n _ { 1 } \mathbb { Z } ) \times \cdot \cdot \cdot \times ( \mathbb { Z } / n _ { r } \mathbb { Z } ) .
+( \mathbb { Z } / n _ { 1 } \mathbb { Z } ) \times \cdots \times ( \mathbb { Z } / n _ { r } \mathbb { Z } ) .
 $$
 
 —根据狄利克雷定理，我们可以选择不同的素数 $p _ { i }$ 使得 $p _ { i } \equiv 1$ mod $n _ { i }$ 。
@@ -18374,7 +18374,7 @@ $$
 —令 $n = p _ { 1 } \cdots p _ { r }$ ；根据中国剩余定理（定理 V.6.1）
 
 $$
-( \mathbb { Z } / n \mathbb { Z } ) ^ { * } \cong ( \mathbb { Z } / p _ { 1 } \mathbb { Z } ) ^ { * } \times \cdot \cdot \cdot \times ( \mathbb { Z } / p _ { r } \mathbb { Z } ) ^ { * } ,
+( \mathbb { Z } / n \mathbb { Z } ) ^ { * } \cong ( \mathbb { Z } / p _ { 1 } \mathbb { Z } ) ^ { * } \times \cdots \times ( \mathbb { Z } / p _ { r } \mathbb { Z } ) ^ { * } ,
 $$
 
 并且右侧的 $i$ -th 因子是周期为 $p _ { i } - 1$ 的，是 $n _ { i }$ 的倍数。
@@ -18410,7 +18410,7 @@ $$
 7.11. $\triangleright$ 设 $n > 0$ 为一个整数。注意
 
 $$
-f _ { n } ( x ) : = ( x ^ { 2 } + 2 ) \cdot x \cdot ( x - 2 ) \cdot \cdot \cdot ( x - 2 ( n - 4 ) ) \cdot ( x - 2 ( n - 3 ) )
+f _ { n } ( x ) : = ( x ^ { 2 } + 2 ) \cdot x \cdot ( x - 2 ) \cdots ( x - 2 ( n - 4 ) ) \cdot ( x - 2 ( n - 3 ) )
 $$
 
 有 $n - 2$ 个有理根和 2 个非实复根。证明对于无穷多个整数 $q$ ，多项式
@@ -18543,45 +18543,45 @@ $$
 
 ### 1.2. 函子的例子
 
-在实践中，将一个范畴的对象分配给另一个范畴的对象通常伴随着一个（心理上）“自然”的态射分配，这显然是协变的或反变的。如果这个分配保持复合，我们就说它是“函子”的。
+在实践中，将一个范畴的对象分配给另一个范畴的对象 通常伴随着一个（心理上）“自然”的对态射的分配，这显然是协变的或反变的。如果这个分配保持复合，我们就说它是“函子的”。
 
-在 §1.1 开头提到的所有简单运算（例如将环视为加法下的阿贝尔群）都是协变函子：例如，环的同态是阿贝尔群的同态这一事实意味着，将每个环与其底部的阿贝尔群标记起来定义了一个协变函子 $Ri \mathsf { n g } \to \mathsf { A b }$。由于这些函子是通过“忘记”给定对象的部分结构而得到的，因此它们被生动地称为忘记函子。
+在 §1.1 开头提到的所有简单运算（例如将环视为加法下的阿贝尔群）都是协变函子：例如，_环_ 的同态 是其中的 _阿贝尔群_ 的同态这一事实意味着，将每个环与其中的阿贝尔群标记起来 定义了一个协变函子 $\mathsf { Ri n g } \to \mathsf { A b }$。由于这些函子是通过“忘记”给定对象的部分结构而得到的，因此它们被生动地称为 _遗忘函子_。
 
-我已经简要地提到了几个稍微更有想象力的例子；这里再次提供。
+我已经简要地提到了几个稍微更有想象力的例子；它们又来了。
 
-示例 1.2. 如果 $R$ 是一个环，我们用 $R ^ { * }$ 表示 $R$ 中的单位元群；每个环同态 $R \rightarrow S$ 都会诱导出一个群同态 $R ^ { * } \rightarrow S ^ { * }$ ，这个赋值与复合运算兼容；因此这个运算定义了一个协变函子 $\mathsf { Ring } \rightarrow \mathsf { Grp }$ 。
+**示例 1.2**. 如果 $R$ 是一个环，我们用 $R ^ { * }$ 表示 $R$ 中的单位 _群_；每个环同态 $R \rightarrow S$ 都会诱导出一个群同态 $R ^ { * } \rightarrow S ^ { * }$ ，这个配置与复合运算兼容；因此这个运算定义了一个协变函子 $\mathsf { Ring } \rightarrow \mathsf { Grp }$ 。
 
-示例 1.3. 从伽罗瓦域扩张到群的运算 $\mathrm { A u t } _ { k } ( \_ )$ 是反变函子。实际上，如果 $k \subseteq E \subseteq F$ 被视为两个伽罗瓦扩张的 态射（$k \subseteq E$ 到 $k \subseteq F$），我们就有一个相应的群同态
+**示例 1.3**. 从 伽罗瓦域扩张 到 群 的运算 $\mathrm { A u t } _ { k } ( \_ )$ 是反变函子。实际上，如果 $k \subseteq E \subseteq F$ 被视为两个伽罗瓦扩张的 态射（$k \subseteq E$ 到 $k \subseteq F$），我们就有一个相应的群同态
 
 $$
 \operatorname { A u t } _ { k } ( F ) \to \operatorname { A u t } _ { k } ( E )
 $$
 
-由约束定义：$\varphi \mapsto \varphi | _ { E }$；后者由于伽罗瓦条件将 $E$ 映射到 $E$。两个约束的复合是一个约束，因此该赋值确实是函子性的。
+由限制：$\varphi \mapsto \varphi | _ { E }$ 定义；后者由于伽罗瓦条件将 $E$ 映射到 $E$。两个限制的复合是一个限制，因此该赋值确实是函子性的。
 
-示例 1.4. 在 §III.4.3 中，我定义了交换环 $R$ 的谱 Spec $R$ 为 $R$ 的素理想集合。如果 $R$，$S$ 是交换环，并且 $\varphi : R \to S$ 是一个环同态，那么素理想 $\mathfrak { p }$ 的逆像 $\varphi ^ { - 1 } ( { \mathfrak { p } } )$ 也是一个素理想；因此，$\varphi$ 诱导了一个集合函数
+**示例 1.4**. 在 §III.4.3 中，我定义了交换环 $R$ 的 _谱_ ， Spec $R$ ，为 $R$ 的素理想 _集合_。如果 $R$，$S$ 是交换环，并且 $\varphi : R \to S$ 是一个环同态，那么素理想 $\mathfrak { p }$ 的逆像 $\varphi ^ { - 1 } ( { \mathfrak { p } } )$ 也是一个素理想；因此，$\varphi$ 诱导了一个集合函数
 
 $$
 \varphi ^ { * } : { \mathrm { S p e c } } ( S ) \to { \mathrm { S p e c } } ( R ) \quad .
 $$
 
-这个作业显然是函子性的，因此我们可以将 Spec 视为从交换环范畴到 Set 的反变函子。读者将为 ${ \mathrm { S p e c } } ( R )$ 赋予一个拓扑（练习 1.7），使这个例子（甚至）更加有趣。L
+这个配置显然是函子的，因此我们可以将 Spec 视为 从交换环范畴 到 Set 的反变函子。读者将为 ${ \mathrm { S p e c } } ( R )$ 赋予一个拓扑（练习 1.7），使这个例子（甚至）更加有趣。
 
-示例 1.5. 如果 $S$ 是一个集合，回顾（示例 I.3.4）可以构造一个范畴 $\hat { \mathsf { S } }$，其对象是 $S$ 的子集，而态射对应于子集的包含关系。$S$ 上的集合预层是一个反变函子 $\hat { \mathsf { S } } \to \mathsf { S e t }$。典型的例子包括一个函子，它将 $U \subseteq S$ 关联到从 $U$ 到一个固定集合的函数集合；包含关系 $U \subseteq V$ 被映射到限制 $\rho \mapsto \rho | _ { U }$。更有趣（而且非常有用）的例子可以通过考虑更丰富的结构得到。例如，如果 $T$ 是一个拓扑空间，可以定义一个范畴，其对象是 $T$ 中的开集，而态射是包含关系；这导致了拓扑空间上预层的概念。诸如“（在 $T$ 的开集上的连续复值函数）”之类的标准概念最自然地被视为 $T$ 上阿贝尔群预层的对象。这样的具体例子通常满足附加假设，这使得它们成为层，但这是另一本书的主题。从某种意义上说，研究一个几何分支（例如，复微分几何）相当于研究配备了合适层（例如，复可微函数层）的空间。
+**示例 1.5**. 如果 $S$ 是一个集合，回顾（示例 I.3.4）可以构造一个范畴 $\hat { \mathsf { S } }$，其对象是 $S$ 的子集，而态射对应于子集的包含关系。$S$ _上的 集合预层_ (presheaf of sets) 是一个反变函子 $\hat { \mathsf { S } } \to \mathsf { S e t }$。典型的例子包括一个函子，它将 $U \subseteq S$ 关联到从 $U$ 到一个固定集合的函数集合；包含关系 $U \subseteq V$ 被映射到限制 $\rho \mapsto \rho | _ { U }$。更有趣（而且非常有用）的例子可以通过考虑更丰富的结构得到。例如，如果 $T$ 是一个 _拓扑空间_，可以定义一个范畴，其对象是 $T$ 中的开集，而态射是包含关系；这导致了拓扑空间上预层的概念。诸如“（在 $T$ 的开集上的连续复值函数）”之类的标准概念最自然地被视为 $T$ 上阿贝尔群预层的对象。这样的具体例子通常满足附加假设，这使得它们成为 _层_ （sheaves），但这就是另一本书的主题了。从某种意义上说，研究一个几何分支（例如，复微分几何）相当于研究配备了合适层（例如，复可微函数层（the sheaf of complex diﬀerentiable functions））的空间。
 
-在任何范畴上都可以获得一类重要的函子，这将是接下来几节中的例子来源。设 $\mathsf { C }$ 是一个范畴，$X$ 是 $\mathsf { C }$ 的一个对象。那么赋值
+在任何范畴上都可以获得一类重要的函子，这将是接下来几节中的例子来源。设 $\mathsf { C }$ 是一个范畴，$X$ 是 $\mathsf { C }$ 的一个对象。那么配置
 
 $$
 A \mapsto \operatorname { Hom_{\mathsf{C}} } ( X , A ) \quad , \quad A \mapsto \operatorname { Hom_{\mathsf{C}} } ( A , X )
 $$
 
-分别定义协变和反变函子 $\mathrm{C} \ \mathsf{Set}$。这些分别记为 ${ \mathrm{Hom} }_{\mathsf{C}}(X, _{-})$，$\mathrm{Hom}_{\mathsf{C}}(\_, X)$。例如，如果
+分别定义 _协变_ 和 _反变_ 函子 $\mathsf{C} \to \mathsf{Set}$。这些分别记为 ${ \mathrm{Hom} }_{\mathsf{C}}(X, _{-})$，$\mathrm{Hom}_{\mathsf{C}}(\_, X)$。例如，如果
 
 $$
 A { \xrightarrow { \alpha } } B { \xrightarrow { \beta } } C
 $$
 
-是一个在 $\mathsf{C}$ 中的图，盯着看
+是一个在 $\mathsf{C}$ 中的图，看
 
 ![](images/126.jpg)
 
@@ -18591,7 +18591,7 @@ $$
 \mathrm { H o m } _ { \mathsf { C } } ( B , X ) \to \mathrm { H o m } _ { \mathsf { C } } ( A , X )
 $$
 
-由映射 $\xi _ { B }$ 到 $\xi _ { A } : = \xi _ { B } \circ \alpha$ 定义，即，要求左边的三角形是可交换的。复合的结合性，
+由从 $\xi _ { B }$ 到 $\xi _ { A } : = \xi _ { B } \circ \alpha$ 的映射 定义，即，要求左边的三角形是 交换的。复合的结合性，
 
 $$
 \xi _ { C } \circ ( \beta \circ \alpha ) = ( \xi _ { C } \circ \beta ) \circ \alpha \quad ,
@@ -18599,266 +18599,271 @@ $$
 
 精确地表达了这种赋值的反变函子性。函子 $\mathrm { H o m } _ { \mathsf { C } } ( \_ , X )$ 通常简写为 $h _ { X }$，如果 $\mathsf { C }$ 是已知的。
 
-勇敢的读者可能会思考这样一个事实：这种技术将范畴 $\mathsf { C }$ 中的每个对象 $X$ 关联到一个集合的预层 $h _ { X }$ 上 $\mathsf { C }$ 。这引出了自然且重要的问题，例如如何判断给定的集合预层 $\mathcal { F }$ 是否实际上等于 $h _ { X }$ 对于 $\mathsf { C }$ 的某个对象 $X$（这使得 $\mathcal { F }$ “可表示”）或是否可以从相应的预层 $h _ { X }$ 重建对象 $X$。例如，如果 Top 是拓扑空间的范畴，并且 $p$ 表示 Top 的终对象（即单点拓扑空间），那么 $h _ { X } ( p )$ 不过是 $X$，被视为一个集合。因此，在这样的“几何”背景下（例如，在代数几何中）$h _ { X } ( A )$ 被称为 $X ^ { \prime }$ 的“$A$-点集”；$h _ { X }$ 是 $X$ 的点函子。
+勇敢的读者可能会思考这样一个事实：这种技术将范畴 $\mathsf { C }$ 中的每个 _对象_  $X$ 关联到一个在  $\mathsf { C }$ 上的 _集合的预层_  $h _ { X }$   。这引出了自然且重要的问题，例如如何判断给定的集合预层 $\mathscr { F }$ 是否实际上等于 $h _ { X }$ 对于 $\mathsf { C }$ 的某个对象 $X$（这使得 $\mathscr { F }$ “可表示”）或是否可以从相应的预层 $h _ { X }$ 重建对象 $X$。例如，如果 Top 是拓扑空间的范畴，并且 $p$ 表示 Top 的终对象（即单点拓扑空间），那么 $h _ { X } ( p )$ 不过是 $X$，其被视为一个集合。因此，在这样的“几何”背景下（例如，在代数几何中）$h _ { X } ( A )$ 被称为 $X ^ { \prime }$ 的“$A$-点集”；$h _ { X }$ 是 $X$ 的 _点函子_ (functor of points)。
 
 ### 1.3. 两个范畴何时被认为是“等价”的？
 
-本质上，到目前为止所遇到的“同构”概念都归结为“保持结构的双射”，读者可能会期望用来识别两个范畴的自然概念应该来自同一个模型：一个函子精确地将一个范畴的对象与另一个范畴的对象对应起来，并保持态射的结构。
+本质上，到目前为止所遇到的“同构”概念都归结为“保持结构的双射”，读者可能会期望用来等同两个范畴的自然概念应该来自同一个模型：一个函子精确地将一个范畴的对象与另一个范畴的对象对应起来，并保持态射的结构。
 
-当然可以引入这样的概念，但它会非常有限制。回想一下，对于普遍问题，即我们遇到的大多数构造，其解仅在同构意义下定义（命题I.5.4）。要求在一个上下文中的解与另一个上下文中的解完全匹配将会是有问题的。一个对象在范畴中的结构由其同构类2充分承载，而“范畴等价”的自然概念应该旨在匹配同构类，而不是单个对象。映射是更本质的信息；一个函子的质量首先在于它如何作用于映射。
+当然可以引入这样的概念，但它会非常有限制。回想一下，泛问题的解，即我们遇到的大多数构造，仅 _在同构意义下_ 定义（命题I.5.4）。要求在一个上下文中的解与另一个上下文中的解完全匹配 将会是有问题的。一个对象在范畴中的结构由其同构类$^2$充分承载，而“范畴等价”的自然概念应该旨在匹配同构类，而不是单个对象。_态射_ 是更本质的信息；一个函子的质量 首先由 它如何作用于态射 来衡量。
 
-定义1.6。设$\mathsf { C }$，$\mathsf { D }$是两个范畴。一个协变函子$\mathcal { F } : \mathsf { C } \to \mathsf { D }$是忠实的，如果对于$\mathsf { C }$的所有对象$A$，$B$，诱导的函数
+**定义1.6**。设$\mathsf { C }$，$\mathsf { D }$是两个范畴。一个协变函子$\mathscr { F } : \mathsf { C } \to \mathsf { D }$是 _忠实的_，如果对于$\mathsf { C }$的所有对象$A$，$B$，诱导的函数
 
 $$
-\operatorname { H o m } _ { \mathsf { C } } ( A , B ) \to \operatorname { H o m } _ { \mathsf { D } } ( { \mathcal { F } } ( A ) , { \mathcal { F } } ( B ) )
+\operatorname { H o m } _ { \mathsf { C } } ( A , B ) \to \operatorname { H o m } _ { \mathsf { D } } ( { \mathscr { F } } ( A ) , { \mathscr { F } } ( B ) )
 $$
 
-是单射的；如果这个函数是满射的，它是满的，对于所有对象 $A$ ， $B$ 。
+是单射的；如果这个函数是满射的，则这个函子 是 _全_ (full) 的，对于所有对象 $A$ ， $B$ 。
 
-‘完全忠实’的函子 $\mathcal { F } : \mathsf { C } \to \mathsf { D }$ 在态射上是双射的，因此它们很容易保持同构类：$A \cong B$ 在 $\mathsf { C }$ 中当且仅当 ${ \mathcal { F } } ( A ) \cong$ $\mathcal { F } ( B )$ 在 $\mathsf { D }$ 中（练习1.2）。就实际而言，一个完全忠实的函子 $\mathcal { F } : \mathsf { C } \to \mathsf { D }$ 将 $\mathsf { C }$ 识别为 $\mathsf { D }$ 的一个完全 $\cdot ^ { 3 }$ 子范畴，即使‘在对象上’ $\mathcal { F }$ 可能既不是到那个子范畴的单射也不是满射。这个思想由以下定义所捕捉：
+‘全忠实’的(‘Fully faithful)函子 $\mathscr { F } : \mathsf { C } \to \mathsf { D }$ 在态射上是双射的，因此它们很容易保持同构类：在 $\mathsf { C }$ 中 $A \cong B$ 当且仅当 在 $\mathsf { D }$ 中 ${ \mathscr { F } } ( A ) \cong \mathscr { F } ( B )$ （练习1.2）。就实际而言，一个完全忠实的函子 $\mathscr { F } : \mathsf { C } \to \mathsf { D }$ 将 $\mathsf { C }$ 等同为 $\mathsf { D }$ 的一个全$^ { 3 }$ 子范畴，即使‘在对象上’ $\mathscr { F }$ 可能既不是到那个子范畴的单射也不是满射。这个思想由以下定义所捕捉：
 
-定义1.7. 一个协变函子$\mathcal { F } : \mathsf { C } \to \mathsf { D }$是范畴等价，如果它是完全忠实的并且“本质上满射”；也就是说，$\mathcal { F }$在Homsets上诱导了双射，并且对于$\mathsf { D }$的每一个对象$Y$，存在$\mathsf { C }$的一个对象$X$，使得${ \mathcal { F } } ( X ) \cong Y$在$\mathsf { D }$中。
+**定义1.7**. 一个协变函子$\mathscr { F } : \mathsf { C } \to \mathsf { D }$是 _范畴等价_，如果它是全忠实的并且“本质满”的（essentially surjective）；也就是说，$\mathscr { F }$在 Hom 集合 上诱导了双射，并且对于$\mathsf { D }$的每一个对象$Y$，存在$\mathsf { C }$的一个对象$X$，使得${ \mathscr { F } } ( X ) \cong Y$在$\mathsf { D }$中。$\lrcorner$
 
-两个范畴 $\mathsf { C }$ ，$\mathsf { D }$ 是等价的，如果存在一个满足定义 1.7 中要求的函子 $\mathcal { F } : \mathsf { C } \to \mathsf { D }$。这并不是一个显而易见的等价关系（为什么是对称的？），但结果确实如此。事实上，一个范畴的等价 $\mathcal { F }$ 在某种意义上有一个“逆”，即一个函子 $\mathcal { G } : \mathsf { D } \to \mathsf { C }$，使得存在从 $\mathcal { F } \circ \mathcal { G }$ 和 $\mathcal { G } \circ \mathcal { F }$ 到恒等函子的“自然同构”（参见 §1.5）。由于我们不会过多使用这些概念，我将让感兴趣的读者去研究这个问题并找到证明。
+两个范畴 $\mathsf { C }$ ，$\mathsf { D }$ 是 _等价的_ ，如果存在一个满足定义 1.7 中要求的函子 $\mathscr { F } : \mathsf { C } \to \mathsf { D }$。这并不是一个显而易见的等价关系（为什么是对称的？），但结果确实如此。事实上，一个范畴等价 $\mathscr { F }$ 在某种意义上有一个“逆”，即一个函子 $\mathscr { G } : \mathsf { D } \to \mathsf { C }$，使得存在从 $\mathscr { F } \circ \mathscr { G }$ 和 $\mathscr { G } \circ \mathscr { F }$ 到恒等函子的“自然同构”（参见 §1.5）。由于我们不会过多使用这些概念，我将让感兴趣的读者去研究这个问题并找到证明。
 
-示例 1.8。（参见练习 I.3.6。）通过将对象取为非负整数，并将 ${ \mathrm { H o m } } ( m , n )$ 定义为域 $k$ 上的 $n \times m$ 矩阵集合，构造一个范畴，其中复合定义为矩阵的积（并注意对没有行或列的矩阵进行适当的处理）。得到的范畴与有限维 $k$-向量空间的范畴等价。实际上，我们可以通过将 $n$ 映射到带有标准基的向量空间 $k ^ { n }$，并将每个矩阵映射到相应的线性映射，从前者得到后者的一个函子。这个函子显然是完全忠实的，并且因为它本质上满射，因为向量空间由它们的维数来分类。这个例子使 § VI.2.1 结尾处的启发式考虑（更）精确化。
+**示例 1.8**。（参见练习 I.3.6。）通过将对象取为非负整数，并将 ${ \mathrm { H o m } } ( m , n )$ 定义为域 $k$ 上的 $n \times m$ 矩阵集合，构造一个范畴，其中复合定义为矩阵的积（并注意对 没有行或列的矩阵 进行适当的处理）。得到的范畴与 有限维 $k$-向量空间的范畴 等价。实际上，我们可以通过将 $n$ 映射到带有标准基的向量空间 $k ^ { n }$，并将每个矩阵映射到相应的线性映射，从前者得到后者的一个函子。这个函子显然是完全忠实的，并且因为它本质上满射，因为向量空间由它们的维数来分类。这个例子使 § VI.2.1 结尾处的启发式考虑（更）精确化。
 
-示例 1.9. 回忆（定义 VII.2.19）一个域 $K$ 上的仿射代数簇的坐标环是一个降的、交换的、有限型的 $K$-代数。我们可以通过规定对象是某个仿射 $K$-空间中的代数子集来定义 $K$-仿射代数簇的范畴 $K$-Aff，并定义4 ${ \mathrm { H o m } } _ { K - { \mathsf { A f f } } } ( S , T )$ 为 Hom $\boldsymbol { K }$ - ${ \mathsf { A l g } } ( K [ T ] , K [ S ] )$。
+**示例 1.9**. 回忆（定义 VII.2.19）一个域 $K$ 上的仿射代数集合的 _坐标环_ 是一个约化的、交换的、有限型的 $K$-代数。我们可以通过规定 对象是某个仿射 $K$-空间中的代数子集 ，并定义$^4$ ${ \mathrm { H o m } } _ { K - { \mathsf { A f f } } } ( S , T )$ 为 $\mathrm{Hom}_ {K -  \mathsf { A l g } } ( K [ T ] , K [ S ] )$ ，来定义 $K$-仿射代数集合的范畴 $K$-Aff，。
 
-因此，$K$ -Aff 是这样定义的，使得映射仿射代数簇 $S$ 到其坐标环 $K \lvert S \rvert$ 的函子 $K$ -A $\mathsf { f f } ^ { o p } \to K$ -Alg 是 $K$ -Aff 的对偶范畴与 reduced, commutative, finitetype $K$ -代数子范畴之间的一个等价。
+因此，$K$ -Aff 如此定义，以使得 映射仿射代数集合 $S$ 到其坐标环 $K  [S ]$ 的函子 $K\text-\mathsf { Af f } ^ { o p } \to K$ -Alg 是 $K$ -Aff 的 _相反_ 范畴 与 约化的、交换的、有限型 $K$ -代数的子范畴 之间的一个等价。
 
 ### 1.4. 极限与余极限
-本书中遇到的各个泛性质都是范畴极限概念的特殊情况，值得明确提及。设 $\mathcal { F } : |  \mathsf { C }$ 是一个协变函子，其中将 I 视为一个“指标”的范畴。$\mathcal { F }$ 的极限（如果存在）是 $\mathsf { C }$ 的一个对象 $L$，它配备了对于所有对象 $I$ 的态射 $\lambda _ { I } : L \to { \mathcal { F } } ( I )$，满足以下性质。
 
-• 如果 $\alpha : I \rightarrow J$ 是 $I$ 中的一个态射，那么 $\lambda _{J} = \mathcal{F}(\alpha) \circ \lambda _{I}$ :
+本书中遇到的各个泛性质都是范畴 _极限_ 概念的特殊情况，这值得明确提及。设 $\mathscr { F } : \mathsf { I \to  C }$ 是一个协变函子，其中将 I 视为一个“指标”的范畴。$\mathscr { F }$ 的 _**极限**_ （如果存在）是 $\mathsf { C }$ 的一个对象 $L$，它配备了对于所有  $\mathsf{I}$ 的对象 $I$ 的态射 $\lambda _ { I } : L \to { \mathscr { F } } ( I )$，满足以下性质。
+
+• 如果 $\alpha : I \rightarrow J$ 是 $\mathsf{I}$ 中的一个态射，那么 $\lambda _{J} = \mathscr{F}(\alpha) \circ \lambda _{I}$ :
 
 ![](images/127.jpg)
 
-• $L$ 对于这个性质是最终的：也就是说，如果 $M$ 是另一个对象，配备了 态射 $\mu _ { I }$ ，也满足先前的要求，那么存在一个唯一的 态射 $M  L$ 使得所有相关的图表都可交换5。
+• $L$ 对于这个性质是 终的：也就是说，如果 $M$ 是另一个对象，配备了 态射 $\mu _ { I }$ ，也满足先前的要求，那么存在一个唯一的 态射 $M \to L$ 使得所有相关的图表都可交换$^5$。
 
-极限 $L$（如果存在）在同构意义下是唯一的，定义了由泛性质所给出的每一个概念都是如此。它记为 $\operatorname* { l i m } \mathcal { F }$。这个“指向左侧”的箭头提醒我们 $L$ 在通过 $\mathcal { F }$ 以 $I$ 索引的 $\bar { \mathsf C }$ 的所有对象“之前”（但它在同构意义下是可能这样做“最后一个”对象）。这个概念也称为逆极限或投影极限。
+极限 $L$（如果存在）在同构意义下是唯一的，由泛性质所定义的每一个概念都是如此。它记为 $\varprojlim \mathscr { F }$。这个“指向左侧”的箭头 提醒我们 $L$ 位于 由 $\mathscr { F }$ 以 $\mathsf{I}$ 索引的 ${ \mathsf C }$ 的所有对象“之前”（但它是——在同构意义下—— 可能如此的“最后一个”对象）。这个概念也称为 _逆向_ （inverse）或 _投射_ （projective） 极限。
 
-示例 1.10（积）。设 I 是一个“离散范畴”，它包含两个对象 1、2，并且只有恒等态射6，设 $\cot \mathcal { A }$ 是一个从 I 到任意范畴 $\mathsf { C }$ 的函子；设 $A _ { 1 } = \mathcal { A } ( \mathbf { 1 } )$ ，$A _ { 2 } = \mathcal { A } ( \mathbf { 2 } )$ 是 $\mathsf { C }$ 的两个由 I“索引”的对象。那么 $\varprojlim \mathcal { A }$ 就是 $\mathsf { C }$ 中 $A _ { 1 }$ 和 $A _ { 2 }$ 的积，如 I.5.4 中定义：当且仅当 $\mathsf { C }$ 中存在 $A _ { 1 }$ 和 $A _ { 2 }$ 的积时，极限存在。
+**示例 1.10**（积）。设 I 是一个“离散范畴”，它包含两个对象 1、2，并且只有恒等态射$^6$，设 $\mathscr { A }$ 是一个从 I 到任意范畴 $\mathsf { C }$ 的函子；设 $A _ { 1 } = \mathscr { A } ( \mathbf { 1 } )$ ，$A _ { 2 } = \mathscr { A } ( \mathbf { 2 } )$ 是 $\mathsf { C }$ 的两个由 I“索引”的对象。那么 $\varprojlim \mathscr { A }$ 就是 $\mathsf { C }$ 中 $A _ { 1 }$ 和 $A _ { 2 }$ 的积，如 I.5.4 中定义：当且仅当 $\mathsf { C }$ 中存在 $A _ { 1 }$ 和 $A _ { 2 }$ 的积时，极限存在。
 
-我们可以类似地定义一个范畴中任意（可能是无限的）对象族的积，作为对应离散索引范畴上的极限，当然，前提是这个极限存在。
+我们可以类似地定义一个范畴中任意（可能是无限的）对象族的积，作为对应离散索引范畴上的极限，当然，前提是这个极限存在。$\lrcorner$
 
 如果索引范畴 I 带有更多结构，极限概念会稍微有趣一些。
 
-示例 1.11（均衡器和内核）。假设 I 再次是一个具有两个对象 1、2 的范畴，但假设态射看起来像这样：
+**示例 1.11**（等化子和核）。假设 I 再次是一个具有两个对象 1、2 的范畴，但假设态射看起来像这样：
+
+![](images/h3.png)
+
+也就是说，在离散范畴中添加两个“平行”的态射 $\alpha$ ， $\beta$ ，它们从一个对象到另一个对象。一个函子 $\mathscr { K } : \mathsf { I } \to \mathsf { C }$ 等价于在 $\mathsf { C }$ 中选择两个对象 $A _ { 1 }$ ， $A _ { 2 }$ 以及它们之间的两个平行态射。这种函子的极限称为 **_等化子_** （Equalizers）。举一个具体的例子，假设 $C = R$ -Mod 是某个环 $R$ 的 $R$ -模范畴；设 $\varphi : A _ { 2 }  \to A _ { 1 }$ 是一个同态，并选择上述的 $\mathscr { K }$ ，其中 $\mathscr { K } ( \alpha ) = \varphi$ 和 $\mathscr { K } ( \beta ) = \mathrm { t h e }$ 零态射。那么 $\varprojlim \mathscr { K }$ 不过是 $\varphi$ 的 _核_，读者将自行验证（习题 1.14）。
+
+**示例 1.12**（链上的极限）。在另一种典型情况下，$\mathsf{I}$ 可能由一个全序集组成，例如：
 
 $$
-G ^ { 2 } \xrightarrow [ \beta ] { \alpha } 1 \supset
+\dotsb { \longrightarrow } \mathbf4 \longrightarrow \mathbf { 3 } \longrightarrow \mathbf { 2 } \longrightarrow \mathbf { 1 }
 $$
 
-也就是说，在离散范畴中添加两个“平行”的态射 $\alpha$ ， $\beta$ ，它们从一个对象到另一个对象。一个函子 $\mathcal { H } : \mathsf { I } \to \mathsf { C }$ 等价于在 $\mathsf { C }$ 中选择两个对象 $A _ { 1 }$ ， $A _ { 2 }$ 以及它们之间的两个平行态射。这种函子的极限称为等化子。举一个具体的例子，假设 $C = R$ -Mod 是某个环 $R$ 的 $R$ -模范畴；设 $\varphi : A _ { 2 }  A _ { 1 }$ 是一个同态，并选择上述的 $\mathcal { H }$ ，其中 $\mathcal { H } ( \alpha ) = \varphi$ 和 $\mathcal { H } ( \beta ) = \mathrm { t h e }$ 零态射。那么 $\varprojlim \mathcal { H }$ 不过是 $\varphi$ 的核，读者将自行验证（习题 1.14）。
-
-示例 1.12（链上的极限）。在另一种典型情况下，我可能由一个全序集组成，例如：
+（也就是说，对象是 $\mathbf { i }$ ，对于所有正整数 $i$ ，并且当 $i \geq j$ 时存在唯一的态射 $\mathbf { i } \to \mathbf { j }$ ； 我只画出同态 $\mathbf { j } + \mathbf { 1 } \to \mathbf { j }$）。选择 $\mathscr { F } : \mathsf I \to \mathsf { C }$ 等价于选择 对于所有正整数 $i$ 的 $\mathsf { C }$ 对象 $A _ { i }$ 和所有 $i \geq j$ 的同态 $\varphi _ { j i } : A _ { i } \to A _ { j }$ ，要求 $\varphi _ { i i } = 1 _ { A _ { i } }$ ，并且 $\varphi _ { k j } \circ \varphi _ { j i } = \varphi _ { k i }$ 对于所有 $i \geq j \geq k$ 。也就是说，选择 $\mathscr { F }$ 就相当于 在 $\mathsf { C }$ 中 选择一个图
 
 $$
-\dotsb { \longrightarrow } 4 \longrightarrow \mathbf { 3 } \longrightarrow \mathbf { 2 } \longrightarrow \mathbf { 1 }
+\cdots { \xrightarrow { \varphi _ { 4 5 } } } A _ { 4 } { \xrightarrow { \varphi _ { 3 4 } } } A _ { 3 } { \xrightarrow { \varphi _ { 2 3 } } } A _ { 2 } { \xrightarrow { \varphi _ { 1 2 } } } A _ { 1 }.
 $$
 
-（也就是说，对象是 $\mathbf { i }$ ，对于所有正整数 $i$ ，并且当 $i \geq j$ 时存在唯一的同态 $\mathbf { i }  \mathbf { j }$ ；$^ { 1 }$ 我只画出同态 $\mathbf { j } + \mathbf { 1 }  \mathbf { j }$）。选择 $\mathcal { F } : |  \mathbb { C }$ 等价于选择所有正整数 $i$ 的 $\mathsf { C }$ 对象 $A _ { i }$ 和所有 $i \geq j$ 的同态 $\varphi _ { j i } : A _ { i }  A _ { j }$ ，要求 $\varphi _ { i i } = 1 _ { A _ { i } }$ ，并且 $\varphi _ { k j } \circ \varphi _ { j i } = \varphi _ { k i }$ 对于所有 $i \geq j \geq k$ 。也就是说，选择 $\mathcal { F }$ 就相当于选择一个图
-
-$$
-\cdots { \xrightarrow { \varphi _ { 4 5 } } } A _ { 4 } { \xrightarrow { \varphi _ { 3 4 } } } A _ { 3 } { \xrightarrow { \varphi _ { 2 3 } } } A _ { 2 } { \xrightarrow { \varphi _ { 1 2 } } } A _ { 1 }
-$$
-
-在 $\mathsf { C }$ 中。一个逆极限 $\varprojlim \mathcal { F }$（当同态 $\varphi _ { j i }$ 从上下文中明显时，也可以记为 limAi）然后是一个带有同态 $\varphi _ { i } : A  A _ { i }$ 的对象 $A$，使得整个图
+一个逆极限 $\varprojlim \mathscr { F }$（当同态 $\varphi _ { j i }$ 从上下文中明显时，也可以记为 limAi）然后是一个带有同态 $\varphi _ { i } : A \to A _ { i }$ 的对象 $A$，使得整个图
 
 ![](images/128.jpg)
 
-交换和诸如此类，任何其他满足此要求的对象都唯一地通过 $A$ 。
+交换且 使得 任何其他满足此要求的对象 都唯一地由 $A$ 分解 。
 
-许多标准情况下都存在这样的限制。例如，设 ${ \mathsf { C } } = R$ -Mod 为固定环 $R$ 上的左模范畴，并且设 $A _ { i }$ 如上所述。$\varphi _ { j i }$
+许多标准情况下都存在这样的极限。例如，设 ${ \mathsf { C } } = R$ -Mod 为固定环 $R$ 上的左模范畴，并且设 $A _ { i }$ 和 $\varphi _ { j i }$ 如上所述。
 
-命题 1.13. 极限 $\lim_{i} A_i$ 在 $\varprojlim_{i} A_i$ $R$ -Mod 中存在。
+**命题 1.13**. _极限_  $\underset {i} \varprojlim  A_i$ 在 $R$ -Mod 中存在。
 
-证明。积 $\prod _ { i } A _ { i }$ 由任意序列 $( a _ { i } ) _ { i > 0 }$ 组成，其中 $a _ { i } \in A _ { i }$。如果对于所有 $i > 0$ 都有 $a _ { i } = \varphi _ { i , i + 1 } ( a _ { i + 1 } )$，则称序列 $( a _ { i } ) _ { i > 0 }$ 是一致的。一致序列构成 $\prod _ { i } A _ { i }$ 的一个 $R$ -子模 $A$；典范投影限制为 $R$ -模同态 $\varphi _ { i } : A \to A _ { i }$。读者将验证 $A$ 是一个极限 $\varprojlim _ { i } { A _ { i } }$（习题 1.15）。$\square$
+**证明**。积 $\prod _ { i } A _ { i }$ 由任意序列 $( a _ { i } ) _ { i > 0 }$ 组成，其中 $a _ { i } \in A _ { i }$。如果对于所有 $i > 0$ 都有 $a _ { i } = \varphi _ { i , i + 1 } ( a _ { i + 1 } )$，则称序列 $( a _ { i } ) _ { i > 0 }$ 是一致的。一致序列构成 $\prod _ { i } A _ { i }$ 的一个 $R$ -子模 $A$；典范投影限制为 $R$ -模同态 $\varphi _ { i } : A \to A _ { i }$。读者将验证 $A$ 是一个极限 $\underset {i} \varprojlim  A_i$（习题 1.15）。$\square$
 
 这个例子可以很容易地推广到由更一般的偏序集索引的族。
 
-限制的“双重概念”是函子 $\mathcal { F } : |  \mathsf { C }$ 的 colimit。Colimit 是 $\mathsf { C }$ 的一个对象 $C$，配备了对于所有对象 $I$ 的 态射 $\gamma _ { I } : { \mathcal { F } } ( I )  C$，使得 $\gamma _ { I } = \gamma _ { J } \circ { \mathcal { F } } ( \alpha )$ 对于所有 $\alpha : I  J$ 成立，并且 $C$ 对于这个要求是始的。
+限制的“双重概念”是函子 $\mathscr { F } :    \mathsf { I \to C }$ 的 _余极限_ (colimit)。余极限 是 $\mathsf { C }$ 的一个对象 $C$，配备了对于I 的所有对象 $I$ 的 态射 $\gamma _ { I } :  \mathscr F (I) \to C$，使得 $\gamma _ { I } = \gamma _ { J } \circ { \mathscr { F } } ( \alpha )$ 对于所有 $\alpha : I \to J$ 成立，并且 $C$ 对于这个要求是 _始_ 的。
 
-我们再次遇到了这种结构的几个实例：例如，一个范畴中两个对象 $A _ { 1 }$ ， $A _ { 2 }$ 的直积（如果存在）是离散范畴（具有两个对象）上的上极限，就像它们的积是相应的极限一样。余核是上极限，就像核是极限（参见示例 1.11）。
+我们再次遇到了这种结构的几个实例：例如，一个范畴中两个对象 $A _ { 1 }$ ， $A _ { 2 }$ 的直积（如果存在）是离散范畴（具有两个对象）上的余极限，就像它们的积是相应的极限一样。_余核_ 是余极限，就像核是极限（参见示例 1.11）。
 
-$\mathcal { F }$ 的 colimit（毫不奇怪地）记为 $\varinjlim \mathcal { F }$ ，并称为 $\mathcal { F }$ 的直接极限或注入极限。
+$\mathscr { F }$ 的 余极限（毫不奇怪地）记为 $\varinjlim \mathscr { F }$ ，并称为 $\mathscr { F }$ 的 _正向_ 或 injective 极限。
 
 对于一个典型的情况，再次考虑一个全序集 I 的例子：
 
 $$
-1 \longrightarrow 2 \longrightarrow 3 \longrightarrow 4 \longrightarrow \cdots .
+\mathbf{1 \longrightarrow 2 \longrightarrow 3 \longrightarrow 4} \longrightarrow \cdots .
 $$
 
-一个函子 $\mathcal { F } : |  \mathsf { C }$ 由对象和态射的选择组成
+一个函子 $\mathscr { F } : \mathsf { I \to C }$ 由如下对象和态射的选择组成
 
 $$
-A _ { 1 } \xrightarrow { \psi _ { 1 2 } } A _ { 2 } \xrightarrow { \psi _ { 2 3 } } A _ { 3 } \xrightarrow { \psi _ { 3 4 } } A _ { 4 } \xrightarrow { \psi _ { 4 5 } } \cdot \cdot \cdot
+A _ { 1 } \xrightarrow { \psi _ { 1 2 } } A _ { 2 } \xrightarrow { \psi _ { 2 3 } } A _ { 3 } \xrightarrow { \psi _ { 3 4 } } A _ { 4 } \xrightarrow { \psi _ { 4 5 } } \cdots
 $$
 
-并且直接的极限 limAi 将是一个对象 $\varinjlim _ { i } { A _ { i } }$ $A$ ，带有态射 $\psi _ { i } : A _ { i }  A$ ，使得图表
+并且正向极限 $\underset i \varinjlim { A _ { i } }$ 将是一个对象 $A$ ，带有态射 $\psi _ { i } : A _ { i } \to A$ ，使得图表
 
 ![](images/129.jpg)
 
-交换和诸如此类，使得 $A$ 相对于这一要求是始的。
+交换 且 使得 $A$  对于这一要求是始的。
 
-示例 1.14. 如果 $\mathrm { C } = \mathsf { S e t }$ 并且所有的 $\psi _ { i j }$ 都是单射的，我们谈论的是一个“嵌套集合序列”：
+**示例 1.14**. 如果 $\mathrm { C } = \mathsf { S e t }$ 并且所有的 $\psi _ { i j }$ 都是单射的，我们谈论的是一个“嵌套集合序列”：
 
 $$
 A _ { 1 } \subseteq A _ { 2 } \subseteq A _ { 3 } \subseteq A _ { 4 } \subseteq \cdots \quad ;
 $$
 
-这个序列的直接极限是“无限并集” $\textstyle \bigcup _ { i } A _ { i }$
+这个序列的正向极限是“无限并集” $\textstyle \bigcup _ { i } A _ { i }$
 
-我毫无羞耻地依赖读者的直觉，并已经使用了这个概念，例如当我构造一个域的代数闭包（在 § VII.2.1）或每当我在提到具有“无限多个变量”的多项式环（例如，在示例 III.6.5）时。更正式地说，$\textstyle \bigcup _ { i } A _ { i }$ 由对 $( i , a _ { i } )$ 的等价类组成，其中 $a _ { i } \in A _ { i }$ 并且 $( i , a _ { i } )$ 与 $( j , a _ { j } )$ 等价，当 $i \leq j$ 且 $a _ { j } = \psi _ { i j } ( a _ { i } )$ 时。
+我 无耻地依赖读者的直觉，并已经使用了这个概念，例如当我构造一个域的代数闭包（在 § VII.2.1）或每当我在提到具有“无限多个变量”的多项式环（例如，在示例 III.6.5）时。更正式地说，$\textstyle \bigcup _ { i } A _ { i }$ 由 对儿 $( i , a _ { i } )$ 的等价类组成，其中 $a _ { i } \in A _ { i }$  且 $( i , a _ { i } )$ 与 $( j , a _ { j } )$ 等价，当 $i \leq j$ 且 $a _ { j } = \psi _ { i j } ( a _ { i } )$ 时。
 
-在$R$-模的背景下，可以考虑直接和$D = \bigoplus _ { i } A _ { i }$以及由形如$a _ { i } - \psi _ { i j } ( a _ { i } )$的元素生成的子模$K \subseteq D$（其中每个$A _ { i }$都与它在$D$中的像相对应）。然后商模$D / K$满足所需的泛性质，读者将自行验证。事实上，对于更一般的偏序集进行这些构造并不更困难（习题1.16）。在定向集的情况下，它们稍微更明确，行为也更好：偏序集$I$，使得对于所有$i , j \in \mathbb { I }$，都存在$k \in { \mathsf { I } }$，使得$i \leq k$，$j \le k$。
+在$R$-模的背景下，可以考虑直和 $D = \bigoplus _ { i } A _ { i }$以及 由形如$a _ { i } - \psi _ { i j } ( a _ { i } )$的元素生成的子模$K \subseteq D$（其中每个$A _ { i }$都与它在$D$中的像 等同）。然后商 $D / K$满足所需的泛性质，读者将自行验证。事实上，对于更一般的偏序集进行这些构造并不更困难（习题1.16）。在 _有向集_ (directed sets)的情况下，它们稍微更明确，行为也更好：偏序集$I$，使得对于所有$i , j \in \mathbb { I }$，都存在$k \in { \mathsf { I } }$，使得$i \leq k$，$j \le k$。
 
-一些标准构造依赖于直接极限：例如，函数的奇点（或者更一般地，“预层茎”）是通过直接极限定义的。
+一些标准构造依赖于正向极限：例如，函数的 _芽_ (germs)（或者更一般地，“预层茎”(stalks of presheaves)）是通过正向极限定义的。
 
 ### 1.5. 比较函子
 
 在将函子引入作为“范畴之间的态射”的自然概念之后，下一步自然的是考虑“函子之间的态射”以及其他比较两个给定函子的方式。本书不需要对这些概念进行详细描述，但我想要简要地提一下几个概念和重要评注，再次是因为它们提供了一个统一的观点。
 
-定义1.15. 设$\mathsf { C }$，$\mathsf { D }$是两个范畴，$\mathcal { F }$，$\mathcal { G }$是（例如，协变的）从${ \cal C }$到${ \cal D }$的函子。一个自然变换7 $\mathcal { F } \sim \mathcal { G }$是对于$\mathsf { C }$中的每一个对象$X$，在$\mathsf { D }$中给出一个态射$\nu _ { X } :$ ${ \mathcal { F } } ( X ) \to { \mathcal { G } } ( X )$的元组，使得对于$\mathsf { C }$中的任意态射$\alpha : X  Y$，图
+**定义1.15**. 设$\mathsf { C }$，$\mathsf { D }$是两个范畴，$\mathscr { F }$，$\mathscr { G }$是从${ \cal C }$到${ \cal D }$的（例如，协变的）函子。一个 _**自然变换**_ $^7$ $\mathscr { F } \sim \mathscr { G }$是对于$\mathsf { C }$中的每一个对象$X$，在$\mathsf { D }$中给出一个态射$\nu _ { X } :$ ${ \mathscr { F } } ( X ) \to { \mathscr { G } } ( X )$的元组，使得对于$\mathsf { C }$中的任意态射$\alpha : X \to Y$，图
 
 $$
-\begin{array} { l } { \displaystyle \mathcal { F } ( X ) \xrightarrow { \mathcal { F } ( \alpha ) } \mathcal { F } ( Y ) } \\ { \displaystyle \nu _ { X } \bigg \downarrow } \\ { \displaystyle \mathcal { G } ( X ) \xrightarrow { \mathcal { G } ( \alpha ) } \mathcal { G } ( Y ) } \end{array}
+\begin{align*}  
+
+&\mathscr F (X) \xrightarrow {\mathscr F (\alpha) } &\mathscr F  (Y) \\ 
+
+& \nu _X \bigg \downarrow  &\bigg \downarrow  \nu _Y \\ 
+
+&\mathscr  G ( X ) \xrightarrow { \mathscr G ( \alpha ) } & \mathscr G ( Y )
+
+\end{align*}
 $$
 
-交换。一个自然同构是一个自然变换 $\nu$，使得对于每一个 $X$，$\nu _ { X }$ 是一个同构。
+交换。一个 _自然同构_ 是一个自然变换 $\nu$，使得对于每一个 $X$，$\nu _ { X }$ 是一个同构。$\lrcorner$
 
-自然变换在许多情境中都会出现，例如在拓扑学中比较不同的同调或上同调概念时。读者很可能遇到过从 $\boldsymbol { \mathscr { n } } _ { 1 }$ 到 $H _ { 1 }$ 的Hurewicz同态；它是一个自然变换。事实上，任何诸如“存在一个自然（或规范）同态...”的陈述很可能隐藏着两个函子之间的自然变换。这个“自然”一词的技术含义通常与其心理使用相匹配。
+自然变换在许多情境中都会出现，例如在拓扑学中比较不同的同调或上同调概念时。读者很可能遇到过从 $\pi _ { 1 }$ 到 $H _ { 1 }$ 的 Hurewicz同态；它是一个自然变换。事实上，任何诸如 _“存在一个自然（或典范）同态...”_ 的陈述很可能隐藏着两个函子之间的自然变换。这个“自然”一词的技术含义通常与其心理使用相匹配。
 
-一个特别基础且重要的例子是伴随函子的概念，我将以一种相当非正式的方式提及它，将使其形式化的任务留给不屈不挠的读者，通过合适地使用自然变换来完成。设$\mathsf { C }$，$\mathsf { D }$是范畴，设$\mathcal { F } : \mathsf { C } \to \mathsf { D }$，$\mathcal { G } : \mathsf { D } \to \mathsf { C }$是函子。我们说$\mathcal { F }$和$\mathcal { G }$是伴随的（我们说$\mathcal { G }$是$\mathcal { F }$的右伴随，$\mathcal { F }$是$\mathcal { G }$的左伴随），如果存在自然同构
+一个特别基础且重要的例子是 _伴随函子_ 的概念，我将以一种相当非正式的方式提及它，将使其形式化的任务留给不屈不挠的读者，通过合适地使用自然变换来完成。设$\mathsf { C }$，$\mathsf { D }$是范畴，设$\mathscr { F } : \mathsf { C } \to \mathsf { D }$，$\mathscr { G } : \mathsf { D } \to \mathsf { C }$是函子。我们说$\mathscr { F }$和$\mathscr { G }$是伴随的（我们说$\mathscr { G }$是$\mathscr { F }$的右伴随，$\mathscr { F }$是$\mathscr { G }$的左伴随），如果存在自然同构
 
 $$
-\operatorname { H o m } _ { \mathsf { C } } ( X , { \mathcal { G } } ( Y ) ) { \xrightarrow { \sim } } \operatorname { H o m } _ { \mathsf { D } } ( { \mathcal { F } } ( X ) , Y )
+\operatorname { H o m } _ { \mathsf { C } } ( X , { \mathscr { G } } ( Y ) ) { \xrightarrow { \sim } } \operatorname { H o m } _ { \mathsf { D } } ( { \mathscr { F } } ( X ) , Y )
 $$
 
-对于所有 $\mathsf { C }$ 的对象 $X$ 和 $\mathsf { D }$ 的对象 $Y$ 。（更精确地说，应该有一个自然的同构关系 ${ \mathsf { C } } ^ { o p } \times { \mathsf { D } } \to { \mathsf { S e t } }$：$\operatorname { Hom_{\mathsf{C}} } ( \_ { \mathcal G } ( \_ ) ) \stackrel { \sim } { \sim } \operatorname { H o m } _ { \mathsf { D } } ( { \mathcal F } ( \_ ) , \_ )$。）
+对于所有 $\mathsf { C }$ 的对象 $X$ 和 $\mathsf { D }$ 的对象 $Y$ 。（更精确地说，应该有一个自然的"bifunctors" 的同构关系 ${ \mathsf { C } } ^ { o p } \times { \mathsf { D } } \to { \mathsf { S e t } }$：$\operatorname { Hom_{\mathsf{C}} } ( \_ { \mathcal G } ( \_ ) ) \stackrel { \sim } { \sim } \operatorname { H o m } _ { \mathsf { D } } ( { \mathcal F } ( \_ ) , \_ )$。）
 
 再一次，我们沿途遇到的一些结构可以用这些术语来重新表述，在本章中我们将遇到更多这种情况。
 
-示例 1.16. 在给定集合上的自由群的构造（§II.5）被设计成这样，即给出一个从集合 $A$ 到群 $G$ 的集合函数，与给出一个从 $F(A)$ 到 $G$ 的群同态是“相同”的（$9$ II.5.2）。这真正意味着的是，对于所有集合 $A$ 和所有群 $G$，存在自然同构
+**示例 1.16**. 在给定集合上的自由群的构造（§II.5）被设计成这样，即给出一个从集合 $A$ 到群 $G$ 的集合函数，与给出一个从 $F(A)$ 到 $G$ 的群同态是“相同”的（$9$ II.5.2）。这真正意味着的是，对于所有集合 $A$ 和所有群 $G$，存在自然同构
 
 $$
 \mathrm { H o m } _ { \mathsf { S e t } } ( A , S ( G ) ) \cong \mathrm { H o m } _ { \mathsf { G r p } } ( F ( A ) , G ) \quad ,
 $$
 
-$S ( G )$ 会“忘记”群 $G$ 的结构。也就是说，自由群构造的函子 $F : { \mathsf { S e t } } \to { \mathsf { G r p } }$ 是忘记函子 $S : { \mathsf { G r p } } \to { \mathsf { S e t } }$ 的左伴随函子。
+$S ( G )$ 会“忘记”群 $G$ 的结构。也就是说，自由群构造的函子 $F : { \mathsf { S e t } } \to { \mathsf { G r p } }$ 是遗忘函子 $S : { \mathsf { G r p } } \to { \mathsf { S e t } }$ 的左伴随函子。
 
-当然，这也适用于我们遇到的“自由”对象的其他构造：自由函子通常是忘记函子的左伴随。
+当然，这也适用于我们遇到的“自由”对象的其他构造：自由函子通常是遗忘函子的左伴随。$\lrcorner$
 
 因此，有趣的函子可能会是看起来无害的函子的伴随。这具有技术优势：有趣函子的性质可以翻译成无害函子的性质，从而更容易地证明这些性质。
 
-事实上，一个函子具有伴随函子这一事实将赋予该函子方便的特性。我们说 $\mathcal { F }$ 是一个左伴随函子，如果它有一个右伴随函子，并且说 $\mathcal { G }$ 是一个右伴随函子，如果它有一个左伴随函子。有些（比如）右伴随函子的性质可能在甚至不知道其伴随的左伴随函子是什么的情况下建立起来。这里是这个现象的原型例子。
+事实上，一个函子具有伴随函子这一事实将赋予该函子方便的特性。我们说 $\mathscr { F }$ 是一个 _左伴随函子_，如果它有一个右伴随，并且说 $\mathscr { G }$ 是一个右伴随函子，如果它有一个左伴随函子。有些（比如）右伴随函子的性质可能在甚至不知道其伴随的左伴随函子是什么的情况下建立起来。下面就是这个现象的一个原型例子。
 
-引理 1.17。右伴随函子与极限交换。
+**引理 1.17**。右伴随函子与极限交换。
 
-也就是说，如果 $\mathcal { G } : \mathsf { D } \to \mathsf { C}$ 有一个左伴随 $\mathcal { F } : \mathsf { C } \to \mathsf { D}$，并且 $\mathcal { A } : |  \mathsf { D }$ 是另一个函子，那么存在一个典范同构
+也就是说，如果 $\mathscr { G } : \mathsf { D } \to \mathsf { C}$ 有一个左伴随 $\mathscr { F } : \mathsf { C } \to \mathsf { D}$，并且 $\mathscr { A } :   \mathsf { I\to D }$ 是另一个函子，那么存在一个典范同构
 
 $$
-\mathcal { G } ( \varprojlim \mathcal { A } ) \stackrel { \sim } { \to } \varprojlim ( \mathcal { G } \circ \mathcal { A } )
+\mathscr { G } ( \varprojlim \mathscr { A } ) \stackrel { \sim } { \to } \varprojlim ( \mathscr { G } \circ \mathscr { A } )
 $$
 
-（当然，如果极限存在的话）。正如每个好的微积分学生都应该很容易理解的那样，这表明右伴随函子是连续的。（不用说，左伴随函子最终会与上极限交换，并且会恰当地被称为上连续的。）
+（当然，_如果_ 极限存在的话）。正如每个好的微积分学生都应该很容易理解的那样，这表明右伴随函子是 _连续的_。（不用说，左伴随函子最终会与 _余_ 极限交换，并且会恰当地被称为 _余连续_ （cocontinuous）的。）
 
 我们将不会详细证明引理 1.17，但我将尽力让读者相信，这些陈述并不像看起来那么难，它们只是各种概念的泛性质定义的适当应用。相比之下，在不诉诸抽象废话的情况下，证明一个特定的给定函子保持积（例如），有时可能看起来需要一些“真正”的工作。
 
-假设 $\mathcal { G } : \mathsf { D } \to \mathsf { C }$ 是 $\mathcal { F } : \mathsf { C } \to \mathsf { D }$ 的右伴随，且 $\mathcal { A } : |  \mathsf { D }$ 是一个给定的函子。如我们所见，$\mathcal { A }$ 的极限在适配于交换图中是最终的
+假设 $\mathscr { G } : \mathsf { D } \to \mathsf { C }$ 是 $\mathscr { F } : \mathsf { C } \to \mathsf { D }$ 的右伴随，且 $\mathcal { A } :  \mathsf {I\to D }$ 是一个给定的函子。如我们所见，$\mathscr { A }$ 的极限 是 终对象, 才能 挤进下面交换图
 
-$$
-\prod _ { \mathcal { A } ( I ) \xrightarrow { \operatorname* { l i m } _ { \mathcal { A } ( \alpha ) } \mathcal { A } ( J ) } } ^ { \operatorname* { l i m } _ { \mathcal { A } } }
-$$
+![](images/h4.png)
 
-（希望符号明显）。应用 $\mathcal { G }$，我们得到（在 $\mathsf { C }$ 中的）交换图
+（使用的是 希望是很明显 的符号）。应用 $\mathscr { G }$，我们得到（在 $\mathsf { C }$ 中的）交换图
 
 ![](images/130.jpg)
 
-因此，根据定义$\mathcal{G} \circ \mathcal{A}$的极限的泛性质：
+因此，根据定义$\mathscr{G} \circ \mathscr{A}$的极限的泛性质：
 
 ![](images/131.jpg)
 
-现在，同态（在 $\mathsf { C }$ 中）
+现在，态射（在 $\mathsf { C }$ 中）
 
 $$
-\varprojlim ( \mathcal { G } \circ \mathcal { A } )  \mathcal { G } \circ \mathcal { A } ( I )
+\varprojlim ( \mathscr { G } \circ \mathcal { A } )  \to \mathscr { G } \circ \mathcal { A } ( I )
 $$
 
-通过附加识别来确定
+通过下面 伴随等同
 
 $$
 \mathrm { H o m } _ { \mathsf { C } } ( X , { \mathcal G } ( Y ) ) \xrightarrow { \sim } \mathrm { H o m } _ { \mathsf { D } } ( { \mathcal F } ( X ) , Y ) \quad ,
 $$
 
-同态（在 D 中）
+来（在 D 中）确定态射
 
 $$
-\mathscr { F } ( \varprojlim ( \mathscr { G } \circ \mathcal { A } ) )  \mathcal { A } ( I ) \quad .
+\mathscr { F } ( \varprojlim ( \mathscr { G } \circ \mathscr { A } ) ) \to \mathscr { A } ( I ) \quad .
 $$
 
 根据定义 $\varprojlim \mathcal { A }$ 的泛性质，我们得到
 
 ![](images/132.jpg)
 
-再次应用加法，新的同态
+再次应用伴随，新的态射
 
 $$
-\mathcal { F } ( \varprojlim ( \mathcal { G } \circ \mathcal { A } ) )  \varprojlim \mathcal { A }
+\mathscr { F } ( \varprojlim ( \mathscr { G } \circ \mathscr { A } ) ) \to \varprojlim \mathscr { A }
 $$
 
-确定一个同态
+确定一个态射
 
 $$
-\varprojlim ( \mathcal { G } \circ \mathcal { A } )  \mathcal { G } ( \varprojlim \mathcal { A } ) \quad .
+\varprojlim ( \mathscr { G } \circ \mathscr { A } ) \to \mathscr { G } ( \varprojlim  \mathscr { A } ) \quad .
 $$
 
 总结起来，我们已经得到了自然态射
 
 $$
-\mathcal { G } ( \varprojlim \mathcal { A } )  \varprojlim ( \mathcal { G } \circ \mathcal { A } ) \quad , \quad \varprojlim ( \mathcal { G } \circ \mathcal { A } )  \mathcal { G } ( \varprojlim \mathcal { A } ) \quad .
+\mathscr { G } ( \varprojlim \mathscr { A } ) \to \varprojlim ( \mathscr { G } \circ \mathscr { A } ) \quad , \quad \varprojlim ( \mathscr { G } \circ \mathscr { A } )\to   \mathscr { G } ( \varprojlim \mathscr { A } ) \quad .
 $$
 
-这些组合很容易被验证为恒等（由于在构造中调用的各种普遍性属性的惟一性部分），从而完成了引理 1.17 的验证。
+这些组合很容易被验证为恒等（由 在构造中调用的各种泛性质的惟一性 部分），从而完成了引理 1.17 的验证。
 
-这个提纲中缺少的是对每个所需图都满足交换性的明确验证，这是应用所陈述的泛性质所必需的。读者可能会同意，尽管这些验证可能有点复杂，但它们应该是常规的。
+这个提纲中缺少的是对每个所需图都满足交换性的明确验证，这是应用所陈述的泛性质所必需的。读者可能会同意，尽管这些验证可能有点复杂，但它们必然是常规的。
 
 引理 1.17 暗示，例如，右伴随函子保持积，并且当核有定义时，它们必须“保持核”。
 
-示例 1.18（正合函子）。一个函子是正合的，如果它保持正合性，也就是说，它将正合列映射到正合列。到目前为止，我们只研究了环上的模的正合性（§III.7.1），所以设 $R$，$S$ 为环，并设 $\mathcal{F}$：$R – \mathsf{Mod}_S$ -Mod 为一个加性函子；$\mathcal{F}$ 是正合的当且仅当每当
+**示例 1.18**（正合函子）。一个函子是 _正合的_ ，如果它保持正合性，也就是说，它将正合列映射到正合列。到目前为止，我们只研究了环上的模的正合性（§III.7.1），所以设 $R$，$S$ 为环，并设 $\mathscr{F}: R – \mathsf{Mod} \to S-\mathsf{Mod}$ 为一个加性函子；$\mathscr{F}$ 是正合的 当且仅当 每当
 
 $$
-0 \longrightarrow A \xrightarrow { \varphi } B \xrightarrow { \psi } C \xrightarrow { \psi } 0
+0 \longrightarrow A \xrightarrow { \varphi } B \xrightarrow { \psi } C \longrightarrow  0
 $$
 
 是 $R$ -模的正合列，则
 
 $$
-0 \longrightarrow { \mathcal { F } } ( A ) { \xrightarrow { { \mathcal { F } } ( \varphi ) } } { \mathcal { F } } ( B ) { \xrightarrow { { \mathcal { F } } ( \psi ) } } { \mathcal { F } } ( C ) \longrightarrow 0
+0 \longrightarrow { \mathscr { F } } ( A ) { \xrightarrow { { \mathscr { F } } ( \varphi ) } } { \mathscr { F } } ( B ) { \xrightarrow { { \mathscr { F } } ( \psi ) } } { \mathscr { F } } ( C ) \longrightarrow 0
 $$
 
 是$S$-模的一个正合列。容易推出每个正合复形的像是正合的（习题1.23）。
 
-一个常见且非常有趣的情况发生在当函子不是正合的，但它保持序列的“一些”正合性（我们将在本章后面遇到这样的例子，例如在§2.3中）。我们说一个加性函子 $\mathcal { F }$ 是左正合的，如果每当
+一个常见且非常有趣的情况发生在当函子 _不是_ 正合的，但它保持序列的“一些”正合性（我们将在本章后面遇到这样的例子，例如在§2.3中）。我们说一个加性函子 $\mathscr { F }$ 是 _左正合_ 的，如果每当
 
 $$
 0 \longrightarrow A \xrightarrow { \varphi } B \xrightarrow { \psi } C
 $$
 
-如果完全一致，那么也是
+正合，则下面也正合：
 
 $$
-0 \longrightarrow \mathcal { F } ( A ) \xrightarrow { \mathcal { F } ( \varphi ) } \mathcal { F } ( B ) \xrightarrow { \mathcal { F } ( \psi ) } \mathcal { F } ( C ) \quad .
+0 \longrightarrow \mathscr { F } ( A ) \xrightarrow { \mathscr { F } ( \varphi ) } \mathscr { F } ( B ) \xrightarrow { \mathscr { F } ( \psi ) } \mathscr { F } ( C ) \quad .
 $$
 
-事实证明，一个左正合函子会产生一系列“新”的、相关的（“导出”）函子；这一极其重要的现象在同调代数中加以研究，我们将在第九章中回到这个问题。
+事实证明，一个左正合函子会产生一系列“新”的、相关的（_“导出”_ (derived)）函子；这一极其重要的现象在同调代数中加以研究，我们将在第九章中回到这个问题。
 
-命题 1.19. 右伴随加性函子 $R$ -Mod $\to S$ -Mod 是左正合的。
+**命题 1.19**. 右伴随加性函子 $R$ -Mod $\to S$ -Mod 是左正合的。
 
-如读者将验证（练习1.27），这源于右伴随函子保持核的事实。（注意，序列的正合性相当于$\varphi : A \hookrightarrow B$将$A$与$\ker \psi$等同。）
+如读者将验证（练习1.27），这源于右伴随函子保持核的事实。（注意，序列的正合性相当于 $\varphi : A \hookrightarrow B$ 将 $A$ 与 $\ker \psi$等同。）
 
-当然，相应的 $c o$ -公式成立：由于左伴随函子保持余极限，而余核是余极限，因此左伴随加性函子 $\mathcal { G } : R \mathrm { - } \mathsf { M o d } \to S$ -Mod 必然是 _右正合_ 的，在意义上，如果
+当然，相应的  _余_ -公式成立：由于左伴随函子保持余极限，而余核是余极限，因此左伴随加性函子 $\mathscr { G } : R \mathrm { - } \mathsf { M o d } \to S$ -Mod 必然是 _右_  正合 的，在下述意义上：如果
 
 $$
 A { \xrightarrow { \varphi } } B { \xrightarrow { \psi } } C { \xrightarrow { } } 0
@@ -18874,76 +18879,82 @@ $$
 
 ### 习题
 
-1.1. 设 $\mathcal { F } : \mathsf { C } \to \mathsf { D }$ 是一个协变函子，并且假设 $\mathsf { C }$ 和 $\mathsf { D }$ 都有积。证明对于 $\mathsf { C }$ 的所有对象 $A$，$B$，存在唯一的态射 ${ \mathcal { F } } ( A \times B ) \to { \mathcal { F } } ( A ) \times { \mathcal { F } } ( B )$，使得涉及自然投影的相关图式是可交换的。
+1.1. 设 $\mathscr { F } : \mathsf { C } \to \mathsf { D }$ 是一个协变函子，并且假设 $\mathsf { C }$ 和 $\mathsf { D }$ 都有积。证明对于 $\mathsf { C }$ 的所有对象 $A$，$B$，存在唯一的态射 ${ \mathscr { F } } ( A \times B ) \to { \mathscr { F } } ( A ) \times { \mathscr { F } } ( B )$，使得涉及自然投影的相关图 是可交换的。
 
-如果 $\mathsf { D }$ 有伴随（记为 ），且 $\mathcal { G } : \mathsf { C } \to \mathsf { D }$ 是反变的，证明存在唯一的同态 ${ \mathcal { G } } ( A ) \operatorname { I I } { \mathcal { G } } ( B ) \to { \mathcal { G } } ( A \times B )$（同样，使得适当的图可行）。
+如果 $\mathsf { D }$ 有 _余_ 积（记为 $\amalg$ ），且 $\mathscr { G } : \mathsf { C } \to \mathsf { D }$ 是反变的，证明存在唯一的态射 ${ \mathscr { G } } ( A ) \amalg  { \mathscr { G } } ( B ) \to { \mathscr { G } } ( A \times B )$（同样，使得适当的图交换）。
 
-1.2. $\triangleright$ 设 $\mathcal { F } : \mathsf { C } \to \mathsf { D }$ 是一个完全忠实的函子。如果 $A$ ，$B$ 是 $\mathsf { C }$ 中的对象，证明 $A \cong B$ 在 $\mathsf { C }$ 中当且仅当 ${ \mathcal { F } } ( A ) \cong { \mathcal { F } } ( B )$ 在 $\mathsf { D }$ 中。[§1.3]
+1.2. $\triangleright$ 设 $\mathscr { F } : \mathsf { C } \to \mathsf { D }$ 是一个完全忠实的函子。如果 $A$ ，$B$ 是 $\mathsf { C }$ 中的对象，证明 $A \cong B$ 在 $\mathsf { C }$ 中当且仅当 ${ \mathscr { F } } ( A ) \cong { \mathscr { F } } ( B )$ 在 $\mathsf { D }$ 中。[§1.3]
 
-1.3. 回忆（§II.1） rằng một nhóm $G$ có thể được coi là một nhóm trừu tượng $\mathsf { G }$ với một đối tượng duy nhất. Chứng minh rằng định nghĩa hành động của $G$ trên một đối tượng của một phạm trù $\mathsf { C }$ là tương đương với định nghĩa một functor $\mathsf { G } \to \mathsf { C }$ .
+1.3. 回忆 (§II.1) 群 $G$ 可被认为是一个 群胚 $\mathsf { G }$ ，其只有一个对象. 证明定义   $G$  在  范畴 $\mathsf { C }$ 的一个对象 上的作用 等价于 定义一个函子 $\mathsf { G } \to \mathsf { C }$ .
 
-1.4. $\neg$ 设 $R$ 是一个交换环，且 $S \subseteq R$ 是根据练习 V.4.7 的意义下的一个乘法子集。证明“局部化是一个函子”：对于每一个 $R$-模 $M$，关联其局部化 $S^{-1}M$（练习 V.4.8），对于每一个 $R$-模同态 $\varphi : M \to N$，关联其自然诱导的同态 $S^{-1}M \to S^{-1}N$，定义了一个从 $R$-模范畴到 $S^{-1}R$-模范畴的协变函子。[1.25]
+1.4. $\neg$ 设 $R$ 是一个交换环，且 $S \subseteq R$ 是根据练习 V.4.7 的意义下的一个 _积性子集_ (multiplicative subset)。证明“局部化(localization)是一个函子”：对于每一个 $R$-模 $M$，和其 局部化 $S^{-1}M$（练习 V.4.8），对于每一个 $R$-模同态 $\varphi : M \to N$，和其自然诱导的同态 $S^{-1}M \to S^{-1}N$，定义了一个从 $R$-模范畴到 $S^{-1}R$-模范畴的协变函子。[1.25]
 
-1.5. 对于一个域$F$，用$F ^ { * }$表示$F$的非零元素组成的乘法群。映射$\mathsf { F l d } \to \mathsf { G r p }$将$F$映射到$F ^ { * }$，以及一个域同态$\varphi : k  F$（即一个域扩张$^ 8$）到限制$\varphi | _ { k ^ { * } } : k ^ { * } \to F ^ { * }$显然是一个协变函子。另一方面，我们可以考虑固定域$k$的有限扩张范畴$\mathsf { F l d } _ { k } ^ { f }$。证明对象上的映射$F \mapsto F ^ { * }$，以及对于每一个$F _ { 1 } \subseteq F _ { 2 }$，规定规范$N _ { F _ { 1 } \subseteq F _ { 2 } } : F _ { 2 } ^ { * } \to F _ { 1 } ^ { * }$（参见习题VII.1.12），给出了一个从$\mathsf { F l d } _ { k } ^ { f }$到$\mathsf { G r p }$的反变函子。
+1.5. 对于一个域$F$，用$F ^ { * }$表示$F$的非零元素组成的乘法群。映射$\mathsf { F l d } \to \mathsf { G r p }$将$F$映射到$F ^ { * }$，以及一个域同态$\varphi : k \to F$（例如，一个域扩张$^ 8$）到限制$\varphi | _ { k ^ { * } } : k ^ { * } \to F ^ { * }$ 显然是一个协变函子。另一方面，我们可以考虑固定域$k$的 _有限_ 扩张范畴$\mathsf { F l d } _ { k } ^ { f }$。证明对象上的映射$F \mapsto F ^ { * }$，以及对于每一个$F _ { 1 } \subseteq F _ { 2 }$，规定 _范数_ (norm) $N _ { F _ { 1 } \subseteq F _ { 2 } } : F _ { 2 } ^ { * } \to F _ { 1 } ^ { * }$（参见习题VII.1.12），给出了一个从$\mathsf { F l d } _ { k } ^ { f }$到$\mathsf { G r p }$的 _反变_ 函子。
 
-证明一个关于迹的类似命题（参见练习 VII.1.13）。
+证明一个关于 _迹_ (trace) 的类似命题（参见练习 VII.1.13）。
 
-1.6.  在拓扑空间 $T$ 上形式化阿贝尔群预层的概念。如果 $\mathcal { F }$ 是 $T$ 上的预层，则 ${ \mathcal { F } } ( U )$ 的元素称为 $\mathcal { F }$ 在 $U$ 上的截面。由包含 $V \subseteq U$ 诱导的 同态 $\rho _ { U V } : { \mathcal { F } } ( U ) \to { \mathcal { F } } ( V )$ 称为限制映射。
+1.6.  在拓扑空间 $T$ 上形式化 阿贝尔群预层的概念。如果 $\mathscr { F }$ 是 $T$ 上的预层，则 ${ \mathscr { F } } ( U )$ 的元素称为 $\mathscr { F }$ 在 $U$ 上的 _截面_ (sections)。由包含 $V \subseteq U$ 诱导的 同态 $\rho _ { U V } : { \mathscr { F } } ( U ) \to { \mathscr { F } } ( V )$ 称为 _限制映射_。
 
-证明一个例子可以通过让 ${ \mathcal { C } } ( U )$ 是 $U$ 上的连续复值函数的加法阿贝尔群，并且用函数的普通限制来定义截面的限制得到。
+证明一个 预层例子 可以通过 让 ${ \mathscr { C } } ( U )$ 是 $U$ 上的连续复值函数的加法阿贝尔群，并且用函数的普通限制 来定义截面的限制 来得到。
 
-对于这个预层，证明可以唯一地粘贴在重叠开集上相容的截面。也就是说，如果 $U$ 和 $V$ 是开集，$s _ { U } \in { \mathcal { C } } ( U )$ ，$s _ { V } \in \mathcal { C } ( V )$ 在 $U \cap V$ 上限制后相容，证明存在唯一的 $s \in \mathcal { C } ( U \cup V )$ 使得 $s$ 在 $U$ 上限制为 $s _ { U }$ ，在 $V$ 上限制为 $s v$ 。
+对于这个预层，证明 可以唯一地粘贴 在重叠开集上相容的 截面。也就是说，如果 $U$ 和 $V$ 是开集，$s _ { U } \in { \mathscr { C } } ( U )$ ，$s _ { V } \in \mathscr { C } ( V )$ 在 $U \cap V$ 上限制后相容，证明存在唯一的 $s \in \mathscr { C } ( U \cup V )$ 使得 $s$ 在 $U$ 上限制为 $s _ { U }$ ，在 $V$ 上限制为 $s _V$ 。
 
-这本质上就是使 $\mathcal { C }$ 成为 sheaf 的条件。[IX.1.15]
+这本质上就是 使 $\mathcal { C }$ 成为一个 _层_ 的条件。[IX.1.15]
 
-1.7. $\triangleright$ 在 Spec $R$ 上定义一个拓扑，通过断言闭集为 $V ( I )$，其中 $I \subseteq R$ 是一个理想，$V ( I )$ 表示包含 $I$ 的素理想集合。
+1.7. $\triangleright$ 在 Spec $R$ 上定义一个拓扑，通过断言 闭集为 $V ( I )$，其中 $I \subseteq R$ 是一个理想，  _包含_  $I$ 的素理想集合 记为  $V ( I )$ 。
 
-• 验证这确实定义了 $\mathrm{Spec} R$ 上的拓扑。(这是 $\mathrm{Spec} R$ 上的Zariski拓扑。)
+• 验证这确实定义了 $\mathrm{Spec} R$ 上的拓扑。(这是 $\mathrm{Spec} R$ 上的 _Zariski拓扑_。)
 • 将此拓扑与 §VII.2.3 中定义的 Zariski 拓扑联系起来。
-• 证明 Spec 是从交换环范畴到拓扑空间范畴的反变 functor（其中态射是连续函数）。
+• 证明 Spec 是从交换环范畴到拓扑空间范畴的反变函子（其中态射是连续函数）。
 [§1.2]
 
 1.8. 设 $K$ 是一个代数闭域，并考虑在例1.9中定义的 $K$ -Aff范畴。
 
-• 用 $h _ { S }$ 表示 functor $\mathrm { H o m } _ { K - \mathsf { A f f } } ( \mathsf { \Pi } _ { - } , S )$（如 §1.2 所述），并设 $p \ = \ \mathbb { A } _ { K } ^ { 0 }$ 为一个点。证明 $S$ 与 $h _ { S } ( p )$ 之间存在自然的双射。（使用练习 VII.2.14。） • 证明每个 $\varphi \in \mathrm { H o m } _ { K \cdot \mathsf { A f f } } ( S , T )$ 都确定一个从 $S$ 到 $T$ 的集合函数。 • 如果 $S \subseteq \mathbb { A } _ { K } ^ { m }$ ，$T \subseteq \mathbb { A } _ { K } ^ { n }$ ，证明由 态射 $\varphi \in { \mathrm { H o m } } _ { K - { \mathsf { A f f } } } ( S , T )$ 确定的函数 $S \to T$ 是一个“多项式函数” $\mathbb { A } _ { K } ^ { m } \to \mathbb { A } _ { K } ^ { n }$ 的限制。（这个练习的一部分是理解这意味着什么！）
+• 用 $h _ { S }$ 表示 函子 $\mathrm { H o m } _ { K - \mathsf { A f f } } ( _ { - } , S )$（如 §1.2 所述），并设 $p \ = \ \mathbb { A } _ { K } ^ { 0 }$ 为一个点。证明 $S$ 与 $h _ { S } ( p )$ 之间存在自然的双射。（使用练习 VII.2.14。）
+• 证明每个 $\varphi \in \mathrm { H o m } _ { K \cdot \mathsf { A f f } } ( S , T )$ 都确定一个从 $S$ 到 $T$ 的集合函数。
+• 如果 $S \subseteq \mathbb { A } _ { K } ^ { m }$ ，$T \subseteq \mathbb { A } _ { K } ^ { n }$ ，证明由 态射 $\varphi \in { \mathrm { H o m } } _ { K - { \mathsf { A f f } } } ( S , T )$ 确定的函数 $S \to T$ 是一个“多项式函数” $\mathbb { A } _ { K } ^ { m } \to \mathbb { A } _ { K } ^ { n }$ 的限制。（这个练习的一部分是理解这意味着什么！）
 
-1.9. $\neg$ 设 $\mathsf { C }$ ， $\mathsf { D }$ 为范畴，且假设 $\mathsf { C }$ 为小范畴。定义一个函子范畴 $\mathsf { D } ^ { \mathsf { C } }$ ，其对象是协变函子 $C  \ D$ ，其态射是自然变换9。
+1.9. $\neg$ 设 $\mathsf { C }$ ， $\mathsf { D }$ 为范畴，且假设 范畴 $\mathsf { C }$ 小。定义一个 _函子范畴_ $\mathsf { D } ^ { \mathsf { C } }$ ，其对象是协变函子 $\mathsf{C \to \ D}$ ，其态射是自然变换$^9$。
 
-证明赋值 $X \mapsto h _ { X } := \operatorname { H o m } _ { \mathbb { C } } ( \lrcorner , X )$（参见§1.2）定义了一个协变函子 $\mathsf { C } \to \mathsf { S e t } ^ { \mathsf { C } ^ { \upsilon \upsilon } }$。（以自然的方式定义对态射的作用。)[1.11, IX.1.11]
+证明  $X \mapsto h _ { X } := \operatorname { H o m } _ { \mathbb { C } } ( _ { - } , X )$（参见§1.2）定义了一个协变函子 $\mathsf { C } \to \mathsf { S e t } ^ { \mathsf { C } ^ {op } }$。（以自然的方式定义 对态射的作用。)[1.11, IX.1.11]
 
 **1.10.** $\neg$ 令 $\mathsf{C}$ 是一个范畴， $X$ 是 $\mathsf{C}$ 的一个对象，并考虑反变函子 $h_X := \operatorname{Hom}_{\mathsf{C}}(\_, X)$ (参阅 §1.2)。对于每个反变函子 $\mathscr{F} : \mathsf{C} \to \mathsf{Set}$，证明在自然变换集 $h_X \leadsto \mathscr{F}$ 与 $\mathscr{F}(X)$ 之间存在一个双射，定义如下。一个自然变换 $\nu: h_X \leadsto \mathscr{F}$ 的数据包含：对于 $\mathsf{C}$ 的每一个对象 $A$，都有一个从 $h_X(A) = \operatorname{Hom}_{\mathsf{C}}(A, X)$ 到 $\mathscr{F}(A)$ 的态射 $\nu_A$。将 $\nu$ 映射到 $\mathrm{id}_X \in h_X(X)$ 在 $\mathscr{F}(X)$ 中的像 $\nu_X(\mathrm{id}_X)$。（提示：构造所述映射的一个逆。对于每个 $f \in \mathscr{F}(X)$ 和每个 $\varphi \in \operatorname{Hom}_{\mathsf{C}}(A, X)$，你如何构造 $\mathscr{F}(A)$ 的一个元素？）
 
-这个结果被称为*米田引理* (Yoneda lemma)。[1.11, IX.2.17]
+这个结果被称为 _**米田引理** (Yoneda lemma)_。[1.11, IX.2.17]
 
-1.11. (参见练习1.9。) 设 $\mathsf { C }$ 是一个小范畴。一个反变函子 $\mathrm { C }  \mathsf { S e t }$ 是可表示的，如果它自然同构于一个函子 $h _ { X }$（参见§1.2）。在这种情况下，$X$ “表示”这个函子。证明 $\mathsf { C }$ 与 ${ \mathsf { S e t } } ^ { \mathsf { C } ^ { o p } }$ 中可表示函子的子范畴等价。（提示：Yoneda；参见练习1.10。）
+(译注：此处已按 勘误修正)
+
+1.11. (参见练习1.9。) 设 $\mathsf { C }$ 是一个小范畴。一个反变函子 $\mathsf {C \to S e t }$ 是 _可表示的_ ，如果它自然同构于一个函子 $h _ { X }$（参见§1.2）。在这种情况下，$X$ “表示”这个函子。证明 $\mathsf { C }$ 与 ${ \mathsf { S e t } } ^ { \mathsf { C } ^ { o p } }$ 中可表示函子的子范畴等价。（提示：Yoneda；参见练习1.10。）
 
 因此，每个（小）范畴都等价于一个函子范畴的子范畴。
 
-1.12. 设 $\mathsf { C }$ , $\mathsf { D }$ 是两个范畴，且 $\mathcal { F } : \mathsf { C } \to \mathsf { D }$ , $\mathcal { G } : \mathsf { D } \to \mathsf { C }$ 是两个函子。证明 $\mathcal { F }$ 是 $\mathcal { G }$ 的左伴随函子当且仅当，对于 $\mathsf { D }$ 中的每一个对象 $Y$ ，对象 $\mathcal { G } ( Y )$ 代表函子 $h _ { Y } \circ \mathcal { F }$ （在 $Y$ 中“自然地”）。
+1.12. 设 $\mathsf { C }$ , $\mathsf { D }$ 是两个范畴，且 $\mathscr { F } : \mathsf { C } \to \mathsf { D }$ , $\mathscr { G } : \mathsf { D } \to \mathsf { C }$ 是两个函子。证明 $\mathscr { F }$ 是 $\mathscr { G }$ 的左伴随函子 当且仅当，对于 $\mathsf { D }$ 中的每一个对象 $Y$ ，对象 $\mathscr { G } ( Y )$  表示 函子 $h _ { Y } \circ \mathscr { F }$ （在 $Y$ 中“自然地”）。
 
-1.13. 设 Z 是一个“Zen”范畴，其中不包含任何对象和态射。人们可以思考一个从 Z 到任意范畴 C 的函子 $\mathcal { Z }$：无需指定任何数据。当这样的对象存在时，$\varprojlim \mathcal { L }$ 是什么？
+1.13. 设 Z 是一个“Zen”范畴，其中不包含任何对象和态射。我们可以思考一个从 Z 到任意范畴 C 的函子 $\mathscr { Z }$：无需指定任何数据。当这样的对象存在时，$\varprojlim \mathscr { Z }$ 是什么？
 
 1.14. $\triangleright$ 验证例1.11中描述的构造确实恢复了$R$-模同态的核，正如所声称的那样。[§1.4]
 
-1.15. $\triangleright$ 验证在命题1.13的证明中给出的构造确实是一个逆极限，如所声称。[§1.4]
+1.15. $\triangleright$ 验证在命题1.13的证明中给出的构造确实是一个逆向极限，如所声称。[§1.4]
 
-1.16. $\triangleright$ 补充1.4中关于Set和$R$-Mod中colimits构造的草图，对于任何索引偏序集。在Set中，注意到如果偏序集I是定向的，那么colimit的构造会更简单；也就是说，如果$\forall i , j \in \mathbb { I }$，存在一个$k \in { \mathsf { I } }$，使得$i \leq k$，$j \le k$。[§1.4]
+1.16. $\triangleright$ 补充1.4中关于Set和$R$-Mod中 余极限 构造的草图，对于任何索引偏序集。在Set中，注意到如果偏序集I是 _有向的_，那么 余极限 的构造会更简单；也就是说，如果$\forall i , j \in \mathsf { I }$，存在一个$k \in { \mathsf { I } }$，使得$i \leq k$，$j \le k$。[§1.4]
 
 1.17. $\neg$ 设 $R$ 是一个交换环，且 $I \subseteq R$ 是一个理想。注意到如果 $n \geq m$，则 $I ^ { n } \subseteq I ^ { m }$，因此我们对于 $n \geq m$ 有自然同态 $\varphi _ { m n } : R / I ^ { n } \to R / I ^ { m }$。
 
-• 证明逆极限 ${ \widehat { R } } _ { I } : = \varprojlim _ { n } R / I ^ { n }$ 作为交换环存在。这被称为 $I$ -adic 完备化 $R$ 。  
-根据逆极限的泛性质，存在唯一的同态 $R  \hat { R } _ { I }$ 。证明这个同态的核是 $\textstyle { \bigcap _ { n } I ^ { n } }$ 。  
-• 设 $I \ = \ ( x )$ 在 $R [x]$ 中。证明完备化 $\widehat { R } [ \widehat { \boldsymbol { x } } ] _ { I }$ 与在 §III.1.3 中定义的幂级数环 $R [[x]]$ 同构。 [1.18, 1.19]
+- 证明逆极限 ${ \widehat { R } } _ { I } : =\underset{n} \varprojlim R / I ^ { n }$ 作为交换环存在。这被称为   $R$ 的  $I$ -adic completion。  
+- 根据逆极限的泛性质，存在唯一的同态 $R\to  \widehat { R } _ { I }$ 。证明这个同态的核是 $\textstyle { \bigcap _ { n } I ^ { n } }$ 。  
+- 设 $I \ = \ ( x )$ 在 $R [x]$ 中。证明completion  $\widehat { R  [ { \boldsymbol { x } } ] _ { I }}$ 与在 §III.1.3 中定义的幂级数环 $R [[x]]$ 同构。 [1.18, 1.19]
 
-1.18. 设 $R$ 是一个交换的诺特环，且 $I \subseteq R$ 是一个理想。那么 $I \cdot \textstyle { ( \big ) } _ { n } I ^ { n } = ( \big ) _ { n } I ^ { n }$；读者将在习题4.20中证明这一点。
+1.18. 设 $R$ 是一个交换的诺特环，且 $I \subseteq R$ 是一个理想。那么 $I \cdot \textstyle \bigcap _ { n } I ^ { n } = \bigcap _ { n } I ^ { n }$；读者将在习题4.20中证明这一点。
 
-假设，并证明 $\textstyle { \bigcap _ { n } I ^ { n } }$ 等于 $r \in R$ 的集合，使得 $( 1 - a ) r = 0$ 对某些 $a \in { \mathfrak { I } }$ 成立。（提示：一个包含关系是基本的。对于另一个，使用 Nakayama 引理的形式，如练习 VI.3.7。这个结果归功于 Krull。）
+假设如此，请证明 $\textstyle { \bigcap _ { n } I ^ { n } }$ 等于 $r \in R$ 的集合，使得 $( 1 - a ) r = 0$ 对某些 $a \in  { I }$ 成立。（提示：一个包含关系是初等的。对于另一个，使用 Nakayama（中山） 引理 的 练习 VI.3.7 的形式。这个结果归功于 Krull。）
 
-例如，如果 $I$ 是适当的，那么当 $R$ 是一个整环或局部环时，$\bigcap _ { n } I ^ { n } = ( 0 )$。在这些情况下，自然映射 $R  \hat { R } _ { I }$ 到 $I$ -adic 完备是单射的（参见习题 1.17）。
+例如，如果 $I$ 是真的，那么当 $R$ 是一个整环或局部环时，$\bigcap _ { n } I ^ { n } = ( 0 )$。在这些情况下，自然映射 $R \to \hat { R } _ { I }$ 到 $I$ -adic completion 是单射的（参见习题 1.17）。
 
-1.19. ¬ 练习1.17中提出构造的一个重要例子是$p$-adic整数环$\mathbb{Z}_p$：这是对于正素数$p$的极限$\lim_{Z/prZ}$。$\mathbb{Z}_p$的分式域记作$\mathbb{Q}_p$；$\mathbb{Q}_p$中的元素称为$p$-adic数。
+1.19. ¬ 练习1.17中提出构造的一个重要例子是$p$-adic整数 环$\mathbb{Z}_p$：这是对于正素数$p$ 的极限$\underset {r} \varprojlim {\mathbb{Z}/p^r \mathbb{Z}}$。
+$\mathbb{Z}_p$的分式域记作$\mathbb{Q}_p$；$\mathbb{Q}_p$中的元素称为 $p$-adic _数_。
 
-• 证明给出一个 $p$ -adic 整数 $A$ 等价于给出一个整数序列 $A _ { r }$ ， $r \geq 1$ ，使得 $0 \leq A _ { r } < p ^ { r }$ ，并且 $A _ { s } \equiv A _ { r } { \bmod { p ^ { s } } }$ 如果 $s \leq r$ 。 • 等价地，证明每个 $p$ -adic 整数有一个唯一的无限展开 $A = a _ { 0 } + a _ { 1 } \cdot p + a _ { 2 } \cdot p ^ { 2 } + a _ { 3 } \cdot p ^ { 3 } + \cdot \cdot \cdot$ ，其中 $0 \leq a _ { i } \leq p - 1$ 。
+- 证明 给出一个 $p$ -adic 整数 $A$ 等价于给出一个整数序列 $A _ { r }$ ， $r \geq 1$ ，使得 $0 \leq A _ { r } < p ^ { r }$ ，并且 $A _ { s } \equiv A _ { r } { \bmod { p ^ { s } } }$ 如果 $s \leq r$ 。 
+- 等价地，证明每个 $p$ -adic 整数有一个唯一的无限展开 $A = a _ { 0 } + a _ { 1 } \cdot p + a _ { 2 } \cdot p ^ { 2 } + a _ { 3 } \cdot p ^ { 3 } + \cdots$ ，其中 $0 \leq a _ { i } \leq p - 1$ 。
 
 $p$ 进制整数的算术可以用这些展开式来精确地完成，就像普通算术用普通十进制展开式来完成一样。
 
@@ -18952,22 +18963,22 @@ $p$ 进制整数的算术可以用这些展开式来精确地完成，就像普�
 • 证明 $\mathbb { Z } _ { p }$ 是一个DVR（参见练习V.2.19）。（在 $\mathbb { Q } _ { p }$ 上有一个明显的 valuation。）
  [§II.2.3]
 
-1.20. $\neg$ 如果 $m$ ， $n$ 是正整数且 $m \mid n$ ，那么 $( n ) \subseteq ( m )$ ，并且存在一个满射环同态 $\mathbb { Z } / n \mathbb { Z } \twoheadrightarrow \mathbb { Z } / m \mathbb { Z }$ 。极限环 $\varprojlim _ { ( n ) } \mathbb { Z } / n \mathbb { Z }$ 存在，并记作 $\hat { \mathbb { Z } }$ 。证明 $\widehat { \mathbb { Z } } \cong \operatorname { E n d } _ { \mathsf { A b } } ( \mathbb { Q } / \mathbb { Z } )$ 。（每一个 $f \in \operatorname { E n d } _ { \mathsf { A b } } ( \mathbb { Q } / \mathbb { Z } )$ 都由 $\textstyle f ( { \frac { 1 } { n } } )$ 确定；注意由于 $n { \frac { 1 } { n } } = 1 \equiv 0 { \bmod { \mathbb { Z } } }$ ， $\begin{array} { r } { f ( \frac { 1 } { n } ) = \frac { g ( n ) } { n } } \end{array}$ 对某个整数 $g ( n )$ 成立，可以选取 $g ( n )$ 使得 $0 \leq g ( n ) < n$ 。证明如果 $m \mid n$ ，则 $g ( m ) \equiv g ( n )$ mod ${ m}$ ，并思考如何描述 $\hat { \mathbb { Z } }$ 的元素。[1.21]
+1.20. $\neg$ 如果 $m$ ， $n$ 是正整数且 $m \mid n$ ，那么 $( n ) \subseteq ( m )$ ，并且存在一个满射环同态 $\mathbb { Z } / n \mathbb { Z } \twoheadrightarrow \mathbb { Z } / m \mathbb { Z }$ 。极限环 $\underset{( n )}\varprojlim  \mathbb { Z } / n \mathbb { Z }$ 存在，并记作 $\widehat { \mathbb { Z } }$ 。证明 $\widehat { \mathbb { Z } } \cong \operatorname { E n d } _ { \mathsf { A b } } ( \mathbb { Q } / \mathbb { Z } )$ 。（每一个 $f \in \operatorname { E n d } _ { \mathsf { A b } } ( \mathbb { Q } / \mathbb { Z } )$ 都由 $\textstyle f ( { \frac { 1 } { n } } )$ 确定；注意由于 $n { \frac { 1 } { n } } = 1 \equiv 0 { \bmod { \mathbb { Z } } }$ ， $\begin{array} { r } { f ( \frac { 1 } { n } ) = \frac { g ( n ) } { n } } \end{array}$ 对某个整数 $g ( n )$ 成立，可以选取 $g ( n )$ 使得 $0 \leq g ( n ) < n$ 。证明如果 $m \mid n$ ，则 $g ( m ) \equiv g ( n )$ mod ${ m}$ ，并思考如何描述 $\widehat { \mathbb { Z } }$ 的元素。[1.21]
 
 1.21. 设 $\widehat { \mathbb { Z } }$ 如练习 1.20 中所述。
 
-• 如果 $R$ 是一个带有到所有素数 $p$ 和所有 $r$ 的 $\mathbb{Z} / p ^ { r } \mathbb{Z}$ 的同态的交换环，并且与所有从 $\mathbb{Z} / p ^ { r } \mathbb{Z}$ 到 $\mathbb{Z} / p ^ { s } \mathbb{Z}$ 的投影 $s \leq r$ 兼容，证明存在到所有 $n$ 的 $\mathbb{Z} / n \mathbb{Z}$ 的环同态 $R \to \mathbb{Z} / n \mathbb{Z}$，并且与所有从 $\mathbb{Z} / n \mathbb{Z}$ 到 $\mathbb{Z} / m \mathbb{Z}$ 的投影 $m \mid n$ 兼容。  
-• 推导出 $\widehat{\mathbb{Z}}$ 满足 $\mathbb{Z}_p$ 的积的泛性质，当 $p$ 取遍所有正素数时。
+• 如果 $R$ 是一个带有 到所有素数 $p$ 和所有 $r$ 的 $\mathbb{Z} / p ^ { r } \mathbb{Z}$ 的同态 的交换环，并且与所有从 $\mathbb{Z} / p ^ { r } \mathbb{Z}$ 到 $\mathbb{Z} / p ^ { s } \mathbb{Z}$ 的投影 $s \leq r$ 兼容，证明存在到所有 $n$ 的 $\mathbb{Z} / n \mathbb{Z}$ 的环同态 $R \to \mathbb{Z} / n \mathbb{Z}$，并且与所有从 $\mathbb{Z} / n \mathbb{Z}$ 到 $\mathbb{Z} / m \mathbb{Z}$ 的投影 $m \mid n$ 兼容。  
+• 推导出 当 $p$ 取遍所有正素数时， $\widehat{\mathbb{Z}}$ 满足 $\mathbb{Z}_p$ 的积的泛性质，。
 
 因此，$\begin{array} { r } { \prod _ { p } \mathbb { Z } _ { p } \cong \widehat { \mathbb { Z } } \cong \operatorname { E n d } _ { \mathsf { A b } } ( \mathbb { Q } / \mathbb { Z } ) , } \end{array}$ 。
 
-1.22. 设 $\mathsf { C }$ 是一个范畴，考虑‘积范畴’ $\mathsf { C } \times \mathsf { C }$（理解这种概念！）。存在一个‘对角’函子，将 $\mathsf { C }$ 的每个对象 $X$ 对应到 $\mathsf C \times \mathsf C$ 的对象对 $( X , X )$。另一方面，可能存在一个‘积函子’ ${ \mathsf { C } } \times { \mathsf { C } } \to { \mathsf { C } }$ ，将 $( X , Y )$ 对应到积 $X \times Y$ ；例如，这在 Grp 中就是这样。说服自己积函子是‘对角’函子的右伴随。如果存在一个‘和函子’，验证它是‘对角’函子的左伴随。
+1.22. 设 $\mathsf { C }$ 是一个范畴，考虑‘积范畴’ $\mathsf { C } \times \mathsf { C }$（理解这种概念！）。存在一个‘对角’函子，将 $\mathsf { C }$ 的每个对象 $X$ 对应到 $\mathsf C \times \mathsf C$ 的对象对 $( X , X )$。另一方面，可能存在一个‘积函子’ ${ \mathsf { C } } \times { \mathsf { C } } \to { \mathsf { C } }$ ，将 $( X , Y )$ 对应到积 $X \times Y$ ；例如，这在 Grp 中就是这样。说服自己 积函子是‘对角’函子的 _右伴随_。如果存在一个‘余积函子’，验证它是‘对角’函子的 _左伴随_。
 
-1.23. $\triangleright$ 设 $R$ ， $S$ 是环。证明一个加性协变函子 $\mathcal { F } : R$ -Mod $S$ -Mod 是正合的当且仅当当 $A { \xrightarrow { \varphi } } B { \xrightarrow { \psi } } C$ 在 $R$ -Mod 中是正合的时候，$\mathcal { F } ( A ) \xrightarrow { \mathcal { F } ( \varphi ) } \mathcal { F } ( B ) \xrightarrow { \mathcal { F } ( \psi ) } \mathcal { F } ( C )$ 在 $S$ -Mod 中是正合的。由此推出一个正合的函子将正合的复形映射到正合的复形。 [§1.5, IX.3.7]
+1.23. $\triangleright$ 设 $R$ ， $S$ 是环。证明一个加性协变函子 $\mathscr { F } : R$ -Mod $S$ -Mod 是正合的当且仅当 当 $A { \xrightarrow { \varphi } } B { \xrightarrow { \psi } } C$ 在 $R$ -Mod 中是正合的时，$\mathscr { F } ( A ) \xrightarrow { \mathscr { F } ( \varphi ) } \mathscr { F } ( B ) \xrightarrow { \mathscr { F } ( \psi ) } \mathscr { F } ( C )$ 在 $S$ -Mod 中是正合的。由此推出一个正合的函子将正合的复形映射到正合的复形。 [§1.5, IX.3.7]
 
-1.24. 设 $R$，$S$ 是环。一个加性协变函子 $\mathcal { F } : R$ -Mod $\to S$ -Mod 是忠实正合的，如果 $\mathcal { F } ( A ) \xrightarrow { \mathcal { F } ( \varphi ) } \mathcal { F } ( B ) \xrightarrow { \mathcal { F } ( \psi ) } \mathcal { F } ( C )$ 在 $S$ -Mod 中是正合的当且仅当 $A { \xrightarrow { \varphi } } B { \xrightarrow { \psi } } C$ 在 $R$ -Mod 中是正合的。证明一个正合函子 $\mathcal { F } : R \ – \mathsf { M o d } \to S$ -Mod是忠实地正合的，当且仅当对于每个非零$R$ -模$M$，$\mathcal { F } ( M ) \neq 0$，当且仅当对于$R$ -Mod中的每个非零同态$\varphi$，$\mathcal { F } ( \boldsymbol { \varphi } ) \neq 0$。
+1.24. 设 $R$，$S$ 是环。一个加性协变函子 $\mathscr { F } : R$ -Mod $\to S$ -Mod 是 _忠实_ 正合的，如果 $\mathscr { F } ( A ) \xrightarrow { \mathscr { F } ( \varphi ) } \mathscr { F } ( B ) \xrightarrow { \mathscr { F } ( \psi ) } \mathscr { F } ( C )$ 在 $S$ -Mod 中是正合的 当且仅当  $A { \xrightarrow { \varphi } } B { \xrightarrow { \psi } } C$ 在 $R$ -Mod 中是正合的。证明一个正合函子 $\mathscr { F } : R \ – \mathsf { M o d } \to S$ -Mod是忠实正合的，当且仅当 对于每个非零$R$ -模$M$，$\mathscr { F } ( M ) \neq 0$，当且仅当 对于$R$ -Mod中的每个非零同态$\varphi$，$\mathscr { F } ( \boldsymbol { \varphi } ) \neq 0$。
 
-1.25. ¬ 证明局部化（练习1.4）是一个正合函子。
+1.25. ¬ 证明局部化（练习1.4）是一个 _正合_ 函子。
 
 事实上，证明局部化“保持同调”：如果
 
@@ -18975,7 +18986,7 @@ $$
 M _ { \bullet } : \ \cdots { \longrightarrow } \ M _ { i + 1 } { \xrightarrow { \ d _ { i + 1 } } } \ M _ { i } { \xrightarrow { \ d _ { i } } } \ M _ { i - 1 } { \xrightarrow { } } \ \cdots
 $$
 
-如果$R$是一个复数模，$S$是$R$的一个乘法子集，那么$i$-次同调$S^{-1}H_i(M_\bullet)$是局部化复数$S^{-1}M_\bullet$的$i$-次同调$H_i(S^{-1}M_\bullet)$
+是一个  $R$模 的复形，$S$是$R$的一个乘法子集，那么$M_\bullet$ 的 $i$-次同调 的局部化 $S^{-1}H_i(M_\bullet)$是 下列局部化复形 的 $i$-次同调$H_i(S^{-1}M_\bullet)$
 
 $$
 S ^ { - 1 } M _ { \bullet } : \cdots { \longrightarrow } S ^ { - 1 } M _ { i + 1 } { \stackrel { S ^ { - 1 } d _ { i + 1 } } { \longrightarrow } } S ^ { - 1 } M _ { i } \ { \stackrel { S ^ { - 1 } d _ { i } } { \longrightarrow } } S ^ { - 1 } M _ { i - 1 } { \longrightarrow } \cdots \qquad 
@@ -18983,24 +18994,25 @@ $$
 
 [2.12, 2.21, 2.22]
 
-1.26. 证明局部化在以下意义上是忠实地正合的：设 $R$ 是一个交换环，并且让
-
+1.26. 证明局部化在以下意义上是忠实 正合的：设 $R$ 是一个交换环，并且让
 $$
-0 \longrightarrow A \longrightarrow B \longrightarrow C \longrightarrow 0
+\begin{flalign*}
+(*) && 0 \longrightarrow A \longrightarrow B \longrightarrow C \longrightarrow 0 : &&
+\end{flalign*}
 $$
-
-是一个$R$-模序列。那么（$^*$）是正合的当且仅当诱导的$R_{\mathfrak{p}}$-模序列
+是一个$R$-模序列。那么（$^*$）是正合的当且仅当 诱导的$R_{\mathfrak{p}}$-模序列
 
 $$
 0 \longrightarrow A _ { \mathfrak { p } } \longrightarrow B _ { \mathfrak { p } } \longrightarrow C _ { \mathfrak { p } } \longrightarrow 0
 $$
 
-对于 $R$ 的每个素理想 $\mathfrak { p }$ ，它都是正合的，当且仅当它对于每个极大理想 $\mathfrak { p }$ 也是正合的。（参见练习 V.4.12。）
+对于 $R$ 的每个素理想 $\mathfrak { p }$ ，它都是正合的，当且仅当 它对于每个极大理想 $\mathfrak { p }$ 也是正合的。（参见练习 V.4.12。）
 
 1.27. $\triangleright$ 设 $R$ ， $S$ 是环。证明右伴随函子 $R – { \mathsf { M o d } }  \to S$ -Mod 是左正合的，并且左伴随函子是右正合的。[§1.5]
 
-**1.28.** $\neg$ 令 $\mathsf{C}$ 是一个范畴，并考虑恒等函子 $\mathscr{J} : \mathsf{C} \to \mathsf{C}$。证明自然变换 $\mathscr{J} \rightsquigarrow \mathscr{J}$ 的集合 $\mathrm{End}(\mathscr{J})$ 在复合运算下是一个交换幺半群。这被称为 $\mathsf{C}$ 的*中心*。如果 $R$ 是一个环，证明 $R$-Mod 的中心以一种自然的方式构成一个环，并且它同构于 $R$ 的中心。
+**1.28.** $\neg$ 令 $\mathsf{C}$ 是一个范畴，并考虑恒等函子 $\mathscr{I} : \mathsf{C} \to \mathsf{C}$。证明自然变换 $\mathscr{I} \rightsquigarrow \mathscr{I}$ 的集合 $\mathrm{End}(\mathscr{I})$ 在复合运算下是一个交换幺半群。这被称为 $\mathsf{C}$ 的*中心*。如果 $R$ 是一个环，证明 $R$-Mod 的中心以一种自然的方式构成一个环，并且它同构于 $R$ 的中心。
 [3.15]
+(译注：已据勘误进行了修正)
 
 ## 2. 张量积和Tor函子
 
@@ -19218,7 +19230,7 @@ $$
 
 证明。该命题是说引理2.4中找到的同构在1.5中暗示但未完全解释的意义下是自然的；有兴趣的读者应该没有问题检查这种自然性。$\square$
 
-根据引理1.17（或者说其共变形式），我们可以得出对于每个$R$-模$N$，函子$_ \otimes _ { R } N$保持上极限，并且${ M \otimes _ { R _ { - } } }$也保持上极限，这是由§2.1中验证的基本的积的交换性所保证的。特别是，这一点是另一个巴甫洛夫反应的好材料，
+根据引理1.17（或者说其共变形式），我们可以得出对于每个$R$-模$N$，函子$_ \otimes _ { R } N$保持余极限，并且${ M \otimes _ { R _ { - } } }$也保持余极限，这是由§2.1中验证的基本的积的交换性所保证的。特别是，这一点是另一个巴甫洛夫反应的好材料，
 
 $M \otimes _ { R } \underline { { { \ : \ : - } } } \ : \mathrm { a n d \ : \ : \mathcal { Q } } _ { R } \ : N \ : \ : \mathrm { a r e \ r i g h t \mathrm { - } e x a c t \ : f u n c t o r s }$
 
@@ -19232,7 +19244,7 @@ $$
 ( M _ { 1 } \oplus M _ { 2 } ) \otimes _ { R } N \cong ( M _ { 1 } \otimes _ { R } N ) \oplus ( M _ { 2 } \otimes _ { R } N ) .
 $$
 
-(此外，由于交换律，M ⊗R ${ \mathrm { } } _ { \mathrm { { } } }$；( N _ { 1 } \oplus N _ { 2 } ) \cong ( M \otimes _ { R } N _ { 1 } ) \oplus ( M \otimes _ { R } N _ { 2 } ) 也同样成立。)实际上，直和是上极限。事实上，$\otimes$ 必须与任意（可能是无限的）直和交换：
+(此外，由于交换律，M ⊗R ${ \mathrm { } } _ { \mathrm { { } } }$；( N _ { 1 } \oplus N _ { 2 } ) \cong ( M \otimes _ { R } N _ { 1 } ) \oplus ( M \otimes _ { R } N _ { 2 } ) 也同样成立。)实际上，直和是余极限。事实上，$\otimes$ 必须与任意（可能是无限的）直和交换：
 
 $$
 ( \bigoplus _ { \alpha \in A } M _ { \alpha } ) \otimes _ { R } N \cong \bigoplus _ { \alpha \in A } ( M _ { \alpha } \otimes _ { R } N ) .
@@ -19856,28 +19868,28 @@ $$
 多线性映射可以类似于双线性映射来定义：如果 $M _ { 1 } , \ldots , M _ { \ell } , P$ 是 $R$ -模，一个函数
 
 $$
-\varphi : M _ { 1 } \times \cdot \cdot \cdot \times M _ { \ell } \to P
+\varphi : M _ { 1 } \times \cdots \times M _ { \ell } \to P
 $$
 
 如果 $R$ 在每个因子上都是 $R$ -线性的，也就是说，如果通过任意固定除第 $i$ 个分量之外的所有分量所得到的函数在第 $i$ 个因子上是 $R$ -线性的，对于 $i = 1 , \dots , r$，那么 $R$ 是 $R$ -多线性的。
 
-再次自然地提出一个问题，$R$ -多线性映射是否可以转化为 $R$ -线性映射：是否存在一个 $R$ -模 $M _ { 1 } \otimes _ { R } \cdot \cdot \cdot \otimes _ { R } M _ { \ell }$ 通过它
+再次自然地提出一个问题，$R$ -多线性映射是否可以转化为 $R$ -线性映射：是否存在一个 $R$ -模 $M _ { 1 } \otimes _ { R } \cdots \otimes _ { R } M _ { \ell }$ 通过它
 
 每个 $R$ -多线性映射都必须分解。幸运的是，这个模已经为我们准备好了：
 
-命题 4.1. 每个 $R$ -多线性映射 $M _ { 1 } \times \cdot \cdot \cdot \times M _ { \ell } \to P$ 唯一地分解通过
+命题 4.1. 每个 $R$ -多线性映射 $M _ { 1 } \times \cdots \times M _ { \ell } \to P$ 唯一地分解通过
 
 $$
 \big ( \big ( \cdots \cdot \big ( M _ { 1 } \otimes _ { R } M _ { 2 } \big ) \otimes _ { R } \cdots \big ) \otimes _ { R } M _ { \ell - 1 } \big ) \otimes _ { R } M _ { \ell } .
 $$
 
-确实，归纳地论证：如果 $\varphi : M _ { 1 } \times \cdot \cdot \cdot \times M _ { \ell } \to P$ 是多线性的，那么对于每一个 $m _ { \ell } \in M _ { \ell }$ ，这个函数
+确实，归纳地论证：如果 $\varphi : M _ { 1 } \times \cdots \times M _ { \ell } \to P$ 是多线性的，那么对于每一个 $m _ { \ell } \in M _ { \ell }$ ，这个函数
 
 $$
 ( m _ { 1 } , \dots , m _ { \ell - 1 } ) \mapsto \varphi ( m _ { 1 } , \dots , m _ { \ell - 1 } , m _ { \ell } )
 $$
 
-是 $R$ -多线性的，因此它通过 $( \cdot \cdot \cdot ( M _ { 1 } \otimes _ { R } M _ { 2 } ) \otimes _ { R } \cdot \cdot \cdot ) \otimes _ { R } M _ { \ell - 1 }$ 因子分解；因此，$\varphi$ 诱导了一个唯一的双线性映射
+是 $R$ -多线性的，因此它通过 $( \cdots ( M _ { 1 } \otimes _ { R } M _ { 2 } ) \otimes _ { R } \cdots ) \otimes _ { R } M _ { \ell - 1 }$ 因子分解；因此，$\varphi$ 诱导了一个唯一的双线性映射
 
 $$
 ( ( \cdots \cdot \cdot ( M _ { 1 } \otimes _ { R } M _ { 2 } ) \otimes _ { R } \cdots ) \otimes _ { R } M _ { \ell - 1 } ) \times M _ { \ell }  P ,
@@ -19897,10 +19909,10 @@ $$
 ( M _ { 1 } \otimes _ { R } M _ { 2 } ) \otimes _ { R } M _ { 3 } \cong M _ { 1 } \otimes _ { R } ( M _ { 2 } \otimes _ { R } M _ { 3 } )
 $$
 
-对于所有 $R$ -模 $M _ { 1 }$ ，$M _ { 2 }$ ，$M _ { 3 }$ 。在这种意义上，张量积在 $R$ -Mod 中是结合的18，我们确实有权利使用符号 $M _ { 1 } \otimes _ { R } \cdot \cdot \cdot \otimes _ { R } M _ { \ell }$ 。这个模的元素是有限线性组合
+对于所有 $R$ -模 $M _ { 1 }$ ，$M _ { 2 }$ ，$M _ { 3 }$ 。在这种意义上，张量积在 $R$ -Mod 中是结合的18，我们确实有权利使用符号 $M _ { 1 } \otimes _ { R } \cdots \otimes _ { R } M _ { \ell }$ 。这个模的元素是有限线性组合
 
 $$
-\sum _ { i } m _ { 1 , i } \otimes \cdot \cdot \cdot \otimes m _ { \ell , i }
+\sum _ { i } m _ { 1 , i } \otimes \cdots \otimes m _ { \ell , i }
 $$
 
 纯张量的结构映射
@@ -19912,7 +19924,7 @@ $$
 充当 $( m _ { 1 } , \dots , m _ { \ell } ) \mapsto m _ { 1 } \otimes \dots \otimes m _ { \ell }$ 。根据这个映射的多线性，例如，我们有
 
 $$
-( r m _ { 1 } ) \otimes \cdots \cdot \cdot \otimes m _ { \ell } = m _ { 1 } \otimes \cdot \cdot \cdot \otimes ( r m _ { \ell } ) = r ( m _ { 1 } \otimes \cdot \cdot \cdot \otimes m _ { \ell } ) .
+( r m _ { 1 } ) \otimes \cdots \cdot \cdot \otimes m _ { \ell } = m _ { 1 } \otimes \cdots \otimes ( r m _ { \ell } ) = r ( m _ { 1 } \otimes \cdots \otimes m _ { \ell } ) .
 $$
 
 在惯例中，零个因子的张量积被认为是基本环 $R$。
@@ -19920,7 +19932,7 @@ $$
 当所有因子都相同时，张量积主题的其他重要变化会出现。我将使用简写符号。
 
 $$
-\mathbb { T } _ { R } ^ { \ell } ( M ) : = M ^ { \otimes \ell } = \underbrace { M \otimes _ { R } \cdot \cdot \cdot \otimes _ { R } M } _ { \ell { \mathrm { ~ t i m e s } } }
+\mathbb { T } _ { R } ^ { \ell } ( M ) : = M ^ { \otimes \ell } = \underbrace { M \otimes _ { R } \cdots \otimes _ { R } M } _ { \ell { \mathrm { ~ t i m e s } } }
 $$
 
 对于模 $M$ 的 $\ell$ -重张量积；这被称为 $M$ 的（ $\ell$ -次）张量幂。对于每一个 $R$ -模 $P$，每一个 $R$ -多线性映射 $M ^ { \ell } \to P$ 都可以分解
@@ -20001,7 +20013,7 @@ $$
 并且 $W$ 是使多线性映射 $\wedge$ 交替的最小子模。纯张量的像用 $\wedge$ 而不是 $\otimes$ 表示：
 
 $$
-m _ { 1 } \otimes \cdot \cdot \cdot \otimes m _ { \ell } \mapsto m _ { 1 } \wedge \cdot \cdot \cdot \wedge m _ { \ell } .
+m _ { 1 } \otimes \cdots \otimes m _ { \ell } \mapsto m _ { 1 } \wedge \cdots \wedge m _ { \ell } .
 $$
 
 读者将验证（练习4.1）$\mathbb { \Lambda } _ { R } ^ { \ell } ( M )$ 确实可以按照我刚才所声称的方式构造，并且读者将为对称幂 $\mathbb { S } _ { R } ^ { \ell } ( M )$ 构造一个类似的结构。
@@ -20012,10 +20024,10 @@ $$
 m _ { 2 } \wedge m _ { 1 } \wedge m _ { 3 } = - m _ { 1 } \wedge m _ { 2 } \wedge m _ { 3 }
 $$
 
-（例如），当然，如果两个 $m _ { i }$ 相同，则 $m _ { 1 } \wedge \cdot \cdot \cdot \wedge m _ { \ell } = 0$。因此，如果 $e _ { 1 } , \ldots , e _ { r }$ 生成 $M$ ，那么 $\mathbb { \Lambda } _ { R } ^ { \ell } ( M )$ 是由所有生成的
+（例如），当然，如果两个 $m _ { i }$ 相同，则 $m _ { 1 } \wedge \cdots \wedge m _ { \ell } = 0$。因此，如果 $e _ { 1 } , \ldots , e _ { r }$ 生成 $M$ ，那么 $\mathbb { \Lambda } _ { R } ^ { \ell } ( M )$ 是由所有生成的
 
 $$
-e _ { i _ { 1 } } \wedge \cdot \cdot \cdot \wedge e _ { i _ { \ell } }
+e _ { i _ { 1 } } \wedge \cdots \wedge e _ { i _ { \ell } }
 $$
 
 当 $1 \leq i _ { 1 } < \cdots < i _ { \ell } \leq r$ 。特别是，如果 $M$ 是有限生成的，那么 $\mathbb { \Lambda } _ { R } ^ { \ell } ( M ) =$ $0$ 对于 $\ell \gg 0$ 。如果 $M$ 是自由的，我们可以非常精确：
@@ -20023,7 +20035,7 @@ $$
 引理 4.3. 设 $R$ 是一个交换环，且 $M$ 是一个秩为 $r$ 的自由 $R$-模。  
 那么 $\mathbb { \Lambda } _ { R } ^ { \ell } ( M )$ 是一个秩为 $\textstyle { \binom { r } { \ell } }$ 的自由 $R$-模。
 
-证明。存在$\textstyle { \binom { r } { \ell } }$个满足$1 \leq i _ { 1 } < \cdot \cdot \cdot < i _ { \ell } \leq r$的指标序列$i _ { 1 } , \dots , i _ { \ell }$，因此我们只需要证明生成元$e _ { i _ { 1 } } \wedge \cdots \wedge e _ { i _ { \ell } }$是线性无关的。
+证明。存在$\textstyle { \binom { r } { \ell } }$个满足$1 \leq i _ { 1 } < \cdots < i _ { \ell } \leq r$的指标序列$i _ { 1 } , \dots , i _ { \ell }$，因此我们只需要证明生成元$e _ { i _ { 1 } } \wedge \cdots \wedge e _ { i _ { \ell } }$是线性无关的。
 
 对于固定的 $I = ( i _ { 1 } , \dots , i _ { \ell } )$ 满足 $1 \leq i _ { 1 } < \cdots < i _ { \ell } \leq r$ ，考虑映射
 
@@ -20046,7 +20058,7 @@ $$
 具有这样的性质
 
 $$
-\overline { { \varphi _ { I } } } ( e _ { j _ { 1 } } \wedge \cdot \cdot \cdot \wedge e _ { j _ { \ell } } ) = \left\{ \begin{array} { l l } { { ( - 1 ) ^ { \sigma } } } & { { \mathrm { i f ~ } \exists \mathrm { ~ a ~ p e r m u t a t i o n ~ } \sigma \mathrm { ~ s u c h ~ t h a t ~ } \sigma ( j _ { k } ) = i _ { k } , \mathrm { ~ a l l ~ } k , } } \\ { { 0 } } & { { \mathrm { o t h e r w i s e . } } } \end{array} \right.
+\overline { { \varphi _ { I } } } ( e _ { j _ { 1 } } \wedge \cdots \wedge e _ { j _ { \ell } } ) = \left\{ \begin{array} { l l } { { ( - 1 ) ^ { \sigma } } } & { { \mathrm { i f ~ } \exists \mathrm { ~ a ~ p e r m u t a t i o n ~ } \sigma \mathrm { ~ s u c h ~ t h a t ~ } \sigma ( j _ { k } ) = i _ { k } , \mathrm { ~ a l l ~ } k , } } \\ { { 0 } } & { { \mathrm { o t h e r w i s e . } } } \end{array} \right.
 $$
 
 现在假设
@@ -20107,7 +20119,7 @@ $$
 e _ { i_1 } \otimes \cdots \otimes e _ { i_\ell }
 $$
 
-当 $1 \leq i _ { 1 } \leq \cdot \cdot \cdot \leq i _ { \ell } \leq r$ 时。在这种情况下，所有 $\mathbb { S } _ { R } ^ { \ell } ( M )$ 通常都不为零。
+当 $1 \leq i _ { 1 } \leq \cdots \leq i _ { \ell } \leq r$ 时。在这种情况下，所有 $\mathbb { S } _ { R } ^ { \ell } ( M )$ 通常都不为零。
 
 ### 4.3. 很小的绕道： graded 代数
 我们已经得到了模 $M$ 的张量、对称、外积，对于每一个非负整数 $\ell$。碰巧，在每一种情况下，同时考虑“所有的 $\ell$”都是有用的。通过这样做，我们得到的结构是非常重要概念的特殊情况，这个概念值得我们用更多的篇幅来讨论，但我们没有足够的空间。
@@ -20141,7 +20153,7 @@ $$
 示例 4.7. 设 $R$ 是一个交换环，且 $I \subseteq R$ 是一个理想。那么 $R$ -模的直接和
 
 $$
-\bigoplus _ { \ell \geq 0 } I ^ { \ell } = R \oplus I \oplus I ^ { 2 } \oplus I ^ { 3 } \oplus \cdot \cdot \cdot
+\bigoplus _ { \ell \geq 0 } I ^ { \ell } = R \oplus I \oplus I ^ { 2 } \oplus I ^ { 3 } \oplus \cdots
 $$
 
 具有天然环结构，因为 $I ^ { i } \cdot I ^ { j } \subseteq I ^ { i + j }$。由此得到的graded $R$ -代数称为 $I$ 的Rees代数，${ \mathrm { R e e s } } _ { R } ( I )$，在代数几何中具有基本重要性（因为它转化为吹起的概念，一种特别重要的正规映射类）。勇敢的读者将尝试探索多项式环 $k [ x , y ]$ 上关于一个域 $k$ 的理想 $\boldsymbol { I } = ( x , y )$ 的Rees代数（习题4.21），这是这种构造的最简单有趣的实例（嗯，第二简单的：最简单的例子可能是习题III.5.17）。
@@ -20303,7 +20315,7 @@ $$
 
 4.6. 设 $V$ 是一个向量空间，且 $v _ { 1 } , \dotsc , v _ { \ell } \in V$ 。证明 $v _ { 1 } , \ldots , v _ { \ell }$ 线性无关当且仅当 $v _ { 1 } \wedge \dots \wedge v _ { \ell } \neq 0$ 。
 
-4.7. $\neg$ 设 $V$ 是一个 $k$-维向量空间，并且 $\{ v _ { 1 } , \ldots , v _ { \ell } \}$ ，$\{ w _ { 1 } , \ldots , w _ { \ell } \}$ 是 $V$ 中的两个线性无关的向量组。证明当且仅当 $v _ { 1 } \wedge \cdot \cdot \cdot \wedge v _ { \ell }$ 和 $w _ { 1 } \wedge \cdot \cdot \cdot \wedge w _ { \ell }$ 在 $\textstyle \mathbb { \Lambda } _ { k } ^ { \ell } ( V )$ 中是彼此的非零倍数时，$\{ v _ { 1 } , \ldots , v _ { \ell } \}$ 和 $\{ w _ { 1 } , \ldots , w _ { \ell } \}$ 张成 $V$ 的同一个子空间。（对于有趣的方向，如果 $\langle v _ { 1 } , \ldots , v _ { \ell } \rangle \neq \langle w _ { 1 } , \ldots , w _ { \ell } \rangle$ ，则必须存在一个属于第一个子空间但不属于第二个子空间的向量 $u$。你能对 $( v _ { 1 } \wedge \cdot \cdot \cdot \wedge v _ { \ell } ) \wedge u$ 和 $( w _ { 1 } \wedge \cdot \cdot \cdot \wedge w _ { \ell } ) \wedge u$ 在 $\mathbb { \Lambda } _ { k } ^ { * } ( V )$ 中说什么吗？)
+4.7. $\neg$ 设 $V$ 是一个 $k$-维向量空间，并且 $\{ v _ { 1 } , \ldots , v _ { \ell } \}$ ，$\{ w _ { 1 } , \ldots , w _ { \ell } \}$ 是 $V$ 中的两个线性无关的向量组。证明当且仅当 $v _ { 1 } \wedge \cdots \wedge v _ { \ell }$ 和 $w _ { 1 } \wedge \cdots \wedge w _ { \ell }$ 在 $\textstyle \mathbb { \Lambda } _ { k } ^ { \ell } ( V )$ 中是彼此的非零倍数时，$\{ v _ { 1 } , \ldots , v _ { \ell } \}$ 和 $\{ w _ { 1 } , \ldots , w _ { \ell } \}$ 张成 $V$ 的同一个子空间。（对于有趣的方向，如果 $\langle v _ { 1 } , \ldots , v _ { \ell } \rangle \neq \langle w _ { 1 } , \ldots , w _ { \ell } \rangle$ ，则必须存在一个属于第一个子空间但不属于第二个子空间的向量 $u$。你能对 $( v _ { 1 } \wedge \cdots \wedge v _ { \ell } ) \wedge u$ 和 $( w _ { 1 } \wedge \cdots \wedge w _ { \ell } ) \wedge u$ 在 $\mathbb { \Lambda } _ { k } ^ { * } ( V )$ 中说什么吗？)
 
 推断存在一个从 $V$ 的 $\ell$ 维子空间的格拉斯曼流形到射影空间 $\mathbb{P}(\mathbb{\Lambda}_k^\ell V)$ 的单射函数（习题 VI.2.13）：格拉斯曼流形被识别为外积 $\mathbb{\Lambda}_k^\ell(V)$ 的射影化中的“纯楔”的集合。这被称为格拉斯曼流形的普吕克嵌入。[4.8]
 
@@ -20344,7 +20356,7 @@ $$
 4.13. 设 $k$ 是一个特征为零的域。一个具有多项式系数的一元微分算子是线性组合
 
 $$
-a _ { 0 } ( x ) + a _ { 1 } ( x ) \partial _ { x } + \cdot \cdot \cdot + a _ { r } ( x ) \partial _ { x } ^ { r }
+a _ { 0 } ( x ) + a _ { 1 } ( x ) \partial _ { x } + \cdots + a _ { r } ( x ) \partial _ { x } ^ { r }
 $$
 
 在 $a _ { i } ( x ) \in k [ x ]$ 中。这里 $x$ 通过乘以 $x$ 对多项式 $f ( x ) \in k [ x ]$ 进行作用，而 $\partial _ { x }$ 通过取形式导数（如在 § VII.4.2 中）。在明显的运算下，微分算子形成一个环，称为（第一）维尔代数。注意维尔代数是非交换的：例如，
@@ -20383,7 +20395,7 @@ $$
 
 • 当 $\ell \geq 0$ 时，设 $J _ { \ell } \subseteq I ^ { \ell }$ 是 $R$ 的理想，并将 $J := \oplus _ { \ell \ge 0 } J _ { \ell }$ 视为 ${ \mathrm { R e e s } } _ { R } ( I )$ 的一个 $R$ 子模。证明 $J$ 是 ${ \mathrm { R e e s } } _ { R } ( I )$ 的理想当且仅当对于所有 $\ell , n \geq 0$，有 $I ^ { n } J _ { \ell } \subseteq J _ { \ell + n }$。  
 • 假设 $J := \oplus _ { \ell \ge 0 } J _ { \ell }$ 是 ${ \mathrm { R e e s } } _ { R } ( I )$ 的理想。证明 $J$ 具有一个有限集的同调生成元。  
-• 选择 $J$ 的一个有限集同调生成元，设 $s$ 是这个集合中元素的最高次数。证明 $J _ { s + 1 } \subseteq I ^ { s + 1 } J _ { 0 } + I ^ { s } J _ { 1 } + \cdot \cdot \cdot + I J _ { s }$（作为 $R$ 的理想）。
+• 选择 $J$ 的一个有限集同调生成元，设 $s$ 是这个集合中元素的最高次数。证明 $J _ { s + 1 } \subseteq I ^ { s + 1 } J _ { 0 } + I ^ { s } J _ { 1 } + \cdots + I J _ { s }$（作为 $R$ 的理想）。
 
 • 证明 $J _ { s + \ell } = I ^ { \ell } J _ { s }$ 对所有 $\ell \geq 0$ 成立。
 
@@ -20847,7 +20859,7 @@ $$
 5.18. 设 $F$ 是一个有限秩的自由 $R$ -模。对于任意 $r \geq 1$ ，定义一个多线性映射
 
 $$
-\delta : \underbrace { F \times \cdot \cdot \cdot \times F } _ { r } \times \underbrace { F ^ { \vee } \times \cdot \cdot \cdot \times F ^ { \vee } } _ { r } \to R
+\delta : \underbrace { F \times \cdots \times F } _ { r } \times \underbrace { F ^ { \vee } \times \cdots \times F ^ { \vee } } _ { r } \to R
 $$
 
 通过
@@ -20963,7 +20975,7 @@ $$
 自由模是投射模这一事实意味着 $R$ -Mod 有足够的投射模：这意味着每个 $R$ -模 $M$ 都有一个投射解析，即一个正合列
 
 $$
-\cdot \cdot \cdot \longrightarrow P _ { 3 } \longrightarrow P _ { 2 } \longrightarrow P _ { 1 } \longrightarrow P _ { 0 } \longrightarrow M \ .
+\cdots \longrightarrow P _ { 3 } \longrightarrow P _ { 2 } \longrightarrow P _ { 1 } \longrightarrow P _ { 0 } \longrightarrow M \ .
 $$
 
 确实，$M$ 的自由解析在特殊情况下是一个投射解析。由于一般来说投射模比自由模“更多”，因此原则上构建投射解析可能“更简单”。同调代数的魔力表明，投射解析可以代替自由解析用于（例如）计算 Tor-模。一旦我们通过第九章的一些同调代数工具，特别是 §IX.8，就会变得清晰。
@@ -21127,7 +21139,7 @@ $$
 
 事实上，稍微推动一下边界，我们会了解到更多。回想一下从函子 $\_ \otimes R ^ { \_ N }$ 中定义的 $\mathrm { T o r } _ { i } ^ { R } ( \_ , N )$ 的过程：为了计算这些函子在一个模 $M$ 上的值，
 
-求$M$的自由分解：$\cdot \cdot \cdot { \longrightarrow } R ^ { \oplus S _ { 2 } } { \longrightarrow } R ^ { \oplus S _ { 1 } } { \longrightarrow } R ^ { \oplus S _ { 0 } } { \longrightarrow } M { \longrightarrow } 0 ;$   
+求$M$的自由分解：$\cdots { \longrightarrow } R ^ { \oplus S _ { 2 } } { \longrightarrow } R ^ { \oplus S _ { 1 } } { \longrightarrow } R ^ { \oplus S _ { 0 } } { \longrightarrow } M { \longrightarrow } 0 ;$   
 • 将自由部分应用算子$_ - \otimes _ { R } N$，得到一个复形$M _ { \bullet } \otimes _ { R } N$：$\cdots { \longrightarrow } N ^ { \oplus S _ { 2 } } { \longrightarrow } N ^ { \oplus S _ { 1 } } { \longrightarrow } N ^ { \oplus S _ { 0 } } { \longrightarrow } 0 \qquad ;$
 
 • 通过对这个复形取同调来定义 Tor：
@@ -21145,7 +21157,7 @@ $$
 可以从 $M$ 的投影解析开始：
 
 $$
-\cdot \cdot \cdot \longrightarrow P _ { 2 } \longrightarrow P _ { 1 } \longrightarrow P _ { 0 } \longrightarrow M \longrightarrow 0 ;
+\cdots \longrightarrow P _ { 2 } \longrightarrow P _ { 1 } \longrightarrow P _ { 0 } \longrightarrow M \longrightarrow 0 ;
 $$
 
 将 contravariant $\mathrm { H o m } _ { R } ( \_ , N )$ 应用于射影部分，得到一个新的复形 ${ \mathrm { H o m } } _ { R } ( M _ { \bullet } , N )$ ，即，
@@ -21824,7 +21836,7 @@ $$
 
 1.11. $\neg$ 设 A 是一个阿贝尔范畴，设 $\mathsf { C }$ 是任何一个小范畴。证明函子范畴 $\mathsf { A } ^ { \mathrm { C } }$（参见练习 VIII.1.9）是一个阿贝尔范畴。
 
-对于 $\mathsf { C }$ 的每个对象 $X$ ，证明赋值 ${ \mathcal { F } } \mapsto { \mathcal { F } } ( X )$ （在 $\mathsf { A } ^ { \mathsf { C } }$ 的态射上具有明显的作用，即自然变换）确定了一个正合的 functor $\mathcal { X } : \mathsf { A } ^ { \mathsf { C } }  \mathsf { A }$ 。[1.12, 1.14, 1.15, 2.15, 5.7]
+对于 $\mathsf { C }$ 的每个对象 $X$ ，证明赋值 ${ \mathscr { F } } \mapsto { \mathscr { F } } ( X )$ （在 $\mathsf { A } ^ { \mathsf { C } }$ 的态射上具有明显的作用，即自然变换）确定了一个正合的 functor $\mathcal { X } : \mathsf { A } ^ { \mathsf { C } }  \mathsf { A }$ 。[1.12, 1.14, 1.15, 2.15, 5.7]
 
 1.12. 对于环 $R$ ，令 $R$ 表示由 $R$ 确定的单对象的预加性范畴（习题 1.3）。证明左 $R$ -模的范畴 $R$ -Mod 等价于在函子范畴 $\mathsf{Ab}^{\mathsf{R}}$ 中由加性函子构成的全子范畴（参见习题 1.11）。右 $R$ -模的范畴呢？
 
@@ -22115,7 +22127,7 @@ $$
 \hat { A } : = \varinjlim \mathcal { H } _ { A } .
 $$
 
-这是一个简单的解释。在尖点集的上下文中，可以通过在特殊点处连接尖点集，然后取一个合适的商来构造上极限。对于当前的情况，这可以转化为以下内容：$A$ 的一个“元素”包括在 $A$ 中选择一个同态 $z : Z \to A$，规定如果存在 $\mathsf { A }$ 中的上同态 $w _ { 1 } : W \twoheadrightarrow Z _ { 1 }$ 和 $w _ { 2 } : W \twoheadrightarrow Z _ { 2 }$ 使得图同构，那么同态 $z _ { 1 } : Z _ { 1 } \to A$ 和 $z _ { 2 } : Z _ { 2 } \to A$ 确定同一个“元素”。这是一个等价关系，读者应该仔细检查（练习 2.5）。
+这是一个简单的解释。在尖点集的上下文中，可以通过在特殊点处连接尖点集，然后取一个合适的商来构造余极限。对于当前的情况，这可以转化为以下内容：$A$ 的一个“元素”包括在 $A$ 中选择一个同态 $z : Z \to A$，规定如果存在 $\mathsf { A }$ 中的上同态 $w _ { 1 } : W \twoheadrightarrow Z _ { 1 }$ 和 $w _ { 2 } : W \twoheadrightarrow Z _ { 2 }$ 使得图同构，那么同态 $z _ { 1 } : Z _ { 1 } \to A$ 和 $z _ { 2 } : Z _ { 2 } \to A$ 确定同一个“元素”。这是一个等价关系，读者应该仔细检查（练习 2.5）。
 
 ![](images/176.jpg)
 
@@ -22245,7 +22257,7 @@ $$
 
 注意：在此陈述中 $R$ 不一定是交换的；$R$ -Mod 表示左 $R$ -模的范畴。
 
-关于完整的 $\boldsymbol { \mathscr { E } }$ 忠实术语的提醒，请参见定义 VIII.1.6。简而言之，一个函子 $\mathcal { F } : \mathsf { A } \to \mathsf { C }$ 如果它对所有 $\mathsf { A }$ 中的对象 $A$、$B$ 都诱导出双射 $\mathrm { H o m } _ { \mathsf { A } } ( A , B )$ ${ \mathrm { H o m } } _ { \mathsf { C } } ( { \mathcal { F } } ( A ) , { \mathcal { F } } ( B ) )$，则称其为完全忠实。在实践中，这样的函子将 $A$ 与 $\mathsf { C }$ 的一个子范畴识别。函子 $\mathsf { A } \to R$ -Mod 的正合性（参见示例 VIII.1.18）确保了在两个环境中核和余核是一致的，等等（注意，函子自动忠实正合；参见习题 2.16）：我们在 $\mathrm { \ddot { 9 } 2 . 3 }$ 中为我们穷人的函子 $\mathsf { A } \to \mathsf { S e t } ^ { * }$ 辛苦检查的一切，对于由 Freyd-Mitchell 定理提供的更高级的函子同样适用。
+关于完整的 $\boldsymbol { \mathscr { E } }$ 忠实术语的提醒，请参见定义 VIII.1.6。简而言之，一个函子 $\mathscr { F } : \mathsf { A } \to \mathsf { C }$ 如果它对所有 $\mathsf { A }$ 中的对象 $A$、$B$ 都诱导出双射 $\mathrm { H o m } _ { \mathsf { A } } ( A , B )$ ${ \mathrm { H o m } } _ { \mathsf { C } } ( { \mathscr { F } } ( A ) , { \mathscr { F } } ( B ) )$，则称其为完全忠实。在实践中，这样的函子将 $A$ 与 $\mathsf { C }$ 的一个子范畴识别。函子 $\mathsf { A } \to R$ -Mod 的正合性（参见示例 VIII.1.18）确保了在两个环境中核和余核是一致的，等等（注意，函子自动忠实正合；参见习题 2.16）：我们在 $\mathrm { \ddot { 9 } 2 . 3 }$ 中为我们穷人的函子 $\mathsf { A } \to \mathsf { S e t } ^ { * }$ 辛苦检查的一切，对于由 Freyd-Mitchell 定理提供的更高级的函子同样适用。
 
 这个函子是完全忠实的：这意味着实际上可以通过处理元素来在任意的（小的）阿贝尔范畴中构造态射。确实，这相当于在环境范畴 $R$ -Mod 中构造适当的态射，完全性保证了这些态射“已经”存在于 A 中。
 
@@ -22312,7 +22324,7 @@ $$
 
 2.15. $\neg$ 设 A 是一个小的阿贝尔范畴。构造一个范畴 $\mathsf { F }$，其对象为从 $\mathsf { A }$ 到 $\mathsf { A b }$ 的加性反变函子，自然变换作为其态射，并证明它是阿贝尔的。（使用习题 1.11 和 2.14。）[2.17]
 
-2.16. $\triangleright$ 设 A, $\textsf { B }$ 是阿贝尔范畴，并且 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ 是一个忠实且正合的函子。证明它是忠实且正合的：一个序列 $X  Y  Z$ 在 A 中是正合的当且仅当相应的序列 ${ \mathcal { F } } ( X ) \to { \mathcal { F } } ( Y ) \to { \mathcal { F } } ( Z )$ 在 $\textsf { B }$ 中是正合的。[§2.4]
+2.16. $\triangleright$ 设 A, $\textsf { B }$ 是阿贝尔范畴，并且 $\mathscr { F } : \mathsf { A } \to \mathsf { B }$ 是一个忠实且正合的函子。证明它是忠实且正合的：一个序列 $X  Y  Z$ 在 A 中是正合的当且仅当相应的序列 ${ \mathscr { F } } ( X ) \to { \mathscr { F } } ( Y ) \to { \mathscr { F } } ( Z )$ 在 $\textsf { B }$ 中是正合的。[§2.4]
 
 2.17. 将Yoneda引理（练习VIII.1.10）推广，证明每个小阿贝尔范畴A都等价于练习2.15中的范畴$\mathsf { F }$的一个全子范畴，通过一个将$\mathsf { A }$中的每个对象$X$映射到函子$h _ { X } = \operatorname { H o m } _ { \mathsf { A } } ( \_ , X )$的方式。
 
@@ -22330,7 +22342,7 @@ $$
 一个在$\mathsf{A}$中的链复形$(M_{\bullet}, d_{\bullet})$是一个对象和态射的序列，
 
 $$
-\cdot \cdot \cdot { \xrightarrow { d _ { i + 2 } } } M _ { i + 1 } { \xrightarrow { d _ { i + 1 } } } M _ { i } { \xrightarrow { d _ { i } } } M _ { i - 1 } { \xrightarrow { d _ { i - 1 } } } \cdot \cdot \cdot
+\cdots { \xrightarrow { d _ { i + 2 } } } M _ { i + 1 } { \xrightarrow { d _ { i + 1 } } } M _ { i } { \xrightarrow { d _ { i } } } M _ { i - 1 } { \xrightarrow { d _ { i - 1 } } } \cdots
 $$
 
 使得 $( \forall i )$ ， $d _ { i } \circ d _ { i + 1 } = 0$ 。我们同样可以使用升序索引（然后传统上用上标表示），
@@ -22362,13 +22374,13 @@ $$
 通常认为解 $M ^ { \bullet }$ 在上方或下方是“有界”的，也就是说，$M ^ { i } = 0$ 对于 $i > 0$ 或 $i < 0$ 。例如，一个复数
 
 $$
-\cdot \cdot \cdot { \xrightarrow { d ^ { - 3 } } } M ^ { - 2 } { \xrightarrow { d ^ { - 2 } } } M ^ { - 1 } { \xrightarrow { d ^ { - 1 } } } M ^ { 0 } { \xrightarrow { d ^ { 0 } } } 0 { \xrightarrow { } } 0 { \xrightarrow { } } 0 { \xrightarrow { } } 0 \qquad \quad \cdot \cdot
+\cdots { \xrightarrow { d ^ { - 3 } } } M ^ { - 2 } { \xrightarrow { d ^ { - 2 } } } M ^ { - 1 } { \xrightarrow { d ^ { - 1 } } } M ^ { 0 } { \xrightarrow { d ^ { 0 } } } 0 { \xrightarrow { } } 0 { \xrightarrow { } } 0 { \xrightarrow { } } 0 \qquad \quad \cdot \cdot
 $$
 
 如果 $\operatorname { c o k e r } d ^ { - 1 } \cong A$，则它是 $A$ 的一个解，否则该复合结构是正合的。在后面，我们将注意力限制在有界（上界或下界）的解上。从某种意义上说，这并不是一个非常严格的限制：任何解都可以截断（以改变0次项为代价）以产生一个有界解（练习3.1）。请注意，一个有上界解的数据与一个正合复合结构的数据是等价的
 
 $$
-\cdot \cdot \cdot \longrightarrow M _ { 2 } \longrightarrow M _ { 1 } \longrightarrow M _ { 0 } \longrightarrow M \longrightarrow M \longrightarrow 0 \ ;
+\cdots \longrightarrow M _ { 2 } \longrightarrow M _ { 1 } \longrightarrow M _ { 0 } \longrightarrow M \longrightarrow M \longrightarrow 0 \ ;
 $$
 
 这是我们之前在 § VI.4.2 中对分解所持有的观点。
@@ -22418,13 +22430,13 @@ $$
 因此，我们有一种从旧范畴中构造新阿贝尔类的方法。新范畴 $\mathsf C ( A )$ 是研究 A 中对象解的研究的自然起点，并且它配备了每个阿贝尔范畴中可用的相同的一般工具包：我们可以谈论复形的正合列，我们有复形 态射的典范分解等等。复形序列
 
 $$
-\cdot \cdot \cdot \longrightarrow L ^ { \bullet } \longrightarrow M ^ { \bullet } \longrightarrow N ^ { \bullet } \longrightarrow \cdot \cdot \cdot
+\cdots \longrightarrow L ^ { \bullet } \longrightarrow M ^ { \bullet } \longrightarrow N ^ { \bullet } \longrightarrow \cdots
 $$
 
 在 ${ \mathsf { C } } ( { \mathsf { A } } )$ 中正合当且仅当所有序列
 
 $$
-\cdot \cdot \cdot \longrightarrow L ^ { i } \longrightarrow M ^ { i } \longrightarrow N ^ { i } \longrightarrow \cdot \cdot \cdot
+\cdots \longrightarrow L ^ { i } \longrightarrow M ^ { i } \longrightarrow N ^ { i } \longrightarrow \cdots
 $$
 
 A. 复形同时是正合的。复合的复形在后面将很重要（§8.2）。
@@ -22718,7 +22730,7 @@ $$
 
 3.6. 提供一个基于箭头理论的引理 3.4 的证明（参见注释 3.1）。
 
-3.7. 设 A, $\textsf { B }$ 是阿贝尔范畴。一个加性函子 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ 是正合的，如果它将 $\mathsf { A }$ 中的短正合列映射到 $\textsf { B }$ 中的短正合列。证明正合函子与上同调相容：如果 $\mathcal { F }$ 是正合的，且 $L ^ { \bullet }$ 是 $\mathsf { A }$ 中的一个上链复形，那么 $H ^ { \bullet } ( { \mathcal { F } } ( L ^ { \bullet } ) ) \cong { \mathcal { F } } ( H ^ { \bullet } ( L ^ { \bullet } ) )$ ，其中 $\mathcal { F } ( L ^ { \bullet } )$ 表示通过将 $\mathcal { F }$ 应用于 $L ^ { \bullet }$ 中的所有对象和态射在 $\textsf { B }$ 中得到的上链复形。
+3.7. 设 A, $\textsf { B }$ 是阿贝尔范畴。一个加性函子 $\mathscr { F } : \mathsf { A } \to \mathsf { B }$ 是正合的，如果它将 $\mathsf { A }$ 中的短正合列映射到 $\textsf { B }$ 中的短正合列。证明正合函子与上同调相容：如果 $\mathscr { F }$ 是正合的，且 $L ^ { \bullet }$ 是 $\mathsf { A }$ 中的一个上链复形，那么 $H ^ { \bullet } ( { \mathscr { F } } ( L ^ { \bullet } ) ) \cong { \mathscr { F } } ( H ^ { \bullet } ( L ^ { \bullet } ) )$ ，其中 $\mathscr { F } ( L ^ { \bullet } )$ 表示通过将 $\mathscr { F }$ 应用于 $L ^ { \bullet }$ 中的所有对象和态射在 $\textsf { B }$ 中得到的上链复形。
 
 特别是，通过一个正合的函子得到的正合复形的图像仍然是一个正合复形（参见习题VIII.1.23）。
 
@@ -22904,12 +22916,12 @@ $$
 同样地，在当前情况下，主要目标并不是一起识别所有通过准同构连接的复形，而是能够在这些复形之间来回传递信息。完成这一点的自然方法是在准同构确实有逆的环境中进行研究。更精确地说，它包括研究加性函子
 
 $$
-\mathcal { F } : \mathsf { C } ( \mathsf { A } ) \longrightarrow \mathsf { D }
+\mathscr { F } : \mathsf { C } ( \mathsf { A } ) \longrightarrow \mathsf { D }
 $$
 
-使得对于每个准同构 $\rho ^ { \bullet }$ ，$\mathcal { F } ( \rho ^ { \bullet } )$ 是一个同构。（同调是一个这样的 functor。）
+使得对于每个准同构 $\rho ^ { \bullet }$ ，$\mathscr { F } ( \rho ^ { \bullet } )$ 是一个同构。（同调是一个这样的 functor。）
 
-这听起来像是另一个普遍问题，而自然的攻击方式是按照这种方式来解决它，也就是说，定义（如果可能的话）一个范畴 $\mathsf { D } ( \mathsf { A } )$，它带有加性函子 $\mathsf C ( \mathsf A ) \to \mathsf D ( \mathsf A )$，使得 ${ \mathsf { C } } ( \mathsf { A } )$ 中的准同构映射到 $\mathsf { D } ( \mathsf { A } )$ 中的同构，并且通过它，上述每个 $\mathcal { F }$ 必须唯一分解：
+这听起来像是另一个普遍问题，而自然的攻击方式是按照这种方式来解决它，也就是说，定义（如果可能的话）一个范畴 $\mathsf { D } ( \mathsf { A } )$，它带有加性函子 $\mathsf C ( \mathsf A ) \to \mathsf D ( \mathsf A )$，使得 ${ \mathsf { C } } ( \mathsf { A } )$ 中的准同构映射到 $\mathsf { D } ( \mathsf { A } )$ 中的同构，并且通过它，上述每个 $\mathscr { F }$ 必须唯一分解：
 
 ![](images/203.jpg)
 
@@ -22923,29 +22935,29 @@ $$
 
 要了解 $\mathsf { D } ( \mathsf { A } )$ 必须是多么反直觉，请注意零同态 $0 : M ^ { \bullet }  M ^ { \bullet }$ 很可能是一个拟同构：事实上，当 $M ^ { \bullet }$ 是正合时，情况正是如此。好吧，在任何上述的范畴 $\mathsf { D }$ 中（特别是 在导范畴 $\mathsf { D } ( \mathsf { A } )$ 中），这个零同态仍然是零同态，但当它是拟同构时，它配备了逆元。因此，在导范畴中，涉及非零对象的复形的零同态很可能是可以逆的！这表明在 ${ \mathsf { C } } ( \mathsf { A } )$ 中非零的复形在导范畴中可能变成零对象。
 
-引理 4.7. 设 $\mathsf { D }$ 是一个加性范畴，并且 $\mathcal { F } : \mathsf { C } ( \mathsf { A } ) \to \mathsf { D }$ 是一个加性函子，使得对于每一个准同构 $\rho ^ { \bullet }$，$\mathcal { F } ( \rho ^ { \bullet } )$ 是一个同构。
+引理 4.7. 设 $\mathsf { D }$ 是一个加性范畴，并且 $\mathscr { F } : \mathsf { C } ( \mathsf { A } ) \to \mathsf { D }$ 是一个加性函子，使得对于每一个准同构 $\rho ^ { \bullet }$，$\mathscr { F } ( \rho ^ { \bullet } )$ 是一个同构。
 
-• 设 $M ^ { \bullet }$ 是 ${ \mathsf { C } } ( { \mathsf { A } } )$ 中的一个正合复形。那么，通过对 $M ^ { \bullet }$ 的对象和态射应用 $\mathcal { F}$ 所得到的复形 $\mathcal { F } ( M ^ { \bullet } )$ 是 $\mathsf { D }$ 中的一个零对象。• 设 $\alpha ^ { \bullet } : L ^ { \bullet } \to N ^ { \bullet }$ 是 ${ \mathsf { C } } ( { \mathsf { A } } )$ 中的一个态射，它通过一个正合复形分解。
+• 设 $M ^ { \bullet }$ 是 ${ \mathsf { C } } ( { \mathsf { A } } )$ 中的一个正合复形。那么，通过对 $M ^ { \bullet }$ 的对象和态射应用 $\mathcal { F}$ 所得到的复形 $\mathscr { F } ( M ^ { \bullet } )$ 是 $\mathsf { D }$ 中的一个零对象。• 设 $\alpha ^ { \bullet } : L ^ { \bullet } \to N ^ { \bullet }$ 是 ${ \mathsf { C } } ( { \mathsf { A } } )$ 中的一个态射，它通过一个正合复形分解。
 
 $$
 \stackrel { L ^ { bullet } } { \underbrace { \longrightarrow } } \psi ^ { \bullet } \quad ,
 $$
 
-若 $M ^ { \bullet }$ 是正合的。那么 $\mathcal { F } ( \alpha ^ { \bullet } )$ 是零同态。
+若 $M ^ { \bullet }$ 是正合的。那么 $\mathscr { F } ( \alpha ^ { \bullet } )$ 是零同态。
 
-证明。第二个断言可以从第一个断言中得出，因为将 $\mathcal { F }$ 应用于给定的图我们得到
+证明。第二个断言可以从第一个断言中得出，因为将 $\mathscr { F }$ 应用于给定的图我们得到
 
 ![](images/204.jpg)
 
-我们看到 $\mathcal { F } ( \alpha ^ { \bullet } )$ 通过 $\mathsf { D }$ 的零对象。
+我们看到 $\mathscr { F } ( \alpha ^ { \bullet } )$ 通过 $\mathsf { D }$ 的零对象。
 
-为了验证第一个断言，注意到由于 $M ^ { \bullet }$ 是正合的，零同态：$M ^ { \bullet } $ $M ^ { \bullet }$ 是一个拟同构；因此它被 $\mathcal { F }$ 映射为一个可逆同态。
+为了验证第一个断言，注意到由于 $M ^ { \bullet }$ 是正合的，零同态：$M ^ { \bullet } $ $M ^ { \bullet }$ 是一个拟同构；因此它被 $\mathscr { F }$ 映射为一个可逆同态。
 
 $$
-\mathcal { F } ( M ^ { \bullet } ) \xrightarrow { \mathcal { F } ( 0 ) } \mathcal { F } ( M ^ { \bullet } ) \xrightarrow { \mathcal { F } ( 0 ) ^ { - 1 } } \mathcal { F } ( M ^ { \bullet } )
+\mathscr { F } ( M ^ { \bullet } ) \xrightarrow { \mathscr { F } ( 0 ) } \mathscr { F } ( M ^ { \bullet } ) \xrightarrow { \mathscr { F } ( 0 ) ^ { - 1 } } \mathscr { F } ( M ^ { \bullet } )
 $$
 
-由于 $\mathcal { F }$ 是加性的，$\mathcal { F } ( 0 ) = 0$ 。由此可得 id $\mathcal { F } ( M ^ { \bullet } ) = 0$ ，因此 $\mathcal { F } ( M ^ { \bullet } )$ 是 $\mathsf { D }$ 的零对象，根据练习 1.6 。$\square$
+由于 $\mathscr { F }$ 是加性的，$\mathscr { F } ( 0 ) = 0$ 。由此可得 id $\mathscr { F } ( M ^ { \bullet } ) = 0$ ，因此 $\mathscr { F } ( M ^ { \bullet } )$ 是 $\mathsf { D }$ 的零对象，根据练习 1.6 。$\square$
 
 在接下来的几节中，我将探讨导出范畴的概念，力求在特别有利的条件下对其有具体的理解。我们将假定这些范畴是存在的。这些对象的详细定义，或对三角范畴的处理，超出了本书的范围。
 
@@ -23041,36 +23053,36 @@ $$
 另一个重要的观察是同伦等价被任何加性函子保持。假设 A, $\textsf { B }$ 是阿贝尔范畴，
 
 $$
-\mathcal { F } : \mathsf { A } \longrightarrow \mathsf { B }
+\mathscr { F } : \mathsf { A } \longrightarrow \mathsf { B }
 $$
 
-是一个加性函子（定义1.1）。然后$\mathcal { F }$诱导出一个保持梯度的加性函子
+是一个加性函子（定义1.1）。然后$\mathscr { F }$诱导出一个保持梯度的加性函子
 
 $$
-\mathsf { C } ( \mathcal { F } ) : \mathsf { C } ( \mathsf { A } ) \longrightarrow \mathsf { C } ( \mathsf { B } ) .
+\mathsf { C } ( \mathscr { F } ) : \mathsf { C } ( \mathsf { A } ) \longrightarrow \mathsf { C } ( \mathsf { B } ) .
 $$
 
-引理 4.13. 以 $\mathcal { F }$ 如上，如果 $\alpha ^ { \bullet } \sim \beta ^ { \bullet }$ 在 ${ \mathsf { C } } ( { \mathsf { A } } )$ 中，那么 $\mathsf { C } ( \mathcal { F } ) ( \alpha ^ { \bullet } ) \sim \mathsf { C } ( \mathcal { F } ) ( \beta ^ { \bullet } )$ 在 ${ \mathsf { C } } ( { \mathsf { B } } )$ 中，并且如果 $L ^ { \bullet }$ 和 $M ^ { \bullet }$ 是 ${ \mathsf { C } } ( { \mathsf { A } } )$ 中的同伦等价复形，那么 ${ \mathsf { C } } ( { \mathcal { F } } ) ( L ^ { \bullet } )$ 和 $\mathsf C ( \mathcal F ) ( M ^ { \bullet } )$ 是 ${ \mathsf { C } } ( { \mathsf { B } } )$ 中的同伦等价复形。
+引理 4.13. 以 $\mathscr { F }$ 如上，如果 $\alpha ^ { \bullet } \sim \beta ^ { \bullet }$ 在 ${ \mathsf { C } } ( { \mathsf { A } } )$ 中，那么 $\mathsf { C } ( \mathscr { F } ) ( \alpha ^ { \bullet } ) \sim \mathsf { C } ( \mathscr { F } ) ( \beta ^ { \bullet } )$ 在 ${ \mathsf { C } } ( { \mathsf { B } } )$ 中，并且如果 $L ^ { \bullet }$ 和 $M ^ { \bullet }$ 是 ${ \mathsf { C } } ( { \mathsf { A } } )$ 中的同伦等价复形，那么 ${ \mathsf { C } } ( { \mathscr { F } } ) ( L ^ { \bullet } )$ 和 $\mathsf C ( \mathcal F ) ( M ^ { \bullet } )$ 是 ${ \mathsf { C } } ( { \mathsf { B } } )$ 中的同伦等价复形。
 
-证明。第二个断言可由第一个断言推出。第一个断言是 $\mathcal { F }$ 可加性的直接推论。事实上，如果 $h$ 是 $\alpha ^ { \bullet } , \beta ^ { \bullet } : L ^ { \bullet }  M ^ { \bullet }$ 之间的一个同伦，那么
+证明。第二个断言可由第一个断言推出。第一个断言是 $\mathscr { F }$ 可加性的直接推论。事实上，如果 $h$ 是 $\alpha ^ { \bullet } , \beta ^ { \bullet } : L ^ { \bullet }  M ^ { \bullet }$ 之间的一个同伦，那么
 
 $$
 \beta ^ { i } - \alpha ^ { i } = d _ { M ^ { \bullet } } ^ { i - 1 } \circ h ^ { i } + h ^ { i + 1 } \circ d _ { L ^ { \bullet } } ^ { i } .
 $$
 
-由于 $\mathcal { F }$ 保持了 Hom-集上的加法结构，这意味着
+由于 $\mathscr { F }$ 保持了 Hom-集上的加法结构，这意味着
 
 $$
-\begin{array} { r } { \mathcal { F } ( \beta ^ { i } ) - \mathcal { F } ( \alpha ^ { i } ) = \mathcal { F } ( d _ { M ^ { \bullet } } ^ { i - 1 } ) \circ \mathcal { F } ( h ^ { i } ) + \mathcal { F } ( h ^ { i + 1 } ) \circ \mathcal { F } ( d _ { L ^ { \bullet } } ^ { i } ) , } \end{array}
+\begin{array} { r } { \mathscr { F } ( \beta ^ { i } ) - \mathscr { F } ( \alpha ^ { i } ) = \mathscr { F } ( d _ { M ^ { \bullet } } ^ { i - 1 } ) \circ \mathscr { F } ( h ^ { i } ) + \mathscr { F } ( h ^ { i + 1 } ) \circ \mathscr { F } ( d _ { L ^ { \bullet } } ^ { i } ) , } \end{array}
 $$
 
-表明集合 态射 $\mathcal { F } ( h ^ { i } )$ 给出了 $\mathcal { F } ( \alpha ^ { \bullet } )$ 和 $\mathcal { F } ( \beta ^ { \bullet } )$ 之间的一个同伦。
+表明集合 态射 $\mathscr { F } ( h ^ { i } )$ 给出了 $\mathscr { F } ( \alpha ^ { \bullet } )$ 和 $\mathscr { F } ( \beta ^ { \bullet } )$ 之间的一个同伦。
 
 注意，类似的说法对于拟同构不成立（练习4.15）：加性函子不保持拟同构（而正合函子则保持）。
 
 引理 4.13 暗示，在应用一个加性函子后，推论 4.11 的结论成立：
 
-定理 4.14. 设 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ 是两个阿贝尔范畴之间的加性函子。如果 $L ^ { \bullet }$ ，$M ^ { \bullet }$ 是范畴 C(A) 中同伦等价的复形，那么同调复形
+定理 4.14. 设 $\mathscr { F } : \mathsf { A } \to \mathsf { B }$ 是两个阿贝尔范畴之间的加性函子。如果 $L ^ { \bullet }$ ，$M ^ { \bullet }$ 是范畴 C(A) 中同伦等价的复形，那么同调复形
 
 $$
 H ^ { \bullet } ( \mathsf C ( { \mathcal F } ) ( L ^ { \bullet } ) ) , \quad H ^ { \bullet } ( \mathsf C ( \mathsf { { C } } ) ( M ^ { \bullet } ) )
@@ -23086,7 +23098,7 @@ $$
 
 4.1. $\triangleright$ 验证一个复形 态射的锥是一个复形。[§4.1]
 
-4.2. 设 ${ \cal L } ^ { \bullet } = \cdots  0  { \cal L }  0  \cdot \cdot \cdot$ 和 $M ^ { \bullet } = \cdot \cdot \cdot  0  M  0  \cdot \cdot \cdot$ 是两个集中在度数为0的复形。给出一个同态 $\alpha ^ { \bullet } : L ^ { \bullet }  M ^ { \bullet }$ 等价于给出一个同态 $\alpha : L  M$。描述这种情况下的映射锥及其上同调。
+4.2. 设 ${ \cal L } ^ { \bullet } = \cdots  0  { \cal L }  0  \cdots$ 和 $M ^ { \bullet } = \cdots  0  M  0  \cdots$ 是两个集中在度数为0的复形。给出一个同态 $\alpha ^ { \bullet } : L ^ { \bullet }  M ^ { \bullet }$ 等价于给出一个同态 $\alpha : L  M$。描述这种情况下的映射锥及其上同调。
 
 4.3. 设 $\alpha ^ { \bullet } : L ^ { \bullet }  M ^ { \bullet }$ 是一个有界复形的态射。注意到 $\alpha$ 的映射锥 $M C ( \alpha ) ^ { \bullet }$ 也是有界的；因此，三个复形 $L ^ { \bullet }$ ， $M ^ { \bullet }$ ， $M C ( \alpha ) ^ { \bullet }$ 都有定义良好的泛欧拉特征（参见习题 3.15）。证明 $\chi ( M C ( \alpha ) ^ { \bullet } ) = \chi ( M ^ { \bullet } ) - \chi ( L ^ { \bullet } )$ 。
 
@@ -23164,16 +23176,16 @@ $$
 要证明这个“同伦范畴”是从 C(A) 到 D(A) 的必经之路，回到 §4.2 结尾处我们更高层次的想法。再次考虑任意加性映射
 
 $$
-\mathcal { F } : \mathsf { C } ( \mathsf { A } ) \longrightarrow \mathsf { D }
+\mathscr { F } : \mathsf { C } ( \mathsf { A } ) \longrightarrow \mathsf { D }
 $$
 
-将拟同构转化为同构。最简单的此类函子是上同调；普遍的一个是从${ \mathsf { C } } ( \mathsf { A } )$到神秘的导出范畴D(A)的函子。我们在命题4.10中验证了同伦映射在上同调中诱导相同的同态。这难道不是上述任何函子$\mathcal { F }$的情况吗？是的！
+将拟同构转化为同构。最简单的此类函子是上同调；普遍的一个是从${ \mathsf { C } } ( \mathsf { A } )$到神秘的导出范畴D(A)的函子。我们在命题4.10中验证了同伦映射在上同调中诱导相同的同态。这难道不是上述任何函子$\mathscr { F }$的情况吗？是的！
 
-引理 5.1. 设 $\mathcal { F } : \mathsf { C } ( \mathsf { A } ) \longrightarrow \mathsf { D}$ 是一个加性函子，使得对于 ${ \mathsf { C } } ( \mathsf { A } )$ 中的所有准同构 $\rho ^ { \bullet }$，$\mathcal { F } ( \rho ^ { \bullet } )$ 在 $\mathsf { D}$ 中是一个同构。
+引理 5.1. 设 $\mathscr { F } : \mathsf { C } ( \mathsf { A } ) \longrightarrow \mathsf { D}$ 是一个加性函子，使得对于 ${ \mathsf { C } } ( \mathsf { A } )$ 中的所有准同构 $\rho ^ { \bullet }$，$\mathscr { F } ( \rho ^ { \bullet } )$ 在 $\mathsf { D}$ 中是一个同构。
 
-设 $\alpha ^ { \bullet } , \beta ^ { \bullet } : L ^ { \bullet }  M ^ { \bullet }$ 是 ${ \mathsf { C } } ( \mathsf { A } )$ 中的同伦态射。那么 $\mathcal { F } ( \alpha ^ { \bullet } ) = \mathcal { F } ( \beta ^ { \bullet } )$ 在 D 中。
+设 $\alpha ^ { \bullet } , \beta ^ { \bullet } : L ^ { \bullet }  M ^ { \bullet }$ 是 ${ \mathsf { C } } ( \mathsf { A } )$ 中的同伦态射。那么 $\mathscr { F } ( \alpha ^ { \bullet } ) = \mathscr { F } ( \beta ^ { \bullet } )$ 在 D 中。
 
-证明。等价地（因为$\mathcal { F }$是加性的），我们验证如果$\alpha ^ { \bullet } \sim 0$，那么$\mathcal { F } ( \alpha ^ { \bullet } ) = 0$。  
+证明。等价地（因为$\mathscr { F }$是加性的），我们验证如果$\alpha ^ { \bullet } \sim 0$，那么$\mathscr { F } ( \alpha ^ { \bullet } ) = 0$。  
 根据引理4.7，只需证明$\alpha ^ { \bullet }$通过一个正合复合。
 
 这个正合的复形是恒等 i $\mathrm { d } _ { L ^ { \bullet } } : L ^ { \bullet }$ $L ^ { \bullet }$ 的映射锥 $M C ( \mathrm { i d } _ { L } \bullet ) ^ { \bullet }$ 。回想（§4.1）
@@ -23218,7 +23230,7 @@ $$
 L ^ { i } \to M C ( \operatorname { i d } _ { L } \bullet ) ^ { i } \to M ^ { i }
 $$
 
-是 $\alpha ^ { i }$ 。我们现在只需要检查集合 $\pi ^ { i }$ 定义了一个复合映射：这将表明 $\alpha ^ { \bullet }$ 通过正合复合 $M C ( \mathrm { i d } _ { L } \bullet ) ^ { \bullet }$ 因子分解，从而证明 $\mathcal { F } ( \alpha ^ { \bullet } ) = 0$（根据引理 4.7），从而完成这个引理的证明。也就是说，我们需要验证
+是 $\alpha ^ { i }$ 。我们现在只需要检查集合 $\pi ^ { i }$ 定义了一个复合映射：这将表明 $\alpha ^ { \bullet }$ 通过正合复合 $M C ( \mathrm { i d } _ { L } \bullet ) ^ { \bullet }$ 因子分解，从而证明 $\mathscr { F } ( \alpha ^ { \bullet } ) = 0$（根据引理 4.7），从而完成这个引理的证明。也就是说，我们需要验证
 
 $$
 d _ { M ^ { \bullet } } ^ { i - 1 } \circ \pi ^ { i - 1 } = \pi ^ { i } \circ d _ { M C ( \mathrm { i d } _ { L } \bullet ) } ^ { i - 1 } .
@@ -23292,7 +23304,7 @@ $$
 
 然后我们可以将引理 5.1 重新解释为以下“分解”结果：
 
-命题 5.4. 设 $\mathcal { F } : \mathsf { C } ( \mathsf { A } ) \longrightarrow \mathsf { D}$ 是一个加性函子，且对于 $\mathsf { C } ( \mathsf { A } )$ 中的所有准同构 $\rho ^ { \bullet }$，$\mathcal { F } ( \boldsymbol { \rho } ^ { \bullet } )$ 在 $\mathsf { D }$ 中是同构。那么 $\mathcal { F }$ 唯一地通过 K(A)：
+命题 5.4. 设 $\mathscr { F } : \mathsf { C } ( \mathsf { A } ) \longrightarrow \mathsf { D}$ 是一个加性函子，且对于 $\mathsf { C } ( \mathsf { A } )$ 中的所有准同构 $\rho ^ { \bullet }$，$\mathscr { F } ( \boldsymbol { \rho } ^ { \bullet } )$ 在 $\mathsf { D }$ 中是同构。那么 $\mathscr { F }$ 唯一地通过 K(A)：
 
 ![](images/206.jpg)
 
@@ -23559,7 +23571,7 @@ $$
 
 推断有限阿贝尔群的范畴没有非平凡的投射或注入对象。[§5.3]
 
-5.6. $\triangleright$ 设 A, $\textsf { B }$ 是阿贝尔范畴，且 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ , $\mathcal { G } : \mathsf { B } \to \mathsf { A }$ 是加性函子。假设 $\mathcal { F }$ 是 $\mathcal { G }$ 的左伴随函子，并且 $\mathcal { G }$ 保留上同态。证明如果 $P$ 是 A 中的投射对象，那么 $\mathcal { F } ( P )$ 是 $\textsf { B }$ 中的投射对象。对注入对象给出类似的结果。[5.8, §7.1]
+5.6. $\triangleright$ 设 A, $\textsf { B }$ 是阿贝尔范畴，且 $\mathscr { F } : \mathsf { A } \to \mathsf { B }$ , $\mathscr { G } : \mathsf { B } \to \mathsf { A }$ 是加性函子。假设 $\mathscr { F }$ 是 $\mathscr { G }$ 的左伴随函子，并且 $\mathscr { G }$ 保留上同态。证明如果 $P$ 是 A 中的投射对象，那么 $\mathscr { F } ( P )$ 是 $\textsf { B }$ 中的投射对象。对注入对象给出类似的结果。[5.8, §7.1]
 
 5.7. $\neg$ 设 A 是一个阿贝尔范畴，并且 $\mathsf { C }$ 是一个小范畴。假设 A 包含所有由任意集合索引的积26；例如，$R$ -Mod 对每个环 $R$ 都满足此条件。对于 A 的一个对象 $A$ 和一个集合 $S$ ，用 $A ^ { S }$ 表示由 $S$ 索引的 $A$ 的积。注意任意集合映射 $S \to T$ 决定了 A 中的一个 态射 $A ^ { T } \to A ^ { S }$。
 
@@ -23577,15 +23589,15 @@ $\mathsf{C}$ 中的每个同态 $Y  Z$ 都确定一个函数 $\operatorname{Hom}
 • 证明 $\mathcal { \bar { X } }$ 是一个从 $\mathsf { A }$ 到 $\mathsf { A } ^ { \mathsf { C } }$ 的函子，具有明显的对态的作用。
 • 证明 $\mathcal { \bar { X } }$ 是 $\mathcal { X }$ 的右伴随。
 
-(提示： 您需要识别 $\mathrm { H o m } _ { \mathsf { A } ^ { \mathsf { C } } } ( { \mathcal { F } } , { \widehat { \mathcal { X } } } ( A ) )$ 与 ${ \mathrm { H o m } } _ { \mathsf { A } } ( { \mathcal { F } } ( X ) , A )$ 。给定一个自然变换 $\alpha : { \mathcal { F } }  { \widehat { \mathcal { X } } } ( A )$ ，在 $X$ 处求值并提取恒等分量，以获得一个态射 ${ \mathcal { F } } ( X ) \to A$ 。然后证明这些信息足以确定整个自然变换。) [5.8, 5.9]
+(提示： 您需要识别 $\mathrm { H o m } _ { \mathsf { A } ^ { \mathsf { C } } } ( { \mathscr { F } } , { \widehat { \mathcal { X } } } ( A ) )$ 与 ${ \mathrm { H o m } } _ { \mathsf { A } } ( { \mathscr { F } } ( X ) , A )$ 。给定一个自然变换 $\alpha : { \mathscr { F } }  { \widehat { \mathcal { X } } } ( A )$ ，在 $X$ 处求值并提取恒等分量，以获得一个态射 ${ \mathscr { F } } ( X ) \to A$ 。然后证明这些信息足以确定整个自然变换。) [5.8, 5.9]
 
 5.8. $\neg$ 如练习5.7所述，设$\mathsf { C }$是一个小范畴，设$\mathsf { A }$是一个包含所有以集合索引的积的阿贝尔范畴。证明算子$\widehat { \mathcal { X } }$对所有$\mathsf { C }$的对象$X$都保持单射：如果$Q$是$\mathsf { A }$中的一个单射对象，那么${ \widehat { \mathcal { X } } } ( Q )$在$\mathsf { A } ^ { \mathrm { C } }$中是单射的。（提示：练习5.6。）[5.9]
 
-5.9. $\neg$ 设 C 是一个小的范畴，并且 $\mathsf { A }$ 是一个包含所有以集合索引的积的阿贝尔范畴。假设 $\mathsf { A }$ 有足够的单射。设 $\mathcal { F } : \mathsf { C } \to \mathsf { A }$ 是一个函子。对于 $\mathsf { C }$ 的每一个对象 $X$，设 $Q _ { X }$ 是 $\mathsf { A }$ 的一个单射对象，并且存在一个单态射 ${ \mathcal { F } } ( X ) { \longmapsto } Q _ { X }$。
+5.9. $\neg$ 设 C 是一个小的范畴，并且 $\mathsf { A }$ 是一个包含所有以集合索引的积的阿贝尔范畴。假设 $\mathsf { A }$ 有足够的单射。设 $\mathscr { F } : \mathsf { C } \to \mathsf { A }$ 是一个函子。对于 $\mathsf { C }$ 的每一个对象 $X$，设 $Q _ { X }$ 是 $\mathsf { A }$ 的一个单射对象，并且存在一个单态射 ${ \mathscr { F } } ( X ) { \longmapsto } Q _ { X }$。
 
 • 使用练习 5.7 中的符号，令 $\begin{array} { r } { \mathcal { Q } : = \prod _ { X \in \mathrm { O b j } ( \mathsf { C } ) } \widehat { \mathcal { X } } ( Q _ { X } ) } \end{array}$（证明这个积在 $\mathsf { A } ^ { \subset }$ 中存在）。   
 • 证明 $\mathcal { L }$ 在 $\mathsf { A } ^ { \mathrm { C } }$ 中是单射的。（练习 5.4 和 5.8。）   
-• 定义一个同态 $\mathcal { F }  \mathcal { L }$ ，并证明它是单态射。（使用对偶性。）
+• 定义一个同态 $\mathscr { F }  \mathcal { L }$ ，并证明它是单态射。（使用对偶性。）
 
 因此，我们可以得出结论，如果 $\mathsf { A }$ 是一个具有足够多单射的阿贝尔范畴，并且 $\mathsf { A }$ 对由集合索引的积是封闭的，那么 $\mathsf { A } ^ { \mathrm { C } }$ 有足够多单射。
 
@@ -23596,7 +23608,7 @@ $\mathsf{C}$ 中的每个同态 $Y  Z$ 都确定一个函数 $\operatorname{Hom}
 5.11. $\triangleright$ 设 $N ^ { \bullet }$ 是复数
 
 $$
-\cdot \cdot \cdot { \longrightarrow } 0 \longrightarrow K \longrightarrow M \longrightarrow N \longrightarrow 0 \longrightarrow \cdots .
+\cdots { \longrightarrow } 0 \longrightarrow K \longrightarrow M \longrightarrow N \longrightarrow 0 \longrightarrow \cdots .
 $$
 
 证明 $N ^ { \bullet }$ 是正合的并且在某种意义上分裂（类似于在 $S$ III.7.2 中对模给出的定义），当且仅当 $\mathrm { i d } _ { N }$ • 同伦于 0（参见命题 III.7.5）。由此推出每个加性函子将分裂正合列映射到分裂正合列。
@@ -23851,17 +23863,17 @@ $$
 
 定理 6.9. 如上所述，我们有以下内容。
 
-• 如果 $\rho ^ { \bullet }$ 是 ${ \mathsf { C } } ^ { - } ( { \mathsf { A } } )$ 中的一个准同构，那么 $\mathcal { P } ( \boldsymbol { \rho } ^ { \bullet } )$ 是 $\mathsf { K } ^ { - } ( \mathsf { P } )$ 中的一个同构。 • 设 $\mathcal { F } : \mathsf { C } ^ { - } ( \mathsf { A } ) \longrightarrow \mathsf { D}$ 是一个加性函子，使得对于每一个准同构 $\rho ^ { \bullet }$，$\mathcal { F } ( \boldsymbol { \rho } ^ { \bullet } )$ 是一个同构。那么存在一个函子 $\mathcal { F }$ : $\mathsf { K } ^ { - } ( \mathsf { P } ) \to \mathsf { D}$，使得图
+• 如果 $\rho ^ { \bullet }$ 是 ${ \mathsf { C } } ^ { - } ( { \mathsf { A } } )$ 中的一个准同构，那么 $\mathcal { P } ( \boldsymbol { \rho } ^ { \bullet } )$ 是 $\mathsf { K } ^ { - } ( \mathsf { P } )$ 中的一个同构。 • 设 $\mathscr { F } : \mathsf { C } ^ { - } ( \mathsf { A } ) \longrightarrow \mathsf { D}$ 是一个加性函子，使得对于每一个准同构 $\rho ^ { \bullet }$，$\mathscr { F } ( \boldsymbol { \rho } ^ { \bullet } )$ 是一个同构。那么存在一个函子 $\mathscr { F }$ : $\mathsf { K } ^ { - } ( \mathsf { P } ) \to \mathsf { D}$，使得图
 
 ![](images/214.jpg)
 
-同构自然地成立。（也就是说，存在一个自然变换 $\nu : \widetilde { \mathcal { F } } \circ \mathcal { P } \sim \mathcal { F }$ 使得
+同构自然地成立。（也就是说，存在一个自然变换 $\nu : \widetilde { \mathscr { F } } \circ \mathcal { P } \sim \mathscr { F }$ 使得
 
 $$
-\nu _ { L ^ { \bullet } } : \widetilde { \mathcal { F } } \circ \mathcal { P } ( L ^ { \bullet } ) \ \xrightarrow { \sim } \mathcal { F } ( L ^ { \bullet } )
+\nu _ { L ^ { \bullet } } : \widetilde { \mathscr { F } } \circ \mathcal { P } ( L ^ { \bullet } ) \ \xrightarrow { \sim } \mathscr { F } ( L ^ { \bullet } )
 $$
 
-对于每个复数 $L ^ { \bullet }$ 在 ${ \mathsf { C } } ^ { - } \left( { \mathsf { A } } \right)$ 中都是一个同构。) 函数对象 $\mathcal { F }$ 在自然同构的意义下是唯一的。
+对于每个复数 $L ^ { \bullet }$ 在 ${ \mathsf { C } } ^ { - } \left( { \mathsf { A } } \right)$ 中都是一个同构。) 函数对象 $\mathscr { F }$ 在自然同构的意义下是唯一的。
 
 图在鼻子上的不交换性不应该太令人困扰。这对应于定理6.7中所述的事实，即在${ \mathsf { K } } ^ { - } ( { \mathsf { P } } )$和$\mathsf { D } ^ { - } ( \mathsf { A } )$之间存在“只有”一个范畴等价，而不是一个严格的“同构”。正如我在$ S $ VIII.1.3中已经指出的那样，在范畴背景下，这是可以预料的。
 
@@ -23873,29 +23885,29 @@ $$
 
 可以同伦复合；这里 $\mu _ { L ^ { \bullet } }$ ，$\mu _ { M } \mathbf { \cdot }$ • 是拟同构，并且 $\mathcal { P } ( \boldsymbol { \rho } ^ { \bullet } )$ 是 $\rho ^ { \prime } { } ^ { \bullet }$ 的同伦类。如果 $\rho ^ { \bullet }$ 是拟同构，那么 $\rho ^ { \prime } { } ^ { \bullet }$ 也是（因为该图可以同伦复合；因此在对偶层后它也复合）；由此可知，根据推论 5.10，在这种情况下 $\mathcal { P } ( \boldsymbol { \rho } ^ { \bullet } )$ 是一个同构。
 
-为了证明分解性质，定义 $\widetilde { \mathcal { F } } : \mathsf { K } ^ { - } ( \mathsf { P } )  \mathsf { D}$ 为
+为了证明分解性质，定义 $\widetilde { \mathscr { F } } : \mathsf { K } ^ { - } ( \mathsf { P } )  \mathsf { D}$ 为
 
 $$
-\widetilde { \mathcal { F } } ( P ^ { \bullet } ) : = \mathcal { F } ( P ^ { \bullet } )
+\widetilde { \mathscr { F } } ( P ^ { \bullet } ) : = \mathscr { F } ( P ^ { \bullet } )
 $$
 
-对于任何上界有界的复射 $P ^ { \bullet }$，定义 ${ \mathsf { K } } ^ { - } ( { \mathsf { P } } )$ 中一个态射的 $\mathcal { F }$ 为 $\mathcal { F } ( \alpha ^ { \bullet } )$，对于该态射的任意代表 $\alpha ^ { \bullet }$。
+对于任何上界有界的复射 $P ^ { \bullet }$，定义 ${ \mathsf { K } } ^ { - } ( { \mathsf { P } } )$ 中一个态射的 $\mathscr { F }$ 为 $\mathscr { F } ( \alpha ^ { \bullet } )$，对于该态射的任意代表 $\alpha ^ { \bullet }$。
 
-$\mathcal { F }$ 对同态的作用是良定义的，这正是引理 5.1 的内容：同伦同态在 $\mathsf { D }$ 中具有相同的像。显然，$\mathcal { F }$ 是一个函子，我们需要检查图在等价类下的交换性和 $\mathcal { F }$ 在自然等价类下的唯一性。
+$\mathscr { F }$ 对同态的作用是良定义的，这正是引理 5.1 的内容：同伦同态在 $\mathsf { D }$ 中具有相同的像。显然，$\mathscr { F }$ 是一个函子，我们需要检查图在等价类下的交换性和 $\mathscr { F }$ 在自然等价类下的唯一性。
 
 那么令 $L ^ { \bullet }$ 是 ${ \mathsf { C } } ^ { - } ( { \mathsf { A } } )$ 中的一个复形。根据构造，存在一个准同构 $\mu _ { L } \bullet : \mathcal { P } ( L ^ { \bullet } )  L ^ { \bullet }$。由于 $\mathcal { F}$ 将准同构映射到同构，因此诱导的 态射
 
 $$
-\nu _ { L ^ { \bullet } } : \widetilde { \mathcal { F } } ( \mathcal { P } ( L ^ { \bullet } ) ) = \mathcal { F } ( \mathcal { P } ( L ^ { \bullet } ) ) \longrightarrow \mathcal { F } ( L ^ { \bullet } )
+\nu _ { L ^ { \bullet } } : \widetilde { \mathscr { F } } ( \mathcal { P } ( L ^ { \bullet } ) ) = \mathscr { F } ( \mathcal { P } ( L ^ { \bullet } ) ) \longrightarrow \mathscr { F } ( L ^ { \bullet } )
 $$
 
 是一个同构。我们只需验证同构 $\nu _ { L }$ • 定义一个自然变换：也就是说，对于 ${ \mathsf { C } } ^ { - } ( { \mathsf { A } } )$ 中的所有态射 $\alpha ^ { \bullet } : L ^ { \bullet }  M ^ { \bullet }$，图
 
 $$
-\begin{array} { r l } { \widetilde { \mathcal { F } } ( \mathcal { P } ( L ^ { \bullet } ) ) \xrightarrow { \widetilde { \mathcal { F } } ( \mathcal { P } ( \alpha ^ { \bullet } ) ) } \widetilde { \mathcal { F } } ( \mathcal { P } ( M ^ { \bullet } ) ) } & { } \\ { \nu _ { L ^ { \bullet } } \Bigg \downarrow } & { } \\ { \mathcal { F } ( L ^ { \bullet } ) \xrightarrow { \mathcal { F } ( \alpha ^ { \bullet } ) } } & { \lesssim \mathcal { F } ( M ^ { \bullet } ) } \end{array}
+\begin{array} { r l } { \widetilde { \mathscr { F } } ( \mathcal { P } ( L ^ { \bullet } ) ) \xrightarrow { \widetilde { \mathscr { F } } ( \mathcal { P } ( \alpha ^ { \bullet } ) ) } \widetilde { \mathscr { F } } ( \mathcal { P } ( M ^ { \bullet } ) ) } & { } \\ { \nu _ { L ^ { \bullet } } \Bigg \downarrow } & { } \\ { \mathscr { F } ( L ^ { \bullet } ) \xrightarrow { \mathscr { F } ( \alpha ^ { \bullet } ) } } & { \lesssim \mathscr { F } ( M ^ { \bullet } ) } \end{array}
 $$
 
-交换。这个图（在 $\mathsf { D }$ 中）是通过将 $\mathcal { F }$ 应用于（在范畴 ${ \mathsf { C } } ( \mathsf { A } )$ 中的）图而得到的
+交换。这个图（在 $\mathsf { D }$ 中）是通过将 $\mathscr { F }$ 应用于（在范畴 ${ \mathsf { C } } ( \mathsf { A } )$ 中的）图而得到的
 
 $$
 \begin{array} { r l } & { \mathcal { P } ( L ^ { \bullet } ) \xrightarrow { \alpha ^ { \prime \bullet } } \mathcal { P } ( M ^ { \bullet } ) } \\ & { \quad \quad } \\ & { \quad \quad \quad \underline { { \mu _ { L } \bullet } } \underbrace { \biggr | } _ { L ^ { \bullet } } } \\ & { \quad \quad \quad \quad \quad \alpha ^ { \bullet } } \end{array}
@@ -23903,13 +23915,13 @@ $$
 
 其中 $\alpha ^ { \prime } ^ { \bullet }$ 是 $\alpha ^ { \bullet }$ 的同伦提升。这个图在同伦意义下是可交换的，因此前一个图直接可交换，再次根据引理 5.1。
 
-要证明 $\mathcal { F }$ 在同构意义下是唯一的，设 $\overline { { \mathcal { F } } } : \mathsf { K } ^ { - } ( \mathsf { P } )  \mathsf { D }$ 是另一个具有相同性质的另一个函子。因此存在一个自然同构 $\overline { { \nu } } :$ $\overline { { \mathcal { F } } } \circ \mathcal { P } \sim \mathcal { F }$ 。对于 ${ \mathsf { K } } ^ { - } ( { \mathsf { P } } )$ 中的复形 $P ^ { \bullet }$ ，考虑复合 $\rho _ { P } \bullet$ :
+要证明 $\mathscr { F }$ 在同构意义下是唯一的，设 $\overline { { \mathscr { F } } } : \mathsf { K } ^ { - } ( \mathsf { P } )  \mathsf { D }$ 是另一个具有相同性质的另一个函子。因此存在一个自然同构 $\overline { { \nu } } :$ $\overline { { \mathscr { F } } } \circ \mathcal { P } \sim \mathscr { F }$ 。对于 ${ \mathsf { K } } ^ { - } ( { \mathsf { P } } )$ 中的复形 $P ^ { \bullet }$ ，考虑复合 $\rho _ { P } \bullet$ :
 
 $$
-\begin{array} { r } { \overline { { \mathcal { F } } } ( P ^ { \bullet } ) \xrightarrow [ ] { \sim } \overline { { \mathcal { F } ( \mu _ { P ^ { \bullet } } ) ^ { - 1 } } } \overline { { \mathcal { F } } } ( \mathcal { P } ( P ^ { \bullet } ) ) \xrightarrow [ ] { \sim } \begin{array} { r } { \overline { { \mathcal { F } } } ( P ^ { \bullet } ) = \widetilde { \mathcal { F } } ( P ^ { \bullet } ) = \widetilde { \mathcal { F } } ( P ^ { \bullet } ) } \\ { \overline { { \nu } } _ { P ^ { \bullet } } } \end{array} } \end{array}
+\begin{array} { r } { \overline { { \mathscr { F } } } ( P ^ { \bullet } ) \xrightarrow [ ] { \sim } \overline { { \mathscr { F } ( \mu _ { P ^ { \bullet } } ) ^ { - 1 } } } \overline { { \mathscr { F } } } ( \mathcal { P } ( P ^ { \bullet } ) ) \xrightarrow [ ] { \sim } \begin{array} { r } { \overline { { \mathscr { F } } } ( P ^ { \bullet } ) = \widetilde { \mathscr { F } } ( P ^ { \bullet } ) = \widetilde { \mathscr { F } } ( P ^ { \bullet } ) } \\ { \overline { { \nu } } _ { P ^ { \bullet } } } \end{array} } \end{array}
 $$
 
-(请注意，由于 $\mu _ { P } \bullet : \mathcal { P } ( P ^ { \bullet } )  P ^ { \bullet }$ 是一个准同构，$\mathcal { F } ( \mu _ { P } \bullet )$ 在 $\mathsf { D }$ 中是可逆的)。读者将验证（练习 6.12），这定义了 $\rho : \overline { { \mathcal { F } } }  \tilde { \mathcal { F } }$ 作为自然同构，从而完成证明。
+(请注意，由于 $\mu _ { P } \bullet : \mathcal { P } ( P ^ { \bullet } )  P ^ { \bullet }$ 是一个准同构，$\mathscr { F } ( \mu _ { P } \bullet )$ 在 $\mathsf { D }$ 中是可逆的)。读者将验证（练习 6.12），这定义了 $\rho : \overline { { \mathscr { F } } }  \tilde { \mathscr { F } }$ 作为自然同构，从而完成证明。
 
 如果 $\mathsf { A }$ 有足够的单射，我们可以通过为每个下界有界复形选择一个单射解析来定义一个函子 $\mathcal { Q } : \mathsf { C } ^ { + } ( \mathsf { A } ) \to \mathsf { K } ^ { + } ( \mathsf { I } )$。这个函子的情况与之前所审查的 $\mathcal { S }$ 函子的情况完全相同，只要适当地颠倒箭头即可。
 
@@ -23931,7 +23943,7 @@ $$
 
 • 证明存在复形映射 $P ^ { \bullet }  M C ( \mathrm { i d } _ { P } \bullet ) [ - 1 ]$ ，使得对于每个 $i$ ，相应的映射 $P ^ { i }  P ^ { i } \oplus P ^ { i - 1 }$ 是形式 $( \operatorname { i d } , h ^ { i } )$ 。 • 证明集合 $h ^ { i }$ 给出 $id _ { F}$ 与 $0$ 之间的一个同伦。得出 $P ^ { \bullet }$ 是投影的一个分裂正合复形。
 
-（例如，复形的 $\cdot \cdot \cdot \to 0 \to \mathbb { Z } { \overset { \cdot 2 } { \to } } \mathbb { Z } \to 0 \to \cdot \cdot \cdot$ 在 $C(Ab)$ 中不是投射的。）
+（例如，复形的 $\cdots \to 0 \to \mathbb { Z } { \overset { \cdot 2 } { \to } } \mathbb { Z } \to 0 \to \cdots$ 在 $C(Ab)$ 中不是投射的。）
 
 • 相反地，证明如果 $P ^ { \bullet }$ 是一个投射层的分裂正合复合，那么 $P ^ { \bullet }$ 在 ${ \mathsf { C } } ( { \mathsf { A } } )$ 中是投射的。（提示：使用练习 5.11 和 5.4 将其简化为情况 $\cdots \to 0 \to P \ { \overset { \sim } { \to } } \ P \to 0 \to \cdots$ 。）   
 • 如果 $P ^ { \bullet }$ 是一个上界有界的投射复合，证明 $P ^ { \bullet }$ 作为 ${ \mathsf { C } } ( { \mathsf { A } } )$ 的一个对象是投射的当且仅当它是正合的。
@@ -23984,7 +23996,7 @@ $$
 
 按指示匹配degree。（如果你已经完成了练习6.9，这将特别容易）。
 
-6.12. $\triangleright$ 完成证明定理6.9中的函子$\mathcal { F }$在自然同构意义下是唯一的。[§6.3]
+6.12. $\triangleright$ 完成证明定理6.9中的函子$\mathscr { F }$在自然同构意义下是唯一的。[§6.3]
 
 6.13. $\triangleright$ (参见习题6.2。) 设 $\mathsf { A }$ 是一个具有足够投射对象的阿贝尔范畴，设 $\hat { \mathsf A }$ 是 ${ \mathsf { K } } ^ { - } ( { \mathsf { P } } )$ 的一个子范畴，其对象在0次上集中同调。对 $\mathsf { A }$ 的每个对象 $A$ 选择（任意地）一个投射分解，并像命题6.5中那样提升同态，我们得到一个从 $\mathsf { A }$ 到 $\hat { \mathsf { A } }$ 的函子；使用§6.3中的记号，这是 $\mathcal { P } \circ \iota$ 。显然，$H ^ { 0 } \circ \mathcal { P } \circ \iota$ 是 $\mathsf { A }$ 上的恒等函子。证明存在一个从 $\hat { \mathsf A }$ 上的恒等函子到 $\mathcal { P } \circ \iota \circ H ^ { \mathrm { 0 } }$ 的自然同构。[§7.1]
 
@@ -23999,20 +24011,20 @@ $$
 
 可以论证，任何（等同于）$\mathsf { A }$ 的（范畴等价物）的实现都比 A 本身‘更好’。确实，我反复强调，一个复形所携带的所有同调信息，在理想情况下是通过在导出范畴中观察该复形来捕捉的，而对于由 $\mathsf { A }$ 的一个对象 $M$ 最简单方式确定的复形 $\iota ( M )$ ，这仅仅意味着用 $M$ 的任意一个投射解形来替换 $\iota ( M )$ ，将其视为 ${ \mathsf { K } } ^ { - } ( { \mathsf { P } } )$ 的一个对象。
 
-然而，这提出了一个问题：如果 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ 是一个函子，并且我们认真考虑用 $\mathsf { D } ^ { - } ( \mathsf { A } )$ 中的对应对象（或对象）来替换 A，那么应该有一种方法来“重新解释” $\mathcal { F }$ 在这个新背景下：以某种自然的方式诱导一个“导出函子” $\mathsf { D } ^ { - } ( \mathsf { A } ) \to \mathsf { D } ^ { - } ( \mathsf { B } )$。人们希望这个函子至少携带与 $\mathcal { F }$ 一样多的信息，并满足更好的性质。
+然而，这提出了一个问题：如果 $\mathscr { F } : \mathsf { A } \to \mathsf { B }$ 是一个函子，并且我们认真考虑用 $\mathsf { D } ^ { - } ( \mathsf { A } )$ 中的对应对象（或对象）来替换 A，那么应该有一种方法来“重新解释” $\mathscr { F }$ 在这个新背景下：以某种自然的方式诱导一个“导出函子” $\mathsf { D } ^ { - } ( \mathsf { A } ) \to \mathsf { D } ^ { - } ( \mathsf { B } )$。人们希望这个函子至少携带与 $\mathscr { F }$ 一样多的信息，并满足更好的性质。
 
 现在我声称确实存在一种明显的办法来诱导一个在导出范畴的实现之间的函子，用${ \mathsf { K } } ^ { - } ( { \mathsf { P } } )$来表示。这个函子回答的问题稍微不那么清楚——也就是说，它满足什么样的泛性质。我邀请读者在我做之前理清这一切。
 
-说 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ 是两个阿贝尔范畴之间的加性函子。很明显，$\mathcal { F }$ 扩展为一个函子
+说 $\mathscr { F } : \mathsf { A } \to \mathsf { B }$ 是两个阿贝尔范畴之间的加性函子。很明显，$\mathscr { F }$ 扩展为一个函子
 
 $$
-{ \mathsf { C } } ( { \mathcal { F } } ) \quad : \quad { \mathsf { C } } ( { \mathsf { A } } ) \to { \mathsf { C } } ( { \mathsf { B } } )
+{ \mathsf { C } } ( { \mathscr { F } } ) \quad : \quad { \mathsf { C } } ( { \mathsf { A } } ) \to { \mathsf { C } } ( { \mathsf { B } } )
 $$
 
-（我们在§4中简要遇到了这个函子）：复形 $L ^ { \bullet }$ 被发送到复形 ${ \mathsf { C } } ( { \mathcal { F } } ) ( L ^ { \bullet } )$，其对象是 $\mathcal { F } ( L ^ { \iota } )$，其微分是 $\mathcal { F } ( d _ { L ^ { \bullet } } ^ { \ i } )$。注意 $\mathcal { F }$ 的函子性和加性意味着
+（我们在§4中简要遇到了这个函子）：复形 $L ^ { \bullet }$ 被发送到复形 ${ \mathsf { C } } ( { \mathscr { F } } ) ( L ^ { \bullet } )$，其对象是 $\mathscr { F } ( L ^ { \iota } )$，其微分是 $\mathscr { F } ( d _ { L ^ { \bullet } } ^ { \ i } )$。注意 $\mathscr { F }$ 的函子性和加性意味着
 
 $$
-\mathcal { F } ( d _ { L ^ { \bullet } } ^ { i + 1 } ) \circ \mathcal { F } ( d _ { L ^ { \bullet } } ^ { i } ) = \mathcal { F } ( d _ { L ^ { \bullet } } ^ { i + 1 } \circ d _ { L ^ { \bullet } } ^ { i } ) = \mathcal { F } ( 0 ) = 0 ,
+\mathscr { F } ( d _ { L ^ { \bullet } } ^ { i + 1 } ) \circ \mathscr { F } ( d _ { L ^ { \bullet } } ^ { i } ) = \mathscr { F } ( d _ { L ^ { \bullet } } ^ { i + 1 } \circ d _ { L ^ { \bullet } } ^ { i } ) = \mathscr { F } ( 0 ) = 0 ,
 $$
 
 因此，${\mathsf{C}}({\mathcal{F}})(L^{\bullet})$ 确实是一个复形。同样明显的是，如果 $\alpha^{\bullet}$ 是 ${\mathsf{C}}({\mathsf{A}})$ 中的共链复形的同态，那么集合 $\mathcal{F}(\alpha^i)$ 定义了 ${\mathsf{C}}({\mathsf{B}})$ 中的一个同态，并且这种赋值是函子的。现在，我们已经检查过（引理 4.13），${\mathsf{C}}(\mathsf{A})$ 中的同伦同态被映射到 ${\mathsf{C}}({\mathsf{B}})$ 中的同伦同态；因此，$\mathcal{F}$ 诱导了一个函子 $\mathsf{K}(\mathcal{F}) : \mathsf{K}(\mathsf{A}) \to \mathsf{K}(\mathsf{B})$。这个图
@@ -24021,64 +24033,64 @@ $$
 
 交换。此外，此运算显然保持有界性条件。
 
-如果现在的情况是加性函子将投射对象映射到投射对象，那么我们可以将 $\mathsf { K } ( \mathcal { F } )$ 限制为 $\mathsf { K } ^ { - } ( \mathsf { P } ( \mathsf { A } ) )$ 并进入 $\mathsf { K } ^ { - } ( \mathsf { P } ( \mathsf { B } ) )$（其中 P(A) 和 $\mathsf { P } ( \mathsf { B } )$ 分别表示 A 和 B 中的投射对象类）；根据我们在 6.3 中的讨论，这将给我们一个 $\mathcal { F}$ 的“导出函子”的自然候选。
+如果现在的情况是加性函子将投射对象映射到投射对象，那么我们可以将 $\mathsf { K } ( \mathscr { F } )$ 限制为 $\mathsf { K } ^ { - } ( \mathsf { P } ( \mathsf { A } ) )$ 并进入 $\mathsf { K } ^ { - } ( \mathsf { P } ( \mathsf { B } ) )$（其中 P(A) 和 $\mathsf { P } ( \mathsf { B } )$ 分别表示 A 和 B 中的投射对象类）；根据我们在 6.3 中的讨论，这将给我们一个 $\mathcal { F}$ 的“导出函子”的自然候选。
 
 然而，加性函子通常不保持投射性或注入性。他们应该保持吗？例如，“张量”不保持投射 $3 0$（习题 7.1）。假设 $\textsf { B }$ 有足够的投射，解决这个问题的自然方法是在 §6.3 中构造的相应函子 $\mathcal { S } _ { \sf B }$ 上应用，将其与每个复形关联一个投射解。根据引理 5.14，$\mathcal { S } _ { \sf B }$ 将同伦态射映射到同伦态射；因此 $\mathcal { S } _ { \sf B }$ 也可以降到一个在同伦范畴上定义的函子（参见习题 6.4）。
 
 定义 7.1. $ \mathcal{F} $ 的左导出函子是复合
 
 $$
-\mathsf { K } ^ { - } ( \mathsf { P } ( \mathsf { A } ) ) \xrightarrow { \mathcal { I } _ { \mathsf { A } } } \mathsf { K } ^ { - } ( \mathsf { A } ) \xrightarrow { \mathsf { K } ( \mathcal { F } ) } \mathsf { K } ^ { - } ( \mathsf { B } ) \xrightarrow { \mathcal { P } _ { \mathsf { B } } } \mathsf { K } ^ { - } ( \mathsf { P } ( \mathsf { B } ) )
+\mathsf { K } ^ { - } ( \mathsf { P } ( \mathsf { A } ) ) \xrightarrow { \mathcal { I } _ { \mathsf { A } } } \mathsf { K } ^ { - } ( \mathsf { A } ) \xrightarrow { \mathsf { K } ( \mathscr { F } ) } \mathsf { K } ^ { - } ( \mathsf { B } ) \xrightarrow { \mathcal { P } _ { \mathsf { B } } } \mathsf { K } ^ { - } ( \mathsf { P } ( \mathsf { B } ) )
 $$
 
 其中 ${ \mathcal { I } } _ { \mathsf { A } }$ 是 $\mathsf { K } ^ { - } ( \mathsf { P } ( \mathsf { A } ) )$ 作为 $\mathsf { K } ^ { - } ( \mathsf { A } )$ 的一个完全子范畴的“包含”。
 
-似乎用 $\mathsf { D } ^ { - } \mathopen { } \mathclose \bgroup \left( \mathcal { F } \aftergroup \egroup \right)$ 来表示这个函子是合理的；但是‘ $\mathsf { L } \mathcal { F }$ ’的记法已经非常成熟，所以我将采用它。
+似乎用 $\mathsf { D } ^ { - } \mathopen { } \mathclose \bgroup \left( \mathscr { F } \aftergroup \egroup \right)$ 来表示这个函子是合理的；但是‘ $\mathsf { L } \mathscr { F }$ ’的记法已经非常成熟，所以我将采用它。
 
-当然，如果 $\mathsf { A }$ ， $\textsf { B }$ 有足够的单射，可以进行平行讨论，并导致一个“右导出函子” $\mathsf { D } ^ { + } ( \mathcal { F } )$ ，请原谅， $\mathsf { R } \mathcal { F }$ 。
+当然，如果 $\mathsf { A }$ ， $\textsf { B }$ 有足够的单射，可以进行平行讨论，并导致一个“右导出函子” $\mathsf { D } ^ { + } ( \mathscr { F } )$ ，请原谅， $\mathsf { R } \mathscr { F }$ 。
 
 ### 7.2. 派生函子的泛性质
-我所给出的派生函子的定义依赖于所选择的解析函子 $\mathcal { S } _ { \sf B }$ ，因此 $\mathsf { L } \mathcal { F } :$ $\mathsf { K } ^ { - } ( \mathsf { P } ( \mathsf { A } ) ) \to \mathsf { K } ^ { - } ( \mathsf { P } ( \mathsf { B } ) )$ 真正只是在一个自然同构的意义下被定义。无论如何，派生函子应该被视为 $\mathcal { F}$ 在 $\mathsf { A}$ 和 $\textsf { B}$ 的导出范畴层面的自然对应物：在范畴等价的意义下，$\mathsf { L } \mathcal { F}$ 行为如同 $\mathsf { D } ^ { - } ( \mathsf { A } ) \to \mathsf { D } ^ { - } ( \mathsf { B } )$ 。
+我所给出的派生函子的定义依赖于所选择的解析函子 $\mathcal { S } _ { \sf B }$ ，因此 $\mathsf { L } \mathscr { F } :$ $\mathsf { K } ^ { - } ( \mathsf { P } ( \mathsf { A } ) ) \to \mathsf { K } ^ { - } ( \mathsf { P } ( \mathsf { B } ) )$ 真正只是在一个自然同构的意义下被定义。无论如何，派生函子应该被视为 $\mathcal { F}$ 在 $\mathsf { A}$ 和 $\textsf { B}$ 的导出范畴层面的自然对应物：在范畴等价的意义下，$\mathsf { L } \mathcal { F}$ 行为如同 $\mathsf { D } ^ { - } ( \mathsf { A } ) \to \mathsf { D } ^ { - } ( \mathsf { B } )$ 。
 
 然而，这个定义具体回答了什么问题仍然不太清楚。例如，导出的函子不符合上面显示的类似交换图：
 
 $$
-\begin{array} { c } { { \hat { \mathsf { A } } . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . } } \\ { { \displaystyle \int _ { } ^ { } } } \\ { { \mathsf { K } ^ { - } ( { \mathsf { P } } ( { \mathsf { A } } ) ) \xrightarrow { \quad [ \mathcal { F } \quad \quad  } } { \mathsf { K } ^ { - } } ( { \mathsf { P } } ( { \mathsf { A } } ) ) }  \end{array} \overset { \overset { } { \overbrace { \mathsf { B } } } } { \underbrace { \int } { } }
+\begin{array} { c } { { \hat { \mathsf { A } } . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . } } \\ { { \displaystyle \int _ { } ^ { } } } \\ { { \mathsf { K } ^ { - } ( { \mathsf { P } } ( { \mathsf { A } } ) ) \xrightarrow { \quad [ \mathscr { F } \quad \quad  } } { \mathsf { K } ^ { - } } ( { \mathsf { P } } ( { \mathsf { A } } ) ) }  \end{array} \overset { \overset { } { \overbrace { \mathsf { B } } } } { \underbrace { \int } { } }
 $$
 
-这里 $\hat { \mathsf A }$ 和 $\hat { \sf B }$ 是 §7.1 开始讨论的相应导出范畴中 A、$\textsf { B }$ 的替代品，即对象的同调集中在0度的子范畴。要点在于，没有理由认为将 $\mathsf { L } \mathcal { F }$ 应用于同调集中在0度的复形应该得到具有相同性质的复形，除非 $\mathcal { F }$ 从一开始就非常特殊。
+这里 $\hat { \mathsf A }$ 和 $\hat { \sf B }$ 是 §7.1 开始讨论的相应导出范畴中 A、$\textsf { B }$ 的替代品，即对象的同调集中在0度的子范畴。要点在于，没有理由认为将 $\mathsf { L } \mathscr { F }$ 应用于同调集中在0度的复形应该得到具有相同性质的复形，除非 $\mathscr { F }$ 从一开始就非常特殊。
 
 这可能被视为一种麻烦。相反，它是导出范畴和函子的主要价值之一。在导出范畴的层面上重新构建加性函子 $\mathscr { F } : \mathsf { A } \to \mathsf { B }$，即使从（导出范畴中A的等价副本）开始，也能获得有趣的新不变量。
 
 正合性在这些考虑中起着重要作用：
 
-示例 7.2. 假设 $\mathcal { F }$ 是（加法和）正合的。那么我断言，$\mathsf { L } \mathcal { F }$ 将 $\hat { \mathsf A }$ 映射到 $\hat { \sf B }$。
+示例 7.2. 假设 $\mathscr { F }$ 是（加法和）正合的。那么我断言，$\mathsf { L } \mathscr { F }$ 将 $\hat { \mathsf A }$ 映射到 $\hat { \sf B }$。
 
-确实，设 $P ^ { \bullet }$ 是 $\hat { \mathsf A }$ 中的一个复形：$H ^ { i } ( P ^ { \bullet } ) = 0$ 对于 $i \neq 0$ 。像 $\mathsf { L } \mathcal { F } ( P ^ { \bullet } )$ 是通过选择 $\mathcal { F } ( P ^ { \bullet } )$ 的一个投射解析 $P _ { \mathcal { F } ( P ^ { \bullet } ) } ^ { \bullet }$ 得到的。由于准同构保持上同调，并且正合函子与上同调交换（习题 3.7），
+确实，设 $P ^ { \bullet }$ 是 $\hat { \mathsf A }$ 中的一个复形：$H ^ { i } ( P ^ { \bullet } ) = 0$ 对于 $i \neq 0$ 。像 $\mathsf { L } \mathscr { F } ( P ^ { \bullet } )$ 是通过选择 $\mathscr { F } ( P ^ { \bullet } )$ 的一个投射解析 $P _ { \mathscr { F } ( P ^ { \bullet } ) } ^ { \bullet }$ 得到的。由于准同构保持上同调，并且正合函子与上同调交换（习题 3.7），
 
 $$
-H ^ { i } ( [ { \mathcal { F } } ( P ^ { \bullet } ) ) = H ^ { i } ( P _ { { \mathcal { F } } ( P ^ { \bullet } ) } ^ { \bullet } ) \cong H ^ { i } ( { \mathcal { F } } ( P ^ { \bullet } ) ) \cong { \mathcal { F } } ( H ^ { i } ( P ^ { \bullet } ) ) = 0
+H ^ { i } ( [ { \mathscr { F } } ( P ^ { \bullet } ) ) = H ^ { i } ( P _ { { \mathscr { F } } ( P ^ { \bullet } ) } ^ { \bullet } ) \cong H ^ { i } ( { \mathscr { F } } ( P ^ { \bullet } ) ) \cong { \mathscr { F } } ( H ^ { i } ( P ^ { \bullet } ) ) = 0
 $$
 
-对于 $i \neq 0$。因此 $\mathsf { L } \mathcal { F } ( P ^ { \bullet } )$ 是 $\hat { \sf B }$ 的一个对象。
+对于 $i \neq 0$。因此 $\mathsf { L } \mathscr { F } ( P ^ { \bullet } )$ 是 $\hat { \sf B }$ 的一个对象。
 
-我们也看到在这种情况下 $H ^ { 0 } ( [ \mathcal { F } ( P ^ { \bullet } ) ) \cong \mathcal { F } ( H ^ { 0 } ( P ^ { \bullet } ) )$：这表明，如果 $\mathcal { F }$ 是正合的，那么 $\mathsf { L } \mathcal { F}$ 在 $\hat { \mathsf { A } } \to \hat { \mathsf { B } }$ 上的限制与 $\mathcal { F }$ 在 $\mathsf { A}$ ， 或，$\textsf { B}$ ，和 $\hat { \mathsf A}$ ， 或，$\hat { \sf B}$ 之间的范畴等价下是一致的。L
+我们也看到在这种情况下 $H ^ { 0 } ( [ \mathscr { F } ( P ^ { \bullet } ) ) \cong \mathscr { F } ( H ^ { 0 } ( P ^ { \bullet } ) )$：这表明，如果 $\mathscr { F }$ 是正合的，那么 $\mathsf { L } \mathcal { F}$ 在 $\hat { \mathsf { A } } \to \hat { \mathsf { B } }$ 上的限制与 $\mathscr { F }$ 在 $\mathsf { A}$ ， 或，$\textsf { B}$ ，和 $\hat { \mathsf A}$ ， 或，$\hat { \sf B}$ 之间的范畴等价下是一致的。L
 
 示例 7.2 的道德寓意是，推导正合的函子相对简单，我们无法期望通过推导正合函子来学习任何新的东西。我们将主要关注推导那些表面上不精确但保留了一定程度正合性的函子。
 
 另一个可能看起来有希望的图表是
 
 $$
-\begin{array} { r } { { \mathsf { K } } ^ { - } ( { \mathsf { A } } ) \xrightarrow { { \mathsf { K } } ( \mathcal { F } ) } { \mathsf { K } } ^ { - } ( { \mathsf { B } } ) } \\ { \mathcal { P } _ { \mathsf { A } } \Bigg \downarrow \qquad { \begin{array} { l } { \mathrm { ? ? } } \\ { \mathrm { ? ? } } \end{array} } } \\ { { \mathsf { K } } ^ { - } ( { \mathsf { P } } ( { \mathsf { A } } ) ) \xrightarrow [ { \mathsf { L } } ] { } { \mathsf { K } } ^ { - } ( { \mathsf { P } } ( { \mathsf { B } } ) ) } \end{array}
+\begin{array} { r } { { \mathsf { K } } ^ { - } ( { \mathsf { A } } ) \xrightarrow { { \mathsf { K } } ( \mathscr { F } ) } { \mathsf { K } } ^ { - } ( { \mathsf { B } } ) } \\ { \mathcal { P } _ { \mathsf { A } } \Bigg \downarrow \qquad { \begin{array} { l } { \mathrm { ? ? } } \\ { \mathrm { ? ? } } \end{array} } } \\ { { \mathsf { K } } ^ { - } ( { \mathsf { P } } ( { \mathsf { A } } ) ) \xrightarrow [ { \mathsf { L } } ] { } { \mathsf { K } } ^ { - } ( { \mathsf { P } } ( { \mathsf { B } } ) ) } \end{array}
 $$
 
 这也不能期望其交换。注意，由于这里出现的许多函子仅在同构的意义下定义，我们所能期望的最好情况是这张图在同构的意义下交换：也就是说，理论上可能存在一个自然同构
 
 $$
-\mathsf { L } \mathcal { F } \circ \mathcal { P } _ { \mathsf { A } } \stackrel { \sim } { \sim } \mathcal { P } _ { \mathsf { B } } \circ \mathsf { K } ( \mathcal { F } ) .
+\mathsf { L } \mathscr { F } \circ \mathcal { P } _ { \mathsf { A } } \stackrel { \sim } { \sim } \mathcal { P } _ { \mathsf { B } } \circ \mathsf { K } ( \mathscr { F } ) .
 $$
 
-嗯，一般来说没有（练习7.3）。那么$\mathsf { L } \mathcal { F }$有什么用呢？
+嗯，一般来说没有（练习7.3）。那么$\mathsf { L } \mathscr { F }$有什么用呢？
 
 命题 7.3. 左导出函子 $\mathsf { L } \mathscr { F }$ 满足以下泛性质：
 
@@ -24090,7 +24102,7 @@ $$
 
 使得对于每一个函子 $\mathscr { G } : \mathsf { K } ^ { - } ( \mathsf { P } ( \mathsf { A } ) )  \mathsf { K } ^ { - } ( \mathsf { P } ( \mathsf { B } ) )$ 和每一个自然变换 $\gamma : \mathscr { G } \circ \mathscr { P } _ { \mathsf { A } } \sim \mathscr { P } _ { \mathsf { B } } \circ \mathsf { K } ( \mathscr { F } )$ ，存在一个 _唯一_（自然同构意义下）_的自然变换_ $\mathscr { G } \leadsto \mathsf { L } \mathscr { F }$  诱导出一个 $\gamma$ 的分解 如下：$\mathscr { G } \circ \mathscr { P } _ { \mathsf { A } } \leadsto \mathsf { L } \mathscr { F } \circ \mathscr { P } _ { \mathsf { A } } \stackrel{\eta}{\rightsquigarrow}  \mathscr { P } _ { \mathsf { B } } \circ \mathsf { K } ( \mathscr { F } )$ 。
 
-因此，请原谅我们糟糕的图表，因为它正在尽力使其可交换，而除了 $\mathsf { L } \mathcal { F }$ 之外选择任何其他底部一侧都会使其更不可交换。
+因此，请原谅我们糟糕的图表，因为它正在尽力使其可交换，而除了 $\mathsf { L } \mathscr { F }$ 之外选择任何其他底部一侧都会使其更不可交换。
 
 **证明.** 如果我们做了作业（特别是练习 6.4），那么我们已经定义了一个特定的自然变换 $\mathscr{J}_{\mathsf{A}} \circ \mathscr{P}_{\mathsf{A}} \leadsto \mathsf{id}_{\mathsf{K}^{-}(\mathsf{A})}$；在左边与 $\mathscr{P}_{\mathsf{B}} \circ \mathsf{K}(\mathscr{F})$ 复合，定义了一个所述的变换 $\eta$，因为根据定义 $\mathsf{L}\mathscr{F} = \mathscr{P}_{\mathsf{B}} \circ \mathsf{K}(\mathscr{F}) \circ \mathscr{J}_{\mathsf{A}}$。具体来说，对每个 $L^\bullet$，$\eta_{L^\bullet} : \mathsf{L}\mathscr{F} \circ \mathscr{P}_{\mathsf{A}}(L^\bullet) = \mathscr{P}_{\mathsf{B}} \circ \mathsf{K}(\mathscr{F})(\mathscr{P}_{\mathsf{A}}(L^\bullet)) \rightarrow \mathscr{P}_{\mathsf{B}} \circ \mathsf{K}(\mathscr{F})(L^\bullet)$ 是由与所选的射影分解相关联的态射 $\mathscr{P}_{\mathsf{A}}(L^\bullet) \rightarrow L^\bullet$ 所导出的态射。
 
@@ -24107,61 +24119,61 @@ $$
 
 读者应该构想出右导出函子所满足的泛性质。在这种情况下，毫不奇怪，所有自然变换都“向回走”。
 
-备注 7.4. 事实是存在一个自然变换 ${ \mathscr { J } } \circ { \mathscr { P } } \leadsto$ id（练习 6.4），用于命题 7.3 的证明，有另一个有趣的推论。设 A、B、$\mathsf { C }$ 是阿贝尔范畴，并且 $\mathscr { F } : \mathsf { A } \to \mathsf { B }$ ，$\mathscr { G } : \mathsf { B } \to \mathsf { C }$ 是加性函子。假设 B 和 C 有足够的投射，因此导出函子 $\mathsf { L } \mathcal { F }$ 和 $\mathsf { L } \mathcal { G }$ 被定义，以及导出函子 $\mathsf { L } ( \mathcal G \circ \mathcal F )$ 。那么存在一个自然变换
+备注 7.4. 事实是存在一个自然变换 ${ \mathscr { J } } \circ { \mathscr { P } } \leadsto$ id（练习 6.4），用于命题 7.3 的证明，有另一个有趣的推论。设 A、B、$\mathsf { C }$ 是阿贝尔范畴，并且 $\mathscr { F } : \mathsf { A } \to \mathsf { B }$ ，$\mathscr { G } : \mathsf { B } \to \mathsf { C }$ 是加性函子。假设 B 和 C 有足够的投射，因此导出函子 $\mathsf { L } \mathscr { F }$ 和 $\mathsf { L } \mathscr { G }$ 被定义，以及导出函子 $\mathsf { L } ( \mathcal G \circ \mathcal F )$ 。那么存在一个自然变换
 
 $$
-\mathsf { L } \mathcal { G } \circ \mathsf { L } \mathcal { F } \sim \mathsf { L } ( \mathcal { G } \circ \mathcal { F } ) .
+\mathsf { L } \mathscr { G } \circ \mathsf { L } \mathscr { F } \sim \mathsf { L } ( \mathscr { G } \circ \mathscr { F } ) .
 $$
 
-确实，在上述相同的符号风格中，$\mathsf { L } \mathcal { G } \circ \mathsf { L } \mathcal { F }$ 展开为
+确实，在上述相同的符号风格中，$\mathsf { L } \mathscr { G } \circ \mathsf { L } \mathscr { F }$ 展开为
 
 $$
-\begin{array} { r } { \mathcal { P } _ { \mathsf { C } } \circ \mathsf { K } ( \mathcal { G } ) \circ \mathcal { I } _ { \mathsf { B } } \circ \mathcal { P } _ { \mathsf { B } } \circ \mathsf { K } ( \mathcal { F } ) \circ \mathcal { I } _ { \mathsf { A } } , } \end{array}
+\begin{array} { r } { \mathcal { P } _ { \mathsf { C } } \circ \mathsf { K } ( \mathscr { G } ) \circ \mathcal { I } _ { \mathsf { B } } \circ \mathcal { P } _ { \mathsf { B } } \circ \mathsf { K } ( \mathscr { F } ) \circ \mathcal { I } _ { \mathsf { A } } , } \end{array}
 $$
 
 并且将 ${ \mathcal { I } } _ { \mathsf { B } } \circ { \mathcal { S } } _ { \mathsf { B } }$ 收缩到 id $\cdot \mathsf { K} ^ { - } \left( \mathsf { B } \right)$ 将其变为
 
 $$
-\mathcal { P } _ { \mathsf { C } } \circ \mathsf { K } ( \mathcal { G } ) \circ \mathsf { K } ( \mathcal { F } ) \circ \mathcal { I } _ { \mathsf { A } } = \mathsf { L } ( \mathcal { G } \circ \mathcal { F } ) .
+\mathcal { P } _ { \mathsf { C } } \circ \mathsf { K } ( \mathscr { G } ) \circ \mathsf { K } ( \mathscr { F } ) \circ \mathcal { I } _ { \mathsf { A } } = \mathsf { L } ( \mathscr { G } \circ \mathscr { F } ) .
 $$
 
-如果满足附加条件（例如，如果$\mathcal { F }$保持射影），那么这个自然变换是一个自然同构，因此在这种情况下$\mathsf { L }$“通过复合分配”（练习7.4）。
+如果满足附加条件（例如，如果$\mathscr { F }$保持射影），那么这个自然变换是一个自然同构，因此在这种情况下$\mathsf { L }$“通过复合分配”（练习7.4）。
 
-在章节的结尾，读者将从不同的角度再次审视 $\mathsf { L } \mathcal { G } \circ \mathsf { L } \mathcal { F}$ 和 $\mathsf { L } ( \mathcal G \circ \mathcal F )$ 之间的关系，使用谱序列（练习 8.8 和 9.10）。
+在章节的结尾，读者将从不同的角度再次审视 $\mathsf { L } \mathscr { G } \circ \mathsf { L } \mathcal { F}$ 和 $\mathsf { L } ( \mathcal G \circ \mathcal F )$ 之间的关系，使用谱序列（练习 8.8 和 9.10）。
 
 ### 7.3. 取上同调
 命题7.3的内容再次符合我们的主要策略：在从A到 $\mathsf { D } ^ { - }(A)$的转换中，左导出函子$\mathsf L \mathscr { F }$是那个尽可能保留“关于上界有界复形的上同调信息”的函子，在意义上，它是人们能够最接近于将$\mathscr { F } : \mathsf { A } \to \mathsf { B }$扩展为一个从$\mathsf { D } ^ { - } ( \mathsf { A } )$到$\mathsf { D } ^ { - } ( \mathsf { B } )$的函子的那个。
 
-应用上同调可以提取这些信息；实际上，在左侧求导时，如果使用同调而不是上同调，索引效果会更好。$\mathcal { F }$ 的第 $i$ 个左侧导出函子是函子 $\mathsf { L } _ { i } \mathcal { F } := H ^ { - i } \circ \mathsf { L } \mathcal { F }$。注意
+应用上同调可以提取这些信息；实际上，在左侧求导时，如果使用同调而不是上同调，索引效果会更好。$\mathscr { F }$ 的第 $i$ 个左侧导出函子是函子 $\mathsf { L } _ { i } \mathscr { F } := H ^ { - i } \circ \mathsf { L } \mathscr { F }$。注意
 
 $$
-\mathsf { L } _ { i } \mathscr { F } ( P ^ { \bullet } ) = H ^ { - i } ( \mathcal { P } _ { \mathsf { B } } ( \mathsf { C } ( \mathcal { F } ) ( P ^ { \bullet } ) ) ) \cong H ^ { - i } ( \mathsf { C } ( \mathcal { F } ) ( P ^ { \bullet } ) ) ,
+\mathsf { L } _ { i } \mathscr { F } ( P ^ { \bullet } ) = H ^ { - i } ( \mathcal { P } _ { \mathsf { B } } ( \mathsf { C } ( \mathscr { F } ) ( P ^ { \bullet } ) ) ) \cong H ^ { - i } ( \mathsf { C } ( \mathscr { F } ) ( P ^ { \bullet } ) ) ,
 $$
 
-由于 $\mathcal { P } _ { \mathsf { B } } ( \mathsf { C } ( \mathcal { F } ) ( P ^ { \bullet } ) )$ 与 $\mathsf C ( \mathcal F ) ( P ^ { \bullet } )$ 准同构。因此，如果我们只对上同调感兴趣，则无需找到 $\mathsf C ( \mathcal F ) ( P ^ { \bullet } )$ 的投射解析。 （特别是，即使 $\textsf { B }$ 没有足够的投射，我们也可以定义 $\mathsf { L } _ { i } \mathcal { F }$。）
+由于 $\mathcal { P } _ { \mathsf { B } } ( \mathsf { C } ( \mathscr { F } ) ( P ^ { \bullet } ) )$ 与 $\mathsf C ( \mathcal F ) ( P ^ { \bullet } )$ 准同构。因此，如果我们只对上同调感兴趣，则无需找到 $\mathsf C ( \mathcal F ) ( P ^ { \bullet } )$ 的投射解析。 （特别是，即使 $\textsf { B }$ 没有足够的投射，我们也可以定义 $\mathsf { L } _ { i } \mathscr { F }$。）
 
 此时我们可以脚踏实地，将每个 $\mathsf { L } _ { i } \mathcal { F}$ 定义为一个从 $\mathsf { A }$ 到 B 的函子：我们知道这是一个范围有些有限（因为 $\mathsf { L } _ { i } \mathcal { F}$ 可以在更微妙得多的 $\mathsf { D } ^ { - } ( \mathsf { A } )$ 上被正确定义），但它将是我们真正考虑的任何深度级别的唯一应用的来源，从历史上看，这也是导出函子最初产生的方式。
 
-定义 7.5. 设 A, $\textsf { B }$ 是阿贝尔范畴，并且假设 $\mathsf { A }$ 有足够的投射。设 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ 是一个加性函子。$\mathcal { F }$ 的第 $i$ 个左导出函子 $\mathsf { L } _ { i } \mathcal { F }$ 是由函子 $\mathsf { A } \to \mathsf { B }$ 给出的
+定义 7.5. 设 A, $\textsf { B }$ 是阿贝尔范畴，并且假设 $\mathsf { A }$ 有足够的投射。设 $\mathscr { F } : \mathsf { A } \to \mathsf { B }$ 是一个加性函子。$\mathscr { F }$ 的第 $i$ 个左导出函子 $\mathsf { L } _ { i } \mathscr { F }$ 是由函子 $\mathsf { A } \to \mathsf { B }$ 给出的
 
 $$
-\mathsf { L } _ { i } \mathcal { F } = H ^ { - i } \circ \mathsf { L } \mathcal { F } \circ \mathcal { P } _ { \mathsf { A } } \circ \iota _ { \mathsf { A } } .
+\mathsf { L } _ { i } \mathscr { F } = H ^ { - i } \circ \mathsf { L } \mathscr { F } \circ \mathcal { P } _ { \mathsf { A } } \circ \iota _ { \mathsf { A } } .
 $$
 
-对于一个在 $\mathsf { A }$ 中的对象 $M$ ，在 ${ \mathsf { C } } ( { \mathsf { B } } )$ 中的复形，其 $\mathsf { L } _ { i } \mathcal { F } ( M )$ 在 $- i$ 次度，并且具有消失的微分，记作 $\mathsf { L } _ { \bullet } \mathcal { F } ( M )$ 。
+对于一个在 $\mathsf { A }$ 中的对象 $M$ ，在 ${ \mathsf { C } } ( { \mathsf { B } } )$ 中的复形，其 $\mathsf { L } _ { i } \mathscr { F } ( M )$ 在 $- i$ 次度，并且具有消失的微分，记作 $\mathsf { L } _ { \bullet } \mathscr { F } ( M )$ 。
 
 让我们明确这一点。给定 $\mathsf{A}$ 的一个对象 $M$，$\mathsf{L}_i\mathcal{F}(M)$ 是通过找到 $M$ 的任意一个投射解析 $P_M^\bullet$，将算子 $\mathsf{C}(\mathcal{F})$ 应用于 $P_M^\bullet$ 以在 ${\mathsf{C}}({\mathsf{B}})$ 中得到一个复形，并取这个复形的 $(-i)$-次上同调31。在同构的意义下，结果不依赖于投射解析的选择：这一点从引导我们至此的概念路径中很明显，并且直接蕴含于
 
 • 命题 6.4，表明任意两个投影解析都是同伦等价的，与   
 • 定理 4.14，表明同伦等价复形的加性映射下的像是同构的 Cohomology。
 
-当然，我们可以类似地定义加性算子 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ 和复形 $\mathsf { R } ^ { \bullet } \mathcal { F } ( M )$ 的第 $i$ 个右导出算子 $\mathsf { R } ^ { i } \mathcal { F }$ ，前提是 $\mathsf { A}$ 有足够的单射：具体来说，$\mathsf { R } ^ { i } \mathcal { F } ( M )$ 是 $M$ 的单射解析像的层，即，
+当然，我们可以类似地定义加性算子 $\mathscr { F } : \mathsf { A } \to \mathsf { B }$ 和复形 $\mathsf { R } ^ { \bullet } \mathscr { F } ( M )$ 的第 $i$ 个右导出算子 $\mathsf { R } ^ { i } \mathscr { F }$ ，前提是 $\mathsf { A}$ 有足够的单射：具体来说，$\mathsf { R } ^ { i } \mathscr { F } ( M )$ 是 $M$ 的单射解析像的层，即，
 
 $$
 \mathsf { R } ^ { i } \mathscr { F } = H ^ { i } \circ \mathsf { R } \mathscr { F } \circ \mathscr { L } _ { \mathsf { A } } \circ \iota _ { \mathsf { A } } .
 $$
 
-到目前为止，我一直隐含地认为 $\mathcal { F }$ 是一个协变函子。反变函子 $\mathsf { A } \to \mathsf { B }$ 应该被视为协变函子 $\mathsf { A } ^ { o p } \to \mathsf { B }$（定义 VIII.1.1）；因此，单射和投影的角色应该互换。因此，如果 A 有足够的投影，加性反变函子 $\mathsf { A } \to \mathsf { B }$ 的右导出函子将被定义：$\mathsf { A } ^ { o p p }$ 然后将有足够的单射，如所需。
+到目前为止，我一直隐含地认为 $\mathscr { F }$ 是一个协变函子。反变函子 $\mathsf { A } \to \mathsf { B }$ 应该被视为协变函子 $\mathsf { A } ^ { o p } \to \mathsf { B }$（定义 VIII.1.1）；因此，单射和投影的角色应该互换。因此，如果 A 有足够的投影，加性反变函子 $\mathsf { A } \to \mathsf { B }$ 的右导出函子将被定义：$\mathsf { A } ^ { o p p }$ 然后将有足够的单射，如所需。
 
 细心的读者已经知道两类导出函子的例子，它们都定义自一个（交换的）环上的模范畴 $R$ -Mod 到自身。回想一下 $R$ -Mod 既有足够的投影也有足够的注入（如 $\mathrm { \ S V I I I . 6 . 2 }$ 和 $\mathrm { \ S V I I I . 6 . 3 }$ 所示）；因此每一个协变/反变函子 $R { \cdot } M { \circ } { \mathsf { d } } $ $R$ -Mod 都可以在左侧和右侧进行导出。
 
@@ -24335,15 +24347,15 @@ $$
 0 \longrightarrow L ^ { \bullet } \longrightarrow M ^ { \bullet } \longrightarrow P ^ { \bullet } \longrightarrow 0
 $$
 
-在 A 中是一个正合复形序列，其中 $P ^ { i }$ 对所有 $\textit { i }$ 都是投影的。设 $\mathcal { F } :$ $\mathsf { A } \to \mathsf { B }$ 是任意一个阿贝尔范畴的加性函子。那么，通过将 $\mathcal { F }$ 应用于 $( ^ { * }$ ) 得到的序列
+在 A 中是一个正合复形序列，其中 $P ^ { i }$ 对所有 $\textit { i }$ 都是投影的。设 $\mathscr { F } :$ $\mathsf { A } \to \mathsf { B }$ 是任意一个阿贝尔范畴的加性函子。那么，通过将 $\mathscr { F }$ 应用于 $( ^ { * }$ ) 得到的序列
 
 $$
-0 \longrightarrow { \mathcal { F } } ( L ^ { \bullet } ) \longrightarrow { \mathcal { F } } ( M ^ { \bullet } ) \longrightarrow { \mathcal { F } } ( P ^ { \bullet } ) \longrightarrow 0 \ ,
+0 \longrightarrow { \mathscr { F } } ( L ^ { \bullet } ) \longrightarrow { \mathscr { F } } ( M ^ { \bullet } ) \longrightarrow { \mathscr { F } } ( P ^ { \bullet } ) \longrightarrow 0 \ ,
 $$
 
 完全正确。
 
-请注意，我们并不是要求$\mathcal { F }$在任何意义上都是正合的。
+请注意，我们并不是要求$\mathscr { F }$在任何意义上都是正合的。
 
 证明。由于 $P ^ { i }$ 是投影的，序列
 
@@ -24354,14 +24366,14 @@ $$
 分割（参见§ VIII.6.1的末尾）。因此
 
 $$
-0 \longrightarrow \mathcal { F } ( L ^ { i } ) \longrightarrow \mathcal { F } ( M ^ { i } ) \longrightarrow \mathcal { F } ( P ^ { i } ) \longrightarrow 0
+0 \longrightarrow \mathscr { F } ( L ^ { i } ) \longrightarrow \mathscr { F } ( M ^ { i } ) \longrightarrow \mathscr { F } ( P ^ { i } ) \longrightarrow 0
 $$
 
 对于所有 $i$ 是（拆分和）正合的（练习 5.11）。复形序列的正合性由每个度的正合性决定，因此这证明了该命题。
 
 现在，左导出函子的长正合列是长正合同调序列的直接推论。
 
-定理 7.12. 设 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ 是阿贝尔范畴中的一个加性函子，并且假设 A 有足够的投射。每一个正合列
+定理 7.12. 设 $\mathscr { F } : \mathsf { A } \to \mathsf { B }$ 是阿贝尔范畴中的一个加性函子，并且假设 A 有足够的投射。每一个正合列
 
 $$
 0 \longrightarrow L \longrightarrow M \longrightarrow N \longrightarrow 0
@@ -24386,10 +24398,10 @@ $$
 根据引理7.11，相应的序列
 
 $$
-0 \longrightarrow \mathcal { F } ( P _ { L } ^ { \bullet } ) \longrightarrow \mathcal { F } ( P _ { M } ^ { \bullet } ) \longrightarrow \mathcal { F } ( P _ { N } ^ { \bullet } ) \longrightarrow 0
+0 \longrightarrow \mathscr { F } ( P _ { L } ^ { \bullet } ) \longrightarrow \mathscr { F } ( P _ { M } ^ { \bullet } ) \longrightarrow \mathscr { F } ( P _ { N } ^ { \bullet } ) \longrightarrow 0
 $$
 
-在${ \mathsf { C } } ( { \mathsf { B } } )$中是正合的。因为这些复形的同调对象恰好是$\mathcal { F }$的左导出函子，由这个序列（根据定理3.5）确定的长的同调序列给出了如所述的长序列。$\square$
+在${ \mathsf { C } } ( { \mathsf { B } } )$中是正合的。因为这些复形的同调对象恰好是$\mathscr { F }$的左导出函子，由这个序列（根据定理3.5）确定的长的同调序列给出了如所述的长序列。$\square$
 
 再次以§3.4的风格，定理7.12告诉我们这个三角形
 
@@ -24407,12 +24419,12 @@ $$
 
 现在顶点是 ${ \mathsf { C } } ^ { \geq 0 } ( { \mathsf { B } } )$ 中的复数。
 
-### 7.5. 关于 $\mathcal { F }$ 、$\mathsf { L } _ { i } \mathcal { F }$ 、$\mathsf { R } ^ { \imath } \mathcal { F }$ 的关系
+### 7.5. 关于 $\mathscr { F }$ 、$\mathsf { L } _ { i } \mathscr { F }$ 、$\mathsf { R } ^ { \imath } \mathscr { F }$ 的关系
 读者可能已经注意到，通过向左推导得到了 Tor，而通过向右推导得到了 Ext。这种不对称性要求这种选择的原因在于 $\otimes$ 是右正合的，而 Hom 是左正合的：任何加性函子可以向左或向右推导（在有足够多的投射对象（分别地，有足够多的注入对象）的情况下），并且推导出的函子将适合在长正合列中，如定理 7.12 所证明的那样；但是只有满足一定正合度测度的函子才能直接从它们的推导版本中恢复。
 
-为了更精确地陈述这一事实，我们回到加性映射 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ 的左导出算子的普遍考虑，其中 $\mathsf { A }$ 和 $\textsf { B }$ 是阿贝尔范畴，并且 $\mathsf { A }$ 具有足够多的投射，我们现在假设 $\mathcal { F }$ 是右正合的。
+为了更精确地陈述这一事实，我们回到加性映射 $\mathscr { F } : \mathsf { A } \to \mathsf { B }$ 的左导出算子的普遍考虑，其中 $\mathsf { A }$ 和 $\textsf { B }$ 是阿贝尔范畴，并且 $\mathsf { A }$ 具有足够多的投射，我们现在假设 $\mathscr { F }$ 是右正合的。
 
-命题 7.13. 设 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ 是一个右正合的加性函子。那么 $\mathsf { L } _ { i } \mathcal { F } =$ $0$ 对于 $i < 0$ ，并且 $\mathsf { L } _ { 0 } \mathcal { F }$ 自然同构于 $\mathcal { F }$ 。
+命题 7.13. 设 $\mathscr { F } : \mathsf { A } \to \mathsf { B }$ 是一个右正合的加性函子。那么 $\mathsf { L } _ { i } \mathscr { F } =$ $0$ 对于 $i < 0$ ，并且 $\mathsf { L } _ { 0 } \mathscr { F }$ 自然同构于 $\mathscr { F }$ 。
 
 证明。对象 $M$ 的射影解析 $P ^ { \bullet }$ 属于 ${ \mathsf C } ^ { \le 0 } ( { \mathsf A } )$ ：因此 $\mathsf C ( \mathcal F ) ( P ^ { \bullet } )$ 在正度数为 $0$，因此它的同调也是 $0$。由于 $H _ { i } = H ^ { - i }$（参见 3.1），第一个断言成立。
 
@@ -24422,65 +24434,65 @@ $$
 P ^ { - 1 } \longrightarrow P ^ { 0 } \longrightarrow M \longrightarrow 0
 $$
 
-是构造上正合的，并且由于 $\mathcal { F }$ 是右正合的，序列
+是构造上正合的，并且由于 $\mathscr { F }$ 是右正合的，序列
 
 $$
-\mathcal { F } ( P ^ { - 1 } ) \longrightarrow \mathcal { F } ( P ^ { 0 } ) \longrightarrow \mathcal { F } ( M ) \longrightarrow 0
+\mathscr { F } ( P ^ { - 1 } ) \longrightarrow \mathscr { F } ( P ^ { 0 } ) \longrightarrow \mathscr { F } ( M ) \longrightarrow 0
 $$
 
-完全正确。这诱导了一个同构 $\nu _ { L } : \mathsf { L } _ { 0 } { \mathcal { F } } ( M ) = H ^ { 0 } ( \mathsf { C } ( { \mathcal { F } } ) ( P ^ { \bullet } ) ) \ { \overset { \sim } { \to } } \ { \mathcal { F } } ( M )$ 。如果 $\varphi : M _ { 0 } \to M _ { 1 }$ 是 $\mathsf { A }$ 中的一个态射，根据命题 6.5，存在一个投射解态射 $\alpha ^ { \bullet } : \mathcal { P } _ { 0 } ^ { \bullet }  \mathcal { P } _ { 1 } ^ { \bullet }$ 诱导 $\varphi$ ：有一个交换图
+完全正确。这诱导了一个同构 $\nu _ { L } : \mathsf { L } _ { 0 } { \mathscr { F } } ( M ) = H ^ { 0 } ( \mathsf { C } ( { \mathscr { F } } ) ( P ^ { \bullet } ) ) \ { \overset { \sim } { \to } } \ { \mathscr { F } } ( M )$ 。如果 $\varphi : M _ { 0 } \to M _ { 1 }$ 是 $\mathsf { A }$ 中的一个态射，根据命题 6.5，存在一个投射解态射 $\alpha ^ { \bullet } : \mathcal { P } _ { 0 } ^ { \bullet }  \mathcal { P } _ { 1 } ^ { \bullet }$ 诱导 $\varphi$ ：有一个交换图
 
 $$
 \begin{array} { l l l } { { \dots { \longleftrightarrow } } } & { { \longrightarrow P _ { 0 } ^ { - 1 } \longrightarrow { \cal P } _ { 0 } ^ { 0 } \longrightarrow { \cal M } _ { 0 } \longrightarrow 0 } } \\ { { } } & { { \nonumber } } \\ { { \qquad \dots { \longleftrightarrow } } } & { { \nonumber } } \\ { { \dots { \longleftrightarrow } } } & { { \longrightarrow P _ { 1 } ^ { - 1 } \longrightarrow { \cal P } _ { 0 } ^ { 0 } { \longrightarrow } { \cal M } _ { 1 } { \longrightarrow } 0 } } \end{array}
 $$
 
-并且 $H ^ { 0 } ( \alpha ^ { \bullet } )$ 与 $\varphi$ 一致。应用 $\mathcal { F }$ 并截断，我们得到一个交换图
+并且 $H ^ { 0 } ( \alpha ^ { \bullet } )$ 与 $\varphi$ 一致。应用 $\mathscr { F }$ 并截断，我们得到一个交换图
 
 $$
-\begin{array} { r l r } { \mathcal { F } ( P _ { 0 } ^ { - 1 } ) \longrightarrow \mathcal { F } ( P _ { 0 } ^ { 0 } ) \longrightarrow \mathcal { F } ( M _ { 0 } ) \longrightarrow 0 } & { { } } & { } \\ { \mathcal { F } ( \alpha ^ { - 1 } ) \Bigg \downarrow \qquad } & { { } \mathcal { F } ( \alpha ^ { 0 } ) \Bigg \downarrow \qquad } & { { } \Bigg \downarrow \mathcal { F } ( \varphi ) } \\ { \mathcal { F } ( P _ { 1 } ^ { - 1 } ) \longrightarrow \mathcal { F } ( P _ { 1 } ^ { 0 } ) \longrightarrow \mathcal { F } ( M _ { 1 } ) \longrightarrow 0 } & { { } } & { } \end{array}
+\begin{array} { r l r } { \mathscr { F } ( P _ { 0 } ^ { - 1 } ) \longrightarrow \mathscr { F } ( P _ { 0 } ^ { 0 } ) \longrightarrow \mathscr { F } ( M _ { 0 } ) \longrightarrow 0 } & { { } } & { } \\ { \mathscr { F } ( \alpha ^ { - 1 } ) \Bigg \downarrow \qquad } & { { } \mathscr { F } ( \alpha ^ { 0 } ) \Bigg \downarrow \qquad } & { { } \Bigg \downarrow \mathscr { F } ( \varphi ) } \\ { \mathscr { F } ( P _ { 1 } ^ { - 1 } ) \longrightarrow \mathscr { F } ( P _ { 1 } ^ { 0 } ) \longrightarrow \mathscr { F } ( M _ { 1 } ) \longrightarrow 0 } & { { } } & { } \end{array}
 $$
 
-由于 $\mathcal { F }$ 是右确的，因此具有正合行。由此可见，图
+由于 $\mathscr { F }$ 是右确的，因此具有正合行。由此可见，图
 
 $$
-\begin{array} { r l r } & { \mathsf { L _ { 0 } } \mathcal { F } ( M _ { 0 } ) \xrightarrow { \mathsf { L _ { 0 } } \mathcal { F } ( \varphi ) } } & { \mathsf { L _ { 0 } } \mathcal { F } ( M _ { 1 } ) } \\ & { \nu _ { M _ { 0 } } \bigg \downarrow \imath } & { \imath \underbrace { \nu _ { M _ { 1 } } } _ { \mathcal { F } ( M _ { 0 } ) } } & { \imath \underbrace { \nu _ { M _ { 1 } } } _ { \mathcal { F } ( M _ { 1 } ) } } \\ & { \mathcal { F } ( M _ { 0 } ) \xrightarrow { \mathcal { F } ( \varphi ) } } & { \mathcal { F } ( M _ { 1 } ) } \end{array}
+\begin{array} { r l r } & { \mathsf { L _ { 0 } } \mathscr { F } ( M _ { 0 } ) \xrightarrow { \mathsf { L _ { 0 } } \mathscr { F } ( \varphi ) } } & { \mathsf { L _ { 0 } } \mathscr { F } ( M _ { 1 } ) } \\ & { \nu _ { M _ { 0 } } \bigg \downarrow \imath } & { \imath \underbrace { \nu _ { M _ { 1 } } } _ { \mathscr { F } ( M _ { 0 } ) } } & { \imath \underbrace { \nu _ { M _ { 1 } } } _ { \mathscr { F } ( M _ { 1 } ) } } \\ & { \mathscr { F } ( M _ { 0 } ) \xrightarrow { \mathscr { F } ( \varphi ) } } & { \mathscr { F } ( M _ { 1 } ) } \end{array}
 $$
 
-交换，证明 $\nu : \mathsf { L } _ { 0 } \mathcal { F } \to \mathcal { F }$ 是一个自然同构。
+交换，证明 $\nu : \mathsf { L } _ { 0 } \mathscr { F } \to \mathscr { F }$ 是一个自然同构。
 
-回顾定理7.12，我们看到如果$\mathcal { F }$是右正合的，那么$\mathcal { F }$的左导出函子的长正合列的尾部由$\mathcal { F }$自身的应用组成。因此，这种情况如下：从一个短正合列开始
+回顾定理7.12，我们看到如果$\mathscr { F }$是右正合的，那么$\mathscr { F }$的左导出函子的长正合列的尾部由$\mathscr { F }$自身的应用组成。因此，这种情况如下：从一个短正合列开始
 
 $$
 0 \longrightarrow L \longrightarrow M \longrightarrow N \longrightarrow 0
 $$
 
-在 $\mathsf { A }$ 中，我们应用 $\mathcal { F }$ 得到一个正合列
+在 $\mathsf { A }$ 中，我们应用 $\mathscr { F }$ 得到一个正合列
 
 $$
-\mathcal { F } ( L ) \longrightarrow \mathcal { F } ( M ) \longrightarrow \mathcal { F } ( N ) \longrightarrow 0
+\mathscr { F } ( L ) \longrightarrow \mathscr { F } ( M ) \longrightarrow \mathscr { F } ( N ) \longrightarrow 0
 $$
 
 在我们丢失了“左边的$0$”的情况下，长正合列挽救了局面，将新序列继续到一个正合的复形中：
 
 $$
-\begin{array} { r } { \begin{array} { r c l } { \cdots } & { \longrightarrow \mathsf { L } _ { 2 } \mathcal { F } ( L ) \longrightarrow \mathsf { L } _ { 2 } \mathcal { F } ( M ) \longrightarrow \mathsf { L } _ { 2 } \mathcal { F } ( N ) } \\ & { \longleftrightarrow \underbrace { \mathsf { \Lambda } _ { 1 2 } } _ { \begin{array} { c } { \ddots \mathsf { L } _ { 1 } \mathcal { F } ( L ) \longrightarrow \mathsf { L } _ { 1 } \mathcal { F } ( M ) \longrightarrow \mathsf { L } _ { 1 } \mathcal { F } ( N ) } \\ { \diamond } \\ { \diamond } \end{array} } } & { \delta _ { 1 } \xrightarrow [ ] { } \mathcal { F } ( M ) \longrightarrow \mathsf { L } _ { 2 } \mathcal { F } ( N ) } \end{array} } \\ & { \longleftrightarrow \mathcal { F } ( L ) \longrightarrow \mathcal { F } ( M ) \longrightarrow \mathcal { F } ( N ) \longrightarrow 0 } \end{array}
+\begin{array} { r } { \begin{array} { r c l } { \cdots } & { \longrightarrow \mathsf { L } _ { 2 } \mathscr { F } ( L ) \longrightarrow \mathsf { L } _ { 2 } \mathscr { F } ( M ) \longrightarrow \mathsf { L } _ { 2 } \mathscr { F } ( N ) } \\ & { \longleftrightarrow \underbrace { \mathsf { \Lambda } _ { 1 2 } } _ { \begin{array} { c } { \ddots \mathsf { L } _ { 1 } \mathscr { F } ( L ) \longrightarrow \mathsf { L } _ { 1 } \mathscr { F } ( M ) \longrightarrow \mathsf { L } _ { 1 } \mathscr { F } ( N ) } \\ { \diamond } \\ { \diamond } \end{array} } } & { \delta _ { 1 } \xrightarrow [ ] { } \mathscr { F } ( M ) \longrightarrow \mathsf { L } _ { 2 } \mathscr { F } ( N ) } \end{array} } \\ & { \longleftrightarrow \mathscr { F } ( L ) \longrightarrow \mathscr { F } ( M ) \longrightarrow \mathscr { F } ( N ) \longrightarrow 0 } \end{array}
 $$
 
-也就是说，$\mathsf { L } _ { 1 } \mathcal { F }$ 衡量了 $\mathcal { F }$ 未能左确切的程度，而更高的 $\mathsf { L } _ { i } \mathcal {F }$ 则提供了对此失败的进一步衡量。
+也就是说，$\mathsf { L } _ { 1 } \mathscr { F }$ 衡量了 $\mathscr { F }$ 未能左确切的程度，而更高的 $\mathsf { L } _ { i } \mathcal {F }$ 则提供了对此失败的进一步衡量。
 
-同样地，如果 $\mathcal { F }$ 是左正合的，$\mathsf { R } ^ { 0 } \mathcal { F }$ 自然同构于 $\mathcal { F }$。在这种情况下，将 $\mathcal { F }$ 应用于原始序列得到正合列
-
-$$
-0 \longrightarrow \mathcal { F } ( L ) \longrightarrow \mathcal { F } ( M ) \longrightarrow \mathcal { F } ( N )
-$$
-
-我们在右侧丢失了$0$；$\mathcal { F }$的右侧导出函子的作用是将这个序列扩展为一个正合的复形
+同样地，如果 $\mathscr { F }$ 是左正合的，$\mathsf { R } ^ { 0 } \mathscr { F }$ 自然同构于 $\mathscr { F }$。在这种情况下，将 $\mathscr { F }$ 应用于原始序列得到正合列
 
 $$
-\begin{array} { r l } { 0 \xrightarrow [ \ddots ] { } \mathcal { F } ( L ) \xrightarrow [ \ddots ] { } \mathcal { F } ( M ) \xrightarrow [ \ddots ] { } \mathcal { F } ( N ) } \\ { \Bigg ( } & { \Bigg . } \\ & { \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . } \\ & { \Bigg ( \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . } \\ & { \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . \Bigg \Bigg . \Bigg . \Bigg \Bigg . \Bigg . \Bigg \Bigg . \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg . } \\ & { \Bigg . \Bigg . \Bigg . \Bigg \Bigg . \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . } \\ & { \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg \beta _ { 2 } \mathcal { F } ( M ) \Bigg . \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . } \end{array}
+0 \longrightarrow \mathscr { F } ( L ) \longrightarrow \mathscr { F } ( M ) \longrightarrow \mathscr { F } ( N )
 $$
 
-如果 $\mathcal { F }$ 不满足某些正合性性质，则不应期望 $\mathcal { F }$ 与其任何导出函子之间存在识别。如果 $\mathcal { F }$ 在直观上是正合的，那么 $\mathsf { L } _ { 0 } \mathcal { F }$ 和 $\mathsf { R } ^ { 0 } \mathcal { F }$ 都与 $\mathcal { F }$ 一致（直到自然同构）；但这并不是什么大不了的兴奋，因为在这种情况下，所有其他的 $\mathsf { L } _ { i } \mathcal { F }$ ，$\mathsf { R } ^ { \imath } \mathcal { F }$ 都消失（练习 7.8）。正如在示例 7.2 中已经指出的那样，通过导出正合函子不应期望学到任何新东西。
+我们在右侧丢失了$0$；$\mathscr { F }$的右侧导出函子的作用是将这个序列扩展为一个正合的复形
+
+$$
+\begin{array} { r l } { 0 \xrightarrow [ \ddots ] { } \mathscr { F } ( L ) \xrightarrow [ \ddots ] { } \mathscr { F } ( M ) \xrightarrow [ \ddots ] { } \mathscr { F } ( N ) } \\ { \Bigg ( } & { \Bigg . } \\ & { \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . } \\ & { \Bigg ( \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . } \\ & { \Bigg . \Bigg . \Bigg . \Bigg . \Bigg . \Bigg \Bigg . \Bigg . \Bigg \Bigg . \Bigg . \Bigg \Bigg . \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg . } \\ & { \Bigg . \Bigg . \Bigg . \Bigg \Bigg . \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . } \\ & { \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg \beta _ { 2 } \mathscr { F } ( M ) \Bigg . \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . \Bigg \Bigg . } \end{array}
+$$
+
+如果 $\mathscr { F }$ 不满足某些正合性性质，则不应期望 $\mathscr { F }$ 与其任何导出函子之间存在识别。如果 $\mathscr { F }$ 在直观上是正合的，那么 $\mathsf { L } _ { 0 } \mathscr { F }$ 和 $\mathsf { R } ^ { 0 } \mathscr { F }$ 都与 $\mathscr { F }$ 一致（直到自然同构）；但这并不是什么大不了的兴奋，因为在这种情况下，所有其他的 $\mathsf { L } _ { i } \mathscr { F }$ ，$\mathsf { R } ^ { \imath } \mathscr { F }$ 都消失（练习 7.8）。正如在示例 7.2 中已经指出的那样，通过导出正合函子不应期望学到任何新东西。
 
 ### 7.6. 示例：群上同调
 在本章的开头，我指出同调代数的开发策略具有广泛的应用，并提到了群同调和层同调作为例子。这里简单介绍一下群上同调（层上同调会使我们离题太远）。
@@ -24525,10 +24537,10 @@ $$
 
 并且对于所有 $i < 0$ 和 $i \geq 2$ ，$H ^ { i } ( \mathbb { Z } , M ) = 0$ 。
 
-示例 7.15（有限循环群）。设 $G = C _ { m }$ 是一个阶为 $m$ 的循环群；那么 $\mathbb { Z } [ G ] \cong \mathbb { Z } [x] / ( x ^ { m } - 1 )$ 。再次不难在 $\mathbb { Z } [ C _ { m } ]$ -模的范畴中构造出 $\mathbb { Z }$（平凡作用）的一个投影解析：令 $N = 1 + x + \cdot \cdot \cdot + x ^ { m - 1 } = ( 1 - x ^ { m } ) / ( 1 - x )$ ，读者将验证这个复形
+示例 7.15（有限循环群）。设 $G = C _ { m }$ 是一个阶为 $m$ 的循环群；那么 $\mathbb { Z } [ G ] \cong \mathbb { Z } [x] / ( x ^ { m } - 1 )$ 。再次不难在 $\mathbb { Z } [ C _ { m } ]$ -模的范畴中构造出 $\mathbb { Z }$（平凡作用）的一个投影解析：令 $N = 1 + x + \cdots + x ^ { m - 1 } = ( 1 - x ^ { m } ) / ( 1 - x )$ ，读者将验证这个复形
 
 $$
-\cdots { \xrightarrow { \cdot \cdot \cdot \cdot \cdot \cdot \cdot \cdot \cdot \mathbb { N } _ { - } } } \mathbb { Z } [ C _ { m } ] { \xrightarrow { \cdot ( 1 - x ) } } \mathbb { Z } [ C _ { m } ] { \xrightarrow { \cdot \cdot \cdot } } \mathbb { Z } [ C _ { m } ] { \xrightarrow { \cdot ( 1 - x ) } } \mathbb { Z } [ C _ { m } ] { \xrightarrow { \cdot ( 1 - x ) } } \mathbb { Z } [ C _ { m } ] \longrightarrow 0 { \xrightarrow { \cdot \cdot \cdot \cdot } } .
+\cdots { \xrightarrow { \cdots \cdots \cdots \mathbb { N } _ { - } } } \mathbb { Z } [ C _ { m } ] { \xrightarrow { \cdot ( 1 - x ) } } \mathbb { Z } [ C _ { m } ] { \xrightarrow { \cdots } } \mathbb { Z } [ C _ { m } ] { \xrightarrow { \cdot ( 1 - x ) } } \mathbb { Z } [ C _ { m } ] { \xrightarrow { \cdot ( 1 - x ) } } \mathbb { Z } [ C _ { m } ] \longrightarrow 0 { \xrightarrow { \cdots \cdot } } .
 $$
 
 同调群同构于$\mathbb{Z}$，集中在0度（即在上一个非零项上）。应用$\mathrm{Hom}_{\mathbb{Z}[C_m]}(\_ , M)$，我们得到复形
@@ -24635,33 +24647,33 @@ $$
 
 7.1. $\triangleright$ 设 $\mathcal { T } : \mathsf { A b } \to \mathsf { A b }$ 是通过与 $\mathbb { Z } / 2 \mathbb { Z }$ 张量积定义的加性函子：$\mathcal { T } ( A ) : = A \otimes _ { \mathbb { Z } } \mathbb { Z } / 2 \mathbb { Z }$ 。证明对于任何阿贝尔群 $P$，没有非平凡的投影阿贝尔群可以写成 $\mathcal { T } ( P )$ 的形式。[§7.1]
 
-7.2. 设 A, $\textsf { B }$ 是阿贝尔范畴，设 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ 是一个加性函子，设 $\mathsf { C } ( { \mathcal F } ) : \mathsf { C } ( \mathsf { A } ) \to \mathsf { C } ( \mathsf { B } )$ 是相应的复函子。如果 $\alpha ^ { \bullet } : L ^ { \bullet }  M ^ { \bullet }$ 是 ${ \mathsf { C } } ( { \mathsf { A } } )$ 中的一个态射，证明 $C ( \mathcal { F } )$ 将 $\alpha ^ { \bullet }$ 的映射锥映射到 $\mathsf C ( \mathcal F ) ( \alpha ^ { \bullet } )$ 的映射锥。
+7.2. 设 A, $\textsf { B }$ 是阿贝尔范畴，设 $\mathscr { F } : \mathsf { A } \to \mathsf { B }$ 是一个加性函子，设 $\mathsf { C } ( { \mathcal F } ) : \mathsf { C } ( \mathsf { A } ) \to \mathsf { C } ( \mathsf { B } )$ 是相应的复函子。如果 $\alpha ^ { \bullet } : L ^ { \bullet }  M ^ { \bullet }$ 是 ${ \mathsf { C } } ( { \mathsf { A } } )$ 中的一个态射，证明 $C ( \mathscr { F } )$ 将 $\alpha ^ { \bullet }$ 的映射锥映射到 $\mathsf C ( \mathcal F ) ( \alpha ^ { \bullet } )$ 的映射锥。
 
-7.3. $\triangleright$ 如命题7.3中的记号所示，证明自然变换 $\mathsf { L } \mathcal { F } \circ \mathcal { P } _ { \mathsf { A } } \\sim \mathcal { P } _ { \mathsf { B } } \circ \mathsf { K } ( \mathcal { F } )$ 不一定是同构。（提示：将例4.6中的拟同构视为 $\mathbb { Z }$ -Mod 中的投射解析，并取 $\mathcal { F } : \mathbb { Z } \mathrm { - M o d } \to ( \mathbb { Z } / 2 \mathbb { Z } )$ -Mod 为 $_ - \otimes \mathbb { z } \left( \mathbb { Z } / 2 \mathbb { Z } \right)$。）[§7.2]
+7.3. $\triangleright$ 如命题7.3中的记号所示，证明自然变换 $\mathsf { L } \mathscr { F } \circ \mathcal { P } _ { \mathsf { A } } \\sim \mathcal { P } _ { \mathsf { B } } \circ \mathsf { K } ( \mathscr { F } )$ 不一定是同构。（提示：将例4.6中的拟同构视为 $\mathbb { Z }$ -Mod 中的投射解析，并取 $\mathscr { F } : \mathbb { Z } \mathrm { - M o d } \to ( \mathbb { Z } / 2 \mathbb { Z } )$ -Mod 为 $_ - \otimes \mathbb { z } \left( \mathbb { Z } / 2 \mathbb { Z } \right)$。）[§7.2]
 
-7.4. $\triangleright$ (参见备注7.4。) 设A, $\textsf { B }$ , $\mathsf { C }$ 是阿贝尔范畴，并且$\mathcal { F } : \mathsf { A } \to \mathsf { B }$ , $\mathcal { G } : \mathsf { B } \to \mathsf { C }$ 是加性函子。假设A和$\textsf { B }$ 有足够多的投射对象，因此导出函子$\mathsf { L } \mathcal { F }$ 和$\mathsf { L } \mathcal { G }$ 有定义，以及导出函子$\mathsf { L } ( \mathcal G \circ \mathcal F )$ 。此外，假设$\mathcal { F }$ 将投射对象映射到投射对象。证明$\mathsf { L } \mathcal { G } \circ \mathsf { L } \mathcal { F }$ 和$\mathsf { L } ( \mathcal G \circ \mathcal F )$ 在自然意义下同构。[§7.2]
+7.4. $\triangleright$ (参见备注7.4。) 设A, $\textsf { B }$ , $\mathsf { C }$ 是阿贝尔范畴，并且$\mathscr { F } : \mathsf { A } \to \mathsf { B }$ , $\mathscr { G } : \mathsf { B } \to \mathsf { C }$ 是加性函子。假设A和$\textsf { B }$ 有足够多的投射对象，因此导出函子$\mathsf { L } \mathscr { F }$ 和$\mathsf { L } \mathscr { G }$ 有定义，以及导出函子$\mathsf { L } ( \mathcal G \circ \mathcal F )$ 。此外，假设$\mathscr { F }$ 将投射对象映射到投射对象。证明$\mathsf { L } \mathscr { G } \circ \mathsf { L } \mathscr { F }$ 和$\mathsf { L } ( \mathcal G \circ \mathcal F )$ 在自然意义下同构。[§7.2]
 
 7.5. $\triangleright$ 如引理 7.8 中的记号所示，证明存在一个同态映射 $\rho ^ { \bullet } :$ − → L M （提示：查看引理的证明；使用微分，使得同伦等价于映射锥 $P _ { L } ^ { i } \oplus P _ { N } ^ { i } \to P _ { L } ^ { \imath + 1 } \oplus P _ { N } ^ { \imath + 1 }$ $M C ( \rho ) ^ { \bullet }$ . 来定义同态映射 $P _ { N } ^ { i }  P _ { L } ^ { \imath + 1 }$ 。） [§7.5]
 
-7.6. $\neg$ 设 $\textsf { B }$ 、$\mathsf { C }$ 是阿贝尔范畴，并且假设 $\textsf { B }$ 有足够的投射对象，因此可以构造卡当-爱伦伯格解析，如推论7.9所述（另见注7.10）。设 $\mathcal { G } : \mathsf { B } \to \mathsf { C }$ 是一个加性函子，并且设 $M ^ { \bullet } : \cdots M ^ { - 2 } $ $M ^ { - 1 } \to M ^ { 0 } \to 0$ 是 $\textsf { B }$ 中的一个复形。设 $P _ { M ^ { \bullet } } ^ { \bullet } \cdot \cdot \cdot  P _ { M ^ { - 2 } } ^ { \bullet }  P _ { M ^ { - 1 } } ^ { \bullet }  P _ { M ^ { 0 } } ^ { \bullet }  0$ 是 $M ^ { \bullet }$ 的一个卡当-爱伦伯格解析。证明 $\mathcal { G }$ 将这个复形的同调同构地映射到复形 $\cdot \cdot \cdot  \mathcal { G } ( P _ { M ^ { - 2 } } ^ { \bullet } )$ $\mathcal { G } ( P _ { M ^ { - 1 } } ^ { \bullet } )  \mathcal { G } ( P _ { M ^ { 0 } } ^ { \bullet } )  0$ 的同调。（提示：如推论7.9的证明中的符号所示，对于所有的 $i$ 和 $j$，我们有正合列 $0  P _ { K ^ { i } } ^ { j }  P _ { M ^ { i } } ^ { j }  P _ { I ^ { i + 1 } } ^ { j }  0$ 和 $0 \to P _ { I ^ { i } } ^ { j } \to P _ { K ^ { i } } ^ { j } \to P _ { H ^ { i } } ^ { j } \to 0$ 。注意这些必然是可分裂的。）
+7.6. $\neg$ 设 $\textsf { B }$ 、$\mathsf { C }$ 是阿贝尔范畴，并且假设 $\textsf { B }$ 有足够的投射对象，因此可以构造卡当-爱伦伯格解析，如推论7.9所述（另见注7.10）。设 $\mathscr { G } : \mathsf { B } \to \mathsf { C }$ 是一个加性函子，并且设 $M ^ { \bullet } : \cdots M ^ { - 2 } $ $M ^ { - 1 } \to M ^ { 0 } \to 0$ 是 $\textsf { B }$ 中的一个复形。设 $P _ { M ^ { \bullet } } ^ { \bullet } \cdots  P _ { M ^ { - 2 } } ^ { \bullet }  P _ { M ^ { - 1 } } ^ { \bullet }  P _ { M ^ { 0 } } ^ { \bullet }  0$ 是 $M ^ { \bullet }$ 的一个卡当-爱伦伯格解析。证明 $\mathscr { G }$ 将这个复形的同调同构地映射到复形 $\cdots  \mathscr { G } ( P _ { M ^ { - 2 } } ^ { \bullet } )$ $\mathscr { G } ( P _ { M ^ { - 1 } } ^ { \bullet } )  \mathscr { G } ( P _ { M ^ { 0 } } ^ { \bullet } )  0$ 的同调。（提示：如推论7.9的证明中的符号所示，对于所有的 $i$ 和 $j$，我们有正合列 $0  P _ { K ^ { i } } ^ { j }  P _ { M ^ { i } } ^ { j }  P _ { I ^ { i + 1 } } ^ { j }  0$ 和 $0 \to P _ { I ^ { i } } ^ { j } \to P _ { K ^ { i } } ^ { j } \to P _ { H ^ { i } } ^ { j } \to 0$ 。注意这些必然是可分裂的。）
 
-从同调论的角度来看，$\mathcal { G } ( H ^ { q } ( P _ { M } ^ { \bullet } \bullet ) ) \cong H ^ { q } ( \mathcal { G } ( P _ { M } ^ { \bullet } \bullet ) )$ ，其中同调是对$M$-度的计算。同时请注意，根据构造，$H ^ { q } ( P _ { M } ^ { \bullet } . )$是$H ^ { q } ( M ^ { \bullet } )$的一个投射解析；参见注释7.10。这将作为通过谱序列比较两个算子复合的导出算子的一个组成部分；参见习题8.8和9.10。[9.10]
+从同调论的角度来看，$\mathscr { G } ( H ^ { q } ( P _ { M } ^ { \bullet } \bullet ) ) \cong H ^ { q } ( \mathscr { G } ( P _ { M } ^ { \bullet } \bullet ) )$ ，其中同调是对$M$-度的计算。同时请注意，根据构造，$H ^ { q } ( P _ { M } ^ { \bullet } . )$是$H ^ { q } ( M ^ { \bullet } )$的一个投射解析；参见注释7.10。这将作为通过谱序列比较两个算子复合的导出算子的一个组成部分；参见习题8.8和9.10。[9.10]
 
 7.7. $\triangleright$ 通过证明短正合列的 态射 引导出相应导出函子的长 正合列的 态射，来完成定理 7.12 的证明。[§7.4]
 
-7.8. $\triangleright$ 设 A, $\textsf { B }$ 是阿贝尔范畴，且 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ 是一个正合函子。假设 A 具有足够的投射对象和足够的注入对象，因此 $\mathsf { L } _ { i } \mathcal { F }$ 和 $\mathsf { R } ^ { \imath } \mathcal { F }$ 都有定义。证明当 $i \neq 0$ 时，$\mathsf { L } _ { i } \mathcal { F }$ 和 $\mathsf { R } ^ { \imath } \mathcal { F }$ 都是零函子。[§7.5]
+7.8. $\triangleright$ 设 A, $\textsf { B }$ 是阿贝尔范畴，且 $\mathscr { F } : \mathsf { A } \to \mathsf { B }$ 是一个正合函子。假设 A 具有足够的投射对象和足够的注入对象，因此 $\mathsf { L } _ { i } \mathscr { F }$ 和 $\mathsf { R } ^ { \imath } \mathscr { F }$ 都有定义。证明当 $i \neq 0$ 时，$\mathsf { L } _ { i } \mathscr { F }$ 和 $\mathsf { R } ^ { \imath } \mathscr { F }$ 都是零函子。[§7.5]
 
-7.9. $\triangleright$ 设 A, $\textsf { B }$ 是阿贝尔范畴，并且 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ 是一个加性函子。假设 A 有足够多的投射对象，使得 $\mathsf { L } _ { i } \mathcal { F }$ 有定义。证明如果 $P$ 是投射对象，那么 $\mathsf { L } _ { 0 } \mathscr { F } ( P ) \cong \mathscr { F } ( P )$ 并且 $\mathsf { L } _ { i } \mathcal { F } ( P ) = 0$ 对于 $i \neq 0$ 。[§8.1]
+7.9. $\triangleright$ 设 A, $\textsf { B }$ 是阿贝尔范畴，并且 $\mathscr { F } : \mathsf { A } \to \mathsf { B }$ 是一个加性函子。假设 A 有足够多的投射对象，使得 $\mathsf { L } _ { i } \mathscr { F }$ 有定义。证明如果 $P$ 是投射对象，那么 $\mathsf { L } _ { 0 } \mathscr { F } ( P ) \cong \mathscr { F } ( P )$ 并且 $\mathsf { L } _ { i } \mathscr { F } ( P ) = 0$ 对于 $i \neq 0$ 。[§8.1]
 
-7.10. 设 A, $\textsf { B }$ 是阿贝尔范畴，且 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ 是一个加性函子。假设 $\mathsf { A }$ 有足够多的投射对象，使得 $\mathsf { L } _ { i } \mathcal { F }$ 有定义。证明 $\mathsf { L } _ { 0 } \mathcal { F }$ 是一个右正合函子，并且与 $\mathcal { F }$ 确定相同的高阶导出函子 $\boldsymbol { L } _ { i}$ ，$i > 0$ 。
+7.10. 设 A, $\textsf { B }$ 是阿贝尔范畴，且 $\mathscr { F } : \mathsf { A } \to \mathsf { B }$ 是一个加性函子。假设 $\mathsf { A }$ 有足够多的投射对象，使得 $\mathsf { L } _ { i } \mathscr { F }$ 有定义。证明 $\mathsf { L } _ { 0 } \mathscr { F }$ 是一个右正合函子，并且与 $\mathscr { F }$ 确定相同的高阶导出函子 $\boldsymbol { L } _ { i}$ ，$i > 0$ 。
 
-7.11. $\neg$ 设 $\mathsf { A } , \mathsf { B }$ 是阿贝尔范畴，并且 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ 是一个加性函子；假设 $\mathsf { A }$ 有足够多的投射。设
+7.11. $\neg$ 设 $\mathsf { A } , \mathsf { B }$ 是阿贝尔范畴，并且 $\mathscr { F } : \mathsf { A } \to \mathsf { B }$ 是一个加性函子；假设 $\mathsf { A }$ 有足够多的投射。设
 
 $$
 0 { \xrightarrow { } } K { \xrightarrow { } } P { \xrightarrow { } } A { \xrightarrow { } } 0
 $$
 
-是 $\mathsf { A }$ 中的一个短正合列，其中 $P$ 是投影的。证明 $\mathsf { L } _ { i } \mathcal { F } ( A ) \cong \mathsf { L } _ { i - 1 } \mathcal { F } ( K )$ ，对所有 $i > 1$ 。[7.12]
+是 $\mathsf { A }$ 中的一个短正合列，其中 $P$ 是投影的。证明 $\mathsf { L } _ { i } \mathscr { F } ( A ) \cong \mathsf { L } _ { i - 1 } \mathscr { F } ( K )$ ，对所有 $i > 1$ 。[7.12]
 
 7.12. $\triangleright$  将练习 7.11 推广如下：使用相同的符号，假设
 
@@ -24669,7 +24681,7 @@ $$
 0 \xrightarrow [ ] { } K \xrightarrow [ ] { } B ^ { - k } \xrightarrow [ ] { } \cdots \xrightarrow [ ] { } B ^ { - 1 } \longrightarrow A \xrightarrow [ ] { } 0
 $$
 
-是 A 中的一个正合列，使得 $\mathsf { L } _ { i } \mathcal { F } ( B ^ { - j } ) = 0$ 对于 $i > 0$ ，$1 \le j \le k$ 。证明 $\mathsf { L } _ { i } \mathcal { F } ( A ) \cong \mathsf { L } _ { i - k } \mathcal { F } ( K )$ ，对于所有 $i > k$ 。[§8.1, 8.11]
+是 A 中的一个正合列，使得 $\mathsf { L } _ { i } \mathscr { F } ( B ^ { - j } ) = 0$ 对于 $i > 0$ ，$1 \le j \le k$ 。证明 $\mathsf { L } _ { i } \mathscr { F } ( A ) \cong \mathsf { L } _ { i - k } \mathscr { F } ( K )$ ，对于所有 $i > k$ 。[§8.1, 8.11]
 
 7.13. $\lnot \ \mathrm { L e t } \ \mathsf { A }$ , $\textsf { B }$ 是阿贝尔范畴。一个函子集合 $\mathcal { T } ^ { i } : \mathsf { A } \to \mathsf { B }$ ，$i \geq 0$ ，被称为一个（‘同调的’）$\delta$ -函子，如果
 
@@ -24695,7 +24707,7 @@ $$
 
 • 对每个短正合列 $( \dag )$ 分配一个复形 (‡) 是函子性的（在练习 3.11 中指定的意义上）。
 
-证明对于每一个加性函子 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ ，导出的函子 $\mathsf { R } ^ { \imath } \mathcal { F}$ ，$i \geq 0$ ，构成一个同调的 $\delta$ -函子。证明同调本身是从 ${ \mathsf { C } } ^ { \geq 0 } ( { \mathsf { A } } )$ 到 A 的一个 $\delta$ -函子。
+证明对于每一个加性函子 $\mathscr { F } : \mathsf { A } \to \mathsf { B }$ ，导出的函子 $\mathsf { R } ^ { \imath } \mathcal { F}$ ，$i \geq 0$ ，构成一个同调的 $\delta$ -函子。证明同调本身是从 ${ \mathsf { C } } ^ { \geq 0 } ( { \mathsf { A } } )$ 到 A 的一个 $\delta$ -函子。
 
 定义一个“同调” $\delta$ -函子 $\{ \mathcal { T } _ { i } \}$ 的概念，并证明左导出函子给出一个例子。[7.14, 8.14]
 
@@ -24734,51 +24746,51 @@ $$
 这两个谜团当然都是该理论一般特征的表现，我们将在本节中对此进行考察。第一个可以通过一个愉快的归纳论证来消除，这似乎值得呈现（§8.1）。但通过再进一步考虑双复形，一切都会得到实质性的阐明，正如我们在剩余的小节中所做的那样。
 
 ### 8.1. 通过非循环对象解析
-设 $\mathsf { A }$ 是一个具有足够投射对象的阿贝尔范畴，设 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ 是一个到另一个阿贝尔范畴的加法函子。此时我们知道如何构造 $\mathcal { F }$ 的左导出函子 $\mathsf { L } _ { i } \mathcal { F } : \mathsf { A } \to \mathsf { B }$ ：简而言之，$\mathsf { L } _ { i } \mathcal { F } ( M )$ 是通过对 $M$ 的投射解析应用 $\mathcal { F}$ 并取所得复合的（上）同调来计算的。
+设 $\mathsf { A }$ 是一个具有足够投射对象的阿贝尔范畴，设 $\mathscr { F } : \mathsf { A } \to \mathsf { B }$ 是一个到另一个阿贝尔范畴的加法函子。此时我们知道如何构造 $\mathscr { F }$ 的左导出函子 $\mathsf { L } _ { i } \mathscr { F } : \mathsf { A } \to \mathsf { B }$ ：简而言之，$\mathsf { L } _ { i } \mathscr { F } ( M )$ 是通过对 $M$ 的投射解析应用 $\mathcal { F}$ 并取所得复合的（上）同调来计算的。
 
-特别是，如果 $P$ 是投影的（参见练习 7.9），那么 $\mathsf { L } _ { i } \mathcal { F } ( P ) = 0$ 对于 $i \geq 1$ 成立：如果 $P$ 是投影的，那么 $\iota ( P )$ :
+特别是，如果 $P$ 是投影的（参见练习 7.9），那么 $\mathsf { L } _ { i } \mathscr { F } ( P ) = 0$ 对于 $i \geq 1$ 成立：如果 $P$ 是投影的，那么 $\iota ( P )$ :
 
 $$
 \longrightarrow 0 \longrightarrow 0 \longrightarrow P \longrightarrow 0 \longrightarrow \cdots
 $$
 
-是一个$P$的投射解析，因此$\mathsf { L } _ { \bullet } \mathcal { F } ( P )$是同调
+是一个$P$的投射解析，因此$\mathsf { L } _ { \bullet } \mathscr { F } ( P )$是同调
 
 $$
-\cdot \cdot \cdot \longrightarrow 0 \longrightarrow 0 \longrightarrow \mathcal { F } ( P ) \longrightarrow 0 \longrightarrow \cdot \cdot \cdot ;
+\cdots \longrightarrow 0 \longrightarrow 0 \longrightarrow \mathscr { F } ( P ) \longrightarrow 0 \longrightarrow \cdots ;
 $$
 
 也就是说，
 
 $$
-\mathsf { L } _ { i } \mathcal { F } ( P ) = \left\{ \begin{array} { c c } { \mathcal { F } ( P ) , } & { i = 0 , } \\ { 0 , } & { i \neq 0 . } \end{array} \right.
+\mathsf { L } _ { i } \mathscr { F } ( P ) = \left\{ \begin{array} { c c } { \mathscr { F } ( P ) , } & { i = 0 , } \\ { 0 , } & { i \neq 0 . } \end{array} \right.
 $$
 
-这表明投影对象在左导出函子方面是 $\mathcal { F }$ -无环的：
+这表明投影对象在左导出函子方面是 $\mathscr { F }$ -无环的：
 
-定义 8.1. 设 $\mathcal { F }$ 是一个加性函子。$\mathsf { A }$ 的一个对象 $M$ 是 $\mathcal { F }$ -无环的（相对于左导出函子），如果对于 $i \neq 0$，有 $\mathsf { L } _ { i } \mathcal { F } ( M ) = 0$。L
+定义 8.1. 设 $\mathscr { F }$ 是一个加性函子。$\mathsf { A }$ 的一个对象 $M$ 是 $\mathscr { F }$ -无环的（相对于左导出函子），如果对于 $i \neq 0$，有 $\mathsf { L } _ { i } \mathscr { F } ( M ) = 0$。L
 
-一个对象 $M$ 如果对于右导出函子是 $\mathcal { F }$ -无环的，当且仅当 $\mathsf { R } ^ { i } \mathcal { F } ( M ) = 0$ 对于 $i \neq 0$ 。在实践中，这个概念只有对于右正合或左正合的函子才真正有用；前者是在左侧导出的，而后者是在右侧导出的（参见§7.5），因此在这种情况下我们只需要谈论“ $\mathcal { F }$ -无环”的对象。
+一个对象 $M$ 如果对于右导出函子是 $\mathscr { F }$ -无环的，当且仅当 $\mathsf { R } ^ { i } \mathscr { F } ( M ) = 0$ 对于 $i \neq 0$ 。在实践中，这个概念只有对于右正合或左正合的函子才真正有用；前者是在左侧导出的，而后者是在右侧导出的（参见§7.5），因此在这种情况下我们只需要谈论“ $\mathscr { F }$ -无环”的对象。
 
-尽管射影对于每一个右正合函子都是无环的，但给定的函子 $\mathcal { F }$ 可能存在其他 $\mathcal { F }$ -无环对象。
+尽管射影对于每一个右正合函子都是无环的，但给定的函子 $\mathscr { F }$ 可能存在其他 $\mathscr { F }$ -无环对象。
 
 示例 8.2. 设 $R$ 是一个交换环。回顾（定义 VIII.2.13）一个 $R$ -模 $M$ 是平坦的，如果 $_ - \otimes _ { R } M$ 是正合的，或者等价地（由于 $\otimes$ 的对称性），如果 $M \otimes _ { R _ { - } }$ 是正合的。平坦模在张量积的意义下是循环的：如果 $N$ 是平坦的，那么 $\mathrm { T o r } _ { i } ( M , N ) = 0$ 对于 $i \neq 0$ 和所有 $M$ ；参见 § VIII.2.4 以提醒自己原因，或者——更好——重新证明它。此外，由于（正如我们将在本节最终证明的）Tor 函数可以通过解析任一参数来计算，我们还知道，‘对称地’，如果 $M$ 是平坦的，那么 $\mathrm { T o r } _ { i } ( M , N ) = 0$ 对于所有 $i \neq 0$ 和所有模 $N$ 。因此，一个平坦模对于由 $R$ $N$ 定义的每个函数 $\mathcal { F}$ 和所有模 $N$ 都是 $\mathcal { F}$ -循环的。
 
-这里是最关键的一句。在 § VIII.6.4 中我曾声称，平坦解可以用来代替自由或射影解，以计算 Tor。我们将验证 $\mathcal { F }$ -无环解足以计算 $\mathsf { L } _ { i } \mathcal { F }$ 。
+这里是最关键的一句。在 § VIII.6.4 中我曾声称，平坦解可以用来代替自由或射影解，以计算 Tor。我们将验证 $\mathscr { F }$ -无环解足以计算 $\mathsf { L } _ { i } \mathscr { F }$ 。
 
-**定理 8.3.** 设 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ 是一个阿贝尔范畴的右正合函子，并且假设 A 有足够的投射。设
+**定理 8.3.** 设 $\mathscr { F } : \mathsf { A } \to \mathsf { B }$ 是一个阿贝尔范畴的右正合函子，并且假设 A 有足够的投射。设
 
 $$
 A ^ { \bullet } : \quad \dots \longrightarrow A ^ { - 2 } \xrightarrow { d _ { A } ^ { - 2 } } A ^ { - 1 } \xrightarrow { d _ { A } ^ { - 1 } } A ^ { 0 } \longrightarrow 0 \xrightarrow { } \cdots .
 $$
 
-是对象 $M$ 的一个解，使得每个对象 $\mathsf { A } ^ { i }$ 是 $\mathcal { F }$ -无环的。然后对于所有 $i$
+是对象 $M$ 的一个解，使得每个对象 $\mathsf { A } ^ { i }$ 是 $\mathscr { F }$ -无环的。然后对于所有 $i$
 
 $$
-\mathsf { L } _ { i } \mathcal { F } ( M ) \cong H ^ { - i } ( \mathsf { C } ( \mathcal { F } ) ( A ^ { \bullet } ) ) .
+\mathsf { L } _ { i } \mathscr { F } ( M ) \cong H ^ { - i } ( \mathsf { C } ( \mathscr { F } ) ( A ^ { \bullet } ) ) .
 $$
 
-如果对象 $A ^ { i }$ 是投射的，那么这个陈述就是 $\mathsf { L } _ { i } \mathcal { F }$ 的定义。该定理指出，$\mathcal { F }$ -无环对象可以在计算 $\mathsf { L } _ { i } \mathcal { F }$ 时代替投射对象使用。
+如果对象 $A ^ { i }$ 是投射的，那么这个陈述就是 $\mathsf { L } _ { i } \mathscr { F }$ 的定义。该定理指出，$\mathscr { F }$ -无环对象可以在计算 $\mathsf { L } _ { i } \mathscr { F }$ 时代替投射对象使用。
 
 证明。前两种情况可以通过显式计算得出。首先，序列
 
@@ -24786,10 +24798,10 @@ $$
 A ^ { - 1 } \longrightarrow A ^ { 0 } \longrightarrow M \longrightarrow 0
 $$
 
-根据假设是正合的，并且 $\mathcal { F }$ 是右正合的；因此
+根据假设是正合的，并且 $\mathscr { F }$ 是右正合的；因此
 
 $$
-\mathcal { F } ( A ^ { - 1 } ) \longrightarrow \mathcal { F } ( A ^ { 0 } ) \longrightarrow \mathcal { F } ( M ) \longrightarrow 0
+\mathscr { F } ( A ^ { - 1 } ) \longrightarrow \mathscr { F } ( A ^ { 0 } ) \longrightarrow \mathscr { F } ( M ) \longrightarrow 0
 $$
 
 完全正确，因此
@@ -24810,7 +24822,7 @@ $$
 \mathsf { L } _ { 1 } \mathscr { F } ( A ^ { 0 } ) \longrightarrow \mathsf { L } _ { 1 } \mathscr { F } ( M ) \longrightarrow \mathscr { F } ( K ) \longrightarrow \mathscr { F } ( A ^ { 0 } ) \longrightarrow \mathscr { F } ( M ) \longrightarrow 0 .
 $$
 
-最左边的项是 $0$，因为 $A ^ { 0 }$ 是 $\mathcal { F }$ -无环的。因此
+最左边的项是 $0$，因为 $A ^ { 0 }$ 是 $\mathscr { F }$ -无环的。因此
 
 $$
 \mathsf { L } _ { 1 } \mathscr { F } ( M ) \cong \ker ( \mathscr { F } ( K )  \mathscr { F } ( A ^ { 0 } ) ) \cong H ^ { - 1 } ( \mathsf { C } ( \mathscr { F } ) ( A ^ { \bullet } ) ) :
@@ -24828,7 +24840,7 @@ $$
 \cdot \cdot \longrightarrow A ^ { - 3 } \longrightarrow A ^ { - 2 } \longrightarrow A ^ { - 1 } \longrightarrow
 $$
 
-(以便将 $A ^ { - 1 }$ 放在度 $0$ 中)，给出了 $K$ 的 $\mathcal { F }$ -无环解析；根据归纳假设，$\mathsf { L } _ { i - 1 } \mathcal { F } ( K )$ 可以通过将 $C ( \mathcal { F } )$ 应用于这个复形并取上同调来计算：
+(以便将 $A ^ { - 1 }$ 放在度 $0$ 中)，给出了 $K$ 的 $\mathscr { F }$ -无环解析；根据归纳假设，$\mathsf { L } _ { i - 1 } \mathscr { F } ( K )$ 可以通过将 $C ( \mathscr { F } )$ 应用于这个复形并取上同调来计算：
 
 $$
 \mathsf { L } _ { i - 1 } \mathscr { F } ( K ) \cong H ^ { - i } ( \mathsf { C } ( \mathscr { F } ) ( A ^ { \bullet } ) ) .
@@ -24837,13 +24849,13 @@ $$
 另一方面，应用定理7.12到($^*$)上得到的长的正合列中的其他项给出
 
 $$
-\cdots { \xrightarrow { } } \operatorname { L } _ { i } { \mathcal { F } } ( A ^ { 0 } ) { \xrightarrow { } } \operatorname { L } _ { i } { \mathcal { F } } ( M ) { \xrightarrow { } } \operatorname { L } _ { i - 1 } { \mathcal { F } } ( K ) { \xrightarrow { } } \operatorname { L } _ { i - 1 } { \mathcal { F } } ( A ^ { 0 } ) { \xrightarrow { } } \cdots ;
+\cdots { \xrightarrow { } } \operatorname { L } _ { i } { \mathscr { F } } ( A ^ { 0 } ) { \xrightarrow { } } \operatorname { L } _ { i } { \mathscr { F } } ( M ) { \xrightarrow { } } \operatorname { L } _ { i - 1 } { \mathscr { F } } ( K ) { \xrightarrow { } } \operatorname { L } _ { i - 1 } { \mathscr { F } } ( A ^ { 0 } ) { \xrightarrow { } } \cdots ;
 $$
 
-由于 $A ^ { 0 }$ 是 $\mathcal { F }$ -无环的且 $i > 1$ ，这表明
+由于 $A ^ { 0 }$ 是 $\mathscr { F }$ -无环的且 $i > 1$ ，这表明
 
 $$
-\mathsf { L } _ { i } \mathcal { F } ( M ) \cong \mathsf { L } _ { i - 1 } \mathcal { F } ( K )
+\mathsf { L } _ { i } \mathscr { F } ( M ) \cong \mathsf { L } _ { i - 1 } \mathscr { F } ( K )
 $$
 
 （另参见练习7.12）并完成了证明。
@@ -24862,9 +24874,9 @@ $$
 
 确实，平坦模关于 $\_ \otimes N$ 是无环的（示例 8.2），因此这是定理 8.3 的一个推论。L
 
-定理 8.3 提出了一个有趣的可能性：由于 $\mathcal { F }$ -无环对象足以计算 $\mathcal { F }$ 的导出函子（至少当 $\mathcal { F }$ 是右正合时），读者可以想象，在 A 没有足够投射的情况下，$\mathcal { F} $ 的左导出函子可能仍然可以定义，因为 A 具有足够的 $\mathcal { F }$ -无环对象（在某种意义上）。这确实是一种情况。读者将在该主题的更高级的讨论中遇到这样的例子。（参见练习 8.14 以了解典型情况。）
+定理 8.3 提出了一个有趣的可能性：由于 $\mathscr { F }$ -无环对象足以计算 $\mathscr { F }$ 的导出函子（至少当 $\mathscr { F }$ 是右正合时），读者可以想象，在 A 没有足够投射的情况下，$\mathcal { F} $ 的左导出函子可能仍然可以定义，因为 A 具有足够的 $\mathscr { F }$ -无环对象（在某种意义上）。这确实是一种情况。读者将在该主题的更高级的讨论中遇到这样的例子。（参见练习 8.14 以了解典型情况。）
 
-关于定理 8.3 所讨论的问题，存在另一种观点。设 $A ^ { \bullet }$ 是对象 $M$ 的一个 $\mathcal { F }$ -无环解析，设 $P _ { M } ^ { \bullet }$ 是一个投射解析。我将应用 $C ( \mathcal { F } )$ 并将所得的复形作为数组的边放置：
+关于定理 8.3 所讨论的问题，存在另一种观点。设 $A ^ { \bullet }$ 是对象 $M$ 的一个 $\mathscr { F }$ -无环解析，设 $P _ { M } ^ { \bullet }$ 是一个投射解析。我将应用 $C ( \mathscr { F } )$ 并将所得的复形作为数组的边放置：
 
 ![](images/229.jpg)
 
@@ -25041,13 +25053,13 @@ $$
 与（$^ *$）相关的是正合的，并且我们有一个元素
 
 $$
-m = ( m ^ { 0 } , m ^ { - 1 } , \cdot \cdot \cdot , m ^ { - i } ) \in M ^ { - i , 0 } \oplus M ^ { - i + 1 , - 1 } \oplus \cdot \cdot \cdot \oplus M ^ { 0 , - i }
+m = ( m ^ { 0 } , m ^ { - 1 } , \cdots , m ^ { - i } ) \in M ^ { - i , 0 } \oplus M ^ { - i + 1 , - 1 } \oplus \cdots \oplus M ^ { 0 , - i }
 $$
 
 使得 $d _ { \mathrm { t o t } } ^ { - i } ( m ) = 0$ ；我们预期要产生一个元素
 
 $$
-n = ( n ^ { 0 } , n ^ { - 1 } , \cdot \cdot \cdot , n ^ { - i - 1 } ) \in M ^ { - i - 1 , 0 } \oplus M ^ { - i , - 1 } \oplus M ^ { - i + 1 , - 2 } \oplus \cdot \cdot \cdot \oplus M ^ { 0 , - i - 1 }
+n = ( n ^ { 0 } , n ^ { - 1 } , \cdots , n ^ { - i - 1 } ) \in M ^ { - i - 1 , 0 } \oplus M ^ { - i , - 1 } \oplus M ^ { - i + 1 , - 2 } \oplus \cdots \oplus M ^ { 0 , - i - 1 }
 $$
 
 使得 $d _ { \mathrm { t o t } } ^ { - \imath - 1 } ( n ) = m$
@@ -25170,10 +25182,10 @@ $$
 
 根据定理 8.9，$T C ( M _ { N } ) ^ { \bullet }$ 是正合的；根据引理 8.11，这是诱导映射 $T ^ { \bullet }  N ^ { \bullet }$ 的映射锥，并且根据（推论 4.2）可知这个映射是准同构，如所需。$\square$
 
-要欣赏定理 8.12 的实用性，再次在我们（困难）的工作 §6 的背景下，请注意它为我们提供了在解决对象（参见引理 6.3）和解决复形（如在定理 6.6 中）之间的一座方便的桥梁。实际上，根据推论 7.9（它依赖于马蹄形引理，因此依赖于解决 A 的单个对象），在一个具有足够投射对象的上极限范畴中，每个有上界的复形 $N ^ { \bullet }$ 都可以看作是在 $H ^ { 0 }$ 中从某个复形诱导出来的
+要欣赏定理 8.12 的实用性，再次在我们（困难）的工作 §6 的背景下，请注意它为我们提供了在解决对象（参见引理 6.3）和解决复形（如在定理 6.6 中）之间的一座方便的桥梁。实际上，根据推论 7.9（它依赖于马蹄形引理，因此依赖于解决 A 的单个对象），在一个具有足够投射对象的余极限范畴中，每个有上界的复形 $N ^ { \bullet }$ 都可以看作是在 $H ^ { 0 }$ 中从某个复形诱导出来的
 
 $$
-\cdot \cdot \cdot { \longrightarrow } P ^ { - 3 , \bullet } { \longrightarrow } P ^ { - 2 , \bullet } { \longrightarrow } P ^ { - 1 , \bullet } { \longrightarrow } P ^ { 0 , \bullet } { \longrightarrow } 0 
+\cdots { \longrightarrow } P ^ { - 3 , \bullet } { \longrightarrow } P ^ { - 2 , \bullet } { \longrightarrow } P ^ { - 1 , \bullet } { \longrightarrow } P ^ { 0 , \bullet } { \longrightarrow } 0 
 $$
 
 其中 $P ^ { \imath , \bullet }$ 是 $N ^ { \imath }$ 的一个投射解析。根据定理 8.12 的第二个陈述，$P ^ { \bullet , \bullet }$ 的全复形是一个 $N ^ { \bullet }$ 的投射解析。这复制了定理 6.6 的主要内容，绕过了 6 中给出的证明中最糟糕的细节。
@@ -25181,7 +25193,7 @@ $$
 如7.10注释所述，解一个给定复形（并满足7.10注释中解释的附加条件）的投影（或，在${ \mathsf { C } } ^ { \geq 0 }$中，是注入）双复形被称为Cartan-Eilenberg解。它们系统性的使用可以简化我在§6中介绍的内容，但代价是早期就需要处理双复形。
 
 ### 8.5. 再次讨论非循环解析和平衡Tor与Ext
-最后我们回到关于Tor和Ext的最后几个谜团。作为一个热身（也是双复形强大功能的另一个例证），回到我们在§8.1研究过的问题：我们在该小节结束时，将应用加性算子$\mathcal { F }$到一个对象$M$的$\mathcal { F }$-非循环解析$A ^ { \bullet }$以及到同一对象的投射解析排列成数组的两侧。推论7.9告诉我们如何填充数组的其余部分：从
+最后我们回到关于Tor和Ext的最后几个谜团。作为一个热身（也是双复形强大功能的另一个例证），回到我们在§8.1研究过的问题：我们在该小节结束时，将应用加性算子$\mathscr { F }$到一个对象$M$的$\mathscr { F }$-非循环解析$A ^ { \bullet }$以及到同一对象的投射解析排列成数组的两侧。推论7.9告诉我们如何填充数组的其余部分：从
 
 $$
 \cdots { \xrightarrow { } } A ^ { - 2 } { \xrightarrow { } } A ^ { - 1 } { \xrightarrow { } } A ^ { 0 } { \xrightarrow { } } A ^ { 0 } { \xrightarrow { } } M { \xrightarrow { } } 0 { \xrightarrow { } } \cdots ,
@@ -25193,19 +25205,19 @@ $$
 \cdots { \xrightarrow { } } P ^ { - 2 , \bullet } { \xrightarrow { } } P ^ { - 1 , \bullet } { \xrightarrow { } } P ^ { 0 , \bullet } { \xrightarrow { } } P ^ { 0 , \bullet } { \xrightarrow { } } P _ { M } ^ { \bullet } { \xrightarrow { } } 0 { \xrightarrow { } } \cdots
 $$
 
-其中 $P ^ { \imath , \bullet }$ 是 $A ^ { \imath }$ 的投射解析，$P _ { M } ^ { \bullet }$ 是 $M$ 的投射解析。由于 $( ^ { * * } )$ 是正合的，与 $( ^ { * * } )$ 对应的双重复形的行是投射对象 $P _ { M } ^ { \imath }$ 的投射解析。现在应用 $\mathcal { F }$：
+其中 $P ^ { \imath , \bullet }$ 是 $A ^ { \imath }$ 的投射解析，$P _ { M } ^ { \bullet }$ 是 $M$ 的投射解析。由于 $( ^ { * * } )$ 是正合的，与 $( ^ { * * } )$ 对应的双重复形的行是投射对象 $P _ { M } ^ { \imath }$ 的投射解析。现在应用 $\mathscr { F }$：
 
 $$
-\begin{array} { r l } & { \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \ \cdots } \\ & { \quad \cdots \cdots - \cdots \cdots \cdots - \cdots \cdots \cdots - \cdots - \cdots - \cdots \ \cdots \quad } \\ & { \quad \cdots \cdots \mathcal { F } ( P ^ { - 2 , 0 } ) \longrightarrow \mathcal { F } ( P ^ { - 1 , 0 } ) \longrightarrow \mathcal { F } ( P ^ { 0 , 0 } ) \overset { \cdots \not \ P } { \underset { \mathrm { I } } { \longrightarrow } } ( P _ { M } ^ { 0 } ) } \\ & { \qquad \quad \vdots \qquad \vdots } \\ & { \longrightarrow \mathcal { F } ( P ^ { - 2 , - 1 } ) \longrightarrow \mathcal { F } ( P ^ { - 1 , - 1 } ) \longrightarrow \mathcal { F } ( P ^ { 0 , - 1 } ) \overset { \cdots } { \underset { \mathrm { I } } { \longrightarrow } } \mathcal { F } ( P _ { M } ^ { - 1 } ) } \\ & { \qquad \quad \vdots \qquad \quad } \\ & { \longrightarrow \mathcal { F } ( P ^ { - 2 , - 2 } ) \longrightarrow \mathcal { F } ( P ^ { - 2 , - 1 } ) \longrightarrow \mathcal { F } ( P ^ { - 2 , 0 } ) \overset { \cdots } { \underset { \mathrm { I } } { \longrightarrow } } \mathcal { F } ( P _ { M } ^ { - 2 } ) } \\ & { \qquad \quad \vdots \qquad \quad \vdots } \\ & { \qquad \quad \quad } \end{array}
+\begin{array} { r l } & { \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \ \cdots } \\ & { \quad \cdots \cdots - \cdots \cdots \cdots - \cdots \cdots \cdots - \cdots - \cdots - \cdots \ \cdots \quad } \\ & { \quad \cdots \cdots \mathscr { F } ( P ^ { - 2 , 0 } ) \longrightarrow \mathscr { F } ( P ^ { - 1 , 0 } ) \longrightarrow \mathscr { F } ( P ^ { 0 , 0 } ) \overset { \cdots \not \ P } { \underset { \mathrm { I } } { \longrightarrow } } ( P _ { M } ^ { 0 } ) } \\ & { \qquad \quad \vdots \qquad \vdots } \\ & { \longrightarrow \mathscr { F } ( P ^ { - 2 , - 1 } ) \longrightarrow \mathscr { F } ( P ^ { - 1 , - 1 } ) \longrightarrow \mathscr { F } ( P ^ { 0 , - 1 } ) \overset { \cdots } { \underset { \mathrm { I } } { \longrightarrow } } \mathscr { F } ( P _ { M } ^ { - 1 } ) } \\ & { \qquad \quad \vdots \qquad \quad } \\ & { \longrightarrow \mathscr { F } ( P ^ { - 2 , - 2 } ) \longrightarrow \mathscr { F } ( P ^ { - 2 , - 1 } ) \longrightarrow \mathscr { F } ( P ^ { - 2 , 0 } ) \overset { \cdots } { \underset { \mathrm { I } } { \longrightarrow } } \mathscr { F } ( P _ { M } ^ { - 2 } ) } \\ & { \qquad \quad \vdots \qquad \quad \vdots } \\ & { \qquad \quad \quad } \end{array}
 $$
 
-由于每个 $P _ { M } ^ { i }$ 是投影的，并且每个 $A ^ { i }$ 是 $\mathcal { F }$ -无环的，虚线内的这个图的每一行和每一列都是正合的。因此我们可以将定理 8.12 应用到这个复形上
+由于每个 $P _ { M } ^ { i }$ 是投影的，并且每个 $A ^ { i }$ 是 $\mathscr { F }$ -无环的，虚线内的这个图的每一行和每一列都是正合的。因此我们可以将定理 8.12 应用到这个复形上
 
 $$
-f ( P ^ { \bullet , \bullet } ) : \qquad \cdots { \longrightarrow } { \mathcal { F } } ( P ^ { - 2 , \bullet } ) { \longrightarrow } { \mathcal { F } } ( P ^ { - 1 , \bullet } ) { \longrightarrow } { \mathcal { F } } ( P ^ { 0 , \bullet } ) { \longrightarrow } 0 { \longrightarrow } \cdots . . .
+f ( P ^ { \bullet , \bullet } ) : \qquad \cdots { \longrightarrow } { \mathscr { F } } ( P ^ { - 2 , \bullet } ) { \longrightarrow } { \mathscr { F } } ( P ^ { - 1 , \bullet } ) { \longrightarrow } { \mathscr { F } } ( P ^ { 0 , \bullet } ) { \longrightarrow } 0 { \longrightarrow } \cdots . . .
 $$
 
-并且发现全复形 $T C ( { \mathcal { F } } ( P ) ) ^ { \bullet }$ 与复形 $\mathsf C ( \mathcal F ) ( A ^ { \bullet } )$ 和 ${ \mathsf { C } } ( { \mathcal { F } } ) ( P _ { M } ^ { \bullet } )$ 都准同构。因此
+并且发现全复形 $T C ( { \mathscr { F } } ( P ) ) ^ { \bullet }$ 与复形 $\mathsf C ( \mathcal F ) ( A ^ { \bullet } )$ 和 ${ \mathsf { C } } ( { \mathscr { F } } ) ( P _ { M } ^ { \bullet } )$ 都准同构。因此
 
 $$
 H ^ { i } ( \mathsf C ( \mathcal F ) ( A ^ { \bullet } ) ) \cong H ^ { i } ( \mathsf C ( \mathcal F ) ( P _ { M } ^ { \bullet } ) ) \cong \mathsf { L } _ { i } \mathcal F ( M ) .
@@ -25257,16 +25269,16 @@ $$
 
 ### 习题
 
-8.1. $\triangleright$ 设 A, $\textsf { B }$ 是阿贝尔范畴，设 $A ^ { \bullet }$ 是 ${ \mathsf { C } } ( \mathsf { A } )$ 中的一个正合复形，设 $\mathcal { F }$ 是一个从 $\mathsf { A }$ 到 $\mathsf { B }$ 的右正合函子。设 $K ^ { \tau }$ 是 $d _ { A } ^ { i }$ 的核。证明
+8.1. $\triangleright$ 设 A, $\textsf { B }$ 是阿贝尔范畴，设 $A ^ { \bullet }$ 是 ${ \mathsf { C } } ( \mathsf { A } )$ 中的一个正合复形，设 $\mathscr { F }$ 是一个从 $\mathsf { A }$ 到 $\mathsf { B }$ 的右正合函子。设 $K ^ { \tau }$ 是 $d _ { A } ^ { i }$ 的核。证明
 
 $$
 H ^ { i } ( \mathsf C ( \mathcal F ) ( A ^ { \bullet } ) ) \cong \ker ( \mathcal F ( K ^ { i + 1 } ) \to \mathcal F ( A ^ { i + 1 } ) ) .
 $$
 
-8.2. 设 $M$ 是一个具有足够投射对象的阿贝尔范畴 $A$ 中的对象，并且设 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ 是一个加性函子。设 $A ^ { \bullet }$ 是 $M$ 的一个 $\mathcal { F }$ -无环解析，并且设 $J ^ { \imath } := \mathrm { i m } d _ { A } ^ { \imath }$ 。证明
+8.2. 设 $M$ 是一个具有足够投射对象的阿贝尔范畴 $A$ 中的对象，并且设 $\mathscr { F } : \mathsf { A } \to \mathsf { B }$ 是一个加性函子。设 $A ^ { \bullet }$ 是 $M$ 的一个 $\mathscr { F }$ -无环解析，并且设 $J ^ { \imath } := \mathrm { i m } d _ { A } ^ { \imath }$ 。证明
 
 $$
-\mathsf { L } _ { i } \mathcal { F } ( M ) \cong \mathsf { L } _ { 1 } \mathcal { F } ( J ^ { - i + 1 } )
+\mathsf { L } _ { i } \mathscr { F } ( M ) \cong \mathsf { L } _ { 1 } \mathscr { F } ( J ^ { - i + 1 } )
 $$
 
 对于所有 $i > 1$
@@ -25281,17 +25293,17 @@ $$
 
 8.7. $\triangleright$ 证明命题8.11。[§8.4]
 
-8.8. ¬ 设 A, $\textsf { B }$ , $\mathsf { C }$ 是阿贝尔范畴，并且 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ , $\mathcal { G } : \mathsf { B } \to \mathsf { C }$ 是加性函子。假设 A 和 $\textsf { B }$ 有足够的投射对象，$\mathcal { F }$ 将 A 的投射对象映射到 $\mathcal { G }$ -非循环对象，并且 $\mathcal { G }$ 是右正合的。
+8.8. ¬ 设 A, $\textsf { B }$ , $\mathsf { C }$ 是阿贝尔范畴，并且 $\mathscr { F } : \mathsf { A } \to \mathsf { B }$ , $\mathscr { G } : \mathsf { B } \to \mathsf { C }$ 是加性函子。假设 A 和 $\textsf { B }$ 有足够的投射对象，$\mathscr { F }$ 将 A 的投射对象映射到 $\mathscr { G }$ -非循环对象，并且 $\mathscr { G }$ 是右正合的。
 
-设 $A$ 是 $A$ 的一个对象，设 $M ^ { \bullet }$ : $\cdot \cdot \cdot  M ^ { - 2 }  M ^ { - 1 }  M ^ { 0 }  0$ 是 $A$ 的一个投射解析。设 $P _ { \mathcal { F M } } ^ { \bullet }$ • 是复形 $\mathcal { F M } ^ { \bullet }$ 的一个Cartan-Eilenberg解析（如引理7.9中构造的）。考虑这个复形
+设 $A$ 是 $A$ 的一个对象，设 $M ^ { \bullet }$ : $\cdots  M ^ { - 2 }  M ^ { - 1 }  M ^ { 0 }  0$ 是 $A$ 的一个投射解析。设 $P _ { \mathcal { F M } } ^ { \bullet }$ • 是复形 $\mathcal { F M } ^ { \bullet }$ 的一个Cartan-Eilenberg解析（如引理7.9中构造的）。考虑这个复形
 
 $$
-\cdot \cdot \cdot \longrightarrow { \mathcal G } ( P _ { \mathcal F M ^ { - 2 } } ^ { \bullet } ) \longrightarrow { \mathcal G } ( P _ { \mathcal F M ^ { - 1 } } ^ { \bullet } ) \longrightarrow { \mathcal G } ( P _ { \mathcal F M ^ { 0 } } ^ { \bullet } ) \longrightarrow 0
+\cdots \longrightarrow { \mathcal G } ( P _ { \mathcal F M ^ { - 2 } } ^ { \bullet } ) \longrightarrow { \mathcal G } ( P _ { \mathcal F M ^ { - 1 } } ^ { \bullet } ) \longrightarrow { \mathcal G } ( P _ { \mathcal F M ^ { 0 } } ^ { \bullet } ) \longrightarrow 0
 $$
 
-通过将 $\mathcal { G }$ 应用于 $P _ { \mathcal { F } M } ^ { \bullet } \bullet$ 获得。最后，令 $\ b { 1 } ^ { \prime \bullet }$ 是对应于 (†) 的全复形。
+通过将 $\mathscr { G }$ 应用于 $P _ { \mathscr { F } M } ^ { \bullet } \bullet$ 获得。最后，令 $\ b { 1 } ^ { \prime \bullet }$ 是对应于 (†) 的全复形。
 
-证明 $H ^ { n } ( T ^ { \bullet } ) \cong \mathsf { L } ^ { \prime \prime } ( { \mathcal { G } } \circ { \mathcal { F } } ) ( A )$ .
+证明 $H ^ { n } ( T ^ { \bullet } ) \cong \mathsf { L } ^ { \prime \prime } ( { \mathscr { G } } \circ { \mathscr { F } } ) ( A )$ .
 
 (提示： 证明 $( \dag )$ 的每个项的 cohomology 都集中在 $0$ 度，并应用定理 8.12。) [§7.2, 7.6, 9.10]
 
@@ -25344,33 +25356,33 @@ $$
 
 这被称为 $\mathsf{A}$ 的全局维数。如果 $R$ 是一个环，$R$ 的全局维数是 $R$ -Mod 的全局维数。这个不变量在交换代数中具有基本的重要性。这个数与 $R$ 的Krull维数之间的关系微妙而重要。
 
-8.14. $\triangleright$ 设 A、B、$\mathsf { C }$ 是范畴。一个双函子 $\mathcal { F } : \mathsf { A } \times \mathsf { B } \to \mathsf { C }$ 是为 $\mathsf { A }$ 的每一个对象 A 和 $\textsf { B }$ 的每一个对象 B 指定一个 $\mathsf { C }$ 的对象 $\mathcal { F } ( A , B )$ ，使得对于 A 中的所有对象 A 和 $\textsf { B }$ 中的所有对象 B ，$\mathcal { F } ^ { A } := \mathcal { F } ( A , \lrcorner )$ 是一个（比如说，协变的）函子，并且 $\mathcal { F } _ { B } := \mathcal { F } ( \_ B )$ 是一个（比如说，反变的）函子；此外，对于 A 中的所有态射 $A _ { 1 }  A _ { 2 }$ 和 $\textsf { B }$ 中的所有态射 $B _ { 1 } \to B _ { 2 }$ ，诱导的图
+8.14. $\triangleright$ 设 A、B、$\mathsf { C }$ 是范畴。一个双函子 $\mathscr { F } : \mathsf { A } \times \mathsf { B } \to \mathsf { C }$ 是为 $\mathsf { A }$ 的每一个对象 A 和 $\textsf { B }$ 的每一个对象 B 指定一个 $\mathsf { C }$ 的对象 $\mathscr { F } ( A , B )$ ，使得对于 A 中的所有对象 A 和 $\textsf { B }$ 中的所有对象 B ，$\mathscr { F } ^ { A } := \mathscr { F } ( A , \lrcorner )$ 是一个（比如说，协变的）函子，并且 $\mathscr { F } _ { B } := \mathscr { F } ( \_ B )$ 是一个（比如说，反变的）函子；此外，对于 A 中的所有态射 $A _ { 1 }  A _ { 2 }$ 和 $\textsf { B }$ 中的所有态射 $B _ { 1 } \to B _ { 2 }$ ，诱导的图
 
 $$
-\begin{array} { r l r } & { } & { \mathcal { F } ( A _ { 1 } , B _ { 1 } ) \longrightarrow \mathcal { F } ( A _ { 1 } , B _ { 2 } ) } \\ & { } & { \underset { \mathcal { F } ( A _ { 2 } , B _ { 1 } ) \longrightarrow \mathcal { F } ( A _ { 2 } , B _ { 2 } ) } { \uparrow } } \\ & { } & { \mathcal { F } ( A _ { 2 } , B _ { 1 } ) \longrightarrow \mathcal { F } ( A _ { 2 } , B _ { 2 } ) } \end{array}
+\begin{array} { r l r } & { } & { \mathscr { F } ( A _ { 1 } , B _ { 1 } ) \longrightarrow \mathscr { F } ( A _ { 1 } , B _ { 2 } ) } \\ & { } & { \underset { \mathscr { F } ( A _ { 2 } , B _ { 1 } ) \longrightarrow \mathscr { F } ( A _ { 2 } , B _ { 2 } ) } { \uparrow } } \\ & { } & { \mathscr { F } ( A _ { 2 } , B _ { 1 } ) \longrightarrow \mathscr { F } ( A _ { 2 } , B _ { 2 } ) } \end{array}
 $$
 
-需要交换。（此图中的箭头应根据 $\mathcal { F }$ 在其参数中的协方差进行指向。）
+需要交换。（此图中的箭头应根据 $\mathscr { F }$ 在其参数中的协方差进行指向。）
 
 例如，$\mathrm { H o m } _ { \mathsf { A } } ( \_ { - } , \_ { - } )$ 在这个意义上是从 $\mathsf { A } \times \mathsf { A }$ 到 Ab 的双函子。对于交换环 $R$，$\_ \otimes _ { R _ { } } \_$ 是一个双函子 $R – { \mathsf { M o d } } \times R$ -Mod $ R$ -Mod，在两个参数上都是协变的。
 
-现在假设 A、$\textsf { B }$ 、$\mathsf { C }$ 是阿贝尔范畴，并且 $\mathcal { F } : \mathsf { A } \times \mathsf { B } \to \mathsf { C }$ 是一个双函子，使得 $\mathcal { F } ^ { A }$ 是加法和协变的，$\mathcal { F } _ { B }$ 是加法和反变的，并且两者都是左正合的。此外，假设 $\textsf { B }$ 有足够的单射。
+现在假设 A、$\textsf { B }$ 、$\mathsf { C }$ 是阿贝尔范畴，并且 $\mathscr { F } : \mathsf { A } \times \mathsf { B } \to \mathsf { C }$ 是一个双函子，使得 $\mathscr { F } ^ { A }$ 是加法和协变的，$\mathscr { F } _ { B }$ 是加法和反变的，并且两者都是左正合的。此外，假设 $\textsf { B }$ 有足够的单射。
 
-说一个对象 $E$ 是 $A$ 的 $\mathcal { F }$ -正合的，如果函子 $\mathcal { F } ^ { E }$ 是正合的。一个对象 $A$ 的“ $\mathcal { F }$ -正合解”是 ${ \mathsf { C } } ^ { \leq 0 } ( { \mathsf { A } } )$ 中的一个解，它由 $\mathcal { F }$ -正合对象组成。如果每个对象 $A$ 都有一个 $\mathcal { F }$ -正合源的同态 $E  A$，则称范畴 $\mathsf { A }$ 有“足够的 $\mathcal { F }$ -正合对象”。假设这是这种情况，因此 $\mathsf { A }$ 的每个对象都有一个 $\mathcal { F }$ -正合解。
+说一个对象 $E$ 是 $A$ 的 $\mathscr { F }$ -正合的，如果函子 $\mathscr { F } ^ { E }$ 是正合的。一个对象 $A$ 的“ $\mathscr { F }$ -正合解”是 ${ \mathsf { C } } ^ { \leq 0 } ( { \mathsf { A } } )$ 中的一个解，它由 $\mathscr { F }$ -正合对象组成。如果每个对象 $A$ 都有一个 $\mathscr { F }$ -正合源的同态 $E  A$，则称范畴 $\mathsf { A }$ 有“足够的 $\mathscr { F }$ -正合对象”。假设这是这种情况，因此 $\mathsf { A }$ 的每个对象都有一个 $\mathscr { F }$ -正合解。
 
-请注意，我们并不假设 $\mathsf { A }$ 有足够的投射：因此，原则上，我们不应该能够定义 $\mathcal { F } _ { B }$ 的右导出算子。我们将寻找一个合适的替代方案，利用 $\mathcal { F } _ { B }$ 是一个双函子的一个组成部分这一事实。
+请注意，我们并不假设 $\mathsf { A }$ 有足够的投射：因此，原则上，我们不应该能够定义 $\mathscr { F } _ { B }$ 的右导出算子。我们将寻找一个合适的替代方案，利用 $\mathscr { F } _ { B }$ 是一个双函子的一个组成部分这一事实。
 
-由于 $\textsf { B }$ 具有足够的单射，函子 ${ \mathcal { F } } ^ { A }$ 对每个对象 $A$ 都可以右导出。定义 $\mathsf { T } ^ { i } \mathcal F _ { B } ( A )$ 为 $\mathsf { R } ^ { i } \mathcal { F } ^ { A } ( B )$；注意 $\mathsf { T } ^ { \cup } \mathcal { F } _ { B } ( A ) = \mathcal { F } ^ { A } ( B ) =$ ${ \mathcal { F } } ( A , B ) = { \mathcal { F } } _ { B } ( A )$ 。
+由于 $\textsf { B }$ 具有足够的单射，函子 ${ \mathscr { F } } ^ { A }$ 对每个对象 $A$ 都可以右导出。定义 $\mathsf { T } ^ { i } \mathcal F _ { B } ( A )$ 为 $\mathsf { R } ^ { i } \mathscr { F } ^ { A } ( B )$；注意 $\mathsf { T } ^ { \cup } \mathscr { F } _ { B } ( A ) = \mathscr { F } ^ { A } ( B ) =$ ${ \mathscr { F } } ( A , B ) = { \mathscr { F } } _ { B } ( A )$ 。
 
 • 证明在 $\mathsf{A}$ 中每一个正合列 $0 \rightarrow A_1 \rightarrow A_2 \rightarrow A_3 \rightarrow 0$ 都诱导一个长正合列
 
 $$
-\begin{array} { r l } { 0 \xrightarrow { } \mathcal { F } _ { B } ( A _ { 3 } ) \xrightarrow { } \mathcal { F } _ { B } ( A _ { 2 } ) \xrightarrow { } \mathcal { F } _ { B } ( A _ { 1 } ) } & { } \\ & { \Bigg \langle \underset { \substack { \mathcal { T } ^ { 1 } \mathcal { F } _ { B } ( A _ { 3 } ) \xrightarrow { 1 } \cdots \cdots \qquad \cdots \qquad } } { \zeta ^ { i } \mathcal { F } _ { B } ( A _ { 3 } ) \xrightarrow [ ] { } \mathcal { F } _ { B } ( A _ { 3 } ) } \Bigg \rangle } \\ &  \Bigg \langle \underset { \substack { \mathcal { T } ^ { i + 1 } \mathcal { F } _ { B } ( A _ { 3 } ) \xrightarrow [ ] { } \cdots \qquad \cdots \qquad } } { \zeta ^ { i } \cdots \overset { \quad } { \varepsilon ^ { i } } } \end{array}
+\begin{array} { r l } { 0 \xrightarrow { } \mathscr { F } _ { B } ( A _ { 3 } ) \xrightarrow { } \mathscr { F } _ { B } ( A _ { 2 } ) \xrightarrow { } \mathscr { F } _ { B } ( A _ { 1 } ) } & { } \\ & { \Bigg \langle \underset { \substack { \mathcal { T } ^ { 1 } \mathscr { F } _ { B } ( A _ { 3 } ) \xrightarrow { 1 } \cdots \cdots \qquad \cdots \qquad } } { \zeta ^ { i } \mathscr { F } _ { B } ( A _ { 3 } ) \xrightarrow [ ] { } \mathscr { F } _ { B } ( A _ { 3 } ) } \Bigg \rangle } \\ &  \Bigg \langle \underset { \substack { \mathcal { T } ^ { i + 1 } \mathscr { F } _ { B } ( A _ { 3 } ) \xrightarrow [ ] { } \cdots \qquad \cdots \qquad } } { \zeta ^ { i } \cdots \overset { \quad } { \varepsilon ^ { i } } } \end{array}
 $$
 
-证明 $\mathsf { T } ^ { \imath } \mathcal { F } _ { B }$ 在 Exercise 7.13 的意义上形成一个 $\delta$-函子。证明如果 $E$ 是 $\mathsf { A }$ 的一个 $\mathcal { F }$-正合对象，那么对于 $i > 0$，$\mathsf T ^ { \imath } \mathcal F _ { B } ( E ) = 0$，并由此推断 $\mathsf { T } ^ { \imath } \mathcal { F } _ { B }$ 形成一个普遍的 $\delta$-函子。设 $E ^ { \bullet } : \cdot \cdot \cdot  E ^ { - 2 }  E ^ { - 1 }  E ^ { 0 }  A  0$ 是 $A$ 的一个 $\mathcal { F }$-正合解析。那么 $\mathsf T ^ { \imath } \mathcal F _ { B } \cong H ^ { i } ( \mathcal F _ { B } ( E ^ { \bullet } ) )$。（提示：模仿定理 8.3 的证明。）
+证明 $\mathsf { T } ^ { \imath } \mathscr { F } _ { B }$ 在 Exercise 7.13 的意义上形成一个 $\delta$-函子。证明如果 $E$ 是 $\mathsf { A }$ 的一个 $\mathscr { F }$-正合对象，那么对于 $i > 0$，$\mathsf T ^ { \imath } \mathcal F _ { B } ( E ) = 0$，并由此推断 $\mathsf { T } ^ { \imath } \mathscr { F } _ { B }$ 形成一个普遍的 $\delta$-函子。设 $E ^ { \bullet } : \cdots  E ^ { - 2 }  E ^ { - 1 }  E ^ { 0 }  A  0$ 是 $A$ 的一个 $\mathscr { F }$-正合解析。那么 $\mathsf T ^ { \imath } \mathcal F _ { B } \cong H ^ { i } ( \mathcal F _ { B } ( E ^ { \bullet } ) )$。（提示：模仿定理 8.3 的证明。）
 
-结果是，两个函子${ \mathcal { F } } ^ { A }$和$\mathcal { F } _ { B }$的相互作用使我们能够使用$T$ -正合对象代替投影来定义${ \mathsf { T } } ^ { \imath } { \mathcal { F } } _ { B }$，仿佛它是右导出函子。这给出了一个普遍的$\delta$ -函子，当A有足够的投影时，它与标准的右导出函子一致（根据练习7.15和普遍$\delta$ -函子的唯一性）。[§8.1]
+结果是，两个函子${ \mathscr { F } } ^ { A }$和$\mathscr { F } _ { B }$的相互作用使我们能够使用$T$ -正合对象代替投影来定义${ \mathsf { T } } ^ { \imath } { \mathscr { F } } _ { B }$，仿佛它是右导出函子。这给出了一个普遍的$\delta$ -函子，当A有足够的投影时，它与标准的右导出函子一致（根据练习7.15和普遍$\delta$ -函子的唯一性）。[§8.1]
 
 ## 9. 更多主题
 
@@ -25496,7 +25508,7 @@ $$
 
 将长正合同调序列记为 §3.4 中的形式，而无需单独考虑 $+ 1$ 同态。回顾起来，我在 §3.4 中坚持用于折叠“特殊”三角形的零同态实际上是一个副产物：将三角形放在导出范畴中表明对于这个同态有更明智的选择。这种选择在 ${ \mathsf { C } } ( { \mathsf { A } } )$ 中不可用，甚至在 ${ \mathsf { K } } ( { \mathsf { A } } )$ 中也不存在，但在 $\mathsf { D } ( \mathsf { A } )$ 中是可用的，并且直接导致同调中的长正合列。
 
-如果 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ 是阿贝尔范畴之间的一个函子，则诱导出的函子 $\mathsf { K } ( \mathcal { F } ) : \mathsf { K } ( \mathsf { A } ) \to \mathsf { K } ( \mathsf { B } )$ 是三角范畴的函子，并且有界变化 $\mathsf { K } ^ { \pm } ( \mathcal { F } ) : \mathsf { K } ^ { \pm } ( \mathsf { A } ) \to \mathsf { K } ^ { \pm } ( \mathsf { B } )$ 也是。在 87.2 中遇到的导出函子 $\mathsf { L } \mathcal { F }$ ，$\mathsf { R } \mathscr { F } : \mathsf { D } ^ { \pm } ( \mathsf { A } ) \to$ $\mathsf { D } ^ { \pm } ( \mathsf { B } )$ 也是三角范畴的函子。这一事实是导出函子具有良好性质的原因，例如在 7.4 中研究的长正合列。
+如果 $\mathscr { F } : \mathsf { A } \to \mathsf { B }$ 是阿贝尔范畴之间的一个函子，则诱导出的函子 $\mathsf { K } ( \mathscr { F } ) : \mathsf { K } ( \mathsf { A } ) \to \mathsf { K } ( \mathsf { B } )$ 是三角范畴的函子，并且有界变化 $\mathsf { K } ^ { \pm } ( \mathscr { F } ) : \mathsf { K } ^ { \pm } ( \mathsf { A } ) \to \mathsf { K } ^ { \pm } ( \mathsf { B } )$ 也是。在 87.2 中遇到的导出函子 $\mathsf { L } \mathscr { F }$ ，$\mathsf { R } \mathscr { F } : \mathsf { D } ^ { \pm } ( \mathsf { A } ) \to$ $\mathsf { D } ^ { \pm } ( \mathsf { B } )$ 也是三角范畴的函子。这一事实是导出函子具有良好性质的原因，例如在 7.4 中研究的长正合列。
 
 ### 9.3. 谱序列
 我在8.3中提到，“谱序列”可用于计算双复形的同调。不幸的是，在谱序列这个主题中似乎没有容易的入口，它受到固有的符号复杂性的困扰。我将仅限于对概念进行非常有限的描述，并提供一些将其与§8.4联系起来的信息。我的动机是，在文献中，诸如定理8.12等结果的引用经常被诸如“通过一个直接的谱序列论证...”之类的句子所取代，我应该尝试向读者解释这意味着什么。
@@ -25758,7 +25770,7 @@ $$
 
 等等。这张“旋转”微分图可能是当人们想到谱序列时脑海中浮现的图像。上述的论证，从定理 9.5 推导出定理 8.12，从这个角度来看可能更清晰：如果列的层同调集中在 0 度，那么 ${ } _ { v } E _ { 1 }$ 将沿着数组的底部行集中。那么很明显，对于 $i \geq 2$ 的所有微分 $d _ { i }$ 都必须是零，因为它们的源或目标为零。因此序列在 $\phantom { } _ { v } E _ { 2 } ^ { \prime }$ 处崩溃，并通过定理 9.5 得到全复形的层同调。定理 8.12 中考虑的其他情况可以通过使用从水平滤化得到的序列 ${ } _ { h } E _ { i }$ 来分析。
 
-当然，谱序列并不仅限于这些简单应用。Grothendieck谱序列“计算”两个函子的复合的导出函子42：例如，如果$\mathcal { F } : \mathsf { A } \to \mathsf { B }$和$\mathcal { G } : \mathsf { B } \to \mathsf { C }$是两个右正合函子，并且$\mathcal { F }$将投射映射到投射，那么存在一个谱序列，其$E _ { 2 }$项收集了复合$\mathsf { L } _ { p } \mathcal { G } \circ \mathsf { L } _ { q } \mathcal { F }$，并且与$\mathsf { L } _ { p + q } ( \mathcal { G } \circ \mathcal { F } )$相接。例如，如果$f : R \to S$是一个交换环的同态（因此$S$可以看作是$R$-模），$A$是一个$R$-模，$B$是一个$S$-模（并且因此通过$f$是一个$R$-模），那么存在一个“换环谱序列”$\operatorname { T o r } _ { p } ^ { S } ( \operatorname { T o r } _ { q } ^ { R } ( A , S ) , B ) \Rightarrow \operatorname { T o r } _ { \bullet } ^ { R } ( A , B )$。在拓扑学中，Serre谱序列可用于根据基底和纤维的同调来计算纤维丛的同调。对我而言，试图公正地描述谱序列的应用范围是完全徒劳的：数学家集合$X$，其中存在一个重要的$X$-谱序列包括（但不限于）Adams、Atiyah、Barratt、Bloch、Bockstein、Bousfield、Cartan、Connes、Eilenberg、Federer、Fr¨olicher、Green、Grothendieck、Hirzebruch、Hochschild、Hodge、Hurewicz、van Kampen、Kan、Kunneth、Leray、Lichtenbaum、Lyndon、May、Miller、Milnor、Moore、Novikov、de Rham、Quillen、Rothenberg、Serre、Steenrod，...
+当然，谱序列并不仅限于这些简单应用。Grothendieck谱序列“计算”两个函子的复合的导出函子42：例如，如果$\mathscr { F } : \mathsf { A } \to \mathsf { B }$和$\mathscr { G } : \mathsf { B } \to \mathsf { C }$是两个右正合函子，并且$\mathscr { F }$将投射映射到投射，那么存在一个谱序列，其$E _ { 2 }$项收集了复合$\mathsf { L } _ { p } \mathscr { G } \circ \mathsf { L } _ { q } \mathscr { F }$，并且与$\mathsf { L } _ { p + q } ( \mathscr { G } \circ \mathscr { F } )$相接。例如，如果$f : R \to S$是一个交换环的同态（因此$S$可以看作是$R$-模），$A$是一个$R$-模，$B$是一个$S$-模（并且因此通过$f$是一个$R$-模），那么存在一个“换环谱序列”$\operatorname { T o r } _ { p } ^ { S } ( \operatorname { T o r } _ { q } ^ { R } ( A , S ) , B ) \Rightarrow \operatorname { T o r } _ { \bullet } ^ { R } ( A , B )$。在拓扑学中，Serre谱序列可用于根据基底和纤维的同调来计算纤维丛的同调。对我而言，试图公正地描述谱序列的应用范围是完全徒劳的：数学家集合$X$，其中存在一个重要的$X$-谱序列包括（但不限于）Adams、Atiyah、Barratt、Bloch、Bockstein、Bousfield、Cartan、Connes、Eilenberg、Federer、Fr¨olicher、Green、Grothendieck、Hirzebruch、Hochschild、Hodge、Hurewicz、van Kampen、Kan、Kunneth、Leray、Lichtenbaum、Lyndon、May、Miller、Milnor、Moore、Novikov、de Rham、Quillen、Rothenberg、Serre、Steenrod，...
 
 许多重要的谱序列可以作为上面提到的Grothendieck谱序列的特例推导出来。读者将通过完成练习9.10来体验到如何构建这个谱序列。
 
@@ -25815,25 +25827,25 @@ $$
 
 9.9. 设 ${ } _ { v } E _ { r }$ 是由垂直滤化得到的四分之一象限双复形的谱序列，如 §9.3 所述。证明当 $r > j + 1$ 时，${ } _ { v } E _ { r } ^ { i , j } = { } _ { v } E _ { \infty } ^ { i ,j }$ for $r > \max(i, j+1)$。
 
-9.10. $\triangleright$ 设 A, B, $\mathsf { C }$ 是阿贝尔范畴，并且 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ , $\mathcal { G } : \mathsf { B } \to \mathsf { C }$ 是加性函子。假设 A 和 $\textsf { B }$ 有足够多的投射对象，$\mathcal { F }$ 将 $\mathsf { A }$ 的投射对象映射到 $\textsf { B }$ 的 $\mathcal { G }$ -拟正则对象，并且 $\mathcal { G }$ 是右正合的。
+9.10. $\triangleright$ 设 A, B, $\mathsf { C }$ 是阿贝尔范畴，并且 $\mathscr { F } : \mathsf { A } \to \mathsf { B }$ , $\mathscr { G } : \mathsf { B } \to \mathsf { C }$ 是加性函子。假设 A 和 $\textsf { B }$ 有足够多的投射对象，$\mathscr { F }$ 将 $\mathsf { A }$ 的投射对象映射到 $\textsf { B }$ 的 $\mathscr { G }$ -拟正则对象，并且 $\mathscr { G }$ 是右正合的。
 
-设 $A$ 是 $A$ 的一个对象，设 $M ^ { \bullet }$ : $\cdot \cdot \cdot  M ^ { - 2 }  M ^ { - 1 }  M ^ { 0 }  0$ 是 $A$ 的一个投射解析。设 $P _ { \mathcal { F M } } ^ { \bullet }$ • 是复形 $\mathcal { F M } ^ { \bullet }$ 的一个Cartan-Eilenberg解析（如引理7.9中构造的）。考虑这个复形
+设 $A$ 是 $A$ 的一个对象，设 $M ^ { \bullet }$ : $\cdots  M ^ { - 2 }  M ^ { - 1 }  M ^ { 0 }  0$ 是 $A$ 的一个投射解析。设 $P _ { \mathcal { F M } } ^ { \bullet }$ • 是复形 $\mathcal { F M } ^ { \bullet }$ 的一个Cartan-Eilenberg解析（如引理7.9中构造的）。考虑这个复形
 
 $$
-\cdot \cdot \cdot \longrightarrow { \mathcal G } ( P _ { \mathcal F M ^ { - 2 } } ^ { \bullet } ) \longrightarrow { \mathcal G } ( P _ { \mathcal F M ^ { - 1 } } ^ { \bullet } ) \longrightarrow { \mathcal G } ( P _ { \mathcal F M ^ { 0 } } ^ { \bullet } ) \longrightarrow 0
+\cdots \longrightarrow { \mathcal G } ( P _ { \mathcal F M ^ { - 2 } } ^ { \bullet } ) \longrightarrow { \mathcal G } ( P _ { \mathcal F M ^ { - 1 } } ^ { \bullet } ) \longrightarrow { \mathcal G } ( P _ { \mathcal F M ^ { 0 } } ^ { \bullet } ) \longrightarrow 0
 $$
 
-通过将 $\mathcal { G }$ 应用于 $P _ { \mathcal { F } M } ^ { \bullet } \bullet$ 获得
+通过将 $\mathscr { G }$ 应用于 $P _ { \mathscr { F } M } ^ { \bullet } \bullet$ 获得
 
 这是练习 8.8 的具体设置。现在取与 (†) 相关的双复形，并构造对应水平滤化的谱序列。证明该序列的 $E _ { 2 }$ 项有项
 
 $$
-\boldsymbol { \mathbf { \mathit { \Sigma } } } _ { h } ^ { p , q } = \boldsymbol { \mathbf { \check { L } } } _ { p } \boldsymbol { \mathcal { G } } ( \boldsymbol { \mathbf { \check { L } } } _ { q } \boldsymbol { \mathcal { F } } ( \boldsymbol { \mathbf { \mathit { A } } } ) ) .
+\boldsymbol { \mathbf { \mathit { \Sigma } } } _ { h } ^ { p , q } = \boldsymbol { \mathbf { \check { L } } } _ { p } \boldsymbol { \mathscr { G } } ( \boldsymbol { \mathbf { \check { L } } } _ { q } \boldsymbol { \mathscr { F } } ( \boldsymbol { \mathbf { \mathit { A } } } ) ) .
 $$
 
 (使用练习7.6来计算${ } _ { h } E _ { 1 } ^ { \prime }$项。)
 
-这是在第9.3节末尾提到的格罗滕迪克谱序列。证明它与$\mathsf { L } _ { \bullet } ( \mathcal { G } \circ \mathcal { F } ) ( A )$相接。
+这是在第9.3节末尾提到的格罗滕迪克谱序列。证明它与$\mathsf { L } _ { \bullet } ( \mathscr { G } \circ \mathscr { F } ) ( A )$相接。
 
 （使用定理 9.5 的“水平”版本，并结合练习 8.8 中对全复形的同调计算。）[§7.2, 7.6, §9.3]
 
@@ -25873,7 +25885,7 @@ $\mathsf { K } ^ { - } \left( \mathsf { P } \right)$ ，620
 $k ( \alpha )$ ，387  
 $k ( \alpha _ { 1 } , \ldots , \alpha _ { n } )$ ，393  
 $K$ -Aff，488  
-${ \mathsf L } \mathcal { F }$ ，642  
+${ \mathsf L } \mathscr { F }$ ，642  
 $\mathbb { \Lambda } _ { R } ^ { * }$ ，529  
 lim，491  
 −→lim，489  
@@ -25891,7 +25903,7 @@ $\mathbb { Q } ( { \sqrt { d } } )$ ，154
 $Q _ { 8 }$ ，128  
 $\mathbb { Q } _ { p }$ ，498  
 R，2  
-$\mathsf { R } \mathcal { F }$ ，642  
+$\mathsf { R } \mathscr { F }$ ，642  
 $R \langle A \rangle$ ，169  
 $R _ { \mathfrak { p } }$ ，278  
 ${ \mathrm { R e e s } } _ { R } ( I )$ ，528  
@@ -26051,7 +26063,7 @@ Seq(A)，603
 上像，572 同构于像，573   
 群作用的伴随，658   
 上核，104 分类定义，491，561 在Ab中，104 在Ring中，137 在R-Mod中，167 全称性质，104，166   
-上极限，490，498   
+余极限，490，498   
 矩阵的列空间，333   
 逗号范畴，24   
 交换的，45 环，121   
@@ -26097,7 +26109,7 @@ delta函子，660，680
 微分形式，530 复形的微分形式，592 算子，534   
 二面体群，52，225 表示，57，106   
 维数 全局，679 单射，679 韦尔，环的，153，250，354，679 向量空间的，311 投影，678   
-直接极限，402，491 积，61，226 和，62，76，77，164 在阿贝尔范畴中，570   
+正向极限，402，491 积，61，226 和，62，76，77，164 在阿贝尔范畴中，570   
 定向集，491，498   
 狄利克雷，彼得·古斯塔夫·勒让（1805-1859），xix 素数在算术级数中的定理，454，480   
 离散 valuation 环，260，278   
