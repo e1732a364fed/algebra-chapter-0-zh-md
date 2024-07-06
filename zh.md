@@ -19159,22 +19159,23 @@ $$
 
 纯张量仍然非常有用，作为张量积的一组生成元。例如，如果两个同态 $\alpha , \beta : M \otimes _ { R } N \to P$ 在 _纯_ 张量上相等，那么 $\alpha = \beta$ 。通常，涉及张量积的计算被简化为对纯张量的简单验证。
 
-### 2.2. 与Hom的附加和显式计算
-张量积是Hom的左伴随。一旦我们解析这个粗略陈述的含义，它将几乎是微不足道的；但是，正如我们在§1.5中发现的那样，仅仅$\otimes _ { R }$是任何函子的左伴随这一事实就足以得出关于它的有趣结论。
+### 2.2. 与Hom的伴随和显式计算
 
-首先，我们注意到每一个 $R$ -模 $N$ 通过 $\otimes _ { R }$ 定义了一个新的协变函子 $R – { \mathsf { M o d } }  R$ -Mod，它在对象上的定义为
+_张量积是 $\mathrm{Hom}$ 的左伴随_ 。一旦我们解析这个粗略陈述的含义，它将几乎是微不足道的；但是，正如我们在§1.5中发现的那样，仅仅$\otimes _ { R }$是 _任何_ 函子的左伴随这一事实就足以得出关于它的有趣结论。
+
+首先，我们注意到每一个 $R$ -模 $N$ 通过 $\otimes _ { R }$ 定义了一个新的协变函子 $R – { \mathsf { M o d } } \to R$ -Mod，它在对象上的定义为
 
 $$
 M \mapsto M \otimes _ { R } N .
 $$
 
-要了解这在同态上的作用，请让
+要了解这在同态上的作用，设
 
 $$
-\alpha : M _ { 1 }  M _ { 2 }
+\alpha : M _ { 1 }\to  M _ { 2 }
 $$
 
-是一个 $R$ -模同态。与 $N$ 交叉并与 $\otimes$ 组合定义了一个 $R$ -双线性映射
+是一个 $R$ -模同态。与 $N$ 叉乘并与 $\otimes$ 组合定义了一个 $R$ -双线性映射
 
 $$
 M _ { 1 } \times N \to M _ { 2 } \times N \to M _ { 2 } \otimes N ,
@@ -19186,75 +19187,72 @@ $$
 \alpha \otimes N : M _ { 1 } \otimes N \to M _ { 2 } \otimes N .
 $$
 
-在纯张量上，这个映射简单地给出 $m \otimes n \mapsto \alpha ( m ) \otimes n$ ，并且函子性立即成立：如果 $\beta : M _ { 0 }  M _ { 1 }$ 是一个第二个同态，那么 $( \alpha \otimes N ) \circ$ $( \beta \otimes N )$ 和 $( \alpha \circ \beta ) \otimes N$ 都将纯张量 $m \otimes n$ 映射到 $\alpha ( \beta ( m ) ) \otimes n$ ，因此它们必须在所有张量上保持一致。
+在纯张量上，这个映射简单地给出 $m \otimes n \mapsto \alpha ( m ) \otimes n$ ，并且函子性立即成立：如果 $\beta : M _ { 0 } \to M _ { 1 }$ 是一个第二个同态，那么 $( \alpha \otimes N ) \circ$ $( \beta \otimes N )$ 和 $( \alpha \circ \beta ) \otimes N$ 都将纯张量 $m \otimes n$ 映射到 $\alpha ( \beta ( m ) ) \otimes n$ ，因此它们必须在所有张量上保持一致。
 
-本小节开头给出的 adjunction 断言将这个函子与协变函子 $P \mapsto { \mathrm { H o m } } _ { R \cdot { \mathsf { M o d } } } ( N , P )$ 进行比较；参见 §1.2。让我们更精确地看看它是如何运作的。
+本小节开头给出的 伴随 断言将这个函子与协变函子 $P \mapsto { \mathrm { H o m } } _ { R \cdot { \mathsf { M o d } } } ( N , P )$ 进行比较；参见 §1.2。让我们更精确地看看它是如何运作的。
 
-我们已经定义了 $M \otimes _ { R } N$，使得给一个 $R$ -线性映射 $M \otimes _ { R } N \to P$ 到一个 $R$ -模 $P$ 是“等同于”给一个 $R$ -双线性映射 $M \times N \to P$。现在回想一下 $R$ -双线性映射的定义：$\varphi : M \times N \to P$ 是 $R$ -双线性的，如果对于所有 $m \in M$ 和 $n \in N$，$\varphi ( m , \underline { { \ O } } )$ 和 $\varphi ( \underline { { \mathbf { \Pi } } } _ { - } , n )$ 都是 $R$ -线性映射。这个规定的第一部分说明 $\varphi$ 确定了一个函数
-
+我们已经定义了 $M \otimes _ { R } N$，使得给一个 $R$ -线性映射 $M \otimes _ { R } N \to P$ 到一个 $R$ -模 $P$ “相当于”给一个 $R$ -双线性映射 $M \times N \to P$  。现在回想一下 $R$ -双线性映射的定义：$\varphi : M \times N \to P$ 是 $R$ -双线性的，如果对于所有 $m \in M$ 和 $n \in N$，$\varphi ( m , \underline {   } )$ 和 $\varphi ( \underline {     }   , n )$ 都是 $R$ -线性映射。这个规定的第一部分说明 $\varphi$ 确定了一个函数
 $$
 M \to \operatorname { H o m } _ { R } ( N , P ) ;
 $$
 
-第二部分说这是一个 $R$ -模同态。因此，一个 $R$ -双线性映射是“等同于"一个元素。
-
+第二部分说这是一个 $R$ -模同态。因此，一个 $R$ -双线性映射就“相当于"
 $$
-{ \mathrm { H o m } } _ { R } ( M , { \mathrm { H o m } } _ { R } ( N , P ) ) .
+{ \mathrm { H o m } } _ { R } ( M , { \mathrm { H o m } } _ { R } ( N , P ) )
 $$
+的一个元素 。这些简单的考虑足以使以下看似复杂的陈述相当自然：
 
-这些简单的考虑足以使以下看似复杂的陈述相当自然：
-
-引理 2.4. 对于所有 $R$ -模 $M$ ，$N$ ，$P$ ，存在一个 $R$ -模同构
-
+**引理 2.4**. 对于所有 $R$ -模 $M$ ，$N$ ，$P$ ，存在一个 $R$ -模同构
 $$
 \mathrm { H o m } _ { R } ( M , \mathrm { H o m } _ { R } ( N , P ) ) \cong \mathrm { H o m } _ { R } ( M \otimes _ { R } N , P ) .
 $$
 
-证明。如前所述，对于每个 $\alpha \in { \mathrm { H o m } } _ { R } ( M , { \mathrm { H o m } } _ { R } ( N , P ) )$，它确定了一个 $R$-双线性映射 $\varphi : M \times N \to P$，
+**证明**。如前所述，对于每个 $\alpha \in { \mathrm { H o m } } _ { R } ( M , { \mathrm { H o m } } _ { R } ( N , P ) )$，它确定了一个 $R$-双线性映射 $\varphi : M \times N \to P$，
 
 $$
 ( m , n ) \mapsto \alpha ( m ) ( n ) .
 $$
 
-根据泛性质，$\varphi$ 唯一地通过一个 $R$-线性映射 $\overline{\varphi} : M \otimes_R N \to P$。因此，$\alpha$ 确定了一个定义良好的元素 $\overline{\varphi} \in \mathrm{Hom}_R(M \otimes_R N, P)$。读者将验证（练习 2.11），这个映射 $\alpha \mapsto \overline{\varphi}$ 是 $R$-线性的，并构造其逆映射。
+根据泛性质，$\varphi$ 唯一地通过一个 $R$-线性映射 $\overline{\varphi} : M \otimes_R N \to P$ 分解。因此，$\alpha$ 确定了一个定义良好的元素 $\overline{\varphi} \in \mathrm{Hom}_R(M \otimes_R N, P)$。读者将验证（练习 2.11），这个映射 $\alpha \mapsto \overline{\varphi}$ 是 $R$-线性的，并构造其逆映射。$\square$
 
-推论 2.5. 对于每一个 $R$ -模 $N$ ，函子 $\_ \otimes R ^ { N }$ 是函子 ${ \mathrm { H o m } } _ { R } ( N , \ l _ { - } )$ 的左伴随。
+**推论 2.5.** 对于每一个 $R$ -模 $N$ ，函子 $\_ \otimes R ^ { N }$ 是函子 $\mathrm { H o m } _ R( N , \underline{ } )$ 的左伴随。
 
-证明。该命题是说引理2.4中找到的同构在1.5中暗示但未完全解释的意义下是自然的；有兴趣的读者应该没有问题检查这种自然性。$\square$
+**证明**。该命题是说 引理2.4中找到的同构 在1.5中暗示但未完全解释的意义下是自然的；有兴趣的读者应该没有问题检查这种自然性。$\square$
 
-根据引理1.17（或者说其共变形式），我们可以得出对于每个$R$-模$N$，函子$_ \otimes _ { R } N$保持余极限，并且${ M \otimes _ { R _ { - } } }$也保持余极限，这是由§2.1中验证的基本的积的交换性所保证的。特别是，这一点是另一个巴甫洛夫反应的好材料，
+根据引理1.17（或者说其 余-形式），我们可以得出对于每个$R$-模$N$，函子$\underline{} \otimes _ { R } N$保持余极限，并且${ M \otimes _R \underline{} }$也保持余极限，这是由§2.1中验证的基本的张量积的交换性所保证的。特别是，这一点是另一个巴甫洛夫反应的好材料，
 
-$M \otimes _ { R } \underline { { { \ : \ : - } } } \ : \mathrm { a n d \ : \ : \mathcal { Q } } _ { R } \ : N \ : \ : \mathrm { a r e \ r i g h t \mathrm { - } e x a c t \ : f u n c t o r s }$
-
+$$
+M \otimes _ { R } \underline {   } \text{和 } \underline{} \otimes _ { R } N \text {  是右正合函子}
+$$
 （参见示例1.18）。
 
 这些观察有几个后果，这使得使用张量积进行“计算”更加合理。这里有一个例子：
 
-推论2.6。对于所有的$R$-模$M _ { 1 }$，$M _ { 2 }$，$N$，
+**推论2.6**。对于所有的$R$-模$M _ { 1 }$，$M _ { 2 }$，$N$，
 
 $$
 ( M _ { 1 } \oplus M _ { 2 } ) \otimes _ { R } N \cong ( M _ { 1 } \otimes _ { R } N ) \oplus ( M _ { 2 } \otimes _ { R } N ) .
 $$
 
-(此外，由于交换律，M ⊗R ${ \mathrm { } } _ { \mathrm { { } } }$；( N _ { 1 } \oplus N _ { 2 } ) \cong ( M \otimes _ { R } N _ { 1 } ) \oplus ( M \otimes _ { R } N _ { 2 } ) 也同样成立。)实际上，直和是余极限。事实上，$\otimes$ 必须与任意（可能是无限的）直和交换：
+(此外，由于交换律，$M \otimes_R { \mathrm { } } _ { \mathrm { { } } } ( N _ { 1 } \oplus N _ { 2 } ) \cong ( M \otimes _ { R } N _ { 1 } ) \oplus ( M \otimes _ { R } N _ { 2 } )$ 也同样成立。)实际上，余积是余极限。事实上，$\otimes$ 必须与 _任意_（可能是无限的）直和交换：
 
 $$
 ( \bigoplus _ { \alpha \in A } M _ { \alpha } ) \otimes _ { R } N \cong \bigoplus _ { \alpha \in A } ( M _ { \alpha } \otimes _ { R } N ) .
 $$
 
-这个计算了所有自由 $R$ -模的张量：
+这 计算了所有 _自由_ $R$ -模的张量：
 
-推论 2.7. 对于任意两个集合 $A$，$B$：
+**推论 2.7**. 对于任意两个集合 $A$，$B$：
 
 $$
 R ^ { \oplus A } \otimes _ { R } R ^ { \oplus B } \cong R ^ { \oplus A \times B } .
 $$
 
-确实，“分配”直和将左侧与直和 $( R ^ { \oplus A } ) ^ { \oplus B }$ 相等，它与右侧同构（练习 III.6.5）。对于有限生成的自由模，这简单地说明 $R ^ { \oplus m } \otimes R ^ { \oplus n } \cong R ^ { \oplus m n }$ 。
+确实，“分配”直和 将左侧与直和 $( R ^ { \oplus A } ) ^ { \oplus B }$ 等同，其与右侧同构（练习 III.6.5）。对于 _有限生成的_ 自由模，这简单地说明 $R ^ { \oplus m } \otimes R ^ { \oplus n } \cong R ^ { \oplus m n }$ 。
 
 请注意，如果 $e _ { 1 } , \ldots , e _ { m }$ 生成 $M$ 且 $f _ { 1 } , \ldots , f _ { n }$ 生成 $N$ ，那么纯张量 $e _ { i } \otimes f _ { j }$ 必须生成 $M \otimes _ { R } N$ 。在自由情况下，如果 $e _ { i }$ 和 $f _ { j }$ 分别是 $R ^ { \oplus m }$ 和 $R ^ { \oplus n }$ 的基，那么 $m n$ 个元素 $e _ { i } \otimes f _ { j }$ 必须是 $R ^ { \oplus m } \otimes R ^ { \oplus n }$ 的基。实际上它们生成它；因此它们必须是线性无关的，因为该模的秩为 $m n$ 。特别是，如果 $R$ 是一个域 $k$ ，那么这些模就是 $k$ -向量空间（命题 VI.1.7）。在更一般的环上，张量积更有趣。
 
-推论 2.8. 对于所有 $R$ -模 $N$ 和 $R$ 的所有理想 $I$ ，
+**推论 2.8** 对于所有 $R$ -模 $N$ 和 $R$ 的所有理想 $I$ ，
 
 $$
 { \frac { R } { I } } \otimes _ { R } N \cong { \frac { N } { I N } } .
@@ -19272,9 +19270,9 @@ $$
 I \otimes _ { R } N { \longrightarrow } R \otimes _ { R } N { \longrightarrow } \frac { R } { I } \otimes _ { R } N { \longrightarrow } 0 .
 $$
 
-$I \otimes _ { R } N$ 在 $R \otimes _ { R } N \cong N$ 中的像是纯张量 $a \otimes n$ 的像生成的，其中 $a \in \mathcal Ḋ I Ḍ$ ，$n \in N$；这是 $I N$ 。因此，第二个序列确定了 $N / ( I N )$ 与 $( R / I ) \otimes _ { R } N$ 的同构，如所需。
+$I \otimes _ { R } N$ 在 $R \otimes _ { R } N \cong N$ 中的像 是纯张量 $a \otimes n$ 的像生成的，其中 $a \in   I$ ，$n \in N$；这是 $I N$ 。因此，第二个序列确定了 $N / ( I N )$ 与 $( R / I ) \otimes _ { R } N$ 的同构，如所需。
 
-推论2.9。对于R的所有理想I，J，
+**推论2.9**。对于 $R$ 的所有理想 $I，J$ ，
 
 $$
 { \frac { R } { I } } \otimes _ { R } { \frac { R } { J } } \cong { \frac { R } { I + J } } .
@@ -19282,7 +19280,7 @@ $$
 
 这直接来自推论 2.8 和“第三同构定理”，命题 III.5.17。事实上，$I R / J = ( I + J ) / J$。
 
-示例 2.10. $\mathbb { Z } / m \mathbb { Z } \otimes _ { \mathbb { Z } } \mathbb { Z } / n \mathbb { Z } \cong \mathbb { Z } / \operatorname* { g c d } ( m , n ) \mathbb { Z } .$ .
+**示例 2.10**. $\mathbb { Z } / m \mathbb { Z } \otimes _ { \mathbb { Z } } \mathbb { Z } / n \mathbb { Z } \cong \mathbb { Z } / \operatorname* { g c d } ( m , n ) \mathbb { Z } .$ .
 
 确实，在 $\mathbb{Z}$ 中，$( m ) + ( n ) = ( \operatorname*{g c d} ( m , n ) )$。例如，
 
@@ -19292,7 +19290,7 @@ $$
 
 一个在资格考试中的热门选择（参见练习2.2）。
 
-推论2.8是一个关于$\otimes$的基本应用模板示例：张量积可用于将涉及$R$（例如通过理想$I$取商）的构造转移到涉及$R$-模（例如通过相应子模取商）的构造。这种运算有多个实例；读者将在练习2.5中查看局部化。
+推论2.8是一个关于$\otimes$的基本应用模板示例：张量积可用于将涉及$R$（例如通过理想$I$取商）的构造 转移到涉及$R$-模（例如通过相应子模取商）的构造。这种运算有多个实例；读者将在练习2.5中查看 _局部化_。
 
 ### 2.3. 张量的正合性属性；平坦性
 重要的是要记住张量积不是一个正合的函子：左正合性可能会完全失败。这已经可以在讨论引理2.8后面的序列中观察到：对于一个环R的理想I和一个R-模N，映射
@@ -19303,39 +19301,39 @@ $$
 
 由 $I \subseteq R$ 引入并通过 $N$ 张量化后可能不是单射的。
 
-示例 2.11. 乘以 2 得到一个包含关系
+**示例 2.11**. 乘以 2 得到一个包含关系
 
 $$
-\mathbb { Z } { \hookrightarrow } \longrightarrow \mathbb { Z }
+\mathbb { Z } {\stackrel{\cdot 2} \hookrightarrow }  \mathbb { Z }
 $$
 
-识别第一个 $\mathbb{Z}$ 与第二个 $\mathbb{Z}$ 中的理想 (2) 的第一个副本。在 $\mathbb{Z}$ 上张量 $\mathbb{Z}/2\mathbb{Z}$（并记住 $R \otimes_R N \cong N$），我们得到同态
+等同   $\mathbb{Z}$  的第一个副本 与   $\mathbb{Z}$ 的第二个副本中的理想 $(2)$  。在 $\mathbb{Z}$ 上做张量 $\mathbb{Z}/2\mathbb{Z}$（并记住 $R \otimes_R N \cong N$），我们得到同态
 
 $$
 \frac { \mathbb { Z } } { 2 \mathbb { Z } } \xrightarrow { \cdot 2 } \frac { \mathbb { Z } } { 2 \mathbb { Z } } ,
 $$
 
-它将 [0] 和 [1] 都发送到零。这是零同态，并且它不是单射。
+它将 $[0]$ 和 $[1]$ 都发送到零。这是零态射，并且尤其它不是单射。$\lrcorner$
 
-另一方面，如果 $N \cong R ^ { \oplus A }$ 是自由的，那么 $\_ \otimes _ { R } N$ 是正合的。实际上，每一个包含
+另一方面，如果 $N \cong R ^ { \oplus A }$ 是 _自由的_，那么 $\_ \otimes _ { R } N$ 是正合的。实际上，每一个包含
 
 $$
 M _ { 1 } \subseteq M _ { 2 }
 $$
 
-映射到 ${ \cal M } _ { 1 } \otimes _ { R } R ^ { \oplus A } \to { \cal M } _ { 2 } \otimes _ { R } R ^ { \oplus A }$ ，这是通过引理 2.6 识别的包含
+都被映射到 ${  M } _ { 1 } \otimes _ { R } R ^ { \oplus A } \to {   M } _ { 2 } \otimes _ { R } R ^ { \oplus A }$ ，由如下 _包含映射_ 通过引理 2.6 等同 ：
 
 $$
 M _ { 1 } ^ { \oplus A } \subseteq M _ { 2 } ^ { \oplus A } .
 $$
 
-示例 2.12. 由于向量空间是自由的（命题 VI.1.7），在 $k$-Vect 中张量积是正合的：如果
+**示例 2.12**. 由于向量空间是自由的（命题 VI.1.7），在 $k$-Vect 中张量积是正合的：如果
 
 $$
 0 \longrightarrow V _ { 1 } \longrightarrow V _ { 2 } \longrightarrow V _ { 3 } \longrightarrow 0
 $$
 
-是一个 $k$ -向量空间的正合列，并且 $W$ 是一个 $k$ -向量空间，那么诱导序列
+是一个 $k$ -向量空间的正合列，并且 $W$ 是一个 $k$ -向量空间，那么诱导的序列
 
 $$
 0 \longrightarrow V _ { 1 } \otimes _ { k } W \longrightarrow V _ { 2 } \otimes _ { k } W \longrightarrow V _ { 3 } \otimes _ { k } W \longrightarrow 0
@@ -19343,28 +19341,28 @@ $$
 
 在两边都正合。
 
-读者现在应该会想知道，研究一个 $R$ -模 $N$ 上的条件是否有用，这个条件保证了函子 $_ \otimes _ { R } N$ 同时是左正合的和右正合的。
+读者现在应该会想知道，研究一个 $R$ -模 $N$ 上的条件是否有用，这个条件保证了函子 $\underline{} \otimes _ { R } N$ 同时是左正合的和右正合的。
 
-定义 2.13. 一个 $R$ -模 $N$ 是平坦的，如果函子 $\_ \otimes _ { R } N$ 是正合的。
+**定义 2.13**. 一个 $R$ -模 $N$ 是 _平坦的_ (flat) ，如果函子 $\_ \otimes _ { R } N$ 是正合的。
 
 在练习中，读者将探索这个概念的一些简单性质以及在特定情况下的有用等价形式。
 
-我们已经检查过 $\mathbb{Z}/2\mathbb{Z}$ 不是一个平坦的 $\mathbb{Z}$-模，而自由模是平坦的。平坦模非常重要：在代数几何中，“平坦性”是表达一个族中的对象“连续变化”并保持某些关键不变量的条件。
+我们已经检查过 $\mathbb{Z}/2\mathbb{Z}$ _不_ 是一个平坦的 $\mathbb{Z}$-模，而自由模是平坦的。平坦模非常重要：在代数几何中，“平坦性”是表达一个族中的对象“连续变化”并保持某些关键不变量的条件。
 
-例子 2.14. 考虑平面 $\mathbb{A}^2$（在固定域 $k$ 上）中的仿射代数集 $\mathcal{V}(xy)$ 以及“到第一坐标的投影” $\mathcal{V}(xy) \mathbb{A}^1$，$(x, y) \mapsto x$：
+**例子 2.14**. 考虑平面 $\mathbb{A}^2$（在固定域 $k$ 上）中的仿射代数集 $\mathscr{V}(xy)$ 以及“到第一坐标的投影” $\mathscr{V}(xy)\to \mathbb{A}^1$，$(x, y) \mapsto x$：
 
 ![](images/135.jpg)
 
-在坐标环方面（参见$S$ VII.2.3），这个映射对应于$k$-代数的同态：
+在坐标环方面（参见 VII.2.3），这个映射对应于$k$-代数的同态：
 
 $$
-k [ x ]  { \frac { k [ x , y ] } { ( x y ) } }
+k [ x ] \to { \frac { k [ x , y ] } { ( x y ) } }
 $$
 
-由映射 $x$ 到陪集 $x + ( x y )$ 定义（对于已经解出练习 VII.2.12 的读者来说，这一点将完全清晰！）。这个同态在 $k [ x , y ] / ( x y )$ 上定义了一个 $k [ x ]$ - 模结构，我们可以思考后者是否在定义 2.13 的意义上是平坦的。从几何角度来看，显然在点 $x = 0$ 上正在发生某种“不平坦”的事情，因此我们考虑理想 $( x )$ 在 $k [x]$ 中的包含：
+由映射 $x$ 到陪集 $x + ( x y )$ 定义（对于已经解出练习 VII.2.12 的读者来说，这一点将完全清晰！）。这个同态在 $k [ x , y ] / ( x y )$ 上定义了一个 $k [ x ]$ - 模结构，我们可以思考后者是否在定义 2.13 的意义上是 _平坦的_。从几何角度来看，显然在点 $x = 0$ 上正在发生某种“不平坦”的事情，因此我们考虑理想 $( x )$ 在 $k [x]$ 中的包含：
 
 $$
-k [ x ] { \stackrel { \cdot x } { \longrightarrow } } k [ x ]
+k [ x ] { \stackrel { \cdot x } { \hookrightarrow } } k [ x ]
 $$
 
 通过 $k [ x , y ] / ( x y )$ 张量化，我们得到
@@ -19373,13 +19371,13 @@ $$
 \frac { k [ x , y ] } { ( x y ) } \xrightarrow { \cdot x } \frac { k [ x , y ] } { ( x y ) }
 $$
 
-它不是单射的，因为它将非零陪集 $y + ( x y )$ 发送到零。因此 $k [ x , y ] / ( x y )$ 作为 $k [x]$ -模不是平坦的。
+它 _不_ 是单射的，因为它将非零陪集 $y + ( x y )$ 发送到零。因此 $k [ x , y ] / ( x y )$ 作为 $k [x]$ -模不是平坦的。
 
-这个术语“flat”正是受到了这类“几何”例子的启发。
+这个术语“平坦”正是受到了这类“几何”例子的启发。
 
 ### 2.4. Tor函子
 
-算子$_ \otimes _ { R } N$的“正合性失败”程度由另一个算子$R – { \mathsf { M o d } } \to R – { \mathsf { N } }$ od，称为$\mathrm { T o r } _ { 1 } ^ { R } ( \_ , N )$来衡量：如果$N$是平坦的（例如，如果它是自由的），那么对于所有模$M$，都有$\mathrm { T o r } _ { 1 } ^ { R } ( M , N ) = 0$。事实上（令人惊讶的是），如果
+算子$\underline{} \otimes _ { R } N$的“正合性失败”程度由另一个算子$R – { \mathsf { M o d } } \to R – { \mathsf { Mod } }$，称为$\mathrm { T o r } _ { 1 } ^ { R } ( \_ , N )$来衡量：如果$N$是平坦的（例如，如果它是自由的），那么对于所有模$M$，都有$\mathrm { T o r } _ { 1 } ^ { R } ( M , N ) = 0$。事实上（令人惊讶的是），如果
 
 $$
 0 { \xrightarrow { } } A { \xrightarrow { } } B { \xrightarrow { } } C { \xrightarrow { } } 0
@@ -19391,79 +19389,83 @@ $$
 \mathrm { T o r } _ { 1 } ^ { R } ( C , N ) \longrightarrow A \otimes _ { R } N \longrightarrow B \otimes _ { R } N \longrightarrow C \otimes _ { R } N \longrightarrow 0 ,
 $$
 
-所以，如果 ${ \mathrm { T o r } } _ { 1 } ^ { R } ( C , N ) = 0$ ，那么左侧的模消失；因此，在这种情况下，以 $C$ 结尾的每个短正合列在通过 $N$ 张量化后仍然 exact。事实上（令人惊讶的是），对于所有 $N$，人们可以继续这个序列，用更多的 Tor-模，得到一个更长的 正合复形：
+所以，如果 ${ \mathrm { T o r } } _ { 1 } ^ { R } ( C , N ) = 0$ ，那么左侧的模消失；因此，在这种情况下，以 $C$ 结尾的每个短正合列在通过 $N$ 张量化后仍然 正合。_事实上_（令人惊讶的是），对于所有 $N$，人们可以继续这个序列，用更多的 Tor-模，得到一个更长的 正合复形：
 
 $$
 \operatorname { T o r } _ { 1 } ^ { R } ( A , N ) \longrightarrow \operatorname { T o r } _ { 1 } ^ { R } ( B , N ) \longrightarrow \operatorname { T o r } _ { 1 } ^ { R } ( C , N ) \longrightarrow A \otimes _ { R } N \longrightarrow B \otimes _ { R } N \longrightarrow C \otimes _ { R } N \longrightarrow 0 .
 $$
 
-这不是故事的结局：通过调用新的算子 $\mathrm { T o r } _ { 2 } ^ { R } ( \_ , N )$ ，$\mathrm { T o r } _ { 3 } ^ { R } ( \_ , N )$  等等，这个复形可以继续进行。这些都是张量的导出算子。为了“计算”这些算子，可以应用以下步骤：给定一个 $R$ -模 $M$ ，找到一个自由解析（ § VI.4.2）
+这不是故事的结局：通过调用新的函子 $\mathrm { T o r } _ { 2 } ^ { R } ( \_ , N )$ ，$\mathrm { T o r } _ { 3 } ^ { R } ( \_ , N )$  等等，这个复形可以继续进行。这些都是张量的 _导出函子_。为了“计算”这些函子，可以应用以下步骤：给定一个 $R$ -模 $M$ ，找到一个自由分解（ § VI.4.2）
 
 $$
  R ^ { \oplus S _ { 2 } } \longrightarrow R ^ { \oplus S _ { 1 } } \longrightarrow R ^ { \oplus S _ { 0 } } \longrightarrow M
 $$
 
-扔掉 $M$，并用 $N$ 张量自由部分，得到一个复数 $M _ { \bullet } \otimes _ { R } N$：
+扔掉 $M$，并用 $N$ 张量自由部分，得到一个复形 $M _ { \bullet } \otimes _ { R } N$：
 
 $$
-\longrightarrow N ^ { \oplus S _ { 2 } } \longrightarrow N ^ { \oplus S _ { 1 } } \longrightarrow N ^ { \oplus S _ { 0 } } \longrightarrow ( 
+\cdots \longrightarrow N ^ { \oplus S _ { 2 } } \longrightarrow N ^ { \oplus S _ { 1 } } \longrightarrow N ^ { \oplus S _ { 0 } } \longrightarrow 0
 $$
 
-（再次回忆张量与滤合运算交换，因此与直和运算交换，因此 $R ^ { \oplus m } \otimes _ { R } N \cong N ^ { \oplus m }$）；然后取这个复形的同调（参见§III.7.3）。令人惊讶的是，这将不依赖于（在同构意义下）所选择的自由分解，因此我们可以定义
-
+（再次回忆张量与余极限 交换，因此与直和 交换，因此 $R ^ { \oplus m } \otimes _ { R } N \cong N ^ { \oplus m }$）；然后取这个复形的 _同调_（参见§III.7.3）。令人惊讶的是，这 _将不依赖于_（在同构意义下）所选择的自由分解，因此我们可以定义
 $$
 \operatorname { T o r } _ { i } ^ { R } ( M , N ) : = H _ { i } ( M _ { \bullet } \otimes_R N ) .
 $$
 
 例如，根据这个定义 $\operatorname { T o r } _ { 0 } ^ { R } ( M , N ) \cong M \otimes _ { R } N$（习题 2.14），并且当 $N$ 是平坦的时，对于所有 $i > 0$ 和所有 $M$，有 $\mathrm { T o r } _ { i } ^ { R } ( M , N ) = 0$（因为此时通过 $N$ 的张量化是一个正合的函子，所以张量化 $M$ 的解析返回一个正合列，因此没有同调）。事实上，这证明了 Tor 函子的一个显著性质：如果对于所有 $M$，有 $\mathrm { T o r } _ { 1 } ^ { R } ( M , N ) = 0$，那么对于所有模 $M$ 和所有 $i > 0$，有 $\mathrm { T o r } _ { i } ^ { R } ( M , N ) = 0$。确实，此时 $N$ 是平坦的。
 
-此时您可能会觉得有些不平衡：为什么关注 $ \_ \otimes _ { R } N $ 而不是 $ M \otimes _ { R _ { } - } $ 呢？由于 $ M \otimes _ { R } N $ 在交换情况下与 $ N \otimes _ { R } M $ 建立了自然的同构（参见示例 2.2），我们可以期望这对每个 $ \mathrm { T o r } _ { i } ^ { R } $ 都适用：$ \mathrm { T o r } _ { i } ^ { R } ( M , N ) $ 应该对所有的 $ i $ 都与 $ \mathrm { T o r } _ { i } ^ { R } ( N , M ) $ 建立自然的同构。等价地，我们应该能够将 $ \mathrm { T o r } _ { i } ^ { R } ( M , N ) $ 计算为 $ M \otimes _ { R } N _ { \bullet } $ 的同调，其中 $ N _ { \bullet } $ 是 $ N $ 的一个自由解析。这确实就是情况。
+此时您可能会觉得有些不平衡：为什么关注 $\underline{} \otimes _ { R } N$ 而不是 $M \otimes _ { R } \underline{}$ 呢？由于 $M \otimes _ { R } N$ 在交换情况下与 $N \otimes _ { R } M$ 建立了典范同构（参见示例 2.2），我们可以期望这对每个 $\mathrm { T o r } _ { i } ^ { R }$ 都适用：$\mathrm { T o r } _ { i } ^ { R } ( M , N )$ 应该对所有的 $i$ 都与 $\mathrm { T o r } _ { i } ^ { R } ( N , M )$ 建立典范同构。等价地，我们应该能够将 $\mathrm { T o r } _ { i } ^ { R } ( M , N )$ 计算为 $M \otimes _ { R } N _ { \bullet }$ 的同调，其中 $N _ { \bullet }$ 是 $N$ 的一个自由分解。这确实就是情况。
 
-在适当的时候（§§IX.7和8），我们将证明这一点以及我在本小节中陈述的所有其他奇妙的事实。目前，我要求读者相信Tor函子可以按照我所说的方式定义，这里回顾的事实足以进行简单的计算（例如，参见练习2.15和2.17）和应用。
+在适当的时候（§IX.7和8），我们将证明这一点以及我在本小节中陈述的所有其他奇妙的事实。目前，我要求读者相信Tor函子可以按照我所说的方式定义，这里回顾的事实足以进行简单的计算（例如，参见练习2.15和2.17）和应用。
 
-事实上，我们知道关于PID上的有限生成模的足够信息，以便对证明此类一般性事实所涉及的内容有一个初步的了解。回想我们已经能够证明：每个PID $R$ 上的有限生成模 $M$ 都有一个长度为1的自由解析：
+事实上，我们知道关于PID上的有限生成模的足够信息，以便对证明此类一般性事实所涉及的内容有一个初步的了解。回想我们已经能够证明：每个 某PID（设其为$R$ ）上的 有限生成模 $M$ 都有一个长度为1的自由解析：
 
 $$
 \longrightarrow R ^ { \oplus m _ { 1 } } \longrightarrow R ^ { \oplus m _ { 0 } } \longrightarrow M \longrightarrow 0 \ .
 $$
 
-此属性描述了PIDs（命题VI.5.4）。如果
+此属性 特征化(characterizes) 了PIDs（命题VI.5.4）。如果
 
 $$
 0 { \xrightarrow { } } A { \xrightarrow { } } B { \xrightarrow { } } C { \xrightarrow { } } 0
 $$
 
-如果是一个$R$-模的正合列，那么不难看出可以产生“兼容”的解析，在以下图表的意义上，即行也将是正合的，列也将是：
+是一个$R$-模的正合列，那么不难看出我们可以制造“兼容”的分解，在以下图表的意义上， 行也将是正合的，列也是：
 
 ![](images/136.jpg)
 
-(将在§IX.7中详细证明。) 将两个“自由”行与$N$张量积；它们仍然正合（张量积与直和可交换）：
+(这将在§IX.7中详细证明。) 将两个“自由”行与$N$张量积；它们仍然正合（张量积与直和可交换）：
 
 $$
-\begin{array} { c c c } { { 0 \longrightarrow N ^ { \oplus a _ { 1 } } \longrightarrow N ^ { \oplus b _ { 1 } } \longrightarrow N ^ { \oplus b _ { 1 } } \longrightarrow N ^ { \oplus c _ { 1 } } \longrightarrow 0 } } & { { } } \\ { { \underbrace { \Bigg | \alpha \otimes N } _ { \Bigg \downarrow } \Bigg . } } & { { \Bigg \downarrow \beta \otimes N } } & { { \Bigg \downarrow \gamma \otimes N } } \\ { { 0 \longrightarrow N ^ { \oplus a _ { 0 } } \longrightarrow N ^ { \oplus b _ { 0 } } \longrightarrow N ^ { \oplus c _ { 0 } } \longrightarrow 0 } } & { { } } \end{array}
+\begin{align*} 
+
+0 \longrightarrow & N ^ { \oplus a _1} \longrightarrow & N ^ { \oplus b _1} \longrightarrow & N ^ { \oplus c_1} \longrightarrow 0   \\ 
+
+&\Bigg  \downarrow\alpha \otimes N & \Bigg \downarrow \beta \otimes N &  \Bigg \downarrow \gamma \otimes N \\ 
+
+0 \longrightarrow & N ^ { \oplus a _ 0 } \longrightarrow & N ^ { \oplus b _ 0 } \longrightarrow & N ^ { \oplus c _ 0 } \longrightarrow 0
+
+\end{align*} 
 $$
 
 现在这些列（前面和后面都跟着$0$）正好是复形 $A _ { \bullet } \otimes _ { R } N$ ， $B _ { \bullet } \otimes _ { R } N$ ， ${ C } _ { \bullet } \otimes _ { R } { N }$ ，它们的同调“计算”出Tor模。应用蛇形引理（引理III.7.8；参见注III.7.10）得到正合列
 
-$$
-\begin{array} { r l } { 0 \longrightarrow H _ { 1 } ( A _ { \bullet } \otimes _ { R } N ) \longrightarrow H _ { 1 } ( B _ { \bullet } \otimes _ { R } N ) \longrightarrow H _ { 1 } ( C _ { \bullet } \otimes _ { R } N ) } \\ { \longleftrightarrow \qquad } & { \qquad \longrightarrow H _ { 0 } ( A _ { \bullet } \otimes _ { R } N ) \longrightarrow \qquad } \\ { \longleftrightarrow H _ { 0 } ( A _ { \bullet } \otimes _ { R } N ) \longrightarrow H _ { 0 } ( B _ { \bullet } \otimes _ { R } N ) \longrightarrow H _ { 0 } ( C _ { \bullet } \otimes _ { R } N ) \longrightarrow 0 , } \end{array}
-$$
+![](images/h8.png)
 
-这正是上面召唤的Tor模序列。
+这正是上面搞的Tor模序列。
 
-$$
-\begin{array} { r l } { 0 \longrightarrow \mathrm { T o r } _ { 1 } ^ { R } ( A , N ) \longrightarrow \mathrm { T o r } _ { 1 } ^ { R } ( B , N ) \longrightarrow \mathrm { T o r } _ { 1 } ^ { R } ( C , N ) } \\ { \longleftrightarrow \quad } & { \delta \xrightarrow [ ] { 0 } \delta \xrightarrow [ ] { \delta \mathrm { T o r } _ { R } ^ { R } ( A , N ) \longrightarrow \mathrm { T o r } _ { R } ^ { R } ( C , N ) } \longrightarrow 0 } \end{array}
-$$
+![](images/h9.png)
 
-在左边加一个 $0$ 以便（由于当 $R$ 是主环时 $\mathrm { T o r } _ { 2 } ^ { R }$ 消失；参见练习 2.17）。
 
-请注意，当 $k$ 是一个域时，$\mathrm { T o r } _ { i } ^ { k }$ 在 $i ~ > ~ 0$ 时消失，因为向量空间是平坦的，并且当 $R$ 是一个主理想整环时，$\mathrm { T o r } _ { i } ^ { R }$ 在 $i > 1$ 时消失（习题 2.17）。考虑到上述计算 Tor 的过程以及 § VI.5.2 结尾处的考虑，这些事实并不令人意外：对于环 $R$ 上的模的自由解析的长度的界限将意味着非零 Tor 的界限。对于特别好的环（例如与代数几何中“光滑”点对应的环），这个界限与Krull维数一致；但这类精确的结果超出了本书的范围。
+在左边加一个 $0$ 以便测量（由于当 $R$ 是PID时 $\mathrm { T o r } _ { 2 } ^ { R }$ 消失；参见练习 2.17）。
+
+请注意，当 $k$ 是一个域时，$\mathrm { T o r } _ { i } ^ { k }$ 在 $i ~ > ~ 0$ 时消失，因为向量空间是平坦的，并且当 $R$ 是一个PID（主理想整环）时，$\mathrm { T o r } _ { i } ^ { R }$ 在 $i > 1$ 时消失（习题 2.17）。以 上述计算 Tor 的过程以及 § VI.5.2 结尾处 的观点 来考虑，这些事实并不令人意外：对于环 $R$ 上的模的自由分解的长度的界限将意味着非零 Tor 的界限。对于特别好的环（例如与代数几何中“光滑”点对应的环），这个界限与Krull维数一致；但这类精确的结果超出了本书的范围。
 
 ### 习题
 
 $R$ 表示一个固定的交换环。
 
-2.1. $\triangleright$ 设 $M$ ， $N$ 是 $R$ -模，并且假设 $N$ 是循环的。证明 $M \otimes _ { R } N$ 的每个元素都可以写成纯张量。[§2.1]
+2.1. $\triangleright$ 设 $M$ ， $N$ 是 $R$ -模，并且假设 $N$ 是 _循环的_。证明 $M \otimes _ { R } N$ 的每个元素都可以写成纯张量。[§2.1]
 
 2.2. $\triangleright$ 手工证明（即，不借助张量的右正合性）证明如果 $m , n$ 是互质的整数，那么 $\mathbb { Z } / n \mathbb { Z } \otimes _ { \mathbb { Z } } \mathbb { Z } / m \mathbb { Z } \cong 0$。[§2.2]
 
@@ -19471,9 +19473,9 @@ $R$ 表示一个固定的交换环。
 
 2.4. $\neg$ 设 $S$ ， $T$ 是交换 $R$ -代数。验证以下：
 
-• 张量积 $S \otimes _ { R } T$ 有一个乘法运算，它在纯张量上定义为 $\left( s _ { 1 } \otimes t _ { 1 } \right) \cdot \left( s _ { 2 } \otimes t _ { 2 } \right) : = s _ { 1 } s _ { 2 } \otimes t _ { 1 } t _ { 2 }$ 并将其变成一个交换 $R$ -代数。 • 关于这个结构，存在 $R$ -代数同态 $i _ { S } : S $ $S \otimes T$ ，或 $i _ { T } : T \to S \otimes T$ ，定义为 $i _ { S } ( s ) : = s \otimes 1$ ，$i _ { T } ( t ) : = 1 \otimes t$ 。带有这两个结构同态的 $R$ -代数 $S \otimes _ { R } T$ 是 $S$ 和 $T$ 在交换 $R$ -代数范畴中的直和：如果 $U$ 是一个交换 $R$ -代数，并且 $f _ { S } : S  U$ ，$f _ { T } : T \to U$ 是 $R$ -代数同态，那么存在唯一的 $R$ -代数同态 $f _ { S } \otimes f _ { T }$ 使以下
-
- commute 图：
+- 张量积 $S \otimes _ { R } T$ 有一个乘法运算，它在纯张量上定义为 $\left( s _ { 1 } \otimes t _ { 1 } \right) \cdot \left( s _ { 2 } \otimes t _ { 2 } \right) : = s _ { 1 } s _ { 2 } \otimes t _ { 1 } t _ { 2 }$ 并将其变成一个交换 $R$ -代数。 
+- 关于这个结构，存在 $R$ -代数同态 $i _ { S } : S \to S \otimes T$ ，或 $i _ { T } : T \to S \otimes T$ ，定义为 $i _ { S } ( s ) : = s \otimes 1$ ，$i _ { T } ( t ) : = 1 \otimes t$ 。
+- 带有这两个结构同态的 $R$ -代数 $S \otimes _ { R } T$ 是 $S$ 和 $T$ 在交换 $R$ -代数范畴中的 余积：如果 $U$ 是一个交换 $R$ -代数，并且 $f _ { S } : S \to U$ ，$f _ { T } : T \to U$ 是 $R$ -代数同态，那么存在唯一的 $R$ -代数同态 $f _ { S } \otimes f _ { T }$ 使以下 图交换：
 
 ![](images/137.jpg)
 
@@ -19488,67 +19490,68 @@ $R$ 表示一个固定的交换环。
 • 设 $N$ 是一个 $S ^ { - 1 } R$ -模。证明 $( S ^ { - 1 } M ) \otimes _ { S ^ { - 1 } R } N \cong M \otimes _ { R } N$。  
 • 设 $A$ 是一个 $R$ -模。证明 $( S ^ { - 1 } A ) \otimes _ { R } M \cong S ^ { - 1 } ( A \otimes _ { R } M )$。
 
-(两者都可以“手工”完成，通过分析引理2.3中的结构。例如，存在一个同态 $M \otimes _ { R } N \to ( S ^ { - 1 } M ) \otimes _ { S ^ { - 1 } R } N$，它是满射的，因为，使用明显的符号，$\begin{array} { r } { \frac { m } { s } \otimes n = m \otimes \frac { n } { s } } \end{array}$ 在 $( S ^ { - 1 } M ) \otimes _ { S ^ { - 1 } R } N$ 中；验证它是单射相当于对定义两个张量的关系的简单运算。)
+(两者都可以“手工”完成，通过分析引理2.3中的结构。例如，存在一个同态 $M \otimes _ { R } N \to ( S ^ { - 1 } M ) \otimes _ { S ^ { - 1 } R } N$，它是满射的，因为，使用明显的符号记法，在 $( S ^ { - 1 } M ) \otimes _ { S ^ { - 1 } R } N$ 中 有 $\begin{array} { r } { \frac { m } { s } \otimes n = m \otimes \frac { n } { s } } \end{array}$ ；验证它是单射相当于对定义两个张量的关系的简单操作。)
 
-两个同构将很容易是张量积结合性的结果；参见练习3.4。[2.21, 3.4]
+两个同构都将是 张量积结合性的简单结果；参见练习3.4。[2.21, 3.4]
 
-2.7. 在张量中更改基本环可能会有所不同：
+2.7. 在张量中更改基底环可能会有所不同：
 
 • 证明 $\mathbb { Q } \otimes _ { \mathbb { Z } } \mathbb { Q } \cong \mathbb { Q } \otimes _ { \mathbb { Q } } \mathbb { Q }$ 。
 • 证明 $\mathbb { C } \otimes _ { \mathbb { R } } \mathbb { C } \not \cong \mathbb { C } \otimes _ { \mathbb { C } } \mathbb { C }$ 。
 
-2.8. 设 $R$ 是一个整环，其分式域为 $K$，设 $M$ 是一个 $R$ -模。张量积 $V := M \otimes _ { R } K$ 是一个 $K$ -向量空间（习题 2.5）。证明 $\mathrm { d i m } _ { K } V$ 等于 $M$ 作为 $R$ -模的秩，在定义 VI.5.5 的意义上。
+2.8. 设 $R$ 是一个整环，其分式域为 $K$，设 $M$ 是一个有限生成 $R$ -模。张量积 $V := M \otimes _ { R } K$ 是一个 $K$ -向量空间（习题 2.5）。证明 $\mathrm { d i m } _ { K } V$ 等于 $M$ 作为 $R$ -模的秩，在定义 VI.5.5 的意义上。
 
 2.9. 设 $G$ 是一个秩为 $r$ 的有限生成阿贝尔群。证明 $G \otimes _ { \mathbb { Z } } \mathbb { Q } \cong \mathbb { Q } ^ { r }$。  
 证明对于无穷多个素数 $p$，$G \otimes _ { \mathbb { Z } } ( \mathbb { Z } / p \mathbb { Z } ) \cong ( \mathbb { Z } / p \mathbb { Z } ) ^ { r }$。
 
 2.10. 设 $k \subseteq k ( \alpha ) = F$ 是一个有限单代数扩张。注意 $F \otimes _ { k } F$ 有一个自然的环结构；参见练习 2.4。
 
-• 证明 $\alpha$ 在 $k$ 上可分当且仅当 $F \otimes _ { k } F$ 作为环是约化的。 • 证明 $k \subseteq F$ 是伽罗瓦扩张当且仅当 $F \otimes _ { k } F$ 作为环同构于 $F ^ { \left[ { F : k } \right] }$。
+• 证明 $\alpha$ 在 $k$ 上可分 当且仅当 $F \otimes _ { k } F$ 作为环是 _约化_ 的。 
+• 证明 $k \subseteq F$ 是伽罗瓦扩张 当且仅当 $F \otimes _ { k } F$ 作为环同构于 $F ^ { \left[ { F : k } \right] }$。
 
-(使用推论2.8来“计算”张量。来自$S$ V.6.1的中国剩余定理可能会很有帮助。)
+(使用推论2.8来“计算”张量。来自  §V.6.1的中国剩余定理(CRT)可能会很有帮助。)
 
 2.11. $\triangleright$ 完成引理 2.4 的证明。[§2.2]
 
 2.12. 设 $S$ 是 $R$ 的一个乘法子集（参见练习 V.4.7）。证明 $S ^ { - 1 } R$ 在 $R$ 上是平坦的。（提示：练习 2.5 和 1.25。）
 
-2.13. 证明平坦模的直接和是平坦的。
+2.13. 证明平坦模的直和是平坦的。
 
 2.14. $\triangleright$ 证明，根据 §2.4 中给出的定义，$\mathrm { Tor } _ { 0 } ^ { R } ( M , N )$ 与 $M \otimes _ { R } N$ 同构。[§2.4]
 
-2.15. $\triangleright$ 证明对于 $r \in R$ 是非零因子且 $N$ 是 $R$ -模，模 $\mathrm { T o r } _ { 1 } ^ { R } ( R / ( r ) , N )$ 与 $r$ - 挠 of $N$ 同构，即元素 $n \in N$ 的子模，使得 $r n = 0$（参见 § VI.4.1）。（这就是为什么 Tor 被称为 Tor 的原因。）[§2.4, 6.21]
+2.15. $\triangleright$ 证明对于 $r \in R$ 是非零因子且 $N$ 是 $R$ -模，模 $\mathrm { T o r } _ { 1 } ^ { R } ( R / ( r ) , N )$ 与 $N$ 的 $r$ - 挠   同构，即元素 $n \in N$ 的子模，使得 $r n = 0$（参见 § VI.4.1）。（这就是为什么 Tor 被称为 Tor 的原因。）[§2.4, 6.21]
 
 2.16. 设 $I$ ， $J$ 是 $R$ 的理想。证明 $\operatorname { T o r } _ { 1 } ^ { R } ( R / I , R / J ) \cong ( I \cap J ) / I J$ 。（例如，当 $I + J = R$ 时，这个 $\mathrm { T o r } _ { 1 } ^ { R }$ 消失，由引理 V.6.3 可知。）证明 $\mathrm { T o r } _ { i } ^ { R } ( R / I , R / J )$ 与 $\mathrm { T o r } _ { i - 1 } ^ { R } ( I , R / J )$ 对于 $i > 1$ 是同构的。
 
-2.17. $\triangleright$ 设 $M$ ， $N$ 是环 $R$ 上的模。证明当 $i \geq 2$ 时，$\mathrm { T o r } _ { i } ^ { R } ( M , N ) = 0$（为简化起见，假设 $M$ ， $N$ 是有限生成的）。[§2.4]
+2.17. $\triangleright$ 设 $M$ ， $N$ 是一个记作 $R$ 的PID上的模。证明当 $i \geq 2$ 时，$\mathrm { T o r } _ { i } ^ { R } ( M , N ) = 0$（为简化起见，假设 $M$ ， $N$ 是有限生成的）。[§2.4]
 
-2.18. 设 $R$ 是一个整环。证明一个循环 $R$-模是平坦当且仅当它是自由的。
+2.18. 设 $R$ 是一个整环。证明一个循环 $R$-模 平坦 当且仅当 它是自由的。
 
 2.19. ¬ 以下标准非常有用。
 
-证明一个$R$-模$M$是平坦的当且仅当每个$R$-模的单态射$A \hookrightarrow B$诱导出$R$-模的单态射$A \otimes _ { R } M \hookrightarrow B \otimes _ { R } M$。  
-证明只需验证这个条件对所有有限生成模$B$成立。（提示：首先参考引理2.3中张量的构造。一个元素$\textstyle \sum _ { i } a _ { i } \otimes m _ { i } \in A \otimes _ { R } M$在$B \otimes _ { R } M$中为零，如果相应的元素$\textstyle \sum _ { i } ( a _ { i } , m _ { i } )$等于定义$B \otimes _ { R } M$在自由$R$-模${ F ^ { R } } ( B \times M )$中的关系的组合。这将是一个只涉及有限个$B$中元素的恒等式；因此……）  
-• 证明只需验证当$B = R$且$A = I$是$R$的理想时这个条件。（提示：现在可以假设$B$是有限生成的。找到子模$B _ { j }$使得$A = B _ { 0 } \subseteq B _ { 1 } \subseteq \cdots \subseteq B _ { r } = B$，且每个$B _ { j } / B _ { j - 1}$是循环的。简化为验证当$B / A$是循环的时，$A \otimes _ { R } M$在$B \otimes _ { R } M$中是注入的，因此$\cong R / I$对于某个理想$I$。通过$\mathrm { T o r } _ { 1 } ^ { R }$论证或——但这需要更多的毅力——通过巧妙地使用蛇形引理来得出结论。）  
-• 推导出$R$-模$M$是平坦的当且仅当对于$R$的每个理想$I$，自然同态$I \otimes _ { R } M \to I M$是一个同构。
+- 证明一个$R$-模$M$是平坦的 当且仅当 每个$R$-模的单态射$A \hookrightarrow B$诱导出$R$-模的单态射$A \otimes _ { R } M \hookrightarrow B \otimes _ { R } M$。  
+- 证明 只需验证这个条件 对所有有限生成模$B$成立。（提示：首先参考引理2.3中张量的构造。一个元素$\textstyle \sum _ { i } a _ { i } \otimes m _ { i } \in A \otimes _ { R } M$在$B \otimes _ { R } M$中为零，如果相应的元素$\textstyle \sum _ { i } ( a _ { i } , m _ { i } )$等于定义$B \otimes _ { R } M$在自由$R$-模${ F ^ { R } } ( B \times M )$中的关系的组合。这将是一个只涉及有限个$B$中元素的恒等式；因此……）  
+- 证明只需验证这个条件，当$B = R$且$A = I$是$R$的理想时。（提示：现在可以假设$B$是有限生成的。找到子模$B _ { j }$使得$A = B _ { 0 } \subseteq B _ { 1 } \subseteq \cdots \subseteq B _ { r } = B$，且每个$B _ { j } / B _ { j - 1}$是循环的。简化为验证当$B / A$是循环的时，$A \otimes _ { R } M$在$B \otimes _ { R } M$中是单射的，因此$\cong R / I$对于某个理想$I$。通过$\mathrm { T o r } _ { 1 } ^ { R }$论证或——但这需要更多的毅力——通过巧妙地使用蛇形引理来得出结论。）  
+- 推导出$R$-模$M$是平坦的 当且仅当 对于$R$的每个理想$I$，自然同态$I \otimes _ { R } M \to I M$是一个同构。
 
-如果你相信托尔，现在你也可以证明一个 $R$ -模 $M$ 是平坦的当且仅当对于 $R$ 的所有理想 $I$，$\mathrm { T o r } _ { 1 } ^ { R } ( R / I , M ) = 0$。[2.20]
+如果你相信Tor，现在你也可以证明一个 $R$ -模 $M$ 是平坦的 当且仅当 对于 $R$ 的所有理想 $I$，$\mathrm { T o r } _ { 1 } ^ { R } ( R / I , M ) = 0$。[2.20]
 
-2.20. 设 $R$ 是一个主理想整环。证明 $R$-模 $M$ 是平坦当且仅当它是无挠 的。(如果 $M$ 是有限生成的，$S$ VI.5.3 的分类定理使得这一点特别容易。否则，使用练习 2.19。)
+2.20. 设 $R$ 是一个主理想整环。证明 $R$-模 $M$  平坦 当且仅当 它是无挠 的。(如果 $M$ 是有限生成的， VI.5.3 的分类定理使得这一点特别容易。否则，使用练习 2.19。)
 
-从几何上看，这大致意味着一个代数集在非奇异曲线上不“平坦”，当且仅当该集的某个分量收缩为一个点。这种现象在示例2.14的图中显示出来。
+从几何上看，这大致意味着一个代数集在非奇异曲线上不“平坦”，当且仅当 该集的某个分量收缩为一个点。这种现象在示例2.14的图中显示出来。
 
-2.21. $\neg$ (参见练习V.4.11.) 证明平坦性是一个局部性质：一个$R$-模$M$是平坦的当且仅当对于所有素理想$\mathfrak{p}$，$M_{\mathfrak{p}}$是一个平坦的$R_{\mathfrak{p}}$-模，当且仅当对于所有极大理想$\mathrm{m}$，$M_{\mathfrak{m}}$是一个平坦的$R_{\mathfrak{m}}$-模。(提示：使用练习1.25和2.6。$\Longrightarrow$方向将是直接的。对于逆命题，设$A \subseteq B$是$R$-模，设$K$是诱导同态$A \otimes_{R} M \to B \otimes_{R} M$的核。证明局部化同态$A_{\mathfrak{m}} \otimes_{R_{\mathfrak{m}}} M_{\mathfrak{m}} \to B_{\mathfrak{m}} \otimes_{R_{\mathfrak{m}}} M_{\mathfrak{m}}$的核与$K_{\mathfrak{m}}$同构，并使用练习V.4.12。) [2.22] 2.22. $\lnot$ 设$M , N$是$R$-模，设$S$是$R$的一个乘法子集。使用§2.4中给出的Tor的定义来证明$S^{-1} \operatorname{Tor}_{i}^{R} (M , N) \cong \operatorname{Tor}_{i}^{S^{-1}R} (S^{-1}M , S^{-1}N)$。(使用练习1.25。) 使用这个事实来给出一个更简洁的证明，证明平坦性是一个局部性质(练习2.21)。 [2.25]
+2.21. $\neg$ (参见练习V.4.11.) 证明 _平坦性是一个局部性质_：一个$R$-模$M$是平坦的 当且仅当 对于所有素理想$\mathfrak{p}$，$M_{\mathfrak{p}}$是一个平坦的$R_{\mathfrak{p}}$-模，当且仅当 对于所有极大理想$\mathrm{m}$，$M_{\mathfrak{m}}$是一个平坦的$R_{\mathfrak{m}}$-模。(提示：使用练习1.25和2.6。$\Longrightarrow$方向将是直接的。对于逆命题，设$A \subseteq B$是$R$-模，设$K$是诱导同态$A \otimes_{R} M \to B \otimes_{R} M$的核。证明局部化同态$A_{\mathfrak{m}} \otimes_{R_{\mathfrak{m}}} M_{\mathfrak{m}} \to B_{\mathfrak{m}} \otimes_{R_{\mathfrak{m}}} M_{\mathfrak{m}}$的核与$K_{\mathfrak{m}}$同构，并使用练习V.4.12。) [2.22] 
+
+2.22. $\lnot$ 设$M , N$是$R$-模，设$S$是$R$的一个乘法子集。使用§2.4中给出的Tor的定义来证明$S^{-1} \operatorname{Tor}_{i}^{R} (M , N) \cong \operatorname{Tor}_{i}^{S^{-1}R} (S^{-1}M , S^{-1}N)$。(使用练习1.25。) 使用这个事实来给出一个更简洁的证明，证明平坦性是一个局部性质(练习2.21)。 [2.25]
 
 2.23. $\triangleright$ 让
-
 $$
 0 \longrightarrow M \longrightarrow N \longrightarrow P \longrightarrow 0
 $$
-
 是 $R$ -模的正合列，并假设 $P$ 是平坦的。
 
-证明 $M$ 是平坦的当且仅当 $N$ 是平坦的。   
-• 证明对于所有 $R$-模 $Q$，诱导序列 $0 \longrightarrow M \otimes _ { R } Q \longrightarrow N \otimes _ { R } Q \longrightarrow P \otimes _ { R } Q \longrightarrow 0$ 是正合的。
+- 证明 $M$ 是平坦的当且仅当 $N$ 是平坦的。   
+- 证明对于所有 $R$-模 $Q$，诱导序列 $0 \longrightarrow M \otimes _ { R } Q \longrightarrow N \otimes _ { R } Q \longrightarrow P \otimes _ { R } Q \longrightarrow 0$ 是正合的。
 
 [2.24, §5.4]
 
@@ -19560,11 +19563,11 @@ $$
 • 推出 $N = 0$（Nakayama）。   
 • 得出 $M$ 是自由的。
 
-因此，在（诺特 $^ { 1 1 }$）局部环上的有限生成模是平坦的当且仅当它是自由的。与习题VI.5.5比较。[2.25, 6.8, 6.12]
+因此，在（诺特 $^ { 1 1 }$）局部环上的有限生成模是平坦的 当且仅当 它是自由的。与习题VI.5.5比较。[2.25, 6.8, 6.12]
 
 2.25. 设 $R$ 是一个交换的诺特环，并且 $M$ 是一个 $R$ -模。证明
 
-$M$ $\mathrm { \ddot { \ l s \ d a t } } \iff \mathrm { T o r } _ { 1 } ^ { R } ( M , R / { \mathfrak { m } } ) = 0$ 对于$R$的每个极大理想$\mathfrak { m }$。
+$M$ $\text { 是平坦的 } \iff \mathrm { T o r } _ { 1 } ^ { R } ( M , R / { \mathfrak { m } } ) = 0$ 对于$R$的每个极大理想$\mathfrak { m }$。
 
 （使用练习2.21，并改进你在练习2.24中使用的论证；记住，根据练习2.22，Tor局部化。诺特假设实际上是不必要的，但没有它，证明会更困难。）
 
