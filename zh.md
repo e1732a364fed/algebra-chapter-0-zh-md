@@ -10177,7 +10177,7 @@ $$
 
 [§2.2, 2.18, 6.14]
 
-## 2. UFDs，PIDs，欧几里得域
+## 2. UFDs，PIDs，欧几里得整环
 
 ### 2.1. 不可约因子和最大公约数
 一个整环 $R$ 是一个唯一因子分解整环（UFD），如果 $R$ 中存在分解且按照定义 1.8 的意义是唯一的。
@@ -10332,11 +10332,11 @@ $$
 a = q b + r ,
 $$
 
-要么 $r = 0$ 要么 $v(r) < v(b)$ 。一个整环 $R$ 是欧几里得域，如果它存在一个欧几里得估值。
+要么 $r = 0$ 要么 $v(r) < v(b)$ 。一个整环 $R$ 是欧几里得整环，如果它存在一个欧几里得估值。
 
-我们说 $q$ 是除法的商，$r$ 是余数。在 $\mathbb{Z}$ 和 $k [x]$（其中 $k$ 是一个域）中的带余除法提供了例子，因此 $\mathbb{Z}$ 和 $k [x]$ 是欧几里得域。
+我们说 $q$ 是除法的商，$r$ 是余数。在 $\mathbb{Z}$ 和 $k [x]$（其中 $k$ 是一个域）中的带余除法提供了例子，因此 $\mathbb{Z}$ 和 $k [x]$ 是欧几里得整环。
 
-命题 2.8. 设 $R$ 是一个欧几里得域。那么 $R$ 是一个主理想整环。
+命题 2.8. 设 $R$ 是一个欧几里得整环。那么 $R$ 是一个主理想整环。
 
 证明模仿了在 $\mathbb{Z}$（命题 III.4.4）和 $k [x]$（读者应该已经在练习 III.4.4 中解决了）中遇到的实例。
 
@@ -10415,9 +10415,9 @@ $$
 
 但 $r _ { N - 2 } = r _ { N - 1 } q _ { N - 1 }$ 给出 $r _ { N - 2 } \in \left( r _ { N - 1 } \right)$；因此 $( r _ { N - 2 } , r _ { N - 1 } ) = ( r _ { N - 1 } )$。因此 $r _ { N - 1 }$ 是 $r _ { N - 2 }$ 和 $r _ { N - 1 }$ 的最大公约数，从而也是 $a$ 和 $b$ 的最大公约数，如所需。$\square$
 
-整数环和域上的多项式环都是欧几里得域。域是欧几里得域（如本章开头图片所示），但这并非一个有趣的原因：在域中，除以非零元素后的余数总是零，因此每个函数都因为显而易见的原因符合“欧几里得估值”的定义。
+整数环和域上的多项式环都是欧几里得整环。域是欧几里得整环（如本章开头图片所示），但这并非一个有趣的原因：在域中，除以非零元素后的余数总是零，因此每个函数都因为显而易见的原因符合“欧几里得估值”的定义。
 
-我们将在本章稍后（§6.2）研究另一个有趣的欧几里得域。
+我们将在本章稍后（§6.2）研究另一个有趣的欧几里得整环。
 
 ### 习题
 
@@ -10496,7 +10496,7 @@ $$
 
 [2.20, VIII.1.19]
 
-2.20. $\neg$ 如练习2.19所见，DVRs是欧几里得域。特别是，它们必须是PID。直接验证如下。设$R$是一个DVR，设$t \in R$是一个满足$v ( t ) = 1$的元素。证明如果$I \subseteq R$是任意一个非零理想，那么$I = ( t ^ { k } )$对于某个$k \geq 0$。 （元素$t$被称为$R$的“局部参数”。）[4.13, VII.2.18]
+2.20. $\neg$ 如练习2.19所见，DVRs是欧几里得整环。特别是，它们必须是PID。直接验证如下。设$R$是一个DVR，设$t \in R$是一个满足$v ( t ) = 1$的元素。证明如果$I \subseteq R$是任意一个非零理想，那么$I = ( t ^ { k } )$对于某个$k \geq 0$。 （元素$t$被称为$R$的“局部参数”。）[4.13, VII.2.18]
 
 2.21. $\triangleright$ 证明一个整环是主理想整环当且仅当它存在 DedekindHasse 估值。(提示：对于 $\Longleftarrow$ 含义，调整命题 2.8 中的论证；对于 $\Longrightarrow$ ，令 $v ( a )$ 是 $a$ 的不可约因子的多重集的大小。) [§2.4]
 
@@ -11748,7 +11748,7 @@ $$
 
 对于所有的 $i$。
 
-相同的步骤可以应用于任何欧几里得域 $R$；参见练习 6.7 的例子。
+相同的步骤可以应用于任何欧几里得整环 $R$；参见练习 6.7 的例子。
 
 ### 6.2. 高斯整数
 对于读者来说，$\mathbb { Z }$ 和 $k [ x ]$（其中 $k$ 是一个域）可能是已知的欧几里得整环的唯一例子。下一个最著名的例子是高斯整数环；这是一个非常漂亮的环，它在数论中有基本但引人注目的应用（其中之一我们将在§6.3中看到）。
@@ -11931,7 +11931,7 @@ $$
 
 注6.12. 拉格朗日证明（在1770年）每一个正整数都可以记为四个平方和。证明的一种方法与定理6.11的证明类似：它归结于分析环中（整数）素数的分解；在这里，$\mathbb { Z } [ i ]$ 的角色由一个“整数四元数”环所取代。
 
-读者应该暂停并注意，在定理6.11的陈述中并没有提到UFDs、欧几里得域、复数、循环群等，尽管其证明中使用了大量这些工具。当然，这是推广者的梦想：建立一种抽象的机制，使有趣的事实（几乎）显而易见——这些事实要么极其神秘，要么没有这种机制就需要费马级别的聪明才智才能理解。
+读者应该暂停并注意，在定理6.11的陈述中并没有提到UFDs、欧几里得整环、复数、循环群等，尽管其证明中使用了大量这些工具。当然，这是推广者的梦想：建立一种抽象的机制，使有趣的事实（几乎）显而易见——这些事实要么极其神秘，要么没有这种机制就需要费马级别的聪明才智才能理解。
 
 ### 习题
 
@@ -12003,7 +12003,7 @@ $$
 
 6.14. 如练习6.13所述，证明$\mathbb{Z}[\sqrt{-2}]$是一个欧几里得整环。（使用范数$N(a+b\sqrt{-2})=a^2+2b^2$。）
 
-如果你特别爱冒险，证明 $\mathbb { Z } [ ( 1 + { \sqrt { d } } ) / 2 ]$ 对于 $d = - 3 , - 7 , - 1 1$ 也是一个欧几里得域 $^ { 2 7 }$ 。(你仍然可以使用定义的范数 $N ( a + b { \sqrt { d } } ) =$ $a ^ { 2 } - d b ^ { 2 }$ ；注意这仍然是在 $\mathbb { Z } [ ( 1 + { \sqrt { d } } ) / 2 ]$ 上的整数，如果 $d \equiv 1$ mod 4。)
+如果你特别爱冒险，证明 $\mathbb { Z } [ ( 1 + { \sqrt { d } } ) / 2 ]$ 对于 $d = - 3 , - 7 , - 1 1$ 也是一个欧几里得整环 $^ { 2 7 }$ 。(你仍然可以使用定义的范数 $N ( a + b { \sqrt { d } } ) =$ $a ^ { 2 } - d b ^ { 2 }$ ；注意这仍然是在 $\mathbb { Z } [ ( 1 + { \sqrt { d } } ) / 2 ]$ 上的整数，如果 $d \equiv 1$ mod 4。)
 
 五个值 $d = - 1 , - 2$ ，分别 $- 3 , - 7 , - 11$ ，是唯一使得 $\mathbb { Z } [ { \sqrt { d } } ]$ ，分别 $\mathbb { Z } [ ( 1 + { \sqrt { d } } ) / 2 ]$ 为欧几里得整环的值。对于 $d = - 19 , - 43 , - 67 , - 163$ ，环 $\mathbb { Z } [ ( 1 + { \sqrt { d } } ) / 2 ]$ 仍然是一个主理想整环（cf. §2.4 和习题 2.18 对于 $d = - 19$）；没有其他负值使得 $\mathbb { Q } ( { \sqrt { d } } )$ 中的整数环是主理想整环这一事实是由高斯猜想并由艾伦·贝克和哈罗德证明的。
 
@@ -12901,23 +12901,28 @@ $$
 
 ## 3. 自由模的同态，II
 
-第2部分的工作完成了描述${ \mathrm { H o m } } _ { R } ( F , G )$的目标，其中$F$和$G$是有限秩的自由$R$-模；正如我们所见，如果$R$是一个域或欧几里得整环，那么这样做可以最明确地完成。不过我们还没有完全完成：即使在域上，理解“答案”——即检查同态分类为有限多个类——也是非常重要的，这在§2.3的末尾被强调。此外，可逆矩阵的频繁出现使得有必要开发标准来判断给定的矩阵是否属于一般线性群。我首先指出同态分类的一个直接应用。
+第2部分的工作完成了描述${ \mathrm { H o m } } _ { R } ( F , G )$的目标，其中$F$和$G$是有限秩的自由$R$-模；正如我们所见，如果$R$是一个域 或 欧几里得整环，那么这样做可以最明确地完成。不过我们还没有完全完成：即使在域上，理解“答案”——即检查 把同态分为有限多个类 的分类——也是非常重要的，这在§2.3的末尾被强调。此外，可逆矩阵的频繁出现使得有必要开发标准来判断给定的矩阵是否属于一般线性群。我首先指出同态分类的一个直接应用。
 
 ### 3.1. 解线性方程组
-稍加思考就会揭示，高斯消元法通过诸如命题2.9这样的陈述，为我们提供了一个求解域上或欧几里得整环上的线性方程组的工具16。这一点似乎不值得仔细处理或记忆体操：仔细地写出内容应该能够解决所需的工具生成问题。为了描述一个典型的情况，假设
+稍加思考就会揭示，高斯消元法通过诸如命题2.9这样的陈述，为我们提供了一个求解域上或欧几里得整环上的线性方程组的工具$^{16}$。这一点似乎不值得仔细处理或记忆体操：仔细地写出内容 应该能够解决 制造工具问题，正如所需。为了描述一个典型的情况，假设
 
 $$
 \left\{ \begin{array} { l l } { a _ { 1 1 } x _ { 1 } + \cdots + a _ { 1 n } x _ { n } = b _ { 1 } } \\ { \qquad \cdots } \\ { a _ { m 1 } x _ { 1 } + \cdots + a _ { m n } x _ { n } = b _ { m } } \end{array} \right.
 $$
 
-是一个包含 $m$ 个方程和 $n$ 个未知数的系统，其中 $a _ { i j }$ 和 $b _ { i }$ 属于欧几里得域 $R$。  
+是一个包含 $m$ 个方程和 $n$ 个未知数的系统，其中 $a _ { i j }$ 和 $b _ { i }$ 属于欧几里得整环 $R$。  
 我们希望在 $R$ 中找到所有解 $x _ { 1 } , \ldots , x _ { n }$。
 
+由
 $$
-A = \left( \begin{array} { c c c } { a _ { 1 1 } } & { \cdots } & { a _ { 1 n } } \\ { \vdots } & { \ddots } & { \vdots } \\ { a _ { m 1 } } & { \cdots } & { a _ { m n } } \end{array} \right) , \mathbf { b } = \left( \begin{array} { c } { b _ { 1 } } \\ { \vdots } \\ { b _ { m } } \end{array} \right) , \mathrm { a n d } \mathbf { x } = \left( \begin{array} { c } { x _ { 1 } } \\ { \vdots } \\ { x _ { n } } \end{array} \right) ,
+A = \left( \begin{array} { c c c } { a _ { 1 1 } } & { \cdots } & { a _ { 1 n } } \\ { \vdots } & { \ddots } & { \vdots } \\ { a _ { m 1 } } & { \cdots } & { a _ { m n } } \end{array} \right) , \mathbf { b } 
+
+= \left( \begin{array} { c } { b _ { 1 } } \\ { \vdots } \\ { b _ { m } } \end{array} \right) , \text { 和 } \mathbf { x } 
+
+= \left( \begin{array} { c } { x _ { 1 } } \\ { \vdots } \\ { x _ { n } } \end{array} \right) ,
 $$
 
-在矩阵方程中求解 $\mathbf { x } ^ { \prime }$
+这相当于 在下面矩阵方程中求解 $\mathbf { x } ^ { \prime }$
 
 $$
 A \cdot \mathbf { x } = \mathbf { b } .
@@ -12934,7 +12939,19 @@ $$
 即使不对系数矩阵 $A$ 提出任何特殊要求，行和列运算也能将其化为命题 2.11 中给出的标准形式；也就是说，它将产生可逆矩阵 $M$ ，$N$ 使得
 
 $$
-\begin{array}{c} M \cdot A \cdot N = \left( \begin{array} { c c c } { { d _ { 1 } } } & { { \cdots } } & { { 0 } } \\ { { \vdots } } & { { \ddots } } & { { \vdots } } \\ { { 0 } } & { { \cdots } } & { { d _ { r } } } \end{array} \right) \vdots  \\ { { 0 } } & { { \cdots } } & { { 0 } } \end{array}
+ M \cdot A \cdot N 
+
+=
+
+\left(
+\begin{array}{ccc|c}
+  d_1    & \dots  & 0      & 0      \\
+  \vdots & \ddots & \vdots & \vdots \\
+  0      & \dots  & d_r    & 0      \\
+  \hline
+  0      & \dots  & 0      & 0
+\end{array}
+\right)
 $$
 
 按照命题2.11中的符号表示。高斯消元法是一个构造性过程：在切换/组合行或列时，观察自己将明确地产生 $M$ 和 $N$。现在，令 $\mathbf { y } = ( y _ { j } )$ 和 ${ \bf c } = M { \bf b }$ ，该系统
@@ -12949,47 +12966,46 @@ $$
 \left\{ \begin{array} { l l } { d _ { 1 } y _ { 1 } = c _ { 1 } } \\ { \quad \quad \cdot \cdot } \\ { d _ { r } y _ { r } = c _ { r } } \\ { \quad \quad 0 = c _ { r + 1 } } \\ { \quad \quad \cdot \cdot } \end{array} \right.
 $$
 
-当且仅当对于所有 $j$，$d _ { j } \mid c _ { j }$ 且 $c _ { j } = 0$ 对于 $j > r$ 时，有解；此外，在这种情况下， 对 $j = 1 , \dotsc , r$ , $y_j$ is the unique element of $R$ such that $c_j=d_jy_j$, while $y_j$ is arbitrary for $j > r$ 。这给出了 $\mathbf { y }$ ，读者将检查 $\mathbf { x } = N \mathbf { y }$ 给出了原始系统的所有解。
+当且仅当 对于所有 $j$，$d _ { j } \mid c _ { j }$ 且 $c _ { j } = 0$ 对于 $j > r$ 时，有解；此外，在这种情况下， 对 $j = 1 , \dotsc , r$ , $y_j$ 是 $R$ 的唯一元素 使得 $c_j=d_jy_j$, 当 $y_j$ 在 $j > r$ 时任取。这就给出了 $\mathbf { y }$ ，读者将检查 $\mathbf { x } = N \mathbf { y }$ 给出了原始系统的所有解。
 
-这样的论点可以被包装成方便的显式程序来解决线性方程组。再次，列出（或试图记住）任何此类程序似乎都是徒劳的；更重要的是知道这些技术背后的原理，以便在需要时能够想出一个。
+这样的论点可以被包装成方便的显式步骤 来解 线性方程组。再次，列出（或试图记住）任何此类步骤似乎都是徒劳的；更重要的是知道这些技术背后的原理，以便在需要时能够想出一个。
 
-在任何情况下，读者都应该能够严格证明这些公式。最著名的一个可能是克莱姆法则（命题3.6），它依赖于行列式，并且，顺便说一句，对于任何合理大小的实际问题，它基本上是无用的。
+在任何情况下，读者都应该能够严格证明这些公式。最著名的一个可能是 _克莱姆法则_ (Cramer’s rule)（命题3.6），它依赖于行列式，并且，顺便说一句，对于任何合理大小的实际问题，它基本上是无用的。
 
 ### 3.2. 行列式
-设 $\alpha : F \rightarrow G$ 是同构的 $R$ -模自由同态，且 $A$ 是 $\alpha$ 关于 $F ^{\prime}$ 和 $G$ 的基选择所表示的矩阵。根据引理 2.3（参见习题 2.3），$\alpha$ 是同构当且仅当 $A$ 是 $\mathcal{M}_n(R)$ 中的单位，即当且仅当它作为 $R$ 中元素的矩阵是可逆的。这可以通过计算 $A$ 的行列式来检测。
 
-**定义 3.1**. 设 $A = ( a _ { i j } ) \in \mathcal { M } _ { n } ( R )$ 是一个 $n$ 阶方阵。则 $A$ 的行列式是元素
+设 $\alpha : F \rightarrow G$ 是同构的 $R$ -模自由同态，且 $A$ 是 $\alpha$ 关于 $F$ 和 $G$ 的基选择所表示的矩阵。根据引理 2.3（参见习题 2.3），$\alpha$ 是同构当且仅当 $A$ 是 $\mathcal{M}_n(R)$ 中的单位，即 当且仅当 它作为 $R$ 中元素的矩阵是可逆的。这可以通过计算 $A$ 的 _行列式_ 来检测。
+
+**定义 3.1**. 设 $A = ( a _ { i j } ) \in \mathcal { M } _ { n } ( R )$ 是一个 $n$ 阶方阵。则 $A$ 的 **_行列式_** 是元素
 
 $$
 \operatorname* { d e t } ( A ) = \sum _ { \sigma \in S _ { n } } ( - 1 ) ^ { \sigma } \prod _ { i = 1 } ^ { n } a _ { i \sigma ( i ) } \in R .
 $$
 
-这里 $S _ { n }$ 表示 $\{ 1 , \ldots , n \}$ 上的对称群，我写（在此我选*左*作用，如 §IV.9 中所示。右作用 并写成 $i\sigma$ 会导致诸如 '$a_{ii\sigma}$' 这样的记号，很难读。）$\sigma ( i )$ 表示 $\sigma \in S _ { n }$ 对 $i \in \{ 1 , \ldots , n \}$ 的作用；$( - 1 ) ^ { \sigma }$ 是排列的符号（定义 IV.4.10，引理 IV.4.12）。
+这里 $S _ { n }$ 表示 $\{ 1 , \ldots , n \}$ 上的对称群，我写作（在此我选*左*作用，如 §IV.9 中所示。右作用 并写成 $i\sigma$ 会导致诸如 '$a_{ii\sigma}$' 这样的记号，很难读。）$\sigma ( i )$ 来表示 $\sigma \in S _ { n }$ 对 $i \in \{ 1 , \ldots , n \}$ 的作用；$( - 1 ) ^ { \sigma }$ 是置换 (permutation)（定义 IV.4.10，引理 IV.4.12） 的 _符号_。
 
 读者一定熟悉行列式，至少在域上。它们满足一些显著的性质；这里是一些例子：
 
-矩阵 $A$ 的行列式等于其转置 $A ^ { t } =$ $( a _ { i j } ^ { t } )$ 的行列式，定义为
+——矩阵 $A$ 的行列式等于其 _转置_ (transpose) $A ^ { t } =$ $( a _ { i j } ^ { t } )$ 的行列式，定义为
 
 $$
 a _ { i j } ^ { t } = a _ { j i }
 $$
 
-对于所有的 $i$ 和 $j$（也就是说，$A^t$ 的行是 $A$ 的列）。实际上，
+对于所有的 $i$ 和 $j$（也就是说，$A^t$ 的行是 $A$ 的列）。确实，
 
 $$
 \operatorname* { d e t } ( A ^ { t } ) = \sum _ { \sigma \in S _ { n } } ( - 1 ) ^ { \sigma } \prod _ { i = 1 } ^ { n } a _ { i \sigma ( i ) } ^ { t } = \sum _ { \sigma \in S _ { n } } ( - 1 ) ^ { \sigma } \prod _ { i = 1 } ^ { n } a _ { \sigma ( i ) i } = \sum _ { \sigma \in S _ { n } } ( - 1 ) ^ { \sigma } \prod _ { i = 1 } ^ { n } a _ { i \sigma ^ { - 1 } ( i ) }
 $$
 
-由于 $R$ 中乘法的交换律；并且 $\sigma ^ { - 1 }$ 遍历 $\{ 1 , \ldots , n \}$ 的所有排列，就像 $\sigma$ 一样，并且具有相同的符号，因此最右边的项等于 $\operatorname* { d e t } ( A )$ 。
+由  $R$ 中乘法的交换律；并且 $\sigma ^ { - 1 }$ 遍历 $\{ 1 , \ldots , n \}$ 的所有排列， $\sigma$ 也一样，并且具有相同的符号，因此最右边的项等于 $\operatorname* { d e t } ( A )$ 。
 
-—如果方阵 $A$ 的两行或两列相同，则 $\operatorname* { d e t } ( A ) = 0$ 。实际上，只需检查相同列的情况即可；对于行的情况，可以通过应用之前的观察来得出结论。如果 $A$ 的列 $j$ 和 $j ^ { \prime }$ 相同，则由于 $\sigma \in S _ { n }$ 对 $\operatorname* { d e t } ( A )$ 的贡献与由于 $\sigma$ 和转置 $( j j ^ { \prime } )$ 的积对 $\operatorname* { d e t } ( A )$ 的贡献大小相等、符号相反，因此 $\operatorname* { d e t } ( A ) = 0$ 。
+——如果方阵 $A$ 的两行或两列相同，则 $\operatorname* { d e t } ( A ) = 0$ 。实际上，只需检查相同列的情况即可；对于行的情况，可以通过应用之前的观察来得出结论。如果 $A$ 的列 $j$ 和 $j ^ { \prime }$ 相同，则由于 $\sigma \in S _ { n }$ 对 $\operatorname* { d e t } ( A )$ 的贡献与由于 $\sigma$ 和转置 $( j j ^ { \prime } )$ 的积对 $\operatorname* { d e t } ( A )$ 的贡献大小相等、符号相反，因此 $\operatorname* { d e t } ( A ) = 0$ 。
 
-—假设 $A = \left( a _ { i j } \right)$ 和 $B = ( b _ { i j } )$ 在至多一行上不同：$a _ { i j } = b _ { i j }$ 如果 $i \neq k$，对所有 $j$ 和某个固定的 $k$ 。令 $c _ { i j } := a _ { i j } = b _ { i j}$ 对于 $i \neq k$，$c _ { k j } := a _ { k j } + b _ { k j}$，并且令 $C := ( c _ { i j } )$ 。那么
-
+——假设 $A = \left( a _ { i j } \right)$ 和 $B = ( b _ { i j } )$ 在至多一行上不同：$a _ { i j } = b _ { i j }$ 如果 $i \neq k$，对所有 $j$ 和某个固定的 $k$ 。令 $c _ { i j } := a _ { i j } = b _ { i j}$ 对于 $i \neq k$，$c _ { k j } := a _ { k j } + b _ { k j}$，并且令 $C := ( c _ { i j } )$ 。那么
 $$
 \operatorname* { d e t } ( C ) = \operatorname* { d e t } ( A ) + \operatorname* { d e t } ( B ) .
 $$
-
 这直接来自定义 3.1 和分配律。将这一观察应用于转置矩阵，可以得到一个对于最多仅在列上不同的矩阵的类似陈述。
 
 我将更正式地记录初等运算对行列式的影响：
@@ -12998,51 +13014,80 @@ $$
 
 • 设 $A ^ { \prime }$ 是通过交换 $A$ 的两行或两列得到的，则 $\operatorname* { d e t } ( A ^ { \prime } ) = - \operatorname* { d e t } ( A )$ 。  
 • 设 $A ^ { \prime }$ 是通过给一行（列）加上另一行（列）的倍数得到的，则 $\operatorname* { d e t } ( A ^ { \prime } ) = \operatorname* { d e t } ( A )$ 。  
-• 设 $A ^ { \prime }$ 是通过将一行（列）乘以元素18 $c \in R$ 得到的，则 $\operatorname* { d e t } ( A ^ { \prime } ) = c \operatorname* { d e t } ( A )$ 。
+• 设 $A ^ { \prime }$ 是通过将一行（列）乘以元素$^{18}$ $c \in R$ 得到的，则 $\operatorname* { d e t } ( A ^ { \prime } ) = c \operatorname* { d e t } ( A )$ 。
 
 换句话说，初等变换对 $\operatorname* { d e t } ( A )$ 的影响与将 $\operatorname* { d e t } ( A )$ 乘以相应初等矩阵的行列式相同。
 
-证明。这些本质上都直接来自定义3.1。例如，交换两列相当于通过一个固定的置换来纠正定义中的每个$o$，改变定义中$\scriptstyle \sum$的所有贡献的符号。第三点是直接从分配律得出的。结合第三种运算和陈述之前的两个注释可以得到第二点。细节留给读者（练习3.2）。$\square$
+**证明**。这些本质上都直接来自定义3.1。例如，交换两列相当于通过一个固定的置换来纠正定义中的每个$\sigma$，改变定义中$\scriptstyle \sum$的所有贡献的符号。第三点是直接从分配律得出的。结合第三种运算和陈述之前的两个注释可以得到第二点。细节留给读者（练习3.2）。$\square$
 
 这一观察极大地简化了行列式的理论。如果 $R = k$ 是一个域，且 $P \in \mathcal { M } _ { n } ( k )$ ，高斯消元法（命题 2.10）表明
 
 $$
-A = E _ { 1 } \cdots E _ { a } \cdot \left( \frac { I _ { r } \enspace \middle | \enspace 0 } { \enspace 0 \enspace \middle | \enspace 0 } \right) \cdot E _ { 1 } ^ { \prime } \cdots E _ { b } ^ { \prime } ,
+A = E_1 \cdots E_a \cdot
+\left(
+\begin{array}{c|c}
+ I _ { r } & 0 \\
+\hline
+0 & 0
+\end{array}
+\right)
+
+\cdot
+E_1' \cdots E_b'
+,
 $$
 
 当 $r \leq n$ 且 $E _ { i } ^ { \prime }$ ， $E _ { j } ^ { \prime }$ 是初等矩阵时，那么引理 3.2 给出
 
 $$
-\operatorname* { d e t } ( A ) = \prod _ { i } \operatorname* { d e t } ( E _ { i } ) \prod _ { j } \operatorname* { d e t } ( E _ { j } ^ { \prime } ) \operatorname* { d e t } \left( { \frac { I _ { r } \mid 0 } { 0 } } \right) .
+\operatorname* { d e t } ( A ) = \prod _ { i } \operatorname* { d e t } ( E _ { i } ) \prod _ { j } \operatorname* { d e t } ( E _ { j } ^ { \prime } ) \operatorname* { d e t } 
+
+\left(
+\begin{array}{c|c}
+ I _ { r } & 0 \\
+\hline
+0 & 0
+\end{array}
+\right)
+.
 $$
 
 （特别是，$\operatorname* { d e t } A \neq 0$ 仅当 $r = n$ 时成立。）关于行列式，由此引申出一些有用的性质。例如，
 
 **命题 3.3**. 设 $R$ 是一个交换环。
 
-一个方阵 $A \in { \mathcal { M } } _ { n } ( R )$ 是可逆的当且仅当 $\operatorname* { d e t } ( A )$ 是 $R$ 中的一个单位元。• 行列式是一个同态 ${ } ^ { 1 9 }$ ${ \mathrm { G L } } _ { n } ( R ) \to ( R ^ { * } , \cdot )$。更一般地，对于 $A , B \in { \mathcal { M } } _ { n } ( R )$ ，
-
+- 一个方阵 $A \in { \mathcal { M } } _ { n } ( R )$ 是可逆的当且仅当 $\operatorname* { d e t } ( A )$ 是 $R$ 中的一个单位元。
+- 行列式是一个同态 ${ } ^ { 1 9 }$ ${ \mathrm { G L } } _ { n } ( R ) \to ( R ^ { * } , \cdot )$。更一般地，对于 $A , B \in { \mathcal { M } } _ { n } ( R )$ ，
 $$
 \operatorname* { d e t } ( A \cdot B ) = \operatorname* { d e t } ( A ) \operatorname* { d e t } ( B ) .
 $$
 
-对于 $R = \mathbf { a }$ 场的证明。如果 $R = k$ 是一个场，我们可以使用紧接在陈述之前的考虑。第一个要点简化为块矩阵的情况
+**对于 $R = \mathbf { a }$ 域的证明**。如果 $R = k$ 是一个域，我们可以使用紧接在陈述之前的考虑。第一个要点简化为块矩阵的情况
 
 $$
-\left( \frac { I _ { r } \mid 0 } { 0 } \right) ,
+\left(
+\begin{array}{c|c}
+ I _ { r } & 0 \\
+\hline
+0 & 0
+\end{array}
+\right) ,
 $$
 
-对于这一点是显而易见的。事实上，这表明 $\operatorname* { d e t } ( A ) = 0$ 当且仅当与 $A$ 对应的线性映射 $k ^ { n } \to k ^ { n }$ 不是同构。特别是，对于所有 $A , B$，我们有 $\operatorname* { d e t } ( A B ) = 0$ 当且仅当 $A B$ 不是同构，当且仅当 $A$ 或 $B$ 不是同构，当且仅当 $\operatorname* { d e t } ( A ) = 0$ 或 $\operatorname* { d e t } ( B ) = 0$。因此，我们只需要检查可逆矩阵的同态性质。这些是显然是初等矩阵的积，然后同态性质就由引理 3.2 推出。
+对于这一点是显而易见的。事实上，这表明 $\operatorname* { d e t } ( A ) = 0$ 当且仅当与 $A$ 对应的线性映射 $k ^ { n } \to k ^ { n }$ 不是同构。特别是，对于所有 $A , B$，我们有 $\operatorname* { d e t } ( A B ) = 0$ 当且仅当 $A B$ 不是同构，当且仅当 $A$ 或 $B$ 不是同构，当且仅当 $\operatorname* { d e t } ( A ) = 0$ 或 $\operatorname* { d e t } ( B ) = 0$。因此，我们只需要检查可逆矩阵的同态性质。这些”都在眼皮子底下了“，就是初等矩阵的积，然后同态性质就由引理 3.2 推出。$\square$
 
-在进行任意交换环的（简单）扩展之前，以下显式公式是有帮助的。从给定矩阵 $A$ 中删除若干行和列得到的“子矩阵”称为 $A$ 的一个“子式”；更准确地说，这个术语指的是通过这些方式得到的正方形子矩阵的行列式。如果 $A \in { \mathcal { M } } _ { n } ( R )$ ，$A$ 的余子式是 $A$ 的 $( n - 1 ) \times ( n - 1 )$ 子式，经过符号修正。更精确地，对于 $A = \left( a _ { i j } \right)$ ，我将让
+在进行任意交换环的（简单）扩展之前，以下显式公式是有帮助的。从给定矩阵 $A$ 中删除若干行和列得到的“子矩阵”称为 $A$ 的一个 _“子式” （minor）_；更准确地说，这个术语指的是通过这些方式得到的”_正方形子矩阵的行列式_“。如果 $A \in { \mathcal { M } } _ { n } ( R )$ ，$A$ 的 _余子式(cofactors)_ 是 $A$ 的 $( n - 1 ) \times ( n - 1 )$ 子式，经过符号修正。更精确地，对于 $A = \left( a _ { i j } \right)$ ，我将让
 
 $$
 A ^ { ( i j ) } : = ( - 1 ) ^ { i + j } \operatorname* { d e t } \left( { \begin{array} { c c c c c c c } { a _ { 1 1 } } & { \cdots } & { a _ { 1 j - 1 } } & { a _ { 1 j + 1 } } & { \cdots } & { a _ { 1 n } } \\ { \vdots } & { \ddots } & { \vdots } & { \vdots } & { \ddots } & { \vdots } \\ { a _ { i - 1 1 } } & { \cdots } & { a _ { i - 1 j - 1 } } & { a _ { i - 1 j + 1 } } & { \cdots } & { a _ { i - 1 n } } \\ { a _ { i + 1 1 } } & { \cdots } & { a _ { i + 1 j - 1 } } & { a _ { i + 1 j + 1 } } & { \cdots } & { a _ { i + 1 n } } \\ { \vdots } & { \ddots } & { \vdots } & { \vdots } & { \ddots } & { \vdots } \\ { a _ { n 1 } } & { \cdots } & { a _ { n j - 1 } } & { a _ { n j + 1 } } & { \cdots } & { a _ { n n } } \end{array} } \right) .
 $$
 
-**引理 3.4.** 如上所述，对于所有 $i = 1 , \dots , n$，$\operatorname* { d e t } ( A ) = \sum _ { j = 1 } ^ { n } a _ { i j } A ^ { ( i j ) }$，对于所有 $j = 1 , \dots , n$，$\operatorname* { d e t } ( A ) = \sum _ { i = 1 } ^ { n } a _ { i j } A ^ { ( i j ) }$。
+**引理 3.4.** 如上所述，
 
-**证明**。这是一个简单的归纳证明（如果有点混乱），我留给勤奋的读者去完成。$\square$
+- 对于所有 $i = 1 , \dots , n$，$\operatorname* { d e t } ( A ) = \sum _ { j = 1 } ^ { n } a _ { i j } A ^ { ( i j ) }$，
+- 对于所有 $j = 1 , \dots , n$，$\operatorname* { d e t } ( A ) = \sum _ { i = 1 } ^ { n } a _ { i j } A ^ { ( i j ) }$。
+
+**证明**。这是一个简单的（可能有点乱的）归纳证明，我留给勤奋的读者去完成。$\square$
 
 当然，引理 3.4 只是陈述了一个著名的策略，即通过按你最喜欢的行或列展开来计算行列式。这对于非常小的矩阵效果很好，但对于大的矩阵完全无用，因为应用它的计算次数随着矩阵大小的阶乘增长。从计算的角度来看，应用高斯消元法并使用命题 3.3 之前的考虑要更有意义得多。
 
@@ -13051,30 +13096,34 @@ $$
 **推论 3.5** 设 $R$ 是一个交换环，$A \in { \mathcal { M } } _ { n } ( R )$。那么
 
 $$
-\begin{array}{c} A \cdot { \binom { A ^ { ( 1 1 ) } } { \vdots } } \quad \cdots \quad \vdots \quad \vdots  \\ { A ^ { ( 1 n ) } \quad \cdots \quad \cdot \quad \vdots } \\ { A ^ { ( 1 n ) } \quad \cdot \cdot \quad A ^ { ( n n ) } } \end{array} = \left( \begin{array} { c c c } { A ^ { ( 1 1 ) } } & { \cdots } & { A ^ { ( n 1 ) } } \\ { \vdots } & { \ddots } & { \vdots } \\ { A ^ { ( 1 n ) } } & { \cdots } & { A ^ { ( n n ) } } \end{array} \right) \cdot A = \operatorname* { d e t } ( A ) I _ { n } .
+A\cdot \left( \begin{array} { c c c } { A ^ { ( 1 1 ) } } & { \cdots } & { A ^ { ( n 1 ) } } \\ { \vdots } & { \ddots } & { \vdots } \\ { A ^ { ( 1 n ) } } & { \cdots } & { A ^ { ( n n ) } } \end{array} \right)
+
+= \left( \begin{array} { c c c } { A ^ { ( 1 1 ) } } & { \cdots } & { A ^ { ( n 1 ) } } \\ { \vdots } & { \ddots } & { \vdots } \\ { A ^ { ( 1 n ) } } & { \cdots } & { A ^ { ( n n ) } } \end{array} \right) \cdot A 
+
+= \operatorname* { d e t } ( A ) I _ { n } .
 $$
 
-注意在余子式矩阵中 $i$ 和 $j$ 的角色交换。这个矩阵称为 $A$ 的伴随矩阵。
+注意在余子式矩阵中 $i$ 和 $j$ 的角色交换。这个矩阵称为 $A$ 的 _伴随_ 矩阵。
 
-**证明**。沿着右侧的对角线，这是引理3.4的另一种表述。对角线外，人们正在评估（例如）
+**证明**。沿着右侧的对角线，这是引理3.4的另一种表述。对角线外，我们正在求值（例如）
 
 $$
 \sum _ { j = 1 } ^ { n } a _ { i ^ { \prime } j } A ^ { ( i j ) }
 $$
 
-对于 $i ^ { \prime } \neq i$ 。根据引理 3.4，这等同于用 $i ^ { \prime }$ -行替换 $i$ -行后得到的矩阵的行列式；所得矩阵有两行相等，因此其行列式为 $0$ ，如所需。
+对于 $i ^ { \prime } \neq i$ 。根据引理 3.4，这等同于用 $i ^ { \prime }$ -行替换 $i$ -行后得到的矩阵的行列式；所得矩阵有两行相等，因此其行列式为 $0$ ，如所需。$\square$
 
 特别是，推论3.5证明如果我们能求其行列式的逆，那么我们可以求矩阵的逆。
 
 $$
-A ^ { - 1 } = \operatorname* { d e t } ( A ) ^ { - 1 } \left( \begin{array} { c c c c } { { A ^ { ( 1 1 ) } } } & { { \cdots } } & { { A ^ { ( n 1 ) } } } \\ { { \vdots } } & { { \cdot } } & { { \vdots } } \\ { { A ^ { ( 1 n ) } } } & { { \cdots } } & { { A ^ { ( n n ) } } } \end{array} \right) ;
+A ^ { - 1 } = \operatorname* { d e t } ( A ) ^ { - 1 } \left( \begin{array} { c c c c } { { A ^ { ( 1 1 ) } } } & { { \cdots } } & { { A ^ { ( n 1 ) } } } \\ { { \vdots } } & { { \ddots } } & { { \vdots } } \\ { { A ^ { ( 1 n ) } } } & { { \cdots } } & { { A ^ { ( n n ) } } } \end{array} \right) ;
 $$
 
 这个结论适用于任何交换环，只要 $\operatorname* { d e t } ( A )$ 是一个单位。在实践中，余子式的计算是“昂贵的”，因此在任何具体的情形下，高斯消元法可能是一个更好的替代方案（至少在域上是这样）；参见习题 3.5。
 
 但这个逆公式具有好的理论意义。例如，我们现在能够完成命题3.3的证明。
 
-命题3.3在交换环上的证明。第一点可以从第二点以及我们刚刚看到的内容中得出。事实上，我们已经验证了，如果$\operatorname* { d e t } ( A )$是$R$中的单位元，那么$A \in { \mathcal { M } } _ { n } ( R )$存在逆元$A ^ { - 1 } \in { \mathcal { M } } _ { n } ( R )$；反之，如果$A$存在逆元$A ^ { - 1 } \in { \mathcal { M } } _ { n } ( R )$，那么
+**命题3.3在交换环上的证明**。第一点可以从第二点以及我们刚刚看到的内容中得出。事实上，我们已经验证了，如果$\operatorname* { d e t } ( A )$是$R$中的单位元，那么$A \in { \mathcal { M } } _ { n } ( R )$存在逆元$A ^ { - 1 } \in { \mathcal { M } } _ { n } ( R )$；反之，如果$A$存在逆元$A ^ { - 1 } \in { \mathcal { M } } _ { n } ( R )$，那么
 
 $$
 \operatorname* { d e t } ( A ) \operatorname* { d e t } ( A ^ { - 1 } ) = \operatorname* { d e t } ( A A ^ { - 1 } ) = \operatorname* { d e t } ( I _ { n } ) = 1
@@ -13082,27 +13131,26 @@ $$
 
 根据第二个陈述，使得 $\operatorname* { d e t } ( A ^ { - 1 } )$ 是 $\operatorname* { d e t } ( A )$ 在 $R$ 中的逆。
 
-因此，我们只需要验证第二点，即行列式的同态性质。为了在每一个（交换）环上验证这一点，只需要验证通过写出所声称的等式，对于具有不定元的矩阵所得到的“普遍”恒等式。例如，对于 $n \ = \ 2$，该陈述是
+因此，我们只需要验证第二点，即行列式的同态性质。为了在 _每一个_（交换）环上验证这一点，只需要验证通过写出所声称的等式，对于具有不定元的矩阵所得到的“普遍”恒等式。例如，对于 $n \ = \ 2$，该陈述是
 
 $$
 \operatorname* { d e t } { \left( \begin{array} { l l } { x _ { 1 } } & { x _ { 2 } } \\ { x _ { 3 } } & { x _ { 4 } } \end{array} \right) } \operatorname* { d e t } { \left( \begin{array} { l l } { y _ { 1 } } & { y _ { 2 } } \\ { y _ { 3 } } & { y _ { 4 } } \end{array} \right) } = \operatorname* { d e t } { \left( \begin{array} { l l } { x _ { 1 } y _ { 1 } + x _ { 2 } y _ { 3 } } & { x _ { 1 } y _ { 2 } + x _ { 2 } y _ { 4 } } \\ { x _ { 3 } y _ { 1 } + x _ { 4 } y _ { 3 } } & { x _ { 3 } y _ { 2 } + x _ { 4 } y _ { 4 } } \end{array} \right) } ,
 $$
 
-哪个翻译成恒等式
+其翻译成恒等式
+$$
+\left( x _ { 1 } x _ { 4 } - x _ { 2 } x _ { 3 } \right) \left( y _ { 1 } y _ { 4 } - y _ { 2 } y _ { 3 } \right) = \left( x _ { 1 } y _ { 1 } + x _ { 2 } y _ { 3 } \right) \left( x _ { 3 } y _ { 2 } + x _ { 4 } y _ { 4 } \right) - \left( x _ { 1 } y _ { 2 } + x _ { 2 } y _ { 4 } \right) \left( x _ { 3 } y _ { 1 } + x _ { 4 } y _ { 3 } \right) .
+$$   
+由于这个恒等式在 $\mathbb { Z } [ x _ { 1 } , \dots , y _ { 4 } ]$ 中成立，因此它在任何交换环中都必成立，对于任何$x_1, \dots, y_4$ 的选择：实际上，$\mathbb { Z }$ 在 $\mathsf{Ring}$ 中是始的。
 
-$\left( x _ { 1 } x _ { 4 } - x _ { 2 } x _ { 3 } \right) \left( y _ { 1 } y _ { 4 } - y _ { 2 } y _ { 3 } \right) = \left( x _ { 1 } y _ { 1 } + x _ { 2 } y _ { 3 } \right) \left( x _ { 3 } y _ { 2 } + x _ { 4 } y _ { 4 } \right) - \left( x _ { 1 } y _ { 2 } + x _ { 2 } y _ { 4 } \right) \left( x _ { 3 } y _ { 1 } + x _ { 4 } y _ { 3 } \right) .$   
-由于这个恒等式在 $\mathbb { Z } [ x _ { 1 } , \dots , y _ { 4 } ]$ 中成立，因此它在任何交换环中都成立，对于任何选择：实际上，$\mathbb { Z }$ 在环中是始的。 $x _ { 1 } , \ldots , y _ { 4 }$
-
-现在，我们已经验证了同态性质在域上成立；特别是它在 $\mathbb { Z } [ x _ { 1 1 } , \ldots , x _ { n n } , y _ { 1 1 } , \ldots , y _ { n n } ]$ 的分式域上成立。因此，它在 $\mathbb { Z } [ x _ { 1 1 } , \ldots , x _ { n n } , y _ { 1 1 } , \ldots , y _ { n n } ]$ 上也成立，我们完成了。$\square$
+现在，我们已经验证了同态性质在域上成立；特别是它在 $\mathbb { Z } [ x _ { 1 1 } , \ldots , x _ { n n } , y _ { 1 1 } , \ldots , y _ { n n } ]$ 的分式域上成立。因此，它在 $\mathbb { Z } [ x _ { 1 1 } , \ldots , x _ { n n } , y _ { 1 1 } , \ldots , y _ { n n } ]$ 上也成立，证毕。$\square$
 
 “普遍恒等”论证将结果从域扩张到任意交换环是一个有用的工具，读者被邀请仔细思考它。
 
 作为行列式（尤其是余子式）的一个应用，我们现在可以回到$n$个方程$n$个未知数的特殊情况
-
 $$
 A \cdot \mathbf { x } = \mathbf { b } ,
 $$
-
 参见§3.1，在$\operatorname* { d e t } ( A )$为单位的情况下。
 
 **命题 3.6**（克莱姆法则）。假设 $\operatorname* { d e t } ( A )$ 是一个单位，设 $A ^ { ( j ) }$ 是通过用列向量 $b$ 替换 $A$ 的第 $j$ 列得到的矩阵。那么
@@ -13123,20 +13171,26 @@ $$
 \begin{array} { r l } & { \left( \begin{array} { l } { x _ { 1 } } \\ { \vdots } \\ { x _ { n } } \end{array} \right) = A ^ { - 1 } \boldsymbol { \mathbf { b } } = \operatorname* { d e t } ( A ) ^ { - 1 } \left( \begin{array} { c c c } { A ^ { ( 1 1 ) } } & { \cdots } & { A ^ { ( n 1 ) } } \\ { \vdots } & { \ddots } & { \vdots } \\ { A ^ { ( 1 n ) } } & { \cdots } & { A ^ { ( n n ) } } \end{array} \right) \cdot \left( \begin{array} { l } { b _ { 1 } } \\ { \vdots } \\ { b _ { n } } \end{array} \right) } \\ & { \qquad = \operatorname* { d e t } ( A ) ^ { - 1 } \left( \begin{array} { c } { \sum _ { i = 1 } ^ { n } A ^ { ( i 1 ) } b _ { i } } \\ { \vdots } \\ { \sum _ { i = 1 } ^ { n } A ^ { ( i n ) } b _ { i } } \end{array} \right) = \left( \begin{array} { c } { \operatorname* { d e t } ( A ) ^ { - 1 } \operatorname* { d e t } ( A ^ { ( 1 ) } ) } \\ { \vdots } \\ { \operatorname* { d e t } ( A ) ^ { - 1 } \operatorname* { d e t } ( A ^ { ( n ) } ) } \end{array} \right) , } \end{array}
 $$
 
-这给出了陈述。
+证毕。$\square$
 
 ### 3.3. 秩与零度
-根据命题2.10，一个域上矩阵的每个等价类都有一个类型为的代表
+根据命题2.10，一个 _域上的_ 矩阵的每个等价类都有一个类型为如下的表示
 
 $$
-\left( \frac { I _ { r } \mid 0 } { 0 \mid 0 } \right) .
+\left(
+\begin{array}{c|c}
+ I _ { r } & 0 \\
+\hline
+0 & 0
+\end{array}
+\right) .
 $$
 
-之所以两个不同的这种类型 $m \times n$ 矩阵肯定是等价的，是因为如果 $\alpha : V \rightarrow W$（其中 $V$ 和 $W$ 是自由模，在这种情况下是向量空间）由这种形式的矩阵表示，那么 $r$ 是 $\alpha$ 的像的维数。因此，具有不同 $r$ 的矩阵不能表示相同的 $\alpha$。
+之所以两个不同的这种类型 $m \times n$ 矩阵肯定 _不_ 是等价的，是因为如果 $\alpha : V \rightarrow W$（其中 $V$ 和 $W$ 是自由模，在本例下是向量空间）由这种形式的矩阵表示，那么 $r$ 是 $\alpha$ 的 _像的维数_。因此，具有不同 $r$ 的矩阵不能表示相同的 $\alpha$。
 
-这个整数 $r$ 被称为矩阵的秩，值得一些关注。我将讨论那些元素在域中的矩阵，将更一般的环上的推广留给读者（至少目前是这样）。
+这个整数 $r$ 被称为矩阵的 _秩_ (rank)，值得一些关注。我将讨论那些元素在域中的矩阵，将更一般的环上的推广留给读者（至少目前是这样）。
 
-矩阵 $P$ 在域 $k$ 上的列（行）空间是 $P$ 的列（行）的生成空间。矩阵 $P$ 的列（行）秩是 $P$ 的列（行）空间的维数。
+矩阵 $P$ 在域 $k$ 上的 _列（行）空间_ 是 $P$ 的列（行）的张成的空间。矩阵 $P$ 的 _列（行）秩_ 是 $P$ 的列（行）空间的维数。
 
 **命题 3.7**. 域 $k$ 上矩阵的行秩等于其列秩。
 
@@ -13154,29 +13208,35 @@ $$
 
 这表明右乘以 $N$ 将 $P$ 的行空间（由于 $N$ 是可逆的，因此同构地）映射到 $Q$ 的行空间；因此这两个空间具有相同的维度，正如所声称的。对同一论证的最小变化表明 $P$ 和 $Q$ 的列秩是一致的。（参见练习 2.10。）
 
-应用这个观察和命题2.10将问题简化为矩阵
+应用这个观察和命题2.10将此问题简化为矩阵
 
 $$
-\left( \frac { I _ { r } \mid 0 } { 0 \mid 0 } \right) ,
+\left(
+\begin{array}{c|c}
+ I _ { r } & 0 \\
+\hline
+0 & 0
+\end{array}
+\right) ,
 $$
 
-对于哪一行秩 = r = 列秩，证明该命题。
+其中 行秩 = r = 列秩，证毕。$\square$
 
-结果可以轻松升级为任意整环 $R$ 上的矩阵（应用将 $R$ 嵌入其分式域的常用技巧）。
+此结果可以轻松升级为任意整环 $R$ 上的矩阵（应用将 $R$ 嵌入其分式域的常用技巧）。
 
-鉴于命题3.7，我们可以简单谈论矩阵的秩：
+鉴于命题3.7，我们可以简单谈论矩阵的 _秩_：
 
-**定义 3.8**. 设 $M \in \mathcal { M } _ { m , n } ( k )$ 是一个定义在域 $k$ 上的矩阵。$M$ 的秩是其列（或等价地，行）空间的维数。L
+**定义 3.8**. 设 $M \in \mathcal { M } _ { m , n } ( k )$ 是一个定义在域 $k$ 上的矩阵。$M$ 的 **_秩_** 是其列（或等价地，行）空间的维数。$\lrcorner$
 
 将命题2.10改述的一种方式是：域上的矩阵按等价分类，分类依据是它们的秩。
 
-上述考虑在更抽象的术语中很好地适用于有限维向量空间 $k$ 上的线性映射 $\alpha : V  W$。使用在 §III.7.1 中引入的方便语言，请注意每个 $\alpha$ 都确定一个向量空间的正合列
+上述考虑在更抽象的术语中很好地适用于有限维向量空间 $k$ 上的线性映射 $\alpha : V \to W$。使用在 §III.7.1 中引入的方便语言，请注意每个 $\alpha$ 都确定一个向量空间的正合列
 
 $$
 0 \longrightarrow \ker \alpha \longrightarrow V \longrightarrow \operatorname { i m } \alpha \longrightarrow 0 \ .
 $$
 
-定义 3.9. $\alpha$ 的秩，记作 $\mathrm { r k } \alpha$ ，是 $\operatorname { i m } \alpha$ 的维数。$\alpha$ 的零度是 $\mathrm { d i m } ( \ker \alpha )$ 。
+**定义 3.9**. $\alpha$ 的秩，记作 $\mathrm { r k }~ \alpha$ ，是 $\operatorname { i m } \alpha$ 的维数。$\alpha$ 的 _零度_ (nullity) 是 $\mathrm { d i m } ( \ker \alpha )$ 。
 
 **命题 3.10.** 设 $\alpha : V \rightarrow W$ 是有限维向量空间之间的线性映射。那么
 
@@ -13184,32 +13244,37 @@ $$
 ( { \mathrm { r a n k ~ o f ~ } } \alpha ) + ( { \mathrm { n u l l i t y ~ o f ~ } } \alpha ) = \dim V .
 $$
 
-**证明**。令 $n = \dim V$ 和 $m = \dim W$。根据命题 2.10，我们可以用形如 $m \times n$ 的矩阵表示 $\alpha$。
+**证明**。令 $n = \dim V$ 和 $m = \dim W$。根据命题 2.10，我们可以用形如下的 $m \times n$ 的矩阵表示 $\alpha$
 
 $$
-\left( \frac { I _ { r } \mid 0 } { 0 } \right) .
+\left(
+\begin{array}{c|c}
+ I _ { r } & 0 \\
+\hline
+0 & 0
+\end{array}
+\right) .
 $$
 
 从这种表示形式可以直接看出 $\operatorname { r k } \alpha = r$ 并且 $\alpha$ 的零度为 $n - r$ 以及所陈述的推论。$\square$
 
-总结来说，$\mathrm { r k } \alpha$ 等于表示 $\alpha$ 的任何矩阵 $P$ 的（列）秩；类似地，$\alpha$ 的零度等于 $\operatorname { d i m } V$ 减去 $P$ 的（行）秩。命题 3.10 是行秩和列秩相等的抽象版本。
+总结来说，$\mathrm { r k }~ \alpha$ 等于表示 $\alpha$ 的任何矩阵 $P$ 的（列）秩；类似地，$\alpha$ 的零度等于 $\operatorname { d i m } V$ 减去 $P$ 的（行）秩。命题 3.10 是行秩和列秩相等的抽象版本。
 
 ### 3.4. 欧拉示性数与格罗滕迪克群
 尽管我尽力而为，但我无法抵制将这些简单的观察扩展到更一般的复形。命题3.10可以重新表述如下：
 
 **命题 3.11**. 设
-
 $$
 0 \longrightarrow U \longrightarrow V \longrightarrow W \longrightarrow 0
 $$
-
-是有限维向量空间的短正合列。然后
+是一个 有限维向量空间的短正合列。则
 
 $$
 \dim ( V ) = \dim ( U ) + \dim ( W ) .
 $$
 
-等价地，这相当于关系 $\dim ( V / U ) = \dim ( V ) - \dim ( U )$ 。然后考虑一个有限维向量空间和线性映射的复合：
+等价地，这相当于关系 $\dim ( V / U ) = \dim ( V ) - \dim ( U )$ 。
+考虑如下 _有限维向量空间与线性映射构成的复形_：
 
 $$
 V _ { \bullet } : \quad 0 \longrightarrow V _ { N } \xrightarrow { \alpha _ { N } } V _ { N - 1 } \xrightarrow { \alpha _ { N - 1 } } \cdots \xrightarrow { \alpha _ { 2 } } V _ { 1 } \xrightarrow { \alpha _ { 1 } } V _ { 0 } \xrightarrow { } 0
@@ -13221,15 +13286,16 @@ $$
 H _ { i } ( V _ { \bullet } ) = { \frac { \ker ( \alpha _ { i } ) } { \operatorname { i m } ( \alpha _ { i + 1 } ) } } .
 $$
 
-该复形是正合的，如果对于所有 $i$，都有 $\mathrm { i m } ( \alpha _ { i + 1 } ) = \ker ( \alpha _ { i } )$，即，如果对于所有 $i$，都有 $H _ { i } ( V _ { \bullet } ) = 0$
+该复形是 _正合的_ ，如果对于所有 $i$，都有 $\mathrm { i m } ( \alpha _ { i + 1 } ) = \ker ( \alpha _ { i } )$，即，如果对于所有 $i$，都有 $H _ { i } ( V _ { \bullet } ) = 0$
 
-**定义 3.12**. $V _ { \bullet }$ 的欧拉示性数是整数
+**定义 3.12**. $V _ { \bullet }$ 的 **_欧拉示性数_** 是整数
 
 $$
 \chi ( V _ { \bullet } ) : = \sum _ { i } ( - 1 ) ^ { i } \dim ( V _ { i } ) .
 $$
+$\lrcorner$
 
-引入这个数的原始动机是拓扑学的：在适当的位置，这个欧拉示性数等于通过三角剖分流形并计算三角剖分的顶点数减去边数加上面数等等所得到的欧拉示性数。
+引入这个数的原始动机是拓扑学的：在适当位置下，该欧拉示性数等同于通过对流形进行三角剖分后，计算其顶点数减去边数再加上面数等步骤所得到的欧拉特征值。
 
 以下简单结果是对命题 3.11 的一个直接（且非常有用）的推广：
 
@@ -13239,7 +13305,7 @@ $$
 \chi ( V _ { \bullet } ) = \sum _ { i = 0 } ^ { N } ( - 1 ) ^ { i } \dim ( H _ { i } ( V _ { \bullet } ) ) .
 $$
 
-特别是，如果 $V _ { \bullet }$ 是正合的，那么 $\chi ( V _ { \bullet } ) = 0$ 。
+特别地，如果 $V _ { \bullet }$ 是正合的，那么 $\chi ( V _ { \bullet } ) = 0$ 。
 
 **证明**。当 $N = 0$ 时，无需证明，而当 $N = 1$ 时，结果直接由命题 3.11 推出（练习 3.15）。通过归纳法，给定一个复数
 
@@ -13253,7 +13319,7 @@ $$
 V _ { \bullet } ^ { \prime } : \quad 0 \longrightarrow V _ { N - 1 } \xrightarrow { \alpha _ { N - 1 } } \cdots \xrightarrow { \alpha _ { 2 } } V _ { 1 } \xrightarrow { \alpha _ { 1 } } V _ { 0 } \longrightarrow 0 \ .
 $$
 
-然后
+则
 
 $$
 \chi ( V _ { \bullet } ) = \chi ( V _ { \bullet } ^ { \prime } ) + ( - 1 ) ^ { N } \dim ( V _ { N } ) ,
@@ -13265,7 +13331,7 @@ $$
 H _ { i } ( V _ { \bullet } ) = H _ { i } ( V _ { \bullet } ^ { \prime } ) \quad \mathrm { f o r } \ 0 \leq i \leq N - 2 ,
 $$
 
-当...时
+同时
 
 $$
 H _ { N - 1 } ( V _ { \bullet } ^ { \prime } ) = \ker ( \alpha _ { N - 1 } ) , \quad H _ { N - 1 } ( V _ { \bullet } ) = \frac { \ker ( \alpha _ { N - 1 } ) } { \operatorname { i m } ( \alpha _ { N } ) } , \quad H _ { N } ( V _ { \bullet } ) = \ker ( \alpha _ { N } ) .
@@ -13295,15 +13361,15 @@ $$
 \chi ( V _ { \bullet } ^ { \prime } ) = \sum _ { i = 0 } ^ { N - 1 } ( - 1 ) ^ { i } \dim ( H _ { i } ( V _ { \bullet } ^ { \prime } ) )
 $$
 
-给予
+得到
 
 $$
 \begin{array} { l } { { \chi ( V _ { \bullet } ) = \chi ( V _ { \bullet } ^ { \prime } ) + ( - 1 ) ^ { N } \dim ( V _ { N } ) } } \\ { { \ = \displaystyle \sum _ { i = 0 } ^ { N - 1 } ( - 1 ) ^ { i } \dim ( H _ { i } ( V _ { \bullet } ^ { \prime } ) ) + ( - 1 ) ^ { N } \dim ( V _ { N } ) } } \\ { { \ \quad = \displaystyle \sum _ { i = 0 } ^ { N - 2 } ( - 1 ) ^ { i } \dim ( H _ { i } ( V _ { \bullet } ^ { \prime } ) ) + ( - 1 ) ^ { N - 1 } ( \dim ( H _ { N - 1 } ( V _ { \bullet } ^ { \prime } ) ) - \dim ( V _ { N } ) ) } } \\ { { \ \quad = \displaystyle \sum _ { i = 0 } ^ { N - 2 } ( - 1 ) ^ { i } \dim ( H _ { i } ( V _ { \bullet } ) ) + ( - 1 ) ^ { N - 1 } ( \dim ( H _ { N - 1 } ( V _ { \bullet } ) ) - \dim ( H _ { N } ( V _ { \bullet } ) ) ) } } \\ { { \ \quad = \displaystyle \sum _ { i = 0 } ^ { N - 1 } ( - 1 ) ^ { i } \dim ( H _ { i } ( V _ { \bullet } ) ) + ( - 1 ) ^ { N - 1 } ( \dim ( H _ { N - 1 } ( V _ { \bullet } ) ) - \dim ( H _ { N } ( V _ { \bullet } ) ) ) } } \\ { { \ \quad = \displaystyle \sum _ { i = 0 } ^ { N } ( - 1 ) ^ { i } \dim ( H _ { i } ( V _ { \bullet } ) ) } } \end{array}
 $$
 
-正如所需。
+正如所需。$\square$
 
-根据上述拓扑动机，命题3.13告诉我们流形的欧拉示性数可以记为其同调的秩的交错和，即其贝蒂数的交错和。
+根据上述拓扑动机，命题3.13告诉我们流形的欧拉示性数可以记为其同调的秩的交错和，即其 _贝蒂数_ 的交错和。
 
 既然已经到了这一步，我无法不提到下一个同样简单直白的推广。读者肯定已经注意到，在命题3.13的证明中唯一使用的工具是维度“可加性”属性，该属性在命题3.11中建立：如果
 
@@ -13317,15 +13383,14 @@ $$
 \dim ( V ) = \dim ( U ) + \dim ( W ) .
 $$
 
-命题 3.13 是这个 dim 的一个性质的一个形式推论。
+_命题 3.13 是这个 dim 的一个性质的一个形式推论_。
 
-考虑到这一点，我们可以以以下奇特的方式重新解释我们刚刚所做的事情。考虑有限维 $k$ -向量空间范畴 $k { \mathrm { - } } \mathsf { V e c t } ^ { f }$。 $k { \mathrm { - } } V { \mathrm { e c t } } ^ { f }$ 的每个对象 $V$ 确定一个同构类 $[ V ]$。令 $F ( k { - } \mathsf { V e c t } ^ { f } )$ 是这些同构类上的自由阿贝尔群；此外，令 $E$ 是由这些元素生成的子群
-
+考虑到这一点，我们可 以 以下奇特的方式 重新解释我们刚刚所做的事情。考虑有限维 $k$ -向量空间范畴 $k { \mathrm { - } } \mathsf { V e c t } ^ { f }$。 $k { \mathrm { - } } V { \mathrm { e c t } } ^ { f }$ 的每个对象 $V$ 确定一个同构类 $[ V ]$。令 $F ( k { - } \mathsf { V e c t } ^ { f } )$ 是这些同构类上的自由阿贝尔群；此外，令 $E$ 是由这些元素生成的子群
 $$
 [ V ] - [ U ] - [ W ]
 $$
 
-对于所有短正合列
+对于所有的短正合列
 
 $$
 0 \longrightarrow U \longrightarrow V \longrightarrow W \longrightarrow 0
@@ -13337,11 +13402,11 @@ $$
 K ( k – \mathsf { V e c t } ^ { f } ) : = \frac { F ( k – \mathsf { V e c t } ^ { f } ) } { E }
 $$
 
-被称为 $k { \mathrm { - } } \mathsf { V e c t } ^ { f }$ 类的格罗滕迪克群。在格罗滕迪克群中由 $V$ 确定的元素仍然记为 $[ V ]$ 。
+被称为 $k { \mathrm { - } } \mathsf { V e c t } ^ { f }$ 范畴的 **_格罗滕迪克群_** (Grothendieck group)。在格罗滕迪克群中由 $V$ 确定的元素仍然记为 $[ V ]$ 。
 
-更一般地，对于任何允许正合列概念的范畴，都可以定义一个Grothendieck群。
+更一般地，对于任何允许正合列概念的范畴，都可以定义一个 _格罗滕迪克群_。
 
-每个复形的 $V _ { \bullet }$ 确定一个 $K ( k { - } \mathsf { V e c t } ^ { f } )$ 中的元素，即
+每个复形的 $V _ { \bullet }$ 都确定一个 $K ( k { - } \mathsf { V e c t } ^ { f } )$ 中的元素，即
 
 $$
 \chi _ { K } ( V _ { \bullet } ) : = \sum _ { i } ( - 1 ) ^ { i } [ V _ { i } ] \in K ( k \mathsf { - } \mathsf { V e c t } ^ { f } ) .
@@ -13355,13 +13420,13 @@ $$
 \chi _ { K } ( V _ { \bullet } ) = \sum _ { i } ( - 1 ) ^ { i } [ H _ { i } ( V _ { \bullet } ) ] .
 $$
 
-• $\chi _ { K }$ 是一种“普遍欧拉特征”，其意义如下。设 $G$ 是一个阿贝尔群，设 $\delta$ 是一个将每个有限维向量空间映射到 $G$ 中元素的函数，使得如果 $V \cong V ^ { \prime }$，则 $\delta ( V ) = \delta ( V ^ { \prime } )$，并且 $\delta ( V / U ) =$ $\delta ( V ) - \delta ( U )$。对于复形 $V _ { \bullet }$，定义
+• $\chi _ { K }$ 是一种“泛 欧拉示性数”，其意义如下。设 $G$ 是一个阿贝尔群，设 $\delta$ 是一个将每个有限维向量空间映射到 $G$ 中元素的函数，使得如果 $V \cong V ^ { \prime }$，则 $\delta ( V ) = \delta ( V ^ { \prime } )$，并且 $\delta ( V / U ) =$ $\delta ( V ) - \delta ( U )$。对于复形 $V _ { \bullet }$，定义
 
 $$
 \chi _ { G } ( V _ { \bullet } ) = \sum _ { i } ( - 1 ) ^ { i } \delta ( V _ { i } ) .
 $$
 
-然后 δ 引导一个（唯一）群同态
+然后 δ 诱导一个（唯一）群同态
 
 $$
 K ( k { - } \mathsf { V e c t } ^ { f } ) \to G
@@ -13369,7 +13434,7 @@ $$
 
 将 $\chi _ { K } ( V _ { \bullet } )$ 映射到 $\chi _ { G } ( V _ { \bullet } )$ 。
 
-• 特别是，$\delta = \mathrm { dim }$ 引导一个群同态
+• 特别地，$\delta = \mathrm { dim }$  诱导一个群同态
 
 $$
 K ( k { \mathsf { - V e c t } } ^ { f } ) \to \mathbb { Z }
@@ -13379,9 +13444,9 @@ $$
 
 • 事实上这是一个同构。
 
-让读者相信这个令人印象深刻的断言是完全平凡的最好方法是将其证明留给读者（练习3.16）。第一点是通过对命题3.13的证明进行修改来证明的；第二点是无害的泛性质混合；第三点源于第二点；而最后一点则源于$\dim ( k ) = 1$和IBN性质。
+让读者相信这个令人印象深刻的断言是完全平凡的 的最好方法是 将其证明留给读者（练习3.16）。第一点是通过对命题3.13的证明进行修改来证明的；第二点是无害的泛性质混合；第三点源于第二点；而最后一点则源于$\dim ( k ) = 1$和IBN性质。
 
-最后一点实际上是相当平淡的：如果令人印象深刻的抽象格罗滕迪克群竟然只是整数的一个副本，那又何必定义它呢？答案是，当然，这仅仅强调了$k\mathrm{-}\mathsf{Vec}^{f}$这个范畴是多么特殊。格罗滕迪克群的定义可以在任何存在复形和正合性概念的上下文中给出（例如，在任何环上的有限生成$^{20}$模范畴中）。证明引理3.14的正式论证在任何这样的上下文中都将成立，并为我们提供一个有用的“普遍欧拉特征”概念。
+最后一点实际上是相当平淡的：如果令人印象深刻的抽象格罗滕迪克群竟然只是整数的一个副本，那又何必定义它呢？答案是，当然，这仅仅强调了$k\mathrm{-}\mathsf{Vec}^{f}$这个范畴是多么特殊。格罗滕迪克群的定义可以在任何存在复形和正合性概念的上下文中给出（例如，在任何环上的有限生成$^{20}$模范畴中）。证明引理3.14的正式论证在任何这样的上下文中都将成立，并为我们提供一个有用的“泛欧拉示性数”概念。
 
 我们将在第九章回到复形和同调。
 
@@ -13397,17 +13462,17 @@ $$
 
 3.3. 重新做练习 II.8.8。
 
-3.4. 将“普遍恒等”的讨论形式化：通过什么泛性质的鸡尾酒，如果恒等在 $\mathbb { Z } [ x _ { 1 } , \ldots , x _ { r } ]$ 中成立，那么它在每一个交换环 $R$ 上都成立，对于每一个 $x _ { i } \in R$ 的选择？(R 的交换性是必要的吗？)
+3.4. 将“普遍恒等”的讨论形式化：通过什么泛性质的鸡尾酒，下列是否成立: 如果恒等在 $\mathbb { Z } [ x _ { 1 } , \ldots , x _ { r } ]$ 中成立，那么它在每一个交换环 $R$ 上都成立，对于每一个 $x _ { i } \in R$ 的选择. (R 的交换性是必要的吗？)
 
-3.5. $\triangleright$ 设 $A$ 是一个域中元素的 $n \times n$ 可逆方阵，并考虑通过在 $A$ 旁边放置单位矩阵得到的 $n \times (2n)$ 矩阵 $B = \left( A | I _ { n } \right)$。对 $B$ 执行初等行变换，将 $A$ 化简为 $I _ { n}$（参见习题 2.15）。证明这会使得 $B$ 变为 $\left( I _ { n } | A ^ { - 1 } \right)$。
+3.5. $\triangleright$ 设 $A$ 是一个域中元素的 $n \times n$ 可逆方阵，并考虑通过在 $A$ 旁边放置单位矩阵得到的 $n \times (2n)$ 矩阵 $B = \left( A | I _ { n } \right)$。对 $B$ 执行初等行变换，将 $A$ 化简为 $I _ { n}$（参见习题 2.15）。证明这会使得 $B$ 变换为 $\left( I _ { n } | A ^ { - 1 } \right)$。
 
 （这种方法比在 §3.2 中使用行列式来计算矩阵的逆要高效得多。）[§2.3, §3.2]
 
-3.6. $\neg$ 设 $R$ 是一个交换环，$M = \langle m _ { 1 } , \ldots , m _ { r } \rangle$ 是一个有限生成的 $R$ -模。设 $A \in \mathcal { M } _ { r } ( R )$ 是一个矩阵，使得 $A \cdot { \binom { m _ { 1 } } { \vdots } } = { \binom { 0 } { \vdots } }$ 。证明 $\operatorname* { d e t } ( A ) m = 0$ 对所有 $m \in M$ 成立。(提示：乘以伴随矩阵。) [3.7]
+3.6. $\neg$ 设 $R$ 是一个交换环，$M = \langle m _ { 1 } , \ldots , m _ { r } \rangle$ 是一个有限生成的 $R$ -模。设 $A \in \mathcal { M } _ { r } ( R )$ 是一个矩阵，使得 $A \cdot \left(  \begin{array}{c}  { m_1} \\ \vdots \\ m_r \end{array} \right) = \left(  \begin{array}{c}  0 \\ \vdots \\0 \end{array} \right)$ 。证明 $\operatorname* { d e t } ( A ) m = 0$ 对所有 $m \in M$ 成立。(提示：乘以伴随矩阵。) [3.7]
 
-3.7. $\neg$ 设 $R$ 是一个交换环，$M$ 是一个 $R$ -模，$J$ 是 $R$ 的一个理想。假设 $J M = M$。证明存在一个 $b \in J$ 使得 $( 1 + b ) M = 0$。（设 $m _ { 1 } , \ldots , m _ { r }$ 是 $M$ 的生成元。找到一个 $r \times r$ 矩阵 $B$，其元素在 $J$ 中，使得 $\binom { m _ { 1 } } { \vdots } = B \cdot \binom { m _ { 1 } } { \vdots }$。然后使用练习 3.6。）[3.8, VIII.1.18]
+3.7. $\neg$ 设 $R$ 是一个交换环，$M$ 是一个 $R$ -模，$J$ 是 $R$ 的一个理想。假设 $J M = M$。证明存在一个 $b \in J$ 使得 $( 1 + b ) M = 0$。（设 $m _ { 1 } , \ldots , m _ { r }$ 是 $M$ 的生成元。找到一个 $r \times r$ 矩阵 $B$，其元素在 $J$ 中，使得 $\left(  \begin{array}{c}  { m_1} \\ \vdots \\ m_r \end{array} \right) = B \cdot \left(  \begin{array}{c}  { m_1} \\ \vdots \\ m_r \end{array} \right)$。然后使用练习 3.6。）[3.8, VIII.1.18]
 
-3.8. $\neg$ 设 $R$ 是一个交换环，$M$ 是一个 $R$ -模，并且 $J$ 是 $R$ 的一个理想，包含在 $R$ 的雅可比根中（习题 V.3.14）。证明 $M = 0 \Longleftrightarrow J M = M$。（使用习题 3.7。这是纳卡亚玛引理，一个在交换代数和代数几何中有重要应用的结果。一个特例作为习题 III.5.16 给出。）[III.5.16, 3.9, 5.5]
+3.8. $\neg$ 设 $R$ 是一个交换环，$M$ 是一个 $R$ -模，并且 $J$ 是 $R$ 的一个理想，_包含在 $R$ 的雅可比根中_ （习题 V.3.14）。证明 $M = 0 \Longleftrightarrow J M = M$。（使用习题 3.7。这是 _Nakayama引理_，一个在交换代数和代数几何中有重要应用的结果。一个特例作为习题 III.5.16 给出。）[III.5.16, 3.9, 5.5]
 
 3.9. $\neg$ 设 $R$ 是一个交换局部环，即一个具有唯一极大理想 $\mathfrak { m }$ 的环，并且设 $M$ ， $N$ 是 $R$ -模。证明如果 $M = { \mathfrak { m } } M + N$ ，那么 $M = N$ 。（应用 Nakayama 引理，即练习 3.8，到 $M / N$ 上。注意 $R$ 的雅可比根是 $\mathfrak { m }$ 。）[3.10]
 
@@ -13415,29 +13480,29 @@ $$
 
 (证明 $\langle m _ { 1 } , \ldots , m _ { r } \rangle + { \mathfrak { m } } M = M$；然后应用 Nakayama 引理，形式为练习 3.9 的形式。) [5.5, VIII.2.24]
 
-3.11. 解释如何使用高斯消元法来找到一个矩阵在域上的行空间和列空间的基。
+3.11. 解释如何使用高斯消元法来 找到一个矩阵在域上的行空间和列空间的基。
 
 3.12. $\neg$ 设 $R$ 是一个整环，且 $M \in \mathcal { M } _ { m , n } ( R )$ ，其中 $m < n$ 。证明 $M$ 的列向量在 $R$ 上是线性相关的。[5.6]
 
-3.13. 设 $k$ 是一个域。证明矩阵 $M \in \mathcal { M } _ { m , n } ( k )$ 的秩 $\leq r$ 当且仅当存在矩阵 $P \in \mathcal { M } _ { m , r } ( k )$ ，$Q \in \mathcal { M } _ { r , n } ( k )$ 使得 $M = P Q$ 。（因此 $M$ 的秩是最小的这样的整数。）
+3.13. 设 $k$ 是一个域。证明矩阵 $M \in \mathcal { M } _ { m , n } ( k )$ 的秩 $\leq r$ 当且仅当 存在矩阵 $P \in \mathcal { M } _ { m , r } ( k )$ ，$Q \in \mathcal { M } _ { r , n } ( k )$ 使得 $M = P Q$ 。（因此 $M$ 的秩是最小的这样的整数。）
 
-3.14. 将命题3.11推广到任意整环上有限生成的自由模的情况。（将整环嵌入其分式域。）
+3.14. 将命题3.11推广到 任意整环上 有限生成的自由模的情况。（将整环嵌入其分式域。）
 
 3.15. $\triangleright$ 证明命题3.13在$N = 1$的情况下的成立。 [§3.4]
 
 3.16. $\triangleright$ 证明命题3.14。[§3.4]
 
-3.17. 将 §3.4 中给出的向量空间的Grothendieck群的定义扩展到可数（可能无限）维向量空间的范畴，并证明它是平凡群。
+3.17. 将 §3.4 中给出的向量空间的Grothendieck群的定义扩展到 _可数_（可能无限）维向量空间的范畴，并证明它是平凡群。
 
 3.18. 设 $\mathsf { A b } ^ { f g }$ 是有限生成的阿贝尔群范畴。按照 $K ( k { - } \mathsf { V e c t } ^ { f } )$ 的构造方式定义此范畴的格罗滕迪克群，并证明 $K ( \mathsf { A b } ^ { f g } ) \cong \mathbb { Z }$ 。
 
 3.19. $\neg \operatorname { L e t } \mathsf { A b } ^ { f }$ 是有限阿贝尔群的范畴。证明将每个有限阿贝尔群映射到其阶数扩展为一个同态，从Grothendieck群 $K ( \mathsf { A b } ^ { f } )$ 到乘法群 $( \mathbb { Q } ^ { * } , \cdot )$ 。[3.20]
 
-3.20. 设 $R { - } M { \circ } \mathrm { d } ^ { f }$ 是环 $R$ 上的有限长度模范畴（参见习题 1.16）。设 $G$ 是一个阿贝尔群，设 $\delta$ 是一个函数，将 $G$ 中的元素分配给每个简单的 $R$ -模。证明 $\delta$ 可以扩展为一个从 $R { - } { \mathsf { M } } { \circ } { \mathsf { d } } ^ { f }$ 的格罗滕迪克群到 $G$ 的同态。
+3.20. 设 $R { - }  \mathrm { Mod } ^ { f }$ 是环 $R$ 上的有限 _长度_ 模范畴（参见习题 1.16）。设 $G$ 是一个阿贝尔群，设 $\delta$ 是一个函数，将 $G$ 中的元素分配给每个 _单_ $R$ -模。证明 $\delta$ 可以扩展为一个从 $R { - } { \mathsf { M } } { \circ } { \mathsf { d } } ^ { f }$ 的格罗滕迪克群到 $G$ 的同态。
 
 解释为什么练习3.19是这个观察的特殊情况。
 
-（例如，对于每个简单模 $M$，令 $\delta ( M ) = 1 \in \mathbb { Z }$ 表明长度本身扩展为从 $R { - } M { \circ } \mathrm { d } ^ { f }$ 的格罗滕迪克群到 $\mathbb { Z }$ 的同态。）
+（例如，对于每个 单模 $M$，令 $\delta ( M ) = 1 \in \mathbb { Z }$ 表明长度本身扩展为从 $R { - }  \mathrm { Mod } ^ { f }$ 的格罗滕迪克群到 $\mathbb { Z }$ 的同态。）
 
 ## 4.  表示与分解
 
@@ -13466,7 +13531,7 @@ $$
 
 确实，如果 $I$ 是自由的，那么根据命题 1.9（$I$ 的基将是 $R$ 的一个线性无关子集，而 $R$ 对自身来说的秩为 1），它的秩至多为 1；因此一个元素就足以生成 $I$，并且 $I$ 将是主理想。L
 
-在这个例子背后，是对 PID 的描述，即“秩为 1 的自由模的挠无子模”（练习 4.3）。这是我们正在努力达到的主要结果的一个方面，即 PIDs 上的有限生成模的分类（定理 5.6）。这种分类的要点是，PID 上的有限生成模可以分解为循环模。我们已经基本上为欧几里得域上的模证明了这一事实（它源于命题 2.11；参见练习 2.19），并且我们已经详细研究了 $\mathbb{Z}$-模的特殊情况，即阿贝尔群（§IV.6）；我们几乎可以处理 PID 的一般情况了。
+在这个例子背后，是对 PID 的描述，即“秩为 1 的自由模的挠无子模”（练习 4.3）。这是我们正在努力达到的主要结果的一个方面，即 PIDs 上的有限生成模的分类（定理 5.6）。这种分类的要点是，PID 上的有限生成模可以分解为循环模。我们已经基本上为欧几里得整环上的模证明了这一事实（它源于命题 2.11；参见练习 2.19），并且我们已经详细研究了 $\mathbb{Z}$-模的特殊情况，即阿贝尔群（§IV.6）；我们几乎可以处理 PID 的一般情况了。
 
 **定义4.4**. 一个$R$-模$M$是循环的，如果它是由一个单元素生成的，即，如果$M \cong R / I$对于$R$的某个理想$I$。L
 
@@ -13706,7 +13771,7 @@ $$
 G \cong { \mathrm { c o k e r } } \varphi \cong { \frac { \mathbb { Z } \oplus \mathbb { Z } } { 3 \mathbb { Z } \oplus 0 } } \cong { \frac { \mathbb { Z } } { 3 \mathbb { Z } } } \oplus \mathbb { Z } .
 $$
 
-由于高斯消元法，命题4.13中隐含描述的“算法”在欧几里得域（例如，在域上的一元多项式环）上将无往不利，其意义在于它将识别与矩阵对应的有限生成模为显式的循环模的直接和，如例4.14所示。对于更一般的环来说，期望过高，因为通常初等变换不会生成 $G L$；参见注释2.12。
+由于高斯消元法，命题4.13中隐含描述的“算法”在欧几里得整环（例如，在域上的一元多项式环）上将无往不利，其意义在于它将识别与矩阵对应的有限生成模为显式的循环模的直接和，如例4.14所示。对于更一般的环来说，期望过高，因为通常初等变换不会生成 $G L$；参见注释2.12。
 
 ### 习题
 
@@ -14818,7 +14883,7 @@ $$
 
 **证明**。这现在变得明显了，正如§6.2中所承诺的那样。
 
-求给定矩阵 $A$ 的有理标准形相当于根据引理 7.1 对应于 $A$ 的特定 $k [ t ]$ -模的分类定理。由于 $k [ t ]$ 实际上是一个欧几里得域，我们知道这可以通过高斯消元法来完成（参见 §2.4）。在实践中，该过程包括在 $k [ t ]$ 上通过初等变换对 $t I - A$ 进行对角化时获得的信息的汇总。读者被邀请要么产生一个原创算法，至少在标准参考中查找以了解涉及的内容。
+求给定矩阵 $A$ 的有理标准形相当于根据引理 7.1 对应于 $A$ 的特定 $k [ t ]$ -模的分类定理。由于 $k [ t ]$ 实际上是一个欧几里得整环，我们知道这可以通过高斯消元法来完成（参见 §2.4）。在实践中，该过程包括在 $k [ t ]$ 上通过初等变换对 $t I - A$ 进行对角化时获得的信息的汇总。读者被邀请要么产生一个原创算法，至少在标准参考中查找以了解涉及的内容。
 
 主要快捷方式可以来帮助我们。例如，如果最小多项式和特征多项式相同，那么人们可以事先知道相应的模是循环的（参见注释5.8），因此有理标准形简单地就是特征多项式的伴随矩阵。
 
@@ -26172,7 +26237,7 @@ delta函子，660，680
 本质上满射函子，488   
 欧几里得，261   
 欧几里得算法，256   
-欧几里得域，255，323，341，347 $\Longrightarrow$ PID，256   
+欧几里得整环，255，323，341，347 $\Longrightarrow$ PID，256   
 欧拉，莱昂哈德（1707-1783），298 $\phi$ -函数，58，70，87，107，301 复数的特征，335 生成，337，605，695 定理，107   
 正合对，687 函子，495，588，603，613，643 忠实地，499 左-或右-，495，653 序列，175，228 在阿贝尔范畴中，576 Ext的同态，552 指定集合的同态，582 Tor的同态，509 短，176 分裂的，177，229，621，627 三角形，601，684   
 $\otimes$ 的正合性性质，507 Hom的正合性性质，537 $\mathbb { T } _ { R } ^ { * }$ ，${ \mathbb S } _ { R } ^ { \ast }$ ，$\mathbb { \Lambda } _ { R } ^ { * }$ 的正合性性质，531 伴随函子的正合性性质，495 函子的正合性性质，495 对偶函子的正合性性质，539，541   
@@ -26210,7 +26275,7 @@ Ext，551，647 长正合列，552 可以通过解析任一参数来计算，553
 代数基本定理，286，468 算术基本定理，255 对称函数上的定理，471   
 伽罗瓦，埃瓦里斯特（1811-1832） 闭包，466 判别法，477 扩张，391，454，458，657 域，442 多项式的群，477 扩张的群，459 逆问题，473 理论，454   
 高斯，卡尔·弗里德里希（1777-1855），286，301 引理，270，273   
-高斯消元法，322，347，376 欧几里得域上，323   
+高斯消元法，322，347，376 欧几里得整环上，323   
 高斯整数，293   
 最大公约数，252   
 一般线性群，321   
