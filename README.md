@@ -2,7 +2,7 @@
 
 以机翻为底本，边学边校正。
 
-已粗校完成 第 I, III 章，其它章 各有部分小节 已粗校完成， 详见commit。
+已粗校完成 第 I, III, VI 章，其它章 各有部分小节 已粗校完成， 详见commit。
 
 已对全书据勘误
 https://www.math.fsu.edu/~aluffi/algebraerrata.2016/Errata.html
