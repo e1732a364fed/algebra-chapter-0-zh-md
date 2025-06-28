@@ -6,13 +6,16 @@
 https://www.math.fsu.edu/~aluffi/algebraerrata.2016/Errata.html
 进行了校正。
 
+## 译法
+
+英语中，为表示复杂的 逻辑，常常使用后置定语从句，为了清晰，本译本在大多数情况下会按惯例原样翻译，而不是按中文语序进行前置。
 
 ## 格式约定
 
 - 对于脚注，若对其进行翻译，为了在markdown 上使用方便，直接采用 括号加内容的形式，且
 将该角标移除。
 - 因为在 markdown 中无法使用 tikz, 交换图一般均使用 引用图片的形式。
-- 斜体纯文字部分 本应使用 latex 的 textit, 但是由于编辑太麻烦，暂时先使用 markdown 的 前后下划线表示，待全书校正完成后再统一替换。
+- 斜体纯文字部分 本应使用 latex 的 textit, 但是由于编辑太麻烦，暂时先使用 markdown 的 前后下划线表示
 
 ## commit message 约定：
 
@@ -20,3 +23,6 @@ https://www.math.fsu.edu/~aluffi/algebraerrata.2016/Errata.html
 
 例如，提及 校正 III. 5.3, 5.4，则说明 III.5 的习题也被校正了。
 
+## 版权
+
+因为目前没有官翻，只是学习方便之用而自译而已。侵删
