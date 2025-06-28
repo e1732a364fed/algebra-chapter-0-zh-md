@@ -145,8 +145,8 @@
 6.5. 有限生成与有限型 171   
 习题 172   
 §7. 复形和同调 174   
-7.1. 复形和正合序列 174   
-7.2. 可分正合序列 177   
+7.1. 复形和正合列 174   
+7.2. 可分正合列 177   
 7.3. 同调和蛇形引理 178   
 习题 183   
 第四章. 群，再遇 187   
@@ -176,7 +176,7 @@
 习题 224   
 §5. 群的积 226   
 5.1. 直积 226   
-5.2. 群的正合序列；扩张问题 228   
+5.2. 群的正合列；扩张问题 228   
 5.3. 内部/半直积 230   
 习题 233   
 §6. 有限阿贝尔群 234   
@@ -378,7 +378,7 @@
 7.1. 观点转变 641   
 7.2. 导出函子的泛性质 643   
 7.3. 求上同调 645   
-7.4. 导出函子的长正合序列 647   
+7.4. 导出函子的长正合列 647   
 7.5. 关联 $\mathcal { F }$ ，$\mathsf { L } _ { i } \mathcal { F }$ ，$\mathsf { R } ^ { i } \mathcal { F }$ 653   
 7.6. 例子：一个小群上同调 655   
 习题 658   
@@ -7211,23 +7211,23 @@ $$
 
 ## 7. 复形和同调
 
-在许多情况下，模不是“一个接一个地”出现，而是以整个系列的形式出现：例如，一个实维数为 $d$ 的流形有从 0 到 $d$ 的每个维数的一个“同调”群。有必要发展一种能够一次性处理整个模序列的语言。这就是同调代数的语言，在本节中我们将品尝一点这种语言，在第九章中我们将学习更深入的课程。
+在许多情况下，模不是“一个接一个地”出现，而是以整个系列的形式出现：例如，一个实维数为 $d$ 的流形对于 从 0 到 $d$ 的每个维数 都有一个“同调”群。有必要发展一种能够一次性处理整个模序列的语言。这就是 _同调代数_ 的语言，在本节中我们将浅尝这种语言，在第九章中我们将学习更深入的课程。
 
-### 7.1. 复形与正合序列
+### 7.1. 复形与正合列
 
 $R$-模的链复形（或，为简化起见，复形）是一个$R$-模的序列和$R$-模同态。
 
 $$
-\cdot \cdot \cdot { \xrightarrow { d _ { i + 2 } } } M _ { i + 1 } { \xrightarrow { d _ { i + 1 } } } M _ { i } { \xrightarrow { d _ { i } } } M _ { i - 1 } { \xrightarrow { d _ { i - 1 } } } \cdot \cdot \cdot
+\cdots ~{ \xrightarrow { d _ { i + 2 } } } M _ { i + 1 } { \xrightarrow { d _ { i + 1 } } } M _ { i } { \xrightarrow { ~~~ d _ { i } ~} } M _ { i - 1 } { \xrightarrow { d _ { i - 1 } } }~ \cdots
 $$
 
 使得 $( \forall i ) : d _ { i } \circ d _ { i + 1 } = 0$ 。
 
 记号 $( M _ { \bullet } , d _ { \bullet } )$ 可用于表示一个复形，或者为了简洁起见，简单地用 $M _ { \bullet }$ 表示（但不要忘记同态 $d _ { i }$ 是复形所携带信息的一部分）。
 
-一个复形可能在两个方向上都是无限的；“0”的“尾巴”通常被省略。可能使用几种可能的替代约定：例如，索引可以是递增而不是递减的，从而给出一个上链复形（其同调称为上同调；这将是我们在第九章中的选择）。这样的选择显然在数学上是无意义的，至少对于后面要讨论的简单考虑而言。
+一个复形可能在两个方向上都是无限的；“0”的“尾巴”通常被省略。可能使用几种可能的替代约定：例如，索引可以是递增而不是递减的，从而给出一个 _上_ 链复形（其 _同调_ 称为 _上同调_；这将是我们在第九章中的选择）。这样的选择显然在数学上是不重要的，至少对于下面要讨论的简单考虑而言。
 
-同态映射 $d _ { i }$ 被称为边界，或微分，由于几何学中的重要例子。请注意定义条件
+同态映射 $d _ { i }$ 被称为 _边界_ ，或 _微分_ ，来自几何学中的重要例子。请注意定义条件
 
 $$
 d _ { i } \circ d _ { i + 1 } = 0
@@ -7243,9 +7243,9 @@ $$
 
 ![](images/66.jpg)
 
-当我想到一个复形时，椭圆是模 $M _ { i }$；粗黑点是 $0$ 元素；灰色的椭圆在每个步骤中被挤压到零，是核；因此我能够想象出这样一个事实：'前一个同态'的像落在'下一个同态'的核内。
+当我想到一个复形时，椭圆是模 $M _ { i }$；粗黑点是 $0$ 元素；灰色的、在每个步骤中被挤压到零 的椭圆，是核；因此我能够想象出这样一个事实：'前一个同态'的像落在'下一个同态'的核内。
 
-图片不准确，因为它暗示了 $d _ { i + 1 }$ 的图像与 $d _ { i }$ 的核（即颜色较浅的灰度区域）之间的“差异”对于所有 $i$ 都应该是相同的；当然，在一般情况下并非如此。事实上，关于复形的一个主要点就是“测量”这个差异，这被称为复形的同调（参见 §7.3）。我们说一个复形在 $M _ { i } { ' }$ 处是正合的，如果它在那里没有同调；也就是说，
+此图片不准确，因为它暗示了 $d _ { i + 1 }$ 的图像与 $d _ { i }$ 的核（即颜色较浅的灰度区域）之间的“差异”对于所有 $i$ 都应该是相同的；当然，在一般情况下并非如此。事实上，关于复形的一个主要点就是“测量”这个差异，这被称为复形的 _同调_（参见 §7.3）。我们说一个复形在 $M _ { i } { ' }$ 处是 _正合的_，如果它在那里没有同调；也就是说，
 
 $$
 \operatorname { i m } d _ { i + 1 } = \ker d _ { i } .
@@ -7255,45 +7255,47 @@ $$
 
 ![](images/67.jpg)
 
-这个复形似乎与中间的椭圆形完全吻合。
+这个复形看起来 与中间的椭圆形正好吻合（译注：即”正合“之意）。
 
 例如，如果 $M _ { i } = \mathrm { a }$ 是平凡的模（通常简单地记为 $0$），那么复合必然在 $M _ { i }$ 处是正合的，因为此时 $\mathrm { i m } d _ { i + 1 } = \ker d _ { i } = 0$ 。
 
-一个复形如果在所有其模上都精确，那么它是正合的，并且通常被称为一个正合序列。
+一个复形 如果在其所有模上 都正合，那么它是正合的，并且通常被称为一个 _正合列_ (exact sequence)。
 
-示例 7.1. 一个复形的
+**示例 7.1**. 一个复形
 
 $$
-\cdots { \longrightarrow } 0 \longrightarrow L \longrightarrow \ M \longrightarrow \cdots
+\cdots { \longrightarrow } 0 \longrightarrow L \xrightarrow{~~~ \alpha ~~~} \ M \longrightarrow \cdots
 $$
 
-当且仅当 $\alpha$ 是单射时，它在 $L$ 上是正合的。
+在 $L$ 上是正合的，当且仅当 $\alpha$ 是单同态。
 
-确实，$L$ 处的正合性等价于 $\ker \alpha = \mathrm{image}$ 的平凡同态 $0 \rightarrow L$，即
+确实，$L$ 处的正合性等价于 $\ker \alpha =$平凡同态 $0 \rightarrow L$ 的像，即
 
 $$
 \ker \alpha = 0 .
 $$
 
-这相当于 $\alpha$ 的单射性（命题 6.2）。
+这相当于 $\alpha$ 的单射性（命题 6.2）。$\lrcorner$
 
-示例 7.2. 一个复形的
+**示例 7.2**. 一个复形
 
 $$
 \cdots { \xrightarrow { } } M { \xrightarrow { \beta } } N { \xrightarrow { } } 0 { \xrightarrow { } } \cdots
 $$
 
-当且仅当 $\beta$ 是一个满射时，它在 $N$ 上是正合的。
+在 $N$ 上是正合的，当且仅当 $\beta$ 是一个满射时。
 
-确实，当且仅当 $\mathrm { i m } \beta = \mathrm { k e r n e l }$ 的平凡同态 $N  0$ 时，该复形在 $N$ 上是正合的，即 $\mathrm { i m } \beta = N$ 。L
+确实，当且仅当 $\mathrm { i m } \beta = \mathrm { k e r n e l }$ 的平凡同态 $N  0$ 时，该复形在 $N$ 上是正合的，即 $\mathrm { i m } \beta = N$ 。$\lrcorner$
 
-定义 7.3. 一个短 正合序列是一个 正合复形，其形式为
+**定义 7.3**. 一个 _短正合列_ 是一个 正合复形，其形式为
 
 $$
-0 \longrightarrow L \longrightarrow \cal M \longrightarrow N \longrightarrow 0 \ .
+0 \longrightarrow L \xrightarrow{~~~\alpha~~~}  M \xrightarrow{~~~\beta~~~} N \longrightarrow 0 \ .
 $$
+$\lrcorner$
 
-从前两个例子可以看出，$L$ 和 $N$ 的正合性等价于 $\alpha$ 是单射且 $\beta$ 是满射。短正合序列所携带的额外数据是 $M$ 处的正合性，即，
+
+从前两个例子可以看出，$L$ 和 $N$ 的正合性等价于 $\alpha$ 是单射且 $\beta$ 是满射。短正合列所携带的额外数据是 $M$ 处的正合性，即，
 
 $$
 \operatorname { i m } \alpha = \ker \beta ;
@@ -7305,85 +7307,83 @@ $$
 N \cong \frac { M } { \ker \beta } = \frac { M } { \operatorname { i m } \alpha } .
 $$
 
-总而言之，我们有很好的材料来进一步研究一些巴甫洛夫条件反射：当看到上述的短 正合序列 时，读者应该本能地将 $L$ 与 $M$ 的一个子模（通过注入映射 $\alpha$）联系起来，并将 $N$ 与商 $M / L$（通过由满射映射 $\beta$ 引导的同构，在第一个同构定理的指导下）联系起来。
+总而言之，我们有很好的材料来进一步研究一些巴甫洛夫条件反射：当看到上述的短正合列 时，读者应该本能地将 $L$ 与 $M$ 的一个子模（通过单射 $\alpha$）联系起来，并将 $N$ 与商 $M / L$（通过由满射映射 $\beta$ 引导的同构，在第一同构定理的指导下）联系起来。
 
-自然中充满了短 正合序列。例如，一个单一的 同态 $\varphi : M \to M ^ { \prime }$ 立即产生一个 短 正合序列
-
-$$
-\Pi \longrightarrow \ker \varphi \longrightarrow M \longrightarrow \operatorname { i m } \varphi \longrightarrow 0 \ .
-$$
-
-事实上，关注短 正合序列的一个重要原因是，这种观察使我们能够将每一个 正合复形分解成大量的短 正合序列：思考这个令人印象深刻的图
+自然中充满了短正合列。例如，一个单一的 同态 $\varphi : M \to M ^ { \prime }$ 立即产生一个 短正合列
 
 $$
-{ \scriptstyle M _ { i + 2 } \underbrace { \frac { d _ { i + 2 } } { d _ { i + 3 } } } _ { \mathrm { i m } d _ { i + 2 } = { \mathrm { l e r } } d _ { i + 1 } } ^ { 0 } } M _ { i + 1 } \overbrace { \frac { d _ { i + 1 } } { d _ { i + 1 } } \sum _ { \substack { \scriptstyle i + 1 } } ^ { 0 } M _ { i } } ^ { 0 } \underbrace { d _ { i } } _ { \mathrm { i m } d _ { i } = { \mathrm { l e r } } d _ { i - 1 } } M _ { i - 1 } \underbrace { \sum _ { \substack { i = 1 } } ^ { 0 } M _ { i - 1 } } _ { \mathrm { i m } d _ { i } = { \mathrm { l e r } } d _ { i - 1 } } ^ { 0 }  M _ { i - 1 } = { \mathrm { c o l e r } } M _ { i - 1 } ,
+0 \longrightarrow \ker \varphi \longrightarrow M \longrightarrow \operatorname { i m } \varphi \longrightarrow 0 \ .
 $$
 
-对角线序列是短 正合序列，并且它们通过水平复形的 正合性很好地交叠在一起。
+事实上，关注短正合列的一个重要原因是，这种观察使我们能够将每一个 正合复形分解成大量的短正合列：思考这个令人印象深刻的图
+
+![](images/c4.png)
+
+对角线的序列是短正合列，并且它们通过水平的 复形的 正合性 很好地交叠在一起。
 
 这一观察简化了许多论点；例如，参见练习7.5。
 
-### 7.2. 分裂正合序列
+### 7.2. 分裂正合列
 
-短正合序列的一种特例可以通过考虑直和的第二个投影得到：$M _ { 1 } \oplus M _ { 2 } \to M _ { 2 }$；然后存在一个正合序列
+短正合列的一种特例 可以通过考虑 直和的第二个投影得到：$M _ { 1 } \oplus M _ { 2 } \to M _ { 2 }$；然后存在一个正合列
 
 $$
 0 \longrightarrow M _ { 1 } \longrightarrow M _ { 1 } \oplus M _ { 2 } \longrightarrow M _ { 2 } \longrightarrow 0 \ ,
 $$
 
-通过将 $M _ { 1 }$ 与投影的核等同而得到。这些短 正合序列被称为“分裂”；更一般地，一个短 正合序列
+通过将 $M _ { 1 }$ 与投影的核等同而得到。这些短正合列被称为“分裂的”；更一般地，一个短正合列
 
 $$
 0 \longrightarrow M _ { 1 } \longrightarrow N \longrightarrow M _ { 2 } \longrightarrow 0
 $$
 
-如果它是同构于这些序列之一，在存在交换图的意义下，则为’splits’
+”分裂“，如果它是同构于这些序列之一，在下面交换图的意义下，
 
 ![](images/68.jpg)
 
-在垂直映射都是同构33。
+图中垂直的映射都是同构$^{33}$。
 
-示例 7.4. $\mathbb{Z}$-模的正合列
-
-$$
-0 \xrightarrow [ ] { } \mathbb { Z } \xrightarrow { \cdot 2 } \mathbb { Z } \xrightarrow [ ] { } \mathbb { Z } \xrightarrow [ ] { \mathbb { Z } } 0
-$$
-
-没有被分割。
-
-分割序列让我们有机会回到我们在§6.2末尾留下的问题：对于同态，我们应该如何理解“具有左（或右）逆元”的条件？我们意识到这个条件比单射（或满射）的要求更强；我们能给出这种态射的更明确的描述吗？
-
-命题 7.5. 设 $\varphi : M \to N$ 是一个 $R$-模同态。那么 • $\varphi$ 有一个左逆元当且仅当序列
+**示例 7.4**. $\mathbb{Z}$-模的正合列
 
 $$
-0 \longrightarrow M \longrightarrow N \longrightarrow \mathrm { c o k e r } \varphi \longrightarrow 0 
+0 \longrightarrow   \mathbb { Z } \xrightarrow {~~~ \cdot 2 ~~~} \mathbb { Z } \longrightarrow \frac{\mathbb { Z }}{2\mathbb { Z }}  \longrightarrow    0
 $$
 
-分割线。
+_不_ 分裂。$\lrcorner$
+
+分裂序列 让我们有机会回到我们在§6.2末尾留下的问题：对于同态，我们应该如何理解“具有左（或右）逆元”的条件？我们意识到这个条件比单射（或满射）的要求更强；我们能给出这种态射的更明确的描述吗？
+
+**命题 7.5**. 设 $\varphi : M \to N$ 是一个 $R$-模同态。那么 
+
+• $\varphi$ 有左逆元当且仅当序列
+
+$$
+0 \longrightarrow M \xrightarrow{~~~ \varphi ~~~} N \longrightarrow \mathrm { c o k e r } \varphi \longrightarrow 0 
+$$
+
+分裂。
 
 • $\varphi$ 有右逆元当且仅当序列
 
 $$
-0 \longrightarrow \ker \varphi \longrightarrow M \xrightarrow { \varphi } N \longrightarrow 0
+0 \longrightarrow \ker \varphi \longrightarrow M \xrightarrow {~~~ \varphi ~~~} N \longrightarrow 0
 $$
 
-分割线。
+分裂。
 
-证明。我将证明第一部分，其余部分留给读者作为练习（练习7.6）。
+**证明**。我将证明第一部分，其余部分留给读者作为练习（练习7.6）。
 
-如果序列分裂，那么 $\varphi$ 可以与 $M$ 嵌入到直接和 $M \oplus M ^ { \prime }$ 中的映射等同起来，并且投影 $M \oplus M ^ { \prime } \to M$ 给出 $\varphi$ 的一个左逆元。反之，假设 $\varphi$ 有一个左逆元 $\psi$ ：
+如果此序列分裂，那么 $\varphi$ 可以与 $M$ 嵌入 到 直和 $M \oplus M ^ { \prime }$ 中的映射 等同起来，并且投影 $M \oplus M ^ { \prime } \to M$ 给出 $\varphi$ 的一个左逆元。反之，假设 $\varphi$ 有一个左逆元 $\psi$ ：
 
-$$
-\begin{array} { r } { 0 \longrightarrow M \underbrace { \begin{array} { c } { \varphi } \\ { \mathrm { ~ } } \end{array} } _ { \mathrm { i d } } \underbrace { \begin{array} { c } { \varphi } \\ { \mathrm { ~ } } \end{array} } _ { \begin{array} { c } { \mathrm { i } } \\ { \mathrm { ~ } } \end{array} } } \end{array}
-$$
+![](images/c5.png)
 
-那么我断言 $N$ 与 $M \oplus \ker \psi$ 同构，并且 $\varphi$ 对应于 $M$ 与第一个因子的识别：$M \cong M \oplus \ker \psi \cong N$。同构 $M \oplus \ker \psi \cong N$ 由给出。
+那么我断言 $N$ 与 $M \oplus \ker \psi$ 同构，并且 $\varphi$ 对应于 $M$ 与第一个因子的恒同映射：$M \to M \oplus \ker \psi \cong N$。同构 $M \oplus \ker \psi \cong N$ 由下式给出
 
 $$
 ( m , k ) \mapsto \varphi ( m ) + k ;
 $$
 
-其逆 $N  M \oplus \ker \psi$ 是
+其逆 $N \to M \oplus \ker \psi$ 是
 
 $$
 n \mapsto ( \psi ( n ) , n - \varphi \psi ( n ) ) .
@@ -7395,34 +7395,39 @@ $$
 \psi ( n - \varphi \psi ( n ) ) = \psi ( n ) - \psi \varphi \psi ( n ) = \psi ( n ) - \psi ( n ) = 0 .
 $$
 
-所有必要的验证都是即时的，留给读者。
+所有必要的验证都是即时的，留给读者。$\square$
 
-由于命题 7.5，具有左逆元的 $R$ -模同态被称为分裂单态射，具有右逆元的同态被称为分裂满态射。
+由于命题 7.5，具有左逆元的 $R$ -模同态被称为 _分裂单态射_ ，具有右逆元的同态被称为 _分裂满态射_。
 
-我们将回到 §IV.5.2 中讨论在 Grp 的更复杂背景下正合序列的划分，然后稍后再次回到模以及更一般地到阿贝尔范畴（第八章和第九章）。
+我们将回到 §IV.5.2 中讨论在 Grp 的更复杂背景下正合列的划分，然后稍后再次回到模以及更一般地到阿贝尔范畴（第八章和第九章）。
 
 ### 7.3. 同调与蛇形引理
 
-定义 7.6. 复形的 $i$ -th 同调
+**定义 7.6**. 下面 $R$ -模 复形的 第 $i$  同调
 
 $$
-M _ { \bullet } : \ \cdot \cdot \xrightarrow { d _ { i + 2 } } M _ { i + 1 } \xrightarrow { d _ { i + 1 } } M _ { i } \xrightarrow { d _ { i } } M _ { i - 1 } \xrightarrow { d _ { i - 1 } } M _ { i - 1 } \xrightarrow { d _ { i - 1 } } \cdot \ . .
+M _ { \bullet } :  \cdots \xrightarrow { d _ { i + 2 } } M _ { i + 1 } \xrightarrow { d _ { i + 1 } } M _ { i } \xrightarrow { d _ { i } } M _ { i - 1 } \xrightarrow { d _ { i - 1 } }   \cdots
 $$
-
-$R$ -模的范畴是 $R$ -模
+是 $R$ -模
 
 $$
 H _ { i } ( M _ { \bullet } ) : = { \frac { \ker d _ { i } } { \operatorname { i m } d _ { i + 1 } } } .
 $$
 
-也就是说，$H _ { i } ( M _ { \bullet } )$ 是一个模，它在我的复形的启发式图中捕捉了“浅灰色圆环”。当然
+$\lrcorner$
 
-也就是说，同调模是衡量一个复形“偏离正合性”的度量。
-
-示例 7.7. 实际上，同调应该被视为核和余核概念的一个（巨大）推广。确实，考虑 $M _ { \bullet }$ 是复形这一（非常）特殊的情况。
+也就是说，$H _ { i } ( M _ { \bullet } )$ 是一个模，其在 我的 复形的启发式图 中 捕捉了“浅灰色圆环”。当然，有
 
 $$
-0 \longrightarrow M _ { 1 } \longrightarrow M _ { 0 } \longrightarrow 0 \ .
+H_i(M_\bullet) = 0 \iff \operatorname{im} d_{i+1} = \ker d_i \iff \text{the complex } M_\bullet \text{ is exact at } M_i: 
+$$
+
+也就是说，同调模 是衡量一个复形“偏离正合性”的度量。
+
+**示例 7.7**. 实际上，同调 应该被视为核和余核概念的一个（巨大）推广。确实，考虑一个 （非常）特殊的情况，其中 $M _ { \bullet }$ 是下面复形：
+
+$$
+0 \longrightarrow M _ { 1 } \xrightarrow{~~~ \varphi ~~~} M _ { 0 } \longrightarrow 0 \ .
 $$
 
 然后
@@ -7430,152 +7435,155 @@ $$
 $$
 H _ { 1 } ( M _ { \bullet } ) \cong \ker \varphi , \quad H _ { 0 } ( M _ { \bullet } ) \cong \operatorname { c o k e r } \varphi .
 $$
+$\lrcorner$
 
-我将通过说明一个涉及两个短 正合序列 的交换图如何生成同调中的“长 正合序列”来结束这次非常简短的、进入更抽象领域的探索。这实际上是更一般构造的一个特例——根据这个构造，一个合适的涉及三个复形的交换图会产生一个真正长的“长 正合同调序列”。当我们在第九章更广泛地讨论同调代数时，我们将回到这个一般构造。读者也可能在代数拓扑的课程中了解到它，在这个课程中，这个事实被用于研究流形的不变量，并取得了令人印象深刻的应用。
 
-在我们要分析的简单形式中，这通常被称为蛇形引理。考虑两个由同态连接的短 正合序列，形成一个 交换图 $^ { 3 4 }$ :
+我将通过说明 一个涉及 _两个_ 短正合列 的交换图如何生成同调中的一个 “长 正合列” 来结束这次非常简短的、进入更抽象领域的探索。这实际上是更一般构造的一个特例——根据这个构造，一个合适的涉及 _三个_ 复形的交换图会产生一个 _真得很长_ 的“长 正合同调序列”。当我们在第九章更广泛地讨论同调代数时，我们将回到这个一般构造。读者也可能在代数拓扑的课程中了解到它，在这个课程中，这个事实被用于研究流形的不变量，并取得了令人印象深刻的应用。
 
-$$
-\begin{array} { l l } { { 0 \longrightarrow L _ { 1 } \xrightarrow { \alpha _ { 1 } } \ M _ { 1 } \xrightarrow { \beta _ { 1 } } N _ { 1 } \longrightarrow 0 } } \\ { { \qquad \downarrow \atop { 0 \xrightarrow { \mu _ { \ L } } L _ { 0 } \xrightarrow { \alpha _ { 0 } } M _ { 0 } \xrightarrow { \mu } \ M _ { 0 } } \ M _ { 0 } \xrightarrow { \mu _ { \ L } } 0 } } \\ { { \qquad L _ { 0 } \xrightarrow { \alpha _ { 0 } } M _ { 0 } \xrightarrow { \beta _ { 0 } } N _ { 0 } \xrightarrow { \nu _ { 0 } } 0 } } \end{array}
-$$
+在我们要分析的简单形式中，这通常被称为 _蛇形引理_ 。考虑两个 由同态连接的短正合列，形成一个 交换图 $^ { 3 4 }$ :
 
-引理 7.8（蛇形引理）。使用上述记号，存在一个正合序列
+![](images/c6.png)
+
+**引理 7.8**（蛇形引理）。使用上述记号，存在一个正合列
 
 $$
 0 \longrightarrow \ker \lambda \longrightarrow \ker \mu \longrightarrow \ker \nu \stackrel { \delta } { \longrightarrow } \mathrm { c o k e r } \lambda \longrightarrow \mathrm { c o k e r } \mu \longrightarrow \mathrm { c o k e r } \nu \longrightarrow 0 \ .
 $$
 
-备注 7.9. 这个序列中的大多数同态都是完全直接地从相应的同态 $\lambda$ ，$\mu$ ，$\nu$ 引起的。那个“令人惊讶”的同态是标记为 $\delta$ 的同态；$^ { 1 }$ 将在下文讨论其定义。
+**备注 7.9**. 这个序列中的大多数同态都是完全直接地从相应的同态 $\lambda$ ，$\mu$ ，$\nu$ 引起的。那个“令人惊讶”的同态是标记为 $\delta$ 的同态；我将在下文讨论其定义。
 
-备注 7.10. 鉴于示例 7.7，我们可以在本陈述中将序列写成
+**备注 7.10**. 鉴于示例 7.7，我们可以在本陈述中将序列写成
+
 
 $$
-\begin{array} { r l } { 0 \longrightarrow H _ { 1 } ( L _ { \bullet } ) \longrightarrow H _ { 1 } ( M _ { \bullet } ) \longrightarrow H _ { 1 } ( N _ { \bullet } ) } \\ { \longrightarrow H _ { 0 } ( L _ { \bullet } ) \longrightarrow H _ { 0 } ( M _ { \bullet } ) \longrightarrow H _ { 0 } ( N _ { \bullet } ) \longrightarrow 0 } \end{array}
+\begin{align*}
+0 \longrightarrow & H _ { 1 } ( L _ { \bullet } ) \longrightarrow H _ { 1 } ( M _ { \bullet } ) \longrightarrow H _ { 1 } ( N _ { \bullet } ) \\
+
+\xrightarrow{\delta} & H _ { 0 } ( L _ { \bullet } ) \longrightarrow H _ { 0 } ( M _ { \bullet } ) \longrightarrow H _ { 0 } ( N _ { \bullet } ) \longrightarrow 0
+
+\end{align*}
 $$
 
-其中 $L _ { \bullet }$ 是复形 $0 \longrightarrow L _ { 1 } \longrightarrow \ L _ { 0 } \longrightarrow 0$ ，等等。蛇形引理可以推广到任意的复形 $L _ { \bullet }$ ， $M _ { \bullet }$ ， $N _ { \bullet }$ ，产生一个“长正合同调序列”，而这是其尾端。如上所述，我们将在后面讨论这个相当直接的推广（§IX.3.3）。
+![](images/c7.png)
 
-备注 7.11. 一个流行的蛇形引理版本并不假设 $\alpha _ { 1 }$ 是单射和 $\beta _ { 0 }$ 是满射：也就是说，我们可以考虑一个交换图
+其中 $L _ { \bullet }$ 是复形 $0 \longrightarrow L _ { 1 } \xrightarrow{~~~ \lambda ~~~} \ L _ { 0 } \longrightarrow 0$ ，等等。蛇形引理可以推广到任意的复形 $L _ { \bullet }$ ， $M _ { \bullet }$ ， $N _ { \bullet }$ ，产生一个“长正合同调序列”，而这是其尾端。如上所述，我们将在后面讨论这个相当直接的推广（§IX.3.3）。
 
-正合序列
+**备注 7.11**. 一个流行的蛇形引理版本并不假设 $\alpha _ { 1 }$ 是单射和 $\beta _ { 0 }$ 是满射：也就是说，我们可以考虑一个正合列交换图
 
 ![](images/69.jpg)
 
-那么词元将表明“只有”一个正合序列
+引理将表明“只有”一个正合列
 
 $$
 \mathrm { k e r } \lambda \longrightarrow \mathrm { k e r } \mu \longrightarrow \mathrm { k e r } \nu \longrightarrow \mathrm { c o k e r } \lambda \longrightarrow \mathrm { c o k e r } \lambda \longrightarrow \mathrm { c o k e r } \mu \longrightarrow \mathrm { c o k e r } \nu \ .
 $$
+$\lrcorner$
 
-证明蛇形引理是一件不应该公开做的事情，而且众所周知，写下验证的细节供他人阅读是毫无用处的：这些细节本质上都是显而易见的，但它们很快就会陷入符号的泥潭。这样的证明统称为图追游戏，最好是通过指向黑板上的图的不同部分，同时说明自己运算的元素及其命运来执行35。
+证明蛇形引理是一件不应该公开做的事情，而且众所周知，写下验证的细节供他人阅读是毫无用处的：这些细节本质上都是显而易见的，但它们很快就会陷入符号的泥潭。这样的证明统称为 _追图_ (diagram chase)运动，最好是通过指向黑板上的图的不同部分，同时说明 讲解人正在操作的元素 和 它的的命运  $^{35}$。
 
-然而，我应该解释一下“连接”同态$\delta$的来源，因为这是蛇形引理及其证明的核心。以下是包含核和余核的整个图表；因此，列是正合的（以及两个原始序列水平放置）：
+然而，我应该解释一下“连接”同态 $\delta$ 的来源，因为这是蛇形引理及其证明的核心。以下是包含核和余核的整个图表；因此，纵列是正合的（以及两个水平放置 的原始序列）：
 
 ![](images/70.jpg)
 
-顺便说一句，我相信读者现在明白为什么这个引理被称为蛇形引理了。
+顺便说一句，我相信读者现在明白为什么这个引理被称为 _蛇形_ 引理了。
 
-蛇形同态 $\delta$ 的定义。设 $a \in \ker \nu$。我断言 $a$ 可以沿着标记的实箭头通过这个图一直映射到 $\mathrm{coker} \lambda$。
+_蛇形同态 $\delta$ 的定义_。设 $a \in \ker \nu$。我断言 $a$ 可以沿着标记如下的 实箭头 通过这个图一直映射到 $\mathrm{coker} \lambda$。
 
-这里：
 
 ![](images/71.jpg)
 
 确实，
 
-$\ker \nu \subseteq N _ { 1}$；因此将$a$视为$N _ { 1}$的一个元素$b$。   
-• $\beta _ { 1}$是满射的，所以$\exists c \in M _ { 1}$，映射到$b$。   
-• 令$d = \mu ( c )$是$c$在$M _ { 0}$中的像。   
-$d$在标记为$^ *$的位置的像是什么？根据图示的交换性，它必须是$\nu ( b )$。然而，$b$是$a \in \ker \nu$在$N _ { 1}$中的像，所以$\nu ( b ) = 0$。因此，$d \in \ker \beta _ { 0 }$。由于行是正合的，$\ker \beta _ { 0 } = \mathrm { i m } \alpha _ { 0}$；因此，$\exists e \in L _ { 0}$，映射到$d$。   
-最后，令$f \in \mathrm { c o k e r } \lambda$是$e$的像。
+- $\ker \nu \subseteq N _ { 1}$；因此将$a$视为$N _ { 1}$的一个元素$b$。   
+- $\beta _ { 1}$是满射的，所以$\exists c \in M _ { 1}$，映射到$b$。   
+- 令$d = \mu ( c )$是$c$在$M _ { 0}$中的像。   
+- $d$在标记为$^ *$的位置的像是什么？根据图示的交换性，它必须是$\nu ( b )$。然而，$b$是$a \in \ker \nu$在$N _ { 1}$中的像，所以$\nu ( b ) = 0$。因此，$d \in \ker \beta _ { 0 }$。由于行是正合的，$\ker \beta _ { 0 } = \mathrm { i m } \alpha _ { 0}$；因此，$\exists e \in L _ { 0}$，映射到$d$。   
+- 最后，令$f \in \mathrm { c o k e r } \lambda$是$e$的像。
 
-我想设置 $\delta ( a ) : = f$ 。
+我想设 $\delta ( a ) : = f$ 。
 
 这是合法的吗？在追捕的两个步骤中，我们已经获取了前像：
 
-• $\exists c \in M _ { 1 }$ such that $\beta _ { 1 } ( c ) = b$ ， • $\exists e \in L _ { 0 }$ such that $\alpha _ { 0 } ( e ) = d$ 。
+- $\exists c \in M _ { 1 }$ 使得 $\beta _ { 1 } ( c ) = b$ ， 
+- $\exists e \in L _ { 0 }$ 使得 $\alpha _ { 0 } ( e ) = d$ 。
 
-第二步不涉及选择：因为$\alpha _ { 0 }$根据假设是单射的，所以映射到$d$的元素$e$由$d$唯一确定。但在第一步涉及选择：为了验证$\delta$是良定义的，我们必须证明选择其他$c$不会影响对$\delta ( a )$的提议值$f$。
+第二步不涉及选择：因为$\alpha _ { 0 }$根据假设是单射的，所以映射到$d$的元素$e$由$d$唯一确定。但在第一步涉及选择：为了验证$\delta$是良定义的，我们必须证明选择 _其他_ $c$ 不会影响对 $\delta ( a )$ 的提议值 $f$。
 
-这是由另一次追逐证明的。以下是图表的相关部分：
+这是由另一次追图证明的。以下是图表的相关部分：
 
-$$
-\begin{array}{c} \begin{array} { c }  { 0 \cdots { \cdots } { \cdots } { \cdots } { \cdots } { \cdots } { \cdots } { \underline { { { \alpha _ { 1 } } } } } } \\ { { \vdots } } \\ { { \lambda \vdots } } \\ { { 0 \cdots { \cdots } { \cdots } { \underline { { { \lambda } } } } } \\ { { \downarrow } } \\ { { f \cdots { \cdots } { \cdots } { \cdots } { \underline { { { \alpha _ { 0 } } } } } } \end{array} \downarrow \begin{array} { c } { { \beta _ { 1 } } } \\ { { \Bigg \{ } } \\ { { \mu \Bigg \} } \\ { { d \cdots \cdots } { \cdots } { \cdots } } \end{array} \Bigg \{ } } } \\ { { \downarrow } } \\  { f \cdots { \cdots } { \cdots } { \cdots } { \cdots } { \Bigg \} } } \end{array}
-$$
+![](images/c8.png)
 
 假设我们选择一个不同的 $c ^ { \prime }$ 映射到相同的 $b$ :
 
 $$
-0 \cdots { \xrightarrow { \alpha _ { 1 } } } \alpha ^ { _ { 1 } } { \xrightarrow { \alpha _ { 1 } } } \alpha ^ { \prime } { \xrightarrow { \beta _ { 1 } } } b \cdots \cdots \cdots \cdots 0 .
+0 \cdots { \xrightarrow { \alpha _ { 1 } } } c ^ \prime { \xrightarrow { \beta _ { 1 } } } b \cdots \cdots \cdots \cdots 0 .
 $$
 
 那么 $\beta _ { 1 } ( c ^ { \prime } - c ) = 0$ ；根据正合性，$\exists g \in L _ { 1}$ 使得 $( c ^ { \prime } - c ) = \alpha _ { 1 } ( g )$ ：
 
 $$
-0 \xrightarrow  \xrightarrow { } \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \ c \ c \ c \ c \ c \ c \ c \ c \ c \ c \ c \ c \ c \ c \ c \ c \ c \ c \ c \ c \ c \ c \ c \ c \ c \ c \ c \ c \ c \ c \ c \ c \ c o u l \ c o u l \ c o m i n \ c o m i n \ c o m i n \ c o m i n \ c o m i n \ c o m i n \ c o m i n \ c o m i n \ c o m i n \ c o m i n \ c o m i n \ c o m i n \ c o m i n \ c o m i n \ c o m i n \ c o m i n \ c o m i n \ c o m i n \ c o m a l \ c o n \ c o n \ c o n \ c o n \ c o n \ c o n \ c o n \ c o n t h l \ c o n t h t h t h t h t h t
+0 \cdots\cdots\cdots g \xrightarrow{~~~\alpha_1~~~}(c' - c) \xrightarrow{~~~\beta_1~~~} 0 \cdots\cdots\cdots 
 $$
 
 现在的问题是，由于列形成复形，$g$ 在 $\mathrm { c o k e r } \lambda$ 中消亡：
 
-$$
-\begin{array} { l } { { 0 \cdots } } \\    \begin{array} { l }   \begin{array} { l }   \begin{array} { c }   \begin{array} { c }   \begin{array} { c } { { \begin{array} { c } { \end{array} } } } \\   \begin{array} { c }   \begin{array} { c } { \begin{array} { c } { \end{array} } } \\   \begin{array} { c }  \begin{array} { c } { \begin{array} { c } { \end{array} } } \\   \begin{array} { c }  \begin{array} { c } { \begin{array} { c } { \end{array} } } \\   \begin{array} { c } { \begin{array} { c } { \end{array} } } \\ { { \begin{array} { c } { \begin{array} { c c c c c c c c c c c c } \end{array} } \end{array} } } \\   \begin{array} { \begin{array} { c } { \begin{array} { c } { \begin{array} { c } { \end{array} } } \\ { { \begin{array} { c } { \begin{array} { c c c c c c c c c c c c } \end{array} } \end{array} } } \\ { { \begin{array} { \begin{array} { c c c c c c c c c c c } \end{array} } \end{array} } \end{array} } } \\ { \begin{array} { \begin{array} { c } { \begin{array} { c } { \begin{array} { c c c c c c c c c c c } \end{array} } \end{array} } \\ { \begin{array} { \begin{array} { c c c c c c c c c c c } \end{array} } \end{array} } \end{array} } \end{array} } } \\ { \begin{array} { \begin{array} { c } { \begin{array} { c } { \begin{array} { c } { \begin{array} { c c c c c c c c c c c } \end{array} \end{array} } } \\ { \begin{array} { \begin{array} { c c c c c c c c c c } \end{array} } \end{array} } \\ { \begin{array} { \begin{array} { c c c c c c c c c c } \end{array} } \end{array} } \end{array} } \end{array} } } \\  \begin{array} { \begin{array} { c } { \begin{array} { c } { \begin{array} { c c c c c c c c c } \end{array} \end{array} } \end{array} } \\ { \begin{array} { \begin{array} { c c c c c c c c c } \end{array} \end{array} } \end{array} } \end{array} } \begin{array} {array} \\ { \begin{array} { c } { \begin{array} { c } { \begin{array} { c } { \begin{array} { c c c c c c c c } \end{array} \end{array} } \\ { [ \begin{array} { c c c c c c c c } \end{array} \end{array} } \\ { \begin{array} { c c c c c c c c } \end{array} \end{array} } \end{array} } \end{array} ] } } \\  \begin{array} { c }  \begin{array} { c }  \begin{array} { r } { \begin{array} { c } { \begin{array} } { r l } { \begin{array} { c c c c c c c } \end{array} } \end{array} } \\  [ \begin{array} { c c c c c c } { \begin{array} } &  [ \begin{array} { c } { \begin{array} } { c } & { [ \begin{array} { c } { \begin{array} } { c } & { [ \begin{array} { c } { c c c c c c } \end{array} } \end{array} \end{array} ] } \\  \begin{array} { c c c c c c c } \end{array} \end{array} \end{array} \end{array} \end{array} \end{array} \end{array} \end{array} \end{array} \end{array} \end{array} \end{array} \end{array} \end{array} \end{array} \end{array} \end{array} \end{array} \end{array} \end{array} \end{array} \end{array} \end{array}
-$$
+![](images/c9.png)
 
-并且根据图示的交换性和 $\alpha _ { 0 }$ 的单射性，改变 $c$ 到 $c ^ { \prime }$ 会使 $e$ 变为 $e + \lambda ( g )$ 而使 $f$ 变为 $f + 0 = f$。也就是说，$f$ 确实与选择无关。
+并且（根据图示的交换性和 $\alpha _ { 0 }$ 的单射性），把 $c$ 改为 $c ^ { \prime }$ 会使 $e$ 变为 $e + \lambda ( g )$ 而使 $f$ 变为 $f + 0 = f$。也就是说，$f$ 确实与选择无关。
 
 因此 $\delta$ 是良好定义的！
 
-这是一个蛇形引理证明的极小部分，但可能足以说明为什么阅读一个写出来的图追可能极其无信息量。
+这是一个蛇形引理证明的极小部分，但可能足以说明为 什么 阅读一个写出来的追图可能极其无信息量。
 
-其余的证明（留给读者$( ! )$，但我没有将其列为正式练习，以免有人真的提交解决方案以供评分）涉及许多类似的论证。在核和余核上诱导的映射的定义远不如上面描述的连接同态$\delta$的定义具有挑战性。序列中最多点的正合性
+其余的证明（留给读者$( ! )$，但我没有将其列为正式练习，以免有人真的交上来一个解来让我批）涉及许多类似的论证。在核和余核上 诱导的映射 的定义 远不如上面描述的连接同态$\delta$的定义具有挑战性。下列序列中 的多数之处 的正合性
 
 $$
 0 \longrightarrow \ker \lambda \longrightarrow \ker \mu \longrightarrow \ker \nu \stackrel { \delta } { \longrightarrow } \mathrm { c o k e r } \lambda \longrightarrow \mathrm { c o k e r } \mu \longrightarrow \mathrm { c o k e r } \nu \longrightarrow 0
 $$
 
-它也相对直接；大部分工作将投入到在 $\ker \nu$ 和 $\mathrm { c o k e r } \lambda$ 证明正合性上。
+也相对直接；大部分工作将投入到 在 $\ker \nu$ 和 $\mathrm { c o k e r } \lambda$ 证明正合性上。
 
 亲爱的读者：不要害怕尝试这个，因为它是非常出色、不可或缺的练习。错失这个机会，你将永远对这种运算感到不确定。
 
 蛇形引理简化了几个事实，单独证明这些事实并不难，但一旦引理被确立，就变得非常直接。例如，
 
-推论 7.12. 在蛇形引理中给出的相同情况下（符号见 §7.3），假设 $\mu$ 是满射且 $\nu$ 是单射。那么 $\lambda$ 是满射且 $\nu$ 是同构。
+**推论 7.12**. 在蛇形引理中给出的相同情况下（符号见 §7.3），假设 $\mu$ 是满射且 $\nu$ 是单射。那么 $\lambda$ 是满射且 $\nu$ 是同构。
 
-证明。确实，$\mu$满射 $\implies \operatorname { c o k e r } \mu = 0$；$\nu$单射 $\implies \ker \nu = 0$（命题6.2）。将此信息代入蛇形引理的序列中，得到一个正合序列
+**证明**。确实，$\mu$ 满射 $\implies \operatorname { c o k e r } \mu = 0$；$\nu$ 单射 $\implies \ker \nu = 0$（命题6.2）。将此信息代入蛇形引理的序列中，得到一个正合列
 
 $0 \longrightarrow \ker \lambda \longrightarrow \ker \mu \longrightarrow 0 \longrightarrow \mathrm { c o k e r } \lambda \longrightarrow 0 \longrightarrow \mathrm { c o k e r } \nu \longrightarrow 0 \longrightarrow \mathrm { c o k e r } \nu \longrightarrow 0 \longrightarrow \mathrm { c o k e r } \nu \longrightarrow 0 \longrightarrow \mathrm { c o l e c } \nu \longrightarrow 0$
 
-正合性意味着 coker $\lambda = \operatorname { c o k e r } \nu = 0$（练习 7.1）；因此 $\lambda$ 和 $\nu$ 是满射的，具有所述的推论。$\square$
+正合性意味着 coker $\lambda = \operatorname { c o k e r } \nu = 0$（练习 7.1）；因此 $\lambda$ 和 $\nu$ 是满射的，结果和所述一致。$\square$
 
-可以有更多类似的陈述被同样轻易地证明；读者应该尽情实验。
+可以有更多类似的陈述被同样轻易地证明；读者应该尽情实验，直到ta的内心满意为止。
 
 ### 习题
 
-7.1. $\triangleright$ 假设复数
+7.1. $\triangleright$ 假设复形
 
 $$
 \cdots { \longrightarrow } 0 \longrightarrow M \longrightarrow 0 \longrightarrow \cdots
 $$
 
-完全正确。证明 $M \cong 0$。[§7.3]
+正合。证明 $M \cong 0$。[§7.3]
 
-7.2. 假设复数
+7.2. 假设复形
 
 $$
 \cdot \cdot \cdot \longrightarrow 0 \longrightarrow M \longrightarrow M ^ { \prime } \longrightarrow 0 \longrightarrow \cdot \cdot \cdot
 $$
 
-完全正确。证明 $M \cong M ^ { \prime }$ 。
+正合。证明 $M \cong M ^ { \prime }$ 。
 
-7.3. 假设复数
+7.3. 假设复形
 
 $$
 \cdots { \xrightarrow { } } 0 { \xrightarrow { } } L { \xrightarrow { } } M { \xrightarrow { \varphi } } M ^ { \prime } { \xrightarrow { } } N { \xrightarrow { } } 0 { \xrightarrow { } } \cdots
 $$
 
-精确。证明在自然同构的意义下，$L = \ker \varphi$ 和 $N = \mathrm { c o k e r } \varphi$
+正合。证明在自然同构的意义下，$L = \ker \varphi$ 和 $N = \mathrm { c o k e r } \varphi$
 
-7.4. 构造 $\mathbb{Z}$-模的短 正合序列
+7.4. 构造 $\mathbb{Z}$-模的短正合列
 
 $$
 0 \longrightarrow \mathbb { Z } ^ { \oplus \mathbb { N } } \longrightarrow \mathbb { Z } ^ { \oplus \mathbb { N } } \longrightarrow \mathbb { Z } \longrightarrow 0
@@ -7595,40 +7603,43 @@ $$
 \cdots { \longrightarrow } L { \longrightarrow } M { \longrightarrow } N { \longrightarrow } \cdots
 $$
 
-精确，并且 $L$ 和 $N$ 是诺特环。证明 $M$ 是诺特环。[§7.1]
+正合，并且 $L$ 和 $N$ 是诺特环。证明 $M$ 是诺特环。[§7.1]
 
 7.6. $\triangleright$ 证明命题7.5的“分裂满射”部分。[§7.2]
 
-7.7. $\triangleright$ 让
+7.7. $\triangleright$ 设
 
 $$
 0 \longrightarrow M \longrightarrow N \longrightarrow P \longrightarrow 0
 $$
 
-是一个$R$-模的短 正合序列，并且让$L$是一个$R$-模。
+是一个$R$-模的短正合列，并且设 $L$ 是一个$R$-模。
 
-(i) 证明存在一个正合序列36 $0 \xrightarrow { } \mathrm { H o m } _ { R \cdot \mathrm { M o d } } ( P , L ) { \xrightarrow { } } \mathrm { H o m } _ { R \cdot \mathrm { M o d } } ( N , L ) { \xrightarrow { } } \mathrm { H o m } _ { R \cdot \mathrm { M o d } } ( M , L ) .$ (ii) 重做练习6.17。(使用正合序列 $0 \to I \to R \to R / I \to 0$。)
+(i) 证明存在一个正合列$^{36}$
+$0 \xrightarrow { } \mathrm { H o m } _ { R \cdot \mathrm { M o d } } ( P , L ) { \xrightarrow { } } \mathrm { H o m } _ { R \cdot \mathrm { M o d } } ( N , L ) { \xrightarrow { } } \mathrm { H o m } _ { R \cdot \mathrm { M o d } } ( M , L ) .$ 
+
+(ii) 重做练习6.17。(使用正合列 $0 \to I \to R \to R / I \to 0$。)
 
 (iii) 构造一个例子，说明 (i) 中的右端同态不必满射。  
-(iv) 证明如果原始序列分裂，那么 (i) 中的右端同态是满射。
+(iv) 证明如果原始序列分裂，那么 (i) 中的右端同态 _是_ 满射。
 
 [7.9, VIII.3.14, §VIII.5.1]
 
-7.8. $\triangleright$ 证明每个正合序列
+7.8. $\triangleright$ 证明每个 $R$模 正合列
 
 $$
 0 \longrightarrow M \longrightarrow N \longrightarrow F \longrightarrow 0
 $$
 
-关于$R$模，$F$是自由的，分裂。(提示：练习6.9。) [§VIII.5.4]
+其中$F$是 _自由的_，分裂。(提示：练习6.9。) [§VIII.5.4]
 
-7.9. 让
+7.9. 设
 
 $$
 0 \longrightarrow M \longrightarrow N \longrightarrow F \longrightarrow 0
 $$
 
-是一个$R$-模的短 正合序列，其中$F$是自由的，并且让$L$是一个$R$-模。证明存在一个 正合序列
+是一个$R$-模的短正合列，其中$F$是自由的，并且让$L$是一个$R$-模。证明存在一个 正合列
 
 $$
 0 \longrightarrow \mathrm { H o m } _ { R \cdot \mathrm { M o d } } ( F , L ) \longrightarrow \mathrm { H o m } _ { R \cdot \mathrm { M o d } } ( N , L ) \longrightarrow \mathrm { H o m } _ { R \cdot \mathrm { M o d } } ( M , L ) \longrightarrow 0 \ .
@@ -7638,43 +7649,46 @@ $$
 
 7.10. $\triangleright$ 在蛇形引理的情况下，假设 $\lambda$ 和 $\nu$ 是同构。使用蛇形引理证明 $\mu$ 是同构。这被称为“短五引理”，因为它直接来自五引理（参见习题 7.14），以及来自蛇形引理。[VIII.6.21, IX.2.4]
 
-7.11. $\triangleright$ 让
+7.11. $\triangleright$ 设
 
 $$
-0 \longrightarrow M _ { 1 } \longrightarrow N \longrightarrow M _ { 2 } \longrightarrow 0
+\begin{flalign*}
+(*) && 0 \longrightarrow M _ { 1 } \longrightarrow N \longrightarrow M _ { 2 } \longrightarrow 0  &&
+\end{flalign*}
 $$
 
-是$R$-模的正合序列。(这可以称为$M _ { 2 }$被$M _ { 1 }$的‘扩张’。)假设存在任何$R$-模同态$N  M _ { 1 } \oplus M _ { 2 }$使得图
+是$R$-模的正合列。(这可以称为$M _ { 2 }$被$M _ { 1 }$的‘扩张’。)假设 存在 _任何_ $R$-模同态 $N \to M _ { 1 } \oplus M _ { 2 }$使得图
 
 ![](images/72.jpg)
 
 交换，其中底部序列是直和的标准序列。证明（ $^ *$ ）分裂。[§7.2]
 
-7.12. ¬ 通过证明“四引理”来练习你的图追技能：如果$R$-模的交换图具有精确行，$\alpha$是一个满态射，并且$\beta$，$\delta$是单态射，那么$\gamma$是一个单态射。[7.13, IX.2.3]
+7.12. ¬ 通过证明“四引理”来练习你的追图技能：如果 如下的 $R$-模的交换图具有正合行，$\alpha$是一个满态射，并且$\beta$，$\delta$是单态射，那么$\gamma$是一个单态射。[7.13, IX.2.3]
 
 ![](images/73.jpg)
 
-7.13. 证明练习 7.12 的“四引理”的另一个 $^ { 3 7 }$ 版本：如果是一个具有精确行的 $R$-模的交换图，$\beta$ 和 $\delta$ 是满态射，并且 $\epsilon$ 是单态射，那么 $\gamma$ 是满态射。
+7.13. 证明练习 7.12 的“四引理”的另一个 $^ { 3 7 }$ 版本：如果如下是一个具有正合行的 $R$-模的交换图，$\beta$ 和 $\delta$ 是满态射，并且 $\epsilon$ 是单态射，那么 $\gamma$ 是满态射。
 
 ![](images/74.jpg)
 
-7.14.  证明“五引理”：如果
+7.14.  证明“五引理”：如果$R$-模的交换图
 
 ![](images/75.jpg)
 
-如果$R$-模的交换图具有精确行，$\beta$和$\delta$是同构，$\alpha$是满射，并且$\epsilon$是单射，那么$\gamma$是同构。（你可以通过粘贴前面的练习结果来避免所需的图追查。）[7.10]
+具有正合行，$\beta$和$\delta$是同构，$\alpha$是满射，并且$\epsilon$是单射，那么$\gamma$是同构。（你可以通过粘贴前面的练习结果来避免所需的追图。）[7.10]
 
 7.15. ¬ 考虑以下$R$-模的交换图：
 
 ![](images/76.jpg)
 
-假设这三行是正合的，并且最右边的两列是正合的。证明最左边的列是正合的。第二版本：假设这三行是正合的，并且最左边的两列是正合的；证明最右边的列是正合的。这是“九引理”。（你可以通过应用蛇形引理来避免图论推导；为此，你需要将图旋转$90^{\circ}$。）[7.16]
+假设这三行是正合的，并且最右边的两列是正合的。证明最左边的列是正合的。第二版本：假设这三行是正合的，并且最左边的两列是正合的；证明最右边的列是正合的。这是“九引理”。（你可以通过应用蛇形引理来避免追图；为此，你需要将图旋转$90^{\circ}$。）[7.16]
 
 7.16. 在与练习7.15相同的情形下，假设三行是正合的，并且最左边的列和最右边的列也是正合的。
 
-• 证明 $\alpha$ 是单态射且 $\beta$ 是满态射。 • 中心列是否必然是精确列？
+• 证明 $\alpha$ 是单态射且 $\beta$ 是满态射。 
+• 中心列是否必然 正合？
 
-(Hint: No. 将 $\mathbb { Z } \oplus \mathbb { Z }$ 放在中间，并用六个 $\mathbb { Z }$ 和两个 0 巧妙地包围它。)
+(提示: 非也. 将 $\mathbb { Z } \oplus \mathbb { Z }$ 放在中间，并用六个 $\mathbb { Z }$ 和两个 0 巧妙地包围它。)
 
 • 假设中央列是一个复形（即，$\beta \circ \alpha = 0$）；证明它必然是正合的。
 
@@ -7682,7 +7696,7 @@ $$
 
 ![](images/77.jpg)
 
-在中心列是一个复形且每一行都是正合的情况下。证明左右列也是复形的。证明如果任意两列是正合的，那么第三列也是正合的。（第一部分很简单。第二部分现在需要一些图追，一旦你学习了§IX.3.3中的长精确((共)同调序列)，几秒钟后就会变得简单。）[IX.3.12]
+在中心列是一个复形且每一行都是正合的情况下。证明左右列也是复形。证明如果任意两列是正合的，那么第三列也是正合的。（第一部分很简单。第二部分现在需要一些追图，一旦你学习了§IX.3.3中的长精确((共)同调序列)，你就能把它秒了。）[IX.3.12]
 
 # IV 群，再遇
 
@@ -9357,12 +9371,12 @@ $$
 
 **备注 5.4.** 这个结果为命题 2.16 的证明提供了一个替代的论证：如果 $| G | = p q$ ，其中 $p < q$ 是素数，并且 $G$ 包含阶为 $p$ 、$q$ 的正规子群 $H$ 、$K$ （当 $q \not \equiv 1 \bmod{p}$ 时，这是由 Sylow 定理成立的），那么必然有 $H \cap K = \{ e \}$，然后命题 5.3 表明 $H K \cong H \times K$。由于 $| H K | = | G | = p q$，这就证明了 $G \cong H \times K \cong \mathbb{Z} / p \mathbb{Z} \times \mathbb{Z} / q \mathbb{Z}$。最后，$( 1 , 1 )$ 在这个群中的阶为 $p q$，因此 $G$ 是循环群，与我们 在命题 2.16 中得到的结论相同。
 
-### 5.2. 群的正合序列；扩张问题
+### 5.2. 群的正合列；扩张问题
 当然，对于命题5.3的结果，子群$N$，$H$都是正规群的假设是必要的：例如，排列(123)和(12)生成$S _ { 3 }$的子群$N$，$H$仅在$\{ e \}$处相交，且$N$在$S _ { 3 }$中是正规的，但$S _ { 3 } = N H$不与$N$和$H$的直接积同构。自然地，我们考察这种更一般的情况。
 
 设 $N$ 和 $H$ 是群 $G$ 的子群，其中 $N$ 是正规子群（但对 $H$ 没有先验假设），并且 $N \cap H = \{ e \}$；假设 $G = NH$。我们希望根据 $N$ 和 $H$ 的结构来描述 $G$ 的结构。
 
-使用为模在§III.7.1中引入的正合列语言在符号上很方便。一个（短）群的 正合序列 是一个群和群同态的序列
+使用为模在§III.7.1中引入的正合列语言在符号上很方便。一个（短）群的 正合列 是一个群和群同态的序列
 
 $$
 1 \longrightarrow N \xrightarrow { \varphi } G \xrightarrow { \psi } H \xrightarrow { \quad \quad } 1
@@ -9370,7 +9384,7 @@ $$
 
 其中 $\psi$ 是满射，$\varphi$ 将 $N$ 与 $\ker \psi$ 等同。换句话说（根据第一个同构定理），使用 $\varphi$ 将 $N$ 与 $G$ 的一个子群等同；然后当 $N$ 在 $G$ 中是正规子群且 $\psi$ 诱导出同构 $G / N \cong H$ 时，该序列是正合的。
 
-读者应该暂停片刻，检查如果$G$，$N$，$H$是阿贝尔的，那么这个概念与阿贝尔群（即$\mathbb{Z}$-模）的短 正合序列的概念完全一致（即 §III.7.1 中所述）；一个符号上的差异是，在这里，平凡群记为$^{22}$‘1’，而不是‘$0^\circ$’。
+读者应该暂停片刻，检查如果$G$，$N$，$H$是阿贝尔的，那么这个概念与阿贝尔群（即$\mathbb{Z}$-模）的短正合列的概念完全一致（即 §III.7.1 中所述）；一个符号上的差异是，在这里，平凡群记为$^{22}$‘1’，而不是‘$0^\circ$’。
 
 当然，总有一个确切的序列
 
@@ -9378,7 +9392,7 @@ $$
 1 \longrightarrow N \longrightarrow N \times H \longrightarrow H \longrightarrow 1 \ :
 $$
 
-将 $n \in N$ 映射到 $( n , e _ { H } )$ ，将 $( n , h ) \in N \times H$ 映射到 $h$ 。但是，请记住这是一个非常特殊的情况：重申上面提到的例子，也存在一个正合序列
+将 $n \in N$ 映射到 $( n , e _ { H } )$ ，将 $( n , h ) \in N \times H$ 映射到 $h$ 。但是，请记住这是一个非常特殊的情况：重申上面提到的例子，也存在一个正合列
 
 $$
 1 \longrightarrow C _ { 3 } \longrightarrow S _ { 3 } \longrightarrow C _ { 2 } \longrightarrow 1 \ ,
@@ -9386,7 +9400,7 @@ $$
 
 然而 $S _ { 3 } \not \equiv C _ { 3 } \times C _ { 2 }$ 。
 
-定义 5.5. 设 $N$ ，$H$ 是群。如果存在一个群的短 正合序列，则群 $G$ 是 $H$ 对 $N$ 的一个扩张。
+定义 5.5. 设 $N$ ，$H$ 是群。如果存在一个群的短正合列，则群 $G$ 是 $H$ 对 $N$ 的一个扩张。
 
 $$
 1 \longrightarrow N \longrightarrow G \longrightarrow H \longrightarrow 1 \ .
@@ -9406,7 +9420,7 @@ $$
 
 我们将“解决”$H$也是$G$的子群，与$N$在$\{ e \}$处相交的特定情况下的扩张问题。
 
-**定义 5.6.** 群的正合序列 
+**定义 5.6.** 群的正合列 
 
 $$
 1 \longrightarrow N \xrightarrow{\quad\varphi\quad} G \xrightarrow{\quad\psi\quad} H \longrightarrow 1
@@ -9422,7 +9436,7 @@ $$
 
 引理 5.7. 设 $N$ 是群 $G$ 的正规子群，且 $H$ 是 $G$ 的一个子群，使得 $G = NH$ 且 $N \cap H = \{ e \}$。那么 $G$ 是 $H$ 关于 $N$ 的分裂扩张。
 
-证明。我们必须构造一个正合序列
+证明。我们必须构造一个正合列
 
 $$
 1 \longrightarrow N \longrightarrow G \longrightarrow H \longrightarrow 1 \ ;
@@ -9591,7 +9605,7 @@ $$
 
 完全正确，但没有分割。[§5.2]
 
-5.5. 在命题III.7.5中，我们看到如果有一个正合序列
+5.5. 在命题III.7.5中，我们看到如果有一个正合列
 
 $$
 0 \longrightarrow M \xrightarrow { \varphi } N \longrightarrow N / ( \varphi ( M ) ) \longrightarrow 0
@@ -9652,7 +9666,7 @@ $$
 
 （勤奋的读者已经知道这种情况必须如此，因为阿贝尔群是幂零群；参见练习5.1。）因此，我们已经知道每个有限阿贝尔群都是$p$-群的直和，我们的主要任务归结为对给定的素数$p$分类阿贝尔$p$-群。这有点技术性；我们将通过一条看似迂回的道路到达那里。
 
-引理 6.3. 设 $G$ 是一个阿贝尔 $p$-群，并且 $g \in G$ 是一个具有最大阶的元素。那么正合序列
+引理 6.3. 设 $G$ 是一个阿贝尔 $p$-群，并且 $g \in G$ 是一个具有最大阶的元素。那么正合列
 
 $$
 0 \longrightarrow \langle g \rangle \longrightarrow G \longrightarrow G / \langle g \rangle \longrightarrow 0
@@ -9856,13 +9870,13 @@ $$
 
 ### 1.1. 重新审视诺特环
 
-设 $R$ 是一个交换环。回想一下，$R$ 被称为 _诺特环_ ，如果 $R$ 的每个理想都是有限生成的（[[#定义 III 4.2]] ）。事实上，这是对应的 _模_ 定义的一个特例：一环 $R$ 上的 一个模 $M$ 是诺特模，如果 $M$ 的每个子模都是有限生成的（[[#定义 III 6.6]]）。在 III.6.4 中，我们已经验证了这个条件 通过短正合序列得到保持：如果 $M , N , P$ 是 $R$ -模，且
+设 $R$ 是一个交换环。回想一下，$R$ 被称为 _诺特环_ ，如果 $R$ 的每个理想都是有限生成的（[[#定义 III 4.2]] ）。事实上，这是对应的 _模_ 定义的一个特例：一环 $R$ 上的 一个模 $M$ 是诺特模，如果 $M$ 的每个子模都是有限生成的（[[#定义 III 6.6]]）。在 III.6.4 中，我们已经验证了这个条件 通过短正合列得到保持：如果 $M , N , P$ 是 $R$ -模，且
 
 $$
 0 \longrightarrow N \longrightarrow M \longrightarrow P \longrightarrow 0
 $$
 
-是 $R$-模 的 一个正合序列，那么 $M$ 诺特 当且仅当 $N$和$P$ 都 诺特（命题III.6.7, 在此使用 III.7.1 中的语言 重述了一遍）。这个事实的一个简单且有用的推论是，诺特环上的每个有限生成模都是诺特模（推论III.6.8）。
+是 $R$-模 的 一个正合列，那么 $M$ 诺特 当且仅当 $N$和$P$ 都 诺特（命题III.6.7, 在此使用 III.7.1 中的语言 重述了一遍）。这个事实的一个简单且有用的推论是，诺特环上的每个有限生成模都是诺特模（推论III.6.8）。
 
 诺特条件 可以用多种方式表达，且熟悉它们很有用。
 
@@ -11923,7 +11937,7 @@ $$
 
 ### 习题
 
-6.1. 将CRT推广到两个理想，如下。设 $I$ ， $J$ 是交换环 $R$ 中的理想；证明存在一个 $R$ -模的正合序列
+6.1. 将CRT推广到两个理想，如下。设 $I$ ， $J$ 是交换环 $R$ 中的理想；证明存在一个 $R$ -模的正合列
 
 $$
 0 \xrightarrow [ ] { } I \cap J \xrightarrow [ ] { } R \xrightarrow [ ] { \varphi } \frac { R } { I } \times \frac { R } { J } \longrightarrow \frac { R } { I + J } \longrightarrow 0
@@ -13057,7 +13071,7 @@ $$
 
 将命题2.10改述的一种方式是：域上的矩阵按等价分类，分类依据是它们的秩。
 
-上述考虑在更抽象的术语中很好地适用于有限维向量空间 $k$ 上的线性映射 $\alpha : V  W$。使用在 §III.7.1 中引入的方便语言，请注意每个 $\alpha$ 都确定一个向量空间的正合序列
+上述考虑在更抽象的术语中很好地适用于有限维向量空间 $k$ 上的线性映射 $\alpha : V  W$。使用在 §III.7.1 中引入的方便语言，请注意每个 $\alpha$ 都确定一个向量空间的正合列
 
 $$
 0 \longrightarrow \ker \alpha \longrightarrow V \longrightarrow \operatorname { i m } \alpha \longrightarrow 0 \ .
@@ -13090,7 +13104,7 @@ $$
 0 \longrightarrow U \longrightarrow V \longrightarrow W \longrightarrow 0
 $$
 
-是有限维向量空间的短 正合序列。然后
+是有限维向量空间的短正合列。然后
 
 $$
 \dim ( V ) = \dim ( U ) + \dim ( W ) .
@@ -13212,7 +13226,7 @@ $$
 [ V ] - [ U ] - [ W ]
 $$
 
-对于所有短 正合序列
+对于所有短正合列
 
 $$
 0 \longrightarrow U \longrightarrow V \longrightarrow W \longrightarrow 0
@@ -13226,7 +13240,7 @@ $$
 
 被称为 $k { \mathrm { - } } \mathsf { V e c t } ^ { f }$ 类的格罗滕迪克群。在格罗滕迪克群中由 $V$ 确定的元素仍然记为 $\lfloor V \rfloor$ 。
 
-更一般地，对于任何允许正合序列概念的范畴，都可以定义一个Grothendieck群。
+更一般地，对于任何允许正合列概念的范畴，都可以定义一个Grothendieck群。
 
 每个复形的 $V _ { \bullet }$ 确定一个 $K ( k { - } \mathsf { V e c t } ^ { f } )$ 中的元素，即
 
@@ -13405,7 +13419,7 @@ $$
 
 我们希望开发处理有限生成模的工具。事实证明，矩阵使我们能够描述一大类这样的模。
 
-定义 4.7. 一个 $R$ -模 $M$ 是有限生成的，如果对于某些正整数 $m$ ， $n$ 存在一个正合序列
+定义 4.7. 一个 $R$ -模 $M$ 是有限生成的，如果对于某些正整数 $m$ ， $n$ 存在一个正合列
 
 $$
 R ^ { n } \xrightarrow { \quad \varphi } R ^ { m } \xrightarrow { } M \xrightarrow { } 0 .
@@ -13419,13 +13433,13 @@ $$
 
 引理 4.8. 如果 $R$ 是一个诺特环，那么每个有限生成的 $R$-模都是有限呈现的。
 
-证明。如果$M$是一个有限生成的模，那么存在一个正合序列
+证明。如果$M$是一个有限生成的模，那么存在一个正合列
 
 $$
 R ^ { m } \xrightarrow { \pi } M \xrightarrow { } 0
 $$
 
-对于某个 $m$ 。由于 $R$ 是诺特环，$R ^ { m }$ 作为 $R$ -模是诺特模（推论 III.6.8）。因此 $\ker \pi$ 是有限生成的；也就是说，存在一个正合序列
+对于某个 $m$ 。由于 $R$ 是诺特环，$R ^ { m }$ 作为 $R$ -模是诺特模（推论 III.6.8）。因此 $\ker \pi$ 是有限生成的；也就是说，存在一个正合列
 
 $$
 R ^ { n } \longrightarrow \ker \pi \longrightarrow 0
@@ -13455,7 +13469,7 @@ $$
 
 然而，通过考虑粗略的问题，例如“一个分解可以有多长”，我们已经可以学到一些东西。从先验的角度来看，没有理由期望 一个自由分解是“有限的”，也就是说，对于 $i \gg 0$，有 $m _ { i } ~ = ~ 0$。这种有限性条件告诉我们关于基底环 $R$ 的某些特殊性质。
 
-这类问题的第一个自然问题是，对于哪些环 $R$，每个有限生成的 $R$ -模 $M$ 都有一个“长度为 $0$”的自由解析，即停留在 $m _ { 0 }$？这意味着存在一个正合序列
+这类问题的第一个自然问题是，对于哪些环 $R$，每个有限生成的 $R$ -模 $M$ 都有一个“长度为 $0$”的自由解析，即停留在 $m _ { 0 }$？这意味着存在一个正合列
 
 $$
 0 \longrightarrow R ^ { m _ { 0 } } \longrightarrow M \longrightarrow 0 .
@@ -14039,7 +14053,7 @@ $$
 0 \longrightarrow M _ { 1 } \longrightarrow M _ { 2 } \longrightarrow M _ { 3 } \longrightarrow 0
 $$
 
-是一个有限生成的$R$-模的正合序列。证明$\mathrm { r k } M _ { 2 } = \mathrm { r k } M _ { 1 } +$ $\operatorname { r k } M _ { 3 }$。
+是一个有限生成的$R$-模的正合列。证明$\mathrm { r k } M _ { 2 } = \mathrm { r k } M _ { 1 } +$ $\operatorname { r k } M _ { 3 }$。
 
 推断‘rank’定义了一个同态映射，从有限生成的$R$-模的格罗滕迪克群到$\mathbb { Z }$（参见§3.4）。
 
@@ -14450,7 +14464,7 @@ $$
 { \frac { 1 } { \operatorname* { d e t } ( 1 - \alpha t ) } } = \exp \left( \sum _ { r = 1 } ^ { \infty } \mathrm { t r } ( \alpha ^ { r } ) { \frac { t ^ { r } } { r } } \right) .
 $$
 
-（提示：左侧本质上是$\alpha$的特征多项式的逆。使用练习6.11证明两边对于正合序列$0 \to V _ { 1 } \to V \to V _ { 2 } \to 0$都是乘法的，其中$V _ { 1 }$是一个不变子空间。使用这个事实和$\alpha$存在非平凡的不变子空间这一事实（为什么？），因为$\mathbb { C }$是代数闭的，将其简化为$\dim V = 1$的情况，此时等式是一个基本的微积分练习。）
+（提示：左侧本质上是$\alpha$的特征多项式的逆。使用练习6.11证明两边对于正合列$0 \to V _ { 1 } \to V \to V _ { 2 } \to 0$都是乘法的，其中$V _ { 1 }$是一个不变子空间。使用这个事实和$\alpha$存在非平凡的不变子空间这一事实（为什么？），因为$\mathbb { C }$是代数闭的，将其简化为$\dim V = 1$的情况，此时等式是一个基本的微积分练习。）
 
 在适当的注意下，该恒等式可以在任意特征为0的域上被陈述和证明（以相同的方式）。它是“韦尔猜想”的代数几何解释中的一个成分。
 
@@ -18754,19 +18768,19 @@ $$
 
 引理 1.17 暗示，例如，右伴随函子保持积，并且当核有定义时，它们必须“保持核”。
 
-示例 1.18（正合函子）。一个函子是正合的，如果它保持正合性，也就是说，它将正合序列映射到正合序列。到目前为止，我们只研究了环上的模的正合性（§III.7.1），所以设 $R$，$S$ 为环，并设 $\mathcal{F}$：$R – \mathsf{Mod}_S$ -Mod 为一个加性函子；$\mathcal{F}$ 是正合的当且仅当每当
+示例 1.18（正合函子）。一个函子是正合的，如果它保持正合性，也就是说，它将正合列映射到正合列。到目前为止，我们只研究了环上的模的正合性（§III.7.1），所以设 $R$，$S$ 为环，并设 $\mathcal{F}$：$R – \mathsf{Mod}_S$ -Mod 为一个加性函子；$\mathcal{F}$ 是正合的当且仅当每当
 
 $$
 0 \longrightarrow A \xrightarrow { \varphi } B \xrightarrow { \psi } C \xrightarrow { \psi } 0
 $$
 
-是 $R$ -模的正合序列，则
+是 $R$ -模的正合列，则
 
 $$
 0 \longrightarrow { \mathcal { F } } ( A ) { \xrightarrow { { \mathcal { F } } ( \varphi ) } } { \mathcal { F } } ( B ) { \xrightarrow { { \mathcal { F } } ( \psi ) } } { \mathcal { F } } ( C ) \longrightarrow 0
 $$
 
-是$S$-模的一个正合序列。容易推出每个正合复形的像是正合的（习题1.23）。
+是$S$-模的一个正合列。容易推出每个正合复形的像是正合的（习题1.23）。
 
 一个常见且非常有趣的情况发生在当函子不是正合的，但它保持序列的“一些”正合性（我们将在本章后面遇到这样的例子，例如在§2.3中）。我们说一个加性函子 $\mathcal { F }$ 是左正合的，如果每当
 
@@ -19184,13 +19198,13 @@ $$
 { \frac { R } { I } } \otimes _ { R } N \cong { \frac { N } { I N } } .
 $$
 
-确实，$\_ \otimes _ { R } N$ 是右正合的；因此，短 正合序列
+确实，$\_ \otimes _ { R } N$ 是右正合的；因此，短正合列
 
 $$
 0 \longrightarrow I \longrightarrow R \longrightarrow \frac { R } { I } \longrightarrow 0
 $$
 
-诱导一个正合序列
+诱导一个正合列
 
 $$
 I \otimes _ { R } N { \longrightarrow } R \otimes _ { R } N { \longrightarrow } \frac { R } { I } \otimes _ { R } N { \longrightarrow } 0 .
@@ -19259,7 +19273,7 @@ $$
 0 \longrightarrow V _ { 1 } \longrightarrow V _ { 2 } \longrightarrow V _ { 3 } \longrightarrow 0
 $$
 
-是一个 $k$ -向量空间的正合序列，并且 $W$ 是一个 $k$ -向量空间，那么诱导序列
+是一个 $k$ -向量空间的正合列，并且 $W$ 是一个 $k$ -向量空间，那么诱导序列
 
 $$
 0 \longrightarrow V _ { 1 } \otimes _ { k } W \longrightarrow V _ { 2 } \otimes _ { k } W \longrightarrow V _ { 3 } \otimes _ { k } W \longrightarrow 0
@@ -19309,13 +19323,13 @@ $$
 0 { \xrightarrow { } } A { \xrightarrow { } } B { \xrightarrow { } } C { \xrightarrow { } } 0
 $$
 
-是一个$R$ -模的正合序列，通过用任何$N$进行张量积，可以得到一个新的正合序列：
+是一个$R$ -模的正合列，通过用任何$N$进行张量积，可以得到一个新的正合列：
 
 $$
 \mathrm { T o r } _ { 1 } ^ { R } ( C , N ) \longrightarrow A \otimes _ { R } N \longrightarrow B \otimes _ { R } N \longrightarrow C \otimes _ { R } N \longrightarrow 0 ,
 $$
 
-所以，如果 ${ \mathrm { T o r } } _ { 1 } ^ { R } ( C , N ) = 0$ ，那么左侧的模消失；因此，在这种情况下，以 $C$ 结尾的每个短 正合序列在通过 $N$ 张量化后仍然 exact。事实上（令人惊讶的是），对于所有 $N$，人们可以继续这个序列，用更多的 Tor-模，得到一个更长的 正合复形：
+所以，如果 ${ \mathrm { T o r } } _ { 1 } ^ { R } ( C , N ) = 0$ ，那么左侧的模消失；因此，在这种情况下，以 $C$ 结尾的每个短正合列在通过 $N$ 张量化后仍然 exact。事实上（令人惊讶的是），对于所有 $N$，人们可以继续这个序列，用更多的 Tor-模，得到一个更长的 正合复形：
 
 $$
 \operatorname { T o r } _ { 1 } ^ { R } ( A , N ) \longrightarrow \operatorname { T o r } _ { 1 } ^ { R } ( B , N ) \longrightarrow \operatorname { T o r } _ { 1 } ^ { R } ( C , N ) \longrightarrow A \otimes _ { R } N \longrightarrow B \otimes _ { R } N \longrightarrow C \otimes _ { R } N \longrightarrow 0 .
@@ -19339,7 +19353,7 @@ $$
 \operatorname { T o r } _ { i } ^ { R } ( M , N ) : = H _ { i } ( M _ { \bullet } \otimes_R N ) .
 $$
 
-例如，根据这个定义 $\operatorname { T o r } _ { 0 } ^ { R } ( M , N ) \cong M \otimes _ { R } N$（习题 2.14），并且当 $N$ 是平坦的时，对于所有 $i > 0$ 和所有 $M$，有 $\mathrm { T o r } _ { i } ^ { R } ( M , N ) = 0$（因为此时通过 $N$ 的张量化是一个正合的函子，所以张量化 $M$ 的解析返回一个正合序列，因此没有同调）。事实上，这证明了 Tor 函子的一个显著性质：如果对于所有 $M$，有 $\mathrm { T o r } _ { 1 } ^ { R } ( M , N ) = 0$，那么对于所有模 $M$ 和所有 $i > 0$，有 $\mathrm { T o r } _ { i } ^ { R } ( M , N ) = 0$。确实，此时 $N$ 是平坦的。
+例如，根据这个定义 $\operatorname { T o r } _ { 0 } ^ { R } ( M , N ) \cong M \otimes _ { R } N$（习题 2.14），并且当 $N$ 是平坦的时，对于所有 $i > 0$ 和所有 $M$，有 $\mathrm { T o r } _ { i } ^ { R } ( M , N ) = 0$（因为此时通过 $N$ 的张量化是一个正合的函子，所以张量化 $M$ 的解析返回一个正合列，因此没有同调）。事实上，这证明了 Tor 函子的一个显著性质：如果对于所有 $M$，有 $\mathrm { T o r } _ { 1 } ^ { R } ( M , N ) = 0$，那么对于所有模 $M$ 和所有 $i > 0$，有 $\mathrm { T o r } _ { i } ^ { R } ( M , N ) = 0$。确实，此时 $N$ 是平坦的。
 
 此时您可能会觉得有些不平衡：为什么关注 $ \_ \otimes _ { R } N $ 而不是 $ M \otimes _ { R _ { } - } $ 呢？由于 $ M \otimes _ { R } N $ 在交换情况下与 $ N \otimes _ { R } M $ 建立了自然的同构（参见示例 2.2），我们可以期望这对每个 $ \mathrm { T o r } _ { i } ^ { R } $ 都适用：$ \mathrm { T o r } _ { i } ^ { R } ( M , N ) $ 应该对所有的 $ i $ 都与 $ \mathrm { T o r } _ { i } ^ { R } ( N , M ) $ 建立自然的同构。等价地，我们应该能够将 $ \mathrm { T o r } _ { i } ^ { R } ( M , N ) $ 计算为 $ M \otimes _ { R } N _ { \bullet } $ 的同调，其中 $ N _ { \bullet } $ 是 $ N $ 的一个自由解析。这确实就是情况。
 
@@ -19357,7 +19371,7 @@ $$
 0 { \xrightarrow { } } A { \xrightarrow { } } B { \xrightarrow { } } C { \xrightarrow { } } 0
 $$
 
-如果是一个$R$-模的正合序列，那么不难看出可以产生“兼容”的解析，在以下图表的意义上，即行也将是正合的，列也将是：
+如果是一个$R$-模的正合列，那么不难看出可以产生“兼容”的解析，在以下图表的意义上，即行也将是正合的，列也将是：
 
 ![](images/136.jpg)
 
@@ -19367,7 +19381,7 @@ $$
 \begin{array} { c c c } { { 0 \longrightarrow N ^ { \oplus a _ { 1 } } \longrightarrow N ^ { \oplus b _ { 1 } } \longrightarrow N ^ { \oplus b _ { 1 } } \longrightarrow N ^ { \oplus c _ { 1 } } \longrightarrow 0 } } & { { } } \\ { { \underbrace { \Bigg | \alpha \otimes N } _ { \Bigg \downarrow } \Bigg . } } & { { \Bigg \downarrow \beta \otimes N } } & { { \Bigg \downarrow \gamma \otimes N } } \\ { { 0 \longrightarrow N ^ { \oplus a _ { 0 } } \longrightarrow N ^ { \oplus b _ { 0 } } \longrightarrow N ^ { \oplus c _ { 0 } } \longrightarrow 0 } } & { { } } \end{array}
 $$
 
-现在这些列（前面和后面都跟着$0$）正好是复形 $A _ { \bullet } \otimes _ { R } N$ ， $B _ { \bullet } \otimes _ { R } N$ ， ${ C } _ { \bullet } \otimes _ { R } { N }$ ，它们的同调“计算”出Tor模。应用蛇形引理（引理III.7.8；参见注III.7.10）得到正合序列
+现在这些列（前面和后面都跟着$0$）正好是复形 $A _ { \bullet } \otimes _ { R } N$ ， $B _ { \bullet } \otimes _ { R } N$ ， ${ C } _ { \bullet } \otimes _ { R } { N }$ ，它们的同调“计算”出Tor模。应用蛇形引理（引理III.7.8；参见注III.7.10）得到正合列
 
 $$
 \begin{array} { r l } { 0 \longrightarrow H _ { 1 } ( A _ { \bullet } \otimes _ { R } N ) \longrightarrow H _ { 1 } ( B _ { \bullet } \otimes _ { R } N ) \longrightarrow H _ { 1 } ( C _ { \bullet } \otimes _ { R } N ) } \\ { \longleftrightarrow \qquad } & { \qquad \longrightarrow H _ { 0 } ( A _ { \bullet } \otimes _ { R } N ) \longrightarrow \qquad } \\ { \longleftrightarrow H _ { 0 } ( A _ { \bullet } \otimes _ { R } N ) \longrightarrow H _ { 0 } ( B _ { \bullet } \otimes _ { R } N ) \longrightarrow H _ { 0 } ( C _ { \bullet } \otimes _ { R } N ) \longrightarrow 0 , } \end{array}
@@ -19469,7 +19483,7 @@ $$
 0 \longrightarrow M \longrightarrow N \longrightarrow P \longrightarrow 0
 $$
 
-是 $R$ -模的正合序列，并假设 $P$ 是平坦的。
+是 $R$ -模的正合列，并假设 $P$ 是平坦的。
 
 证明 $M$ 是平坦的当且仅当 $N$ 是平坦的。   
 • 证明对于所有 $R$-模 $Q$，诱导序列 $0 \longrightarrow M \otimes _ { R } Q \longrightarrow N \otimes _ { R } Q \longrightarrow P \otimes _ { R } Q \longrightarrow 0$ 是正合的。
@@ -19479,8 +19493,8 @@ $$
 2.24. $\neg$ 设 $R$ 是一个交换的诺特局部环，具有（单）极大理想 $\mathfrak { m }$，并且设 $M$ 是一个有限生成的平坦 $R$ -模。
 
 • 选择 $m _ { 1 } , \ldots , m _ { r } \in M$，它们的模 $\mathfrak { m } M$ 的陪集作为 $M / { \mathfrak { m } } M$ 在域 $R / { \mathfrak { m } }$ 上的向量空间的基。由 Nakayama 引理，$M = \langle m _ { 1 } , \ldots , m _ { r } \rangle$（习题 VI.3.10）。   
-• 得到一个正合序列 $0 \longrightarrow N \longrightarrow R ^ { \oplus r } \longrightarrow M \longrightarrow 0$，其中 $N$ 是有限生成的。   
-• 证明这个序列诱导出正合序列 $0 \longrightarrow N / \mathfrak { m } N \longrightarrow ( R / \mathfrak { m } ) ^ { \oplus r } \longrightarrow M / \mathfrak { m } M \longrightarrow 0$（使用习题 2.23）。   
+• 得到一个正合列 $0 \longrightarrow N \longrightarrow R ^ { \oplus r } \longrightarrow M \longrightarrow 0$，其中 $N$ 是有限生成的。   
+• 证明这个序列诱导出正合列 $0 \longrightarrow N / \mathfrak { m } N \longrightarrow ( R / \mathfrak { m } ) ^ { \oplus r } \longrightarrow M / \mathfrak { m } M \longrightarrow 0$（使用习题 2.23）。   
 • 推出 $N = 0$（Nakayama）。   
 • 得出 $M$ 是自由的。
 
@@ -20185,13 +20199,13 @@ $$
 
 确实，多项式环在映射到交换环方面满足适当的泛性质（参见§III.2.2和§III.6.4）。同样地，$\mathbb { T } _ { R } ^ { * } ( R ^ { \oplus r } )$应该被视为一个“非交换”多项式环，其中的$r$个不定元彼此不交换（参见§III.6.3）。
 
-当然，构造 $\mathbb { T } _ { R } ^ { * }$ ，$\mathbb { S } _ { R } ^ { * }$ ，$\textstyle \bigwedge _ { R } ^ { * }$ 都是函子的，它们对于正合序列的行为是有趣且重要的。例如，假设
+当然，构造 $\mathbb { T } _ { R } ^ { * }$ ，$\mathbb { S } _ { R } ^ { * }$ ，$\textstyle \bigwedge _ { R } ^ { * }$ 都是函子的，它们对于正合列的行为是有趣且重要的。例如，假设
 
 $$
 0 \longrightarrow L \longrightarrow M \longrightarrow N \longrightarrow 0
 $$
 
-是一个$R$-模的正合序列。那么$L$可以与$M \cong \mathbb{S}_R^1(M)$的一个子集识别；因此它定义了代数$\mathbb{S}_R^*(M)$的一个理想$L \cdot \mathbb{S}_R^*(M)$。不难证明这个序列22
+是一个$R$-模的正合列。那么$L$可以与$M \cong \mathbb{S}_R^1(M)$的一个子集识别；因此它定义了代数$\mathbb{S}_R^*(M)$的一个理想$L \cdot \mathbb{S}_R^*(M)$。不难证明这个序列22
 
 $$
 0 \longrightarrow L \cdot \mathbb { S } _ { R } ^ { * - 1 } ( M ) \longrightarrow \mathbb { S } _ { R } ^ { * } ( M ) \longrightarrow \mathbb { S } _ { R } ^ { * } ( N ) \longrightarrow 0
@@ -20450,7 +20464,7 @@ $$
 A { \xrightarrow { } } B { \xrightarrow { } } C { \xrightarrow { } } 0
 $$
 
-如果是一个$R$-模的正合序列，那么诱导序列
+如果是一个$R$-模的正合列，那么诱导序列
 
 $$
 0 { \xrightarrow { } } \mathrm { H o m } _ { R } ( C , N ) { \xrightarrow { } } \mathrm { H o m } _ { R } ( B , N ) { \xrightarrow { } } \mathrm { H o m } _ { R } ( A , N )
@@ -20542,13 +20556,13 @@ $$
 
 在看到这一点之前，让我们思考一下对偶性是逆变Hom的一个特例这一事实的另一个直接后果。
 
-引理 5.12. 对偶函子是左正合的：每一个正合序列
+引理 5.12. 对偶函子是左正合的：每一个正合列
 
 $$
 L \longrightarrow M \longrightarrow N \longrightarrow 0
 $$
 
-$R$ -模诱导一个正合序列
+$R$ -模诱导一个正合列
 
 $$
 0 \longrightarrow N ^ { \vee } \longrightarrow M ^ { \vee } \longrightarrow L ^ { \vee } .
@@ -20556,7 +20570,7 @@ $$
 
 证明。这是由Hom的左正合性直接得出的。
 
-对偶函子一般不是正合的：例如，在阿贝尔群（即 $\mathbb { Z }$ -模）的正合序列中取对偶
+对偶函子一般不是正合的：例如，在阿贝尔群（即 $\mathbb { Z }$ -模）的正合列中取对偶
 
 $$
 0 \xrightarrow { } \mathbb { Z } \xrightarrow { \cdot 2 } \mathbb { Z } \xrightarrow { } \mathbb { Z } / 2 \mathbb { Z } \xrightarrow { } 0
@@ -20582,7 +20596,7 @@ $$
 0 \longrightarrow M \xrightarrow { \mu } N \xrightarrow { \nu } P \longrightarrow 0
 $$
 
-是一个$R$-模的正合序列，其中$P$是自由的。然后诱导的序列
+是一个$R$-模的正合列，其中$P$是自由的。然后诱导的序列
 
 $$
 0 \longrightarrow P ^ { \vee } \xrightarrow { \nu ^ { \vee } } N ^ { \vee } \xrightarrow { \mu ^ { \vee } } M ^ { \vee } \longrightarrow 0
@@ -20645,7 +20659,7 @@ $$
 
 命题 5.16. 设 $R$ 是一个整环，$M$ 是 $R$-模。那么 $M ^ { \vee }$ 是无挠 的。
 
-证明。存在一个满射 $R ^ { \oplus S } \twoheadrightarrow M$，因此，存在一个正合序列
+证明。存在一个满射 $R ^ { \oplus S } \twoheadrightarrow M$，因此，存在一个正合列
 
 $$
 R ^ { \oplus T } \to R ^ { \oplus S } \to M \to 0 .
@@ -20766,7 +20780,7 @@ $$
 0 \longrightarrow F _ { 1 } \longrightarrow F _ { 2 } \longrightarrow F _ { 3 } \longrightarrow 0
 $$
 
-是自由 $R$ -模的一个正合序列。将 $F _ { 1 }$ 视为 $F _ { 2 }$ 的一个子模，并推广在练习 5.15 中为向量空间引入的记号，证明 $F _ { 1 } ^ { \bot } \cong F _ { 3 } ^ { \vee }$ 。
+是自由 $R$ -模的一个正合列。将 $F _ { 1 }$ 视为 $F _ { 2 }$ 的一个子模，并推广在练习 5.15 中为向量空间引入的记号，证明 $F _ { 1 } ^ { \bot } \cong F _ { 3 } ^ { \vee }$ 。
 
 5.17. $\neg$ 设 $V$ 是一个 $n$ 维向量空间。证明在 $T$ 维子空间的格拉斯曼流形 $\mathrm { G r } ( r , V )$（参见习题 VI.2.13）和 $V$ 的对偶空间的 $( n - r )$ 维子空间的格拉斯曼流形 $\mathrm { G r } ( n - r , V ^ { \vee } )$ 之间存在一个自然的双射。（使用习题 5.15。）
 
@@ -20835,7 +20849,7 @@ $$
 
 示例 6.3. 当 $R$ 作为自身上的模时，它是投射的（因为 ${ \mathrm { H o m } } _ { R } ( R , M )$ 对于所有模 $M$ 都与 $M$ 在范畴上同构），但通常不是注入的（因为对偶函子 $\mathrm { H o m } _ { R } ( \underline { { \mathbf { \Pi } } } , R )$ 通常不是正合的；参见 §5.1）。
 
-一个关于引理 6.2 的变体将投影/注入条件重新表述为序列的分裂（参见 §III.7.1 的结尾）。例如，假设 $P$ 是投影的；那么我断言每个正合序列
+一个关于引理 6.2 的变体将投影/注入条件重新表述为序列的分裂（参见 §III.7.1 的结尾）。例如，假设 $P$ 是投影的；那么我断言每个正合列
 
 $$
 0 \longrightarrow L \longrightarrow \longrightarrow M \longrightarrow P \longrightarrow 0
@@ -20849,7 +20863,7 @@ $$
 0 \longrightarrow Q \longrightarrow M \longrightarrow N \longrightarrow 0
 $$
 
-如果它是正合的并且 $Q$ 是单射的，那么序列必然分裂。例如，$\mathbb { Z }$ 不是一个单射的 $\mathbb { Z }$ -模，因为正合序列
+如果它是正合的并且 $Q$ 是单射的，那么序列必然分裂。例如，$\mathbb { Z }$ 不是一个单射的 $\mathbb { Z }$ -模，因为正合列
 
 $$
 0 \longrightarrow \mathbb { Z } \xrightarrow{\space\space\space \cdot 2 \space\space} \mathbb { Z } \longrightarrow   \frac { \mathbb { Z } } { ( 2 ) } \longrightarrow 0
@@ -20864,7 +20878,7 @@ $$
 
 命题 6.4. 一个 $R$-模 $P$ 是投射的，当且仅当它是某个自由模的直和分量，即，当且仅当存在一个自由 $R$-模 $F^{\prime}$，一个 $R$-模 $K$，以及一个同构 $K \oplus P \cong F$。
 
-证明。任何生成集 $S$ 都确定了自由模 $F = R ^ { \oplus S }$ 到 $P$ 的一个满射，从而得到一个正合序列
+证明。任何生成集 $S$ 都确定了自由模 $F = R ^ { \oplus S }$ 到 $P$ 的一个满射，从而得到一个正合列
 
 $$
 0 \longrightarrow K \longrightarrow F \longrightarrow P \longrightarrow 0 \ .
@@ -20888,7 +20902,7 @@ $$
 
 通过附加来证明射影模是平坦的事实很简单（练习6.7），利用了$R$-Mod有足够多的单射的事实（这一点并不平凡），这一点将在下面讨论。事实上，例如在诺特环上的有限生成平坦模是射影的；勤奋的读者已经完成了证明这个事实所需的所有工作，并将它总结在练习6.12中。
 
-自由模是投射模这一事实意味着 $R$ -Mod 有足够的投射模：这意味着每个 $R$ -模 $M$ 都有一个投射解析，即一个正合序列
+自由模是投射模这一事实意味着 $R$ -Mod 有足够的投射模：这意味着每个 $R$ -模 $M$ 都有一个投射解析，即一个正合列
 
 $$
 \cdot \cdot \cdot \longrightarrow P _ { 3 } \longrightarrow P _ { 2 } \longrightarrow P _ { 1 } \longrightarrow P _ { 0 } \longrightarrow M \ .
@@ -20997,7 +21011,7 @@ $$
 
 并且我们完成了，因为 $\mathbb { Q } ^ { \oplus A } / K$ 是可除的（示例 6.8）。
 
-作为直接后果，每个 $R$ -模都有一个注入解析：一个正合序列
+作为直接后果，每个 $R$ -模都有一个注入解析：一个正合列
 
 $$
 \longrightarrow Q _ { 0 } \longrightarrow Q _ { 1 } \longrightarrow Q _ { 2 } \longrightarrow Q _ { 2 } \longrightarrow Q _ { 3 } \longrightarrow \nonumber
@@ -21026,13 +21040,13 @@ $$
 \mathrm { E x t } _ { R } ^ { 0 } ( M , N ) = \mathrm { H o m } _ { R } ( M , N ) .
 $$
 
-• 对于每个正合序列
+• 对于每个正合列
 
 $$
 0 { \xrightarrow { } } A { \xrightarrow { } } B { \xrightarrow { } } C { \xrightarrow { } } 0
 $$
 
-在 $R$ -模中，存在长正合序列
+在 $R$ -模中，存在长正合列
 
 $$
 { \begin{array} { r l } & { \longrightarrow \mathrm { H o m } _ { R } ( M , A ) \longrightarrow \mathrm { H o m } _ { R } ( M , B ) \longrightarrow \mathrm { H o m } _ { R } ( M , C ) } \\ & { \Bigl ( \underbrace { \qquad } _ { \mathrm { E x t } _ { R } ^ { 1 } ( M , A ) \longrightarrow \mathrm { E x t } _ { R } ^ { 1 } ( M , B ) \longrightarrow \mathrm { E x t } _ { R } ^ { 1 } ( M , C ) } \Bigr ) } \\ & { \Bigl ( \underbrace { \qquad } _ { \mathrm { E x t } _ { R } ^ { 2 } ( M , A ) \longrightarrow \mathrm { E x t } _ { R } ^ { 2 } ( M , B ) \longrightarrow \mathrm { E x t } _ { R } ^ { 2 } ( M , C ) \longrightarrow \cdots } \Bigr ) } \end{array} }
@@ -21051,7 +21065,7 @@ $$
 —if $\mathrm { E x t } _ { R } ^ { 1 } ( P , \ j ) = 0$ ，则 $P$ 是投影的；   
 —if $\operatorname { E x t } _ { R } ^ { 1 } ( \ l _ { - } , Q ) = 0$ ，则 $Q$ 是单射的。
 
-确实，相应的 ${ \mathrm { H o m } } _ { R } ( P , \underline { { \mathbf { \phi } } } )$ ，或 ${ \mathrm { H o m } } _ { R } ( \underline { { \mathbf { \sigma } } } , Q )$ 的正合性直接来自上面显示的正合序列。
+确实，相应的 ${ \mathrm { H o m } } _ { R } ( P , \underline { { \mathbf { \phi } } } )$ ，或 ${ \mathrm { H o m } } _ { R } ( \underline { { \mathbf { \sigma } } } , Q )$ 的正合性直接来自上面显示的正合列。
 
 事实上，稍微推动一下边界，我们会了解到更多。回想一下从函子 $\_ \otimes R ^ { \_ N }$ 中定义的 $\mathrm { T o r } _ { i } ^ { R } ( \_ , N )$ 的过程：为了计算这些函子在一个模 $M$ 上的值，
 
@@ -21166,7 +21180,7 @@ $$
 
 事实上，这个同构不是标准的。
 
-另一个Ext计算给出了这个群的另一种解释。正合序列
+另一个Ext计算给出了这个群的另一种解释。正合列
 
 $$
 0 \longrightarrow \mathbb { Z } \longrightarrow \mathbb { Q } \longrightarrow \mathbb { Q } / \mathbb { Z } \longrightarrow 0
@@ -21182,7 +21196,7 @@ $$
 
 这个群是$G$的庞特里亚金对偶，记作$\widehat{G}$。因此，我们已经验证了如果$G$是一个有限阿贝尔群，那么$G$与它的庞特里亚金对偶$\hat{G} = \operatorname{Hom}_{\mathbb{Z}}(G, \mathbb{Q}/\mathbb{Z})$同构（非规范地）。当然，这个事实直接检查并不难，但从$\mathrm{Ext}$的角度来看是显而易见的。
 
-最后，符号 $\mathrm { E x t }$ 是因为可以在 $\mathrm { E x t } _ { R } ^ { 1 } ( M , N )$ 和 $M$ 通过 $N$ 的扩张的等价类之间构造一个双射，即，正合序列
+最后，符号 $\mathrm { E x t }$ 是因为可以在 $\mathrm { E x t } _ { R } ^ { 1 } ( M , N )$ 和 $M$ 通过 $N$ 的扩张的等价类之间构造一个双射，即，正合列
 
 $$
 0 \longrightarrow N \longrightarrow E \longrightarrow M \longrightarrow 0
@@ -21252,7 +21266,7 @@ $$
 
 6.21. ¬ 在练习2.15中，我们已经看到了为什么Tor被称为Tor。为什么Ext被称为Ext？
 
-设 $M$，$N$，$E$ 是 $R$ -模。$M$ 对 $N$ 的一个扩张是一个正合序列
+设 $M$，$N$，$E$ 是 $R$ -模。$M$ 对 $N$ 的一个扩张是一个正合列
 
 $$
 0 \longrightarrow N \longrightarrow E \longrightarrow M \longrightarrow 0 .
@@ -21264,7 +21278,7 @@ $$
 
 将它们连接起来。（注意，根据蛇形引理，中间的箭头必须是同构：参见习题III.7.10。）与标准序列 $0 \to N \to N \oplus M \to M \to 0$ 同构的扩张是“平凡的”。
 
-每一个如上的扩张 $\mathcal { E } ^ { \mathcal { O } }$ 确定一个元素 $\epsilon = \epsilon ( \mathcal { E } ) \in \mathrm { E x t } ^ { 1 } ( M , N )$ ，如下所示。序列（ $\ast$ ）诱导一个 $\mathrm { E x t }$ 的长正合序列，即，
+每一个如上的扩张 $\mathcal { E } ^ { \mathcal { O } }$ 确定一个元素 $\epsilon = \epsilon ( \mathcal { E } ) \in \mathrm { E x t } ^ { 1 } ( M , N )$ ，如下所示。序列（ $\ast$ ）诱导一个 $\mathrm { E x t }$ 的长正合列，即，
 
 $$
 \cdots { \xrightarrow { } } \operatorname { H o m } _ { R } ( E , N ) { \xrightarrow { } } \operatorname { H o m } _ { R } ( N , N ) { \xrightarrow { } } \operatorname { E x t } _ { R } ^ { 1 } ( M , N ) { \xrightarrow { } } \cdots ,
@@ -21276,7 +21290,7 @@ $$
 
 6.22. 练习6.21告诉我们，扩展决定了$\operatorname { E x t } _ { R } ^ { 1 }$的元素。通过构造映射$\epsilon$的逆映射，我们得到一个更精确的陈述：对于任意元素$\kappa \in \mathrm { E x t } _ { R } ^ { 1 } ( M , N )$，我们将构造一个扩展$e ( \kappa )$，使得$\epsilon ( e ( \boldsymbol { \kappa } ) ) = \kappa$，并且使得$e \big ( \boldsymbol { \epsilon } ( \boldsymbol { \mathcal { E } } ) \big )$同构于$\mathcal { E } ^ { \mathcal { O } }$。
 
-• 设 $F$ 是任何以 $M$ 为像的自由模，并设 $i : K \hookrightarrow F$ 是 $\pi : { \cal F } ^ { \prime }  { \cal M }$ 的核。由于 $F ^ { \prime }$ 是自由的（因此是投射的），Ext 的长正合序列的一部分，即 $\therefore { \overrightarrow { \longrightarrow } } \mathrm { H o m } _ { R } ( K , N ) { \overrightarrow { \longrightarrow } } \mathrm { E x t } _ { R } ^ { 1 } ( M , N ) { \overrightarrow { \longrightarrow } } \mathrm { E x t } _ { R } ^ { 1 } ( F , N ) = 0 { \longrightarrow } \cdots$，告诉我们存在一个同态 $k : K  N$ 映射到元素 $\kappa \in \mathrm { E x t } _ { R } ^ { 1 } ( M , N )$ 。   
+• 设 $F$ 是任何以 $M$ 为像的自由模，并设 $i : K \hookrightarrow F$ 是 $\pi : { \cal F } ^ { \prime }  { \cal M }$ 的核。由于 $F ^ { \prime }$ 是自由的（因此是投射的），Ext 的长正合列的一部分，即 $\therefore { \overrightarrow { \longrightarrow } } \mathrm { H o m } _ { R } ( K , N ) { \overrightarrow { \longrightarrow } } \mathrm { E x t } _ { R } ^ { 1 } ( M , N ) { \overrightarrow { \longrightarrow } } \mathrm { E x t } _ { R } ^ { 1 } ( F , N ) = 0 { \longrightarrow } \cdots$，告诉我们存在一个同态 $k : K  N$ 映射到元素 $\kappa \in \mathrm { E x t } _ { R } ^ { 1 } ( M , N )$ 。   
 我们现在有一个单射 $( i , k ) : K \to F \oplus N$。设 $E$ 是商 $( F \oplus N ) / K$。证明泛射 $( \pi , 0 ) : { \cal F } \oplus { \cal N } \to { \cal M }$ 通过这个商，定义一个泛射 $E \twoheadrightarrow M$ 。   
 证明自然单射 $N \cong 0 \oplus N \hookrightarrow F \oplus N$ 定义一个单射 $N \hookrightarrow E$，将 $N$ 与 $E \to M$ 的核识别。   
 我们设 $e ( \kappa )$ 是扩展
@@ -21287,7 +21301,7 @@ $$
 
 我们已获得的。证明程序中的不同选择会导致同构扩展。• 证明 $e \big ( \boldsymbol { \epsilon } ( \boldsymbol { \mathcal { E } } ) \big )$ 与 $\mathcal { E } ^ { \circ }$ 同构，并且 $\epsilon ( e ( \boldsymbol { \kappa } ) ) = \kappa$ 。
 
-结果是，$\mathrm { E x t } _ { R } ^ { 1 } ( M , N )$ 与 $M$ 通过 $N$ 的扩层的同构类之间存在自然的双射。因此得名。“更高”的 $\mathrm { E x t } _ { R } ^ { i }$ $i > 1$ ) 也可以类似处理：例如，$\mathrm { E x t } _ { R } ^ { 2 } ( M , N )$ 可以通过分析由正合序列组成的两步扩层来研究
+结果是，$\mathrm { E x t } _ { R } ^ { 1 } ( M , N )$ 与 $M$ 通过 $N$ 的扩层的同构类之间存在自然的双射。因此得名。“更高”的 $\mathrm { E x t } _ { R } ^ { i }$ $i > 1$ ) 也可以类似处理：例如，$\mathrm { E x t } _ { R } ^ { 2 } ( M , N )$ 可以通过分析由正合列组成的两步扩层来研究
 
 $$
 0 \longrightarrow N \longrightarrow E _ { 1 } \longrightarrow E _ { 2 } \longrightarrow M \longrightarrow 0 ,
@@ -21309,7 +21323,7 @@ $$
 
 我不完全确定。这个教学工具具有强大的理论支持，由Freyd-Mitchell嵌入定理提供：每个小阿贝尔范畴都与某个（不一定交换的）环上的左模范畴的一个全子范畴等价。然而，我相信接触纯粹的“箭头理论”论证本质上是有益的，读者应该有机会体验这种推理方式。无论如何，我不喜欢仅仅要求读者相信“以下大部分内容在更一般的情况下也适用”，而没有提供一些证据来支持这一事实。
 
-因此，在进入同调代数之前，我们将花一点时间来研究阿贝尔范畴；这将在本章的前两节中完成，对于急躁的读者来说，他们可能可以跳过这些内容而不会受到太大伤害。虽然我们不会证明弗雷德-米切尔嵌入定理，但我将为我们能够通过处理“元素”（例如，检查一个图是否是可换的，或者给定的序列是否是正合的）来进行图追提供坚实的基础。证明这一点将让我们在处理箭头理论论证方面得到很好的练习；一旦我们完成了它，我们确实可以使用传统的“元素理论”论证来发展同调代数，并且可以相对安心地进行。
+因此，在进入同调代数之前，我们将花一点时间来研究阿贝尔范畴；这将在本章的前两节中完成，对于急躁的读者来说，他们可能可以跳过这些内容而不会受到太大伤害。虽然我们不会证明弗雷德-米切尔嵌入定理，但我将为我们能够通过处理“元素”（例如，检查一个图是否是可换的，或者给定的序列是否是正合的）来进行追图提供坚实的基础。证明这一点将让我们在处理箭头理论论证方面得到很好的练习；一旦我们完成了它，我们确实可以使用传统的“元素理论”论证来发展同调代数，并且可以相对安心地进行。
 
 至于同调代数本身，我的总体指导原则将是寻找“同调（上同调）的本质”：在一个复形（参见$S$ III.7）中，哪些信息真正负责其同调。这将促进本章大多数构造，包括导出函子。贯穿本章的指导灯塔是导出范畴的概念：我不会在完全普遍的意义下构造导出范畴，但读者应该仍然对它们有一个基本理解。这种妥协的一个原因是，我觉得深入研究三角范畴会使我们走得太远；它们仅在章节的末尾被顺便提及。平衡Tor和Ext将促进双复形的引入，而这些反过来又将在最后一节中促进对谱序列的简要处理。
 
@@ -21326,7 +21340,7 @@ $$
 • 即使有核和余核，单态射不一定是核（非正规子群不是核：记住§II.7.6），满态射不一定是余核（在Ring中$\mathbb { Z } \to \mathbb { Q }$的注入是满态射；参见§III.2.3）。   
 • 一个映射可以是单态射和满态射，但不一定是同构（再次是Ring，同一个例子）。
 
-同调代数将广泛涉及核、余核、短 正合序列等：$\mathrm { \ S I I I . 7 }$ 中涵盖的内容将作为我们的起点。这些内容是为环 $R$ 上的（左）模范畴 $R$ -Mod 开发的，对于该范畴，上述所有烦人之处都不会发生：在 $R$ -Mod 中，每个满射都是余核，一个映射是同构当且仅当它是单射和满射，存在零对象（即既是始对象也是终对象），等等。
+同调代数将广泛涉及核、余核、短正合列等：$\mathrm { \ S I I I . 7 }$ 中涵盖的内容将作为我们的起点。这些内容是为环 $R$ 上的（左）模范畴 $R$ -Mod 开发的，对于该范畴，上述所有烦人之处都不会发生：在 $R$ -Mod 中，每个满射都是余核，一个映射是同构当且仅当它是单射和满射，存在零对象（即既是始对象也是终对象），等等。
 
 “加性”和“阿贝尔”范畴提取了保证不会发生上述病理现象的几个关键属性。在这样的范畴中工作感觉相当像在 $R$ -Mod 中工作，因为所有预期的核和余核的性质都成立。Freyd-Mitchell 嵌入定理（参见 §2.4）将提供一个支持这一心理事实的数学理由。
 
@@ -21461,7 +21475,7 @@ $$
 如果$\varphi : A \to B$是一个其核为0的态射，那么$\varphi$是其余核的核；   
 • 如果$\psi : B \to C$是一个其余核为0的态射，那么$\psi$是其核的余核。
 
-这是一个关于阿贝尔范畴定义的流行等价重述。最后两个要求应该让人联想到正合序列
+这是一个关于阿贝尔范畴定义的流行等价重述。最后两个要求应该让人联想到正合列
 
 $$
 0 \longrightarrow A \xrightarrow { \varphi } B \xrightarrow { \psi } C \xrightarrow { \psi } 0
@@ -21791,7 +21805,7 @@ $$
 ## 2. 在阿贝尔范畴中工作
 
 ### 2.1. 交换范畴中的正合性
-既然我们在任何交换范畴中都有了图像的明确概念，我们就可以形式化“正合序列”的意义。考虑一个交换范畴中的对象和态射序列：
+既然我们在任何交换范畴中都有了图像的明确概念，我们就可以形式化“正合列”的意义。考虑一个交换范畴中的对象和态射序列：
 
 $$
 \cdots { \xrightarrow { } } A { \xrightarrow { \varphi } } B { \xrightarrow { \psi } } C { \xrightarrow { } } \cdots .
@@ -21821,7 +21835,7 @@ $$
 
 当且仅当 $\varphi$ 是一个同构时，这是正合的。
 
-示例 2.1。存在一个自然的正合序列
+示例 2.1。存在一个自然的正合列
 
 $$
 0 \longrightarrow A \longrightarrow A \oplus B \longrightarrow B \longrightarrow 0
@@ -21898,7 +21912,7 @@ $$
 
 这里有一个更快的证明（对于那些已经完成作业的人来说）：如果 $\varphi$ 是一个满射，那么 $A \oplus B \to C$ 是一个满射，因此这个图既是拉回也是推出（例子 2.2）。根据练习 1.16，$\mathrm { c o k e r } \varphi ^ { \prime } = \mathrm { c o k e r } \varphi = 0$；因此 $\varphi ^ { \prime }$ 是一个满射。读者现在应该没有困难去证明与引理 2.3 对偶的命题，对于纤维积（练习 2.2）。
 
-回顾蛇形引理，从一个连接两个在阿贝尔范畴中的正合序列的交换图开始：
+回顾蛇形引理，从一个连接两个在阿贝尔范畴中的正合列的交换图开始：
 
 $$
 \begin{array} { l l } { { 0 \longrightarrow L _ { 1 } \xrightarrow { \alpha _ { 1 } } \ M _ { 1 } \xrightarrow { \beta _ { 1 } } N _ { 1 } \longrightarrow 0 } } \\ { { \qquad \downarrow \atop { 0 \longrightarrow L _ { 0 } \xrightarrow { \alpha _ { 0 } } \ M _ { 0 } \xrightarrow { \mu } \ M _ { 0 } } \ M _ { 1 } \xrightarrow { \nu _ { 1 } } \ N _ { 0 } \xrightarrow { \qquad \alpha _ { 1 } } 0 } } \end{array}
@@ -21991,7 +22005,7 @@ $$
 
 也许令人惊讶的是，有一种方法可以解决这个问题。
 
-作为初步说明，回想在遥远的过去（示例I.3.8）我们考虑了“带基点的集合”的范畴${ \mathsf { S e t } } ^ { * }$，其对象由带有选择一个特殊点的集合组成（在这里我将特殊点记为0）。我们遇到的所有代数结构都是带基点的集合，并且往往有多种方式：例如，去掉交换群的所有结构，只保留其支撑集合和单位元的选择，就留下了一个带基点的集合（换句话说，这定义了一个明显的忘记映射函子$\mathsf { A b } \to \mathsf { S e t } ^ { * }$）。范畴${ \mathsf { S e t } } ^ { * }$有一个零对象0（单元素集合$\{ 0 \}$）；因此我们可以谈论${ \mathsf { S e t } } ^ { * }$中的“零同态”。此外，范畴${ \mathsf { S e t } } ^ { * }$具有足够结构来理解“带基点的集合的正合序列”的概念：我们可以规定
+作为初步说明，回想在遥远的过去（示例I.3.8）我们考虑了“带基点的集合”的范畴${ \mathsf { S e t } } ^ { * }$，其对象由带有选择一个特殊点的集合组成（在这里我将特殊点记为0）。我们遇到的所有代数结构都是带基点的集合，并且往往有多种方式：例如，去掉交换群的所有结构，只保留其支撑集合和单位元的选择，就留下了一个带基点的集合（换句话说，这定义了一个明显的忘记映射函子$\mathsf { A b } \to \mathsf { S e t } ^ { * }$）。范畴${ \mathsf { S e t } } ^ { * }$有一个零对象0（单元素集合$\{ 0 \}$）；因此我们可以谈论${ \mathsf { S e t } } ^ { * }$中的“零同态”。此外，范畴${ \mathsf { S e t } } ^ { * }$具有足够结构来理解“带基点的集合的正合列”的概念：我们可以规定
 
 $$
 \cdots { \xrightarrow { } } S { \xrightarrow { \ f \ } } T { \xrightarrow { \ g \ } } U { \xrightarrow { \ } } \cdots 
@@ -22343,7 +22357,7 @@ $$
 
 交换。由此产生的序列 $K ^ { \bullet }$ ，${ \cal C } ^ { \bullet }$ 立即被检查为复形，并且集合 $\ker \alpha ^ { 2 } : K ^ { \imath }  M ^ { \imath }$ ，$\mathrm { c o k e r } \alpha ^ { i } : N ^ { i }  C ^ { i }$ 给出复形 $\ker \alpha ^ { \bullet }$ ，$\operatorname { c o k e r } \alpha ^ { \bullet }$ 的态射，满足 C(A) 中核和余核的泛性质。读者将使用 A 中这种情况的事实来检查 ${ \mathsf { C } } ( \mathsf { A } )$ 中的每个单射都是核，每个满射都是余核。
 
-因此，我们有一种从旧范畴中构造新阿贝尔类的方法。新范畴 $\mathsf C ( A )$ 是研究 A 中对象解的研究的自然起点，并且它配备了每个阿贝尔范畴中可用的相同的一般工具包：我们可以谈论复形的正合序列，我们有复形 态射的典范分解等等。复形序列
+因此，我们有一种从旧范畴中构造新阿贝尔类的方法。新范畴 $\mathsf C ( A )$ 是研究 A 中对象解的研究的自然起点，并且它配备了每个阿贝尔范畴中可用的相同的一般工具包：我们可以谈论复形的正合列，我们有复形 态射的典范分解等等。复形序列
 
 $$
 \cdot \cdot \cdot \longrightarrow L ^ { \bullet } \longrightarrow M ^ { \bullet } \longrightarrow N ^ { \bullet } \longrightarrow \cdot \cdot \cdot
@@ -22438,13 +22452,13 @@ $$
 { \cal L } ^ { \bullet } : \quad \cdots \longrightarrow 0 \longrightarrow { \cal L } ^ { 0 } \longrightarrow { \cal L } ^ { 1 } \longrightarrow 0 \longrightarrow \cdots ,
 $$
 
-$M ^ { \bullet }$ ，$N ^ { \bullet }$ 。交换图不过是（非常特殊）复形的一个短 正合序列的 datum：
+$M ^ { \bullet }$ ，$N ^ { \bullet }$ 。交换图不过是（非常特殊）复形的一个短正合列的 datum：
 
 $$
 0 \longrightarrow L ^ { \bullet } \longrightarrow M ^ { \bullet } \longrightarrow N ^ { \bullet } \longrightarrow 0 \ .
 $$
 
-蛇形引理告诉我们，那么在 A 中存在一个正合序列：
+蛇形引理告诉我们，那么在 A 中存在一个正合列：
 
 $$
 \begin{array} { l } { { 0 \longrightarrow H ^ { 0 } ( L ^ { \bullet } ) \longrightarrow H ^ { 0 } ( M ^ { \bullet } ) \longrightarrow H ^ { 0 } ( N ^ { \bullet } ) } } \\ { { \longrightarrow \qquad \biggr . } } \\ { { \longrightarrow H ^ { 1 } ( L ^ { \bullet } ) \longrightarrow H ^ { 1 } ( M ^ { \bullet } ) \longrightarrow H ^ { 1 } ( N ^ { \bullet } ) \longrightarrow 0 . } } \end{array}
@@ -22464,7 +22478,7 @@ $$
 
 我们在 §III.7.3 中检查过，对于 $M ^ { 0 }$ 中的 ${ n }$ 选择不同的前像，虽然它可能会改变元素 $\ell$，但不会改变它在 $\mathrm { c o k e r } ( \lambda _ { 0 } )$ 中的像。因此 $\delta$ 是良定义的。正如我们在 §2.2 中所见，提供这个构造的箭头理论版本相对直接；但我们已经看到（定理 2.9），我们不需要这样做，所以我在接下来的内容中将坚持使用元素。
 
-现在我们将升级这个结构，看起来是一个非常自然的发展。事实上，我们即将做的事情可以被吸收到蛇形引理本身（参见练习3.10）；但我一直觉得“展开”的追索很有说服力，所以这里它来了。取任何在${ \mathsf { C } } ( { \mathsf { A } } )$中的短 正合序列，
+现在我们将升级这个结构，看起来是一个非常自然的发展。事实上，我们即将做的事情可以被吸收到蛇形引理本身（参见练习3.10）；但我一直觉得“展开”的追索很有说服力，所以这里它来了。取任何在${ \mathsf { C } } ( { \mathsf { A } } )$中的短正合列，
 
 $$
 0 \longrightarrow L ^ { \bullet } \longrightarrow M ^ { \bullet } \longrightarrow N ^ { \bullet } \longrightarrow 0 \ ,
@@ -22518,7 +22532,7 @@ $$
 H ^ { i } ( L ^ { \bullet } ) \longrightarrow H ^ { i } ( M ^ { \bullet } ) \longrightarrow H ^ { i } ( N ^ { \bullet } )
 $$
 
-对于每个 $i$。请注意，在左侧和右侧填充0并不能通常给出A中的短 正合序列（练习3.8）。换句话说，即使，正如我们将看到的，同调序列在 $H ^ { i } ( M ^ { \bullet } )$ 处是 正合的，第 $i$ 个同调不是 正合函数。理解函数 $H ^ { \tau }$ 的 exactness 和 exactness 失败，从某种意义上说，正是这次讨论的全部内容。
+对于每个 $i$。请注意，在左侧和右侧填充0并不能通常给出A中的短正合列（练习3.8）。换句话说，即使，正如我们将看到的，同调序列在 $H ^ { i } ( M ^ { \bullet } )$ 处是 正合的，第 $i$ 个同调不是 正合函数。理解函数 $H ^ { \tau }$ 的 exactness 和 exactness 失败，从某种意义上说，正是这次讨论的全部内容。
 
 连同连接态射，我们在A中得到一个“长序列”的对象和态射，
 
@@ -22528,11 +22542,11 @@ $$
 
 推广在蛇形引理中得到的 $H ^ { 0 }$ 和 $H ^ { 1 }$ 序列。细心的读者应该一直都能预见到下一个结果：
 
-定理 3.5（长正合同调序列）。由一个短 正合序列 of complexes 所确定的序列是一个 正合序列。
+定理 3.5（长正合同调序列）。由一个短正合列 of complexes 所确定的序列是一个 正合列。
 
 蛇形引理是这个陈述的一个特例（或者反过来，取决于你的喜好；参见练习3.10）。
 
-证明。该证明是一个图追，每个人都应该在一生中亲自执行一次。因此，它基本上留给读者作为练习（练习3.9）。但我将强调$H ^ { i }$在多大程度上是“直接”正合的：本定理中的部分断言是，如果
+证明。该证明是一个追图，每个人都应该在一生中亲自执行一次。因此，它基本上留给读者作为练习（练习3.9）。但我将强调$H ^ { i }$在多大程度上是“直接”正合的：本定理中的部分断言是，如果
 
 $$
 0 \longrightarrow L ^ { \bullet } \xrightarrow { \alpha ^ { \bullet } } M ^ { \bullet } \xrightarrow { \beta ^ { \bullet } } N ^ { \bullet } \xrightarrow { } 0
@@ -22557,19 +22571,19 @@ $$
 验证其他地方的准确性同样令人不感兴趣，留给读者19。$\square$
 
 ### 3.4. 三角形
-有一种美观的方式来说明我们刚刚证明的内容，这最终提供了一个有用的视角。考虑一个短 正合序列，
+有一种美观的方式来说明我们刚刚证明的内容，这最终提供了一个有用的视角。考虑一个短正合列，
 
 $$
 0 \longrightarrow L ^ { \bullet } \longrightarrow M ^ { \bullet } \longrightarrow N ^ { \bullet } \longrightarrow 0 \ ;
 $$
 
-在§3.3中得到的长的正合序列中的意外元素是，在取上同调并允许位移后，我们可以以有趣的方式将 $N ^ { \bullet }$ 连接到 $L ^ { \bullet }$。好吧，如果我们愿意接受不那么有趣的结果，我们可以立即通过在 $L ^ { \bullet }$ 内将 $N ^ { \bullet }$ 映射到0来将 $N ^ { \bullet }$ 连接到 $L ^ { \bullet }$。
+在§3.3中得到的长的正合列中的意外元素是，在取上同调并允许位移后，我们可以以有趣的方式将 $N ^ { \bullet }$ 连接到 $L ^ { \bullet }$。好吧，如果我们愿意接受不那么有趣的结果，我们可以立即通过在 $L ^ { \bullet }$ 内将 $N ^ { \bullet }$ 映射到0来将 $N ^ { \bullet }$ 连接到 $L ^ { \bullet }$。
 
 $$
 N ^ { \bullet } \longrightarrow L ^ { \bullet } \ .
 $$
 
-原始短 正合序列的正合性，然后等效于三个更短序列中心的正合性：
+原始短正合列的正合性，然后等效于三个更短序列中心的正合性：
 
 $$
 \begin{array} { l c r } { { N ^ { \bullet } \xrightarrow { 0 } \displaystyle { L ^ { \bullet } } \longrightarrow \large L ^ { \bullet } \xrightarrow { } M ^ { \bullet } , } } \\ { { L ^ { \bullet } \xrightarrow { } M ^ { \bullet } \qquad \longrightarrow N ^ { \bullet } , } } \\ { { M ^ { \bullet } \xrightarrow { } N ^ { \bullet } \qquad \hfill ^ { 0 } \xrightarrow { 0 } \large L ^ { \bullet } . } } \end{array}
@@ -22589,7 +22603,7 @@ $$
 \cdots { \xrightarrow { } } N ^ { i - 1 } { \xrightarrow { \quad 0 \quad } } L ^ { i } { \xrightarrow { \quad } } M ^ { i } { \xrightarrow { \quad \quad } } N ^ { i } { \xrightarrow { \quad 0 \quad } } L ^ { i + 1 } { \xrightarrow { \quad \quad } } \cdots ,
 $$
 
-其正合度与原始复序列的正合度完全相同。在 §3.3 中，我们从这得到了另一个长正合序列。
+其正合度与原始复序列的正合度完全相同。在 §3.3 中，我们从这得到了另一个长正合列。
 
 $$
 \cdots { \longrightarrow } H ^ { i - 1 } ( N ^ { \bullet } ) { \xrightarrow { \delta ^ { i - 1 } } } H ^ { i } ( L ^ { \bullet } ) { \longrightarrow } H ^ { i } ( M ^ { \bullet } ) { \longrightarrow } H ^ { i } ( N ^ { \bullet } ) { \xrightarrow { \delta ^ { i } } } H ^ { i + 1 } ( L ^ { \bullet } ) \longrightarrow \cdots ,
@@ -22601,13 +22615,13 @@ $$
 
 这次标记为 $+ 1$ 的同态是有趣的连接同态（而同调复形中的同态为零；参见 §3.2 的末尾）。
 
-因此，“长正合同调序列”将我们从一个正合三角形带到另一个正合三角形。第一个三角形来自复形的短正合序列（“连接同态”是 $0$ ），而第二个不是（连接同态通常是 nonzero）。
+因此，“长正合同调序列”将我们从一个正合三角形带到另一个正合三角形。第一个三角形来自复形的短正合列（“连接同态”是 $0$ ），而第二个不是（连接同态通常是 nonzero）。
 
-显然正在发生一些有趣的事情。从${ \mathsf { C } } ( { \mathsf { A } } )$中的复形短 正合序列得到的三角形似乎具有“特殊”性质，并通过同调产生其他 正合三角形。
+显然正在发生一些有趣的事情。从${ \mathsf { C } } ( { \mathsf { A } } )$中的复形短正合列得到的三角形似乎具有“特殊”性质，并通过同调产生其他 正合三角形。
 
-实际上，情况可能会让读者感到有些不舒服。虽然同调三角形的两边是通过在同调函子作用于原始三角形的相应边来获得的，但第三边是通过一个不同的过程获得的，涉及连接同态。读者可能会觉得应该有一个机制，可以通过简单地应用同调函子，从一个通过正合序列定义的三角形到其同调对应物。
+实际上，情况可能会让读者感到有些不舒服。虽然同调三角形的两边是通过在同调函子作用于原始三角形的相应边来获得的，但第三边是通过一个不同的过程获得的，涉及连接同态。读者可能会觉得应该有一个机制，可以通过简单地应用同调函子，从一个通过正合列定义的三角形到其同调对应物。
 
-这确实如此。在范畴 ${ \mathsf { K } } ( { \mathsf { A } } )$ 中有一个重要的“杰出”三角形的观念，它与 ${ \mathsf { C } } ( \mathsf { A } )$ 密切相关，我们将在后面遇到 $^ { 2 1 }$ (§5)。与上面给出的“特殊”三角形一样，杰出三角形会导致同调中的长正合序列，并且以一种更直接的方式。杰出三角形满足一些公理，这些公理定义了 ${ \mathsf { K } } ( { \mathsf { A } } )$ 作为带三角范畴。在本书的范围内，深入探讨这些概念远远超出了范围，但在本章的末尾，我将尝试澄清这些最后的晦涩的评论（§9.2）。
+这确实如此。在范畴 ${ \mathsf { K } } ( { \mathsf { A } } )$ 中有一个重要的“杰出”三角形的观念，它与 ${ \mathsf { C } } ( \mathsf { A } )$ 密切相关，我们将在后面遇到 $^ { 2 1 }$ (§5)。与上面给出的“特殊”三角形一样，杰出三角形会导致同调中的长正合列，并且以一种更直接的方式。杰出三角形满足一些公理，这些公理定义了 ${ \mathsf { K } } ( { \mathsf { A } } )$ 作为带三角范畴。在本书的范围内，深入探讨这些概念远远超出了范围，但在本章的末尾，我将尝试澄清这些最后的晦涩的评论（§9.2）。
 
 ### 习题
 
@@ -22623,7 +22637,7 @@ $$
 
 3.3. $\triangleright$ 验证在交换范畴中，§3.2中定义的共链复形的范畴C(A)本身也是一个交换范畴。（你可以手动完成，或者应用练习3.2和2.14。）[§3.2]
 
-3.4. $\neg$ 设 A 是一个阿贝尔范畴。定义一个范畴 ${ \mathsf { S e q } } ( \mathsf { A } )$，其对象是 $\mathsf { A }$ 中的短 正合序列，其中同态是交换图
+3.4. $\neg$ 设 A 是一个阿贝尔范畴。定义一个范畴 ${ \mathsf { S e q } } ( \mathsf { A } )$，其对象是 $\mathsf { A }$ 中的短正合列，其中同态是交换图
 
 ![](images/194.jpg)
 
@@ -22646,11 +22660,11 @@ $$
 
 3.6. 提供一个基于箭头理论的引理 3.4 的证明（参见注释 3.1）。
 
-3.7. 设 A, $\textsf { B }$ 是阿贝尔范畴。一个加性函子 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ 是正合的，如果它将 $\mathsf { A }$ 中的短 正合序列映射到 $\textsf { B }$ 中的短 正合序列。证明正合函子与上同调相容：如果 $\mathcal { F }$ 是正合的，且 $L ^ { \bullet }$ 是 $\mathsf { A }$ 中的一个上链复形，那么 $H ^ { \bullet } ( { \mathcal { F } } ( L ^ { \bullet } ) ) \cong { \mathcal { F } } ( H ^ { \bullet } ( L ^ { \bullet } ) )$ ，其中 $\mathcal { F } ( L ^ { \bullet } )$ 表示通过将 $\mathcal { F }$ 应用于 $L ^ { \bullet }$ 中的所有对象和态射在 $\textsf { B }$ 中得到的上链复形。
+3.7. 设 A, $\textsf { B }$ 是阿贝尔范畴。一个加性函子 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ 是正合的，如果它将 $\mathsf { A }$ 中的短正合列映射到 $\textsf { B }$ 中的短正合列。证明正合函子与上同调相容：如果 $\mathcal { F }$ 是正合的，且 $L ^ { \bullet }$ 是 $\mathsf { A }$ 中的一个上链复形，那么 $H ^ { \bullet } ( { \mathcal { F } } ( L ^ { \bullet } ) ) \cong { \mathcal { F } } ( H ^ { \bullet } ( L ^ { \bullet } ) )$ ，其中 $\mathcal { F } ( L ^ { \bullet } )$ 表示通过将 $\mathcal { F }$ 应用于 $L ^ { \bullet }$ 中的所有对象和态射在 $\textsf { B }$ 中得到的上链复形。
 
 特别是，通过一个正合的函子得到的正合复形的图像仍然是一个正合复形（参见习题VIII.1.23）。
 
-3.8. $\triangleright$ 对于任意 $i$，给出一个复形上的短 正合序列的例子
+3.8. $\triangleright$ 对于任意 $i$，给出一个复形上的短正合列的例子
 
 $$
 0 \longrightarrow L ^ { \bullet } \longrightarrow M ^ { \bullet } \longrightarrow N ^ { \bullet } \longrightarrow 0
@@ -22674,7 +22688,7 @@ $$
 
 现在作为蛇形引理的结果，推导出整个长正合同调序列。（你将使用在备注III.7.11中给出的蛇形引理版本。）[§3.3, 3.13]
 
-3.11. $\neg$ 证明长正合同调序列是函子的，即它定义了一个从短正合序列范畴 ${ \mathsf { S e q } } ( { \mathsf { C } } ( { \mathsf { A } } ) )$（参见练习 3.4）到复形范畴的协变函子。[7.13]
+3.11. $\neg$ 证明长正合同调序列是函子的，即它定义了一个从短正合列范畴 ${ \mathsf { S e q } } ( { \mathsf { C } } ( { \mathsf { A } } ) )$（参见练习 3.4）到复形范畴的协变函子。[7.13]
 
 3.12. 重新做练习三.7.17。
 
@@ -22687,7 +22701,7 @@ $$
 • 定义 $H(A, d)$ 为 $\ker \overline{d}$。证明 $\operatorname{coker} \overline{d} \cong H(A, d)$。
 证明 $H$ 定义了一个加法函子 $\mathsf{dA} \to \mathsf{A}$，并且这个函子一般不是正合的。
 
-• 然而，证明每个短 正合序列
+• 然而，证明每个短正合列
 
 $$
 0 \longrightarrow ( A , d _ { A } ) \longrightarrow ( B , d _ { B } ) \longrightarrow ( C , d _ { C } ) \longrightarrow 0 \nonumber
@@ -22697,11 +22711,11 @@ $$
 
 ![](images/195.jpg)
 
-3.14. $\triangleright$ 证明：如果一个由短 正合序列的复形（如 §3.4 所述）产生的“特殊”三角形的某个顶点是 正合的，那么另外两个顶点的同调具有同构，可能存在一个位移。[§4.1]
+3.14. $\triangleright$ 证明：如果一个由短正合列的复形（如 §3.4 所述）产生的“特殊”三角形的某个顶点是 正合的，那么另外两个顶点的同调具有同构，可能存在一个位移。[§4.1]
 
 3.15. $\neg$ 定义任意阿贝尔范畴 A 的“格罗滕迪克群”和“泛欧拉特征” $\chi$，按照 § VI.3.4 中给出的构造方式。
 
-将 $\chi$ 扩展到 $\mathsf { A }$ 中所有有界上链复形 $M ^ { \bullet }$ 上，通过设置 $\chi ( M ^ { \bullet } ) : =$ $\textstyle \sum _ { i } ( - 1 ) ^ { \iota } \chi ( M ^ { \iota } )$ 。证明 $\chi ( M ^ { \bullet } ) = \chi ( H ^ { \bullet } ( M ^ { \bullet } ) )$ 。对于有界复形的短 正合序列 $0 \to L ^ { \bullet } \to M ^ { \bullet } \to N ^ { \bullet } \to 0$，证明 $\chi ( { \cal M } ^ { \bullet } ) = \chi ( { \cal L } ^ { \bullet } ) +$ $\chi ( N ^ { \bullet } )$ 。[4.3, 9.1]
+将 $\chi$ 扩展到 $\mathsf { A }$ 中所有有界上链复形 $M ^ { \bullet }$ 上，通过设置 $\chi ( M ^ { \bullet } ) : =$ $\textstyle \sum _ { i } ( - 1 ) ^ { \iota } \chi ( M ^ { \iota } )$ 。证明 $\chi ( M ^ { \bullet } ) = \chi ( H ^ { \bullet } ( M ^ { \bullet } ) )$ 。对于有界复形的短正合列 $0 \to L ^ { \bullet } \to M ^ { \bullet } \to N ^ { \bullet } \to 0$，证明 $\chi ( { \cal M } ^ { \bullet } ) = \chi ( { \cal L } ^ { \bullet } ) +$ $\chi ( N ^ { \bullet } )$ 。[4.3, 9.1]
 
 ## 4. 锥和同伦
 
@@ -22728,9 +22742,9 @@ $$
 H ^ { i + 1 } ( L ^ { \bullet } ) = H ^ { i } ( L [ 1 ] ^ { \bullet } ) \longrightarrow H ^ { i + 1 } ( M ^ { \bullet } )
 $$
 
-那么，我断言，这无非是由给定的 态射 $\alpha ^ { \bullet }$ 在同调中诱导的 态射。因此，在同调中诱导的 态射 不能被扩展到短 正合序列s（那显然是要求太高），但它们可以被扩展
+那么，我断言，这无非是由给定的 态射 $\alpha ^ { \bullet }$ 在同调中诱导的 态射。因此，在同调中诱导的 态射 不能被扩展到短正合列s（那显然是要求太高），但它们可以被扩展
 
-应用于适当的复形正合序列而产生的三角形。
+应用于适当的复形正合列而产生的三角形。
 
 顺便说，上面显示的三角形（†）（但度数递增的态射被替换为$- \alpha ^ { \bullet }$）将是§3.4中提到的“著名三角形”的原型（参见§9.2）。
 
@@ -22845,9 +22859,9 @@ $$
 
 这些导出范畴回答了我们策略背后的主要问题，即在一个复形中“什么”决定了其上同调：答案在于将复形置于适当的导出范畴中。$\mathsf { D } ( \mathsf { A } )$ 的构造大致包括取与 ${ \mathsf { C } } ( \mathsf { A } )$ 相同的对象，并形式地反转准同构。这一构造的细节较为复杂，最好留给更高级的教材。但在幸运的情况下（当阿贝尔范畴具有“足够的单射”或“足够的项目”时；参见定义 5.7），我们将在本书中捕捉其精髓。
 
-导出的范畴有着不幸的声誉，被认为是一个过于抽象的概念，并且存在基本的问题，即它是否真的是对同调进行抽象研究的最佳方法。这部分是因为阿贝尔范畴的导出范畴不是一个阿贝尔范畴，并且像核、余核、短 正合序列这样的基本概念在 $\mathsf { D } ( \mathsf { A } )$ 中不可用。这给理论增加了相当大的一层复杂性。
+导出的范畴有着不幸的声誉，被认为是一个过于抽象的概念，并且存在基本的问题，即它是否真的是对同调进行抽象研究的最佳方法。这部分是因为阿贝尔范畴的导出范畴不是一个阿贝尔范畴，并且像核、余核、短正合列这样的基本概念在 $\mathsf { D } ( \mathsf { A } )$ 中不可用。这给理论增加了相当大的一层复杂性。
 
-另一方面，越过这些困难，人们发现仍然有足够的结构可以进行大量的同调代数：D(A)中的对象具有上同调，并且存在“特殊三角形”（参见§3.4），它们抽象出短 正合序列并给出长 正合上同调序列。导出范畴是一个三角范畴，就像我们即将定义的更易于管理的同伦范畴 ${ \mathsf { K } } ( { \mathsf { A } } )$。它的应用超出了代数甚至数学的范围：理解弦理论中“D-branes”的一种方法基于导出范畴。
+另一方面，越过这些困难，人们发现仍然有足够的结构可以进行大量的同调代数：D(A)中的对象具有上同调，并且存在“特殊三角形”（参见§3.4），它们抽象出短正合列并给出长 正合上同调序列。导出范畴是一个三角范畴，就像我们即将定义的更易于管理的同伦范畴 ${ \mathsf { K } } ( { \mathsf { A } } )$。它的应用超出了代数甚至数学的范围：理解弦理论中“D-branes”的一种方法基于导出范畴。
 
 要了解 $\mathsf { D } ( \mathsf { A } )$ 必须是多么反直觉，请注意零同态 $0 : M ^ { \bullet }  M ^ { \bullet }$ 很可能是一个拟同构：事实上，当 $M ^ { \bullet }$ 是正合时，情况正是如此。好吧，在任何上述的范畴 $\mathsf { D }$ 中（特别是 在导范畴 $\mathsf { D } ( \mathsf { A } )$ 中），这个零同态仍然是零同态，但当它是拟同构时，它配备了逆元。因此，在导范畴中，涉及非零对象的复形的零同态很可能是可以逆的！这表明在 ${ \mathsf { C } } ( \mathsf { A } )$ 中非零的复形在导范畴中可能变成零对象。
 
@@ -23048,13 +23062,13 @@ $$
 
 4.11. $\neg$ 在拓扑学中，映射锥可以通过将 $X \times 0$ 收缩到映射筒中的一个点来获得（参见习题 4.9 和 §4.1 中给出的映射锥的描述）。
 
-在代数版本中，这种收缩相当于对 $M C y l ( \alpha ) ^ { \bullet }$ 的第一个分量取模。对于共链映射 $\alpha ^ { \bullet } : L ^ { \bullet }  M ^ { \bullet }$ ，证明存在一个共链复形的正合序列
+在代数版本中，这种收缩相当于对 $M C y l ( \alpha ) ^ { \bullet }$ 的第一个分量取模。对于共链映射 $\alpha ^ { \bullet } : L ^ { \bullet }  M ^ { \bullet }$ ，证明存在一个共链复形的正合列
 
 $$
 0 \longrightarrow L ^ { \bullet } \longrightarrow \cal M C y l ( \alpha ) ^ { \bullet } \longrightarrow \cal M C ( \alpha ) ^ { \bullet } \longrightarrow 0 \ .
 $$
 
-4.12. $\neg$ 如练习4.9中的符号（特别是，对于一个上链同态$\alpha ^ { \bullet } : L ^ { \bullet }  M ^ { \bullet }$），证明存在一个上链复形的正合序列
+4.12. $\neg$ 如练习4.9中的符号（特别是，对于一个上链同态$\alpha ^ { \bullet } : L ^ { \bullet }  M ^ { \bullet }$），证明存在一个上链复形的正合列
 
 $$
 0 \longrightarrow M ^ { \bullet } \longrightarrow { \cal M } C y l ( \alpha ) ^ { \bullet } \longrightarrow { \cal M } C ( \mathrm { i d } _ { L } \bullet ) ^ { \bullet } \longrightarrow 0 \ .
@@ -23477,7 +23491,7 @@ $$
 
 5.4. $\triangleright$ 将练习 VIII.6.4 和 VIII.6.15 升级为任意阿贝尔范畴的对象。[5.9, 6.3, §7.4]
 
-5.5. $\triangleright$ 设 $F ^ { \prime }$ 是一个非平凡的有限阿贝尔群。证明存在有限阿贝尔群的正合序列
+5.5. $\triangleright$ 设 $F ^ { \prime }$ 是一个非平凡的有限阿贝尔群。证明存在有限阿贝尔群的正合列
 
 $$
 0  A _ { 1 }  A _ { 2 }  F  0 , \quad 0  F  B _ { 1 }  B _ { 2 }  0
@@ -23527,7 +23541,7 @@ $$
 \cdot \cdot \cdot { \longrightarrow } 0 \longrightarrow K \longrightarrow M \longrightarrow N \longrightarrow 0 \longrightarrow \cdots .
 $$
 
-证明 $N ^ { \bullet }$ 是正合的并且在某种意义上分裂（类似于在 $S$ III.7.2 中对模给出的定义），当且仅当 $\mathrm { i d } _ { N }$ • 同伦于 0（参见命题 III.7.5）。由此推出每个加性函子将分裂正合序列映射到分裂正合序列。
+证明 $N ^ { \bullet }$ 是正合的并且在某种意义上分裂（类似于在 $S$ III.7.2 中对模给出的定义），当且仅当 $\mathrm { i d } _ { N }$ • 同伦于 0（参见命题 III.7.5）。由此推出每个加性函子将分裂正合列映射到分裂正合列。
 
 更一般地，设 $N ^ { \bullet }$ 是任意一个复形。证明 id $N$ • 与 $0$ 同伦（即 $N ^ { \bullet }$ 是 §5.4 中定义的“分裂正合”）当且仅当 $N ^ { \bullet }$ 同构于形式为
 
@@ -23878,7 +23892,7 @@ $$
 
 6.6. 设 $\mathsf { A }$ 是一个阿贝尔范畴，并且为了简单起见，假设 $\mathsf { A }$ 有足够的投射。设 $\mu ^ { \bullet } : M ^ { \bullet } \to N ^ { \bullet }$ 是 ${ \mathsf { C } } ^ { - } \left( { \mathsf { A } } \right)$ 中的一个态射。证明 $\mu ^ { \bullet }$ 在 $\mathsf { D } ^ { - } ( \mathsf { A } )$ 中诱导零态射当且仅当存在一个准同构 $\lambda ^ { \bullet }$ : $L ^ { \bullet }  M ^ { \bullet }$ 在 ${ \mathsf { C } } ^ { - } \left( { \mathsf { A } } \right)$ 中，使得 $\mu ^ { \bullet } \circ \lambda ^ { \bullet }$ 同伦于零。
 
-6.7. 对于任何整数 $m > 1$，考虑短 正合序列
+6.7. 对于任何整数 $m > 1$，考虑短正合列
 
 $$
 0 \xrightarrow [ ] { } \mathbb { Z } \xrightarrow { \cdot m } \mathbb { Z } \xrightarrow [ ] { } \mathbb { Z } / m \mathbb { Z } \xrightarrow [ ] { } 0
@@ -23886,7 +23900,7 @@ $$
 
 作为 C(Ab) 的一个复形。证明这个复形的恒等态射不是同伦于零，但它诱导出在导出范畴 $D^{-}(\mathsf{Ab})$ 中的零态射。
 
-6.8. 对于任何整数 $m > 1$，考虑短 正合序列
+6.8. 对于任何整数 $m > 1$，考虑短正合列
 
 $$
 0 \xrightarrow [ ] { } \mathbb { Z } \xrightarrow { \cdot m } \mathbb { Z } \xrightarrow [ ] { } \mathbb { Z } / m \mathbb { Z } \xrightarrow [ ] { } 0
@@ -24103,18 +24117,18 @@ $$
 
 同样请注意，我们可以在任何具有足够多的单射和/或投影的阿贝尔范畴中定义Ext函子为到Ab的函子：任何阿贝尔范畴都有到Ab的左正合的同态函子$^ { 3 2 }$。
 
-### 7.4. 派生函子的长正合序列
-在第VIII章中提到的$\mathrm { T o r } _ { i }$和$\mathrm { E x t } ^ { i }$函子最显著的性质可能是它们“修复”了$\otimes$，Hom在0度上缺乏正合性的问题，即它们与这些函子在0度上保持一致，并且它们可以嵌入到长正合序列中。我在$ S$ VIII.2.4和$ S$ VIII.6.4中陈述了这些正合序列的存在性，但没有证明（除了在基底环$R$是主理想整环的情况下的说明）；现在我们准备好在派生函子的普遍背景下完全理解这些序列为何存在。
+### 7.4. 派生函子的长正合列
+在第VIII章中提到的$\mathrm { T o r } _ { i }$和$\mathrm { E x t } ^ { i }$函子最显著的性质可能是它们“修复”了$\otimes$，Hom在0度上缺乏正合性的问题，即它们与这些函子在0度上保持一致，并且它们可以嵌入到长正合列中。我在$ S$ VIII.2.4和$ S$ VIII.6.4中陈述了这些正合列的存在性，但没有证明（除了在基底环$R$是主理想整环的情况下的说明）；现在我们准备好在派生函子的普遍背景下完全理解这些序列为何存在。
 
-我将继续假设$\mathsf{A}$有足够的投射。我们将证明每个短 正合序列
+我将继续假设$\mathsf{A}$有足够的投射。我们将证明每个短正合列
 
 $$
 0 \longrightarrow L \longrightarrow M \longrightarrow N \longrightarrow 0
 $$
 
-在 $\mathsf { A }$ 中诱导出‘导出算子的长正合序列’；在第八章中遇到的 Tor 和 Ext 的序列将是特例。读者当然期望这一般事实以某种方式从长正合同调序列（定理 3.5）中得出；这位读者不会失望。
+在 $\mathsf { A }$ 中诱导出‘导出算子的长正合列’；在第八章中遇到的 Tor 和 Ext 的序列将是特例。读者当然期望这一般事实以某种方式从长正合同调序列（定理 3.5）中得出；这位读者不会失望。
 
-从更成熟的角度来看，发生的事情是导出函子符合导出范畴中“特指三角形”的顶点：正如我在§4.2中顺便提到的那样，这些三角形在同调范畴和导出范畴中扮演着正合序列的角色，而这些范畴并不恰好是阿贝尔的。特指三角形会产生长正合序列，这与在§3.3中探讨的阿贝尔情况中复形的正合序列产生的方式非常相似。
+从更成熟的角度来看，发生的事情是导出函子符合导出范畴中“特指三角形”的顶点：正如我在§4.2中顺便提到的那样，这些三角形在同调范畴和导出范畴中扮演着正合列的角色，而这些范畴并不恰好是阿贝尔的。特指三角形会产生长正合列，这与在§3.3中探讨的阿贝尔情况中复形的正合列产生的方式非常相似。
 
 由于我们没有可用的三角化范畴的设备，我们必须退回到复的普通范畴，目的是使用定理3.5。因此，关键点如下：假设$\mathsf { A }$有足够的投射，那么
 
@@ -24122,7 +24136,7 @@ $$
 0 \longrightarrow L \longrightarrow M \longrightarrow N \longrightarrow 0
 $$
 
-在 A 中是一个正合序列，我们能否安排 L、M、N 的投影解序列在 ${ \mathsf { C } } ( { \mathsf { A } } )$ 中形成一个正合序列？
+在 A 中是一个正合列，我们能否安排 L、M、N 的投影解序列在 ${ \mathsf { C } } ( { \mathsf { A } } )$ 中形成一个正合列？
 
 是的。这通常被称为“马蹄形引理”，是根据其证明中出现的主体图形状命名的。
 
@@ -24132,7 +24146,7 @@ $$
 0 \longrightarrow L \longrightarrow M \longrightarrow N \longrightarrow 0
 $$
 
-在一个具有足够投射对象的阿贝尔范畴 A 中是一个正合序列。假设 $P _ { L } ^ { \bullet }$ ， $P _ { N } ^ { \bullet }$ 分别是 L ， N 的投射解析。那么存在一个正合序列
+在一个具有足够投射对象的阿贝尔范畴 A 中是一个正合列。假设 $P _ { L } ^ { \bullet }$ ， $P _ { N } ^ { \bullet }$ 分别是 L ， N 的投射解析。那么存在一个正合列
 
 $$
 0 \longrightarrow P _ { L } ^ { \bullet } \longrightarrow P _ { M } ^ { \bullet } \longrightarrow P _ { N } ^ { \bullet } \longrightarrow 0
@@ -24140,7 +24154,7 @@ $$
 
 其中 $P _ { M } ^ { \bullet }$ 是 $M$ 的一个投射解析，在同调中诱导 ($^ *$)。
 
-通过“在同调中诱导（$^*$）”我指的是由（$^{**}$）诱导的（不是太）长的同调序列简化为$H^0$部分，因为一个解析的所有其他同调对象都消失了；将解析的零阶同调与相应的对象识别，这部分不过是原来的短 正合序列（$^*$）。
+通过“在同调中诱导（$^*$）”我指的是由（$^{**}$）诱导的（不是太）长的同调序列简化为$H^0$部分，因为一个解析的所有其他同调对象都消失了；将解析的零阶同调与相应的对象识别，这部分不过是原来的短正合列（$^*$）。
 
 证明。假设给出了图中的实部，我们的任务是填入投影对象和态射，使得所有行都是正合的，并且中间列是 $M$ 的一个解析。我断言我们可以让 $P _ { M } ^ { i } : = P _ { L } ^ { i } \oplus P _ { N } ^ { i }$；这是投影的（练习 5.4），标准态射使得每个序列
 
@@ -24174,7 +24188,7 @@ $$
 
 通过构造进行交换（注意，复合 $P _ { L } ^ { \cup } \oplus P _ { N } ^ { \cup } \to M \to N$ 在 $P _ { L } ^ { 0 }$ 因子上为 $0$，这是由顶部行的正合性决定的）。同态 $\pi _ { M }$ 是一个满态射，这是通过立即应用蛇形引理得出的。
 
-蛇形引理以及$\pi _ { L }$是满射的事实也意味着垂直映射的核形成一个正合序列，并且由于原始图中的列是正合的，我们有从-1 $P _ { L } ^ { - 1 }$和P −1到相应核的满射：
+蛇形引理以及$\pi _ { L }$是满射的事实也意味着垂直映射的核形成一个正合列，并且由于原始图中的列是正合的，我们有从-1 $P _ { L } ^ { - 1 }$和P −1到相应核的满射：
 
 $$
 \begin{array} { l c r } { { 0 \longrightarrow \mathrm { k e r } \pi _ { L } \longrightarrow \mathrm { k e r } \pi _ { M } \longrightarrow \mathrm { k e r } \pi _ { M } \longrightarrow \mathrm { k e r } \pi _ { N } \longrightarrow 0 } } \\ { { \pi _ { L } ^ { - 1 } \Bigg \uparrow } } \\ { { P _ { L } ^ { - 1 } } } \end{array}
@@ -24186,7 +24200,7 @@ $$
 
 根据蛇形引理，$P _ { L } ^ { - 1 } \oplus P _ { N } ^ { - 1 } \to \ker \pi _ { M }$ 是一个满态射，这表明在 $P _ { L } ^ { 0 } \oplus P _ { N } ^ { 0 }$ 处中心列是正合的。通过归纳继续构造 $P _ { M } ^ { \bullet }$ 如所要求。$\square$
 
-引理 7.8 告诉我们，我们可以将对象之间的正合序列提升为投影解析之间的正合序列。从本质上讲，我们希望说将 $\mathcal { S }$ 映射到 $\mathsf { A }$ 的每个对象上的投影解析的算子是“正合的”；但由于 $\mathsf { K } ( { \mathsf { A } } )$ 不是阿贝尔的，这根本不是一个选项。引理 7.8 在接近这种陈述方面尽可能地接近。事实上，从证明中给出的 $P _ { M } ^ { \bullet }$ 的构造中，很容易证明（练习 7.5）$P _ { M } ^ { \bullet }$ 是一个同态 $\rho ^ { \bullet } : { \cal P } _ { N } [ - 1 ] ^ { \bullet }  { \cal P } _ { L } ^ { \bullet }$ 的映射锥，所以
+引理 7.8 告诉我们，我们可以将对象之间的正合列提升为投影解析之间的正合列。从本质上讲，我们希望说将 $\mathcal { S }$ 映射到 $\mathsf { A }$ 的每个对象上的投影解析的算子是“正合的”；但由于 $\mathsf { K } ( { \mathsf { A } } )$ 不是阿贝尔的，这根本不是一个选项。引理 7.8 在接近这种陈述方面尽可能地接近。事实上，从证明中给出的 $P _ { M } ^ { \bullet }$ 的构造中，很容易证明（练习 7.5）$P _ { M } ^ { \bullet }$ 是一个同态 $\rho ^ { \bullet } : { \cal P } _ { N } [ - 1 ] ^ { \bullet }  { \cal P } _ { L } ^ { \bullet }$ 的映射锥，所以
 
 我们得到一个“杰出三角形”
 
@@ -24196,7 +24210,7 @@ $$
 
 ![](images/224.jpg)
 
-我们也应该注意到，一旦短 正合序列被提升，事实上我们可以提升每一个复形；这将后面需要用到。下面是精确的陈述：
+我们也应该注意到，一旦短正合列被提升，事实上我们可以提升每一个复形；这将后面需要用到。下面是精确的陈述：
 
 ### 推论 7.9.
 
@@ -24215,25 +24229,25 @@ $$
 使得每个 $P _ { M ^ { i } } ^ { \bullet }$ 是 $M ^ { i }$ 的投影解析，并在同调中诱导 $M ^ { \bullet }$。  
 如果 $M ^ { \bullet }$ 是正合的，那么 $P _ { M } ^ { \bullet }$ • 可以选择为正合的。
 
-证明。将 $M ^ { \bullet }$ 分解为短 正合序列。
+证明。将 $M ^ { \bullet }$ 分解为短正合列。
 
 $$
 0 \longrightarrow K ^ { i } \longrightarrow M ^ { i } \longrightarrow I ^ { i + 1 } \longrightarrow 0
 $$
 
-与正合序列一起
+与正合列一起
 
 $$
 0 \longrightarrow I ^ { i } \longrightarrow K ^ { i } \longrightarrow H ^ { i } \longrightarrow 0
 $$
 
-其中 $K ^ { i }$ 是 $M ^ { i }  M ^ { i + 1 }$ 的核，$I ^ { \imath + 1 }$ 是其像，而 $H ^ { i }$ 是 $M ^ { i }$ 上的同调。对所有 $i$ 选择 $I ^ { i }$ 和 $H ^ { i }$ 的任意投射分辨率 $P _ { I ^ { i } }$ ，$P _ { H ^ { i } }$。然后，根据马蹄铁引理（引理 7.8），得到 $K ^ { i }$ 的投射分辨率和短 正合序列
+其中 $K ^ { i }$ 是 $M ^ { i }  M ^ { i + 1 }$ 的核，$I ^ { \imath + 1 }$ 是其像，而 $H ^ { i }$ 是 $M ^ { i }$ 上的同调。对所有 $i$ 选择 $I ^ { i }$ 和 $H ^ { i }$ 的任意投射分辨率 $P _ { I ^ { i } }$ ，$P _ { H ^ { i } }$。然后，根据马蹄铁引理（引理 7.8），得到 $K ^ { i }$ 的投射分辨率和短正合列
 
 $$
 0 \longrightarrow P _ { I ^ { i } } ^ { \bullet } \longrightarrow P _ { K ^ { i } } ^ { \bullet } \longrightarrow P _ { H ^ { i } } ^ { \bullet } \longrightarrow 0 \ ,
 $$
 
-用明显的符号表示，然后再次使用U形引理和前面的序列给出$M ^ { i }$的射影解序列$P _ { M ^ { i } }$和短 正合序列
+用明显的符号表示，然后再次使用U形引理和前面的序列给出$M ^ { i }$的射影解序列$P _ { M ^ { i } }$和短正合列
 
 $$
 0 \longrightarrow P _ { K ^ { i } } ^ { \bullet } \longrightarrow P _ { M ^ { i } } ^ { \bullet } \longrightarrow P _ { I ^ { i + 1 } } ^ { \bullet } \longrightarrow 0 \ .
@@ -24255,7 +24269,7 @@ $$
 
 实际上可以选择，使得 $\mathrm { i m } d ^ { i }$ ， $\ker d ^ { i }$ ，以及同调 $\ker d ^ { i } / \operatorname { i m } d ^ { i - 1 }$ 都是 $M ^ { \bullet }$ 中相应对象的投影解析。这在某些应用中很有用。具有这种性质的解析被称为 Cartan-Eilenberg（或“完全投影”）解析。
 
-回到当前问题，我们距离所承诺的导出函子长正合序列仅一步之遥。最后一个要素是以下：
+回到当前问题，我们距离所承诺的导出函子长正合列仅一步之遥。最后一个要素是以下：
 
 引理 7.11。设 A 是一个阿贝尔范畴，并且让
 
@@ -24287,15 +24301,15 @@ $$
 
 对于所有 $i$ 是（拆分和）正合的（练习 5.11）。复形序列的正合性由每个度的正合性决定，因此这证明了该命题。
 
-现在，左导出函子的长正合序列是长正合同调序列的直接推论。
+现在，左导出函子的长正合列是长正合同调序列的直接推论。
 
-定理 7.12. 设 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ 是阿贝尔范畴中的一个加性函子，并且假设 A 有足够的投射。每一个正合序列
+定理 7.12. 设 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ 是阿贝尔范畴中的一个加性函子，并且假设 A 有足够的投射。每一个正合列
 
 $$
 0 \longrightarrow L \longrightarrow M \longrightarrow N \longrightarrow 0
 $$
 
-在 A 中诱导一个长正合序列
+在 A 中诱导一个长正合列
 
 $$
 \begin{array} { r l } { \cdots { \xrightarrow { } } \mathsf { L } _ { 2 } \mathscr { F } ( L ) { \xrightarrow { } } \mathsf { L } _ { 2 } \mathscr { F } ( M ) { \xrightarrow { } } \mathsf { L } _ { 2 } \mathscr { F } ( N ) } \\ { \zeta _ { \mathsf { L } _ { 1 } \mathscr { F } ( L ) \xrightarrow { } \mathsf { L } _ { 1 } \mathscr { F } ( M ) \xrightarrow { } \mathsf { L } _ { 1 } \mathscr { F } ( N ) } } \\ { \zeta _ { \mathsf { L } _ { 0 } \mathscr { F } ( L ) \xrightarrow { } \mathsf { L } _ { 0 } \mathscr { F } ( M ) \xrightarrow { } \mathsf { L } _ { 0 } \mathscr { F } ( N ) } } \end{array}
@@ -24303,9 +24317,9 @@ $$
 
 在B中。此外，这项任务具有协变函子性质。
 
-最后一句话的意思是，短 正合序列的 态射 将会诱导出相应长 正合序列的 态射，并且与复合运算兼容。我将把证明这个命题所需的图 chase 留给读者（练习 7.7）。
+最后一句话的意思是，短正合列的 态射 将会诱导出相应长 正合列的 态射，并且与复合运算兼容。我将把证明这个命题所需的图 chase 留给读者（练习 7.7）。
 
-证明。根据引理7.8，给定的正合序列是由一个投影解析序列诱导的。
+证明。根据引理7.8，给定的正合列是由一个投影解析序列诱导的。
 
 $$
 0 \longrightarrow P _ { L } ^ { \bullet } \longrightarrow P _ { M } ^ { \bullet } \longrightarrow P _ { N } ^ { \bullet } \longrightarrow 0 \ .
@@ -24329,14 +24343,14 @@ $$
 
 这个三角形的顶点是 ${ \mathsf { C } } ^ { \leq 0 } ( { \mathsf { B } } )$ 中的复数。
 
-对于右导出函子，也发生完全相同的情况：如果 $\mathsf { A }$ 有足够的单射，那么上述的正合序列会诱导一个三角形
+对于右导出函子，也发生完全相同的情况：如果 $\mathsf { A }$ 有足够的单射，那么上述的正合列会诱导一个三角形
 
 ![](images/227.jpg)
 
 现在顶点是 ${ \mathsf { C } } ^ { \geq 0 } ( { \mathsf { B } } )$ 中的复数。
 
 ### 7.5. 关于 $\mathcal { F }$ 、$\mathsf { L } _ { i } \mathcal { F }$ 、$\mathsf { R } ^ { \imath } \mathcal { F }$ 的关系
-读者可能已经注意到，通过向左推导得到了 Tor，而通过向右推导得到了 Ext。这种不对称性要求这种选择的原因在于 $\otimes$ 是右正合的，而 Hom 是左正合的：任何加性函子可以向左或向右推导（在有足够多的投射对象（分别地，有足够多的注入对象）的情况下），并且推导出的函子将适合在长正合序列中，如定理 7.12 所证明的那样；但是只有满足一定正合度测度的函子才能直接从它们的推导版本中恢复。
+读者可能已经注意到，通过向左推导得到了 Tor，而通过向右推导得到了 Ext。这种不对称性要求这种选择的原因在于 $\otimes$ 是右正合的，而 Hom 是左正合的：任何加性函子可以向左或向右推导（在有足够多的投射对象（分别地，有足够多的注入对象）的情况下），并且推导出的函子将适合在长正合列中，如定理 7.12 所证明的那样；但是只有满足一定正合度测度的函子才能直接从它们的推导版本中恢复。
 
 为了更精确地陈述这一事实，我们回到加性映射 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ 的左导出算子的普遍考虑，其中 $\mathsf { A }$ 和 $\textsf { B }$ 是阿贝尔范畴，并且 $\mathsf { A }$ 具有足够多的投射，我们现在假设 $\mathcal { F }$ 是右正合的。
 
@@ -24376,19 +24390,19 @@ $$
 
 交换，证明 $\nu : \mathsf { L } _ { 0 } \mathcal { F } \to \mathcal { F }$ 是一个自然同构。
 
-回顾定理7.12，我们看到如果$\mathcal { F }$是右正合的，那么$\mathcal { F }$的左导出函子的长正合序列的尾部由$\mathcal { F }$自身的应用组成。因此，这种情况如下：从一个短正合序列开始
+回顾定理7.12，我们看到如果$\mathcal { F }$是右正合的，那么$\mathcal { F }$的左导出函子的长正合列的尾部由$\mathcal { F }$自身的应用组成。因此，这种情况如下：从一个短正合列开始
 
 $$
 0 \longrightarrow L \longrightarrow M \longrightarrow N \longrightarrow 0
 $$
 
-在 $\mathsf { A }$ 中，我们应用 $\mathcal { F }$ 得到一个正合序列
+在 $\mathsf { A }$ 中，我们应用 $\mathcal { F }$ 得到一个正合列
 
 $$
 \mathcal { F } ( L ) \longrightarrow \mathcal { F } ( M ) \longrightarrow \mathcal { F } ( N ) \longrightarrow 0
 $$
 
-在我们丢失了“左边的$0$”的情况下，长正合序列挽救了局面，将新序列继续到一个正合的复形中：
+在我们丢失了“左边的$0$”的情况下，长正合列挽救了局面，将新序列继续到一个正合的复形中：
 
 $$
 \begin{array} { r } { \begin{array} { r c l } { \cdots } & { \longrightarrow \mathsf { L } _ { 2 } \mathcal { F } ( L ) \longrightarrow \mathsf { L } _ { 2 } \mathcal { F } ( M ) \longrightarrow \mathsf { L } _ { 2 } \mathcal { F } ( N ) } \\ & { \longleftrightarrow \underbrace { \mathsf { \Lambda } _ { 1 2 } } _ { \begin{array} { c } { \ddots \mathsf { L } _ { 1 } \mathcal { F } ( L ) \longrightarrow \mathsf { L } _ { 1 } \mathcal { F } ( M ) \longrightarrow \mathsf { L } _ { 1 } \mathcal { F } ( N ) } \\ { \diamond } \\ { \diamond } \end{array} } } & { \delta _ { 1 } \xrightarrow [ ] { } \mathcal { F } ( M ) \longrightarrow \mathsf { L } _ { 2 } \mathcal { F } ( N ) } \end{array} } \\ & { \longleftrightarrow \mathcal { F } ( L ) \longrightarrow \mathcal { F } ( M ) \longrightarrow \mathcal { F } ( N ) \longrightarrow 0 } \end{array}
@@ -24396,7 +24410,7 @@ $$
 
 也就是说，$\mathsf { L } _ { 1 } \mathcal { F }$ 衡量了 $\mathcal { F }$ 未能左确切的程度，而更高的 $\mathsf { L } _ { i } \mathcal {F }$ 则提供了对此失败的进一步衡量。
 
-同样地，如果 $\mathcal { F }$ 是左正合的，$\mathsf { R } ^ { 0 } \mathcal { F }$ 自然同构于 $\mathcal { F }$。在这种情况下，将 $\mathcal { F }$ 应用于原始序列得到正合序列
+同样地，如果 $\mathcal { F }$ 是左正合的，$\mathsf { R } ^ { 0 } \mathcal { F }$ 自然同构于 $\mathcal { F }$。在这种情况下，将 $\mathcal { F }$ 应用于原始序列得到正合列
 
 $$
 0 \longrightarrow \mathcal { F } ( L ) \longrightarrow \mathcal { F } ( M ) \longrightarrow \mathcal { F } ( N )
@@ -24419,13 +24433,13 @@ $$
 
 在深入研究同调代数之前，我们本来可以轻易地得出这个结论。同调代数告诉我们如何处理这种情况，并通过适当的导出函子“量化”正合的失败。
 
-$G$ 的第 $i$ 个右导出函子记作 $H ^ { \imath } ( G , \underline { { \ O } } _ { - } )$ 。因此，$H ^ { 0 } ( G , M ) =$ $M ^ { G }$ ，并且对于 $G$ -模的每一个短 正合序列
+$G$ 的第 $i$ 个右导出函子记作 $H ^ { \imath } ( G , \underline { { \ O } } _ { - } )$ 。因此，$H ^ { 0 } ( G , M ) =$ $M ^ { G }$ ，并且对于 $G$ -模的每一个短正合列
 
 $$
 0 \longrightarrow L \longrightarrow M \longrightarrow N \longrightarrow 0
 $$
 
-我们从定理 7.12 中得到一个阿贝尔群的长期正合序列：
+我们从定理 7.12 中得到一个阿贝尔群的长期正合列：
 
 $$
 0 \longrightarrow L ^ { G } \longrightarrow M ^ { G } \longrightarrow N ^ { G } \longrightarrow M ^ { 1 } ( G , L ) \longrightarrow M ^ { 1 } ( G , M ) \longrightarrow \cdots .
@@ -24571,11 +24585,11 @@ $$
 
 7.5. $\triangleright$ 如引理 7.8 中的记号所示，证明存在一个同态映射 $\rho ^ { \bullet } :$ − → L M （提示：查看引理的证明；使用微分，使得同伦等价于映射锥 $P _ { L } ^ { i } \oplus P _ { N } ^ { i } \to P _ { L } ^ { \imath + 1 } \oplus P _ { N } ^ { \imath + 1 }$ $M C ( \rho ) ^ { \bullet }$ . 来定义同态映射 $P _ { N } ^ { i }  P _ { L } ^ { \imath + 1 }$ 。） [§7.5]
 
-7.6. $\neg$ 设 $\textsf { B }$ 、$\mathsf { C }$ 是阿贝尔范畴，并且假设 $\textsf { B }$ 有足够的投射对象，因此可以构造卡当-爱伦伯格解析，如推论7.9所述（另见注7.10）。设 $\mathcal { G } : \mathsf { B } \to \mathsf { C }$ 是一个加性函子，并且设 $M ^ { \bullet } : \cdots M ^ { - 2 } $ $M ^ { - 1 } \to M ^ { 0 } \to 0$ 是 $\textsf { B }$ 中的一个复形。设 $P _ { M ^ { \bullet } } ^ { \bullet } \cdot \cdot \cdot  P _ { M ^ { - 2 } } ^ { \bullet }  P _ { M ^ { - 1 } } ^ { \bullet }  P _ { M ^ { 0 } } ^ { \bullet }  0$ 是 $M ^ { \bullet }$ 的一个卡当-爱伦伯格解析。证明 $\mathcal { G }$ 将这个复形的同调同构地映射到复形 $\cdot \cdot \cdot  \mathcal { G } ( P _ { M ^ { - 2 } } ^ { \bullet } )$ $\mathcal { G } ( P _ { M ^ { - 1 } } ^ { \bullet } )  \mathcal { G } ( P _ { M ^ { 0 } } ^ { \bullet } )  0$ 的同调。（提示：如推论7.9的证明中的符号所示，对于所有的 $i$ 和 $j$，我们有正合序列 $0  P _ { K ^ { i } } ^ { j }  P _ { M ^ { i } } ^ { j }  P _ { I ^ { i + 1 } } ^ { j }  0$ 和 $0 \to P _ { I ^ { i } } ^ { j } \to P _ { K ^ { i } } ^ { j } \to P _ { H ^ { i } } ^ { j } \to 0$ 。注意这些必然是可分裂的。）
+7.6. $\neg$ 设 $\textsf { B }$ 、$\mathsf { C }$ 是阿贝尔范畴，并且假设 $\textsf { B }$ 有足够的投射对象，因此可以构造卡当-爱伦伯格解析，如推论7.9所述（另见注7.10）。设 $\mathcal { G } : \mathsf { B } \to \mathsf { C }$ 是一个加性函子，并且设 $M ^ { \bullet } : \cdots M ^ { - 2 } $ $M ^ { - 1 } \to M ^ { 0 } \to 0$ 是 $\textsf { B }$ 中的一个复形。设 $P _ { M ^ { \bullet } } ^ { \bullet } \cdot \cdot \cdot  P _ { M ^ { - 2 } } ^ { \bullet }  P _ { M ^ { - 1 } } ^ { \bullet }  P _ { M ^ { 0 } } ^ { \bullet }  0$ 是 $M ^ { \bullet }$ 的一个卡当-爱伦伯格解析。证明 $\mathcal { G }$ 将这个复形的同调同构地映射到复形 $\cdot \cdot \cdot  \mathcal { G } ( P _ { M ^ { - 2 } } ^ { \bullet } )$ $\mathcal { G } ( P _ { M ^ { - 1 } } ^ { \bullet } )  \mathcal { G } ( P _ { M ^ { 0 } } ^ { \bullet } )  0$ 的同调。（提示：如推论7.9的证明中的符号所示，对于所有的 $i$ 和 $j$，我们有正合列 $0  P _ { K ^ { i } } ^ { j }  P _ { M ^ { i } } ^ { j }  P _ { I ^ { i + 1 } } ^ { j }  0$ 和 $0 \to P _ { I ^ { i } } ^ { j } \to P _ { K ^ { i } } ^ { j } \to P _ { H ^ { i } } ^ { j } \to 0$ 。注意这些必然是可分裂的。）
 
 从同调论的角度来看，$\mathcal { G } ( H ^ { q } ( P _ { M } ^ { \bullet } \bullet ) ) \cong H ^ { q } ( \mathcal { G } ( P _ { M } ^ { \bullet } \bullet ) )$ ，其中同调是对$M$-度的计算。同时请注意，根据构造，$H ^ { q } ( P _ { M } ^ { \bullet } . )$是$H ^ { q } ( M ^ { \bullet } )$的一个投射解析；参见注释7.10。这将作为通过谱序列比较两个算子复合的导出算子的一个组成部分；参见习题8.8和9.10。[9.10]
 
-7.7. $\triangleright$ 通过证明短 正合序列的 态射 引导出相应导出函子的长 正合序列的 态射，来完成定理 7.12 的证明。[§7.4]
+7.7. $\triangleright$ 通过证明短正合列的 态射 引导出相应导出函子的长 正合列的 态射，来完成定理 7.12 的证明。[§7.4]
 
 7.8. $\triangleright$ 设 A, $\textsf { B }$ 是阿贝尔范畴，且 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ 是一个正合函子。假设 A 具有足够的投射对象和足够的注入对象，因此 $\mathsf { L } _ { i } \mathcal { F }$ 和 $\mathsf { R } ^ { \imath } \mathcal { F }$ 都有定义。证明当 $i \neq 0$ 时，$\mathsf { L } _ { i } \mathcal { F }$ 和 $\mathsf { R } ^ { \imath } \mathcal { F }$ 都是零函子。[§7.5]
 
@@ -24589,7 +24603,7 @@ $$
 0 { \xrightarrow { } } K { \xrightarrow { } } P { \xrightarrow { } } A { \xrightarrow { } } 0
 $$
 
-是 $\mathsf { A }$ 中的一个短 正合序列，其中 $P$ 是投影的。证明 $\mathsf { L } _ { i } \mathcal { F } ( A ) \cong \mathsf { L } _ { i - 1 } \mathcal { F } ( K )$ ，对所有 $i > 1$ 。[7.12]
+是 $\mathsf { A }$ 中的一个短正合列，其中 $P$ 是投影的。证明 $\mathsf { L } _ { i } \mathcal { F } ( A ) \cong \mathsf { L } _ { i - 1 } \mathcal { F } ( K )$ ，对所有 $i > 1$ 。[7.12]
 
 7.12. $\triangleright$  将练习 7.11 推广如下：使用相同的符号，假设
 
@@ -24597,11 +24611,11 @@ $$
 0 \xrightarrow [ ] { } K \xrightarrow [ ] { } B ^ { - k } \xrightarrow [ ] { } \cdots \xrightarrow [ ] { } B ^ { - 1 } \longrightarrow A \xrightarrow [ ] { } 0
 $$
 
-是 A 中的一个正合序列，使得 $\mathsf { L } _ { i } \mathcal { F } ( B ^ { - j } ) = 0$ 对于 $i > 0$ ，$1 \le j \le k$ 。证明 $\mathsf { L } _ { i } \mathcal { F } ( A ) \cong \mathsf { L } _ { i - k } \mathcal { F } ( K )$ ，对于所有 $i > k$ 。[§8.1, 8.11]
+是 A 中的一个正合列，使得 $\mathsf { L } _ { i } \mathcal { F } ( B ^ { - j } ) = 0$ 对于 $i > 0$ ，$1 \le j \le k$ 。证明 $\mathsf { L } _ { i } \mathcal { F } ( A ) \cong \mathsf { L } _ { i - k } \mathcal { F } ( K )$ ，对于所有 $i > k$ 。[§8.1, 8.11]
 
 7.13. $\lnot \ \mathrm { L e t } \ \mathsf { A }$ , $\textsf { B }$ 是阿贝尔范畴。一个函子集合 $\mathcal { T } ^ { i } : \mathsf { A } \to \mathsf { B }$ ，$i \geq 0$ ，被称为一个（‘同调的’）$\delta$ -函子，如果
 
-• 每个短 正合序列
+• 每个短正合列
 
 $$
 0 \longrightarrow L \longrightarrow M \longrightarrow N \longrightarrow 0
@@ -24621,19 +24635,19 @@ $$
 
 完全正确；
 
-• 对每个短 正合序列 $( \dag )$ 分配一个复形 (‡) 是函子性的（在练习 3.11 中指定的意义上）。
+• 对每个短正合列 $( \dag )$ 分配一个复形 (‡) 是函子性的（在练习 3.11 中指定的意义上）。
 
 证明对于每一个加性函子 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ ，导出的函子 $\mathsf { R } ^ { \imath } \mathcal { F}$ ，$i \geq 0$ ，构成一个同调的 $\delta$ -函子。证明同调本身是从 ${ \mathsf { C } } ^ { \geq 0 } ( { \mathsf { A } } )$ 到 A 的一个 $\delta$ -函子。
 
 定义一个“同调” $\delta$ -函子 $\{ \mathcal { T } _ { i } \}$ 的概念，并证明左导出函子给出一个例子。[7.14, 8.14]
 
-7.14. $\neg$ ‘态射’ $\{ { \mathcal { T } } ^ { \iota } \} \to \{ { \mathcal { S } } ^ { \iota } \}$ of $\delta$ -functors (Exercise 7.13) 是各个 functor $\mathcal { T } ^ { \imath } \sim \mathcal { S } ^ { \imath }$ 的自然变换，它们诱导出相应的长正合序列 $( \ddagger )$ 的 态射，对于每一个短正合序列 $( \dag )$（换句话说，它们保持连接 态射 $\delta$）。
+7.14. $\neg$ ‘态射’ $\{ { \mathcal { T } } ^ { \iota } \} \to \{ { \mathcal { S } } ^ { \iota } \}$ of $\delta$ -functors (Exercise 7.13) 是各个 functor $\mathcal { T } ^ { \imath } \sim \mathcal { S } ^ { \imath }$ 的自然变换，它们诱导出相应的长正合列 $( \ddagger )$ 的 态射，对于每一个短正合列 $( \dag )$（换句话说，它们保持连接 态射 $\delta$）。
 
 一个 $\delta$ -函子 $\{ \mathscr { T } ^ { \imath } \}$ 是 universial 的，如果对于每一个 $\delta$ -函子 $\{ \mathscr { S } ^ { \imath } \}$ ，每一个自然变换 $\mathcal { T } ^ { 0 } \sim \mathcal { S } ^ { 0 }$ 都可以唯一地扩展为一个 $\delta$ -函子 $\{ { \mathcal { T } } ^ { \iota } \} \to \{ { \mathcal { S } } ^ { \iota } \}$ 的态射。
 
 universial的 $\delta$ -函子  $\{ \mathscr { T } ^ { \imath } \}$  with fixed $\mathscr { T } ^ { 0 }$ 当然在同构意义下是唯一的。
 
-证明的起始步骤如下：假设$\{\mathcal{T}^i\}$和$\{\mathcal{S}^i\}$是$\delta$-函子，且$\mathcal{T}^1$是可消去的；展示如何将自然变换$\mathcal{T}^0 \sim \mathcal{S}^0$扩展为自然变换$\mathcal{T}^1 \sim \mathcal{S}^1$，并与连接态射保持一致。（提示：如果$\mathcal{T}^1$通过单射$i : A \to B$被消去，令$C = \mathrm{coker} \ i$，并考虑正合序列$0 \to A \to B \to C \to 0$。[7.15]
+证明的起始步骤如下：假设$\{\mathcal{T}^i\}$和$\{\mathcal{S}^i\}$是$\delta$-函子，且$\mathcal{T}^1$是可消去的；展示如何将自然变换$\mathcal{T}^0 \sim \mathcal{S}^0$扩展为自然变换$\mathcal{T}^1 \sim \mathcal{S}^1$，并与连接态射保持一致。（提示：如果$\mathcal{T}^1$通过单射$i : A \to B$被消去，令$C = \mathrm{coker} \ i$，并考虑正合列$0 \to A \to B \to C \to 0$。[7.15]
 
 7.15. $\neg$ 假设习题7.14中所述的结果。证明右导出函子是普遍的层上同调$\delta$-函子。（等价地，左导出函子是普遍的层上同伦$\delta$-函子。）对于一个阿贝尔范畴A，证明层上同调，作为从${ \mathsf { C } } ^ { \geq 0 } ( { \mathsf { A } } )$到$\mathsf { A }$的函子的集合，是一个普遍的$\delta$-函子。（提示：为了消除$\mathsf { R } ^ { \imath } \mathcal { F}$对于$i > 0$，使用单射。为了消除$H ^ { i }$对于$i > 0$，观察命题4.1陈述之前提到的复形序列。）
 
@@ -24726,13 +24740,13 @@ $$
 H ^ { 0 } ( \mathsf C ( \mathcal F ) ( A ^ { \bullet } ) ) \cong \mathcal F ( M ) \cong \mathsf { L } _ { 0 } \mathcal F ( M ) .
 $$
 
-接下来，令 $K$ 是 $A ^ { 0 }  M$ 的核；因此我们有短 正合序列
+接下来，令 $K$ 是 $A ^ { 0 }  M$ 的核；因此我们有短正合列
 
 $$
 0 \longrightarrow K \longrightarrow A ^ { 0 } \longrightarrow M \longrightarrow 0 \ .
 $$
 
-应用定理 7.12（以及命题 7.13），我们得到一个长正合序列，以...结束
+应用定理 7.12（以及命题 7.13），我们得到一个长正合列，以...结束
 
 $$
 \mathsf { L } _ { 1 } \mathscr { F } ( A ^ { 0 } ) \longrightarrow \mathsf { L } _ { 1 } \mathscr { F } ( M ) \longrightarrow \mathscr { F } ( K ) \longrightarrow \mathscr { F } ( A ^ { 0 } ) \longrightarrow \mathscr { F } ( M ) \longrightarrow 0 .
@@ -24762,7 +24776,7 @@ $$
 \mathsf { L } _ { i - 1 } \mathscr { F } ( K ) \cong H ^ { - i } ( \mathsf { C } ( \mathscr { F } ) ( A ^ { \bullet } ) ) .
 $$
 
-另一方面，应用定理7.12到($^*$)上得到的长的正合序列中的其他项给出
+另一方面，应用定理7.12到($^*$)上得到的长的正合列中的其他项给出
 
 $$
 \cdots { \xrightarrow { } } \operatorname { L } _ { i } { \mathcal { F } } ( A ^ { 0 } ) { \xrightarrow { } } \operatorname { L } _ { i } { \mathcal { F } } ( M ) { \xrightarrow { } } \operatorname { L } _ { i - 1 } { \mathcal { F } } ( K ) { \xrightarrow { } } \operatorname { L } _ { i - 1 } { \mathcal { F } } ( A ^ { 0 } ) { \xrightarrow { } } \cdots ;
@@ -24801,7 +24815,7 @@ $$
 双重复形可以用来达到这个效果，正如我们很快将看到的。
 
 ### 8.2. 复形复合. 
-我早在 $\mathrm { \ 3 3 . 2 }$ 就警告读者我们将考察复形的复合，即 ${ \mathsf { C } } ( { \mathsf { C } } ( { \mathsf { A } } ) )$ 的对象，对于一个阿贝尔范畴 A. 我们遇到过特例：导致长正合同调序列 (3.3) 的复形的正合序列，以及映射锥的构造 (§4.1). 后者可以以直接的方式推广，正如我们现在将要看到的.
+我早在 $\mathrm { \ 3 3 . 2 }$ 就警告读者我们将考察复形的复合，即 ${ \mathsf { C } } ( { \mathsf { C } } ( { \mathsf { A } } ) )$ 的对象，对于一个阿贝尔范畴 A. 我们遇到过特例：导致长正合同调序列 (3.3) 的复形的正合列，以及映射锥的构造 (§4.1). 后者可以以直接的方式推广，正如我们现在将要看到的.
 
 遵循本章早先建立的惯例，我将专注于“有上界”的情况；读者应该没有困难地重现我们将要做的有下界版本，并且应该意识到材料在很大程度上可以在没有有界性条件的情况下发展。
 
@@ -25290,7 +25304,7 @@ $$
 
 由于 $\textsf { B }$ 具有足够的单射，函子 ${ \mathcal { F } } ^ { A }$ 对每个对象 $A$ 都可以右导出。定义 $\mathsf { T } ^ { i } \mathcal F _ { B } ( A )$ 为 $\mathsf { R } ^ { i } \mathcal { F } ^ { A } ( B )$；注意 $\mathsf { T } ^ { \cup } \mathcal { F } _ { B } ( A ) = \mathcal { F } ^ { A } ( B ) =$ ${ \mathcal { F } } ( A , B ) = { \mathcal { F } } _ { B } ( A )$ 。
 
-• 证明在 $\mathsf{A}$ 中每一个正合序列 $0 \rightarrow A_1 \rightarrow A_2 \rightarrow A_3 \rightarrow 0$ 都诱导一个长正合序列
+• 证明在 $\mathsf{A}$ 中每一个正合列 $0 \rightarrow A_1 \rightarrow A_2 \rightarrow A_3 \rightarrow 0$ 都诱导一个长正合列
 
 $$
 \begin{array} { r l } { 0 \xrightarrow { } \mathcal { F } _ { B } ( A _ { 3 } ) \xrightarrow { } \mathcal { F } _ { B } ( A _ { 2 } ) \xrightarrow { } \mathcal { F } _ { B } ( A _ { 1 } ) } & { } \\ & { \Bigg \langle \underset { \substack { \mathcal { T } ^ { 1 } \mathcal { F } _ { B } ( A _ { 3 } ) \xrightarrow { 1 } \cdots \cdots \qquad \cdots \qquad } } { \zeta ^ { i } \mathcal { F } _ { B } ( A _ { 3 } ) \xrightarrow [ ] { } \mathcal { F } _ { B } ( A _ { 3 } ) } \Bigg \rangle } \\ &  \Bigg \langle \underset { \substack { \mathcal { T } ^ { i + 1 } \mathcal { F } _ { B } ( A _ { 3 } ) \xrightarrow [ ] { } \cdots \qquad \cdots \qquad } } { \zeta ^ { i } \cdots \overset { \quad } { \varepsilon ^ { i } } } \end{array}
@@ -25336,7 +25350,7 @@ $$
 读者应检查两个屋顶的组合确实是一个屋顶（练习9.2）；熟悉区分三角形后，这可能更容易。另外，请注意练习9.2中的图在C(A)中不交换，但在K(A)中交换。这表明从C(A)到$\mathsf { D } ( \mathsf { A } )$直接转换可能会有问题。
 
 ### 9.2. 被三角化的范畴
-本书不将导出范畴作为重点处理的一个原因是，这样做将要求我们精确地定义三角化范畴的概念。事实上，这也适用于复形的同调范畴。我在§5.2中指出，这些范畴不应被期望是（而且实际上也不是）阿贝尔的，但它们保留了足够多的结构，使得例如长正合上同调序列有意义。导出函子最终与长正合序列相关联这一事实（§7.4）正是这一点的证明。
+本书不将导出范畴作为重点处理的一个原因是，这样做将要求我们精确地定义三角化范畴的概念。事实上，这也适用于复形的同调范畴。我在§5.2中指出，这些范畴不应被期望是（而且实际上也不是）阿贝尔的，但它们保留了足够多的结构，使得例如长正合上同调序列有意义。导出函子最终与长正合列相关联这一事实（§7.4）正是这一点的证明。
 
 一个三角剖分（加法）范畴的基本要素是一个“翻译”函子，在${ \mathsf { K } } ( { \mathsf { A } } )$或$\mathsf { D } ( \mathsf { A } )$的情况下，它表现为位移函子$L ^ { \bullet } \mapsto L \lfloor 1 \rfloor ^ { \bullet }$；以及一个图类
 
@@ -25382,7 +25396,7 @@ $$
 
 将上同调函子应用于 K(A) 中的一个特征三角形会得到一个正合三角形：确实，正如我们刚刚看到的，我们可以假设这个三角形是 $( ^ { * } )$
 
-(在同构意义下在${ \mathsf { K } } ( { \mathsf { A } } )$中)，取上同调得到在命题4.1中得到的正合三角形。一般来说，三角范畴上的上同调函子是一个到阿贝尔范畴的加性函子，将 distinguished triangles 映射到正合三角形，从而诱导出长正合序列。因此，上同调是${ \mathsf { K } } ( { \mathsf { A } } )$上的上同调函子；这不会让读者感到惊讶。函子$\mathrm { H o m } ( A , _ { - } )$和$\mathrm { H o m } ( \underline { { \mathbf { \Pi } } } , A )$（到Ab）是每个三角范畴上的上同调函子，对于每个对象$A$。
+(在同构意义下在${ \mathsf { K } } ( { \mathsf { A } } )$中)，取上同调得到在命题4.1中得到的正合三角形。一般来说，三角范畴上的上同调函子是一个到阿贝尔范畴的加性函子，将 distinguished triangles 映射到正合三角形，从而诱导出长正合列。因此，上同调是${ \mathsf { K } } ( { \mathsf { A } } )$上的上同调函子；这不会让读者感到惊讶。函子$\mathrm { H o m } ( A , _ { - } )$和$\mathrm { H o m } ( \underline { { \mathbf { \Pi } } } , A )$（到Ab）是每个三角范畴上的上同调函子，对于每个对象$A$。
 
 ![](images/253.jpg)
 
@@ -25394,7 +25408,7 @@ $$
 0 \longrightarrow L ^ { \bullet } \xrightarrow { \alpha ^ { \bullet } } M ^ { \bullet } \xrightarrow { \beta ^ { \bullet } } N ^ { \bullet } \xrightarrow { } 0
 $$
 
-是一个短 正合序列，如上所述，一般来说没有特殊的三角形
+是一个短正合列，如上所述，一般来说没有特殊的三角形
 
 ![](images/254.jpg)
 
@@ -25404,7 +25418,7 @@ $$
 
 ![](images/255.jpg)
 
-如 §3.4 中所述，从短 正合序列中产生
+如 §3.4 中所述，从短正合列中产生
 
 $$
 0 \longrightarrow L ^ { \bullet } \xrightarrow { \alpha ^ { \bullet } } M ^ { \bullet } \xrightarrow { \beta ^ { \bullet } } N ^ { \bullet } \xrightarrow { } 0
@@ -25422,9 +25436,9 @@ $$
 
 ![](images/258.jpg)
 
-将长正合同调序列记为 §3.4 中的形式，而无需单独考虑 $+ 1$ 同态。回顾起来，我在 §3.4 中坚持用于折叠“特殊”三角形的零同态实际上是一个副产物：将三角形放在导出范畴中表明对于这个同态有更明智的选择。这种选择在 ${ \mathsf { C } } ( { \mathsf { A } } )$ 中不可用，甚至在 ${ \mathsf { K } } ( { \mathsf { A } } )$ 中也不存在，但在 $\mathsf { D } ( \mathsf { A } )$ 中是可用的，并且直接导致同调中的长正合序列。
+将长正合同调序列记为 §3.4 中的形式，而无需单独考虑 $+ 1$ 同态。回顾起来，我在 §3.4 中坚持用于折叠“特殊”三角形的零同态实际上是一个副产物：将三角形放在导出范畴中表明对于这个同态有更明智的选择。这种选择在 ${ \mathsf { C } } ( { \mathsf { A } } )$ 中不可用，甚至在 ${ \mathsf { K } } ( { \mathsf { A } } )$ 中也不存在，但在 $\mathsf { D } ( \mathsf { A } )$ 中是可用的，并且直接导致同调中的长正合列。
 
-如果 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ 是阿贝尔范畴之间的一个函子，则诱导出的函子 $\mathsf { K } ( \mathcal { F } ) : \mathsf { K } ( \mathsf { A } ) \to \mathsf { K } ( \mathsf { B } )$ 是三角范畴的函子，并且有界变化 $\mathsf { K } ^ { \pm } ( \mathcal { F } ) : \mathsf { K } ^ { \pm } ( \mathsf { A } ) \to \mathsf { K } ^ { \pm } ( \mathsf { B } )$ 也是。在 87.2 中遇到的导出函子 $\mathsf { L } \mathcal { F }$ ，$\mathsf { R } \mathscr { F } : \mathsf { D } ^ { \pm } ( \mathsf { A } ) \to$ $\mathsf { D } ^ { \pm } ( \mathsf { B } )$ 也是三角范畴的函子。这一事实是导出函子具有良好性质的原因，例如在 7.4 中研究的长正合序列。
+如果 $\mathcal { F } : \mathsf { A } \to \mathsf { B }$ 是阿贝尔范畴之间的一个函子，则诱导出的函子 $\mathsf { K } ( \mathcal { F } ) : \mathsf { K } ( \mathsf { A } ) \to \mathsf { K } ( \mathsf { B } )$ 是三角范畴的函子，并且有界变化 $\mathsf { K } ^ { \pm } ( \mathcal { F } ) : \mathsf { K } ^ { \pm } ( \mathsf { A } ) \to \mathsf { K } ^ { \pm } ( \mathsf { B } )$ 也是。在 87.2 中遇到的导出函子 $\mathsf { L } \mathcal { F }$ ，$\mathsf { R } \mathscr { F } : \mathsf { D } ^ { \pm } ( \mathsf { A } ) \to$ $\mathsf { D } ^ { \pm } ( \mathsf { B } )$ 也是三角范畴的函子。这一事实是导出函子具有良好性质的原因，例如在 7.4 中研究的长正合列。
 
 ### 9.3. 谱序列
 我在8.3中提到，“谱序列”可用于计算双复形的同调。不幸的是，在谱序列这个主题中似乎没有容易的入口，它受到固有的符号复杂性的困扰。我将仅限于对概念进行非常有限的描述，并提供一些将其与§8.4联系起来的信息。我的动机是，在文献中，诸如定理8.12等结果的引用经常被诸如“通过一个直接的谱序列论证...”之类的句子所取代，我应该尝试向读者解释这意味着什么。
@@ -25501,7 +25515,7 @@ $$
 
 通常，一个谱序列与其极限一样有趣，特别是如果某些幸运的情况使其很快崩溃；$E _ { \infty } = E _ { 2 }$ 的情况并不少见。如果一切顺利，这可以转化为给定“输入”$E _ { 1 }$ 与有趣的“输出”$E _ { \infty }$ 之间的有用关系。
 
-我的双重复形在哪里？我承诺过谱序列可以用来“计算”双重复形的全复形的同调。现在我们将看到双重复形如何产生一个正合对偶，进而产生一个谱序列。这是一个从滤过产生正合序列的有用机制的一个特例。
+我的双重复形在哪里？我承诺过谱序列可以用来“计算”双重复形的全复形的同调。现在我们将看到双重复形如何产生一个正合对偶，进而产生一个谱序列。这是一个从滤过产生正合列的有用机制的一个特例。
 
 一个 $M$ 的“降序过滤”由一系列子对象组成：
 
@@ -25547,7 +25561,7 @@ $$
 
 在 $\ b { 1 } ^ { \prime \prime }$ 上的滤过也决定了 $x ^ { \dprime }$ 上同调的滤过：我们可以取 $H ^ { \bullet } ( T ^ { \bullet } ) _ { m }$ 为 $H ^ { \bullet } ( T _ { m } ^ { \bullet } )$ 在 $H ^ { \bullet } ( T ^ { \bullet } )$ 中的像。因此，我们也有一个带权对象 $\mathrm { g r } _ { v } H ^ { \bullet } ( T ^ { \bullet } )$ 。$H ^ { \bullet } ( \mathrm { g r } _ { v } ^ { \bullet } ( T ) )$ 和 $\mathrm { g r } _ { v } H ^ { \bullet } ( T ^ { \bullet } )$ 之间的关系微妙：这个关系是谱序列将帮助我们理解的东西。
 
-单态射 $T _ { m + 1 } ^ { \bullet } \subseteq T _ { m } ^ { \bullet }$ 定义了一个单态射 $\oplus _ { m } T _ { m } ^ { \bullet } \to \oplus _ { m } T _ { m } ^ { \bullet }$，其 $\mathrm { g r } _ { v } ^ { \bullet } ( T )$ 是余核：我们有一个正合序列
+单态射 $T _ { m + 1 } ^ { \bullet } \subseteq T _ { m } ^ { \bullet }$ 定义了一个单态射 $\oplus _ { m } T _ { m } ^ { \bullet } \to \oplus _ { m } T _ { m } ^ { \bullet }$，其 $\mathrm { g r } _ { v } ^ { \bullet } ( T )$ 是余核：我们有一个正合列
 
 $$
 0 \longrightarrow \bigoplus _ { m } T _ { m } ^ { \bullet } \longrightarrow \bigoplus _ { m } T _ { m } ^ { \bullet } \longrightarrow \mathrm { g r } _ { v } ^ { \bullet } ( T ) \longrightarrow 0 \ .
@@ -25718,7 +25732,7 @@ $$
 0 \longrightarrow L ^ { \bullet } \longrightarrow \longrightarrow M ^ { \bullet } \longrightarrow N ^ { \bullet } \longrightarrow 0
 $$
 
-是一个阿贝尔范畴上的短 正合序列的 cochain complexes。
+是一个阿贝尔范畴上的短正合列的 cochain complexes。
 
 • 证明存在一个上链映射 $\gamma ^ { \bullet } : M C ( \alpha ) ^ { \bullet }  N ^ { \bullet }$，使得 $\beta ^ { \bullet } : M ^ { \bullet } \to N ^ { \bullet }$ 可由此映射分解。
 • 证明 $M C ( \gamma ) ^ { \bullet }$ 是一个正合复形。(提示：追踪元素。)
@@ -25731,7 +25745,7 @@ $$
 0 \longrightarrow L ^ { \bullet } \xrightarrow { \alpha ^ { \bullet } } M ^ { \bullet } \xrightarrow { \beta ^ { \bullet } } N ^ { \bullet } \xrightarrow { } 0
 $$
 
-是阿贝尔范畴 A 上的链复形的一个短 正合序列。证明在导范畴 D(A) 中存在一个 态射 $N ^ { \bullet }  L \vert 1 \vert ^ { \bullet }$，它诱导出同调中的连接 态射 $H ^ { \imath } ( N ^ { \bullet } )  H ^ { \imath + 1 } ( L ^ { \bullet } )$。[§9.2]
+是阿贝尔范畴 A 上的链复形的一个短正合列。证明在导范畴 D(A) 中存在一个 态射 $N ^ { \bullet }  L \vert 1 \vert ^ { \bullet }$，它诱导出同调中的连接 态射 $H ^ { \imath } ( N ^ { \bullet } )  H ^ { \imath + 1 } ( L ^ { \bullet } )$。[§9.2]
 
 9.7. $\triangleright$ 证明命题9.1。[§9.3]
 
@@ -25975,7 +25989,7 @@ Seq(A)，603
 矩阵的余子式，331   
 自由模，551   
 上同调函子，685   
-上同调，174，178，553，592 作为函子，596 长正合序列，600 群的上同调，655   
+上同调，174，178，553，592 作为函子，596 长正合列，600 群的上同调，655   
 上像，572 同构于像，573   
 群作用的伴随，658   
 上核，104 分类定义，491，561 在Ab中，104 在Ring中，137 在R-Mod中，167 全称性质，104，166   
@@ -26063,7 +26077,7 @@ delta函子，660，680
 正合对，687 函子，495，588，603，613，643 忠实地，499 左-或右-，495，653 序列，175，228 在阿贝尔范畴中，576 Ext的同态，552 指定集合的同态，582 Tor的同态，509 短，176 分裂的，177，229，621，627 三角形，601，684   
 $\otimes$ 的正合性性质，507 Hom的正合性性质，537 $\mathbb { T } _ { R } ^ { * }$ ，${ \mathbb S } _ { R } ^ { \ast }$ ，$\mathbb { \Lambda } _ { R } ^ { * }$ 的正合性性质，531 伴随函子的正合性性质，495 函子的正合性性质，495 对偶函子的正合性性质，539，541   
 指数映射，64   
-Ext，551，647 长正合序列，552 可以通过解析任一参数来计算，553，677 它为什么叫Ext，556   
+Ext，551，647 长正合列，552 可以通过解析任一参数来计算，553，677 它为什么叫Ext，556   
 扩张代数，391 阿廷-施莱尔，481 度，386 域，163，283 有限，386 有限生成，393 伽罗瓦，458 正规，431 群的扩张，228 模的扩张，184，555，556 标量的扩张，518 二次，422 包含在循环域中，482 根，475 可分，436 单的，387，449 可解的，475 分裂的，177，229，231   
 外代数，529 幂，525   
 因子环（UFD），248   
@@ -26156,7 +26170,7 @@ Liouville，约瑟夫（1809-1882）定理，152
 在 DVR 中的局部参数，260 环，278，339，357，514，556   
 局部化，270，415，681 作为一种函子，496 是正合的，500 模的，277，496 环的，277   
 局部因子，279 自由，556 $\Longleftrightarrow$ 平坦，556 $\Longleftrightarrow$ 投影，556   
-同调中的长正合序列，600 同调的，179 导出函子的，647，651 Ext 的，552 Tor 的，509   
+同调中的长正合列，600 同调的，179 导出函子的，647，651 Ext 的，552 Tor 的，509   
 L¨uroth，雅各布（1844-1910）定理，400   
 Mac Lane，萨瑟斯（1909-2005），120   
 映射锥，605，623，624，665 在拓扑中，607 圆柱，615 在拓扑中，615   
@@ -26279,7 +26293,7 @@ SU(2)，106 与四元数，136，234 是单连通的，86
 塞尔，让-皮埃尔问题，556  
 集合，1 函数，19 索引的，10
 
-multiset, 10个零件, 4个尖的, 24功率, 4, 18, 127沙法雷维奇, 伊戈尔, 473层, 486, 496, 575同调, 575位移函子, 596短 正合序列, 176的复形, 597相似内同态, 361矩阵, 360单群, 196, 205的60阶, 205, 222模, 163, 174一个双重复形, 667环, 144单元素, 2, 24切片范畴, 24史密斯, 亨利·约翰·斯蒂芬(1826-1883)正规形, 324蛇形引理, 179, 510, 553, 579, 597多项式方程的可解性, 474可解扩张, 475对于 $n \geq 5$ , $S _ { n }$ 不是, 224群, 211, 475 Spec $R$ , 151, 413, 486谱分解, 367, 380序列, 670, 686格罗滕迪克, 695, 697一个双重复形的, 691图, 694定理, 383谱极大, 155一个环的, 151, 413, 486一个算子的, 365分裂 epimorphism, 178, 547 正合复形, 621, 627 正合序列, 177单态射, 178, 547分裂域, 429序列, 177, 229, 547稳定子, 111, 187标准基, 316斯塔克, 哈罗德, 302斯滕罗德, 诺曼(1910-1971), 18直尺和圆规构造, 417子范畴, 26子群, 79
+multiset, 10个零件, 4个尖的, 24功率, 4, 18, 127沙法雷维奇, 伊戈尔, 473层, 486, 496, 575同调, 575位移函子, 596短正合列, 176的复形, 597相似内同态, 361矩阵, 360单群, 196, 205的60阶, 205, 222模, 163, 174一个双重复形, 667环, 144单元素, 2, 24切片范畴, 24史密斯, 亨利·约翰·斯蒂芬(1826-1883)正规形, 324蛇形引理, 179, 510, 553, 579, 597多项式方程的可解性, 474可解扩张, 475对于 $n \geq 5$ , $S _ { n }$ 不是, 224群, 211, 475 Spec $R$ , 151, 413, 486谱分解, 367, 380序列, 670, 686格罗滕迪克, 695, 697一个双重复形的, 691图, 694定理, 383谱极大, 155一个环的, 151, 413, 486一个算子的, 365分裂 epimorphism, 178, 547 正合复形, 621, 627 正合列, 177单态射, 178, 547分裂域, 429序列, 177, 229, 547稳定子, 111, 187标准基, 316斯塔克, 哈罗德, 302斯滕罗德, 诺曼(1910-1971), 18直尺和圆规构造, 417子范畴, 26子群, 79
 
 $p$ -Sylow, 196中心化子, 190, 191特征, 202交换子, 83, 96, 210, 226陪集的, 91循环的, 82由子集生成的, 81指数的, 102正规的, 88正规化子, 191自由群中的, 83循环群中的, 82稳定子, 111, 187传递的, $S _ { n }$ 的, 225   
 子模, 160 $\Longleftrightarrow$ 核, 161由子集生成的, 169   
@@ -26294,9 +26308,9 @@ Tarski, Alfred (1901-1983), 262
 张量代数, 529作为 Tor $_ 0$ , 509由自由模是正合的, 507与直和交换, 505是结合的, 523是 Hom 的左伴随, 505, 517是右正合的, 不是左正合的, 505, 507幂, 523积, 501纯的, 504   
 定理 Abel-Ruffini, 477 Baer 判据, 549 Birkhoff-Vandiver, 453 Burnside 的, 214 Cauchy 的, 195
 
-交换情况，107 凯莱的，110，472 对于环，135 凯莱-哈密顿，365，376 伽罗瓦扩张的特征化，457 中国剩余，291 有限交换群的分类，237，480 生成 PID 模的分类，354 全复形的层，674 正 ${ n }$ -边形的可构造性，469 导出算子由同调解析计算，663 狄利克雷的，454，480 欧拉的，107 全复形的正合性，670 Ext 可以通过解析任一参数计算，677 菲特-汤普森，212，214 费马最后，280 小，103，107，439 关于平方和，297 群的第一个同构，97 对于模，162 对于环，142 不动点，188 弗雷德-米切尔嵌入，156，559，588，591 代数基本定理，285，468 算术基本定理，255 伽罗瓦理论基本定理，460，461 关于对称函数，471 希尔伯特的‘90’，467，482，658 基，172，245，407 Nullstellensatz，153，171，405，409，410 约当-霍尔，206，313 克罗内克-韦伯，480，482 克鲁尔主理想定理，259 拉格朗日的，103 四平方，299，303 刘维尔，152 同调中的长正合序列，600 导出算子的，651 吕罗特的，400 奈特正规化，416 关于根式不可解的，474 关于尺规可构造性的，422 导出范畴的实现，635 施赖尔的，209
+交换情况，107 凯莱的，110，472 对于环，135 凯莱-哈密顿，365，376 伽罗瓦扩张的特征化，457 中国剩余，291 有限交换群的分类，237，480 生成 PID 模的分类，354 全复形的层，674 正 ${ n }$ -边形的可构造性，469 导出算子由同调解析计算，663 狄利克雷的，454，480 欧拉的，107 全复形的正合性，670 Ext 可以通过解析任一参数计算，677 菲特-汤普森，212，214 费马最后，280 小，103，107，439 关于平方和，297 群的第一个同构，97 对于模，162 对于环，142 不动点，188 弗雷德-米切尔嵌入，156，559，588，591 代数基本定理，285，468 算术基本定理，255 伽罗瓦理论基本定理，460，461 关于对称函数，471 希尔伯特的‘90’，467，482，658 基，172，245，407 Nullstellensatz，153，171，405，409，410 约当-霍尔，206，313 克罗内克-韦伯，480，482 克鲁尔主理想定理，259 拉格朗日的，103 四平方，299，303 刘维尔，152 同调中的长正合列，600 导出算子的，651 吕罗特的，400 奈特正规化，416 关于根式不可解的，474 关于尺规可构造性的，422 导出范畴的实现，635 施赖尔的，209
 
-第二同构（群），101（模），162（环），142（谱），对于正规算子，383（Sylow第一），196（第二），198（第三），199（群第三同构），101（模），162（环），142（Tor可通过解析任一参数计算），676（小Wedderburn），124，137，204，441，453（良序），263（Wilson），70，225（Thompson, John Griggs），212（Tor），509，646（长正合序列），509（可通过解析任一参数计算），509，676（为什么叫Tor），513（扭转元），340（模），340，355（子模），340（全复条件正合性），670（双重复的），606，668（欧拉函数），87（矩阵迹），362（域扩张元迹），398，440，467（可迁性），440（内射迹），362（超越基），400（度），400（超越$\pi$是），394，418，426（扩张元），391（数），394（纯扩张），400（传递的作用），110（$S _ { n }$的子群），225，478（范数和迹的可迁性），329，377，541（矩阵转置），219（置换），602，606，650，683（三角形区分），601，684（正合三角形），86（三角矩阵）
+第二同构（群），101（模），162（环），142（谱），对于正规算子，383（Sylow第一），196（第二），198（第三），199（群第三同构），101（模），162（环），142（Tor可通过解析任一参数计算），676（小Wedderburn），124，137，204，441，453（良序），263（Wilson），70，225（Thompson, John Griggs），212（Tor），509，646（长正合列），509（可通过解析任一参数计算），509，676（为什么叫Tor），513（扭转元），340（模），340，355（子模），340（全复条件正合性），670（双重复的），606，668（欧拉函数），87（矩阵迹），362（域扩张元迹），398，440，467（可迁性），440（内射迹），362（超越基），400（度），400（超越$\pi$是），394，418，426（扩张元），391（数），394（纯扩张），400（传递的作用），110（$S _ { n }$的子群），225，478（范数和迹的可迁性），329，377，541（矩阵转置），219（置换），602，606，650，683（三角形区分），601，684（正合三角形），86（三角矩阵）
 
 三角剖分范畴，602，610，618，650，683   
 唯一分解整环，248 $R [ x ]$ 是如果 $R$ 是，273 $\mathbb { Z } [ x ]$ 是一个，276 的特征，253 每个主理想整环是一个，254 不是一个局部性质，279 局部唯一分解环，279 高度为1的素数在一个中是主元，259   
