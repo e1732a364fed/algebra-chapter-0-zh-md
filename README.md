@@ -17,6 +17,7 @@ https://www.math.fsu.edu/~aluffi/algebraerrata.2016/Errata.html
 - 因为在 markdown 中无法使用 tikz, 交换图一般均使用 引用图片的形式。
 - 斜体纯文字部分 本应使用 latex 的 textit, 但是由于编辑太麻烦，暂时先使用 markdown 的 前后下划线表示
 - 对于 幂集，原书中使用的均是 mathscr, 但是我认为 mathcal 也行，且更常用。因此 两种字体我都有采用。
+- 对于公式结尾的句号，统一使用英文句号的 “点”，而不是中文句号的“圈”。逗号同理。
 
 ## commit message 约定：
 
