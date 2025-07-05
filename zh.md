@@ -19016,35 +19016,36 @@ $$
 
 ## 2. 张量积和Tor函子
 
-在本书的其余部分，我们将工作在交换环 $R$ 上的模类 $R$ -Mod 中。我们将看到的所有内容本质上都可以在不费力的情况下升级到非交换情况，但在那种情况下会丢失一些结构。例如，如果 $R$ 不是交换的，那么在左-$\mathbf { \nabla } \cdot R$ -模类 $R$ -Mod 中，同态集 ${ \mathrm { H o m } } _ { R - { \mathsf { M o d } } } ( M , N )$ 只是阿贝尔群（参见 §III.5.2 的末尾）。张量积 $M \otimes _ { R } N$ 只能定义，如果 $M$ 是右-$R$ -模并且 $N$ 是左-$R$ -模（从某种意义上说，这两种模结构会相互抵消，剩下的是阿贝尔群）。相比之下，在交换情况下，我们可以简单地定义 $M \otimes _ { R } N$ 为一个 $R$ -模。一般来说，如果模具有兼容的左右模结构，理论将像交换情况一样进行，但在诸如张量的交换性等问题上，我们无法期望 $R$ 的交换性没有任何影响。总而言之，交换情况稍微简洁一些，而且（我相信）就传达理论的基本直觉和一般特征而言，它已经足够了。
+在本书的剩余部分，我们将工作在 _交换_ 环 $R$ 上的模范畴 $R$ -Mod 上。我们将看到的所有内容本质上都可以在不费力的情况下升级到非交换情况，但在那种情况下会丢失一些结构。例如，如果 $R$ 不是交换的，那么在 _左_ -  $R$ -模 范畴 $R$ -Mod 中，态射集 ${ \mathrm { H o m } } _ { R - { \mathsf { M o d } } } ( M , N )$ “只”是阿贝尔群（参见 §III.5.2 的末尾）。张量积 $M \otimes _ { R } N$ 只能下述条件下被定义： 如果 $M$ 是右-$R$ -模并且 $N$ 是左-$R$ -模（从某种意义上说，这两种模结构会相互抵消，剩下的是阿贝尔群）。相比之下，在交换情况下，我们可以简单地定义 $M \otimes _ { R } N$ 为一个 $R$ -模。一般来说，如果模具有兼容的左 _和_ 右模结构，理论将像交换情况一样进行，但在诸如张量的交换性等问题上，我们无法期望 $R$ 的交换性没有任何影响。总而言之，交换情况稍微简洁一些，而且（我相信）就传达理论的基本直觉和一般特征而言，它已经足够了。
 
 因此，$R$ 将表示一个固定的交换环，除非另有说明。
 
 ### 2.1. 双线性映射和张量的定义
-如果 $M$ 和 $N$ 是 $R$ -模，我们在遥远的过去（III.6.1）观察到 $M \oplus N$ 既是 $M$ 和 $N$ 的积也是它们的直和：这是一个极限与余极限相重合的情况。作为集合，$M \oplus N$ 就是 $M \times N$；$M \oplus N$ 上的 $R$ -模结构是通过分量加法和标量乘法定义的。一个 $R$ -模同态
+
+如果 $M$ 和 $N$ 是 $R$ -模，我们在遥远的过去（III.6.1）观察到 $M \oplus N$ 既是 $M$ 和 $N$ 的 _积_ 也是它们的 _余积_：这是一个极限与余极限相重合的情况。作为集合，$M \oplus N$ 就是 $M \times N$；$M \oplus N$ 上的 $R$ -模结构是通过分量加法和标量乘法定义的。一个 $R$ -模同态
 
 $$
 M \oplus N \to P
 $$
 
-由 $R$ -模同态 $M \to P$ 和 $N \to P$ 决定（这正是使 $M \oplus N$ 成为积的原因）。
+由 $R$ -模同态 $M \to P$ 和 $N \to P$ 决定（这正是使 $M \oplus N$ 成为余积的原因）。
 
-但还有另一种方法将 $M \times N$ 映射到一个 $R$ -模 $P$ ，与 $R$ -模结构兼容。
+但还有 _另一种_ 方法将 $M \times N$ 映射到一个 $R$ -模 $P$ ，与 $R$ -模结构兼容。
 
-定义 2.1. 设 $M$，$N$，$P$ 是 $R$-模。一个函数 $\varphi : { \cal M } \times { \cal N }  { \cal P }$ 是 $R$-双线性的，如果
+**定义 2.1**. 设 $M$，$N$，$P$ 是 $R$-模。一个函数 $\varphi : M  \times N \to { P }$ 是 $R$-双线性的，如果
 
-• $\forall m \in M$ ，函数 $n \mapsto \varphi ( m , n )$ 是一个 $R$ -模同态 $N  P$ ，• $\forall n \in N$ ，函数 $m \mapsto \varphi ( m , n )$ 是一个 $R$ -模同态 $M  P 。.$
+• $\forall m \in M$ ，函数 $n \mapsto \varphi ( m , n )$ 是一个 $R$ -模同态 $N \to P$ ，
+• $\forall n \in N$ ，函数 $m \mapsto \varphi ( m , n )$ 是一个 $R$ -模同态 $M \to P$. $\lrcorner$
 
 因此，如果$\varphi : M \times N \to P$是$R$ -双线性的，那么$\forall m \in M$ ，$\forall n _ { 1 } , n _ { 2 } \in N$ ，$\forall r _ { 1 } , r _ { 2 } \in R$ ，
 
 $$
-\varphi ( m , r _ { 1 } n _ { 1 } + r _ { 2 } n _ { 2 } ) = r _ { 1 } \varphi ( m , n _ { 1 } ) + r _ { 2 } \varphi ( m , n _ { 2 } )
+\varphi ( m , r _ { 1 } n _ { 1 } + r _ { 2 } n _ { 2 } ) = r _ { 1 } \varphi ( m , n _ { 1 } ) + r _ { 2 } \varphi ( m , n _ { 2 } ),
 $$
 
-同样地，对于 $\varphi ( \underline { { \mathbf { \Pi } } } _ { - } , n )$ 。
+对于 $\varphi ( \underline {  }  , n )$ 有类似的情况。
 
-请注意，即使我们将 $M \times N$ 视为 $R$ -模 $M \oplus N$ ，如上所述，$\varphi$ 本身也不是线性的。另一方面，应该有一种方法来处理 $R$ -双线性映射“好像”它们是 $R$ -线性的，因为在 $R$ -模的上下文中，这种映射很多。例如，$R$ 上的乘法本身就是一个 $R$ -双线性映射
-
+请注意，即使我们将 $M \times N$ 视为 $R$ -模 $M \oplus N$ ，如上所述，$\varphi$ 本身也 _不是_ 线性的。另一方面，应该有一种方法来处理 $R$ -双线性映射“好像”它们是 $R$ -线性的，因为在 $R$ -模的上下文中，这种映射很多。例如，$R$ 上的乘法本身就是一个 $R$ -双线性映射
 $$
 R \times R \to R .
 $$
@@ -19054,59 +19055,52 @@ $$
 $$
 \otimes : M \times N \to M \otimes _ { R } N ,
 $$
+使得 _每个_ $R$ -双线性映射 $M \times N \to P$ 唯一地分解通过这个新模 $M \otimes _ { R } N$ ，
 
-使得每个 $R$ -双线性映射 $M \times N  P$ 唯一地分解通过这个新模 $M \otimes _ { R } N$ ，
-
-$$
-\begin{array} { l } { { M \times N { \xrightarrow { \varphi } } P } } \\ { { \otimes } { \down et { } { \prod } } } \\ { { M \otimes } { R N } } \end{array}
-$$
+![](images/h5.png)
 
 以这种方式，使得映射 $\overline { { \varphi } }$ 是一个普通的 $R$ -模同态。
 
-因此，如果我们想将 $R$-双线性映射从 $M \times N$ 视为 $R$-线性映射，那么 $M \otimes _ { R } N$ 将是 $R$ -Mod 中 $M \times N$ 的“最佳逼近”。模 $M \otimes _ { R } N$ 被称为 $M$ 和 $N$ 在 $R$ 上的张量积。下标 $R$ 非常重要：如果 $M$ 和 $N$ 是定义在两个环 $R$ ， $S$ 上的模，那么 $S$ -双线性与 $R$ -双线性并不相同，因此 $M \otimes _ { R } N$ 和 $M \otimes _ { S } N$ 可能是完全不同的对象。在上下文中，如果基底环是明确的，省略下标并不罕见，但我不建议这种做法。
+因此，如果我们想将 $R$-双线性映射从 $M \times N$ 视为 $R$-线性映射，那么 $M \otimes _ { R } N$ 将是 $R$ -Mod 中 $M \times N$ 的“最佳逼近”。模 $M \otimes _ { R } N$ 被称为 $M$ 和 $N$ 在 $R$ 上的 _张量积_。下标 $R$ 非常重要：如果 $M$ 和 $N$ 是定义在两个环 $R$ ， $S$ 上的模，那么 $S$ -双线性与 $R$ -双线性并不相同，因此 $M \otimes _ { R } N$ 和 $M \otimes _ { S } N$ 可能是完全不同的对象。在上下文中，如果基底环是明确的，省略下标并不罕见，但我不建议这种做法。
 
-上述处方将张量积记为普遍问题的解；因此我们立刻知道，如果它存在（再次引用命题I.5.4），它在同构意义下将是唯一的，并且我们可以通过系统地使用泛性质来研究它。
+上述处方将张量积记为泛问题的解；因此我们立刻知道，如果它存在（再次引用命题I.5.4），它在同构意义下将是唯一的，并且我们可以通过系统地使用泛性质来研究它。
 
-示例 2.2. 对于所有 $R$ -模 $N$ ， $R \otimes _ { R } N \cong N$ 。
+**示例 2.2**. 对于所有 $R$ -模 $N$ ， $R \otimes _ { R } N \cong N$ 。
 
-确实，每个 $R$ -双线性 $R \times N \to P$ 都通过 $N$（如立即验证的那样）：
+确实，每个 $R$ -双线性 $R \times N \to P$ 都通过 $N$（如立即验证的那样）分解：
 
 ![](images/133.jpg)
 
-其中 $\otimes ( r , n ) = r n$ 。根据泛对象的唯一性，必然有 $N \cong R \otimes _ { R } N$ 。
+其中 $\otimes ( r , n ) = r n$ 。根据泛对象的唯一性，必然有 $N \cong R \otimes _ { R } N$ 。$\lrcorner$
 
 对于另一个例子，很容易看出必须存在一个规范同构
 
 $$
-{ \cal M } \otimes _ { R } { \cal N } \stackrel { \sim } { \to } { \cal N } \otimes _ { R } { \cal M } .
+{ M } \otimes _ { R } { N } \stackrel { \sim } { \to } { N } \otimes _ { R } { M } .
 $$
 
-确实，每个 $R$ -双线性 $\varphi : M \times N \to P$ 都可以被分解为10
+确实，每个 $R$ -双线性 $\varphi : M \times N \to P$ 都可以被分解为$^{10}$
 
-$$
-{ \cal M } \times { \cal N } \mathop { \longrightarrow } \mathop { } { \cal N } \times { \cal M } \xrightarrow { \psi } { \cal P } ,
-$$
+![](images/h6.png)
 
-其中 $\psi ( n , m ) ~ = ~ \varphi ( m , n )$ ； $\psi$ 也是 $R$ -双线性的，因此它唯一地分解为 $N \otimes _ { R } M$ 。因此，$\varphi$ 唯一地分解为 $N \otimes _ { R } M$ ，这就足以得出存在一个规范同构 $N \otimes _ { R } M \cong M \otimes _ { R } N$ 。
+其中 $\psi ( n , m ) ~ = ~ \varphi ( m , n )$ ； $\psi$ 也是 $R$ -双线性的，因此它唯一地分解为 $N \otimes _ { R } M$ 。因此，$\varphi$ 唯一地分解为 $N \otimes _ { R } M$ ，这就足以得出存在一个典范同构 $N \otimes _ { R } M \cong M \otimes _ { R } N$ 。
 
 然而，除非我们首先确定 $M \otimes _ { R } N$ 的存在，否则这些考虑有点无关紧要。这需要一些工作。
 
-引理 2.3. 在 $R$ -Mod 中存在张量积。
+**引理 2.3**. 在 $R$ -Mod 中存在张量积。
 
-证明。给定$R$-模$M$和$N$，我们手动构造一个满足普遍要求的模。令$F ^ { R } ( M \times N ) = R ^ { \oplus ( M \times N ) }$是$M \times N$上的自由$R$-模（$S$ III.6.3）。这个模配备了一个集合映射
+**证明**。给定$R$-模$M$和$N$，我们手动构造一个满足普遍要求的模。令$F ^ { R } ( M \times N ) = R ^ { \oplus ( M \times N ) }$是$M \times N$上的自由$R$-模（$S$ III.6.3）。这个模配备了一个 _集合_ 映射
 
 $$
-j : M \times N  F ^ { R } ( M \times N ) ,
+j : M \times N \to F ^ { R } ( M \times N ) ,
 $$
 
-关于所有从 $M \times N$ 到任意 $R$ -模 $P$ 的集合映射是普遍的；主要任务是将这变成一个 $R$ -双线性映射。例如，我们必须识别 $F ^ { R } ( M \times N )$ 中形式为 $j ( m , n _ { 1 } + n _ { 2 } )$ 的元素与元素 $j ( m , n _ { 1 } ) + j ( m , n _ { 2 } )$ 等。因此，设 $K$ 是由所有元素生成的 $R$ -子模 $F ^ { R } ( M \times N )$。
-
+关于所有从 $M \times N$ 到任意 $R$ -模 $P$ 的集合映射 是泛的；主要任务是将这变成一个 $R$ - _双线性_ 映射。例如，我们必须等同 $F ^ { R } ( M \times N )$ 中形式为 $j ( m , n _ { 1 } + n _ { 2 } )$ 的元素与元素 $j ( m , n _ { 1 } ) + j ( m , n _ { 2 } )$ 等。因此，设 $K$ 是由所有如下元素生成的 $R$ -子模 $F ^ { R } ( M \times N )$：
 $$
 j ( m , r _ { 1 } n _ { 1 } + r _ { 2 } n _ { 2 } ) - r _ { 1 } j ( m , n _ { 1 } ) - r _ { 2 } j ( m , n _ { 2 } )
 $$
 
 并且
-
 $$
 j \big ( r _ { 1 } m _ { 1 } + r _ { 2 } m _ { 2 } , n \big ) - r _ { 1 } j \big ( m _ { 1 } , n \big ) - r _ { 2 } j \big ( m _ { 2 } , n \big )
 $$
@@ -19117,7 +19111,7 @@ $$
 M \otimes _ { R } N : = \frac { F ^ { R } ( M \times N ) } { K } ,
 $$
 
-赋予映射 $\otimes : M \times N \to M \otimes _ { R } N$，该映射通过将 $j$ 与自然投影复合得到：
+赋予它映射 $\otimes : M \times N \to M \otimes _ { R } N$，该映射通过将 $j$ 与如下的自然投影复合得到：
 
 $$
 \otimes : M \times N { \xrightarrow { j } } F ^ { R } ( M \times N ) { \xrightarrow { } } M \otimes _ { R } N = F ^ { R } ( M \times N ) / K
@@ -19125,30 +19119,28 @@ $$
 
 元素 $\otimes ( m , n )$（即 $j ( m , n )$ 模 $K$ 的类）记为 $m \otimes n$
 
-显然，$( m , n ) \to m \otimes n$ 定义了一个 $R$ -双线性映射。我们需要验证 $M \otimes _ { R } N$ 满足泛性质，这也是显而易见的。如果 $\varphi : M \times N \to P$ 是任意一个 $R$ -双线性映射，根据后者的泛性质，我们有一个唯一的诱导 $R$ -线性映射 $\ddot { \varphi }$ 从自由 $R$ -模：
+显然，$( m , n ) \to m \otimes n$ 定义了一个 $R$ -双线性映射。我们需要验证 $M \otimes _ { R } N$ 满足泛性质，这也是显而易见的。如果 $\varphi : M \times N \to P$ 是任意一个 $R$ -双线性映射，根据后者的泛性质，我们有一个唯一的诱导 $R$ -线性映射 $\tilde { \varphi }$ 从自由 $R$ -模：
 
-$$
-\begin{array} { c } { { M \times N \xrightarrow { \varphi } \mathrm { P } } } \\ { { j \brace j \Biggl \downarrow \atop \mathrm { f } { R } { \uparrow } } } \\ { { F ^ { R } ( M \times N ) } } \end{array} { } ^ { P }
-$$
+![](images/h7.png)
 
-我断言 $\tilde { \varphi }$ 在 $K$ 上限制为 $0$。实际上，为了验证这一点，只需验证 $\ddot { \varphi }$ 将 $K$ 的每个生成元发送到零，而这源于 $\varphi$ 是 $R$ -双线性的。例如，
+我断言 $\tilde { \varphi }$ 在 $K$ 上限制为 $0$。实际上，为了验证这一点，只需验证 $\tilde { \varphi }$ 将 $K$ 的每个生成元发送到零，而这源于 $\varphi$ 是 $R$ -双线性的。例如，
 
 $$
 \begin{array} { r l } & { \tilde { \varphi } ( j ( m , r _ { 1 } n _ { 1 } + r _ { 2 } n _ { 2 } ) - r _ { 1 } j ( m , n _ { 1 } ) - r _ { 2 } j ( m , n _ { 2 } ) ) } \\ & { \qquad = \tilde { \varphi } ( j ( m , r _ { 1 } n _ { 1 } + r _ { 2 } n _ { 2 } ) ) - r _ { 1 } \tilde { \varphi } ( j ( m , n _ { 1 } ) ) - r _ { 2 } \tilde { \varphi } ( j ( m , n _ { 2 } ) ) } \\ & { \qquad = \varphi ( m , r _ { 1 } n _ { 1 } + r _ { 2 } n _ { 2 } ) - r _ { 1 } \varphi ( m , n _ { 1 } ) - r _ { 2 } \varphi ( m , n _ { 2 } ) } \\ & { \qquad = 0 . } \end{array}
 $$
 
-由商的泛性质（！）可知，$\ddot { \varphi }$ 唯一地通过 $K$ 的商：
+（由商的泛性质！）可知，$\tilde { \varphi }$ 唯一地通过 $K$ 的商 分解：
 
 ![](images/134.jpg)
 
-并且我们完成了。
+证毕。$\square$
 
-通常情况下，用于证明 $M \otimes _ { R } N$ 存在的显式构造几乎从不被使用。然而，保留它仍然是有益的。
-
-请注意，$M \otimes _ { R } N$ 的元素来自 $M \times N$ 上的自由 $R$-模的元素，因此 $M \otimes _ { R } N$ 的任意元素是一个有限线性组合
+通常情况下，用于证明 $M \otimes _ { R } N$ 存在的显式构造几乎从不被使用。然而， 注意如下是有益的：$M \otimes _ { R } N$ 的元素来自 $M \times N$ 上的自由 $R$-模的元素，因此 $M \otimes _ { R } N$ 的任意元素是一个有限线性组合
 
 $$
-\sum _ { i } r _ { i } ( m _ { i } \otimes n _ { i } )
+\begin{flalign*}
+(*) && \sum _ { i } r _ { i } ( m _ { i } \otimes n _ { i } ) &&
+\end{flalign*}
 $$
 
 对于 $r _ { i } \in R$ ， $m _ { i } \in M$ ，和 $n _ { i } \in N$ 。 $\otimes : M \times N \to M \otimes _ { R } N$ 的 $R$ -双线性意味着规则：
@@ -19157,15 +19149,15 @@ $$
 \begin{array} { c } { { m \otimes ( n _ { 1 } + n _ { 2 } ) = m \otimes n _ { 1 } + m \otimes n _ { 2 } , } } \\ { { ( m _ { 1 } + m _ { 2 } ) \otimes n = m _ { 1 } \otimes n + m _ { 2 } \otimes n , } } \\ { { m \otimes ( r n ) = ( r m ) \otimes n = r ( m \otimes n ) , } } \end{array}
 $$
 
-对于所有 $m$，$m _ { 1}$，$m _ { 2} \in M$，$n _ { 1}$，$n _ { 2}$，$n \in N$，以及 $r \in R$。特别是，请注意 $( ^ { * } )$ 中的系数 $r _ { i}$ 不是必要的，因为它们可以被吸收到相应的项 $m _ { i} \otimes n _ { i}$ 中：
+对于所有 $m$，$m _ { 1}$，$m _ { 2} \in M$，$n _ { 1}$，$n _ { 2}$，$n \in N$，以及 $r \in R$。特别是，请注意 $( ^ { * } )$ 中的系数 $r _ { i}$  _不_ 是必要的，因为它们可以被吸收到相应的项 $m _ { i} \otimes n _ { i}$ 中：
 
 $$
 \sum _ { i } r _ { i } ( m _ { i } \otimes n _ { i } ) = \sum _ { i } ( r _ { i } m _ { i } ) \otimes n _ { i } .
 $$
 
-形式为 $m \otimes n$（即，表达式中只需要一个加项）的元素称为纯张量。亲爱的读者，请记住纯张量是特殊的：通常，张量积的每个元素都不是纯张量。参见练习2.1，了解在某种情况下每个张量恰好是纯张量的情况，并欣赏这种情况是多么特殊。
+形式为 $m \otimes n$（即，表达式中只需要一个加项）的元素称为 _纯张量_。_亲爱的读者_，请记住纯张量是特殊的：通常，不是张量积的每个元素都是纯张量。参见练习2.1，了解在某种情况下每个张量恰好是纯张量的情况，并理解这种情况是多么特殊。
 
-纯张量仍然非常有用，作为张量积的一组生成元。例如，如果两个同态 $\alpha , \beta : M \otimes _ { R } N \to P$ 在纯张量上相等，那么 $\alpha = \beta$ 。通常，涉及张量积的计算被简化为对纯张量的简单验证。
+纯张量仍然非常有用，作为张量积的一组生成元。例如，如果两个同态 $\alpha , \beta : M \otimes _ { R } N \to P$ 在 _纯_ 张量上相等，那么 $\alpha = \beta$ 。通常，涉及张量积的计算被简化为对纯张量的简单验证。
 
 ### 2.2. 与Hom的附加和显式计算
 张量积是Hom的左伴随。一旦我们解析这个粗略陈述的含义，它将几乎是微不足道的；但是，正如我们在§1.5中发现的那样，仅仅$\otimes _ { R }$是任何函子的左伴随这一事实就足以得出关于它的有趣结论。
@@ -19576,7 +19568,7 @@ $M$ $\mathrm { \ddot { \ l s \ d a t } } \iff \mathrm { T o r } _ { 1 } ^ { R } 
 
 （使用练习2.21，并改进你在练习2.24中使用的论证；记住，根据练习2.22，Tor局部化。诺特假设实际上是不必要的，但没有它，证明会更困难。）
 
-## 3. 基底变换
+## 3. 基变换
 
 我多次倡导一种观点，即环 $R$ 的深层性质编码在 $R$ -Mod 类中；一个极端的观点是简单地用 $R$ -Mod 替换 $R$ 作为主要研究对象。然后问题就出现了，从这个角度来看如何处理环同态，或者更一般地说，两个（交换）环 $R$ ， $S$ 上的模类 $R$ -Mod， $S$ -Mod 如何相互关联。读者应该期望这种情况通过两个类之间的函子发生，并且在这种情况下，范畴层面的情况将比环层面要丰富得多。
 
